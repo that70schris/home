@@ -1,0 +1,112 @@
+'$schema' = 'https://starship.rs/config-schema.json'
+command_timeout = 999999999
+add_newline = false
+format = """
+$os\
+$sudo\
+$username\
+$hostname\
+$localip\
+$gcloud\
+$kubernetes\
+$directory\
+$docker_context\
+$package\
+$container\
+$helm\
+$pulumi\
+$python\
+$terraform\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$git_metrics\
+"""
+
+# move the rest of the prompt to the right
+right_format = """
+
+"""
+
+[character]
+  success_symbol = '[...](white)'
+  error_symbol = '[...](white)'
+
+[directory]
+  repo_root_style = 'blue'
+  truncate_to_repo = false
+  truncation_length = 5
+  style = 'black'
+
+[docker_context]
+  format = '🐳 '
+
+[fill]
+  style = 'white'
+
+[gcloud]
+  format = '[(\($project\))](#1a73e8)'
+
+[gcloud.project_aliases]
+  jgw-development = 'development'
+  jgw-staging = 'staging'
+  jgw-production = 'production'
+
+[git_branch]
+  format = '([\($branch(:$remote_branch)\)](#f1502f) )'
+  only_attached = true
+
+[git_commit]
+  format = '([\($hash$tag\)](#f1502f) )'
+  tag_disabled = false
+
+[git_status]
+  # use_git_executable = true
+  format = '$stashed$conflicted$deleted$renamed$modified$staged$untracked$ahead_behind'
+  conflicted = '= '
+  modified = ''
+  ahead = '[⬆](purple)  '
+  behind = '[⬇](purple)  '
+  diverged = '[⬆ ⬇](purple)  '
+  untracked = '[▪︎](white) '
+  deleted = '[✘](bright-red) '
+  renamed = '[»](yellow) '
+  staged = '[+](yellow) '
+  stashed = '[⭑](yellow) '
+  up_to_date = ''
+
+[git_metrics]
+  disabled = false
+  format = '([$added](green)) ([$deleted](red)) '
+
+[kubernetes]
+  disabled = false
+  format = '[$context( \($namespace\))](#09c1d1)'
+  contexts = [
+    { context_pattern = ".*_(.*)-(.*)_.*_(.*)" , context_alias = '${1}/${2}/${3}' }
+  ]
+
+[nodejs]
+  format = '[$symbol($version )]($style)'
+
+[package]
+  format = '[📦 $version](white) '
+
+[pulumi]
+  format = '𝌤[ $stack](#805ac3) '
+
+[python]
+  format = '[$symbol$pyenv_prefix($version )(\($virtualenv\) )](#f0cf3f)'
+
+[shell]
+  disabled = false
+
+[sudo]
+  disabled = false
+  format = '👻 '
+
+[time]
+  disabled = false
+  format = '[\[ $time \]](white) '
+  time_format = '%m/%d %T'
