@@ -1,0 +1,7 @@
+---
+"workspace:show_command_search": shift-cmd-F
+"workspace:set_a11y_concise_verbosity_level": none
+"input:search_command_history": shift-cmd-F
+"terminal:clear_blocks": cmd-k
+"workspace:set_a11y_verbose_verbosity_level": none
+"editor_view:clear_lines": none

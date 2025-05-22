@@ -1,0 +1,269 @@
+.TH "ZSH-ABBR" 1 "February 21 2025" "abbr 6.2.1" "User Commands"
+.SH NAME
+zsh\-abbr \- manage zsh abbreviations
+.SH SYNOPSIS
+
+For full manual including options, see https://zsh-abbr.olets.dev/
+
+\fBabbr\fR (\fBadd\fR | \fBa\fR) [\fIscope\fR] [(\fI\-force\fR | \fI\-\-force\fR)] <\fIabbreviation\fR>=<\fIexpansion\fR>
+
+\fBabbr\fR (\fBgit\fR | \fBg\fR) [\fIscope\fR] [(\fI\-force\fR | \fI\-\-force\fR)] <\fIabbreviation\fR>=<\fIexpansion\fR>
+
+\fBabbr\fR (\fBclear\-session\fR | \fBc\fR)
+
+\fBabbr\fR (\fBerase\fR | \fBe\fR) [\fIscope\fR] <\fIabbreviation\fR>
+
+\fBabbr\fR (\fBexpand\fR | \fBx\fR) <\fIabbreviation\fR>
+
+\fBabbr\fR (\fBexport\-aliases\fR | \fB\-o\fR) <\fIscope\fI>
+
+\fBabbr import\-aliases\fR [\fIscope\fR]
+
+\fBabbr import\-fish\fR <\fIfile\fR>
+
+\fBabbr import\-git\-aliases\fR
+
+\fBabbr list\fR
+
+\fBabbr (list\-abbreviations\fR | \fBl\fR)
+
+\fBabbr\fR (\fBlist\-commands\fR | \fBL\fR)
+
+\fBabbr\fR (\fBrename\fR | \fBR\fR) [\fIscope\fR] [(\fI\-force\fR | \fI\-\-force\fR)] <\fIold_abbreviation\fR> <\fInew_abbreviation\fR>
+
+\fBabbr load\fR
+
+\fBabbr\fR (\fBhelp | \-\-help\fR | \fB\-h\fR)
+
+\fBabbr\fR (\fBversion | \-\-version\fR | \fB\-v)
+
+\fBabbr profile\fR
+
+.SH DESCRIPTION
+\fBabbr\fR manages abbreviations \- user\-defined words that are replaced with longer phrases after they are entered.
+
+For example, a frequently\-run command like git checkout can be abbreviated to gco. After entering gco and pressing [\fBSpace\fR], the full text git checkout will appear in the command line.
+
+To prevent expansion, press [\fBCTRL\-SPACE\fR] in place of [\fBSPACE\fR].
+
+\fBabbr-load\fR triggers a reload of the user abbreviations files. This also runs automatically before each of the above commands.
+
+.SH Commands
+The following commands are available:
+
+.IP \(bu
+\fBadd <\fIabbreviation\fR>=<\fIexpansion\fR> or \fBa\fR <\fIabbreviation\fR>=<\fIexpansion\fR>
+
+Adds a new abbreviation, causing <\fIabbreviation\fR> to be expanded as <\fIexpansion\fR>.
+
+Will error rather than overwrite an existing abbreviation.
+
+Will warn if the abbreviation would replace an existing command. To add in spite of the warning, use [(\fI\-force\fR | \fI\-\-force\fR)].
+
+May be multiple words. Quote or escape word delimiters.
+
+.IP \(bu
+\fBgit <\fIabbreviation\fR>=<\fIexpansion\fR> or \fBg\fR <\fIabbreviation\fR>=<\fIexpansion\fR>
+
+Shorthand for
+
+add abbreviation="git expansion"
+
+add "git abbreviation"="git expansion"
+
+.IP \(bu
+\fBclear\-session\fR or \fBc\fR
+
+Erases all session abbreviations.
+
+.IP \(bu
+\fBerase <\fIabbreviation\fR> or \fBe\fR <\fIabbreviation\fR>
+
+Erases the abbreviation <\fIabbreviation\fR> .
+
+.IP \(bu
+\fBexpand <\fIabbreviation\fR> or \fBx <\fIabbreviation\fR>
+
+Returns the <\fIexpansion\fR> of the abbreviation <\fIabbreviation\fR>.
+
+.IP \(bu
+\fBexport\-aliases\fR [<\fIdestination\fR>]
+
+Exports a list of alias command for user abbreviations, suitable for pasting or piping to whereever you keep aliases.
+
+.IP \(bu
+\fBimport\-aliases\fR
+
+Adds abbreviations for all aliases.
+
+.IP \(bu
+\fBimport\-fish\fR <\fIfile\fR>
+
+Adds abbreviations exported from fish.
+
+.IP \(bu
+\fBimport\-git\-aliases\fR [\fI--file <config-file>\fR] [\fI--prefix\fR <\fIABBREVIATION prefix\fR>]
+
+Add an abbreviation for every Git alias available in the current session. The EXPANSION is prefixed with `git[Space]`. Use `--file <config-file>` to use a config file instead of the one specified by GIT_CONFIG (see `man git-config`). Use `--prefix <prefix>` to add a prefix to the ABBREVIATION.
+
+.IP \(bu
+\fBabbr list\fR
+
+Lists the available abbreviations without their expansions. Equivalent to fish's `abbr --list`.
+
+.IP \(bu
+\fBlist\-abbreviations\fR or \fBl\fR
+
+Lists all abbreviations.
+
+.IP \(bu
+\fBlist\-commands\fR or \fBL\fR
+
+Lists all abbreviations as commands suitable for export and import.
+
+.IP \(bu
+\fBrename\fR <\fIold_abbreviation\fR> <\fInew_abbreviation\fR> or \fBR\fR <\fIold_abbreviation\fR> <\fInew_abbreviation\fR>
+
+Renames an abbreviation, from <\fIold_abbreviation\fR> to <\fInew_abbreviation\fR>.
+
+.IP \(bu
+\fBprofile\fR
+
+Log profile information for debugging.
+
+.IP \(bu
+\fBversion\fR or \fB\-\-version\fR or \fB\-v\fR
+
+Show the current version.
+
+
+.PP
+All commands except for \fBclear-session\fR and \fBexpand\fR can take a \fBscope\fR:
+.RS
+.IP \(bu
+\fB\-\-session\fR
+or
+\fB\-S\fR
+
+Abbreviations available in the current session only.
+
+.IP \(bu
+\fB\-\-user\fR or \fB\-U\fR
+
+Abbreviations available to all current and future sessions.
+
+.RE
+
+All except for \fBclear-session\fR, \fBexpand\fR, and \fBimport-fish\fR can take a \fBtype\fR:
+.RS
+
+.IP \(bu
+\fB\-\-global\fR or \fB\-g\fR
+
+Abbreviation will expand anywhere on a line, rather than only in command (first word) position.
+
+.IP \(bu
+\fB\-\-regular\fR or \fBr\fR (default)
+
+Abbreviation will expand in command (first word) position only.
+
+.RE
+
+All except for \fBclear-session\fR, \fBexpand\fR, \fBexport-aliases\fR, \fBlist-abbreviations\fR, and \fBlist-commands\fR can be tried without making changes:
+.RS
+
+.IP \(bu
+\fB\-\-dry\-run\fR
+Show whats the result of the command would be.
+
+.RE
+
+All except for \fBclear-session\fR, \fBexpand\fR, \fBexport-aliases\fR, \fBlist-abbreviations\fR, and \fBlist-commands\fR can be run with reduced output:
+.RS
+
+.IP \(bu
+\fB\-\-quiet\fR | \fB\-q\fR
+Do not log success, warning, or error messages.
+
+.IP \(bu
+\fB\-\-quieter\fR | \fB\-qq\fR
+Silence the warning that a newly-created abbreviation conflicts with a command name.
+
+.SH Configuration
+The following variables may be set:
+
+.IP \(bu
+\fIABBR_AUTOLOAD\fR
+Should `abbr load` run before every `abbr` command? (0 or 1, default 1)
+
+.IP \(bu
+\fIABBR_DEFAULT_BINDINGS\fR
+Use the default key bindings? (0 or 1, default 1)
+
+.IP \(bu
+\fIABBR_DEBUG\fR
+Print debugging logs? (0 or 1, default 0)
+
+.IP \(bu
+\fIABBR_DRY_RUN\fR
+Behave as if `--dry-run` was passed? (0 or 1, default 0)
+
+.IP \(bu
+\fIABBR_FORCE\fR
+Behave as if `--force` was passed? (0 or 1, default 0)
+
+.IP \(bu
+\fIABBR_QUIET\fR
+Behave as if `--quiet` was passed? (0 or 1, default 0)
+
+.IP \(bu
+\fIABBR_USER_ABBREVIATIONS_FILE\fR
+File abbreviations are stored in (default ${HOME}/.config/zsh/abbreviations)
+
+.IP \(bu
+\fINO_COLOR\fR
+If `NO_COLOR` is set, color output is disabled. See https://no-color.org/.
+
+.SH EXAMPLES
+
+.TP
+\fBabbr\fR gco="git checkout"
+
+"gco" will be expanded as "git checkout" when it is the first word in the command, in all open and future sessions.
+
+.TP
+\fBabbr \-g\fR gco="git checkout"
+
+"gco" will be replaced with "git checkout" anywhere on the line, in all open and future sessions.
+
+.TP
+\fBabbr \-g \-S\fR gco="git checkout"
+
+"gco" will be replaced with "git checkout" anywhere on the line, in the current session.
+
+.TP
+\fBabbr e \-S \-g\fR gco;
+
+Erase the global session abbreviation "gco". Note that because expansion is triggered by [\fBSPACE\fR] and [\fBENTER\fR], the semicolon (;) is necessary to prevent expansion when operating on global abbreviations.
+
+.TP
+\fBabbr e \-g\fR gco;
+
+Erase the global user abbreviation "gco".
+
+.TP
+\fBabbr e\fR gco
+
+Erase the regular user abbrevation "gco".
+
+.TP
+\fBabbr R \-g\fR gco gch
+
+Rename an existing global user abbreviation from "gco" to "gch".
+
+.SH HISTORY
+Inspired by \fBfish\fR shell's \fBabbr\fR.
+
+.SH AUTHORS
+
+Henry Bley\-Vroman <olets@olets.dev>
