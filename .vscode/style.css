@@ -1,0 +1,25 @@
+.cursor-line-style .cursor {
+  transform: scaleY(1.5) !important;
+}
+
+.cursors-layer {
+  animation-iteration-count: infinite !important;
+}
+
+.sidebar .title-label * {
+  display: none !important;
+}
+
+.tab {
+  width: auto !important;
+  padding: 0 15px !important;
+}
+
+.tab.dirty a {
+  color: orange !important;
+}
+
+.view-lines,
+.monaco-mouse-cursor-text {
+  cursor: text !important;
+}
