@@ -1,7 +1,7 @@
 /*
 
 !.gitignore
-!Alfred/Alfred.alfredpreferences
+# !Alfred/Alfred.alfredpreferences
 !Arc/
 !Choosy/
 !Code/
