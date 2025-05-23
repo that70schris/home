@@ -17,6 +17,7 @@
 !.vimrc
 !.zshrc
 !Brewfile
+!flake.nix
 !package.json
 !tsconfig.json
 
