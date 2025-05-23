@@ -8,6 +8,7 @@
 
 !.editorconfig
 !.gitignore
+!.gitleaks.toml
 !.gitmodules
 !.prettierrc.yml
 !.npmrc
