@@ -1,0 +1,12 @@
+/*
+
+!.gitignore
+!*.toml
+!fish/
+!gh/
+!htop/
+!karabiner/
+!kitty/
+!raycast/
+!zed/
+!zsh/
