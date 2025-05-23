@@ -1,6 +1,5 @@
 /*
 
-!.gitignore
 !.config/
 !.github/
 !.hammerspoon/
@@ -9,6 +8,8 @@
 !Library/
 
 !.editorconfig
+!.gitconfig
+!.gitignore
 !.gitleaks.toml
 !.gitmodules
 !.prettierrc.yml
