@@ -6,15 +6,20 @@
     "abbreviations": "shellscript",
     "aliases": "shellscript"
   },
+  "github-actions.workflows.pinned.workflows": [
+    ".github/workflows/publish.yml"
+  ],
+  "Lua.diagnostics.globals": [
+    "escape",
+    "enter",
+    "clear",
+    "spoon",
+    "hs",
+  ],
   "search.useIgnoreFiles": true,
   "workbench.colorCustomizations": {
     "statusBar.background": "#77ff88",
     "statusBar.foreground": "#000000",
     "statusBarItem.hoverBackground": "#77cc88"
-  },
-  "Lua.diagnostics.globals": [
-    "escape",
-    "enter",
-    "hs"
-  ]
+  }
 }
