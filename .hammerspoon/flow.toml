@@ -1,9 +1,9 @@
-leader_key_mods = "cmd,alt,ctrl,shift"
-leader_key = "h"
+leader_key_mods = 'cmd,alt,ctrl,shift'
+leader_key = 'h'
 auto_reload = false
 show_ui = true
 
 v = [
-  "Visual Studio Code",
-  "VS Code"
+  'Visual Studio Code',
+  'VS Code'
 ]
