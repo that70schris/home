@@ -1,4 +1,5 @@
-leader_key = "escape"
+leader_key = "h"
+leader_key_mods = "cmd,alt,ctrl,shift" # optional, default "", not recommended - a dedicated leader key is better
 auto_reload = false
 toast_on_reload = true
 show_ui = true

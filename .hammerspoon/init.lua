@@ -4,7 +4,7 @@ hs.loadSpoon('escape')
 hs.loadSpoon('enter')
 hs.loadSpoon('clear')
 
--- hs.loadSpoon('Hammerflow')
--- spoon.Hammerflow.loadFirstValidTomlFile({
---   "flow.toml",
--- })
+hs.loadSpoon('Hammerflow')
+spoon.Hammerflow.loadFirstValidTomlFile({
+  "flow.toml",
+})
