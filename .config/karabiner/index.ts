@@ -30,7 +30,7 @@ writeFileSync(
                     },
                     to: [
                       {
-                        key_code: 'left_control',
+                        key_code: 'right_command',
                         modifiers: ['command', 'control', 'option', 'shift'],
                       },
                     ],
