@@ -1,0 +1,8 @@
+leader_key = "escape"
+auto_reload = false
+toast_on_reload = true
+show_ui = true
+
+[h]
+label = "Hammerflow"
+v = ["Visual Studio Code", "VS Code"]
