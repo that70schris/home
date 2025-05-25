@@ -3,4 +3,7 @@ leader_key = "h"
 auto_reload = false
 show_ui = true
 
-v = ["Visual Studio Code", "VS Code"]
+v = [
+  "Visual Studio Code",
+  "VS Code"
+]
