@@ -45,13 +45,7 @@ writeFileSync(
               },
               ...{
                 o: {
-                  a: 'Arc'.app,
-                  c: 'Calendar'.app,
                   e: 'Mail'.app,
-                  f: 'Finder'.app,
-                  i: 'Messages'.app, // 'i'Message
-                  n: 'Notes'.app,
-                  s: 'Slack'.app,
                 },
                 s: {
                   backslash:
