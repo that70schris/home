@@ -1,0 +1,224 @@
+{
+  "[applescript]": {
+    "editor.defaultFormatter": "idleberg.applescript",
+    "files.encoding": "utf8"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
+  },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "never"
+    },
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnType": true
+  },
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "angular.enable-strict-mode-prompt": false,
+  "breadcrumbs.enabled": false,
+  "breadcrumbs.filePath": "off",
+  "breadcrumbs.symbolPath": "on",
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.preserveFocus": true,
+  "code-runner.showExecutionMessage": false,
+  "css.validate": false,
+  "currentPath.hideFileIcon": true,
+  "custom-ui-style.electron": {
+    "titleBarStyle": "hidden"
+  },
+  "custom-ui-style.external.imports": [
+    "file://${userHome}/.vscode/style.css"
+  ],
+  "custom-ui-style.font.monospace": "monaco",
+  "custom-ui-style.font.sansSerif": "monaco",
+  "custom-ui-style.reloadWithoutPrompting": true,
+  "dash.fileNameToDocsetMap": {
+    "[dD]ocker*": [
+      "docker"
+    ],
+    "*.s[ac]ss": [
+      "css"
+    ]
+  },
+  "debug.console.wordWrap": false,
+  "debug.showBreakpointsInOverviewRuler": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.colorDecorators": false,
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorWidth": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.dragAndDrop": false,
+  "editor.emptySelectionClipboard": false,
+  "editor.find.addExtraSpaceOnTop": false,
+  "editor.folding": false,
+  "editor.fontFamily": "Monaco",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 14,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.glyphMargin": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.indentation": true,
+  "editor.hover.delay": 400,
+  "editor.hover.sticky": true,
+  "editor.letterSpacing": 1,
+  "editor.lineNumbers": "on",
+  "editor.linkedEditing": true,
+  "editor.matchBrackets": "never",
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.occurrencesHighlight": "off",
+  "editor.overviewRulerBorder": false,
+  "editor.padding.bottom": 40,
+  "editor.pasteAs.preferences": [
+    "text.updateImports"
+  ],
+  "editor.renderLineHighlight": "all",
+  "editor.renderWhitespace": "none",
+  "editor.roundedSelection": false,
+  "editor.rulers": [
+    80
+  ],
+  "editor.scrollBeyondLastLine": false,
+  "editor.tabSize": 2,
+  "editor.unicodeHighlight.includeStrings": false,
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  "editor.wordWrap": "off",
+  "emmet.triggerExpansionOnTab": true,
+  "eslint.codeAction.showDocumentation": {
+    "enable": false
+  },
+  "eslint.format.enable": true,
+  "explorer.autoReveal": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
+  "extensions.autoUpdate": true,
+  "extensions.closeExtensionDetailsOnViewChange": true,
+  "extensions.ignoreRecommendations": true,
+  "files.associations": {
+    ".*rc": "shellscript",
+    ".Brewfile": "ruby",
+    ".firebaserc": "json",
+    "*htaccess*": "apacheconf",
+    "*httpd*": "apacheconf",
+    "Makefile.*": "makefile",
+    "nginx.conf": "NGINX",
+  },
+  "files.encoding": "utf8",
+  "files.exclude": {
+    ".DS_Store": true
+  },
+  "files.insertFinalNewline": true,
+  "files.simpleDialog.enable": true,
+  "geminicodeassist.enable": false,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.enableStatusBarSync": false,
+  "git.ignoreLimitWarning": true,
+  "git.openRepositoryInParentFolders": "never",
+  "github-actions.workflows.pinned.refresh.enabled": true,
+  "github-actions.workflows.pinned.refresh.interval": 10,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.launchpad.indicator.enabled": false,
+  "gitlens.statusBar.alignment": "right",
+  "gitlens.statusBar.enabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "less.validate": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.host": "localhost",
+  "liveServer.settings.NoBrowser": true,
+  "lldb.launch.expressions": "native",
+  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+  "Lua.window.statusBar": false,
+  "nginx-conf-hint.enableStrictCompletion": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "problems.showCurrentInStatus": true,
+  "redhat.telemetry.enabled": true,
+  "scm.diffDecorationsGutterWidth": 4,
+  "scss.validate": false,
+  "search.useGlobalIgnoreFiles": false,
+  "search.useIgnoreFiles": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "svg.preview.autoShow": false,
+  "svg.preview.background": "dark-transparent",
+  "svg.preview.mode": "svg",
+  "task.problemMatchers.neverPrompt": {
+    "angularcli": true
+  },
+  "task.quickOpen.skip": true,
+  "terminal.external.osxExec": "Warp.app",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.env.osx": {
+    "Q_NEW_SESSION": "1"
+  },
+  "terminal.integrated.fontFamily": "Monaco",
+  "terminal.integrated.fontSize": 14,
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vim.cursorStylePerMode.visual": "underline",
+  "vim.startInInsertMode": false,
+  "vim.vimrc.enable": true,
+  "vsicons.dontShowConfigManuallyChangedMessage": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "vsicons.presets.hideExplorerArrows": true,
+  "window.autoDetectColorScheme": true,
+  "window.commandCenter": true,
+  "window.customTitleBarVisibility": "never",
+  "window.dialogStyle": "custom",
+  "window.openFilesInNewWindow": "on",
+  "window.restoreFullscreen": true,
+  "window.title": "${rootPath}",
+  "window.titleBarStyle": "native",
+  "workbench.activityBar.location": "bottom",
+  "workbench.colorTheme": "arcade",
+  "workbench.editor.closeEmptyGroups": false,
+  "workbench.editor.decorations.badges": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.openPositioning": "last",
+  "workbench.editor.revealIfOpen": true,
+  "workbench.editor.showIcons": false,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.tabActionCloseVisibility": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.preferredDarkColorTheme": "arcade",
+  "workbench.preferredLightColorTheme": "arcade-light",
+  "workbench.settings.editor": "json",
+  "workbench.settings.openDefaultSettings": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.tree.renderIndentGuides": "always",
+  "makefile.configureOnOpen": true
+}
