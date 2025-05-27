@@ -1,0 +1,41 @@
+.cursor-line-style .cursor {
+  transform: scaleY(1.5) !important;
+}
+
+.cursors-layer {
+  animation-iteration-count: infinite !important;
+}
+
+.sidebar .title-label * {
+  display: none !important;
+}
+
+.sidebar .footer .composite-bar-container {
+  justify-content: right !important;
+}
+
+.sidebar .header-or-footer .action-item {
+  padding: 0 11px 4px 11px !important;
+}
+
+.sidebar .header-or-footer .action-item .action-label:before {
+  left: 14px !important;
+}
+
+.sidebar .header-or-footer .action-item .badge {
+  left: -7px !important;
+}
+
+.tab {
+  width: auto !important;
+  padding: 0 15px !important;
+}
+
+.tab.dirty a {
+  color: orange !important;
+}
+
+.view-lines,
+.monaco-mouse-cursor-text {
+  cursor: text !important;
+}
