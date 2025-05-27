@@ -5,6 +5,7 @@
 !.hammerspoon/
 !.vscode/
 !.warp/
+!Library/
 
 !.editorconfig
 !.gitignore
