@@ -1,14 +1,12 @@
-/*
+**/*
 
 !.config/
-!.github/
+!.github/FUNDING.yml
 !.hammerspoon/
 !.vscode/
 !.warp/
-!Library/
 
 !.editorconfig
-!.gitconfig
 !.gitignore
 !.gitleaks.toml
 !.gitmodules
@@ -17,13 +15,3 @@
 !.vimrc
 !.zshrc
 !Brewfile
-!flake.nix
-!package.json
-!tsconfig.json
-
-node_modules/
-.DS_Store
-Default.*
-*.bak
-*.log
-*.old
