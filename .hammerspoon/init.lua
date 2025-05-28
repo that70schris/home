@@ -19,5 +19,3 @@ hs.notify.show(
   '',
   ''
 )
--- hs.execute(
---   'open raycast://extensions/maxnyby/raycast-notification/index?arguments=%7B%22title%22%3A%22reloading%22%7D')
