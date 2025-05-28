@@ -49,7 +49,13 @@
               {
                 "description": "Toggle Hyper sublayer o",
                 "type": "basic",
-                "conditions": [],
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_s",
+                    "value": 0
+                  }
+                ],
                 "from": {
                   "key_code": "o",
                   "modifiers": {
@@ -64,6 +70,7 @@
                 "to": [
                   {
                     "set_variable": {
+                      "name": "hyper_sublayer_o",
                       "value": 1
                     }
                   }
@@ -71,16 +78,24 @@
                 "to_after_key_up": [
                   {
                     "set_variable": {
+                      "name": "hyper_sublayer_o",
                       "value": 0
                     }
                   }
                 ]
               },
               {
+                "description": "Open -a 'Mail.app'",
+                "to": [
+                  {
+                    "shell_command": "open -a 'Mail.app'"
+                  }
+                ],
                 "type": "basic",
                 "conditions": [
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_o",
                     "value": 1
                   }
                 ],
@@ -104,7 +119,13 @@
               {
                 "description": "Toggle Hyper sublayer s",
                 "type": "basic",
-                "conditions": [],
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_o",
+                    "value": 0
+                  }
+                ],
                 "from": {
                   "key_code": "s",
                   "modifiers": {
@@ -119,6 +140,7 @@
                 "to": [
                   {
                     "set_variable": {
+                      "name": "hyper_sublayer_s",
                       "value": 1
                     }
                   }
@@ -126,16 +148,24 @@
                 "to_after_key_up": [
                   {
                     "set_variable": {
+                      "name": "hyper_sublayer_s",
                       "value": 0
                     }
                   }
                 ]
               },
               {
+                "description": "Open raycast://extensions/raycast/system/toggle-system-appearance",
+                "to": [
+                  {
+                    "shell_command": "open raycast://extensions/raycast/system/toggle-system-appearance"
+                  }
+                ],
                 "type": "basic",
                 "conditions": [
                   {
                     "type": "variable_if",
+                    "name": "hyper_sublayer_s",
                     "value": 1
                   }
                 ],
