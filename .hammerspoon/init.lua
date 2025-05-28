@@ -6,11 +6,11 @@ hs.loadSpoon('enter')
 hs.loadSpoon('clear')
 hs.loadSpoon('Hammerflow')
 spoon.Hammerflow.loadFirstValidTomlFile({
-  "flow.toml",
+  'flow.toml',
 })
 
 if spoon.Hammerflow.auto_reload then
-  hs.loadSpoon("ReloadConfiguration")
+  hs.loadSpoon('ReloadConfiguration')
   spoon.ReloadConfiguration:start()
 end
 
