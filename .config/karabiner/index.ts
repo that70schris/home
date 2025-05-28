@@ -49,7 +49,7 @@ writeFileSync(
                 },
                 s: {
                   backslash:
-                    `raycast://extensions/raycast/system/toggle-system-appearance`
+                    'raycast://extensions/raycast/system/toggle-system-appearance'
                       .open,
                 },
               }.sublayers,
