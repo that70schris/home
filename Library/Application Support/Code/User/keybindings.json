@@ -891,5 +891,10 @@
   {
     "key": "cmd+k s",
     "command": "-workbench.action.files.saveWithoutFormatting"
+  },
+  {
+    "key": "escape",
+    "command": "workbench.action.closePanel",
+    "when": "panelVisible"
   }
 ]
