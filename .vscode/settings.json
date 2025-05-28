@@ -19,6 +19,7 @@
   ],
   "runOnSave.commands": [
     {
+      "clearOutput": true,
       "command": "code-runner.run",
       "match": "karabiner/index.ts",
       "runIn": "vscode"
