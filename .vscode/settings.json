@@ -17,6 +17,13 @@
     "spoon",
     "hs",
   ],
+  "runOnSave.commands": [
+    {
+      "command": "code-runner.run",
+      "match": "karabiner/index.ts",
+      "runIn": "vscode"
+    }
+  ],
   "search.useIgnoreFiles": true,
   "workbench.colorCustomizations": {
     "statusBar.background": "#77ff88",
