@@ -5,7 +5,8 @@
   "files.associations": {
     ".gitignore*": "ignore",
     "abbreviations": "shellscript",
-    "aliases": "shellscript"
+    "aliases": "shellscript",
+    "*.css": "scss"
   },
   "github-actions.workflows.pinned.workflows": [
     ".github/workflows/publish.yml"
