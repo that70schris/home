@@ -16,3 +16,5 @@
 !.vimrc
 !.zshrc
 !Brewfile
+!package.json
+!pnpm-lock.yaml
