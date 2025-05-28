@@ -1,5 +1,4 @@
 hs.allowAppleScript(true)
-
 hs.loadSpoon('clear')
 hs.loadSpoon('enter')
 hs.loadSpoon('escape')
