@@ -1,0 +1,48 @@
+[init]
+  defaultBranch = main
+
+[core]
+  editor = vim
+
+[pull]
+  rebase = true
+
+[diff]
+	tool = Kaleidoscope
+  guitool = Kaleidoscope
+[difftool]
+  prompt = false
+  guiDefault = true
+  trustExitCode = true
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path $MERGED -- $LOCAL $REMOTE
+[difftool "vscode"]
+  cmd = code -n --wait --diff $LOCAL $REMOTE
+
+[merge]
+  tool = Kaleidoscope
+  guitool = Kaleidoscope
+[mergetool]
+  keepBackup = false
+  hideResolved = true
+  prompt = false
+  trustEx
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output $MERGED --base $BASE -- $LOCAL --snapshot $REMOTE --snapshot
+  trustExitCode = true
+[mergetool "vscode"]
+  cmd = code -n --wait $MERGED
+  trustExitCode = true
+
+[alias]
+  showtool = "!show() { c=$(git rev-parse ${*:-HEAD}); git difftool $c~ $c; }; show $1"
+[credential]
+  helper = osxkeychain
+
+[includeIf "gitdir:~/"]
+  path = ~/.gitconfig.chris
+
+[includeIf "gitdir:~/jgw/"]
+  path = ~/jgw/.gitconfig
+
+
