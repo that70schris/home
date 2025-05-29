@@ -10,4 +10,4 @@
 
 export HOMEBREW_BUNDLE_FILE=~/Brewfile
 brew bundle dump --force
-echo "bottled"
+echo 'bottled'
