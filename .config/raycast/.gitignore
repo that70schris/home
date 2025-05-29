@@ -1,3 +1,4 @@
-extensions/
-scripts/commands/
-config.json
+/*
+
+!.gitignore*
+!scripts/

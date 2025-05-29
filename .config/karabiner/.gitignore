@@ -1,2 +1,6 @@
-automatic_backups/
-assets/
+/*
+
+!.gitignore
+!*.json
+!*.ts
+!*.ya?ml
