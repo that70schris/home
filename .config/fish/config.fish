@@ -18,7 +18,6 @@ else
   abbr alert alerter
   abbr amend git commit --amend
   abbr ammend git commit -a --amend --no-edit
-  abbr bottle brew bundle dump --force
   abbr c gcloud
   abbr check git checkout
   abbr clean git clean -fdx
