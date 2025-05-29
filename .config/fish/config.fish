@@ -15,13 +15,11 @@ else
 
   abbr abort git rebase --abort
   abbr add git add
-  abbr alert alerter
   abbr amend git commit --amend
   abbr ammend git commit -a --amend --no-edit
   abbr c gcloud
   abbr check git checkout
   abbr clean git clean -fdx
-  abbr clone git clone
   abbr cloud gcloud
   abbr commit git commit -am
   abbr d docker
@@ -48,7 +46,6 @@ else
   abbr roots 'git log --pretty=format:"%h %an %ar: %s" --graph'
   abbr show git showtool
   abbr skip git rebase --skip
-  abbr st speedtest
   abbr stash git stash
   abbr tool git mergetool
   abbr trim git branch -D
