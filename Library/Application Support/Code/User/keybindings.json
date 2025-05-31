@@ -895,6 +895,6 @@
   {
     "key": "escape",
     "command": "workbench.action.closePanel",
-    "when": "panelVisible"
+    "when": "panelVisible && !findWidgetVisible && !messageVisible && !dropWidgetVisible && !cancellableOperation && !editorHoverVisible"
   }
 ]
