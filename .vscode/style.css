@@ -35,6 +35,10 @@
   &.dirty a {
     color: orange !important;
   }
+
+  .tab-actions {
+    display: none !important;
+  }
 }
 
 .view-lines,
