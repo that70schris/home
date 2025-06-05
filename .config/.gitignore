@@ -2,6 +2,7 @@
 
 !.gitignore*
 !*.toml
+!aliases
 !fish/
 !gh/
 !htop/
