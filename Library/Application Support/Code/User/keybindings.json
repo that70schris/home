@@ -895,6 +895,6 @@
   {
     "key": "escape",
     "command": "workbench.action.togglePanel",
-    "when": "!hint !parameterHintsVisible && !inlineSuggestionVisible && !cancellableOperation && !pasteWidgetVisible && !exceptionWidgetVisible && !breakpointWidgetVisible && !findWidgetVisible && !messageVisible && !dropWidgetVisible && !editorHoverVisible && !suggestWidgetVisible"
+    "when": "!textCompareEditorVisible && !notificationCenterVisible && !notificationToastsVisible && !standaloneColorPickerVisible && !codeActionMenuVisible && !inlineEditIsVisible && !parameterHintsVisible && !inlineSuggestionVisible && !cancellableOperation && !pasteWidgetVisible && !exceptionWidgetVisible && !breakpointWidgetVisible && !findWidgetVisible && !messageVisible && !dropWidgetVisible && !editorHoverVisible && !suggestWidgetVisible"
   }
 ]

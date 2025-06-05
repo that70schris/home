@@ -1,0 +1,41 @@
+[
+  {
+    "groups" : [
+      {
+        "color" : "#F2A23C",
+        "id" : "B4970157-5995-4BAA-B266-238B9C9C53CA",
+        "name" : "Applications",
+        "symbol" : "app.dashed",
+        "workflows" : [
+          {
+            "execution" : "serial",
+            "id" : "404D1E8F-756F-4275-A7CA-1F30173A87F0",
+            "name" : "apps",
+            "trigger" : {
+              "keyboardShortcuts" : {
+                "shortcuts" : [
+                  {
+                    "id" : "C84EE056-AD77-4073-B62D-A5922435FA4F",
+                    "key" : "k",
+                    "modifiers" : [
+                      "$",
+                      "^",
+                      "~",
+                      "@",
+                      "r@"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "id" : "5655531B-BA34-4DE7-B279-47E91232C4DD",
+    "name" : "Default Configuration",
+    "userModes" : [
+
+    ]
+  }
+]
