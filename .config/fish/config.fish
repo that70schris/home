@@ -1,5 +1,14 @@
 /opt/homebrew/bin/brew shellenv | source
 starship init fish | source
+functions -c fish_prompt starship
+function fish_prompt
+  starship
+  if test $TERM_PROGRAM = 'WarpTerminal'
+    echo ''
+  else
+    echo '\n❯ '
+  end
+end
 
 if test $TERM_PROGRAM = 'WarpTerminal'
   printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "fish" }}\x9c'
@@ -7,12 +16,6 @@ if test $TERM_PROGRAM = 'WarpTerminal'
 else
 
   alias kubectl=kubecolor
-  functions -c fish_prompt starship
-  function fish_prompt
-    starship
-    echo '\n❯ '
-  end
-
   abbr abort git rebase --abort
   abbr add git add
   abbr amend git commit --amend
