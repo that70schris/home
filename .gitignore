@@ -6,7 +6,6 @@
 !.vscode/
 !.warp/
 !Library/
-!Safari/
 
 !.editorconfig
 !.gitconfig
@@ -20,3 +19,6 @@
 !Brewfile
 !package.json
 !pnpm-lock.yaml
+
+node_modules/
+.DS_Store
