@@ -220,5 +220,7 @@
   "workbench.settings.openDefaultSettings": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.renderIndentGuides": "always",
-  "makefile.configureOnOpen": true
+  "makefile.configureOnOpen": true,
+  "docker.extension.enableComposeLanguageServer": false,
+  "github.copilot.nextEditSuggestions.enabled": true
 }

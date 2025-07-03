@@ -6,6 +6,7 @@
 !.vscode/
 !.warp/
 !Library/
+!Safari/
 
 !.editorconfig
 !.gitconfig
