@@ -3,6 +3,7 @@
 eval $(/opt/homebrew/bin/brew shellenv)
 eval "$(starship init zsh)"
 
+export PATH="$PATH:/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin"
 export HOMEBREW_BUNDLE_FILE=~/Brewfile
 export HOMEBREW_NO_ENV_HINTS=true
 export CLICOLOR=1
