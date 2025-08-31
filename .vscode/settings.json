@@ -4,9 +4,9 @@
   },
   "files.associations": {
     ".gitignore*": "ignore",
+    "*.css": "scss",
     "abbreviations": "shellscript",
-    "aliases": "shellscript",
-    "*.css": "scss"
+    "aliases": "shellscript"
   },
   "github-actions.workflows.pinned.workflows": [
     ".github/workflows/publish.yml"
