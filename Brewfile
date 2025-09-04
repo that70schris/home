@@ -50,6 +50,7 @@ cask "leader-key"
 cask "lens"
 cask "local"
 cask "logi-options+"
+cask "logitech-g-hub"
 cask "microsoft-auto-update"
 cask "microsoft-teams"
 cask "ngrok"
@@ -69,10 +70,13 @@ cask "wifiman"
 cask "zoom"
 mas "1Blocker", id: 1365531024
 mas "CatoClient", id: 1128104033
+mas "ControllerForHomeKit", id: 1198176727
 mas "Copilot", id: 1447330651
 mas "Deliveries", id: 290986013
 mas "Expressions", id: 913158085
 mas "Flighty", id: 1358823008
+mas "HomeControl", id: 1547121417
+mas "Homie", id: 1533590432
 mas "iCircuit", id: 454347770
 mas "Karo Graph", id: 557536642
 mas "monday.com", id: 1298450641
