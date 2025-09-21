@@ -22,6 +22,3 @@
 	path = .hammerspoon/Spoons/Hammerflow.spoon
 	url = https://github.com/saml-dev/Hammerflow.spoon
 
-[submodule "berry"]
-	path = berry
-	url = git@github.com:that70schris/berry.git
