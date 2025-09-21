@@ -24,4 +24,4 @@
 
 [submodule "berry"]
 	path = berry
-	url = https://github.com/that70schris/berry.git
+	url = git@github.com:that70schris/berry.git
