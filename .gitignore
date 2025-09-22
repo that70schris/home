@@ -8,7 +8,6 @@
 !Documents/
 !Library/
 
-!*.public
 !.editorconfig
 !.gitconfig
 !.gitignore
@@ -23,4 +22,5 @@
 !pnpm-lock.yaml
 
 node_modules/
+.localized
 .DS_Store
