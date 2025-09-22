@@ -5,6 +5,7 @@
 !.hammerspoon/
 !.vscode/
 !.warp/
+!Documents/
 !Library/
 
 !*.public
