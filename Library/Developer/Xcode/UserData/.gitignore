@@ -1,5 +1,6 @@
 /*
+!*.public
 
-!.gitignore*
+!.gitignore
 !FontAndColorThemes/
 !KeyBindings/

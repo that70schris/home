@@ -1,5 +1,6 @@
 /*
+!*.public
 
-!.gitignore*
+!.gitignore
 !*.applescript
 !*.sh

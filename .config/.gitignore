@@ -1,6 +1,7 @@
 /*
+!*.public
 
-!.gitignore*
+!.gitignore
 !*.toml
 !aliases
 !fish/

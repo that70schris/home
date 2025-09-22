@@ -1,6 +1,7 @@
 /*
+!*.public
 
-!.gitignore*
+!.gitignore
 !*.json
 !*.ts
 !*.ya?ml

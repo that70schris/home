@@ -1,6 +1,7 @@
 /*
+!*.public
 
-!.gitignore*
+!.gitignore
 !Assistants/
 !Audio/
 !Application\ Support/
