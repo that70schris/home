@@ -1,8 +1,0 @@
-leader_key_mods = 'cmd,alt,ctrl,shift'
-leader_key = 'h'
-show_ui = true
-
-v = [
-  'Visual Studio Code',
-  'VS Code',
-]
