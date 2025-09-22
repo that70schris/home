@@ -22,3 +22,7 @@
 	path = .hammerspoon/Spoons/Hammerflow.spoon
 	url = https://github.com/saml-dev/Hammerflow.spoon
 
+
+[submodule "bonjour"]
+  path = raycast/extensions/bonjour
+  url = git@github.com:that70schris/raycast-extensions-bonjour.git
