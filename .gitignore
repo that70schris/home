@@ -7,6 +7,7 @@
 !.warp/
 !Library/
 
+!*.public
 !.editorconfig
 !.gitconfig
 !.gitignore
