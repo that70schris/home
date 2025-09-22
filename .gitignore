@@ -7,7 +7,7 @@
 !.warp/
 !Library/
 
-!.editorconfig
+# !.editorconfig
 !.gitconfig
 !.gitignore
 !.gitleaks.toml
