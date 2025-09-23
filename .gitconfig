@@ -7,6 +7,9 @@
 [pull]
   rebase = true
 
+[advice]
+  addIgnoredFile = false
+
 [diff]
 	tool = Kaleidoscope
   guitool = Kaleidoscope
