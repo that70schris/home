@@ -56,6 +56,7 @@
   },
   "debug.console.wordWrap": false,
   "debug.showBreakpointsInOverviewRuler": true,
+  "docker.extension.enableComposeLanguageServer": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
@@ -125,7 +126,7 @@
     "*htaccess*": "apacheconf",
     "*httpd*": "apacheconf",
     "Makefile.*": "makefile",
-    "nginx.conf": "NGINX",
+    "nginx.conf": "NGINX"
   },
   "files.encoding": "utf8",
   "files.exclude": {
@@ -142,6 +143,7 @@
   "git.openRepositoryInParentFolders": "never",
   "github-actions.workflows.pinned.refresh.enabled": true,
   "github-actions.workflows.pinned.refresh.interval": 10,
+  "github.copilot.nextEditSuggestions.enabled": true,
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.launchpad.indicator.enabled": false,
@@ -155,6 +157,7 @@
   "lldb.launch.expressions": "native",
   "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
   "Lua.window.statusBar": false,
+  "makefile.configureOnOpen": true,
   "nginx-conf-hint.enableStrictCompletion": true,
   "notebook.cellToolbarLocation": {
     "default": "right",
@@ -219,8 +222,5 @@
   "workbench.settings.editor": "json",
   "workbench.settings.openDefaultSettings": false,
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.tree.renderIndentGuides": "always",
-  "makefile.configureOnOpen": true,
-  "docker.extension.enableComposeLanguageServer": false,
-  "github.copilot.nextEditSuggestions.enabled": true
+  "workbench.tree.renderIndentGuides": "always"
 }

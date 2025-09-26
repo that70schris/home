@@ -3,7 +3,6 @@
 
 [core]
   editor = vim
-  excludesfile = /Users/chris/.gitignore.global
 
 [pull]
   rebase = true
