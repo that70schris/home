@@ -1,3 +1,5 @@
+!assets/
+
 !*.json
 !*.ts
 !*.ya?ml
