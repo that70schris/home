@@ -79,6 +79,7 @@ mas "HomeControl", id: 1547121417
 mas "Homie", id: 1533590432
 mas "iCircuit", id: 454347770
 mas "Karo Graph", id: 557536642
+mas "Mapper", id: 1589391989
 mas "monday.com", id: 1298450641
 mas "Prime Video", id: 545519333
 mas "WiFi Explorer", id: 494803304
@@ -91,6 +92,7 @@ vscode "bmewburn.vscode-intelephense-client"
 vscode "britesnow.vscode-toggle-quotes"
 vscode "dbaeumer.vscode-eslint"
 vscode "deerawan.vscode-dash"
+vscode "dnicolson.binary-plist"
 vscode "docker.docker"
 vscode "editorconfig.editorconfig"
 vscode "esbenp.prettier-vscode"
