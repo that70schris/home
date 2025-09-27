@@ -223,4 +223,18 @@
   "workbench.settings.openDefaultSettings": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.renderIndentGuides": "always",
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
 }
