@@ -6,11 +6,6 @@ export default defineConfig([
   js.configs.recommended,
   ts.configs.recommended,
   {
-    files: [
-      '**/*.[cm][jt]s',
-      '**/*.[jt]sx',
-      '**/*.[jt]s',
-    ],
     rules: {
       '@typescript-eslint/no-empty-object-type': 1,
       'array-element-newline': [ 1, 'consistent' ],
