@@ -73,7 +73,6 @@ export default defineConfig([
   },
   {
     rules: {
-      'accessor-pairs': 2,
       'array-callback-return': 1,
       'block-scoped-var': 2,
       'curly': [ 1, 'all' ],
