@@ -1,4 +1,4 @@
-return hs.hotkey.bind({ 'shift' }, 'return', function()
+enter = hs.hotkey.bind({ 'shift' }, 'return', function()
   local window = hs.window.frontmostWindow()
   local application = window:application()
   local id = application:bundleID()
@@ -18,3 +18,5 @@ return hs.hotkey.bind({ 'shift' }, 'return', function()
     enter:enable()
   end)()
 end)
+
+return enter
