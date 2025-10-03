@@ -95,11 +95,7 @@ export default defineConfig([
       // 'no-unneeded-ternary': 1,
       'no-unreachable-loop': 1,
       'no-unused-labels': 1,
-      'no-use-before-define': [ 1, {
-        functions: true,
-        variables: true,
-        classes: false,
-      }],
+      'no-use-before-define': 1,
       'no-useless-assignment': 1,
       'no-var': 1,
       // 'no-whitespace-before-property': 1,
