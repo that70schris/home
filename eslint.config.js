@@ -12,15 +12,8 @@ export default defineConfig([
       // turn all stylistic errors into warnings
       ...Object.entries(stylistic.configs.recommended.rules)
         .reduce((result, [ key, value ]) => {
-          let level = 'warn';
-          switch (typeof value) {
-            case 'object':
-              value[0] = level;
-              break;
-            default:
-              value = level;
-              break;
-          }
+          value = [].concat(value);
+          value[0] = 'warn';
 
           return {
             ...result,
