@@ -6,18 +6,18 @@ import ts from 'typescript-eslint';
 export default defineConfig([
   js.configs.recommended,
   ts.configs.recommended,
+  stylistic.configs.recommended,
   {
-    ...stylistic.configs.recommended,
     rules: {
-      ...stylistic.configs.recommended.rules,
       ...Object.entries({
         'array-bracket-newline': [ 1, 'consistent' ],
         'array-bracket-spacing': [ 1, 'always', {
-          singleValue: false,
           objectsInArrays: false,
           arraysInArrays: false,
+          singleValue: false,
         }],
         'array-element-newline': [ 1, 'consistent' ],
+        'arrow-parens': 1,
         'arrow-spacing': [ 1, {
           before: true,
           after: true,
@@ -25,17 +25,14 @@ export default defineConfig([
         'brace-style': [ 1, '1tbs', {
           allowSingleLine: true,
         }],
-
         'comma-dangle': [ 1, 'always-multiline' ],
         'comma-spacing': [ 1, {
           before: false,
           after: true,
         }],
         'comma-style': [ 1, 'last' ],
-
         'computed-property-spacing': [ 1, 'never' ],
-        // 'eol-last': 1,
-
+        'eol-last': 1,
         'function-call-argument-newline': [ 1, 'consistent' ],
         'function-call-spacing': [ 1, 'never' ],
         'function-paren-newline': [ 1, 'consistent' ],
@@ -57,13 +54,21 @@ export default defineConfig([
         'lines-between-class-members': [ 1, 'always', {
           exceptAfterSingleLine: true,
         }],
-
         'new-parens': 1,
         'no-extra-semi': 1,
         'no-extra-parens': [ 1, 'functions' ],
-        // 'no-floating-decimal': 2,
+        'no-floating-decimal': 1,
         'no-multi-spaces': 1,
+        'no-multiple-empty-lines': [ 1, {
+          max: 1,
+        }],
+        'no-trailing-spaces': 1,
+        'quotes': 1,
         'semi': [ 1, 'always' ],
+        'semi-spacing': [ 1, {
+          before: false,
+          after: true,
+        }],
       }).reduce((result, [ key, value ]) => {
         return {
           ...result,
@@ -74,6 +79,7 @@ export default defineConfig([
   },
   {
     rules: {
+      'accessor-pairs': 2,
       'array-callback-return': 1,
       'block-scoped-var': 2,
       'curly': [ 1, 'all' ],
@@ -95,10 +101,6 @@ export default defineConfig([
       'no-implied-eval': 1,
       'no-inner-declarations': 1,
       'no-lonely-if': 1,
-      // 'no-multi-spaces': 1,
-      // 'no-multiple-empty-lines': [ 1, {
-      //   max: 1,
-      // }],
       // 'no-new-func': 2,
       // 'no-new-wrappers': 2,
       // 'no-param-reassign': 2,
@@ -119,7 +121,7 @@ export default defineConfig([
         classes: false,
       }],
       'no-useless-assignment': 1,
-      // 'no-var': 1,
+      'no-var': 1,
       // 'no-whitespace-before-property': 1,
       // 'object-curly-newline': [ 1, {
       //   multiline: true,
@@ -134,13 +136,9 @@ export default defineConfig([
       // 'prefer-arrow-callback': 1,
       // 'prefer-template': 1,
       // 'quote-props': [ 1, 'consistent-as-needed' ],
-      // 'quotes': [ 1, 'single' ],
+
       // 'rest-spread-spacing': [ 1, 'never' ],
       'require-atomic-updates': 1,
-      // 'semi-spacing': [ 1, {
-      //   before: false,
-      //   after: true,
-      // }],
       // 'space-before-blocks': [ 1, 'always' ],
       // 'space-before-function-paren': [ 1, 'never' ],
       // 'space-in-parens': [ 1, 'never' ],

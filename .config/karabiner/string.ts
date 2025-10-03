@@ -34,3 +34,4 @@ Object.defineProperties(String.prototype, {
     },
   },
 });
+
