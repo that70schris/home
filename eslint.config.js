@@ -82,7 +82,7 @@ export default defineConfig([
       'no-console': 1,
       'no-constructor-return': 1,
       'no-duplicate-imports': 1,
-      'no-else-return': [ 1, { allowElseIf: false }],
+      'no-else-return': 1,
       'no-eval': 1,
       'no-extra-bind': 1,
       'no-extra-boolean-cast': 1,
