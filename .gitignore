@@ -19,5 +19,6 @@
 !.vimrc
 !.zshrc
 !Brewfile
+!eslint.config.*s
 !package.json
 !pnpm-lock.yaml
