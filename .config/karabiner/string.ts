@@ -4,7 +4,6 @@ declare global {
   interface String {
     get app(): LayerCommand;
     get open(): LayerCommand;
-
     get variable(): string;
   }
 }
