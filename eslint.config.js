@@ -12,6 +12,7 @@ export default defineConfig([
       '**/*.[jt]s',
     ],
     rules: {
+      '@typescript-eslint/no-empty-object-type': 1,
       'array-element-newline': [ 1, 'consistent' ],
       'array-bracket-newline': [ 1, 'consistent' ],
       'array-bracket-spacing': [ 1, 'always', {
@@ -80,6 +81,7 @@ export default defineConfig([
         allowElseIf: false,
       }],
       'no-empty-character-class': 2,
+      // 'no-empty-object-type': 1,
       'no-eval': [ 1, {
         allowIndirect: false,
       }],
