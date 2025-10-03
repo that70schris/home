@@ -9,6 +9,7 @@ export default defineConfig([
   stylistic.configs.recommended,
   {
     rules: Object.entries({
+
       // turn all stylistic errors into warnings
       ...Object.entries(stylistic.configs.recommended.rules)
         .reduce((result, [ key, value ]) => ({
@@ -17,6 +18,7 @@ export default defineConfig([
             [].concat(value).slice(1),
           ),
         }), {}),
+
       // override some stylistic rules
       ...Object.entries({
         array_bracket_newline: [ 1, 'consistent' ],
@@ -90,5 +92,6 @@ export default defineConfig([
       ...result,
       [key.replace(/_/g, '-')]: value,
     }), {}),
+
   },
 ]);
