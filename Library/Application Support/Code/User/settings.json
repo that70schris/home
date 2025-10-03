@@ -2,6 +2,9 @@
   "[applescript]": {
     "editor.defaultFormatter": "idleberg.applescript"
   },
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
   "[dockercompose]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
@@ -18,6 +21,9 @@
     "editor.defaultFormatter": "ms-python.python",
     "editor.formatOnType": true
   },
+  "[scss]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
   "[svg]": {
     "editor.defaultFormatter": "jock.svg"
   },
@@ -28,7 +34,6 @@
   "code-runner.clearPreviousOutput": true,
   "code-runner.preserveFocus": true,
   "code-runner.showExecutionMessage": false,
-  "css.validate": false,
   "currentPath.hideFileIcon": true,
   "custom-ui-style.electron": {
     "titleBarStyle": "hidden"
@@ -160,7 +165,7 @@
   "problems.showCurrentInStatus": true,
   "redhat.telemetry.enabled": true,
   "scm.diffDecorationsGutterWidth": 4,
-  "scss.validate": false,
+  "scss.validate": true,
   "search.useGlobalIgnoreFiles": false,
   "search.useIgnoreFiles": true,
   "security.workspace.trust.untrustedFiles": "open",
