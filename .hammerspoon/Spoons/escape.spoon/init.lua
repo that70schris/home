@@ -1,4 +1,4 @@
-escape = hs.hotkey.bind({ 'cmd' }, 'escape', function()
+return hs.hotkey.bind({ 'cmd' }, 'escape', function()
   local window = hs.window.frontmostWindow()
   local application = window:application()
   local id = application:bundleID()
@@ -25,5 +25,3 @@ escape = hs.hotkey.bind({ 'cmd' }, 'escape', function()
     application:hide()
   end)()
 end)
-
-return escape

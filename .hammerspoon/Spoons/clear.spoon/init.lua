@@ -1,4 +1,4 @@
-clear = hs.hotkey.bind({ 'cmd' }, 'k', function()
+return hs.hotkey.bind({ 'cmd' }, 'k', function()
   local window = hs.window.frontmostWindow()
   local application = window:application()
   local id = application:bundleID()
@@ -17,5 +17,3 @@ clear = hs.hotkey.bind({ 'cmd' }, 'k', function()
     clear:enable()
   end)()
 end)
-
-return clear
