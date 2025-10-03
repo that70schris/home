@@ -1,13 +1,12 @@
 {
   "[applescript]": {
-    "editor.defaultFormatter": "idleberg.applescript",
-    "files.encoding": "utf8"
+    "editor.defaultFormatter": "idleberg.applescript"
   },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+  "[dockercompose]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "[lua]": {
     "editor.defaultFormatter": "sumneko.lua"
@@ -53,6 +52,7 @@
   "docker.extension.enableComposeLanguageServer": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.accessibilitySupport": "off",
+  "editor.autoIndent": "advanced",
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
@@ -216,19 +216,5 @@
   "workbench.settings.editor": "json",
   "workbench.settings.openDefaultSettings": false,
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.tree.renderIndentGuides": "always",
-  "[dockercompose]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "advanced",
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": false,
-      "strings": true
-    },
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  }
+  "workbench.tree.renderIndentGuides": "always"
 }

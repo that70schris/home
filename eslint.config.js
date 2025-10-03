@@ -4,22 +4,30 @@ import ts from 'typescript-eslint';
 
 export default defineConfig([
   {
-    files: [ '**/*.[cm][jt]s', '**/*.[jt]sx', '**/*.[jt]s' ],
-    extends: [ js.configs.recommended, ts.configs.recommended ],
+    files: [
+      '**/*.[cm][jt]s',
+      '**/*.[jt]sx',
+      '**/*.[jt]s',
+    ],
+    extends: [
+      js.configs.recommended,
+      ts.configs.recommended,
+    ],
     rules: {
       'array-element-newline': [ 1, 'consistent' ],
       'array-bracket-newline': [ 1, 'consistent' ],
-      'array-bracket-spacing': [
-        1,
-        'always',
-        {
-          singleValue: false,
-          objectsInArrays: false,
-          arraysInArrays: false,
-        },
-      ],
-      'arrow-parens': [ 1, 'as-needed', { requireForBlockBody: true }],
-      'arrow-spacing': [ 1, { before: true, after: true }],
+      'array-bracket-spacing': [ 1, 'always', {
+        singleValue: false,
+        objectsInArrays: false,
+        arraysInArrays: false,
+      }],
+      'arrow-parens': [ 1, 'as-needed', {
+        requireForBlockBody: true,
+      }],
+      'arrow-spacing': [ 1, {
+        before: true,
+        after: true,
+      }],
       'block-scoped-var': 1,
       'block-spacing': [ 1, 'always' ],
       'brace-style': [ 1, '1tbs', { allowSingleLine: true }],
@@ -43,17 +51,14 @@ export default defineConfig([
       ],
       'keyword-spacing': [ 1, { before: true, after: true }],
       'linebreak-style': [ 1, 'unix' ],
-      'lines-between-class-members': [
-        1,
-        'always',
-        { exceptAfterSingleLine: true },
-      ],
-      'new-cap': [
-        1,
-        {
-          capIsNewExceptions: [],
-        },
-      ],
+      'lines-between-class-members': [ 1, 'always', {
+        exceptAfterSingleLine: true,
+      }],
+      'new-cap': [ 1, {
+        capIsNewExceptions: [
+
+        ],
+      }],
       'new-parens': 1,
       'no-bitwise': 1,
       'no-console': 1,
@@ -101,14 +106,18 @@ export default defineConfig([
       'no-unsafe-finally': 0,
       'no-unsafe-negation': 2,
       'no-unused-labels': 1,
-      'no-use-before-define': [
-        1,
-        { functions: true, classes: false, variables: true },
-      ],
+      'no-use-before-define': [ 1, {
+        classes: false,
+        functions: true,
+        variables: true,
+      }],
       'no-var': 1,
       'no-whitespace-before-property': 1,
       'no-with': 1,
-      'object-curly-newline': [ 1, { multiline: true, consistent: true }],
+      'object-curly-newline': [ 1, {
+        multiline: true,
+        consistent: true,
+      }],
       'object-curly-spacing': [ 1, 'always' ],
       'one-var': [ 1, 'never' ],
       'operator-linebreak': [ 1, 'before' ],
