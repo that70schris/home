@@ -11,6 +11,9 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
   "[lua]": {
     "editor.defaultFormatter": "sumneko.lua"
   },
@@ -149,7 +152,6 @@
   "gitlens.statusBar.alignment": "right",
   "gitlens.statusBar.enabled": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "less.validate": false,
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.host": "localhost",
   "liveServer.settings.NoBrowser": true,
@@ -165,7 +167,6 @@
   "problems.showCurrentInStatus": true,
   "redhat.telemetry.enabled": true,
   "scm.diffDecorationsGutterWidth": 4,
-  "scss.validate": true,
   "search.useGlobalIgnoreFiles": false,
   "search.useIgnoreFiles": true,
   "security.workspace.trust.untrustedFiles": "open",
@@ -184,7 +185,6 @@
   },
   "terminal.integrated.fontFamily": "Monaco",
   "terminal.integrated.fontSize": 14,
-  "typescript.tsdk": "./node_modules/typescript/lib",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vim.cursorStylePerMode.visual": "underline",
   "vim.startInInsertMode": false,
