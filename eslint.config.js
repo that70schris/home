@@ -28,32 +28,20 @@ export default defineConfig([
           singleValue: false,
         }],
         'array-element-newline': [ 1, 'consistent' ],
-        'brace-style': [ 1, '1tbs', {
-          allowSingleLine: true,
-        }],
+        'brace-style': [ 1, '1tbs' ],
         'function-call-argument-newline': [ 1, 'consistent' ],
         'function-paren-newline': [ 1, 'consistent' ],
-        'lines-between-class-members': [ 1, 'always', {
-          exceptAfterSingleLine: true,
-        }],
         'no-extra-semi': 1,
         'no-multiple-empty-lines': [ 1, {
+          maxEOF: 0,
           max: 1,
         }],
         'object-curly-newline': [ 1, {
           consistent: true,
           multiline: true,
         }],
-        'operator-linebreak': [ 1, 'before' ],
-        'padded-blocks': [ 1, {
-          blocks: 'never',
-        }],
-        'quote-props': [ 1, 'consistent-as-needed' ],
         'semi': [ 1, 'always' ],
         'space-before-function-paren': [ 1, 'never' ],
-        'space-infix-ops': [ 1, {
-          int32Hint: true,
-        }],
         'switch-colon-spacing': 1,
       }).reduce((result, [ key, value ]) => {
         return {
@@ -73,10 +61,11 @@ export default defineConfig([
       'no-console': 1,
       'no-constructor-return': 1,
       'no-duplicate-imports': 1,
+      'no-empty': [ 1, {
+        allowEmptyCatch: false,
+      }],
       'no-else-return': 1,
       'no-eval': 1,
-      'no-extra-bind': 1,
-      'no-extra-boolean-cast': 1,
       'no-extra-label': 1,
       'no-implied-eval': 1,
       'no-inner-declarations': 1,
@@ -94,7 +83,6 @@ export default defineConfig([
       'no-unmodified-loop-condition': 1,
       'no-unneeded-ternary': 1,
       'no-unreachable-loop': 1,
-      'no-unused-labels': 1,
       'no-use-before-define': 1,
       'no-useless-assignment': 1,
       'no-var': 1,

@@ -27,11 +27,9 @@ Object.defineProperties(String.prototype, {
       return `-a '${this}.app'`.open;
     },
   },
-
   variable: {
     get: function() {
       return `hyper_sublayer_${this}`;
     },
   },
 });
-
