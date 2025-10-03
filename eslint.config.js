@@ -12,12 +12,9 @@ export default defineConfig([
       // turn all stylistic errors into warnings
       ...Object.entries(stylistic.configs.recommended.rules)
         .reduce((result, [ key, value ]) => {
-          value = [].concat(value);
-          value[0] = 'warn';
-
           return {
             ...result,
-            [key]: value,
+            [key]: ['warn'].concat([].concat(value).slice(1)),
           };
         }, {}),
       // override some stylistic rules
