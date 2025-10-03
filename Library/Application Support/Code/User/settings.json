@@ -128,7 +128,8 @@
     "*htaccess*": "apacheconf",
     "*httpd*": "apacheconf",
     "Makefile.*": "makefile",
-    "nginx.conf": "NGINX"
+    "nginx.conf": "NGINX",
+    "pre-commit": "shellscript"
   },
   "files.encoding": "utf8",
   "files.exclude": {
