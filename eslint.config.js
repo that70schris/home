@@ -14,7 +14,9 @@ export default defineConfig([
         .reduce((result, [ key, value ]) => {
           return {
             ...result,
-            [key]: ['warn'].concat([].concat(value).slice(1)),
+            [key]: ['warn'].concat(
+              [].concat(value).slice(1),
+            ),
           };
         }, {}),
       // override some stylistic rules
