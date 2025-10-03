@@ -95,10 +95,10 @@ export default defineConfig([
       'no-implied-eval': 2,
       'no-inner-declarations': 2,
       'no-invalid-regexp': 2,
-      'no-lonely-if': 2,
-      'no-misleading-character-class': 2,
-      'no-multi-spaces': 2,
-      'no-multiple-empty-lines': [ 2, {
+      'no-lonely-if': 1,
+      'no-misleading-character-class': 1,
+      'no-multi-spaces': 1,
+      'no-multiple-empty-lines': [ 1, {
         max: 1,
       }],
       'no-new-func': 2,
