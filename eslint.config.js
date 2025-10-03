@@ -40,6 +40,7 @@ export default defineConfig([
           consistent: true,
           multiline: true,
         }],
+        'quotes': [ 1, 'single' ],
         'semi': [ 1, 'always' ],
         'space-before-function-paren': [ 1, 'never' ],
         'switch-colon-spacing': 1,
