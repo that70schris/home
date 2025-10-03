@@ -7,7 +7,6 @@ export default defineConfig([
   ts.configs.recommended,
   {
     rules: {
-      '@typescript-eslint/no-empty-object-type': 1,
       'array-element-newline': [ 1, 'consistent' ],
       'array-bracket-newline': [ 1, 'consistent' ],
       'array-bracket-spacing': [ 1, 'always', {
