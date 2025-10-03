@@ -6,92 +6,89 @@ import ts from 'typescript-eslint';
 export default defineConfig([
   js.configs.recommended,
   ts.configs.recommended,
+  stylistic.configs.recommended,
   {
-    ...stylistic.configs.recommended,
-    rules: {
+    rules: Object.entries({
       // turn all stylistic errors into warnings
       ...Object.entries(stylistic.configs.recommended.rules)
-        .reduce((result, [ key, value ]) => {
-          return {
-            ...result,
-            [key]: ['warn'].concat(
-              [].concat(value).slice(1),
-            ),
-          };
-        }, {}),
+        .reduce((result, [ key, value ]) => ({
+          ...result,
+          [key]: ['warn'].concat(
+            [].concat(value).slice(1),
+          ),
+        }), {}),
       // override some stylistic rules
       ...Object.entries({
-        'array-bracket-newline': [ 1, 'consistent' ],
-        'array-bracket-spacing': [ 1, 'always', {
+        array_bracket_newline: [ 1, 'consistent' ],
+        array_bracket_spacing: [ 1, 'always', {
           objectsInArrays: false,
           arraysInArrays: false,
           singleValue: false,
         }],
-        'array-element-newline': [ 1, 'consistent' ],
-        'brace-style': [ 1, '1tbs' ],
-        'function-call-argument-newline': [ 1, 'consistent' ],
-        'function-paren-newline': [ 1, 'consistent' ],
-        'no-extra-semi': 1,
-        'no-multiple-empty-lines': [ 1, {
+        array_element_newline: [ 1, 'consistent' ],
+        brace_style: [ 1, '1tbs' ],
+        function_call_argument_newline: [ 1, 'consistent' ],
+        function_paren_newline: [ 1, 'consistent' ],
+        no_extra_semi: 1,
+        no_multiple_empty_lines: [ 1, {
           maxEOF: 0,
           max: 1,
         }],
-        'object-curly-newline': [ 1, {
+        object_curly_newline: [ 1, {
           consistent: true,
           multiline: true,
         }],
-        'quotes': [ 1, 'single' ],
-        'semi': [ 1, 'always' ],
-        'space-before-function-paren': [ 1, 'never' ],
-        'switch-colon-spacing': 1,
-      }).reduce((result, [ key, value ]) => {
-        return {
-          ...result,
-          [`@stylistic/${key}`]: value,
-        };
-      }, {}),
-    },
-  },
-  {
-    rules: {
-      'array-callback-return': 1,
-      'block-scoped-var': 2,
-      'curly': [ 1, 'all' ],
-      'dot-notation': 1,
-      'no-await-in-loop': 1,
-      'no-console': 1,
-      'no-constructor-return': 1,
-      'no-duplicate-imports': 1,
-      'no-empty': [ 1, {
+        quotes: [ 1, 'single' ],
+        semi: [ 1, 'always' ],
+        space_before_function_paren: [ 1, 'never' ],
+        switch_colon_spacing: 1,
+      }).reduce((result, [ key, value ]) => ({
+        ...result,
+        [`@stylistic/${key}`]: value,
+      }), {}),
+
+      // custom rules
+      array_callback_return: 1,
+      block_scoped_var: 2,
+      curly: [ 1, 'all' ],
+      dot_notation: 1,
+      no_await_in_loop: 1,
+      no_console: 1,
+      no_constructor_return: 1,
+      no_duplicate_imports: 1,
+      no_empty: [ 1, {
         allowEmptyCatch: false,
       }],
-      'no-else-return': 1,
-      'no-eval': 1,
-      'no-extra-label': 1,
-      'no-implied-eval': 1,
-      'no-inner-declarations': 1,
-      'no-lonely-if': 1,
-      'no-new-func': 1,
-      'no-new-wrappers': 1,
-      'no-param-reassign': 1,
-      'no-promise-executor-return': 1,
-      'no-script-url': 1,
-      'no-self-compare': 1,
-      'no-template-curly-in-string': 1,
-      'no-throw-literal': 1,
-      'no-unassigned-vars': 1,
-      'no-undef-init': 1,
-      'no-unmodified-loop-condition': 1,
-      'no-unneeded-ternary': 1,
-      'no-unreachable-loop': 1,
-      'no-use-before-define': 1,
-      'no-useless-assignment': 1,
-      'no-var': 1,
-      'one-var': [ 1, 'never' ],
-      'prefer-arrow-callback': 1,
-      'prefer-template': 1,
-      'require-atomic-updates': 1,
-      'yoda': 1,
-    },
+      no_else_return: 1,
+      no_eval: 1,
+      no_extra_label: 1,
+      no_implied_eval: 1,
+      no_inner_declarations: 1,
+      no_lonely_if: 1,
+      no_new_func: 1,
+      no_new_wrappers: 1,
+      no_param_reassign: 1,
+      no_promise_executor_return: 1,
+      no_script_url: 1,
+      no_self_compare: 1,
+      no_template_curly_in_string: 1,
+      no_throw_literal: 1,
+      no_unassigned_vars: 1,
+      no_undef_init: 1,
+      no_unmodified_loop_condition: 1,
+      no_unneeded_ternary: 1,
+      no_unreachable_loop: 1,
+      no_use_before_define: 1,
+      no_useless_assignment: 1,
+      no_var: 1,
+      one_var: [ 1, 'never' ],
+      prefer_arrow_callback: 1,
+      prefer_template: 1,
+      require_atomic_updates: 1,
+      yoda: 1,
+    }).reduce((result, [ key, value ]) => ({
+      ...result,
+      [key.replace(/_/g, '-')]: value,
+    }), {}),
   },
 ]);
