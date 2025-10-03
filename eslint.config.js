@@ -6,9 +6,28 @@ import ts from 'typescript-eslint';
 export default defineConfig([
   js.configs.recommended,
   ts.configs.recommended,
-  stylistic.configs.recommended,
   {
+    ...stylistic.configs.recommended,
     rules: {
+      // turn all stylistic errors into warnings
+      ...Object.entries(stylistic.configs.recommended.rules)
+        .reduce((result, [ key, value ]) => {
+          let level = 'warn';
+          switch (typeof value) {
+            case 'object':
+              value[0] = level;
+              break;
+            default:
+              value = level;
+              break;
+          }
+
+          return {
+            ...result,
+            [key]: value,
+          };
+        }, {}),
+      // override some stylistic rules
       ...Object.entries({
         'array-bracket-newline': [ 1, 'consistent' ],
         'array-bracket-spacing': [ 1, 'always', {
@@ -17,58 +36,19 @@ export default defineConfig([
           singleValue: false,
         }],
         'array-element-newline': [ 1, 'consistent' ],
-        'arrow-parens': 1,
-        'arrow-spacing': [ 1, {
-          before: true,
-          after: true,
-        }],
         'brace-style': [ 1, '1tbs', {
           allowSingleLine: true,
         }],
-        'comma-dangle': [ 1, 'always-multiline' ],
-        'comma-spacing': [ 1, {
-          before: false,
-          after: true,
-        }],
-        'comma-style': [ 1, 'last' ],
-        'computed-property-spacing': [ 1, 'never' ],
-        'eol-last': 1,
         'function-call-argument-newline': [ 1, 'consistent' ],
-        'function-call-spacing': [ 1, 'never' ],
         'function-paren-newline': [ 1, 'consistent' ],
-        'implicit-arrow-linebreak': [ 1, 'beside' ],
-        'indent': [ 1, 2, {
-          SwitchCase: 1,
-        }],
-        'key-spacing': [ 1, {
-          beforeColon: false,
-          afterColon: true,
-          mode: 'strict',
-        }],
-
-        'keyword-spacing': [ 1, {
-          before: true,
-          after: true,
-        }],
-        'linebreak-style': [ 1, 'unix' ],
         'lines-between-class-members': [ 1, 'always', {
           exceptAfterSingleLine: true,
         }],
-        'new-parens': 1,
         'no-extra-semi': 1,
-        'no-extra-parens': [ 1, 'functions' ],
-        'no-floating-decimal': 1,
-        'no-multi-spaces': 1,
         'no-multiple-empty-lines': [ 1, {
           max: 1,
         }],
-        'no-trailing-spaces': 1,
-        'quotes': 1,
         'semi': [ 1, 'always' ],
-        'semi-spacing': [ 1, {
-          before: false,
-          after: true,
-        }],
       }).reduce((result, [ key, value ]) => {
         return {
           ...result,
