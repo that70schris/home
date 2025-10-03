@@ -3,16 +3,9 @@ import { defineConfig } from 'eslint/config';
 import ts from 'typescript-eslint';
 
 export default defineConfig([
+  js.configs.recommended,
+  ts.configs.recommended,
   {
-    files: [
-      '**/*.[cm][jt]s',
-      '**/*.[jt]sx',
-      '**/*.[jt]s',
-    ],
-    extends: [
-      js.configs.recommended,
-      ts.configs.recommended,
-    ],
     rules: {
       'array-element-newline': [ 1, 'consistent' ],
       'array-bracket-newline': [ 1, 'consistent' ],
