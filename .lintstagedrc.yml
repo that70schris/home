@@ -1,5 +1,5 @@
-./**/*.html: prettier --write
-./**/*.{scss,css}: stylelint --fix
+./**/*.[cm][jt]s: eslint --fix --max-warnings=0
+./**/*.[jt]s: eslint --fix --max-warnings=0
 ./**/*.{yaml,yml}: prettier --write
-./**/*.[cm][jt]s: eslint --fix
-./**/*.[jt]s: eslint --fix
+./**/*.{scss,css}: stylelint --fix
+./**/*.html: prettier --write
