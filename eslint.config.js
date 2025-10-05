@@ -1,6 +1,7 @@
 import js from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 import { defineConfig } from 'eslint/config';
+import globals from 'globals';
 import ts from 'typescript-eslint';
 
 export default defineConfig([
@@ -8,6 +9,11 @@ export default defineConfig([
   ts.configs.recommended,
   stylistic.configs.recommended,
   {
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
     rules: Object.entries({
 
       // turn all stylistic errors into warnings
