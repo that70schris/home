@@ -19,7 +19,7 @@ export default defineConfig([
           ),
         }), {}),
 
-      // custom stylistic rules
+      // custom styles
       ...Object.entries({
         array_bracket_newline: [ 1, 'consistent' ],
         array_bracket_spacing: [ 1, 'always', {
