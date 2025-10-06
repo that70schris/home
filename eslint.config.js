@@ -16,8 +16,8 @@ export default defineConfig([
         ...globals.node,
       },
     },
-    rules: Object.entries({
 
+    rules: Object.entries({
       // turn all stylistic errors into warnings
       ...Object.entries(stylistic.configs.recommended.rules)
         .reduce((result, [ key, value ]) => ({
