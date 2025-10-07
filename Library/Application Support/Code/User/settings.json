@@ -237,5 +237,6 @@
   "workbench.settings.editor": "json",
   "workbench.settings.openDefaultSettings": false,
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.tree.renderIndentGuides": "always",
+  "docker.extension.dockerEngineAvailabilityPrompt": false
 }
