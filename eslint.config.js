@@ -5,9 +5,9 @@ import globals from 'globals';
 import ts from 'typescript-eslint';
 
 export default defineConfig([
+  stylistic.configs.recommended,
   js.configs.recommended,
   ts.configs.recommended,
-  stylistic.configs.recommended,
   {
     languageOptions: {
       globals: {
