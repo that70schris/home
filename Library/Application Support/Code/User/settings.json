@@ -72,6 +72,7 @@
   },
   "debug.console.wordWrap": false,
   "debug.showBreakpointsInOverviewRuler": true,
+  "docker.extension.dockerEngineAvailabilityPrompt": false,
   "docker.extension.enableComposeLanguageServer": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.accessibilitySupport": "off",
@@ -238,5 +239,5 @@
   "workbench.settings.openDefaultSettings": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.renderIndentGuides": "always",
-  "docker.extension.dockerEngineAvailabilityPrompt": false
+  "lldb.suppressUpdateNotifications": true,
 }
