@@ -90,7 +90,7 @@
   "editor.dragAndDrop": false,
   "editor.emptySelectionClipboard": false,
   "editor.find.addExtraSpaceOnTop": false,
-  "editor.folding": false,
+  "editor.folding": true,
   "editor.fontFamily": "Monaco",
   "editor.fontLigatures": false,
   "editor.fontSize": 14,
