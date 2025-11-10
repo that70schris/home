@@ -1,6 +1,5 @@
 tap "hidetatz/tap"
 brew "autoenv"
-brew "composer"
 brew "ctop"
 brew "dash-shell"
 brew "node"
@@ -72,7 +71,6 @@ cask "warp"
 cask "wifiman"
 cask "zoom"
 mas "1Blocker", id: 1365531024
-mas "CatoClient", id: 1128104033
 mas "ControllerForHomeKit", id: 1198176727
 mas "Copilot", id: 1447330651
 mas "Deliveries", id: 290986013
@@ -83,7 +81,6 @@ mas "Homie", id: 1533590432
 mas "iCircuit", id: 454347770
 mas "Karo Graph", id: 557536642
 mas "Mapper", id: 1589391989
-mas "monday.com", id: 1298450641
 mas "Prime Video", id: 545519333
 mas "WiFi Explorer", id: 494803304
 mas "Xcode", id: 497799835
