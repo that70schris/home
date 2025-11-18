@@ -8,28 +8,30 @@ declare global {
   }
 }
 
-Object.defineProperties(String.prototype, {
-  open: {
-    get: function() {
-      return {
-        description: `Open ${this}`,
-        to: [
-          {
-            shell_command: `open ${this}`,
-          },
-        ],
-      };
+Object.defineProperties(
+  String.prototype, {
+    open: {
+      get: function() {
+        return {
+          description: `Open ${this}`,
+          to: [
+            {
+              shell_command: `open ${this}`,
+            },
+          ],
+        };
+      },
     },
-  },
 
-  app: {
-    get: function() {
-      return `-a '${this}.app'`.open;
+    app: {
+      get: function() {
+        return `-a '${this}.app'`.open;
+      },
+    },
+    variable: {
+      get: function() {
+        return `hyper_sublayer_${this}`;
+      },
     },
   },
-  variable: {
-    get: function() {
-      return `hyper_sublayer_${this}`;
-    },
-  },
-});
+);
