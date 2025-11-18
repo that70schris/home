@@ -14,6 +14,7 @@ export class KubernetesResource {
   image = this.name;
   container_port = 80;
   service_port?: number;
+  internal = false;
   health_path = '/';
   replicas = 1;
 

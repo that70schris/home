@@ -16,8 +16,7 @@
     "@pulumi/kubernetes": "4.24.0",
     "@pulumi/pulumi": "3.207.0",
     "globals": "16.5.0",
-    "lodash": "4.17.21",
-    "tsx": "4.20.6"
+    "lodash": "4.17.21"
   },
   "scripts": {
     "prepare": "husky"

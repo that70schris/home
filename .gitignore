@@ -1,16 +1,18 @@
 *
 
-!.config/
-!.github/
-!.hammerspoon/
+!/.config/
+!/.github/
+!/.hammerspoon/
+!/.pnpm/
+!/Documents/
+!/Library/
+!/Public/
+!/cloud/
+!/shared/
+
 !.husky/
 !.vscode/
 !.warp/
-!Documents/
-!Library/
-!Public/
-!cloud/
-!shared/
 
 !.editorconfig
 !.gitconfig
@@ -23,7 +25,9 @@
 !.vimrc
 !.zshrc
 !Brewfile
+!Makefile
 !package.json
+!pnpm-lock.yaml
 !Pulumi.y*ml
 
 !*.config.*

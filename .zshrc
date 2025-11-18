@@ -6,7 +6,7 @@ eval "$(starship init zsh)"
 export PATH="$PATH:/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin"
 export HOMEBREW_BUNDLE_FILE=~/Brewfile
 export HOMEBREW_NO_ENV_HINTS=true
-export PNPM_HOME='~/Library/pnpm'
+export PNPM_HOME="${HOME}/.pnpm"
 export PATH="$PATH:$PNPM_HOME"
 export PULUMI_HOME=.pulumi
 export CLICOLOR=1
