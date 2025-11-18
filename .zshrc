@@ -3,15 +3,12 @@
 eval $(/opt/homebrew/bin/brew shellenv)
 eval "$(starship init zsh)"
 
-export PNPM_HOME="/Users/chris/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-
 export PATH="$PATH:/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin"
 export HOMEBREW_BUNDLE_FILE=~/Brewfile
 export HOMEBREW_NO_ENV_HINTS=true
+export PNPM_HOME='~/Library/pnpm'
+export PATH="$PATH:$PNPM_HOME"
+export PULUMI_HOME=.pulumi
 export CLICOLOR=1
 alias kubectl='kubecolor'
 setopt autocd

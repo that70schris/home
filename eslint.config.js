@@ -21,6 +21,7 @@ export default defineConfig([
 
       // custom typescript
       ...Object.entries({
+        no_explicit_any: 0,
         no_unused_expressions: 0,
       }).reduce((result, [ key, value ]) => ({
         ...result,
@@ -72,6 +73,7 @@ export default defineConfig([
       dot_notation: 1,
       no_await_in_loop: 1,
       no_console: 1,
+      no_case_declarations: 0,
       no_constructor_return: 1,
       no_duplicate_imports: 1,
       no_empty: [ 1, {

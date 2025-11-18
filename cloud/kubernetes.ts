@@ -9,20 +9,13 @@ import { once } from '../shared/decorators';
 import { Port } from './port';
 
 export class KubernetesResource {
-  static group?: string;
   metric?: input.autoscaling.v2.MetricIdentifier;
   name = this.constructor.name.toLowerCase();
   image = this.name;
-  query?: string;
-  internal = false;
   container_port = 80;
-  metrics_port = 5099;
   service_port?: number;
-  stats = false;
   health_path = '/';
   replicas = 1;
-  maxReplicas = 100;
-  maxLoad?: number;
 
   get metadata(): input.meta.v1.ObjectMeta {
     return {
