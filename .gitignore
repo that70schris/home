@@ -1,6 +1,5 @@
 *
 
-!.cloud/
 !.config/
 !.github/
 !.hammerspoon/
@@ -10,6 +9,7 @@
 !Documents/
 !Library/
 !Public/
+!cloud/
 
 !.editorconfig
 !.gitconfig
@@ -21,8 +21,9 @@
 !.npmrc
 !.vimrc
 !.zshrc
-!*.config.*
-!*.ts
 !Brewfile
 !package.json
-!pnpm-lock.yaml
+!Pulumi.y*ml
+
+!*.config.*
+!*.ts

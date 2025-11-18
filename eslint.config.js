@@ -18,6 +18,15 @@ export default defineConfig([
     },
 
     rules: Object.entries({
+
+      // custom typescript
+      ...Object.entries({
+        no_unused_expressions: 0,
+      }).reduce((result, [ key, value ]) => ({
+        ...result,
+        [`@typescript-eslint/${key}`]: value,
+      }), {}),
+
       // turn all stylistic errors into warnings
       ...Object.entries(stylistic.configs.recommended.rules)
         .reduce((result, [ key, value ]) => ({
@@ -80,6 +89,7 @@ export default defineConfig([
       no_promise_executor_return: 1,
       no_script_url: 1,
       no_self_compare: 1,
+      no_unused_expressions: 0,
       no_template_curly_in_string: 1,
       no_throw_literal: 1,
       no_unassigned_vars: 1,
@@ -95,6 +105,7 @@ export default defineConfig([
       prefer_template: 1,
       require_atomic_updates: 1,
       yoda: 1,
+
     }).reduce((result, [ key, value ]) => ({
       ...result,
       [key.replace(/_/g, '-')]: value,

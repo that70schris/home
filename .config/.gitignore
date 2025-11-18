@@ -1,4 +1,3 @@
-!*.toml
 !aliases
 !fish/
 !gh/
@@ -9,3 +8,5 @@
 !raycast/
 !zed/
 !zsh/
+
+!*.toml
