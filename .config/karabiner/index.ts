@@ -17,34 +17,28 @@ writeFileSync(
         rules: [
           {
             description: 'Hyper Key (⌃⌥⇧⌘)',
-            manipulators: [
-              {
-                description: 'Caps Lock -> Hyper Key',
-                from: {
-                  key_code: 'caps_lock',
-                  modifiers: {
-                    optional: ['any'],
-                  },
+            manipulators: [{
+              type: 'basic',
+              description: 'Caps Lock -> Hyper Key',
+              from: {
+                key_code: 'caps_lock',
+                modifiers: {
+                  optional: ['any'],
                 },
-                to: [
-                  {
-                    key_code: 'right_command',
-                    modifiers: [
-                      'command',
-                      'control',
-                      'option',
-                      'shift',
-                    ],
-                  },
-                ],
-                to_if_alone: [
-                  {
-                    key_code: 'escape',
-                  },
-                ],
-                type: 'basic',
               },
-            ],
+              to: [{
+                key_code: 'right_command',
+                modifiers: [
+                  'command',
+                  'control',
+                  'option',
+                  'shift',
+                ],
+              }],
+              to_if_alone: [{
+                key_code: 'escape',
+              }],
+            }],
           },
           ...{
             o: {
