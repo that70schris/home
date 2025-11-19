@@ -26,18 +26,6 @@ export class Twingate extends TwingateResource {
     connectorId: this.connector.id,
   });
 
-  static groups = {
-    everyone: 'R3JvdXA6NjQxMTQ=',
-    engineers: 'R3JvdXA6NzA3Mzc=',
-    operators: 'R3JvdXA6NzMxODY=',
-    contractors: 'R3JvdXA6NzYzMzk=',
-    qa: 'R3JvdXA6NzI3ODA=',
-  };
-
-  static services = {
-    github: 'U2VydmljZUFjY291bnQ6MmRkOTFmMDctYTcyNi00ZWU1LTllMDgtNzEwZmM0ZGE4MzQ0',
-  };
-
   constructor(
     public $name: string,
     args: JGWTwingateResourceArgs,
