@@ -12,15 +12,16 @@ interface JGWTwingateResourceArgs extends Omit<TwingateResourceArgs,
 }
 
 export class Twingate extends TwingateResource {
-  static config = new Config('twingate');
+  static config: any = new Config('twingate');
+  static network = this.config.get('network');
 
-  static network = new TwingateRemoteNetwork('main', {
-    name: this.config.get('network'),
+  static remote = new TwingateRemoteNetwork('main', {
     location: 'ON_PREMISE',
+    name: 'local',
   });
 
   static connector = new TwingateConnector('main', {
-    remoteNetworkId: this.network.id,
+    remoteNetworkId: this.remote.id,
     name: 'main',
   });
 
@@ -33,7 +34,7 @@ export class Twingate extends TwingateResource {
     args: JGWTwingateResourceArgs,
     opts?: CustomResourceOptions,
     defaults: TwingateResourceArgs | any = {
-      remoteNetworkId: Twingate.network.id,
+      remoteNetworkId: Twingate.remote.id,
       isBrowserShortcutEnabled: false,
       name: args.address,
       protocols: {

@@ -11,7 +11,7 @@ new Chart('twingate', {
   chart: 'connector',
   values: {
     connector: {
-      network: Twingate.network.name,
+      network: Twingate.network,
       accessToken: Twingate.tokens.accessToken,
       refreshToken: Twingate.tokens.refreshToken,
     },
