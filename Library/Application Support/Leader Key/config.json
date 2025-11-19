@@ -1,0 +1,34 @@
+{
+  "actions" : [
+    {
+      "actions" : [
+        {
+          "iconPath" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app",
+          "key" : "s",
+          "type" : "application",
+          "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+        },
+        {
+          "iconPath" : "/System/Applications/Mail.app",
+          "key" : "e",
+          "type" : "application",
+          "value" : "/System/Applications/Mail.app"
+        },
+        {
+          "key" : "i",
+          "type" : "application",
+          "value" : "/System/Applications/Music.app"
+        },
+        {
+          "iconPath" : "/System/Applications/Messages.app",
+          "key" : "m",
+          "type" : "application",
+          "value" : "/System/Applications/Messages.app"
+        }
+      ],
+      "key" : "o",
+      "type" : "group"
+    }
+  ],
+  "type" : "group"
+}
