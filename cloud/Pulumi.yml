@@ -1,2 +1,4 @@
 runtime: nodejs
 name: main
+config:
+  twingate:network: arcade

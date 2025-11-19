@@ -266,4 +266,21 @@ export class KubernetesResource {
       ],
     });
   }
+
+  // @once
+  // get ingress() {
+  //   return new _Ingress(this.name, {
+  //     metadata: this.metadata,
+  //     spec: {
+  //       rules: [
+  //         {
+  //           http: {
+
+  //             paths:
+  //           }
+  //         }
+  //       ]
+  //     }
+  //   });
+  // }
 }

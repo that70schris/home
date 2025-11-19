@@ -58,6 +58,9 @@ export default defineConfig([
           consistent: true,
           multiline: true,
         }],
+        operator_linebreak: [ 1, 'before', {
+          overrides: { '=': 'after' },
+        }],
         semi: [ 1, 'always' ],
         space_before_function_paren: [ 1, 'never' ],
         switch_colon_spacing: 1,
