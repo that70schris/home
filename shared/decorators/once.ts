@@ -1,32 +1,21 @@
-export function once(target: any, name: any, {
-  get: getter, enumerable, configurable,
-  set: setter,
-}: PropertyDescriptor = {}): any {
-  // console.log(target, name);
-  if (!getter) {
-    throw new Error(`@once can't be used with a property (${target.constructor.name}.${name})`);
+export function once(target: any, metadata: any): any {
+  switch (metadata.kind) {
+    case 'getter':
+      let called = false;
+      let value: any;
+
+      metadata.access.get = function(this: any): any {
+        if (!called) {
+          value = metadata.access.get.call(this);
+          called = true;
+        }
+
+        return value;
+      };
+
+      return target;
+
+    default:
+      throw new Error(`@once can't be used on ${target.kind} (${target.constructor.name})`);
   }
-
-  if (setter) {
-    throw new Error(`@once can't be used with a setter (${target.constructor.name}.${name})`);
-  }
-
-  function set(that: any, value: any) {
-    Object.defineProperty(that, name, {
-      enumerable,
-      configurable,
-      value,
-    });
-
-    return value;
-  }
-
-  return {
-    get() {
-      return set(this, getter.call(this));
-    },
-    set(value: any) {
-      set(this, value);
-    },
-  };
 }

@@ -69,10 +69,9 @@ export default defineConfig([
       // custom rules
       array_callback_return: 1,
       block_scoped_var: 2,
-      curly: [ 1, 'all' ],
+      curly: [ 1, 'multi' ],
       dot_notation: 1,
       no_await_in_loop: 1,
-      no_console: 1,
       no_case_declarations: 0,
       no_constructor_return: 1,
       no_duplicate_imports: 1,
