@@ -240,4 +240,5 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.renderIndentGuides": "always",
   "lldb.suppressUpdateNotifications": true,
+  "workbench.editor.empty.hint": "hidden",
 }
