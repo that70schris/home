@@ -1,10 +1,8 @@
-import { Address, GlobalAddress } from '@pulumi/gcp/compute';
 import { CustomResource } from '@pulumi/kubernetes/apiextensions';
 import { Ingress, IngressArgs } from '@pulumi/kubernetes/networking/v1';
 import { CustomResourceOptions, Input } from '@pulumi/pulumi';
 import { merge } from 'lodash';
 
-import { Cato } from '../../resources/cato';
 import { _Record } from './record';
 
 interface IngressRule {
@@ -21,26 +19,11 @@ interface _IngressArgs extends IngressArgs {
 }
 
 export class _Ingress extends Ingress {
-  address: Address | GlobalAddress;
-
   constructor(
     public $name: string,
     private args: _IngressArgs,
     opts: CustomResourceOptions,
   ) {
-    const address = args.internal
-      ? new Address($name, {
-          addressType: 'INTERNAL',
-          subnetwork: Cato.subnet.id,
-        }, {
-          parent: opts.parent,
-        })
-      : new GlobalAddress($name, {
-
-        }, {
-          parent: opts.parent,
-        });
-
     const config = !args.internal
       ? new CustomResource($name, {
           apiVersion: 'networking.gke.io/v1beta1',
@@ -77,17 +60,9 @@ export class _Ingress extends Ingress {
           }],
         },
       } as IngressArgs, args),
-      merge(opts, {
-        parent: opts.parent,
-        dependsOn: [].concat(
-          opts.dependsOn,
-        ).concat(args.internal
-          ? JGWNetwork.proxy
-          : []),
-      }),
+      opts,
     );
 
-    this.address = address;
     args.rules.forEach((rule) => {
       new _Record(rule.host, {
         name: rule.host,
