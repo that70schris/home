@@ -1,0 +1,24 @@
+{
+	"__internal__": {
+		"migrations": {
+			"version": "6.5.1"
+		}
+	},
+	"preferences": {
+		"colorTheme": {
+			"matchSystemTheme": true
+		},
+		"downloadBinariesPath": "",
+		"downloadKubectlBinaries": false,
+		"shell": "",
+		"kubectlBinariesPath": "",
+		"helmDriver": "",
+		"editorConfiguration": {
+			"fontFamily": "Monaco"
+		},
+		"terminalConfig": {
+			"fontSize": 14
+		},
+		"updateChannel": "beta"
+	}
+}
