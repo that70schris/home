@@ -22,9 +22,4 @@ new Chart('twingate', {
       },
     },
   },
-}, {
-  dependsOn: [
-    Twingate.network,
-    Twingate.tokens,
-  ],
 });

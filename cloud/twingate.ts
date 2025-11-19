@@ -1,4 +1,4 @@
-import { CustomResourceOptions } from '@pulumi/pulumi';
+import { Config, CustomResourceOptions } from '@pulumi/pulumi';
 import { TwingateConnector, TwingateConnectorTokens, TwingateRemoteNetwork, TwingateResource, TwingateResourceArgs } from '@twingate/pulumi-twingate';
 import { merge } from 'lodash';
 
@@ -12,9 +12,11 @@ interface JGWTwingateResourceArgs extends Omit<TwingateResourceArgs,
 }
 
 export class Twingate extends TwingateResource {
+  static config = new Config('twingate');
+
   static network = new TwingateRemoteNetwork('main', {
+    name: this.config.get('network'),
     location: 'ON_PREMISE',
-    name: 'local',
   });
 
   static connector = new TwingateConnector('main', {
