@@ -2,7 +2,6 @@ import { Plex } from './plex';
 
 import { CustomResource } from '@pulumi/kubernetes/apiextensions';
 import { Chart } from '@pulumi/kubernetes/helm/v4';
-import { _Ingress } from './ingress';
 import { Twingate } from './twingate';
 
 new Chart('twingate', {
@@ -56,43 +55,124 @@ const issuer = new CustomResource('issuer', {
   dependsOn: manager,
 });
 
-new CustomResource('gateway-class', {
-  apiVersion: 'gateway.networking.k8s.io/v1',
-  kind: 'Gateway',
+const gateway_class = new CustomResource('gateway-class', {
+  apiVersion: 'gateway.networking.k8s.io/v1beta1',
+  kind: 'GatewayClass',
+  metadata: {
+    name: 'traefik',
+  },
   spec: {
-    controllerName: 'example.net/gateway-controller',
+    controllerName: 'traefik.io/gateway-controller',
   },
 });
 
-new CustomResource('gateway', {
-  apiVersion: 'gateway.networking.k8s.io/v1',
-  kind: 'Gateway',
+const certificate = new CustomResource('berry', {
+  apiVersion: 'cert-manager.io/v1',
+  kind: 'Certificate',
+  metadata: {
+    name: 'berry',
+  },
   spec: {
-    gatewayClassName: 'nginx',
-    listeners: [
-
+    secretName: 'berry',
+    dnsNames: [
+      'berry.local',
+      'berry',
     ],
+    issuerRef: {
+      name: issuer.metadata.name,
+    },
   },
+}, {
+  dependsOn: issuer,
+  parent: issuer,
 });
 
-new _Ingress('berry', {
-  rules: [
-    new Plex(),
-  ].map((service) => {
-    service.service;
+new Twingate('berry.local', {
+  isBrowserShortcutEnabled: true,
+  address: 'berry.local',
+  ports: [
+    '443',
+  ],
+}, {
+  parent: this,
+});
 
-    return {
-      host: 'berry',
-      alias: `${service.name}.local`,
-      http: {
-        paths: [{
-          path: `/`,
-          pathType: 'Prefix',
-          backend: service.backend,
+const gateway = new CustomResource('gateway', {
+  apiVersion: 'gateway.networking.k8s.io/v1beta1',
+  metadata: {
+    name: 'berry',
+  },
+  kind: 'Gateway',
+  spec: {
+    gatewayClassName: gateway_class.metadata.name,
+    listeners: [{
+      name: 'https',
+      protocol: 'HTTPS',
+      port: 443,
+      tls: {
+        mode: 'Terminate',
+        certificateRefs: [{
+          name: certificate.metadata.name,
         }],
       },
-    };
-  }),
+      allowedRoutes: {
+        namespaces: {
+          from: 'Same',
+        },
+      },
+    }],
+  },
 }, {
-  issuer,
+  dependsOn: gateway_class,
+});
+
+new CustomResource(`Route`, {
+  apiVersion: 'gateway.networking.k8s.io/v1beta1',
+  kind: 'HTTPRoute',
+  metadata: {
+    name: 'berry',
+  },
+  spec: {
+    parentRefs: [{
+      name: gateway.metadata.name,
+      sectionName: 'https',
+      kind: gateway.kind,
+    }],
+    hostnames: [
+      'berry.local',
+      'berry',
+    ],
+    rules: [
+      new Plex(),
+    ].map((service) => {
+      service.service;
+
+      return {
+        matches: [{
+          path: {
+            type: 'PathPrefix',
+            value: `/${service.name}`,
+          },
+        }],
+        filters: [{
+          type: 'URLRewrite',
+          urlRewrite: {
+            path: {
+              type: 'ReplacePrefixMatch',
+              replacePrefixMatch: '/',
+            },
+          },
+        }],
+        backendRefs: [{
+          name: service.name,
+          port: service.service_port,
+        }],
+
+      };
+    }),
+  },
+}, {
+  dependsOn: [
+    gateway_class,
+  ],
 });
