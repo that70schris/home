@@ -1,21 +1,15 @@
-export function once(target: any, metadata: any): any {
-  switch (metadata.kind) {
+export function once(target: any, context: ClassFieldDecoratorContext | any): any {
+  switch (context.kind) {
     case 'getter':
-      let called = false;
-      let value: any;
+      return function(this: any) {
+        Object.defineProperty(this, context.name, {
+          value: target.call(this),
+        });
 
-      metadata.access.get = function(this: any): any {
-        if (!called) {
-          value = metadata.access.get.call(this);
-          called = true;
-        }
-
-        return value;
+        return this[context.name];
       };
 
-      return target;
-
     default:
-      throw new Error(`@once can't be used on ${target.kind} (${target.constructor.name})`);
+      throw new Error(`@once can't be used with ${context.kind} (${target.constructor.name}.${context.name.toString()})`);
   }
 }

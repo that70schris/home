@@ -1,8 +1,8 @@
-// import { Plex } from './plex';
+import { Plex } from './plex';
 
 import { Chart } from '@pulumi/kubernetes/helm/v4';
 import { Twingate } from './twingate';
-// new Plex().deployment;
+new Plex().ingress;
 
 new Chart('twingate', {
   repositoryOpts: {

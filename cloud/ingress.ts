@@ -1,17 +1,12 @@
-import { CustomResource } from '@pulumi/kubernetes/apiextensions';
 import { Ingress, IngressArgs } from '@pulumi/kubernetes/networking/v1';
-import { CustomResourceOptions, Input } from '@pulumi/pulumi';
+import { input } from '@pulumi/kubernetes/types';
+import { CustomResourceOptions, Input, interpolate } from '@pulumi/pulumi';
 import { merge } from 'lodash';
 
-import { _Record } from './record';
-
-interface IngressRule {
-  host: string
-  hosts?: string[]
-}
+import { Twingate } from './twingate';
 
 interface _IngressArgs extends IngressArgs {
-  rules: IngressRule[]
+  rules: input.networking.v1.IngressRule[]
   zoneId?: Input<string>
   internal?: boolean
   twingate?: boolean
@@ -24,31 +19,16 @@ export class _Ingress extends Ingress {
     private args: _IngressArgs,
     opts: CustomResourceOptions,
   ) {
-    const config = !args.internal
-      ? new CustomResource($name, {
-          apiVersion: 'networking.gke.io/v1beta1',
-          kind: 'FrontendConfig',
-          metadata: {
-            name: $name,
-          },
-          spec: {
-            redirectToHttps: {
-              enabled: true,
-            },
-          },
-        }, opts)
-      : null;
-
     super(
       $name,
       merge({
         metadata: {
           name: $name,
           annotations: {
-            'kubernetes.io/ingress.allow-http': `${!args.internal}`,
-            'kubernetes.io/ingress.class': args.internal ? 'gce-internal' : 'gce',
-            [`kubernetes.io/ingress.${args.internal ? 'regional' : 'global'}-static-ip-name`]: address?.name,
-            'networking.gke.io/v1beta1.FrontendConfig': config?.metadata.name,
+            // 'kubernetes.io/ingress.allow-http': `${!args.internal}`,
+            // 'kubernetes.io/ingress.class': args.internal ? 'gce-internal' : 'gce',
+            // [`kubernetes.io/ingress.${args.internal ? 'regional' : 'global'}-static-ip-name`]: address?.name,
+            // 'networking.gke.io/v1beta1.FrontendConfig': config?.metadata.name,
             // 'cert-manager.io/issuer': opts.parent.issuer.metadata.name,
           },
         },
@@ -64,24 +44,24 @@ export class _Ingress extends Ingress {
     );
 
     args.rules.forEach((rule) => {
-      new _Record(rule.host, {
-        name: rule.host,
-        zoneId: args.zoneId,
-        content: address.address,
-        proxied: args.proxied,
-      }, {
-        parent: this,
-      });
+      interpolate`${rule.host}`.apply((host) => {
+        // new _Record(host, {
+        //   name: rule.host,
+        //   zoneId: args.zoneId,
+        //   content: address.address,
+        //   proxied: args.proxied,
+        // }, {
+        //   parent: this,
+        // });
 
-      rule.hosts?.forEach((host) => {
-        new _Record(host, {
-          name: host,
-          zoneId: args.zoneId,
-          content: address.address,
-          proxied: args.proxied,
+        new Twingate(host, {
+          address: host,
+          isBrowserShortcutEnabled: true,
+          ports: [
+            '443',
+          ],
         }, {
           parent: this,
-          deleteBeforeReplace: true,
         });
       });
     });
