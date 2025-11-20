@@ -6,8 +6,12 @@ import { merge } from 'lodash';
 import { CustomResource } from '@pulumi/kubernetes/apiextensions';
 import { Twingate } from './twingate';
 
+interface _IngressRule extends input.networking.v1.IngressRule {
+  alias?: string
+}
+
 interface _IngressArgs extends IngressArgs {
-  rules: input.networking.v1.IngressRule[]
+  rules: _IngressRule[]
   zoneId?: Input<string>
   internal?: boolean
   twingate?: boolean
@@ -35,7 +39,11 @@ export class _Ingress extends Ingress {
         },
         spec: {
           ingressClassName: 'nginx',
-          rules: args.rules,
+          rules: args.rules.map(rule => ({
+            ...rule,
+            host: rule.alias
+              ?? rule.host,
+          })),
           tls: [{
             secretName: new CustomResource($name, {
               apiVersion: 'cert-manager.io/v1',
@@ -45,7 +53,7 @@ export class _Ingress extends Ingress {
               },
               spec: {
                 secretName: $name,
-                dnsNames: args.rules.map(rule => rule.host),
+                dnsNames: args.rules.map(rule => rule.alias ?? rule.host),
                 issuerRef: {
                   name: opts.issuer.metadata.name,
                 },
@@ -54,7 +62,7 @@ export class _Ingress extends Ingress {
               dependsOn: opts.issuer,
               parent: opts.issuer,
             }).metadata.name,
-            hosts: args.rules.map(rule => rule.host),
+            hosts: args.rules.map(rule => rule.alias ?? rule.host),
           }],
         },
       } as IngressArgs, args),
@@ -72,9 +80,10 @@ export class _Ingress extends Ingress {
         //   parent: this,
         // });
 
-        new Twingate(host, {
-          address: host,
+        new Twingate(rule.alias ?? host, {
           isBrowserShortcutEnabled: true,
+          alias: rule.alias,
+          address: host,
           ports: [
             '443',
           ],

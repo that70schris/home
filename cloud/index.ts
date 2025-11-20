@@ -56,23 +56,43 @@ const issuer = new CustomResource('issuer', {
   dependsOn: manager,
 });
 
-new _Ingress('berry', {
-  rules: [{
-    host: 'berry',
-    http: {
-      paths: [
-        new Plex(),
-      ].map((service) => {
-        service.service;
+new CustomResource('gateway-class', {
+  apiVersion: 'gateway.networking.k8s.io/v1',
+  kind: 'Gateway',
+  spec: {
+    controllerName: 'example.net/gateway-controller',
+  },
+});
 
-        return {
-          path: `/${service.name}`,
+new CustomResource('gateway', {
+  apiVersion: 'gateway.networking.k8s.io/v1',
+  kind: 'Gateway',
+  spec: {
+    gatewayClassName: 'nginx',
+    listeners: [
+
+    ],
+  },
+});
+
+new _Ingress('berry', {
+  rules: [
+    new Plex(),
+  ].map((service) => {
+    service.service;
+
+    return {
+      host: 'berry',
+      alias: `${service.name}.local`,
+      http: {
+        paths: [{
+          path: `/`,
           pathType: 'Prefix',
           backend: service.backend,
-        };
-      }),
-    },
-  }],
+        }],
+      },
+    };
+  }),
 }, {
   issuer,
 });
