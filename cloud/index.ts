@@ -87,11 +87,12 @@ const certificate = new CustomResource('berry', {
   parent: issuer,
 });
 
-new Twingate('berry.local', {
+new Twingate('berry', {
   isBrowserShortcutEnabled: true,
-  address: 'berry.local',
+  address: 'berry',
   ports: [
     '443',
+    '80',
   ],
 }, {
   parent: this,
@@ -115,6 +116,15 @@ const gateway = new CustomResource('gateway', {
           name: certificate.metadata.name,
         }],
       },
+      allowedRoutes: {
+        namespaces: {
+          from: 'Same',
+        },
+      },
+    }, {
+      name: 'http',
+      protocol: 'HTTP',
+      port: 80,
       allowedRoutes: {
         namespaces: {
           from: 'Same',
