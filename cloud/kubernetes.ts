@@ -2,7 +2,7 @@ import { CustomResource } from '@pulumi/kubernetes/apiextensions';
 import { Deployment } from '@pulumi/kubernetes/apps/v1';
 import { Service, ServiceSpecType } from '@pulumi/kubernetes/core/v1';
 import { input } from '@pulumi/kubernetes/types';
-import { interpolate, Resource } from '@pulumi/pulumi';
+import { Resource } from '@pulumi/pulumi';
 import { merge } from 'lodash';
 
 import { once } from '../shared/decorators';
@@ -248,8 +248,8 @@ export class KubernetesResource {
     return new Service(this.name, {
       metadata: merge(this.metadata, {
         annotations: {
-          'cloud.google.com/neg': '{"ingress": true}',
-          'cloud.google.com/backend-config': this.config ? interpolate`{"default": "${this.config.metadata?.name}"}` : null,
+          // 'cloud.google.com/neg': '{"ingress": true}',
+          // 'cloud.google.com/backend-config': this.config ? interpolate`{"default": "${this.config.metadata?.name}"}` : null,
           'networking.gke.io/load-balancer-type': this.internal ? 'Internal' : null,
         },
       }),

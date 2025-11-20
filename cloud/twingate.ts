@@ -29,6 +29,10 @@ export class Twingate extends TwingateResource {
     connectorId: this.connector.id,
   });
 
+  static groups = {
+    everyone: { groupId: 'R3JvdXA6Mjg1NTA4' },
+  };
+
   constructor(
     public $name: string,
     args: JGWTwingateResourceArgs,
@@ -37,6 +41,9 @@ export class Twingate extends TwingateResource {
       remoteNetworkId: Twingate.remote.id,
       isBrowserShortcutEnabled: false,
       name: args.address,
+      accessGroups: [
+        Twingate.groups.everyone,
+      ],
       protocols: {
         allowIcmp: false,
         tcp: {
