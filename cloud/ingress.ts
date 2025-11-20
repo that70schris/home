@@ -3,6 +3,7 @@ import { input } from '@pulumi/kubernetes/types';
 import { CustomResourceOptions, Input, interpolate } from '@pulumi/pulumi';
 import { merge } from 'lodash';
 
+import { CustomResource } from '@pulumi/kubernetes/apiextensions';
 import { Twingate } from './twingate';
 
 interface _IngressArgs extends IngressArgs {
@@ -13,11 +14,15 @@ interface _IngressArgs extends IngressArgs {
   proxied?: boolean
 }
 
+interface IngressResourceOptions extends CustomResourceOptions {
+  issuer: CustomResource
+}
+
 export class _Ingress extends Ingress {
   constructor(
     public $name: string,
     private args: _IngressArgs,
-    opts: CustomResourceOptions,
+    opts: IngressResourceOptions,
   ) {
     super(
       $name,
@@ -25,17 +30,29 @@ export class _Ingress extends Ingress {
         metadata: {
           name: $name,
           annotations: {
-            // 'kubernetes.io/ingress.allow-http': `${!args.internal}`,
-            // 'kubernetes.io/ingress.class': args.internal ? 'gce-internal' : 'gce',
-            // [`kubernetes.io/ingress.${args.internal ? 'regional' : 'global'}-static-ip-name`]: address?.name,
-            // 'networking.gke.io/v1beta1.FrontendConfig': config?.metadata.name,
-            // 'cert-manager.io/issuer': opts.parent.issuer.metadata.name,
+            'cert-manager.io/issuer': opts.issuer.metadata.name,
           },
         },
         spec: {
           rules: args.rules,
           tls: [{
-            // secretName: opts.parent.wildcard.metadata.name,
+            secretName: new CustomResource($name, {
+              apiVersion: 'cert-manager.io/v1',
+              kind: 'Certificate',
+              metadata: {
+                name: $name,
+              },
+              spec: {
+                secretName: $name,
+                dnsNames: args.rules.map(rule => rule.host),
+                issuerRef: {
+                  name: opts.issuer.metadata.name,
+                },
+              },
+            }, {
+              dependsOn: opts.issuer,
+              parent: opts.issuer,
+            }).metadata.name,
             hosts: args.rules.map(rule => rule.host),
           }],
         },

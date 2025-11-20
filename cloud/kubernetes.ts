@@ -6,7 +6,6 @@ import { Resource } from '@pulumi/pulumi';
 import { merge } from 'lodash';
 
 import { once } from '../shared/decorators';
-import { _Ingress } from './ingress';
 import { Port } from './port';
 
 export class KubernetesResource {
@@ -264,26 +263,6 @@ export class KubernetesResource {
       parent: this.deployment,
       dependsOn: [
         this.deployment,
-      ],
-    });
-  }
-
-  @once
-  get ingress() {
-    return new _Ingress(this.name, {
-      rules: [{
-        host: `${this.name}.example.com`,
-        http: {
-          paths: [{
-            path: '/',
-            pathType: 'Prefix',
-            backend: this.backend,
-          }],
-        },
-      }],
-    }, {
-      dependsOn: [
-        this.service,
       ],
     });
   }
