@@ -34,6 +34,7 @@ export class _Ingress extends Ingress {
           },
         },
         spec: {
+          ingressClassName: 'nginx',
           rules: args.rules,
           tls: [{
             secretName: new CustomResource($name, {
