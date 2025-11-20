@@ -2,6 +2,7 @@ import { Plex } from './plex';
 
 import { CustomResource } from '@pulumi/kubernetes/apiextensions';
 import { Chart } from '@pulumi/kubernetes/helm/v4';
+import { Directory } from '@pulumi/kubernetes/kustomize/v2';
 import { Twingate } from './twingate';
 
 new Chart('twingate', {
@@ -55,17 +56,6 @@ const issuer = new CustomResource('issuer', {
   dependsOn: manager,
 });
 
-const gateway_class = new CustomResource('gateway-class', {
-  apiVersion: 'gateway.networking.k8s.io/v1beta1',
-  kind: 'GatewayClass',
-  metadata: {
-    name: 'traefik',
-  },
-  spec: {
-    controllerName: 'traefik.io/gateway-controller',
-  },
-});
-
 const certificate = new CustomResource('berry', {
   apiVersion: 'cert-manager.io/v1',
   kind: 'Certificate',
@@ -94,8 +84,35 @@ new Twingate('berry', {
     '443',
     '80',
   ],
+});
+
+const fabric = new Directory('nginx', {
+  directory: 'https://github.com/nginx/nginx-gateway-fabric/config/crd/gateway-api/standard',
+});
+
+const nginx = new Chart('nginx', {
+  chart: 'oci://ghcr.io/nginx/charts/nginx-gateway-fabric',
+  values: {
+    certGenerator: {
+      // agentTLSSecretName: certificate.metadata.name,
+      serverTLSSecretName: certificate.metadata.name,
+    },
+  },
 }, {
-  parent: this,
+  dependsOn: fabric,
+});
+
+const gateway_class = new CustomResource('gateway-class', {
+  apiVersion: 'gateway.networking.k8s.io/v1beta1',
+  kind: 'GatewayClass',
+  metadata: {
+    name: 'nginx',
+  },
+  spec: {
+    controllerName: 'gateway.nginx.org/nginx-gateway-controller',
+  },
+}, {
+  dependsOn: nginx,
 });
 
 const gateway = new CustomResource('gateway', {
@@ -145,8 +162,7 @@ new CustomResource(`Route`, {
   spec: {
     parentRefs: [{
       name: gateway.metadata.name,
-      sectionName: 'https',
-      kind: gateway.kind,
+      sectionName: 'http',
     }],
     hostnames: [
       'berry.local',
@@ -161,18 +177,18 @@ new CustomResource(`Route`, {
         matches: [{
           path: {
             type: 'PathPrefix',
-            value: `/${service.name}`,
+            value: `/`,
           },
         }],
-        filters: [{
-          type: 'URLRewrite',
-          urlRewrite: {
-            path: {
-              type: 'ReplacePrefixMatch',
-              replacePrefixMatch: '/',
-            },
-          },
-        }],
+        // filters: [{
+        //   type: 'URLRewrite',
+        //   urlRewrite: {
+        //     path: {
+        //       type: 'ReplacePrefixMatch',
+        //       replacePrefixMatch: '/',
+        //     },
+        //   },
+        // }],
         backendRefs: [{
           name: service.name,
           port: service.service_port,
@@ -183,6 +199,6 @@ new CustomResource(`Route`, {
   },
 }, {
   dependsOn: [
-    gateway_class,
+    gateway,
   ],
 });
