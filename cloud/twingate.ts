@@ -13,7 +13,7 @@ interface JGWTwingateResourceArgs extends Omit<TwingateResourceArgs,
 
 export class Twingate extends TwingateResource {
   static config: any = new Config('twingate');
-  static network = this.config.get('network');
+  static network = Twingate.config.get('network');
 
   static remote = new TwingateRemoteNetwork('main', {
     location: 'ON_PREMISE',
@@ -21,12 +21,12 @@ export class Twingate extends TwingateResource {
   });
 
   static connector = new TwingateConnector('main', {
-    remoteNetworkId: this.remote.id,
+    remoteNetworkId: Twingate.remote.id,
     name: 'main',
   });
 
   static tokens = new TwingateConnectorTokens('main', {
-    connectorId: this.connector.id,
+    connectorId: Twingate.connector.id,
   });
 
   static groups = {
