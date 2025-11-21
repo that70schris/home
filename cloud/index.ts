@@ -56,23 +56,25 @@ const issuer = new CustomResource('issuer', {
   dependsOn: manager,
 });
 
-new _Ingress('berry', {
-  rules: [
-    new Plex(),
-  ].map((service) => {
-    service.service;
+const services = [
+  new Plex(),
+];
 
-    return {
-      host: 'berry',
-      http: {
-        paths: [{
-          path: `/${service.name}`,
-          pathType: 'Prefix',
-          backend: service.backend,
-        }],
-      },
-    };
-  }),
+services.forEach((service) => {
+  service.service;
+});
+
+new _Ingress('berry', {
+  rules: services.map(service => ({
+    host: 'berry',
+    http: {
+      paths: [{
+        path: `/${service.name}`,
+        pathType: 'Prefix',
+        backend: service.backend,
+      }],
+    },
+  })),
 }, {
   issuer,
 });

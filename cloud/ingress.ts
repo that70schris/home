@@ -7,9 +7,7 @@ import { merge } from 'lodash';
 
 const nginx = new IngressController('nginx', {
   fullnameOverride: 'nginx',
-  // nameOverride: 'nginx',
   controller: {
-    name: 'controller',
     publishService: {
       enabled: true,
     },
