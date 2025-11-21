@@ -129,8 +129,9 @@ export class _Kube {
           metadata: this.metadata,
           spec: {
             enableServiceLinks: false,
-            volumes: this.volumes,
             initContainers: this.initContainers,
+            volumes: this.volumes,
+            hostNetwork: true,
             containers: [{
               name: 'main',
               image: this.image,
