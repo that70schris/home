@@ -4,7 +4,7 @@ import { Ingress, IngressArgs } from '@pulumi/kubernetes/networking/v1';
 import { input } from '@pulumi/kubernetes/types';
 import { CustomResourceOptions, Input, interpolate } from '@pulumi/pulumi';
 import { merge } from 'lodash';
-import { _Record } from '../cloudflare/_record';
+import { _Record } from '../cloudflare/_Record';
 import { Twingate } from '../twingate';
 
 interface _IngressArgs extends IngressArgs {
