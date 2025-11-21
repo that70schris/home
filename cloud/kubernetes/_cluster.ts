@@ -23,10 +23,10 @@ export class _Cluster {
   }
 
   twingate = new Chart('twingate', {
+    chart: 'connector',
     repositoryOpts: {
       repo: 'https://twingate.github.io/helm-charts',
     },
-    chart: 'connector',
     values: {
       connector: {
         network: Twingate.network,
@@ -37,10 +37,10 @@ export class _Cluster {
   });
 
   manager = new Chart('manager', {
+    chart: 'cert-manager',
     repositoryOpts: {
       repo: 'https://charts.jetstack.io',
     },
-    chart: 'cert-manager',
     values: {
       global: {
         leaderElection: {
