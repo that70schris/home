@@ -1,9 +1,23 @@
 import { CustomResource } from '@pulumi/kubernetes/apiextensions';
 import { Chart } from '@pulumi/kubernetes/helm/v4';
-import { Twingate } from '../../twingate';
-import { Kube } from '../kubes';
+import { once } from '../../shared/decorators/once';
+import { Twingate } from '../twingate';
+import { _Ingress } from './ingress';
+import { Kube } from './kubes';
 
-export class Cluster {
+interface ClusterArgs {
+  includes: Kube[]
+}
+
+export class _Cluster {
+
+  constructor(
+    public name: string,
+    public args: ClusterArgs,
+  ) {
+
+  }
+
   twingate = new Chart('twingate', {
     repositoryOpts: {
       repo: 'https://twingate.github.io/helm-charts',
@@ -63,7 +77,22 @@ export class Cluster {
     dependsOn: this.manager,
   });
 
-  includes: Kube[] = [
+  @once
+  get ingress() {
+    return new _Ingress(this.name, {
+      rules: [{
+        host: 'berry',
+        http: {
+          paths: this.args.includes.map(service => ({
+            path: `/${service.name}`,
+            pathType: 'Prefix',
+            backend: service.backend,
+          })),
+        },
+      }],
+    }, {
+      issuer: this.issuer,
+    });
+  }
 
-  ];
 }

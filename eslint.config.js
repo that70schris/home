@@ -23,6 +23,7 @@ export default defineConfig([
       ...Object.entries({
         no_explicit_any: 0,
         no_unused_expressions: 0,
+        no_unused_vars: 0,
       }).reduce((result, [ key, value ]) => ({
         ...result,
         [`@typescript-eslint/${key}`]: value,
@@ -49,6 +50,7 @@ export default defineConfig([
         brace_style: [ 1, '1tbs' ],
         function_call_argument_newline: [ 1, 'consistent' ],
         function_paren_newline: [ 1, 'consistent' ],
+        padded_blocks: 0,
         no_extra_semi: 1,
         no_multiple_empty_lines: [ 1, {
           maxEOF: 0,
