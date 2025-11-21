@@ -3,10 +3,9 @@ import { CustomResource } from '@pulumi/kubernetes/apiextensions';
 import { Secret } from '@pulumi/kubernetes/core/v1';
 import { Chart } from '@pulumi/kubernetes/helm/v4';
 import { Config } from '@pulumi/pulumi';
+import { _Ingress, _Kube } from '.';
 import { once } from '../../shared/decorators/once';
 import { Twingate } from '../twingate';
-import { _Ingress } from './_Ingress';
-import { _Kube } from './kubes';
 
 interface ClusterArgs {
   domain?: string
