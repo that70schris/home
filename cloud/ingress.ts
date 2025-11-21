@@ -2,8 +2,9 @@ import { IngressController } from '@pulumi/kubernetes-ingress-nginx';
 import { CustomResource } from '@pulumi/kubernetes/apiextensions';
 import { Ingress, IngressArgs } from '@pulumi/kubernetes/networking/v1';
 import { input } from '@pulumi/kubernetes/types';
-import { CustomResourceOptions, Input } from '@pulumi/pulumi';
+import { CustomResourceOptions, Input, interpolate } from '@pulumi/pulumi';
 import { merge } from 'lodash';
+import { Twingate } from './twingate';
 
 const nginx = new IngressController('nginx', {
   fullnameOverride: 'nginx',
@@ -43,6 +44,7 @@ export class _Ingress extends Ingress {
           name: $name,
           annotations: {
             'cert-manager.io/issuer': opts.issuer.metadata.name,
+            'nginx.ingress.kubernetes.io/rewrite-target': '/',
           },
         },
         spec: {
@@ -81,28 +83,28 @@ export class _Ingress extends Ingress {
       },
     );
 
-    // args.rules.forEach((rule) => {
-    //   interpolate`${rule.host}`.apply((host) => {
-    //     // new _Record(host, {
-    //     //   name: rule.host,
-    //     //   zoneId: args.zoneId,
-    //     //   content: address.address,
-    //     //   proxied: args.proxied,
-    //     // }, {
-    //     //   parent: this,
-    //     // });
+    args.rules.forEach((rule) => {
+      interpolate`${rule.host}`.apply((host) => {
+        // new _Record(host, {
+        //   name: rule.host,
+        //   zoneId: args.zoneId,
+        //   content: address.address,
+        //   proxied: args.proxied,
+        // }, {
+        //   parent: this,
+        // });
 
-    //     new Twingate(rule.alias ?? host, {
-    //       isBrowserShortcutEnabled: true,
-    //       alias: rule.alias,
-    //       address: host,
-    //       ports: [
-    //         '443',
-    //       ],
-    //     }, {
-    //       parent: this,
-    //     });
-    //   });
-    // });
+        new Twingate(rule.alias ?? host, {
+          isBrowserShortcutEnabled: true,
+          alias: rule.alias,
+          address: host,
+          ports: [
+            '443',
+          ],
+        }, {
+          parent: this,
+        });
+      });
+    });
   }
 }

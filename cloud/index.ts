@@ -62,10 +62,10 @@ const services = [
 
 new _Ingress('berry', {
   rules: services.map(service => ({
-    host: 'berry',
+    host: service.name,
     http: {
       paths: [{
-        path: `/${service.name}`,
+        path: '/',
         pathType: 'Prefix',
         backend: service.backend,
       }],
