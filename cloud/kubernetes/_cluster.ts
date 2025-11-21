@@ -117,9 +117,9 @@ export class _Cluster {
           ].filter(Boolean).join('.'),
           http: {
             paths: [{
-              path: '/',
-              pathType: 'Prefix',
               backend: service.backend,
+              pathType: 'Prefix',
+              path: '/',
             }],
           },
         })),
