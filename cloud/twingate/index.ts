@@ -37,10 +37,10 @@ export class Twingate extends TwingateResource {
     public $name: string,
     args: _TwingateResourceArgs,
     opts?: CustomResourceOptions,
-    defaults: TwingateResourceArgs | any = {
+    defaults: TwingateResourceArgs = {
       remoteNetworkId: Twingate.remote.id,
       isBrowserShortcutEnabled: false,
-      name: args.address,
+      address: args.address,
       accessGroups: [
         Twingate.groups.everyone,
       ],
