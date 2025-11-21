@@ -1,5 +1,5 @@
-export function once(target: any, context: ClassFieldDecoratorContext): any {
-  switch (context.kind as string) {
+export function once(target: any, context: ClassFieldDecoratorContext | any): any {
+  switch (context.kind) {
     case 'getter':
       return function(this: any) {
         Object.defineProperty(this, context.name, {
