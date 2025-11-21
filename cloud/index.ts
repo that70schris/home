@@ -1,4 +1,4 @@
-import { _Cluster } from './kubernetes/_Cluster';
+import { _Cluster } from './kubernetes';
 import { Homebridge, Plex } from './kubernetes/kubes';
 
 new _Cluster('berry', {

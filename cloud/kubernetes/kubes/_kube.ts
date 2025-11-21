@@ -3,7 +3,7 @@ import { Service, ServiceSpecType } from '@pulumi/kubernetes/core/v1';
 import { input } from '@pulumi/kubernetes/types';
 import { Resource } from '@pulumi/pulumi';
 import { once } from '../../../shared/decorators';
-import { Port } from '../port';
+import { Port } from '../Port';
 
 export class _Kube {
   container_port = 80;
