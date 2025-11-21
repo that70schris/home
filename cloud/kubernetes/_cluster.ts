@@ -1,12 +1,11 @@
 import { IngressController } from '@pulumi/kubernetes-ingress-nginx';
 import { CustomResource } from '@pulumi/kubernetes/apiextensions';
-import { Chart } from '@pulumi/kubernetes/helm/v4';
-
 import { Secret } from '@pulumi/kubernetes/core/v1';
+import { Chart } from '@pulumi/kubernetes/helm/v4';
 import { Config } from '@pulumi/pulumi';
 import { once } from '../../shared/decorators/once';
 import { Twingate } from '../twingate';
-import { _Ingress } from './_ingress';
+import { _Ingress } from './_Ingress';
 import { _Kube } from './kubes';
 
 interface ClusterArgs {

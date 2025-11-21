@@ -1,3 +1,3 @@
-export * from './_kube';
-export * from './homebridge';
-export * from './plex';
+export * from './_Kube';
+export * from './Homebridge';
+export * from './Plex';

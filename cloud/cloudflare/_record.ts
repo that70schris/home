@@ -1,7 +1,7 @@
 import { DnsRecord, DnsRecordArgs, RecordArgs } from '@pulumi/cloudflare';
 import { CustomResourceOptions, Input } from '@pulumi/pulumi';
 import { merge } from 'lodash';
-import { _Config } from '../_config';
+import { _Config } from '../_Config';
 
 interface _RecordArgs extends Omit<DnsRecordArgs,
   | 'zoneId'

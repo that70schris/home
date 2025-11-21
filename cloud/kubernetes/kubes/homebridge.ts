@@ -1,4 +1,4 @@
-import { _Kube } from './_kube';
+import { _Kube } from './_Kube';
 
 export class Homebridge extends _Kube {
   override image = 'ghcr.io/homebridge/homebridge';
