@@ -9,7 +9,7 @@ interface PortNumbers {
   service?: Input<number>
 }
 
-export class Port {
+export class _Port {
 
   constructor(
     public name: string,
