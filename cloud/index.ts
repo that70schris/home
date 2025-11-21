@@ -53,6 +53,7 @@ const issuer = new CustomResource('issuer', {
     selfSigned: {},
   },
 }, {
+  deleteBeforeReplace: true,
   dependsOn: manager,
 });
 
@@ -86,8 +87,10 @@ new Twingate('berry', {
   ],
 });
 
-const fabric = new Directory('nginx', {
+const directory = new Directory('nginx', {
   directory: 'https://github.com/nginx/nginx-gateway-fabric/config/crd/gateway-api/standard',
+}, {
+  dependsOn: manager,
 });
 
 const nginx = new Chart('nginx', {
@@ -99,11 +102,11 @@ const nginx = new Chart('nginx', {
     },
   },
 }, {
-  dependsOn: fabric,
+  dependsOn: directory,
 });
 
 const gateway_class = new CustomResource('gateway-class', {
-  apiVersion: 'gateway.networking.k8s.io/v1beta1',
+  apiVersion: 'gateway.networking.k8s.io/v1',
   kind: 'GatewayClass',
   metadata: {
     name: 'nginx',
@@ -112,11 +115,12 @@ const gateway_class = new CustomResource('gateway-class', {
     controllerName: 'gateway.nginx.org/nginx-gateway-controller',
   },
 }, {
+  deleteBeforeReplace: true,
   dependsOn: nginx,
 });
 
 const gateway = new CustomResource('gateway', {
-  apiVersion: 'gateway.networking.k8s.io/v1beta1',
+  apiVersion: 'gateway.networking.k8s.io/v1',
   metadata: {
     name: 'berry',
   },
@@ -124,37 +128,19 @@ const gateway = new CustomResource('gateway', {
   spec: {
     gatewayClassName: gateway_class.metadata.name,
     listeners: [{
-      name: 'https',
-      protocol: 'HTTPS',
-      port: 443,
-      tls: {
-        mode: 'Terminate',
-        certificateRefs: [{
-          name: certificate.metadata.name,
-        }],
-      },
-      allowedRoutes: {
-        namespaces: {
-          from: 'Same',
-        },
-      },
-    }, {
       name: 'http',
       protocol: 'HTTP',
+      hostname: 'berry',
       port: 80,
-      allowedRoutes: {
-        namespaces: {
-          from: 'Same',
-        },
-      },
     }],
   },
 }, {
+  deleteBeforeReplace: true,
   dependsOn: gateway_class,
 });
 
 new CustomResource(`Route`, {
-  apiVersion: 'gateway.networking.k8s.io/v1beta1',
+  apiVersion: 'gateway.networking.k8s.io/v1',
   kind: 'HTTPRoute',
   metadata: {
     name: 'berry',
@@ -165,7 +151,6 @@ new CustomResource(`Route`, {
       sectionName: 'http',
     }],
     hostnames: [
-      'berry.local',
       'berry',
     ],
     rules: [
@@ -198,6 +183,7 @@ new CustomResource(`Route`, {
     }),
   },
 }, {
+  deleteBeforeReplace: true,
   dependsOn: [
     gateway,
   ],
