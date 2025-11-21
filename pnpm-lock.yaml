@@ -13,6 +13,9 @@ importers:
       '@pulumi/kubernetes':
         specifier: 4.24.0
         version: 4.24.0(typescript@5.9.3)
+      '@pulumi/kubernetes-ingress-nginx':
+        specifier: 0.1.3
+        version: 0.1.3(typescript@5.9.3)
       '@pulumi/pulumi':
         specifier: 3.207.0
         version: 3.207.0(typescript@5.9.3)
@@ -591,6 +594,12 @@ packages:
     resolution:
       {
         integrity: sha512-KrKmoi7/L9Q8z2yr8PzNfcTo8Irm//NNJ5s4khQD9+W495Wd2k5fR1bOOEQN15iFsBALyjBbeDf+6+RdZKSd6A==,
+      }
+
+  '@pulumi/kubernetes-ingress-nginx@0.1.3':
+    resolution:
+      {
+        integrity: sha512-P4QHrR758ECHXZx/NSyc7MCoxDsRL+9tYKBzR8qe0KcHr4xRJy/k4f/EmHINoYYmvRj86jjhh1i0U6bRSEKkhg==,
       }
 
   '@pulumi/kubernetes@4.24.0':
@@ -3720,6 +3729,16 @@ snapshots:
 
   '@pulumi/cloudflare@6.11.0(typescript@5.9.3)':
     dependencies:
+      '@pulumi/pulumi': 3.207.0(typescript@5.9.3)
+    transitivePeerDependencies:
+      - bluebird
+      - supports-color
+      - ts-node
+      - typescript
+
+  '@pulumi/kubernetes-ingress-nginx@0.1.3(typescript@5.9.3)':
+    dependencies:
+      '@pulumi/kubernetes': 4.24.0(typescript@5.9.3)
       '@pulumi/pulumi': 3.207.0(typescript@5.9.3)
     transitivePeerDependencies:
       - bluebird

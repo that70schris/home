@@ -192,6 +192,7 @@ export class KubernetesResource {
     return new Service(this.name, {
       metadata: this.metadata,
       spec: {
+        // type: ServiceSpecType.NodePort,
         ports: this.ports.map(port => port.service)
           .filter(port => port) as input.core.v1.ServicePort[],
         selector: {
@@ -204,5 +205,17 @@ export class KubernetesResource {
         this.deployment,
       ],
     });
+  }
+
+  @once
+  get backend(): input.networking.v1.IngressBackend {
+    return {
+      service: {
+        name: this.name,
+        port: {
+          number: this.port.numbers.service,
+        },
+      },
+    };
   }
 }
