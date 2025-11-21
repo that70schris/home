@@ -60,10 +60,6 @@ const services = [
   new Plex(),
 ];
 
-services.forEach((service) => {
-  service.service;
-});
-
 new _Ingress('berry', {
   rules: services.map(service => ({
     host: 'berry',
