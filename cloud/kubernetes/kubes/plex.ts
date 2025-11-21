@@ -1,4 +1,4 @@
-import { _Kube } from '.';
+import { _Kube } from '..';
 
 export class Plex extends _Kube {
   override image = 'linuxserver/plex';

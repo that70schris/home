@@ -7,8 +7,12 @@ import { merge } from 'lodash';
 import { _Record } from '../cloudflare/_Record';
 import { Twingate } from '../twingate';
 
+interface _IngressRule extends input.networking.v1.IngressRule {
+  host: string
+}
+
 interface _IngressArgs extends IngressArgs {
-  rules: input.networking.v1.IngressRule[]
+  rules: _IngressRule[]
   zoneId?: Input<string>
   internal?: boolean
   twingate?: boolean
@@ -27,23 +31,29 @@ export class _Ingress extends Ingress {
     private args: _IngressArgs,
     opts: IngressResourceOptions,
   ) {
-    const certificate = new CustomResource($name, {
-      apiVersion: 'cert-manager.io/v1',
-      kind: 'Certificate',
-      metadata: {
-        name: $name,
-      },
-      spec: {
-        secretName: $name,
-        dnsNames: args.rules.map(rule => rule.host),
-        issuerRef: {
-          name: opts.issuer.metadata.name,
-        },
-      },
-    }, {
-      dependsOn: opts.issuer,
-      parent: opts.issuer,
-    });
+    const certs: { [key: string]: CustomResource } =
+      args.rules.reduce((result, rule) => ({
+        ...result,
+        [rule.host]: new CustomResource(rule.host, {
+          apiVersion: 'cert-manager.io/v1',
+          kind: 'Certificate',
+          metadata: {
+            name: rule.host,
+          },
+          spec: {
+            secretName: rule.host,
+            dnsNames: [
+              rule.host,
+            ],
+            issuerRef: {
+              name: opts.issuer.metadata.name,
+            },
+          },
+        }, {
+          dependsOn: opts.issuer,
+          parent: opts.issuer,
+        }),
+      }), {});
 
     super(
       $name,
@@ -61,12 +71,13 @@ export class _Ingress extends Ingress {
             ...rule,
             host: rule.host,
           })),
-          tls: [{
-            secretName: certificate.metadata.name,
-            hosts: args.rules.map(rule => rule.host),
-          }],
+          tls: args.rules.map(rule => ({
+            secretName: certs[rule.host].metadata.name,
+            hosts: [rule.host],
+          })),
         },
-      } as IngressArgs, args),
+      } as IngressArgs,
+      args),
       {
         ...opts,
         dependsOn: [
@@ -80,7 +91,6 @@ export class _Ingress extends Ingress {
         interpolate`${rule.host}`.apply((host) => {
           new _Record(host, {
             name: rule.host,
-            domain: 'bailey.mx',
             content: ip,
             proxied: args.proxied,
           }, {

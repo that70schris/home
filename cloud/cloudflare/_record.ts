@@ -9,7 +9,6 @@ interface _RecordArgs extends Omit<DnsRecordArgs,
   | 'type'
   | 'ttl'
   | ''> {
-  domain: string
   name?: Input<string>
   type?: Input<string>
 }
@@ -21,7 +20,11 @@ export class _Record extends DnsRecord {
     args: _RecordArgs,
     opts?: CustomResourceOptions,
     defaults: RecordArgs = {
-      zoneId: new _Config('cloudflare').object?.zones[args.domain],
+      zoneId: Object.entries(
+        new _Config('cloudflare').object?.zones,
+      ).find(([ key, value ]) => {
+        return RegExp(key).test($name);
+      })?.[1] as string,
       name: $name,
       type: 'A',
       ttl: 1,

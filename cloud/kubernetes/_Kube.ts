@@ -2,8 +2,8 @@ import { Deployment } from '@pulumi/kubernetes/apps/v1';
 import { Service, ServiceSpecType } from '@pulumi/kubernetes/core/v1';
 import { input } from '@pulumi/kubernetes/types';
 import { Resource } from '@pulumi/pulumi';
-import { once } from '../../../shared/decorators';
-import { Port } from '../Port';
+import { _Port } from '.';
+import { once } from '../../shared/decorators';
 
 export class _Kube {
   container_port = 80;
@@ -12,6 +12,7 @@ export class _Kube {
   replicas = 1;
 
   constructor(
+    public domain?: string,
     public name: string = this.constructor.name.toLowerCase(),
     public image: string = this.name,
   ) {
@@ -37,15 +38,15 @@ export class _Kube {
   }
 
   @once
-  get port(): Port {
-    return new Port('main', {
+  get port(): _Port {
+    return new _Port('main', {
       container: this.container_port,
       service: this.service_port,
     });
   }
 
   @once
-  get ports(): Port[] {
+  get ports(): _Port[] {
     return [
       this.port,
     ];
@@ -89,13 +90,6 @@ export class _Kube {
 
   @once
   get volume_mounts(): input.core.v1.VolumeMount[] {
-    return [
-
-    ];
-  }
-
-  @once
-  get args() {
     return [
 
     ];
@@ -161,7 +155,6 @@ export class _Kube {
               volumeMounts: this.volume_mounts,
               env: this.environment,
               command: this.command,
-              args: this.args,
               ports: this.ports.map(port => port.container),
             } as input.core.v1.Container]
               .concat(this.sidecars),

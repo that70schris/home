@@ -106,12 +106,12 @@ export class _Cluster {
 
   @once
   get ingress() {
-    return new _Ingress(this.name, {
+    return new _Ingress('nginx', {
       rules: this.args.includes
         .map(service => ({
           host: [
             service.name,
-            this.args.domain,
+            service.domain ?? this.args.domain,
           ].filter(Boolean).join('.'),
           http: {
             paths: [{
