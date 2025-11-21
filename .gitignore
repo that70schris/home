@@ -7,7 +7,7 @@
 !/Documents/
 !/Library/
 !/Public/
-# !/cloud/
+!/cloud/
 !/shared/
 
 !.husky/
