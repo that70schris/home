@@ -19,7 +19,6 @@ export class _Kube {
 
   }
 
-  @once
   get metadata(): input.meta.v1.ObjectMeta {
     return {
       name: this.name,
@@ -29,7 +28,6 @@ export class _Kube {
     };
   }
 
-  @once
   get http_check(): input.core.v1.HTTPGetAction {
     return {
       path: this.path,
@@ -45,64 +43,54 @@ export class _Kube {
     });
   }
 
-  @once
   get ports(): _Port[] {
     return [
       this.port,
     ];
   }
 
-  @once
   get livenessProbe(): input.core.v1.Probe | undefined {
     return;
   }
 
-  @once
   get readinessProbe(): input.core.v1.Probe | undefined {
     return;
   }
 
-  @once
   get startupProbe(): input.core.v1.Probe | undefined {
     return;
   }
 
-  @once
   get resources(): input.core.v1.ResourceRequirements {
     return {
 
     };
   }
 
-  @once
   get environment(): input.core.v1.EnvVar[] {
     return [
 
     ];
   }
 
-  @once
   get volumes(): input.core.v1.Volume[] {
     return [
 
     ];
   }
 
-  @once
   get volume_mounts(): input.core.v1.VolumeMount[] {
     return [
 
     ];
   }
 
-  @once
   get sidecars(): input.core.v1.Container[] {
     return [
 
     ];
   }
 
-  @once
   get strategy(): input.apps.v1.DeploymentStrategy {
     return {
       type: 'RollingUpdate',
@@ -113,14 +101,12 @@ export class _Kube {
     };
   }
 
-  @once
   get initContainers(): input.core.v1.Container[] {
     return [
 
     ];
   }
 
-  @once
   get command() {
     return [
 
@@ -186,7 +172,6 @@ export class _Kube {
     });
   }
 
-  @once
   get backend(): input.networking.v1.IngressBackend {
     return {
       service: {
