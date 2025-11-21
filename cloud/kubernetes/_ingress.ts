@@ -7,12 +7,8 @@ import { merge } from 'lodash';
 import { _Record } from '../cloudflare/_record';
 import { Twingate } from '../twingate';
 
-interface _IngressRule extends input.networking.v1.IngressRule {
-  alias?: string
-}
-
 interface _IngressArgs extends IngressArgs {
-  rules: _IngressRule[]
+  rules: input.networking.v1.IngressRule[]
   zoneId?: Input<string>
   internal?: boolean
   twingate?: boolean
@@ -39,7 +35,7 @@ export class _Ingress extends Ingress {
       },
       spec: {
         secretName: $name,
-        dnsNames: args.rules.map(rule => rule.alias ?? rule.host),
+        dnsNames: args.rules.map(rule => rule.host),
         issuerRef: {
           name: opts.issuer.metadata.name,
         },
@@ -63,12 +59,11 @@ export class _Ingress extends Ingress {
           ingressClassName: 'nginx',
           rules: args.rules.map(rule => ({
             ...rule,
-            host: rule.alias
-              ?? rule.host,
+            host: rule.host,
           })),
           tls: [{
             secretName: certificate.metadata.name,
-            hosts: args.rules.map(rule => rule.alias ?? rule.host),
+            hosts: args.rules.map(rule => rule.host),
           }],
         },
       } as IngressArgs, args),
@@ -91,9 +86,8 @@ export class _Ingress extends Ingress {
             parent: this,
           });
 
-          new Twingate(rule.alias ?? host, {
+          new Twingate(host, {
             isBrowserShortcutEnabled: true,
-            alias: rule.alias,
             address: host,
             ports: [
               '443',
