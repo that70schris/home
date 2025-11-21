@@ -97,7 +97,7 @@ const nginx = new Chart('nginx', {
   chart: 'oci://ghcr.io/nginx/charts/nginx-gateway-fabric',
   values: {
     certGenerator: {
-      // agentTLSSecretName: certificate.metadata.name,
+      agentTLSSecretName: certificate.metadata.name,
       serverTLSSecretName: certificate.metadata.name,
     },
   },
@@ -122,7 +122,7 @@ const gateway_class = new CustomResource('gateway-class', {
 const gateway = new CustomResource('gateway', {
   apiVersion: 'gateway.networking.k8s.io/v1',
   metadata: {
-    name: 'berry',
+    name: 'gateway',
   },
   kind: 'Gateway',
   spec: {
@@ -139,11 +139,11 @@ const gateway = new CustomResource('gateway', {
   dependsOn: gateway_class,
 });
 
-new CustomResource(`Route`, {
+new CustomResource(`route`, {
   apiVersion: 'gateway.networking.k8s.io/v1',
   kind: 'HTTPRoute',
   metadata: {
-    name: 'berry',
+    name: 'route',
   },
   spec: {
     parentRefs: [{
