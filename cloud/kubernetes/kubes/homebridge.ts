@@ -1,6 +1,6 @@
-import { Kube } from './_kube';
+import { _Kube } from './_kube';
 
-export class Homebridge extends Kube {
+export class Homebridge extends _Kube {
   override image = 'ghcr.io/homebridge/homebridge';
   override container_port = 8581;
   override service_port = 80;

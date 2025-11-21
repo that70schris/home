@@ -5,13 +5,18 @@ import { Resource } from '@pulumi/pulumi';
 import { once } from '../../../shared/decorators';
 import { Port } from '../port';
 
-export class Kube {
-  name = this.constructor.name.toLowerCase();
-  image = this.name;
+export class _Kube {
   container_port = 80;
   service_port?: number;
   path = '/';
   replicas = 1;
+
+  constructor(
+    public name: string = this.constructor.name.toLowerCase(),
+    public image: string = this.name,
+  ) {
+
+  }
 
   @once
   get metadata(): input.meta.v1.ObjectMeta {

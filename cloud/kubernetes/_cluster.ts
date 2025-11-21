@@ -3,11 +3,11 @@ import { Chart } from '@pulumi/kubernetes/helm/v4';
 import { once } from '../../shared/decorators/once';
 import { Twingate } from '../twingate';
 import { _Ingress } from './ingress';
-import { Kube } from './kubes';
+import { _Kube } from './kubes';
 
 interface ClusterArgs {
   domain?: string
-  includes: Kube[]
+  includes: _Kube[]
 }
 
 export class _Cluster {
