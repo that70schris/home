@@ -4,7 +4,7 @@ import { Ingress, IngressArgs } from '@pulumi/kubernetes/networking/v1';
 import { input } from '@pulumi/kubernetes/types';
 import { CustomResourceOptions, Input, interpolate } from '@pulumi/pulumi';
 import { merge } from 'lodash';
-import { Twingate } from './twingate';
+import { Twingate } from '../twingate';
 
 const nginx = new IngressController('nginx', {
   fullnameOverride: 'nginx',

@@ -1,11 +1,11 @@
 import { Deployment } from '@pulumi/kubernetes/apps/v1';
 import { Service, ServiceSpecType } from '@pulumi/kubernetes/core/v1';
 import { input } from '@pulumi/kubernetes/types';
+import { Resource } from '@pulumi/pulumi';
+import { once } from '../../../shared/decorators';
+import { Port } from '../port';
 
-import { once } from '../shared/decorators';
-import { Port } from './port';
-
-export class KubernetesResource {
+export class Kube {
   name = this.constructor.name.toLowerCase();
   image = this.name;
   container_port = 80;
@@ -71,26 +71,7 @@ export class KubernetesResource {
   @once
   get environment(): input.core.v1.EnvVar[] {
     return [
-      {
-        name: 'PORT',
-        value: `${this.port.numbers.container}`,
-      },
-      {
-        name: 'DD_SERVICE',
-        value: this.name,
-      },
-      {
-        name: 'DD_LOGS_INJECTION',
-        value: 'true',
-      },
-      {
-        name: 'DD_TRACE_CLIENT_IP_ENABLED',
-        value: 'true',
-      },
-      {
-        name: 'DD_GIT_REPOSITORY_URL',
-        value: 'https://github.com/that70schris/-',
-      },
+
     ];
   }
 
@@ -218,4 +199,8 @@ export class KubernetesResource {
       },
     };
   }
+
+  includes: Resource[] = [
+
+  ];
 }

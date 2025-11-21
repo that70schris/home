@@ -29,6 +29,7 @@
 !package.json
 !pnpm-lock.yaml
 !Pulumi.y*ml
+!tsconfig.json
 
 !*.config.*
 !*.ts

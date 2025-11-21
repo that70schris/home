@@ -2,7 +2,7 @@ import { input } from '@pulumi/kubernetes/types';
 import { Input } from '@pulumi/pulumi';
 import { merge } from 'lodash';
 
-import { once } from '../shared/decorators';
+import { once } from '../../shared/decorators';
 
 interface PortNumbers {
   container: Input<number>
