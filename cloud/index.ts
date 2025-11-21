@@ -7,4 +7,4 @@ new _Cluster('berry', {
     new Homebridge(),
     new Plex(),
   ],
-}).ingress;
+});

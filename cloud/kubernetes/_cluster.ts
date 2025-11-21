@@ -70,7 +70,7 @@ export class _Cluster {
     },
     spec: {
       acme: {
-        server: 'https://acme-staging-v02.api.letsencrypt.org/directory',
+        server: 'https://acme-v02.api.letsencrypt.org/directory',
         email: 'chris@bailey.mx',
         privateKeySecretRef: {
           name: 'letsencrypt',
@@ -129,5 +129,9 @@ export class _Cluster {
       ],
     });
   }
+
+  includes = [
+    this.ingress,
+  ];
 
 }
