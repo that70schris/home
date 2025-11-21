@@ -6,6 +6,7 @@ import { _Ingress } from './ingress';
 import { Kube } from './kubes';
 
 interface ClusterArgs {
+  domain?: string
   includes: Kube[]
 }
 
@@ -81,7 +82,10 @@ export class _Cluster {
   get ingress() {
     return new _Ingress(this.name, {
       rules: [{
-        host: 'berry',
+        host: [
+          this.name,
+          this.args.domain,
+        ].filter(Boolean).join('.'),
         http: {
           paths: this.args.includes.map(service => ({
             path: `/${service.name}`,

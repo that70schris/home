@@ -175,7 +175,7 @@ export class Kube {
       spec: {
         type: ServiceSpecType.ClusterIP,
         ports: this.ports.map(port => port.service)
-          .filter(port => port) as input.core.v1.ServicePort[],
+          .filter(Boolean) as input.core.v1.ServicePort[],
         selector: {
           app: this.name,
         },
