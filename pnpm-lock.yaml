@@ -19,6 +19,9 @@ importers:
       '@pulumi/pulumi':
         specifier: 3.207.0
         version: 3.207.0(typescript@5.9.3)
+      '@pulumiverse/unifi':
+        specifier: 0.1.1
+        version: 0.1.1(typescript@5.9.3)
       '@twingate/pulumi-twingate':
         specifier: 3.5.1
         version: 3.5.1(typescript@5.9.3)
@@ -622,6 +625,12 @@ packages:
         optional: true
       typescript:
         optional: true
+
+  '@pulumiverse/unifi@0.1.1':
+    resolution:
+      {
+        integrity: sha512-enim9FcRjqkkdy7PNCXXicO6DCv3HEr28GCijIvgY+m/n/YWlQtzNvpR04GCBpfdFw1HmMPj7CDQQdl1KxIIqg==,
+      }
 
   '@sigstore/bundle@2.3.2':
     resolution:
@@ -3792,6 +3801,15 @@ snapshots:
     transitivePeerDependencies:
       - bluebird
       - supports-color
+
+  '@pulumiverse/unifi@0.1.1(typescript@5.9.3)':
+    dependencies:
+      '@pulumi/pulumi': 3.207.0(typescript@5.9.3)
+    transitivePeerDependencies:
+      - bluebird
+      - supports-color
+      - ts-node
+      - typescript
 
   '@sigstore/bundle@2.3.2':
     dependencies:
