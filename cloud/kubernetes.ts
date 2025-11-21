@@ -6,13 +6,12 @@ import { once } from '../shared/decorators';
 import { Port } from './port';
 
 export class KubernetesResource {
-  metric?: input.autoscaling.v2.MetricIdentifier;
   name = this.constructor.name.toLowerCase();
   image = this.name;
   container_port = 80;
   service_port?: number;
   internal = false;
-  health_path = '/';
+  path = '/';
   replicas = 1;
 
   @once
@@ -28,7 +27,7 @@ export class KubernetesResource {
   @once
   get http_check(): input.core.v1.HTTPGetAction {
     return {
-      path: this.health_path,
+      path: this.path,
       port: this.port.numbers.container,
     };
   }
@@ -45,18 +44,7 @@ export class KubernetesResource {
   get ports(): Port[] {
     return [
       this.port,
-    ].filter(port => port);
-  }
-
-  @once
-  get service_ports(): input.core.v1.ServicePort[] {
-    return this.ports.map(port => port.service)
-      .filter(port => port) as input.core.v1.ServicePort[];
-  }
-
-  @once
-  get container_ports(): input.core.v1.ContainerPort[] {
-    return this.ports.map(port => port.container);
+    ];
   }
 
   @once
@@ -189,7 +177,7 @@ export class KubernetesResource {
               env: this.environment,
               command: this.command,
               args: this.args,
-              ports: this.container_ports,
+              ports: this.ports.map(port => port.container),
             } as input.core.v1.Container]
               .concat(this.sidecars),
           },
@@ -209,7 +197,8 @@ export class KubernetesResource {
         selector: {
           app: this.name,
         },
-        ports: this.service_ports,
+        ports: this.ports.map(port => port.service)
+          .filter(port => port) as input.core.v1.ServicePort[],
       },
     }, {
       parent: this.deployment,

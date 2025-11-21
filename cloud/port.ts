@@ -5,8 +5,8 @@ import { merge } from 'lodash';
 import { once } from '../shared/decorators';
 
 interface PortNumbers {
-  service?: Input<number>
   container: Input<number>
+  service?: Input<number>
 }
 
 export class Port {
@@ -15,7 +15,10 @@ export class Port {
     public numbers: PortNumbers,
     private defaults = { service: numbers.container },
   ) {
-    this.numbers = merge(defaults, numbers);
+    this.numbers = merge(
+      defaults,
+      numbers,
+    );
   }
 
   @once
