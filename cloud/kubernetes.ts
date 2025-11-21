@@ -1,5 +1,5 @@
 import { Deployment } from '@pulumi/kubernetes/apps/v1';
-import { Service, ServiceSpecType } from '@pulumi/kubernetes/core/v1';
+import { Service } from '@pulumi/kubernetes/core/v1';
 import { input } from '@pulumi/kubernetes/types';
 
 import { once } from '../shared/decorators';
@@ -192,7 +192,6 @@ export class KubernetesResource {
     return new Service(this.name, {
       metadata: this.metadata,
       spec: {
-        type: ServiceSpecType.NodePort,
         ports: this.ports.map(port => port.service)
           .filter(port => port) as input.core.v1.ServicePort[],
         selector: {
