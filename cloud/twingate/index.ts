@@ -41,6 +41,7 @@ export class Twingate extends TwingateResource {
       remoteNetworkId: Twingate.remote.id,
       isBrowserShortcutEnabled: false,
       address: args.address,
+      name: args.address,
       accessGroups: [
         Twingate.groups.everyone,
       ],
