@@ -26,13 +26,6 @@
   "[lua]": {
     "editor.defaultFormatter": "sumneko.lua"
   },
-  "[python]": {
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "never"
-    },
-    "editor.defaultFormatter": "ms-python.python",
-    "editor.formatOnType": true
-  },
   "[scss]": {
     "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },

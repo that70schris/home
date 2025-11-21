@@ -1,14 +1,15 @@
-import { DnsRecord, RecordArgs } from '@pulumi/cloudflare';
+import { DnsRecord, DnsRecordArgs, RecordArgs } from '@pulumi/cloudflare';
 import { CustomResourceOptions, Input } from '@pulumi/pulumi';
 import { merge } from 'lodash';
+import { _Config } from '../_config';
 
-interface JGWRecordArgs extends Omit<RecordArgs,
-  'zoneId'
+interface _RecordArgs extends Omit<DnsRecordArgs,
+  | 'zoneId'
   | 'name'
   | 'type'
   | 'ttl'
   | ''> {
-  zoneId?: Input<string>
+  domain: string
   name?: Input<string>
   type?: Input<string>
 }
@@ -16,18 +17,18 @@ interface JGWRecordArgs extends Omit<RecordArgs,
 export class _Record extends DnsRecord {
 
   constructor(
-    public override name: string,
-    args: JGWRecordArgs,
+    public $name: string,
+    args: _RecordArgs,
     opts?: CustomResourceOptions,
     defaults: RecordArgs = {
-      zoneId: JGW.zoneId,
-      name: `${name}.${JGW.host}`,
+      zoneId: new _Config('cloudflare').object?.zones[args.domain],
+      name: $name,
       type: 'A',
       ttl: 1,
     },
   ) {
     super(
-      name,
+      $name,
       merge(defaults, args),
       opts,
     );

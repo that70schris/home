@@ -1,8 +1,10 @@
+import { IngressController } from '@pulumi/kubernetes-ingress-nginx';
 import { CustomResource } from '@pulumi/kubernetes/apiextensions';
 import { Ingress, IngressArgs } from '@pulumi/kubernetes/networking/v1';
 import { input } from '@pulumi/kubernetes/types';
 import { CustomResourceOptions, Input, interpolate } from '@pulumi/pulumi';
 import { merge } from 'lodash';
+import { _Record } from '../cloudflare/_record';
 import { Twingate } from '../twingate';
 
 interface _IngressRule extends input.networking.v1.IngressRule {
@@ -19,6 +21,7 @@ interface _IngressArgs extends IngressArgs {
 
 interface IngressResourceOptions extends CustomResourceOptions {
   issuer: CustomResource
+  controller: IngressController
 }
 
 export class _Ingress extends Ingress {
@@ -69,29 +72,35 @@ export class _Ingress extends Ingress {
           }],
         },
       } as IngressArgs, args),
-      opts,
+      {
+        ...opts,
+        dependsOn: [opts.controller]
+          .concat(opts.dependsOn as any),
+      },
     );
 
-    args.rules.forEach((rule) => {
-      interpolate`${rule.host}`.apply((host) => {
-        // new _Record(host, {
-        //   name: rule.host,
-        //   zoneId: args.zoneId,
-        //   content: address.address,
-        //   proxied: args.proxied,
-        // }, {
-        //   parent: this,
-        // });
+    this.status.loadBalancer?.ingress[0].ip.apply((ip) => {
+      args.rules.forEach((rule) => {
+        interpolate`${rule.host}`.apply((host) => {
+          new _Record(host, {
+            name: rule.host,
+            domain: 'bailey.mx',
+            content: ip,
+            proxied: args.proxied,
+          }, {
+            parent: this,
+          });
 
-        new Twingate(rule.alias ?? host, {
-          isBrowserShortcutEnabled: true,
-          alias: rule.alias,
-          address: host,
-          ports: [
-            '443',
-          ],
-        }, {
-          parent: this,
+          new Twingate(rule.alias ?? host, {
+            isBrowserShortcutEnabled: true,
+            alias: rule.alias,
+            address: host,
+            ports: [
+              '443',
+            ],
+          }, {
+            parent: this,
+          });
         });
       });
     });

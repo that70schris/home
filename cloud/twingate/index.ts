@@ -2,7 +2,7 @@ import { Config, CustomResourceOptions } from '@pulumi/pulumi';
 import { TwingateConnector, TwingateConnectorTokens, TwingateRemoteNetwork, TwingateResource, TwingateResourceArgs } from '@twingate/pulumi-twingate';
 import { merge } from 'lodash';
 
-interface JGWTwingateResourceArgs extends Omit<TwingateResourceArgs,
+interface _TwingateResourceArgs extends Omit<TwingateResourceArgs,
   | 'remoteNetworkId'
   | 'protocols'
   | 'name'
@@ -35,7 +35,7 @@ export class Twingate extends TwingateResource {
 
   constructor(
     public $name: string,
-    args: JGWTwingateResourceArgs,
+    args: _TwingateResourceArgs,
     opts?: CustomResourceOptions,
     defaults: TwingateResourceArgs | any = {
       remoteNetworkId: Twingate.remote.id,

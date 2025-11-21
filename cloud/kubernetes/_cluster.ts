@@ -1,9 +1,10 @@
 import { IngressController } from '@pulumi/kubernetes-ingress-nginx';
 import { CustomResource } from '@pulumi/kubernetes/apiextensions';
 import { Chart } from '@pulumi/kubernetes/helm/v4';
+
 import { once } from '../../shared/decorators/once';
 import { Twingate } from '../twingate';
-import { _Ingress } from './ingress';
+import { _Ingress } from './_ingress';
 import { _Kube } from './kubes';
 
 interface ClusterArgs {
@@ -106,6 +107,7 @@ export class _Cluster {
       }],
     }, {
       issuer: this.issuer,
+      controller: this.nginx,
       dependsOn: [
         this.nginx,
       ],
