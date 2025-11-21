@@ -69,8 +69,9 @@ export class _Ingress extends Ingress {
       } as IngressArgs, args),
       {
         ...opts,
-        dependsOn: [opts.controller]
-          .concat(opts.dependsOn as any),
+        dependsOn: [
+          opts.controller,
+        ].concat(opts.dependsOn as any),
       },
     );
 
