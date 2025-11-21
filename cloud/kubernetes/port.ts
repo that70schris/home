@@ -10,6 +10,7 @@ interface PortNumbers {
 }
 
 export class Port {
+
   constructor(
     public name: string,
     public numbers: PortNumbers,
@@ -39,4 +40,5 @@ export class Port {
       containerPort: this.numbers.container,
     };
   }
+
 }

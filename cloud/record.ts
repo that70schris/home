@@ -1,4 +1,4 @@
-import { Record, RecordArgs } from '@pulumi/cloudflare';
+import { DnsRecord, RecordArgs } from '@pulumi/cloudflare';
 import { CustomResourceOptions, Input } from '@pulumi/pulumi';
 import { merge } from 'lodash';
 
@@ -13,7 +13,8 @@ interface JGWRecordArgs extends Omit<RecordArgs,
   type?: Input<string>
 }
 
-export class _Record extends Record {
+export class _Record extends DnsRecord {
+
   constructor(
     public override name: string,
     args: JGWRecordArgs,
@@ -31,4 +32,5 @@ export class _Record extends Record {
       opts,
     );
   }
+
 }

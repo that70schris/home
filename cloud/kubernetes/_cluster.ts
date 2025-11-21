@@ -1,3 +1,4 @@
+import { IngressController } from '@pulumi/kubernetes-ingress-nginx';
 import { CustomResource } from '@pulumi/kubernetes/apiextensions';
 import { Chart } from '@pulumi/kubernetes/helm/v4';
 import { once } from '../../shared/decorators/once';
@@ -78,6 +79,15 @@ export class _Cluster {
     dependsOn: this.manager,
   });
 
+  nginx = new IngressController('nginx', {
+    fullnameOverride: 'nginx',
+    controller: {
+      publishService: {
+        enabled: true,
+      },
+    },
+  });
+
   @once
   get ingress() {
     return new _Ingress(this.name, {
@@ -96,6 +106,9 @@ export class _Cluster {
       }],
     }, {
       issuer: this.issuer,
+      dependsOn: [
+        this.nginx,
+      ],
     });
   }
 

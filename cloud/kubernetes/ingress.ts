@@ -1,19 +1,9 @@
-import { IngressController } from '@pulumi/kubernetes-ingress-nginx';
 import { CustomResource } from '@pulumi/kubernetes/apiextensions';
 import { Ingress, IngressArgs } from '@pulumi/kubernetes/networking/v1';
 import { input } from '@pulumi/kubernetes/types';
 import { CustomResourceOptions, Input, interpolate } from '@pulumi/pulumi';
 import { merge } from 'lodash';
 import { Twingate } from '../twingate';
-
-const nginx = new IngressController('nginx', {
-  fullnameOverride: 'nginx',
-  controller: {
-    publishService: {
-      enabled: true,
-    },
-  },
-});
 
 interface _IngressRule extends input.networking.v1.IngressRule {
   alias?: string
@@ -32,11 +22,30 @@ interface IngressResourceOptions extends CustomResourceOptions {
 }
 
 export class _Ingress extends Ingress {
+
   constructor(
     public $name: string,
     private args: _IngressArgs,
     opts: IngressResourceOptions,
   ) {
+    const certificate = new CustomResource($name, {
+      apiVersion: 'cert-manager.io/v1',
+      kind: 'Certificate',
+      metadata: {
+        name: $name,
+      },
+      spec: {
+        secretName: $name,
+        dnsNames: args.rules.map(rule => rule.alias ?? rule.host),
+        issuerRef: {
+          name: opts.issuer.metadata.name,
+        },
+      },
+    }, {
+      dependsOn: opts.issuer,
+      parent: opts.issuer,
+    });
+
     super(
       $name,
       merge({
@@ -55,32 +64,12 @@ export class _Ingress extends Ingress {
               ?? rule.host,
           })),
           tls: [{
-            secretName: new CustomResource($name, {
-              apiVersion: 'cert-manager.io/v1',
-              kind: 'Certificate',
-              metadata: {
-                name: $name,
-              },
-              spec: {
-                secretName: $name,
-                dnsNames: args.rules.map(rule => rule.alias ?? rule.host),
-                issuerRef: {
-                  name: opts.issuer.metadata.name,
-                },
-              },
-            }, {
-              dependsOn: opts.issuer,
-              parent: opts.issuer,
-            }).metadata.name,
+            secretName: certificate.metadata.name,
             hosts: args.rules.map(rule => rule.alias ?? rule.host),
           }],
         },
       } as IngressArgs, args),
-      {
-        ...opts,
-        dependsOn: [nginx]
-          .concat(opts.dependsOn as any),
-      },
+      opts,
     );
 
     args.rules.forEach((rule) => {
