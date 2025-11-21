@@ -1,9 +1,6 @@
-import { CustomResource } from '@pulumi/kubernetes/apiextensions';
 import { Deployment } from '@pulumi/kubernetes/apps/v1';
 import { Service, ServiceSpecType } from '@pulumi/kubernetes/core/v1';
 import { input } from '@pulumi/kubernetes/types';
-import { Resource } from '@pulumi/pulumi';
-import { merge } from 'lodash';
 
 import { once } from '../shared/decorators';
 import { Port } from './port';
@@ -18,6 +15,7 @@ export class KubernetesResource {
   health_path = '/';
   replicas = 1;
 
+  @once
   get metadata(): input.meta.v1.ObjectMeta {
     return {
       name: this.name,
@@ -62,39 +60,24 @@ export class KubernetesResource {
   }
 
   @once
-  get backend(): input.networking.v1.IngressBackend {
-    return {
-      service: {
-        name: this.name,
-        port: {
-          number: this.port.numbers.service,
-        },
-      },
-    };
-  }
-
-  @once
   get livenessProbe(): input.core.v1.Probe | undefined {
-    return undefined;
+    return;
   }
 
   @once
   get readinessProbe(): input.core.v1.Probe | undefined {
-    return undefined;
+    return;
   }
 
   @once
   get startupProbe(): input.core.v1.Probe | undefined {
-    return undefined;
+    return;
   }
 
   @once
   get resources(): input.core.v1.ResourceRequirements {
     return {
-      requests: {
-        memory: '4Gi',
-        cpu: '1',
-      },
+
     };
   }
 
@@ -127,25 +110,29 @@ export class KubernetesResource {
   @once
   get volumes(): input.core.v1.Volume[] {
     return [
-      // this.cluster.secrets_volume,
+
     ];
   }
 
   @once
   get volume_mounts(): input.core.v1.VolumeMount[] {
     return [
-      // this.cluster.secrets_volume_mount,
+
     ];
   }
 
   @once
   get args() {
-    return [];
+    return [
+
+    ];
   }
 
   @once
   get sidecars(): input.core.v1.Container[] {
-    return [];
+    return [
+
+    ];
   }
 
   @once
@@ -161,20 +148,17 @@ export class KubernetesResource {
 
   @once
   get initContainers(): input.core.v1.Container[] {
-    return [];
-  }
+    return [
 
-  @once
-  get behavior(): input.autoscaling.v2.HorizontalPodAutoscalerBehavior | undefined {
-    return undefined;
+    ];
   }
 
   @once
   get command() {
-    return [];
-  }
+    return [
 
-  depends_on: Resource[] = [];
+    ];
+  }
 
   @once
   get deployment() {
@@ -194,7 +178,6 @@ export class KubernetesResource {
             enableServiceLinks: false,
             volumes: this.volumes,
             initContainers: this.initContainers,
-            terminationGracePeriodSeconds: 60,
             containers: [{
               name: 'main',
               image: this.image,
@@ -218,40 +201,9 @@ export class KubernetesResource {
   }
 
   @once
-  get backend_config_spec() {
-    return {
-      healthCheck: {
-        requestPath: this.health_path,
-        checkIntervalSec: 60,
-      },
-    };
-  }
-
-  @once
-  get config() {
-    return new CustomResource(this.name, {
-      apiVersion: 'cloud.google.com/v1',
-      kind: 'BackendConfig',
-      metadata: {
-        name: this.name,
-      },
-      spec: this.backend_config_spec,
-    }, {
-      dependsOn: this.deployment,
-      parent: this.deployment,
-    });
-  }
-
-  @once
   get service() {
     return new Service(this.name, {
-      metadata: merge(this.metadata, {
-        annotations: {
-          // 'cloud.google.com/neg': '{"ingress": true}',
-          // 'cloud.google.com/backend-config': this.config ? interpolate`{"default": "${this.config.metadata?.name}"}` : null,
-          'networking.gke.io/load-balancer-type': this.internal ? 'Internal' : null,
-        },
-      }),
+      metadata: this.metadata,
       spec: {
         type: this.internal ? ServiceSpecType.LoadBalancer : ServiceSpecType.NodePort,
         selector: {
