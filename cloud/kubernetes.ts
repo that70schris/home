@@ -10,7 +10,6 @@ export class KubernetesResource {
   image = this.name;
   container_port = 80;
   service_port?: number;
-  internal = false;
   path = '/';
   replicas = 1;
 
@@ -193,12 +192,12 @@ export class KubernetesResource {
     return new Service(this.name, {
       metadata: this.metadata,
       spec: {
-        type: this.internal ? ServiceSpecType.LoadBalancer : ServiceSpecType.NodePort,
+        type: ServiceSpecType.NodePort,
+        ports: this.ports.map(port => port.service)
+          .filter(port => port) as input.core.v1.ServicePort[],
         selector: {
           app: this.name,
         },
-        ports: this.ports.map(port => port.service)
-          .filter(port => port) as input.core.v1.ServicePort[],
       },
     }, {
       parent: this.deployment,
