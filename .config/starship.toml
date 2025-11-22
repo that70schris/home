@@ -48,11 +48,6 @@ right_format = """
 [gcloud]
   format = '[(\($project\))](#1a73e8)'
 
-[gcloud.project_aliases]
-  jgw-development = 'development'
-  jgw-staging = 'staging'
-  jgw-production = 'production'
-
 [git_branch]
   format = '([\($branch(:$remote_branch)\)](#f1502f) )'
   only_attached = true

@@ -21,7 +21,9 @@ export default defineConfig([
 
       // custom typescript
       ...Object.entries({
+        no_empty_object_type: 0,
         no_explicit_any: 0,
+        no_unsafe_function_type: 0,
         no_unused_expressions: 0,
         no_unused_vars: 0,
       }).reduce((result, [ key, value ]) => ({

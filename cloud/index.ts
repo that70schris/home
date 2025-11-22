@@ -1,3 +1,4 @@
+export * from './_Config';
 import { _Cluster } from './kubernetes';
 import { Homebridge, Plex } from './kubernetes/kubes';
 
