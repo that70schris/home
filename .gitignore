@@ -4,10 +4,10 @@
 !/.github/
 !/.hammerspoon/
 !/.pnpm/
+!/_cloud/
 !/Documents/
 !/Library/
 !/Public/
-!/cloud/
 !/shared/
 
 !.husky/
