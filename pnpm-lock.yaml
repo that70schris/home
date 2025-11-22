@@ -7,6 +7,9 @@ settings:
 importers:
   .:
     dependencies:
+      '@cloudflare/workers-types':
+        specifier: 4.20251121.0
+        version: 4.20251121.0
       '@pulumi/cloudflare':
         specifier: 6.11.0
         version: 6.11.0(typescript@5.9.3)
@@ -100,6 +103,12 @@ packages:
     resolution:
       {
         integrity: sha512-m7Rce68cMHlAUjvWBy9Ru1Nmw5gU0SjGGtQDdhpe6E0xnbcvrIY0Epy//JU1VYYBUTzrG9jvgmTauULGKzOkWA==,
+      }
+
+  '@cloudflare/workers-types@4.20251121.0':
+    resolution:
+      {
+        integrity: sha512-jzFg7hEGKzpEalxTCanN6lM8IdkvO/brsERp/+OyMms4Zi0nhDPUAg9dUcKU8wDuDUnzbjkplY6YRwle7Cq6gA==,
       }
 
   '@csstools/css-parser-algorithms@3.0.5':
@@ -3625,6 +3634,8 @@ snapshots:
       keyv: 5.5.3
 
   '@cacheable/utils@2.0.3': {}
+
+  '@cloudflare/workers-types@4.20251121.0': {}
 
   '@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4)':
     dependencies:

@@ -13,6 +13,7 @@
     "typescript-eslint": "8.47.0"
   },
   "dependencies": {
+    "@cloudflare/workers-types": "4.20251121.0",
     "@pulumi/cloudflare": "6.11.0",
     "@pulumi/kubernetes": "4.24.0",
     "@pulumi/kubernetes-ingress-nginx": "0.1.3",
