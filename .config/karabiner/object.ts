@@ -84,7 +84,7 @@ Object.defineProperties(
                 // Define the individual commands that are meant to trigger in the sublayer
                 ...(Object.keys(layer) as (keyof typeof layer)[]).map(
                   (command_key): Manipulator => ({
-                    ...layer[command_key],
+                    ...(layer[command_key] as Record<string, unknown>),
                     type: 'basic',
                     // Only trigger this command if the variable is 1 (i.e., if Hyper + sublayer is held)
                     conditions: [

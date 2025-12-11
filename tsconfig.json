@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "target": "esNext",
+    "types": [
+      "node"
+    ],
+  },
+}

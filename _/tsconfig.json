@@ -1,8 +1,6 @@
 {
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "experimentalDecorators": true,
-    "moduleResolution": "node",
-    "target": "esNext",
     "types": [
       "@cloudflare/workers-types",
       "node"
