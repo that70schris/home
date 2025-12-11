@@ -1,6 +1,6 @@
 '$schema' = 'https://starship.rs/config-schema.json'
-command_timeout = 999999999
-add_newline = false
+# command_timeout = 999999999
+add_newline = true
 format = """
 $os\
 $sudo\
@@ -22,11 +22,12 @@ $git_commit\
 $git_state\
 $git_status\
 $git_metrics\
+$character\
 """
 
 # move the rest of the prompt to the right
 right_format = """
-
+$shell\
 """
 
 [character]
@@ -58,7 +59,6 @@ right_format = """
   tag_disabled = false
 
 [git_status]
-  # use_git_executable = true
   format = '$stashed$conflicted$deleted$renamed$modified$staged$untracked$ahead_behind'
   conflicted = '= '
   modified = ''
@@ -82,9 +82,6 @@ right_format = """
   contexts = [
     { context_pattern = ".*_(.*)-(.*)_.*_(.*)" , context_alias = '${1}/${2}/${3}' }
   ]
-
-[nodejs]
-  format = '[$symbol($version)]($style) '
 
 [package]
   format = '📦 [$version](white) '

@@ -1,0 +1,11 @@
+{
+  "app.hideMenubarIcon": true,
+  "autocomplete.alwaysSuggestCurrentToken": false,
+  "autocomplete.firstTokenCompletion": true,
+  "autocomplete.fontSize": 15,
+  "autocomplete.fuzzySearch": true,
+  "autocomplete.height": 250,
+  "autocomplete.keybindings.control+r": "ignore",
+  "autocomplete.preferVerboseSuggestions": true,
+  "telemetryClientId": "4c966bbf-33ad-426c-b586-cdb199bd2db2"
+}
