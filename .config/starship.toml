@@ -8,14 +8,14 @@ $username\
 $hostname\
 $localip\
 $gcloud\
-$docker_context\
 $kubernetes\
+$terraform\
 $pulumi\
+$docker_context\
 $package\
 $container\
 $python\
 $helm\
-$terraform\
 $directory\
 $git_branch\
 $git_commit\
