@@ -44,11 +44,6 @@ writeFileSync(
             o: {
               e: 'Mail'.app,
             },
-            s: {
-              backslash:
-                'raycast://extensions/raycast/system/toggle-system-appearance'
-                  .open,
-            },
           }.sublayers,
         ] as KarabinerRule[],
       },
