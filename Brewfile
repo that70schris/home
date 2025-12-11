@@ -31,6 +31,7 @@ cask "choosy"
 cask "dash"
 cask "discord"
 cask "dropbox"
+cask "expressions"
 cask "gcloud-cli"
 cask "google-chrome"
 cask "hammerspoon"
@@ -67,12 +68,10 @@ cask "zoom"
 mas "1Blocker", id: 1365531024
 mas "Copilot", id: 1447330651
 mas "Deliveries", id: 290986013
-mas "Expressions", id: 913158085
 mas "Flighty", id: 1358823008
 mas "HomeControl", id: 1547121417
 mas "Homie", id: 1533590432
 mas "iCircuit", id: 454347770
-mas "Karo Graph", id: 557536642
 mas "Logic Pro", id: 634148309
 mas "Mapper", id: 1589391989
 mas "Numbers", id: 409203825
