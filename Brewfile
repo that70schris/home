@@ -28,6 +28,7 @@ brew "zsh"
 cask "arc"
 cask "camo-studio"
 cask "choosy"
+cask "copilot-money"
 cask "dash"
 cask "discord"
 cask "dropbox"
@@ -66,7 +67,6 @@ cask "warp"
 cask "wifiman"
 cask "zoom"
 mas "1Blocker", id: 1365531024
-mas "Copilot", id: 1447330651
 mas "Deliveries", id: 290986013
 mas "Flighty", id: 1358823008
 mas "HomeControl", id: 1547121417
