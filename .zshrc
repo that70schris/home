@@ -1,8 +1,4 @@
-# Kiro CLI pre block. Keep at the top of this file.
-[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
-# Q pre block. Keep at the top of this file.
 eval $(/opt/homebrew/bin/brew shellenv)
-
 source "${HOMEBREW_PREFIX}/opt/autoenv/activate.sh"
 eval "$(starship init zsh)"
 setopt autocd
@@ -23,8 +19,3 @@ else
 
   PROMPT="${PROMPT}❯ "
 fi
-
-# Q post block. Keep at the bottom of this file.
-
-# Kiro CLI post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
