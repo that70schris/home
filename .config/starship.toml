@@ -46,7 +46,7 @@ right_format = """
   style = 'white'
 
 [gcloud]
-  format = '[(\($project\))](#1a73e8)'
+  format = '☁️  [(\($project\))](#1a73e8) '
 
 [git_branch]
   format = '([\($branch(:$remote_branch)\)](#f1502f) )'
@@ -77,19 +77,19 @@ right_format = """
 
 [kubernetes]
   disabled = false
-  format = '[$context( \($namespace\))](#09c1d1)'
+  format = '⎈ [$context( \($namespace\))](#09c1d1) '
   contexts = [
     { context_pattern = ".*_(.*)-(.*)_.*_(.*)" , context_alias = '${1}/${2}/${3}' }
   ]
 
 [nodejs]
-  format = '[$symbol($version )]($style)'
+  format = '[$symbol($version)]($style) '
 
 [package]
-  format = '[📦 $version](white) '
+  format = '📦 [$version](white) '
 
 [pulumi]
-  format = '𝌤[ $stack](#805ac3) '
+  format = '𝌤 [$stack](#be5188) '
 
 [python]
   format = '[$symbol$pyenv_prefix($version )(\($virtualenv\) )](#f0cf3f)'

@@ -1,4 +1,4 @@
-import { LayerCommand } from './types';
+import { LayerCommand } from './types'
 
 declare global {
   interface String {
@@ -19,19 +19,19 @@ Object.defineProperties(
               shell_command: `open ${this}`,
             },
           ],
-        };
+        }
       },
     },
 
     app: {
       get: function() {
-        return `-a '${this}.app'`.open;
+        return `-a '${this}.app'`.open
       },
     },
     variable: {
       get: function() {
-        return `hyper_sublayer_${this}`;
+        return `hyper_sublayer_${this}`
       },
     },
   },
-);
+)

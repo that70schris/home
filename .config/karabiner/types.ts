@@ -24,14 +24,14 @@ type Conditions =
   | KeybaordTypeCondition
   | InputSourceCondition
   | VaribaleCondition
-  | EventChangedCondition;
+  | EventChangedCondition
 
 type FrontMostApplicationCondition = {
   type: 'frontmost_application_if' | 'frontmost_application_unless'
   bundle_identifiers?: string[]
   file_paths?: string[]
   description?: string
-};
+}
 
 type DeviceCondition = {
   type:
@@ -41,7 +41,7 @@ type DeviceCondition = {
     | 'device_exists_unless'
   identifiers: Identifiers
   description?: string
-};
+}
 
 interface Identifiers {
   vendor_id?: number
@@ -57,13 +57,13 @@ type KeybaordTypeCondition = {
   type: 'keyboard_type_if' | 'keyboard_type_unless'
   keyboard_types: string[]
   description?: string
-};
+}
 
 type InputSourceCondition = {
   type: 'input_source_if' | 'input_source_unless'
   input_sources: InputSource[]
   description?: string
-};
+}
 
 interface InputSource {
   language?: string
@@ -76,13 +76,13 @@ type VaribaleCondition = {
   name: string | number | boolean
   value: string | number
   description?: string
-};
+}
 
 type EventChangedCondition = {
   type: 'event_changed_if' | 'event_changed_unless'
   value: boolean
   description?: string
-};
+}
 
 export interface SimultaneousFrom {
   key_code: KeyCode
@@ -341,13 +341,13 @@ export type KeyCode =
   | 'vk_consumer_play'
   | 'vk_consumer_next'
   | 'volume_down'
-  | 'volume_up';
+  | 'volume_up'
 
 export class LayerCommand {
-  description?: string;
-  to?: To[];
+  description?: string
+  to?: To[]
 }
 
 export type HyperKeySublayer = {
-  [key_code in KeyCode]?: LayerCommand;
-};
+  [key_code in KeyCode]?: LayerCommand
+}

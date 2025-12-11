@@ -1,8 +1,8 @@
-import { ApiKey, ApiKeyArgs } from '@pulumi/gcp/projects';
-import { CustomResourceOptions } from '@pulumi/pulumi';
-import { merge } from 'lodash';
+import { ApiKey, ApiKeyArgs } from '@pulumi/gcp/projects'
+import { CustomResourceOptions } from '@pulumi/pulumi'
+import { merge } from 'lodash'
 
-import { Providers } from '../resources/providers';
+import { Providers } from './providers'
 
 export class _APIKey extends ApiKey {
 
@@ -19,6 +19,6 @@ export class _APIKey extends ApiKey {
       merge(opts, {
         provider: Providers.operator,
         dependsOn: Providers.operator,
-      }));
+      }))
   }
 }

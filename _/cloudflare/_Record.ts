@@ -1,7 +1,7 @@
-import { DnsRecord, DnsRecordArgs, RecordArgs } from '@pulumi/cloudflare';
-import { CustomResourceOptions, Input } from '@pulumi/pulumi';
-import { merge } from 'lodash';
-import { _Config } from '..';
+import { DnsRecord, DnsRecordArgs, RecordArgs } from '@pulumi/cloudflare'
+import { CustomResourceOptions, Input } from '@pulumi/pulumi'
+import { merge } from 'lodash'
+import { _Config } from '../shared'
 
 interface _RecordArgs extends Omit<DnsRecordArgs,
   | 'zoneId'
@@ -23,7 +23,7 @@ export class _Record extends DnsRecord {
       zoneId: Object.entries(
         new _Config('cloudflare').object?.zones,
       ).find(([ key, value ]) => {
-        return RegExp(key).test($name);
+        return RegExp(key).test($name)
       })?.[1] as string,
       name: $name,
       type: 'A',
@@ -33,8 +33,11 @@ export class _Record extends DnsRecord {
     super(
       $name,
       merge(defaults, args),
-      opts,
-    );
+      {
+        ...opts,
+        deleteBeforeReplace: true,
+      },
+    )
   }
 
 }

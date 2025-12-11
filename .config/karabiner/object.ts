@@ -1,11 +1,11 @@
-import './string';
+import './string'
 import {
   HyperKeySublayer,
   KarabinerRule,
   KeyCode,
   LayerCommand,
   Manipulator,
-} from './types';
+} from './types'
 
 declare global {
   interface Object {
@@ -20,7 +20,7 @@ Object.defineProperties(
   {
     sublayers: {
       get: function() {
-        const variables = Object.keys(this).map(key => key.variable);
+        const variables = Object.keys(this).map(key => key.variable)
 
         return Object.entries(
           this as {
@@ -102,9 +102,9 @@ Object.defineProperties(
                     },
                   }),
                 ) ],
-              };
-        });
+              }
+        })
       },
     },
   },
-);
+)

@@ -1,5 +1,6 @@
 export COMMAND = $(word 1, $(MAKECMDGOALS))
 
 $(COMMAND):
-	-@kubectl config use-context berry
+	-@kubecolor config use-context berry
+	-@pulumi stack select local
 	@pulumi $(COMMAND)

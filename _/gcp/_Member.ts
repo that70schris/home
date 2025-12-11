@@ -1,5 +1,5 @@
-import { IAMMember, IAMMemberArgs } from '@pulumi/gcp/projects';
-import { merge } from 'lodash';
+import { IAMMember, IAMMemberArgs } from '@pulumi/gcp/projects'
+import { merge } from 'lodash'
 
 interface _MemberArgs extends Omit<IAMMemberArgs,
   | 'project'
@@ -23,7 +23,7 @@ export class _Member extends IAMMember {
           ? args.role
           : `roles/${args.role}`,
       }),
-      opts);
+      opts)
   }
 }
 
@@ -31,7 +31,7 @@ export class _GroupMember extends _Member {
   constructor(name: string, args: _MemberArgs, opts?, defaults = {
     scope: 'group',
   }) {
-    super(name, merge(defaults, args), opts);
+    super(name, merge(defaults, args), opts)
   }
 }
 
@@ -39,6 +39,6 @@ export class _ServiceMember extends _Member {
   constructor(name: string, args: _MemberArgs, opts?, defaults = {
     scope: 'serviceAccount',
   }) {
-    super(name, merge(defaults, args), opts);
+    super(name, merge(defaults, args), opts)
   }
 }

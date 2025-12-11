@@ -1,9 +1,11 @@
-import { _Kube } from '..';
+import { Resource } from '@pulumi/pulumi'
+import { _Kube } from '../../kubernetes'
 
 export class Plex extends _Kube {
-  override image = 'linuxserver/plex';
-  override container_port = 32400;
-  override service_port = 443;
+  override image = 'linuxserver/plex:latest'
+  override container_port = 32400
+  override service_port = 443
+  override ingress = true
 
   override get volumes() {
     return super.volumes.concat([{
@@ -11,17 +13,19 @@ export class Plex extends _Kube {
       hostPath: {
         path: '/home/chris/.config/plex',
       },
-    }]);
+    }])
   }
 
   override get volume_mounts() {
     return super.volume_mounts.concat([{
-      name: 'config',
       mountPath: '/config',
-    }]);
+      name: 'config',
+    }])
   }
 
-  override includes = [
-    this.service,
-  ];
+  override get index(): Resource[] {
+    return [
+      this.service,
+    ]
+  }
 }

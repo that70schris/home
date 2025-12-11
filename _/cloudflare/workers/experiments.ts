@@ -1,4 +1,3 @@
-
 export default {
   async scheduled(
     controller: ScheduledController,
@@ -13,34 +12,34 @@ export default {
       .then(async(response: any) => {
         await environment[environment.ENVIRONMENT].put('experiments',
           JSON.stringify(response.experiments.filter((experiment) => {
-            return experiment.enabled && !experiment.deployments?.length;
+            return experiment.enabled && !experiment.deployments?.length
           }).map((experiment) => {
             return {
               key: experiment.key,
               variants: experiment.variants.map((variant) => {
-                console.log(variant);
+                console.log(variant)
 
                 return {
                   ...variant,
                   payload: {
                     ...variant.payload,
                     url: (() => {
-                      const url = new URL(variant.payload.url);
+                      const url = new URL(variant.payload.url)
 
                       if (!url.hostname.includes(environment.HOST))
                         url.hostname = url.hostname
                           .replace(
                             new RegExp(`(www.)?${environment.DOMAIN}`),
                             environment.HOST,
-                          );
+                          )
 
-                      return url;
+                      return url
                     })(),
                   },
-                };
+                }
               }),
-            };
-          })));
-      });
+            }
+          })))
+      })
   },
-};
+}

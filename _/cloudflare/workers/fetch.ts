@@ -3,7 +3,7 @@ export default {
     request: Request,
     environment: { [key: string]: any },
   ): Promise<Response> {
-    const url = new URL(request.url);
+    const url = new URL(request.url)
 
     class _Headers extends Headers {
       set cookie(cookie: {
@@ -12,7 +12,7 @@ export default {
         age?: number
       }) {
         if (!cookie.value)
-          return;
+          return
 
         try {
           this.append('Set-Cookie', Object.entries({
@@ -23,76 +23,76 @@ export default {
           }).reduce((result: string[], entry) => {
             return entry[1]
               ? result.concat(`${entry[0]}=${entry[1]}`)
-              : result;
-          }, []).join('; '));
+              : result
+          }, []).join('; '))
         } catch(error) {
-          console.error(error);
+          console.error(error)
         }
       }
     }
 
     class _Request extends Request {
-      override referrer = this.headers.get('Referer') ?? '';
+      override referrer = this.headers.get('Referer') ?? ''
       $referrer = (() => {
         try {
-          return new URL(this.referrer ?? '');
+          return new URL(this.referrer ?? '')
         } catch(error) {
-          console.error(error);
+          console.error(error)
         }
-      })();
+      })()
 
       get params(): { [key: string]: string } {
         return url.search?.split('?')?.[1]?.split('&')
           .reduce((result, item) => {
-            const parts = item.split('=');
+            const parts = item.split('=')
 
             return {
               ...result,
               [parts[0].toLowerCase()]: parts[1],
-            };
+            }
           }, {})
-          ?? {};
+          ?? {}
       }
 
       get cookies(): { [key: string]: string } | undefined {
         return this.headers.get('Cookie')?.split('; ')
           .reduce((result, cookie) => {
-            const parts = cookie.split(/=(.*)/);
+            const parts = cookie.split(/=(.*)/)
 
             return {
               ...result,
               [parts[0]]: parts[1],
-            };
-          }, {});
+            }
+          }, {})
       }
 
       cachable: boolean = (() => {
         switch (true) {
           case this.headers.get('Cache-Control') == 'no-cache':
           case url.searchParams.has('gtm_debug'):
-            return false;
+            return false
           default:
-            return true;
+            return true
         }
-      })();
+      })()
 
       async process(): Promise<Response | Promise<Response>> {
         if (this.method != 'GET')
-          return fetch(this);
+          return fetch(this)
 
-        const cache = await caches.open(environment.ENVIRONMENT);
-        const extension = url.pathname.split('.').slice(1).pop() ?? '';
+        const cache = await caches.open(environment.ENVIRONMENT)
+        const extension = url.pathname.split('.').slice(1).pop() ?? ''
 
         // set common headers
         const headers = new _Headers({
 
-        });
+        })
 
         try {
           headers.cookie = {
             name: 'ip',
             value: this.headers.get('CF-Connecting-IP'),
-          };
+          }
 
           if (this.$referrer
             && !this.$referrer.hostname.match(RegExp(`${environment.DOMAIN}$`))) {
@@ -100,13 +100,13 @@ export default {
               name: 'initial_referrer',
               value: this.cookies?.initial_referrer ?? this.referrer,
               age: 60 * 60 * 24 * 365,
-            };
+            }
 
             headers.cookie = {
               name: 'referrer',
               value: this.referrer,
               age: 60 * 30,
-            };
+            }
           }
 
           const redirect: string | undefined = ({
@@ -117,27 +117,27 @@ export default {
           ).href]?.replace(
             new RegExp(`(www.)?${environment.DOMAIN}`),
             environment.HOST,
-          );
+          )
 
           if (redirect) {
-            const _redirect = new URL(redirect, url.origin);
-            headers.set('Location', _redirect.href);
+            const _redirect = new URL(redirect, url.origin)
+            headers.set('Location', _redirect.href)
             return new Response(null, {
               headers: headers,
               status: 301,
-            });
+            })
           }
 
           if ([
             'css',
             'js',
           ].includes(extension)) {
-            let response = this.cachable ? await cache.match(this) : undefined;
+            let response = this.cachable ? await cache.match(this) : undefined
             return response ?? (async() => {
-              response = await fetch(this);
+              response = await fetch(this)
 
               try {
-                const content = await response.text();
+                const content = await response.text()
                 response = new Response((await (async() => {
                   if (content.includes('\n'))
                     switch (extension) {
@@ -149,10 +149,10 @@ export default {
                           .replace(/:\s*(.)/g, ':$1')
                           .replace(/,\s*(.)/g, ',$1')
                           .replace(/;\s*(.)/g, ';$1')
-                          .replace(/\s{2,}/g, ' ');
+                          .replace(/\s{2,}/g, ' ')
                     }
 
-                  return content;
+                  return content
                 })()), {
                   ...response,
                   headers: {
@@ -162,42 +162,42 @@ export default {
                       css: 'text/css',
                     }[extension],
                   },
-                });
+                })
 
                 this.cachable
-                && await cache.put(this, response.clone());
+                && await cache.put(this, response.clone())
               } catch(error) {
-                console.warn(error);
-                return await fetch(this);
+                console.warn(error)
+                return await fetch(this)
               }
 
-              return response;
-            })();
+              return response
+            })()
           }
         } catch(error) {
-          console.error(error);
+          console.error(error)
         }
 
-        return this.respond(headers);
+        return this.respond(headers)
       }
 
       async respond(headers: Headers): Promise<Response> {
-        const _request = new _Request(url.href, this);
+        const _request = new _Request(url.href, this)
         let response = await fetch(_request, {
           cf: {
             cacheEverything: this.cachable,
           },
-        } as RequestInit);
+        } as RequestInit)
 
         response = new Response(response.body, response);
         [...headers].forEach((header) => {
-          response.headers.append(header[0], header[1]);
-        });
+          response.headers.append(header[0], header[1])
+        })
 
-        return response;
+        return response
       }
     }
 
-    return new _Request(request).process();
+    return new _Request(request).process()
   },
-};
+}

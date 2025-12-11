@@ -4,6 +4,7 @@
 !/.config/
 !/.github/
 !/.hammerspoon/
+!/.kube/
 !/.pnpm/
 !/Documents/
 !/Library/
@@ -14,6 +15,7 @@
 !.vscode/
 !.warp/
 
+!.env
 !.editorconfig
 !.gitconfig
 !.gitignore

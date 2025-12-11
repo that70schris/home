@@ -1,2 +1,2 @@
-export * from './Homebridge';
-export * from './Plex';
+export * from './Homebridge'
+export * from './Plex'

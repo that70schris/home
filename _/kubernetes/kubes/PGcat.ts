@@ -1,15 +1,13 @@
-import { input } from '@pulumi/kubernetes/types';
-import { all } from '@pulumi/pulumi';
-import * as json2Toml from 'json2toml';
-import { merge } from 'lodash';
-
-import { _Kube } from '..';
-import { once } from '../../../shared/decorators';
-import { _ConfigMap } from '../configmap';
+import { input } from '@pulumi/kubernetes/types'
+import { all } from '@pulumi/pulumi'
+import * as json2Toml from 'json2toml'
+import { merge } from 'lodash'
+import { _ConfigMap, _Kube } from '..'
+import { once } from '../../shared/decorators'
 
 export class PGCat extends _Kube {
-  override image: string = 'ghcr.io/postgresml/pgcat:latest';
-  override container_port: number = 6432;
+  override image: string = 'ghcr.io/postgresml/pgcat:latest'
+  override container_port: number = 6432
 
   @once
   get configmap() {
@@ -20,7 +18,7 @@ export class PGCat extends _Kube {
       DatabaseInstances.main.admin.password,
       DatabaseInstances.main.privateIpAddress,
       DatabaseInstances.main.replicas?.map((replica) => {
-        return replica.privateIpAddress;
+        return replica.privateIpAddress
       }),
     ]).apply(([
       api_name,
@@ -69,7 +67,7 @@ export class PGCat extends _Kube {
                           ip,
                           DatabaseInstances.main.port,
                           'replica',
-                        ];
+                        ]
                       }),
                     ],
                   },
@@ -83,14 +81,14 @@ export class PGCat extends _Kube {
                   },
                 },
               },
-            });
+            })
           }, {}),
         }, {
           newlineAfterSection: true,
           indent: 2,
         }),
-      });
-    });
+      })
+    })
   }
 
   override get volumes(): input.core.v1.Volume[] {
@@ -102,7 +100,7 @@ export class PGCat extends _Kube {
           name: this.configmap.metadata.name,
         },
       },
-    ]);
+    ])
   }
 
   override get volume_mounts(): input.core.v1.VolumeMount[] {
@@ -112,7 +110,7 @@ export class PGCat extends _Kube {
         mountPath: '/etc/pgcat/pgcat.toml',
         subPath: 'pgcat.toml',
       },
-    ]);
+    ])
   }
 
 }

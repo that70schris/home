@@ -1,5 +1,5 @@
-import { Repository, RepositoryArgs } from '@pulumi/gcp/artifactregistry';
-import { CustomResourceOptions } from '@pulumi/pulumi';
+import { Repository, RepositoryArgs } from '@pulumi/gcp/artifactregistry'
+import { CustomResourceOptions } from '@pulumi/pulumi'
 
 interface _RepositoryArgs extends Omit<RepositoryArgs,
   | 'format'
@@ -34,6 +34,6 @@ export class _Repository extends Repository {
         },
       ],
       ...args,
-    }, options);
+    }, options)
   }
 }

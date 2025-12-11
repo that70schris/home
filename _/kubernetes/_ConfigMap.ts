@@ -1,18 +1,18 @@
-import { ConfigMap } from '@pulumi/kubernetes/core/v1';
+import { ConfigMap } from '@pulumi/kubernetes/core/v1'
 
 export class _ConfigMap extends ConfigMap {
 
   constructor(
     public name: string,
-    data,
+    args,
     opts?,
   ) {
     super(name, {
       metadata: {
         name,
       },
-      data,
-    }, opts);
+      data: args,
+    }, opts)
   }
 
 }

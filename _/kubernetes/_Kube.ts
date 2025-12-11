@@ -1,22 +1,36 @@
-import { Deployment } from '@pulumi/kubernetes/apps/v1';
-import { Service, ServiceSpecType } from '@pulumi/kubernetes/core/v1';
-import { input } from '@pulumi/kubernetes/types';
-import { Resource } from '@pulumi/pulumi';
-import { _Port } from '.';
-import { once } from '../../shared/decorators';
+import { Deployment } from '@pulumi/kubernetes/apps/v1'
+import { Service, ServiceAccount, ServiceSpecType } from '@pulumi/kubernetes/core/v1'
+import { ClusterRole, ClusterRoleBinding } from '@pulumi/kubernetes/rbac/v1'
+import { input } from '@pulumi/kubernetes/types'
+import { Resource } from '@pulumi/pulumi'
+import { merge } from 'lodash'
+import { _IngressBackend, _Port } from '.'
+import { once } from '../shared/decorators'
+
+interface KubeOverrides {
+  domain?: string
+  name?: string
+}
 
 export class _Kube {
-  container_port = 80;
-  service_port?: number;
-  path = '/';
-  replicas = 1;
+  name = this.constructor.name.toLowerCase()
+  image: string = this.name
+  container_port?: number
+  service_port?: number
+  path = '/'
+  replicas = 1
+  ingress: boolean = false
+  domain?: string
 
   constructor(
-    public domain?: string,
-    public name: string = this.constructor.name.toLowerCase(),
-    public image: string = this.name,
-  ) {
+    public overrides: KubeOverrides = {
 
+    },
+  ) {
+    merge(
+      this,
+      overrides,
+    )
   }
 
   get metadata(): input.meta.v1.ObjectMeta {
@@ -25,92 +39,160 @@ export class _Kube {
       labels: {
         app: this.name,
       },
-    };
+    }
   }
 
   get http_check(): input.core.v1.HTTPGetAction {
     return {
       path: this.path,
       port: this.port.numbers.container,
-    };
+    }
   }
 
   @once
-  get port(): _Port {
-    return new _Port('main', {
+  get port(): _Port | undefined {
+    return this.container_port && new _Port('main', {
       container: this.container_port,
       service: this.service_port,
-    });
+    })
   }
 
   get ports(): _Port[] {
     return [
       this.port,
-    ];
+    ].filter(Boolean)
   }
 
   get livenessProbe(): input.core.v1.Probe | undefined {
-    return;
+    return
   }
 
   get readinessProbe(): input.core.v1.Probe | undefined {
-    return;
+    return
   }
 
   get startupProbe(): input.core.v1.Probe | undefined {
-    return;
+    return
   }
 
   get resources(): input.core.v1.ResourceRequirements {
     return {
 
-    };
+    }
   }
 
   get environment(): input.core.v1.EnvVar[] {
     return [
-
-    ];
+      {
+        name: 'TZ',
+        value: 'America/New_York',
+      },
+    ]
   }
 
   get volumes(): input.core.v1.Volume[] {
     return [
 
-    ];
+    ]
   }
 
   get volume_mounts(): input.core.v1.VolumeMount[] {
     return [
 
-    ];
+    ]
   }
 
   get sidecars(): input.core.v1.Container[] {
     return [
 
-    ];
+    ]
   }
 
   get strategy(): input.apps.v1.DeploymentStrategy {
     return {
       type: 'RollingUpdate',
       rollingUpdate: {
-        maxSurge: this.replicas > 1 ? 0 : 1,
-        maxUnavailable: Math.min(this.replicas - 1, 1),
+        maxSurge: 0,
       },
-    };
+    }
   }
 
   get initContainers(): input.core.v1.Container[] {
     return [
 
-    ];
+    ]
   }
 
   get command() {
     return [
 
-    ];
+    ]
+  }
+
+  get args() {
+    return [
+
+    ]
+  }
+
+  @once
+  get account(): ServiceAccount {
+    return new ServiceAccount(this.name, {
+      metadata: {
+        name: this.name,
+      },
+    })
+  }
+
+  @once
+  get clusterRole() {
+    return new ClusterRole(this.name, {
+      metadata: {
+        name: this.name,
+      },
+      rules: [{
+        apiGroups: [''],
+        resources: ['services'],
+        verbs: [ 'list', 'watch' ],
+      }, {
+        apiGroups: [ 'extensions', 'networking.k8s.io' ],
+        resources: ['ingresses'],
+        verbs: [ 'list', 'watch' ],
+      }],
+    }, {
+      parent: this.account,
+    })
+  }
+
+  @once
+  get crb() {
+    return new ClusterRoleBinding(this.name, {
+      metadata: {
+        name: this.name,
+      },
+      roleRef: {
+        apiGroup: 'rbac.authorization.k8s.io',
+        kind: this.clusterRole.kind,
+        name: this.clusterRole.metadata.name!,
+      },
+      subjects: [
+        {
+          kind: this.account.kind,
+          name: this.account.metadata.name,
+          namespace: this.account.metadata.namespace,
+        },
+      ],
+    }, {
+      parent: this.account,
+    })
+  }
+
+  get securityContext(): input.core.v1.SecurityContext | undefined {
+    return
+  }
+
+  get containerSecurityContext(): input.core.v1.SecurityContext | undefined {
+    return
   }
 
   @once
@@ -128,13 +210,17 @@ export class _Kube {
         template: {
           metadata: this.metadata,
           spec: {
+            hostNetwork: true,
             enableServiceLinks: false,
             initContainers: this.initContainers,
+            serviceAccountName: this.account?.metadata.name,
+            securityContext: this.securityContext,
             volumes: this.volumes,
-            hostNetwork: true,
             containers: [{
               name: 'main',
               image: this.image,
+              ports: this.ports.map(port => port.container),
+              securityContext: this.containerSecurityContext,
               livenessProbe: this.livenessProbe,
               readinessProbe: this.readinessProbe,
               startupProbe: this.startupProbe,
@@ -142,7 +228,7 @@ export class _Kube {
               volumeMounts: this.volume_mounts,
               env: this.environment,
               command: this.command,
-              ports: this.ports.map(port => port.container),
+              args: this.args,
             } as input.core.v1.Container]
               .concat(this.sidecars),
           },
@@ -150,7 +236,7 @@ export class _Kube {
       },
     }, {
 
-    });
+    })
   }
 
   @once
@@ -170,10 +256,10 @@ export class _Kube {
       dependsOn: [
         this.deployment,
       ],
-    });
+    })
   }
 
-  get backend(): input.networking.v1.IngressBackend {
+  get backend(): _IngressBackend {
     return {
       service: {
         name: this.name,
@@ -181,10 +267,12 @@ export class _Kube {
           number: this.port.numbers.service,
         },
       },
-    };
+    }
   }
 
-  includes: Resource[] = [
-
-  ];
+  get index(): Resource[] {
+    return [
+      this.deployment,
+    ]
+  }
 }

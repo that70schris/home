@@ -111,7 +111,7 @@
   "editor.renderWhitespace": "none",
   "editor.roundedSelection": false,
   "editor.rulers": [
-    80
+    66,
   ],
   "editor.scrollBeyondLastLine": false,
   "editor.tabSize": 2,
@@ -134,6 +134,7 @@
     ".*rc": "shellscript",
     ".Brewfile": "ruby",
     ".firebaserc": "json",
+    ".gitconfig.*": "gitconfig",
     "*htaccess*": "apacheconf",
     "*httpd*": "apacheconf",
     "Makefile.*": "makefile",
@@ -146,7 +147,6 @@
   },
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
-  "geminicodeassist.enable": false,
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
@@ -162,9 +162,6 @@
   "gitlens.statusBar.alignment": "right",
   "gitlens.statusBar.enabled": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "liveServer.settings.host": "localhost",
-  "liveServer.settings.NoBrowser": true,
   "lldb.launch.expressions": "native",
   "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
   "lldb.suppressUpdateNotifications": true,
@@ -233,5 +230,5 @@
   "workbench.settings.editor": "json",
   "workbench.settings.openDefaultSettings": false,
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.tree.renderIndentGuides": "always",
 }

@@ -1,6 +1,6 @@
-import { writeFileSync } from 'fs';
-import './object';
-import { KarabinerRule } from './types';
+import { writeFileSync } from 'fs'
+import './object'
+import { KarabinerRule } from './types'
 
 writeFileSync(
   `${process.env.HOME}/.config/karabiner/karabiner.json`,
@@ -56,4 +56,4 @@ writeFileSync(
   },
   null,
   2),
-);
+)

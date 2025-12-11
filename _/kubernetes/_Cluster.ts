@@ -1,15 +1,15 @@
-import { IngressController } from '@pulumi/kubernetes-ingress-nginx';
-import { CustomResource } from '@pulumi/kubernetes/apiextensions';
-import { Secret } from '@pulumi/kubernetes/core/v1';
-import { Chart } from '@pulumi/kubernetes/helm/v4';
-import { Config } from '@pulumi/pulumi';
-import { _Ingress, _Kube } from '.';
-import { once } from '../../shared/decorators/once';
-import { Twingate } from '../twingate';
+import { IngressController } from '@pulumi/kubernetes-ingress-nginx'
+import { Secret } from '@pulumi/kubernetes/core/v1'
+import { Chart } from '@pulumi/kubernetes/helm/v4'
+import { Config } from '@pulumi/pulumi'
+import { _CustomResource, _Ingress, _Kube } from '.'
+import { once } from '../shared/decorators'
+import { Twingate } from '../twingate'
+import { mDNS } from './kubes/mDNS'
 
 interface ClusterArgs {
   domain?: string
-  includes: _Kube[]
+  kubes: _Kube[]
 }
 
 export class _Cluster {
@@ -18,7 +18,9 @@ export class _Cluster {
     public name: string,
     public args: ClusterArgs,
   ) {
-
+    args.kubes.forEach((kube) => {
+      kube.index
+    })
   }
 
   twingate = new Chart('twingate', {
@@ -33,7 +35,7 @@ export class _Cluster {
         refreshToken: Twingate.tokens.refreshToken,
       },
     },
-  });
+  })
 
   manager = new Chart('manager', {
     chart: 'cert-manager',
@@ -41,37 +43,80 @@ export class _Cluster {
       repo: 'https://charts.jetstack.io',
     },
     values: {
+      fullnameOverride: 'certificate',
+      crds: {
+        enabled: true,
+        keep: false,
+      },
       global: {
         leaderElection: {
           namespace: 'default',
         },
       },
-      installCRDs: true,
-      prometheus: {
-        enabled: false,
-      },
     },
-  });
+  })
 
   cloudflare = new Secret('cloudflare', {
     metadata: {
       name: 'cloudflare',
     },
     stringData: {
-      token: new Config('cloudflare').require('apiToken'),
+      token: new Config('cloudflare')
+        .require('apiToken'),
     },
-  });
+  })
 
-  issuer = new CustomResource('issuer', {
+  root = new _CustomResource('root', {
     apiVersion: 'cert-manager.io/v1',
-    kind: 'Issuer',
-    metadata: {
-      name: 'issuer',
+    kind: 'ClusterIssuer',
+    spec: {
+      selfSigned: {},
     },
+  })
+
+  cert = new _CustomResource('root', {
+    apiVersion: 'cert-manager.io/v1',
+    kind: 'Certificate',
+    spec: {
+      isCA: true,
+      commonName: 'bailey.mx',
+      secretName: this.root.metadata.name,
+      privateKey: {
+        algorithm: 'ECDSA',
+        size: 256,
+      },
+      issuerRef: {
+        kind: this.root.kind,
+        name: this.root.metadata.name,
+      },
+    },
+  }, {
+    dependsOn: [
+      this.root,
+    ],
+  })
+
+  private = new _CustomResource('private', {
+    apiVersion: 'cert-manager.io/v1',
+    kind: 'ClusterIssuer',
+    spec: {
+      ca: {
+        secretName: this.cert.metadata.name,
+      },
+    },
+  }, {
+    dependsOn: [
+      this.cert,
+    ],
+  })
+
+  letsencrypt = new _CustomResource('letsencrypt', {
+    apiVersion: 'cert-manager.io/v1',
+    kind: 'ClusterIssuer',
     spec: {
       acme: {
         server: 'https://acme-v02.api.letsencrypt.org/directory',
-        email: 'chris@bailey.mx',
+        email: new Config().require('email'),
         privateKeySecretRef: {
           name: 'letsencrypt',
         },
@@ -93,45 +138,54 @@ export class _Cluster {
       this.cloudflare,
       this.manager,
     ],
-  });
+  })
 
   nginx = new IngressController('nginx', {
     fullnameOverride: 'nginx',
     controller: {
-      publishService: {
-        enabled: true,
-      },
+      containerName: 'main',
     },
-  });
+  })
 
   @once
   get ingress() {
     return new _Ingress('nginx', {
-      rules: this.args.includes
-        .map(service => ({
+      rules: this.args?.kubes
+        .filter((kube) => {
+          return kube.ingress
+        }).map(kube => ({
           host: [
-            service.name,
-            service.domain ?? this.args.domain,
+            kube.name,
+            kube.overrides.domain
+            ?? this.args.domain
+            ?? `${this.name}.local`,
           ].filter(Boolean).join('.'),
           http: {
             paths: [{
-              backend: service.backend,
+              backend: kube.backend,
               pathType: 'Prefix',
               path: '/',
             }],
           },
         })),
     }, {
-      issuer: this.issuer,
-      controller: this.nginx,
-      dependsOn: [
-        this.nginx,
-      ],
-    });
+      cluster: this,
+      issuer: this.letsencrypt,
+      // issuer: this.private,
+    })
   }
 
-  includes = [
-    this.ingress,
-  ];
+  @once
+  get mDNS() {
+    return new mDNS().index
+  }
+
+  @once
+  get index() {
+    return [
+      this.ingress,
+      ...this.mDNS,
+    ]
+  }
 
 }

@@ -1,20 +1,14 @@
+# Kiro CLI pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
 # Q pre block. Keep at the top of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 eval $(/opt/homebrew/bin/brew shellenv)
-eval "$(starship init zsh)"
 
-export PATH="$PATH:/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin"
-export HOMEBREW_BUNDLE_FILE=~/Brewfile
-export HOMEBREW_NO_ENV_HINTS=true
-export PNPM_HOME="${HOME}/.pnpm"
-export PATH="$PATH:$PNPM_HOME"
-export PULUMI_HOME=.pulumi
-export CLICOLOR=1
-alias kubectl='kubecolor'
+source "${HOMEBREW_PREFIX}/opt/autoenv/activate.sh"
+eval "$(starship init zsh)"
 setopt autocd
 
 NEWLINE=$'\n'
-PROMPT="$PROMPT$NEWLINE"
+PROMPT="${PROMPT}${NEWLINE}"
 if [ ${TERM_PROGRAM:-''} = 'WarpTerminal' ]; then
   printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh" }}\x9c'
   source ~/.config/aliases
@@ -27,8 +21,10 @@ else
   source ~/.config/zsh/ohmy/plugins/sudo/sudo.plugin.zsh
   source ~/.config/zsh/plugins/abbr/zsh-abbr.zsh
 
-  PROMPT="$PROMPT❯ "
+  PROMPT="${PROMPT}❯ "
 fi
 
 # Q post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
+
+# Kiro CLI post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"

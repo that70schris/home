@@ -1,6 +1,6 @@
-import { Bucket, BucketArgs } from '@pulumi/gcp/storage';
-import { CustomResourceOptions } from '@pulumi/pulumi';
-import { merge } from 'lodash';
+import { Bucket, BucketArgs } from '@pulumi/gcp/storage'
+import { CustomResourceOptions } from '@pulumi/pulumi'
+import { merge } from 'lodash'
 
 interface _BucketArgs extends Omit<BucketArgs,
   | 'location'
@@ -27,6 +27,6 @@ export class _Bucket extends Bucket {
           'PUT',
         ],
       }],
-    }, args), opts);
+    }, args), opts)
   }
 }

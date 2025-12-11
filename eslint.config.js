@@ -1,8 +1,8 @@
-import js from '@eslint/js';
-import stylistic from '@stylistic/eslint-plugin';
-import { defineConfig } from 'eslint/config';
-import globals from 'globals';
-import ts from 'typescript-eslint';
+import js from '@eslint/js'
+import stylistic from '@stylistic/eslint-plugin'
+import { defineConfig } from 'eslint/config'
+import globals from 'globals'
+import ts from 'typescript-eslint'
 
 export default defineConfig([
   stylistic.configs.recommended,
@@ -52,8 +52,17 @@ export default defineConfig([
         brace_style: [ 1, '1tbs' ],
         function_call_argument_newline: [ 1, 'consistent' ],
         function_paren_newline: [ 1, 'consistent' ],
-        padded_blocks: 0,
-        no_extra_semi: 1,
+        member_delimiter_style: [ 1, {
+          multiline: {
+            delimiter: 'none',
+            requireLast: false,
+          },
+          singleline: {
+            delimiter: 'semi',
+            requireLast: false,
+          },
+        }],
+        multiline_ternary: 0,
         no_multiple_empty_lines: [ 1, {
           maxEOF: 0,
           max: 1,
@@ -65,8 +74,11 @@ export default defineConfig([
         operator_linebreak: [ 1, 'before', {
           overrides: { '=': 'after' },
         }],
+        padded_blocks: 0,
         quotes: [ 1, 'single' ],
-        semi: [ 1, 'always' ],
+        semi: [ 1, 'never', {
+          beforeStatementContinuationChars: 'never',
+        }],
         space_before_function_paren: [ 1, 'never' ],
         switch_colon_spacing: 1,
       }).reduce((result, [ key, value ]) => ({
@@ -121,4 +133,4 @@ export default defineConfig([
     }), {}),
 
   },
-]);
+])
