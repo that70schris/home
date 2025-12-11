@@ -16,29 +16,9 @@
 
 [submodule "ohmyzsh"]
 	path = .config/zsh/ohmy
-	url = https://github.com/ohmyzsh/ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
 
 [submodule "hammerflow"]
 	path = .hammerspoon/Spoons/Hammerflow.spoon
 	url = https://github.com/saml-dev/Hammerflow.spoon
 
-
-[submodule "bonjour"]
-	path = raycast/extensions/bonjour
-	url = https://github.com/that70schris/raycast-extensions-bonjour
-
-[submodule "defaults"]
-	path = raycast/extensions/defaults
-	url = https://github.com/that70schris/raycast-extensions-defaults
-
-[submodule "hammerspoon"]
-	path = raycast/extensions/hammerspoon
-	url = https://github.com/that70schris/raycast-extensions-hammerspoon
-
-[submodule "hostwriter.app"]
-	path = hostwriter.app
-	url = https://github.com/that70schris/hostwriter.app
-
-[submodule "arcade"]
-	path = arcade
-	url = https://github.com/that70schris/arcade
