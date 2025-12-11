@@ -1,4 +1,3 @@
-!aliases
 !fish/
 !gh/
 !htop/
@@ -9,4 +8,5 @@
 !zed/
 !zsh/
 
+!aliases
 !*.toml
