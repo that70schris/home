@@ -17,17 +17,16 @@ $docker_context\
 $package\
 $python\
 $directory\
-$git_branch\
-$git_commit\
-$git_state\
-$git_status\
-$git_metrics\
 $character\
 """
 
 # move the rest of the prompt to the right
 right_format = """
-$shell\
+$git_metrics\
+$git_status\
+$git_state\
+$git_commit\
+$git_branch\
 """
 
 [character]
