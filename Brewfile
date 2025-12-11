@@ -64,6 +64,7 @@ cask "twingate"
 cask "viscosity"
 cask "visual-studio-code"
 cask "warp"
+cask "wifi-explorer"
 cask "wifiman"
 cask "zoom"
 mas "1Blocker", id: 1365531024
@@ -76,7 +77,6 @@ mas "Logic Pro", id: 634148309
 mas "Mapper", id: 1589391989
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "WiFi Explorer", id: 494803304
 mas "Xcode", id: 497799835
 vscode "bbenoist.nix"
 vscode "bennycode.sort-everything"
