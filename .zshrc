@@ -1,5 +1,4 @@
-eval $(/opt/homebrew/bin/brew shellenv)
-source "${HOMEBREW_PREFIX}/opt/autoenv/activate.sh"
+source "/opt/homebrew/opt/autoenv/activate.sh"
 eval "$(starship init zsh)"
 setopt autocd
 
