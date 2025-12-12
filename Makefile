@@ -26,4 +26,4 @@ berry.local:
 	apt upgrade -y
 	apt install zsh
 	chsh -s $(which zsh)
-	git submodules update --init --recursive
+	@make git

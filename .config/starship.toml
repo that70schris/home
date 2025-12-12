@@ -4,7 +4,7 @@ format = """
 ($sudo )\
 ($username(@$hostname)/)\
 ($directory )\
-$fill\
+$fill \
 $git_metrics\
 $git_status\
 $git_state\
@@ -39,7 +39,7 @@ $gcloud\
   format = ' 🐳'
 
 [fill]
-  symbol = '_'
+  symbol = '⎯'
   style = 'black'
 
 [gcloud]
