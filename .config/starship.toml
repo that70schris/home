@@ -40,7 +40,7 @@ $gcloud\
 
 [fill]
   symbol = '⎯'
-  style = 'black'
+  style = 'dimmed'
 
 [gcloud]
   format = '( ☁️  [$project](#1a73e8))'

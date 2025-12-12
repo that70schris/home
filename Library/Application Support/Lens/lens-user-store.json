@@ -19,6 +19,14 @@
 		"terminalConfig": {
 			"fontSize": 14
 		},
+		"syncKubeconfigEntries": [
+			{
+				"filePath": "/Users/chris/.kube"
+			},
+			{
+				"filePath": "/Users/chris/_/.kube/config"
+			}
+		],
 		"updateChannel": "latest"
 	}
 }
