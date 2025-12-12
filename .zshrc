@@ -2,6 +2,7 @@
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
 source /opt/homebrew/opt/autoenv/activate.sh
 eval "$(starship init zsh)"
+source ~/.config/aliases
 setopt autocd
 
 source $(gcloud info --format='value(installation.sdk_root)')/*.zsh.inc
@@ -14,7 +15,6 @@ source ~/.config/zsh/plugins/abbr/zsh-abbr.zsh
 PROMPT+=$'\n'
 
 if [ $TERM_PROGRAM = 'WarpTerminal' ]; then
-  source ~/.config/aliases
   PROMPT+=$'\n'
 fi
 
