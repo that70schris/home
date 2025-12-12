@@ -4,7 +4,6 @@ format = """
 ($sudo )\
 ($username(@$hostname) )\
 ($directory )\
-($character )\
 $fill\
 $git_metrics\
 $git_status\
@@ -23,9 +22,6 @@ $git_status\
 ( $gcloud)\
 """
 
-[character]
-  format = '[...](white)'
-
 [directory]
   repo_root_style = 'blue'
   format = '[$read_only]($read_only_style)[$path]($style)'
@@ -43,7 +39,7 @@ $git_status\
   format = '🐳'
 
 [fill]
-  symbol = ' '
+  symbol = '-'
   style = 'white'
 
 [gcloud]
