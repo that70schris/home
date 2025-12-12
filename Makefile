@@ -25,3 +25,4 @@ berry.local:
 	apt update
 	apt upgrade -y
 	apt install zsh
+	chsh -s $(which zsh)
