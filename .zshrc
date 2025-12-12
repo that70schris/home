@@ -1,6 +1,5 @@
 # Kiro CLI pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
-
 source /opt/homebrew/opt/autoenv/activate.sh
 eval "$(starship init zsh)"
 setopt autocd
