@@ -59,9 +59,9 @@ $gcloud\
 [git_status]
   conflicted = '= '
   modified = ''
-  ahead = '[⬆](magenta)  '
-  behind = '[⬇](magenta)  '
-  diverged = '[⬆ ⬇](magenta)  '
+  ahead = '[⬆](purple)  '
+  behind = '[⬇](purple)  '
+  diverged = '[⬆ ⬇](purple)  '
   untracked = '[▪︎](white) '
   deleted = '[✘](bright-red) '
   renamed = '[»](yellow) '
