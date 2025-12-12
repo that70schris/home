@@ -86,6 +86,9 @@ $gcloud\
 ( $ahead_behind)\
 """
 
+[hostname]
+  format = '[$hostname]($style)'
+
 [kubernetes]
   disabled = false
   format = ' ⎈ [$context(/$namespace)](#09c1d1)'
