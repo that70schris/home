@@ -14,7 +14,7 @@ source ~/.config/zsh/ohmy/plugins/sudo/sudo.plugin.zsh
 source ~/.config/zsh/plugins/abbr/zsh-abbr.zsh
 PROMPT+=$'\n'
 
-if [ $TERM_PROGRAM = 'WarpTerminal' ]; then
+if [ $WARP_HONOR_PS1 ]; then
   PROMPT+=$'\n'
 fi
 

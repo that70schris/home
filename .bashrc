@@ -9,7 +9,7 @@ PROMPT_COMMAND='prompt'
 prompt() {
   PS1+='\n'
 
-  if [ $TERM_PROGRAM = 'WarpTerminal' ]; then
+  if [ $WARP_HONOR_PS1 ]; then
     PS1+='\n'
   fi
 }
