@@ -2,7 +2,7 @@
 format = """
 ($os )\
 ($sudo )\
-($username(@$hostname) )\
+($username(@$hostname)/)\
 ($directory )\
 $fill\
 $git_metrics\
