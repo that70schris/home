@@ -43,7 +43,7 @@ $gcloud\
   style = 'black'
 
 [gcloud]
-  format = ' ☁️  [$project](#1a73e8)'
+  format = '( ☁️  [$project](#1a73e8))'
 
 [git_branch]
   format = ' [\($branch(:$remote_branch)\)](#f1502f)'
