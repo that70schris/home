@@ -25,6 +25,7 @@
 !.gitmodules
 !.lintstagedrc.yml
 !.prettierrc.yml
+!.profile
 !.npmrc
 !.vimrc
 !.zshrc
