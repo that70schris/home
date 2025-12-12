@@ -1,0 +1,20 @@
+{
+  "[applescript]": {
+    "files.encoding": "utf8"
+  },
+  "files.associations": {
+    ".gitconfig.*": "gitconfig",
+    ".gitignore.*": "ignore",
+    ".gitmodules.*": "gitconfig",
+    "abbreviations": "shellscript",
+    "aliases": "shellscript"
+  },
+  "github-actions.workflows.pinned.workflows": [
+    ".github/workflows/publish.yml"
+  ],
+  "Lua.diagnostics.globals": [
+    "spoon",
+    "hs",
+  ],
+  "search.useIgnoreFiles": true,
+}
