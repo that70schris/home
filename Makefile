@@ -18,7 +18,7 @@ git:
 	git fetch
 	# grant full disk access
 	git checkout main
-	git fetch --recurse-submodules --prune
+	git submodules update --init --recursive
 
 berry.local:
 	@sudo true
@@ -26,3 +26,4 @@ berry.local:
 	apt upgrade -y
 	apt install zsh
 	chsh -s $(which zsh)
+	git submodules update --init --recursive
