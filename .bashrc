@@ -2,8 +2,8 @@
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/bashrc.pre.bash" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/bashrc.pre.bash"
 eval "$(starship init bash)"
 
-if [ ${TERM_PROGRAM:-''} = 'WarpTerminal' ]; then
-  printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh" }}\x9c'
+if [[ ${TERM_PROGRAM:-''} = 'WarpTerminal' ]]; then
+  printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "bash" }}\x9c'
   source ~/.config/aliases
 
   PS1=${PS1}$'\n\n'
