@@ -1,6 +1,6 @@
 export HOMEBREW_BUNDLE_FILE=~/Brewfile
 
-all:
+_:
 	@sudo true
 	-softwareupdate --install-rosetta
 	@make brew

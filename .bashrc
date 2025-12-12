@@ -8,14 +8,6 @@ if [ ${TERM_PROGRAM:-''} = 'WarpTerminal' ]; then
 
   PS1=${PS1}$'\n\n'
 else
-  source $(gcloud info --format='value(installation.sdk_root)')/*.zsh.inc
-  source ~/.config/zsh/plugins/syntax-highlighting/zsh-syntax-highlighting.zsh
-  source ~/.config/zsh/plugins/autosuggestions/zsh-autosuggestions.zsh
-  source ~/.config/zsh/plugins/tab-title/zsh-tab-title.plugin.zsh
-  source ~/.config/zsh/ohmy/plugins/dirhistory/dirhistory.plugin.zsh
-  source ~/.config/zsh/ohmy/plugins/sudo/sudo.plugin.zsh
-  source ~/.config/zsh/plugins/abbr/zsh-abbr.zsh
-
   PS1=${PS1}$'\n'
 fi
 
