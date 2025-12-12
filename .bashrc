@@ -6,7 +6,7 @@ if [ ${TERM_PROGRAM:-''} = 'WarpTerminal' ]; then
   printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh" }}\x9c'
   source ~/.config/aliases
 
-  PROMPT=${PROMPT}$'\n\n'
+  PS1=${PS1}$'\n\n'
 else
   source $(gcloud info --format='value(installation.sdk_root)')/*.zsh.inc
   source ~/.config/zsh/plugins/syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -16,7 +16,7 @@ else
   source ~/.config/zsh/ohmy/plugins/sudo/sudo.plugin.zsh
   source ~/.config/zsh/plugins/abbr/zsh-abbr.zsh
 
-  PROMPT=${PROMPT}$'\n'
+  PS1=${PS1}$'\n'
 fi
 
 # Kiro CLI post block. Keep at the bottom of this file.
