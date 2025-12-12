@@ -1,104 +1,105 @@
 '$schema' = 'https://starship.rs/config-schema.json'
 format = """
-$os\
-$sudo\
-$username\
-$hostname\
-$directory\
-$character\
+($os )\
+($sudo )\
+($username(@$hostname) )\
+($directory )\
+($character )\
 $fill\
-$right_format\
-$git_metrics\
-$git_status\
-$git_state\
-$git_commit\
-$git_branch\
-$swift\
-$python\
-$package\
-$docker_context\
-$container\
-$helm\
-$kubernetes\
-$pulumi\
-$terraform\
-$gcloud\
+( $git_metrics)\
+($git_status)\
+( $git_state)\
+( $git_commit)\
+( $git_branch)\
+( $swift)\
+( $python)\
+( $package)\
+( $docker_context)\
+( $container)\
+( $helm)\
+( $kubernetes)\
+( $pulumi)\
+( $terraform)\
+( $gcloud)\
 """
 
 [character]
-  format = '[...](white) '
+  format = '[...](white)'
 
 [directory]
   repo_root_style = 'blue'
-  format = '[$read_only]($read_only_style)[$path]($style) '
+  format = '[$read_only]($read_only_style)[$path]($style)'
   truncate_to_repo = false
   truncation_length = 5
   style = 'black'
 
 [docker_context]
-  format = '🐳 '
+  format = '🐳'
 
 [fill]
   symbol = ' '
   style = 'white'
 
 [gcloud]
-  format = '(☁️  [$project](#1a73e8) )'
+  format = '☁️  [$project](#1a73e8)'
 
 [git_branch]
-  format = '([\($branch(:$remote_branch)\)](#f1502f) )'
+  format = '[\($branch(:$remote_branch)\)](#f1502f)'
   only_attached = true
 
 [git_commit]
-  format = '([\($hash$tag\)](#f1502f) )'
+  format = '[\($hash$tag\)](#f1502f)'
   tag_disabled = false
-
-[git_status]
-  conflicted = '= '
-  modified = ''
-  ahead = '[⬆](purple)  '
-  behind = '[⬇](purple)  '
-  diverged = '[⬆ ⬇](purple)  '
-  untracked = '[▪︎](white) '
-  deleted = '[✘](bright-red) '
-  renamed = '[»](yellow) '
-  staged = '[+](yellow) '
-  stashed = '[⭑](yellow) '
-  up_to_date = ''
-  format = """
-$stashed\
-$conflicted\
-$deleted\
-$renamed\
-$modified\
-$staged\
-$untracked\
-$ahead_behind\
-"""
 
 [git_metrics]
   disabled = false
-  format = '([$added](green)) ([$deleted](red)) '
+  format = """
+( [$added](green))\
+( [$deleted](red))\
+"""
+
+[git_state]
+  format = '\([$state( $progress_current/$progress_total)]($style)\)'
+
+[git_status]
+  conflicted = '='
+  modified = ''
+  ahead = '[⬆](purple) '
+  behind = '[⬇](purple) '
+  diverged = '[⬆ ⬇](purple) '
+  untracked = '[▪︎](white)'
+  deleted = '[✘](bright-red)'
+  renamed = '[»](yellow)'
+  staged = '[+](yellow)'
+  stashed = '[⭑](yellow)'
+  up_to_date = ''
+  format = """
+( $stashed)\
+( $conflicted)\
+( $deleted)\
+( $renamed)\
+( $modified)\
+( $staged)\
+( $untracked)\
+( $ahead_behind)\
+"""
 
 [kubernetes]
   disabled = false
-  format = '⎈ [$context \($namespace\)](#09c1d1) '
-  contexts = [
-    { context_pattern = ".*_(.*)-(.*)_.*_(.*)" , context_alias = '${1}/${2}/${3}' }
-  ]
+  format = '⎈ [$context(/$namespace)](#09c1d1)'
 
 [package]
-  format = '📦 [$version](white) '
+  format = '📦 [$version](white)'
 
 [pulumi]
-  format = '𝌤 [$stack](#be5188) '
+  format = '𝌤 [$stack](#be5188)'
 
 [python]
-  format = '[$symbol$pyenv_prefix($version )(\($virtualenv\) )](#f0cf3f)'
+  format = '[$symbol$pyenv_prefix( $version)(\( $virtualenv\))](#f0cf3f)'
 
 [shell]
   disabled = false
 
 [sudo]
   disabled = false
-  format = '👻 '
+  format = '👻'
