@@ -19,3 +19,9 @@ git:
 	# grant full disk access
 	git checkout main
 	git fetch --recurse-submodules --prune
+
+berry.local:
+	@sudo true
+	apt update
+	apt upgrade -y
+	apt install zsh
