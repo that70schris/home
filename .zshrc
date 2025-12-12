@@ -6,9 +6,10 @@ setopt autocd
 
 PROMPT=${PROMPT}$'\n'
 if [ ${TERM_PROGRAM:-''} = 'WarpTerminal' ]; then
-  PROMPT=${PROMPT}$'\n'
   printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh" }}\x9c'
   source ~/.config/aliases
+
+  PROMPT=${PROMPT}$'\n'
 else
   source $(gcloud info --format='value(installation.sdk_root)')/*.zsh.inc
   source ~/.config/zsh/plugins/syntax-highlighting/zsh-syntax-highlighting.zsh
