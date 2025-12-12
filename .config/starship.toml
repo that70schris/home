@@ -108,3 +108,6 @@ $gcloud\
 [sudo]
   disabled = false
   format = '👻'
+
+[username]
+  format = '[$user]($style)'
