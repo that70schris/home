@@ -7,19 +7,19 @@ format = """
 $fill\
 $git_metrics\
 $git_status\
-( $git_state)\
-( $git_commit)\
-( $git_branch)\
-( $swift)\
-( $python)\
-( $package)\
-( $docker_context)\
-( $container)\
-( $helm)\
-( $kubernetes)\
-( $pulumi)\
-( $terraform)\
-( $gcloud)\
+$git_state\
+$git_commit\
+$git_branch\
+$swift\
+$python\
+$package\
+$docker_context\
+$container\
+$helm\
+$kubernetes\
+$pulumi\
+$terraform\
+$gcloud\
 """
 
 [directory]
@@ -36,21 +36,21 @@ $git_status\
   style = 'black'
 
 [docker_context]
-  format = '🐳'
+  format = ' 🐳'
 
 [fill]
   symbol = '-'
   style = 'white'
 
 [gcloud]
-  format = '☁️  [$project](#1a73e8)'
+  format = ' ☁️  [$project](#1a73e8)'
 
 [git_branch]
-  format = '[\($branch(:$remote_branch)\)](#f1502f)'
+  format = ' [\($branch(:$remote_branch)\)](#f1502f)'
   only_attached = true
 
 [git_commit]
-  format = '[\($hash$tag\)](#f1502f)'
+  format = ' [\($hash$tag\)](#f1502f)'
   tag_disabled = false
 
 [git_metrics]
@@ -88,16 +88,16 @@ $git_status\
 
 [kubernetes]
   disabled = false
-  format = '⎈ [$context(/$namespace)](#09c1d1)'
+  format = ' ⎈ [$context(/$namespace)](#09c1d1)'
 
 [package]
-  format = '📦 [$version](white)'
+  format = ' 📦 [$version](white)'
 
 [pulumi]
-  format = '𝌤 [$stack](#be5188)'
+  format = ' 𝌤 [$stack](#be5188)'
 
 [python]
-  format = '[$symbol$pyenv_prefix( $version)(\( $virtualenv\))](#f0cf3f)'
+  format = ' [$symbol$pyenv_prefix( $version)(\( $virtualenv\))](#f0cf3f)'
 
 [shell]
   disabled = false
