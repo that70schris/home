@@ -12,10 +12,10 @@ source ~/.config/zsh/plugins/tab-title/zsh-tab-title.plugin.zsh
 source ~/.config/zsh/ohmy/plugins/dirhistory/dirhistory.plugin.zsh
 source ~/.config/zsh/ohmy/plugins/sudo/sudo.plugin.zsh
 source ~/.config/zsh/plugins/abbr/zsh-abbr.zsh
-PS1+=$'\n'
+PS1=${PS1}$'\n'
 
 if [ $WARP_HONOR_PS1 ]; then
-  PS1+=$'\n'
+  PS1=${PS1}$'\n'
 fi
 
 # Kiro CLI post block. Keep at the bottom of this file.
