@@ -33,7 +33,7 @@ $gcloud\
 """
   truncate_to_repo = false
   truncation_length = 5
-  style = 'black'
+  style = 'white'
 
 [docker_context]
   format = ' 🐳'

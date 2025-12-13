@@ -12,7 +12,7 @@ source ~/.config/zsh/plugins/tab-title/zsh-tab-title.plugin.zsh
 source ~/.config/zsh/ohmy/plugins/dirhistory/dirhistory.plugin.zsh
 source ~/.config/zsh/ohmy/plugins/sudo/sudo.plugin.zsh
 source ~/.config/zsh/plugins/abbr/zsh-abbr.zsh
-PROMPT+=$'\n'
+PROMPT=${PROMPT}$'\n'
 
 if [ $WARP_HONOR_PS1 ]; then
   PROMPT+=$'\n'
