@@ -4,13 +4,16 @@ _:
 	@sudo true
 	-softwareupdate --install-rosetta
 	curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
-	-brew bundle install
-	@make git
+	brew bundle install
+	@make gh
+	@make init
 
-git:
+gh:
+	gh auth login -p ssh -h github.com
+
+init:
 	-git init
 	-git remote add origin git@github.com:that70schris/-
-	gh auth login -p ssh -h github.com
 
 # grant full disk access
 fetch:
@@ -25,4 +28,5 @@ berry.local:
 	apt install gh
 	apt install zsh
 	chsh -s $(which zsh)
-	@make git
+	@make gh
+	@make init
