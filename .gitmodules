@@ -1,23 +1,27 @@
+[submodule ".config/.autoenv"]
+	path = .config/.autoenv
+	url = git@github.com:hyperupcall/autoenv
+
 [submodule ".config/zsh/plugins/abbr"]
 	path = .config/zsh/plugins/abbr
-	url = https://github.com/olets/zsh-abbr
+	url = git@github.com:olets/zsh-abbr
 
 [submodule ".config/zsh/plugins/autosuggestions"]
 	path = .config/zsh/plugins/autosuggestions
-	url = https://github.com/zsh-users/zsh-autosuggestions
+	url = git@github.com:zsh-users/zsh-autosuggestions
 
 [submodule ".config/zsh/plugins/syntax-highlighting"]
 	path = .config/zsh/plugins/syntax-highlighting
-	url = https://github.com/zsh-users/zsh-syntax-highlighting
+	url = git@github.com:zsh-users/zsh-syntax-highlighting
 
 [submodule ".config/zsh/plugins/tab-title"]
 	path = .config/zsh/plugins/tab-title
-	url = https://github.com/trystan2k/zsh-tab-title
+	url = git@github.com:trystan2k/zsh-tab-title
 
 [submodule ".config/zsh/ohmy"]
 	path = .config/zsh/ohmy
-	url = https://github.com/ohmyzsh/ohmyzsh
+	url = git@github.com:ohmyzsh/ohmyzsh
 
 [submodule ".hammerspoon/Spoons/Hammerflow.spoon"]
 	path = .hammerspoon/Spoons/Hammerflow.spoon
-	url = https://github.com/saml-dev/Hammerflow.spoon
+	url = git@github.com:saml-dev/Hammerflow.spoon

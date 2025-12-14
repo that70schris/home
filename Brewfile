@@ -1,4 +1,3 @@
-brew "autoenv"
 brew "ctop"
 brew "dash-shell"
 brew "node"
