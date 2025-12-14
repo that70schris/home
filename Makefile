@@ -19,7 +19,7 @@ init:
 	-git init
 	-git remote add origin git@github.com:that70schris/-
 
-# grant full disk access
+# full disk access
 fetch:
 	git fetch
 	git checkout main
