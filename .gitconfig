@@ -29,7 +29,7 @@
   keepBackup = false
   hideResolved = true
   prompt = false
-  trustEx
+  trustExitCode = true
 [mergetool "Kaleidoscope"]
   cmd = ksdiff --merge --output $MERGED --base $BASE -- $LOCAL --snapshot $REMOTE --snapshot
   trustExitCode = true
