@@ -39,7 +39,6 @@
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "angular.enable-strict-mode-prompt": false,
-  "breadcrumbs.enabled": false,
   "breadcrumbs.filePath": "off",
   "breadcrumbs.symbolPath": "on",
   "code-runner.clearPreviousOutput": true,
