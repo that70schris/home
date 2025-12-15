@@ -1,5 +1,5 @@
-[submodule ".config/.autoenv"]
-	path = .config/.autoenv
+[submodule ".config/autoenv"]
+	path = .config/autoenv
 	url = git@github.com:hyperupcall/autoenv
 
 [submodule ".config/zsh/plugins/abbr"]
