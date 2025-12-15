@@ -1,4 +1,3 @@
-abbr abort git rebase --abort
 abbr add git add
 abbr amend git commit --amend
 abbr ammend git commit -a --amend --no-edit
@@ -25,7 +24,6 @@ abbr push git push
 abbr rebase git rebase
 abbr reset git reset
 abbr show git showtool
-abbr skip git rebase --skip
 abbr stash git stash
 abbr tool git mergetool
 abbr trim git branch -D
