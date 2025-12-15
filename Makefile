@@ -5,7 +5,7 @@ _:
 	-softwareupdate --install-rosetta
 	curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
 	brew bundle install
-	@make init
+	@make git
 	@make gh
 
 gh:
@@ -15,7 +15,7 @@ gh:
 	--clipboard \
 	--web \
 
-init:
+git:
 	-git init
 	-git remote add origin git@github.com:that70schris/-
 
@@ -32,5 +32,5 @@ berry.local:
 	apt install gh
 	apt install zsh
 	chsh -s $(which zsh)
-	@make init
+	@make git
 	@make gh
