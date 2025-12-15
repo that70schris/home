@@ -33,14 +33,14 @@ $gcloud\
 """
   truncate_to_repo = false
   truncation_length = 5
-  style = 'white'
+  style = '#cccccc'
 
 [docker_context]
   format = ' 🐳'
 
 [fill]
   symbol = '⎯'
-  style = 'dimmed'
+  style = '#999999'
 
 [gcloud]
   format = '( ☁️  [$project](#1a73e8))'
