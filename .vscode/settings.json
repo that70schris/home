@@ -5,7 +5,6 @@
   "files.associations": {
     ".gitignore.*": "ignore",
     ".gitmodules.*": "gitconfig",
-    "abbreviations": "shellscript",
     "aliases": "shellscript"
   },
   "github-actions.workflows.pinned.workflows": [
