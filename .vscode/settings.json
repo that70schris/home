@@ -3,7 +3,6 @@
     "files.encoding": "utf8"
   },
   "files.associations": {
-    ".gitconfig.*": "gitconfig",
     ".gitignore.*": "ignore",
     ".gitmodules.*": "gitconfig",
     "abbreviations": "shellscript",
