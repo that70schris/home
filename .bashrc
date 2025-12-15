@@ -1,6 +1,5 @@
 # Kiro CLI pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/bashrc.pre.bash" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/bashrc.pre.bash"
-eval "$(/opt/homebrew/bin/brew shellenv)"
 source ~/.config/autoenv/activate.sh
 eval "$(starship init bash)"
 source ~/.config/aliases
