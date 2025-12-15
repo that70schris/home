@@ -131,7 +131,7 @@
   "extensions.closeExtensionDetailsOnViewChange": true,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
-    ".gitconfig.*": "gitconfig",
+    ".config/git/config*": "gitconfig",
     "Makefile.*": "makefile",
     "pre-commit": "shellscript"
   },
