@@ -221,4 +221,5 @@
   "workbench.settings.openDefaultSettings": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.renderIndentGuides": "always",
+  "breadcrumbs.enabled": false,
 }
