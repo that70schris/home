@@ -17,7 +17,7 @@ abbr import-aliases --quiet
 
 PS1+=$'\n'
 if [ $WARP_HONOR_PS1 ]; then
-  PS1+=$'\n'
+  PS1+=$'\n':
 fi
 
 # Kiro CLI post block. Keep at the bottom of this file.
