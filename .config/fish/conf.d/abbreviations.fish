@@ -6,14 +6,12 @@ abbr bottle brew bundle dump --force
 abbr c gcloud
 abbr check git checkout
 abbr clean git clean -fdx
-abbr cloud gcloud
 abbr commit git commit -am
 abbr d docker
 abbr dc docker compose
 abbr diff git difftool
 abbr fetch git fetch --prune
 abbr fire firebase
-abbr g git
 abbr gs git status --short
 abbr k kubecolor
 abbr kube kubecolor
@@ -26,7 +24,6 @@ abbr pull git pull
 abbr push git push
 abbr rebase git rebase
 abbr reset git reset
-abbr roots 'git log --pretty=format:"%h %an %ar: %s" --graph'
 abbr show git showtool
 abbr skip git rebase --skip
 abbr stash git stash
