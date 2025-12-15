@@ -13,8 +13,9 @@ source ~/.config/zsh/plugins/tab-title/zsh-tab-title.plugin.zsh
 source ~/.config/zsh/ohmy/plugins/dirhistory/dirhistory.plugin.zsh
 source ~/.config/zsh/ohmy/plugins/sudo/sudo.plugin.zsh
 source ~/.config/zsh/plugins/abbr/zsh-abbr.zsh
-PS1+=$'\n'
+abbr import-aliases --quiet
 
+PS1+=$'\n'
 if [ $WARP_HONOR_PS1 ]; then
   PS1+=$'\n'
 fi
