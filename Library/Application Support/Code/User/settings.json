@@ -131,20 +131,11 @@
   "extensions.closeExtensionDetailsOnViewChange": true,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
-    ".*rc": "shellscript",
-    ".Brewfile": "ruby",
-    ".firebaserc": "json",
     ".gitconfig.*": "gitconfig",
-    "*htaccess*": "apacheconf",
-    "*httpd*": "apacheconf",
     "Makefile.*": "makefile",
-    "nginx.conf": "NGINX",
     "pre-commit": "shellscript"
   },
   "files.encoding": "utf8",
-  "files.exclude": {
-    ".DS_Store": true
-  },
   "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
   "git.autofetch": true,

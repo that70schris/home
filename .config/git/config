@@ -43,7 +43,7 @@
   helper = osxkeychain
 
 [includeIf "gitdir:~/"]
-  path = ~/.gitconfig.chris
+  path = ./config.chris
 
 [includeIf "gitdir:~/jgw/"]
   path = ~/jgw/.gitconfig
