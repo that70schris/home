@@ -25,15 +25,15 @@ $gcloud\
 [directory]
   repo_root_style = 'blue'
   format = '[$read_only]($read_only_style)[$path]($style)'
+  truncate_to_repo = false
+  truncation_length = 5
+  style = '#cccccc'
   repo_root_format = """
 [$before_root_path]($before_repo_root_style)\
 [$repo_root]($repo_root_style)\
 [$read_only]($read_only_style)\
 [$path]($style)\
 """
-  truncate_to_repo = false
-  truncation_length = 5
-  style = '#cccccc'
 
 [docker_context]
   format = ' 🐳'
