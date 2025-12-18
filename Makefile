@@ -34,3 +34,8 @@ berry.local:
 	chsh -s $(which zsh)
 	@make git
 	@make gh
+
+cluster:
+	curl -sfL https://get.k3s.io | sh -s - \
+		--tls-san=berry.local \
+		--disable=traefik \
