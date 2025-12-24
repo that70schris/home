@@ -7,6 +7,9 @@
 [pull]
   rebase = true
 
+[push]
+  recurseSubmodules = on-demand
+
 [advice]
   addIgnoredFile = false
 
@@ -41,6 +44,9 @@
   showtool = "!show() { c=$(git rev-parse ${*:-HEAD}); git difftool $c~ $c; }; show $1"
 [credential]
   helper = osxkeychain
+
+[submodule]
+  recursive = true
 
 [includeIf "gitdir:~/"]
   path = ./config.chris
