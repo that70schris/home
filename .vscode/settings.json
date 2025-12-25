@@ -1,7 +1,4 @@
 {
-  "[applescript]": {
-    "files.encoding": "utf8"
-  },
   "files.associations": {
     ".gitignore.*": "ignore",
     ".gitmodules.*": "gitconfig",
@@ -13,6 +10,5 @@
   "Lua.diagnostics.globals": [
     "spoon",
     "hs",
-  ],
-  "search.useIgnoreFiles": true
+  ]
 }

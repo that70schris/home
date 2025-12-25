@@ -134,9 +134,8 @@
     "Makefile.*": "makefile",
     "pre-commit": "shellscript"
   },
-  "files.encoding": "utf8",
-  "files.insertFinalNewline": true,
   "files.simpleDialog.enable": true,
+  "files.trimFinalNewlines": true,
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
@@ -156,7 +155,6 @@
   "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
   "lldb.suppressUpdateNotifications": true,
   "Lua.window.statusBar": false,
-  "makefile.configureOnOpen": true,
   "nginx-conf-hint.enableStrictCompletion": true,
   "notebook.cellToolbarLocation": {
     "default": "right"
@@ -165,6 +163,7 @@
   "redhat.telemetry.enabled": true,
   "scm.diffDecorationsGutterWidth": 4,
   "search.useGlobalIgnoreFiles": false,
+  "search.useParentIgnoreFiles": false,
   "search.useIgnoreFiles": true,
   "security.workspace.trust.untrustedFiles": "open",
   "svg.preview.autoShow": false,
