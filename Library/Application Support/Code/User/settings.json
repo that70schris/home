@@ -51,7 +51,6 @@
   "custom-ui-style.external.imports": [
     "file://${userHome}/.vscode/style.css"
   ],
-  "custom-ui-style.font.monospace": "monaco",
   "custom-ui-style.reloadWithoutPrompting": true,
   "dash.fileNameToDocsetMap": {
     "[dD]ocker*": [
@@ -81,7 +80,7 @@
   "editor.emptySelectionClipboard": false,
   "editor.find.addExtraSpaceOnTop": false,
   "editor.folding": false,
-  "editor.fontFamily": "'ComicShannsMono Nerd Font'",
+  "editor.fontFamily": "Monaco",
   "editor.fontLigatures": false,
   "editor.fontSize": 14,
   "editor.formatOnPaste": true,
@@ -93,7 +92,7 @@
   "editor.hover.delay": 400,
   "editor.hover.sticky": true,
   "editor.indentSize": "tabSize",
-  "editor.letterSpacing": 2,
+  "editor.letterSpacing": 1.4,
   "editor.lineNumbers": "off",
   "editor.linkedEditing": true,
   "editor.matchBrackets": "never",
@@ -105,6 +104,7 @@
   "editor.pasteAs.preferences": [
     "text.updateImports"
   ],
+  "editor.renderFinalNewline": "dimmed",
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "none",
   "editor.roundedSelection": false,
@@ -125,6 +125,7 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmPasteNative": false,
+  "explorer.enableDragAndDrop": true,
   "extensions.autoUpdate": true,
   "extensions.closeExtensionDetailsOnViewChange": true,
   "extensions.ignoreRecommendations": true,
@@ -215,5 +216,6 @@
   "workbench.settings.editor": "json",
   "workbench.settings.openDefaultSettings": false,
   "workbench.startupEditor": "newUntitledFile",
+  "workbench.tree.indent": 12,
   "workbench.tree.renderIndentGuides": "always"
 }

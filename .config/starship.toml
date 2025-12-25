@@ -1,4 +1,5 @@
 '$schema' = 'https://starship.rs/config-schema.json'
+
 format = """
 ($os )\
 ($sudo )\
@@ -6,8 +7,8 @@ format = """
 $directory\
 $git_branch \
 $git_commit\
-$git_state\
 $git_status\
+$git_state\
 $git_metrics\
 $fill \
 $swift\
@@ -36,21 +37,21 @@ $gcloud\
 """
 
 [docker_context]
-  format = ' 🐳'
+  format = '  '
 
 [fill]
   symbol = '⎯'
   style = '#999999'
 
 [gcloud]
-  format = '( ☁️  [$project](#1a73e8))'
+  format = '(   [$project](#1a73e8))'
 
 [git_branch]
   format = ' [\($branch(:$remote_branch)\)](#f1502f)'
   only_attached = true
 
 [git_commit]
-  format = ' [\($hash$tag\)](#f1502f)'
+  format = ' [\($hash($tag)\)](#f1502f)'
   tag_disabled = false
 
 [git_metrics]
@@ -66,9 +67,9 @@ $gcloud\
 [git_status]
   conflicted = '='
   modified = ''
-  ahead = '[▲](purple)'
-  behind = '[▼](purple)'
-  diverged = '[▲▼](purple)'
+  ahead = '[](purple)'
+  behind = '[](purple)'
+  diverged = '[](purple)'
   untracked = '[▪︎](black)'
   deleted = '[✘](bright-red)'
   renamed = '[⏩︎](white)'
@@ -76,6 +77,7 @@ $gcloud\
   stashed = '[⭑](yellow)'
   up_to_date = ''
   format = """
+($ahead_behind )\
 ($stashed )\
 ($conflicted )\
 ($deleted )\
@@ -83,7 +85,6 @@ $gcloud\
 ($modified )\
 ($staged )\
 ($untracked )\
-($ahead_behind )\
 """
 
 [hostname]
@@ -91,16 +92,70 @@ $gcloud\
 
 [kubernetes]
   disabled = false
-  format = ' ⎈ [$context(/$namespace)](#09c1d1)'
+  format = " $symbol[$context(/$namespace)](#09c1d1)"
+
+[lua]
+  symbol = ' '
+
+[nix_shell]
+  symbol = ' '
+
+[os]
+  # disabled = false
+
+[os.symbols]
+  Alpaquita = ' '
+  Alpine = ' '
+  AlmaLinux = ' '
+  Amazon = ' '
+  Android = ' '
+  AOSC = ' '
+  Arch = ' '
+  Artix = ' '
+  CachyOS = ' '
+  CentOS = ' '
+  Debian = ' '
+  DragonFly = ' '
+  Emscripten = ' '
+  EndeavourOS = ' '
+  Fedora = ' '
+  FreeBSD = ' '
+  Garuda = '󰛓 '
+  Gentoo = ' '
+  HardenedBSD = '󰞌 '
+  Illumos = '󰈸 '
+  Kali = ' '
+  Linux = ' '
+  Mabox = ' '
+  Macos = ' '
+  Manjaro = ' '
+  Mariner = ' '
+  MidnightBSD = ' '
+  Mint = ' '
+  NetBSD = ' '
+  NixOS = ' '
+  Nobara = ' '
+  OpenBSD = '󰈺 '
+  openSUSE = ' '
+  OracleLinux = '󰌷 '
+  Pop = ' '
+  Raspbian = ' '
+  Redhat = ' '
+  RedHatEnterprise = ' '
+  RockyLinux = ' '
+  Redox = '󰀘 '
+  Solus = '󰠳 '
+  SUSE = ' '
+  Ubuntu = ' '
+  Unknown = ' '
+  Void = ' '
+  Windows = '󰍲 '
 
 [package]
   format = ' 📦 [$version](white)'
 
 [pulumi]
   format = ' 𝌤 [$stack](#be5188)'
-
-[python]
-  format = ' [$symbol$pyenv_prefix( $version)(\( $virtualenv\))](#f0cf3f)'
 
 [shell]
   disabled = false
