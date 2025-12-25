@@ -44,7 +44,7 @@ $gcloud\
   style = '#999999'
 
 [gcloud]
-  format = '(   [$project](#1a73e8))'
+  format = '(  [$project](#1a73e8))'
 
 [git_branch]
   format = ' [\($branch(:$remote_branch)\)](#f1502f)'
@@ -92,7 +92,7 @@ $gcloud\
 
 [kubernetes]
   disabled = false
-  format = " $symbol[$context(/$namespace)](#09c1d1)"
+  format = " 󰠳 [$context(/$namespace)](#09c1d1)"
 
 [lua]
   symbol = ' '
