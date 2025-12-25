@@ -52,7 +52,6 @@
     "file://${userHome}/.vscode/style.css"
   ],
   "custom-ui-style.font.monospace": "monaco",
-  "custom-ui-style.font.sansSerif": "monaco",
   "custom-ui-style.reloadWithoutPrompting": true,
   "dash.fileNameToDocsetMap": {
     "[dD]ocker*": [
@@ -82,7 +81,7 @@
   "editor.emptySelectionClipboard": false,
   "editor.find.addExtraSpaceOnTop": false,
   "editor.folding": false,
-  "editor.fontFamily": "Monaco",
+  "editor.fontFamily": "'ComicShannsMono Nerd Font'",
   "editor.fontLigatures": false,
   "editor.fontSize": 14,
   "editor.formatOnPaste": true,
@@ -94,7 +93,7 @@
   "editor.hover.delay": 400,
   "editor.hover.sticky": true,
   "editor.indentSize": "tabSize",
-  "editor.letterSpacing": 1,
+  "editor.letterSpacing": 2,
   "editor.lineNumbers": "off",
   "editor.linkedEditing": true,
   "editor.matchBrackets": "never",

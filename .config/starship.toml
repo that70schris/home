@@ -66,20 +66,20 @@ $gcloud\
 [git_status]
   conflicted = '='
   modified = ''
-  ahead = '[⬆](purple)'
-  behind = '[⬇](purple)'
-  diverged = '[⬆ ⬇](purple) '
-  untracked = '[▪︎](white)'
+  ahead = '[▲](purple)'
+  behind = '[▼](purple)'
+  diverged = '[▲▼](purple)'
+  untracked = '[▪︎](black)'
   deleted = '[✘](bright-red)'
-  renamed = '[»](yellow)'
-  staged = '[+](yellow)'
+  renamed = '[⏩︎](white)'
+  staged = '[+](white)'
   stashed = '[⭑](yellow)'
   up_to_date = ''
   format = """
 ($stashed )\
 ($conflicted )\
 ($deleted )\
-($renamed )\
+($renamed)\
 ($modified )\
 ($staged )\
 ($untracked )\
