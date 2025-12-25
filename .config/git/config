@@ -7,9 +7,6 @@
 [pull]
   rebase = true
 
-[push]
-  recurseSubmodules = on-demand
-
 [advice]
   addIgnoredFile = false
 
