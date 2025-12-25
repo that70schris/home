@@ -3,13 +3,13 @@ format = """
 ($os )\
 ($sudo )\
 ($username([@](#dddddd)$hostname)/)\
-($directory )\
-$fill \
-$git_metrics\
-$git_status\
-$git_state\
+$directory\
+$git_branch \
 $git_commit\
-$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$fill \
 $swift\
 $python\
 $package\
@@ -56,8 +56,8 @@ $gcloud\
 [git_metrics]
   disabled = false
   format = """
-( [$added](green))\
-( [$deleted](red))\
+([$added](green) )\
+([$deleted](red) )\
 """
 
 [git_state]
@@ -66,8 +66,8 @@ $gcloud\
 [git_status]
   conflicted = '='
   modified = ''
-  ahead = '[⬆](purple) '
-  behind = '[⬇](purple) '
+  ahead = '[⬆](purple)'
+  behind = '[⬇](purple)'
   diverged = '[⬆ ⬇](purple) '
   untracked = '[▪︎](white)'
   deleted = '[✘](bright-red)'
@@ -76,14 +76,14 @@ $gcloud\
   stashed = '[⭑](yellow)'
   up_to_date = ''
   format = """
-( $stashed)\
-( $conflicted)\
-( $deleted)\
-( $renamed)\
-( $modified)\
-( $staged)\
-( $untracked)\
-( $ahead_behind)\
+($stashed )\
+($conflicted )\
+($deleted )\
+($renamed )\
+($modified )\
+($staged )\
+($untracked )\
+($ahead_behind )\
 """
 
 [hostname]
