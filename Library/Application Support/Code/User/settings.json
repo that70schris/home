@@ -38,7 +38,6 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "angular.enable-strict-mode-prompt": false,
   "breadcrumbs.enabled": false,
   "breadcrumbs.filePath": "off",
   "breadcrumbs.symbolPath": "on",
@@ -160,8 +159,7 @@
   "makefile.configureOnOpen": true,
   "nginx-conf-hint.enableStrictCompletion": true,
   "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "left"
+    "default": "right"
   },
   "problems.showCurrentInStatus": true,
   "redhat.telemetry.enabled": true,
@@ -172,9 +170,6 @@
   "svg.preview.autoShow": false,
   "svg.preview.background": "dark-transparent",
   "svg.preview.mode": "svg",
-  "task.problemMatchers.neverPrompt": {
-    "angularcli": true
-  },
   "task.quickOpen.skip": true,
   "terminal.external.osxExec": "Warp.app",
   "terminal.integrated.cursorStyle": "line",
@@ -212,9 +207,6 @@
   "workbench.editor.showIcons": false,
   "workbench.editor.showTabs": "multiple",
   "workbench.editor.tabActionCloseVisibility": false,
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
-  },
   "workbench.iconTheme": "vscode-icons",
   "workbench.preferredDarkColorTheme": "arcade",
   "workbench.preferredLightColorTheme": "arcade-light",
