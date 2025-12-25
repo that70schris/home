@@ -71,7 +71,7 @@ $gcloud\
   behind = '[](purple)'
   diverged = '[](purple)'
   untracked = '[▪︎](black)'
-  deleted = '[✘](bright-red)'
+  deleted = '[✘](red)'
   renamed = '[⏩︎](white)'
   staged = '[+](white)'
   stashed = '[⭑](yellow)'
