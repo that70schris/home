@@ -95,7 +95,7 @@
   "editor.hover.delay": 400,
   "editor.hover.sticky": true,
   "editor.letterSpacing": 1,
-  "editor.lineNumbers": "on",
+  "editor.lineNumbers": "off",
   "editor.linkedEditing": true,
   "editor.matchBrackets": "never",
   "editor.minimap.enabled": false,
