@@ -47,11 +47,3 @@
 
 [submodule]
   recursive = true
-
-[includeIf "gitdir:~/"]
-  path = ./config.chris
-
-[includeIf "gitdir:~/jgw/"]
-  path = ~/jgw/.gitconfig
-
-
