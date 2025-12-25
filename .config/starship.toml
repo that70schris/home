@@ -51,7 +51,7 @@ $gcloud\
   only_attached = true
 
 [git_commit]
-  format = ' [\($hash($tag)\)](#f1502f)'
+  format = ' [\($hash($tag)\)](#f1502f)'
   tag_disabled = false
 
 [git_metrics]
@@ -155,7 +155,7 @@ $gcloud\
   format = ' 📦 [$version](white)'
 
 [pulumi]
-  format = ' 𝌤 [$stack](#be5188)'
+  format = '  [$stack](#be5188)'
 
 [shell]
   disabled = false
