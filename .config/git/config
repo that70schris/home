@@ -1,14 +1,17 @@
 [init]
   defaultBranch = main
 
+[advice]
+  addIgnoredFile = false
+
+[alias]
+  showtool = "!show() { c=$(git rev-parse ${*:-HEAD}); git difftool $c~ $c; }; show $1"
+
 [core]
   editor = vim
 
-[pull]
-  rebase = true
-
-[advice]
-  addIgnoredFile = false
+[credential]
+  helper = osxkeychain
 
 [diff]
 	tool = Kaleidoscope
@@ -37,10 +40,8 @@
   cmd = code -n --wait $MERGED
   trustExitCode = true
 
-[alias]
-  showtool = "!show() { c=$(git rev-parse ${*:-HEAD}); git difftool $c~ $c; }; show $1"
-[credential]
-  helper = osxkeychain
+[pull]
+  rebase = true
 
 [submodule]
   recursive = true
