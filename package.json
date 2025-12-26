@@ -1,17 +1,17 @@
 {
   "devDependencies": {
-    "@eslint/js": "9.39.1",
-    "@stylistic/eslint-plugin": "5.6.1",
-    "@types/lodash": "4.17.21",
-    "@types/node": "24.10.1",
-    "eslint": "9.39.1",
-    "husky": "9.1.7",
-    "lint-staged": "16.2.7",
-    "prettier": "3.7.4",
-    "stylelint": "16.26.1",
-    "stylelint-order": "7.0.0",
-    "stylelint-prettier": "5.0.3",
-    "typescript-eslint": "8.48.1"
+    "@eslint/js": "latest",
+    "@stylistic/eslint-plugin": "latest",
+    "@types/lodash": "latest",
+    "@types/node": "latest",
+    "eslint": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "prettier": "latest",
+    "stylelint": "latest",
+    "stylelint-order": "latest",
+    "stylelint-prettier": "latest",
+    "typescript-eslint": "latest"
   },
   "scripts": {
     "prepare": "husky"
