@@ -5,6 +5,7 @@
     "@types/lodash": "latest",
     "@types/node": "latest",
     "eslint": "latest",
+    "globals": "latest",
     "husky": "latest",
     "lint-staged": "latest",
     "prettier": "latest",
