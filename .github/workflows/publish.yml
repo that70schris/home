@@ -1,0 +1,46 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  export:
+    name: Publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          token: ${{ secrets.TOKEN }}
+
+      - name: Add Public Remote
+        run: git remote add public https://github.com/${{ github.repository_owner }}/home.git
+
+      - name: Fetch Public
+        run: |
+          git fetch public
+          git branch -m private
+          git checkout --track public/main
+
+      - name: Clear
+        run: git rm -rf .
+
+      - name: Checkout private files
+        run: git restore --source=private .
+
+      - name: Prepare .public files
+        run: |
+          find . -type f -name "*.public" | \
+          while read -r file; do
+            mv -f "$file" "${file%.public}"
+          done
+          git add .
+
+      - run: git status
+      - name: Publish
+        run: |
+          git config user.email "chris@bailey.mx"
+          git config user.name "Chris Bailey"
+          git commit -am "updates" && git push || true

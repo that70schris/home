@@ -1,0 +1,48 @@
+on:
+  workflow_call:
+    inputs:
+      command:
+        description: Pulumi command
+        required: true
+        type: string
+      environment:
+        description: Environment to deploy to
+        required: true
+        type: string
+
+jobs:
+  cloud:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          repository: jgw-loans/main
+
+      - name: GCP auth
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP }}
+
+      - uses: google-github-actions/setup-gcloud@v2
+        with:
+          install_components: gke-gcloud-auth-plugin
+
+      - name: Configure Docker
+        run: |
+          gcloud auth configure-docker us-docker.pkg.dev --quiet
+
+      - name: Install dependencies
+        run: |
+          npm install --production
+
+      - uses: pulumi/actions@v6
+        with:
+          work-dir: cloud
+          stack-name: jgw/${{ inputs.environment }}
+          command: ${{ inputs.command }}
+        env:
+          ENVIRONMENT: ${{ inputs.environment }}
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          PULUMI_K8S_ENABLE_PATCH_FORCE: true

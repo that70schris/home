@@ -93,7 +93,7 @@
   "editor.hover.sticky": true,
   "editor.indentSize": "tabSize",
   "editor.letterSpacing": 1.4,
-  "editor.lineNumbers": "off",
+  "editor.lineNumbers": "on",
   "editor.linkedEditing": true,
   "editor.matchBrackets": "never",
   "editor.minimap.enabled": false,

@@ -11,6 +11,7 @@
 !/Library/
 !/Public/
 !/shared/
+!/code/
 
 !.husky/
 !.vscode/

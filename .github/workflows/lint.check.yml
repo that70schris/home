@@ -1,0 +1,18 @@
+name: Lint Check
+
+concurrency:
+  group: lint/${{ github.ref_name }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm install -f
+
+      - uses: github/super-linter/slim@v4

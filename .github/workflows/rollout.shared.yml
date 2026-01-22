@@ -1,0 +1,51 @@
+env:
+  IMAGE: us-docker.pkg.dev/jgw-${{ github.ref_name }}/main/${{ inputs.image }}
+  TAG: ${{ github.sha }}
+
+on:
+  workflow_call:
+    inputs:
+      image:
+        description: Name of image to use
+        required: true
+        type: string
+      resource:
+        description: Name of the cloud resource
+        required: true
+        type: string
+      type:
+        description: Kubernetes resource type
+        default: deployment
+        type: string
+      target:
+        description: Dockerfile target
+        type: string
+      container:
+        description: init container
+        default: main
+        type: string
+
+jobs:
+  rollout:
+    if: ${{ inputs.type != 'cronjob' }}
+    name: Rollout ${{ inputs.image }} to ${{ inputs.resource }}
+    environment: ${{ github.ref_name }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: GCP auth
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP }}
+
+      - name: GKE auth
+        uses: google-github-actions/get-gke-credentials@v2
+        with:
+          cluster_name: main
+          location: us-central1
+
+      - name: Rollout
+        run: kubectl rollout restart ${{ inputs.type }} ${{ inputs.resource }}
+
+      - name: Check Rollout Status
+        if: ${{ inputs.type == 'deployment' }}
+        run: kubectl rollout status deployment ${{ inputs.resource }}

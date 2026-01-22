@@ -1,0 +1,21 @@
+name: Cloud Update
+
+concurrency:
+  group: cloud.update/${{ github.ref_name }}
+
+on:
+  push:
+    branches:
+      - staging
+      - production
+    paths:
+      - .github/workflows/cloud.*
+      - cloud/**
+
+jobs:
+  setup:
+    uses: ./.github/workflows/cloud.yml
+    secrets: inherit
+    with:
+      command: update
+      environment: ${{ github.ref_name }}

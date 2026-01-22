@@ -1,0 +1,38 @@
+name: Hostwriter.app
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/hostwriter.app.yml
+      - code/hostwriter.app/**
+
+defaults:
+  run:
+    working-directory: ./code/hostwriter.app
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@main
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@master
+        with:
+          version: latest
+
+      - name: Install dependencies
+        run: make install
+
+      - name: Build
+        run: make build
+
+      - name: Deploy
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_HOST_WRITER }}
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          channelId: live

@@ -1,0 +1,35 @@
+name: Deploy Events
+
+concurrency:
+  group: events/${{ github.ref_name }}
+  cancel-in-progress: true
+
+on:
+  push:
+    branches:
+      - development
+      - staging
+      - production
+    paths:
+      - .github/workflows/events.yml
+      - .github/workflows/*.shared.yml
+      - events/**
+
+jobs:
+  salesforce_publishers:
+    name: Deploy Salesforce Producer
+    uses: ./.github/workflows/deployment.shared.yml
+    secrets: inherit
+    with:
+      image: events
+      context: events
+      resource: salesforce-producer
+
+  consumers:
+    name: Deploy Consumers
+    uses: ./.github/workflows/deployment.shared.yml
+    secrets: inherit
+    with:
+      image: events
+      context: events
+      resource: consumers

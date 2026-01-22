@@ -1,0 +1,33 @@
+name: Tag Release
+
+on:
+  push:
+    branches:
+      - production
+    paths:
+      - .github/**
+      - cloud/**
+      - frontend/**
+      - backend/**
+      - leadscoring/**
+      - www/**
+
+jobs:
+  tag:
+    name: Tag for Production
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ssh-key: ${{ secrets.COMMIT_KEY }}
+
+      - name: Tag
+        run: |
+          today=$(date +'%Y.%m.%d')
+          git fetch --tags
+          for letter in {a..z}; do
+            TAG=$today.$letter
+            if ! git tag --list | grep -E -q $TAG; then break; fi
+          done
+          git push origin HEAD:refs/tags/${TAG}

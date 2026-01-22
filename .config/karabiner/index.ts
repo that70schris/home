@@ -41,9 +41,9 @@ writeFileSync(
             }],
           },
           ...{
-            o: {
-              e: 'Mail'.app,
-            },
+            // o: {
+            //   e: 'Mail'.app,
+            // },
           }.sublayers,
         ] as KarabinerRule[],
       },

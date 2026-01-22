@@ -1,0 +1,19 @@
+name: Cloud Preview
+
+concurrency:
+  group: cloud.preview/${{ github.ref_name }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+    paths:
+      - .github/workflows/cloud.*
+      - cloud/**
+
+jobs:
+  preview:
+    uses: ./.github/workflows/cloud.yml
+    secrets: inherit
+    with:
+      command: preview
+      environment: ${{ github.base_ref }}
