@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@builder.io/qwik": "1.18.0",
-    "@builder.io/qwik-city": "1.18.0",
+    "@builder.io/qwik-city": "1.19.0",
     "@types/node": "24.6.2",
     "firebase": "12.7.0",
     "firebase-tools": "15.0.0",
