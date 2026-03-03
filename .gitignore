@@ -9,12 +9,10 @@
 !/Library/
 !/Public/
 
+!.vscode/
 !.github/
 !.husky/
 !.pnpm/
-
-!.vscode/
-!.vscode/*
 
 !.bashrc
 !.env
@@ -35,6 +33,7 @@
 !pnpm-lock.yaml
 !tsconfig.json
 
+!.vscode/*
 !*.config.*
 !*.css
 !*.ts
