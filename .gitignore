@@ -14,8 +14,6 @@
 !.pnpm/
 !.vscode/
 
-
-!*.css
 !.bashrc
 !.env
 !.editorconfig
