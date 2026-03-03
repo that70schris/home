@@ -9,7 +9,6 @@ interface _RecordArgs extends Omit<DnsRecordArgs,
   | 'type'
   | 'ttl'
   | ''> {
-  apex?: boolean
   domain?: string
   type?: Input<string>
 }
@@ -21,7 +20,7 @@ export class _Record extends DnsRecord {
     args: _RecordArgs,
     opts?: CustomResourceOptions,
     defaults: RecordArgs = {
-      name: args.apex ? '@' : $name,
+      name: args.domain ?? $name,
       zoneId: Object.entries(
         new _Config('cloudflare').object?.zones,
       ).find(([ key, value ]) => {

@@ -45,10 +45,9 @@ export class Firebase {
 
   static text = new _Record(
     'firebase.hostwriter.app', {
-      zone: 'hostwriter.app',
+      domain: 'hostwriter.app',
       type: 'TXT',
       content: 'hosting-site=hostwriter',
-      apex: true,
     },
   )
 
@@ -75,13 +74,10 @@ export class Firebase {
 
   static records = [
     new _Record('hostwriter.app', {
-      zone: 'hostwriter.app',
       content: '199.36.158.100',
       proxied: true,
-      apex: true,
     }),
     new _Record('www.hostwriter.app', {
-      zone: 'hostwriter.app',
       content: '199.36.158.100',
       proxied: true,
     }),
