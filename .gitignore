@@ -2,18 +2,15 @@
 
 !/_/
 !/.config/
-!/.github/
 !/.hammerspoon/
-!/.kube/
 !/.kiro/
-!/.pnpm/
 !/Documents/
 !/Library/
 !/Public/
-!/shared/
-!/code/
 
+!.github/
 !.husky/
+!.pnpm/
 !.vscode/
 !.warp/
 
