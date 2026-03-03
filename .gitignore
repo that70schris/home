@@ -6,13 +6,12 @@
 !/.github/
 !/.husky/
 !/.kiro/
+!/.pnpm/
 !/.warp/
 !/Documents/
 !/Library/
 !/Public/
 
-!.pnpm/
-!.pnpm/*
 !.vscode/
 !.vscode/*
 
