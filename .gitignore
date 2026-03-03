@@ -3,16 +3,18 @@
 !/_/
 !/.config/
 !/.hammerspoon/
+!/.github/
+!/.husky/
 !/.kiro/
 !/.warp/
 !/Documents/
 !/Library/
 !/Public/
 
-!.vscode/
-!.github/
-!.husky/
 !.pnpm/
+!.pnpm/*
+!.vscode/
+!.vscode/*
 
 !.bashrc
 !.env
@@ -33,7 +35,6 @@
 !pnpm-lock.yaml
 !tsconfig.json
 
-!.vscode/*
 !*.config.*
 !*.css
 !*.ts
