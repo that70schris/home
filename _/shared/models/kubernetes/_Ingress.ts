@@ -101,7 +101,7 @@ export class _Ingress extends Ingress {
       args.rules.forEach((rule) => {
         interpolate`${rule.host}`.apply((host) => {
           new _Record(host, {
-            name: host,
+            domain: host,
             content: ip,
             proxied: rule.proxied,
           }, {
