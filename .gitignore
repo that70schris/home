@@ -11,8 +11,11 @@
 !.github/
 !.husky/
 !.pnpm/
-!.vscode/
 !.warp/
+
+!.vscode/*.css
+!.vscode/extensions.json
+!.vscode/settings.json
 
 !.bashrc
 !.env
