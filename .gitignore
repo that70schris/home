@@ -12,8 +12,8 @@
 !.github/
 !.husky/
 !.pnpm/
-!.vscode/
 
+!.vscode/*
 !.bashrc
 !.env
 !.editorconfig
