@@ -54,7 +54,6 @@ export class Firebase {
   static www = new Ruleset(
     'www.hostwriter.app', {
       zoneId: _Config.zones['hostwriter.app'],
-      // accountId: 'c380083c727f97bd24c6b600d267b4c3',
       name: 'redirect www',
       phase: 'http_request_dynamic_redirect',
       kind: 'zone',
