@@ -4,6 +4,7 @@
 !/.config/
 !/.hammerspoon/
 !/.kiro/
+!/.warp/
 !/Documents/
 !/Library/
 !/Public/
@@ -11,12 +12,11 @@
 !.github/
 !.husky/
 !.pnpm/
-!.warp/
+!.vscode/
 
-!.vscode/extensions.json
-!.vscode/settings.json
-!.vscode/*.css
-
+!*.css
+!extensions.json
+!settings.json
 !.bashrc
 !.env
 !.editorconfig
