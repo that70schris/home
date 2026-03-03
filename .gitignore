@@ -15,8 +15,6 @@
 !.vscode/
 
 !*.css
-!extensions.json
-!settings.json
 !.bashrc
 !.env
 !.editorconfig
@@ -32,9 +30,10 @@
 !.zshrc
 !Brewfile
 !Makefile
+!extensions.json
 !package.json
 !pnpm-lock.yaml
-!Pulumi.y*ml
+!settings.json
 !tsconfig.json
 
 !*.config.*
