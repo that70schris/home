@@ -1,0 +1,54 @@
+.cursor-line-style {
+  .cursor {
+    transform: scaleY(1.5) !important;
+  }
+}
+
+.cursors-layer {
+  animation-iteration-count: infinite !important;
+}
+
+.sidebar {
+  .title-label * {
+    display: none !important;
+  }
+
+  .header-or-footer {
+    padding: 0px !important;
+
+    .action-item {
+      padding: 0 11px 4px 11px !important;
+
+      .action-label:before {
+        left: 14px !important;
+      }
+
+      .badge {
+        left: -7px !important;
+      }
+    }
+  }
+}
+
+.tab {
+  padding: 0 15px !important;
+  width: auto !important;
+
+  &.dirty a {
+    color: orange !important;
+  }
+
+  .tab-actions {
+    display: none !important;
+  }
+}
+
+.view-lines,
+.monaco-mouse-cursor-text {
+  cursor: text !important;
+}
+
+.sticky-widget {
+  backdrop-filter: blur(2px);
+  padding-right: 99px;
+}
