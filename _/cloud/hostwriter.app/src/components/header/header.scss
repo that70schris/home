@@ -1,0 +1,64 @@
+@use '../../variables.scss';
+
+header {
+  background: #444;
+  color: white;
+  font-size: 40px;
+  line-height: 100px;
+  min-width: 100%;
+  position: sticky;
+  text-align: center;
+  z-index: 1;
+
+  @media (min-width: variables.$desktop+1) {
+    text-align: left;
+    top: 0;
+  }
+
+  nav {
+    display: none;
+    float: right;
+    font-size: 24px;
+
+    @media (min-width: variables.$desktop+1) {
+      display: initial;
+    }
+
+    a {
+      color: #ccc;
+      margin-left: 25px;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  #ghost {
+    $height: 23px;
+    background: #777;
+    bottom: 0;
+    display: none;
+    height: $height;
+    line-height: $height + 1;
+    position: absolute;
+    right: 150px;
+
+    @media (min-width: variables.$desktop) {
+      display: initial;
+    }
+
+    .icon {
+      display: block;
+      height: $height;
+      padding: 2px 4px;
+    }
+
+    .menu {
+      display: block;
+      position: absolute;
+      top: $height * 2;
+      zoom: 50%;
+    }
+  }
+}

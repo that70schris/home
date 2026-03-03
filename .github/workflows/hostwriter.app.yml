@@ -6,14 +6,14 @@ on:
       - main
     paths:
       - .github/workflows/hostwriter.app.yml
-      - code/hostwriter.app/**
+      - _/cloud/hostwriter.app/**
 
 defaults:
   run:
-    working-directory: ./code/hostwriter.app
+    working-directory: _/cloud/hostwriter.app
 
 env:
-  ROOT: ./code/hostwriter.app
+  ROOT: _/cloud/hostwriter.app
 
 jobs:
   publish:

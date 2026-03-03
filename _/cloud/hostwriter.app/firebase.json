@@ -1,0 +1,19 @@
+{
+  "hosting": {
+    "site": "hostwriter",
+    "public": "./dist",
+    "redirects": [
+      {
+        "destination": "/:file",
+        "source": "/host-writer/:file*",
+        "type": 301
+      }
+    ],
+    "rewrites": [
+      {
+        "destination": "/index.html",
+        "source": "**"
+      }
+    ]
+  }
+}
