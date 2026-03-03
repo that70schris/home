@@ -34,4 +34,5 @@
 !tsconfig.json
 
 !*.config.*
+!*.css
 !*.ts
