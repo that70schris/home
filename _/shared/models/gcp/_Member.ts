@@ -13,6 +13,7 @@ interface _MemberArgs extends Omit<IAMMemberArgs,
 }
 
 export class _Member extends IAMMember {
+
   constructor(
     name: string,
     args: _MemberArgs,

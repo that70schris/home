@@ -1,4 +1,4 @@
-import { AccountToken, PageRule } from '@pulumi/cloudflare'
+import { Ruleset } from '@pulumi/cloudflare'
 import { HostingCustomDomain, HostingSite, Project } from '@pulumi/gcp/firebase'
 import { Key } from '@pulumi/gcp/serviceaccount'
 import { _Config } from '../shared'
@@ -51,26 +51,28 @@ export class Firebase {
     },
   )
 
-  static www = new PageRule(
+  static www = new Ruleset(
     'www.hostwriter.app', {
       zoneId: _Config.zones['hostwriter.app'],
-      target: 'www.hostwriter.app/*',
-      actions: {
-        forwardingUrl: {
-          url: 'https://hostwriter.app/$1',
-          statusCode: 301,
+      // accountId: 'c380083c727f97bd24c6b600d267b4c3',
+      name: 'redirect www',
+      phase: 'http_request_dynamic_redirect',
+      kind: 'zone',
+      rules: [{
+        action: 'redirect',
+        expression: 'http.host contains "www."',
+        actionParameters: {
+          fromValue: {
+            preserveQueryString: true,
+            targetUrl: {
+              expression: 'wildcard_replace(http.host, "www.*", "https://${1}")',
+            },
+            statusCode: 307,
+          },
         },
-      },
+      }],
     },
   )
-
-  static auth = new AccountToken('test', {
-    name: 'Firebase Authentication',
-    accountId: 'c380083c727f97bd24c6b600d267b4c3',
-    policies: [
-
-    ],
-  })
 
   static records = [
     new _Record('hostwriter.app', {

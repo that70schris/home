@@ -22,7 +22,7 @@ export class _Record extends DnsRecord {
     defaults: RecordArgs = {
       name: args.domain ?? $name,
       zoneId: Object.entries(
-        new _Config('cloudflare').object?.zones,
+        _Config.zones,
       ).find(([ key, value ]) => {
         return RegExp(key).test(args.domain ?? $name)
       })?.[1] as string,
