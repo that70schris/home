@@ -40,13 +40,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@main
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@master
 
       - name: GCP auth
-        uses: google-github-actions/auth@v2
+        uses: google-github-actions/auth@main
         with:
           credentials_json: ${{ secrets.GCP }}
 
@@ -55,7 +55,7 @@ jobs:
           gcloud auth configure-docker us-docker.pkg.dev --quiet
 
       - name: Build and Publish Images
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@master
         with:
           push: true
           context: ${{ inputs.context }}

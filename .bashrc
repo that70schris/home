@@ -1,6 +1,7 @@
 source ~/.config/autoenv/activate.sh
-eval "$(starship init bash)"
 source ~/.config/aliases
+
+eval "$(starship init bash)"
 PROMPT_COMMAND='prompt'
 prompt() {
   PS1+='\n'

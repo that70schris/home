@@ -12,7 +12,7 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - run: npm install -f
+      - uses: actions/checkout@main
+      - run: npm install
 
-      - uses: github/super-linter/slim@v4
+      - uses: github/super-linter/slim@main

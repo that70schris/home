@@ -1,19 +1,22 @@
-source ~/.config/autoenv/activate.sh
-eval "$(starship init zsh)"
-source ~/.config/aliases
-setopt autocd
-
-# doesn't work in Warp terminal
-# source $(gcloud info --format='value(installation.sdk_root)')/*.zsh.inc
 source ~/.config/zsh/plugins/syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.config/zsh/plugins/autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/plugins/tab-title/zsh-tab-title.plugin.zsh
 source ~/.config/zsh/ohmy/plugins/dirhistory/dirhistory.plugin.zsh
 source ~/.config/zsh/ohmy/plugins/sudo/sudo.plugin.zsh
 source ~/.config/zsh/plugins/abbr/zsh-abbr.zsh
-abbr import-aliases --quiet
+source ~/.config/autoenv/activate.sh
+source ~/.config/aliases
 
+rm $ABBR_USER_ABBREVIATIONS_FILE
+abbr import-aliases --quieter
+setopt autocd
+
+eval "$(starship init zsh)"
 PS1+=$'\n'
 if [ $WARP_HONOR_PS1 ]; then
   PS1+=$'\n'
+fi
+
+if CLOUDSDK=$(gcloud info --format='value(installation.sdk_root)'); then
+  source ${CLOUDSDK}/*.zsh.inc
 fi

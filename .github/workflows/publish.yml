@@ -43,4 +43,4 @@ jobs:
         run: |
           git config user.email "chris@bailey.mx"
           git config user.name "Chris Bailey"
-          git commit -am "updates" && git push || true
+          git commit -am "updates" && git push

@@ -12,6 +12,9 @@ defaults:
   run:
     working-directory: ./code/hostwriter.app
 
+env:
+  ROOT: ./code/hostwriter.app
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -31,8 +34,11 @@ jobs:
         run: make build
 
       - name: Deploy
-        uses: FirebaseExtended/action-hosting-deploy@v0
+        uses: FirebaseExtended/action-hosting-deploy@main
         with:
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_HOST_WRITER }}
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
           channelId: live
+          entryPoint: ${{ env.ROOT }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE }}
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          projectId: bailey-production
+          target: hostwriter

@@ -1,0 +1,24 @@
+---
+"workspace:increase_zoom": none
+"notebookview:decrease_font_size": none
+"notebookview:increase_font_size": none
+"input:clear_screen": none
+"welcome_view:open_project": none
+"code_view:close_all_tabs": none
+"code_view:close_saved_tabs": none
+"terminal:ask_ai_assistant": none
+"project_buttons:create_new_project": none
+"editor_view:insert_autosuggestion": none
+"workspace:increase_font_size": cmd-=
+"editor:edit_link": none
+"terminal:copy": none
+"workspace:reset_font_size": cmd-0
+"terminal:accept_prompt_suggestions": none
+"terminal:executing_command_delete_word_left": none
+"terminal:executing_command_delete_line_end": none
+"workspace:decrease_zoom": none
+"notebookview:reset_font_size": none
+"editor_view:clear_and_copy_lines": none
+"workspace:decrease_font_size": cmd--
+"terminal:executing_command_delete_line_start": none
+"workspace:toggle_launch_config_palette": none

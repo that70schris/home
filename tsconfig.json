@@ -5,6 +5,6 @@
     "target": "esNext",
     "types": [
       "node"
-    ],
-  },
+    ]
+  }
 }

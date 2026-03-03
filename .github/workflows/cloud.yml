@@ -16,16 +16,16 @@ jobs:
     environment: ${{ inputs.environment }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@main
         with:
           repository: jgw-loans/main
 
       - name: GCP auth
-        uses: google-github-actions/auth@v2
+        uses: google-github-actions/auth@main
         with:
           credentials_json: ${{ secrets.GCP }}
 
-      - uses: google-github-actions/setup-gcloud@v2
+      - uses: google-github-actions/setup-gcloud@main
         with:
           install_components: gke-gcloud-auth-plugin
 
@@ -37,7 +37,7 @@ jobs:
         run: |
           npm install --production
 
-      - uses: pulumi/actions@v6
+      - uses: pulumi/actions@main
         with:
           work-dir: cloud
           stack-name: jgw/${{ inputs.environment }}

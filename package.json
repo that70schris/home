@@ -9,6 +9,7 @@
     "husky": "latest",
     "lint-staged": "latest",
     "prettier": "latest",
+    "prettier-plugin-toml": "latest",
     "stylelint": "latest",
     "stylelint-order": "latest",
     "stylelint-prettier": "latest",

@@ -1,19 +1,17 @@
 '$schema' = 'https://starship.rs/config-schema.json'
 
 format = """
-($os )\
-($sudo )\
-($username([@](#dddddd)$hostname)/)\
+$username($hostname/)\
 $directory\
-$git_branch \
+$git_branch\
 $git_commit\
-$git_status\
+$package\
 $git_state\
+$git_status\
 $git_metrics\
 $fill \
 $swift\
 $python\
-$package\
 $docker_context\
 $container\
 $helm\
@@ -21,37 +19,58 @@ $kubernetes\
 $pulumi\
 $terraform\
 $gcloud\
+$rust\
+$sudo\
+$shell\
+$os\
 """
 
 [directory]
-  repo_root_style = 'blue'
-  format = '[$read_only]($read_only_style)[$path]($style)'
+  format = '[$path]($style)[$read_only]($read_only_style) '
+  read_only_style = 'bright-yellow'
+  read_only = ' 󰌾'
+  style = '#cccccc'
   truncate_to_repo = false
   truncation_length = 5
-  style = '#cccccc'
+  repo_root_style = 'blue'
   repo_root_format = """
-[$before_root_path]($before_repo_root_style)\
-[$repo_root]($repo_root_style)\
-[$read_only]($read_only_style)\
-[$path]($style)\
+[$before_root_path]($before_repo_root_style) \
+[$repo_root]($repo_root_style)[$path]($style)\
+[$read_only]($read_only_style) \
 """
 
 [docker_context]
-  format = '  '
+  format = '  [$context]($style)'
+  style = '#2460ff'
 
 [fill]
-  symbol = '⎯'
-  style = '#999999'
+  style = '#999999 bold'
+  symbol = '⎯' #u23af
+
+  # dashline:
+  # symbol = '―' #u2015
+  # symbol = '—' #u2014
+  # symbol = '–' #u2013
+  # symbol = '‒' #u2012
+  # symbol = '‑' #u2011
+  # symbol = '‐' #u2010
+
+  # off center:
+  # symbol = '─' #u2500
+  # symbol = '' #nf45b
 
 [gcloud]
-  format = '(  [$project](#1a73e8))'
+  format = '( ☁️ [$project]($style))'
+  style = '#1a73e8'
 
 [git_branch]
-  format = ' [\($branch(:$remote_branch)\)](#f1502f)'
+  format = '[\($branch(:$remote_branch)\)]($style) '
   only_attached = true
+  style = '#f1502f'
 
 [git_commit]
-  format = ' [\($hash($tag)\)](#f1502f)'
+  format = '[\($hash($tag)\)]($style) '
+  style = '#f1502f'
   tag_disabled = false
 
 [git_metrics]
@@ -62,37 +81,41 @@ $gcloud\
 """
 
 [git_state]
-  format = '\([$state( $progress_current/$progress_total)]($style)\)'
+  format = """
+\\([$state(\
+$progress_current/\
+$progress_total)]\
+($style)\
+\\) """
 
 [git_status]
-  conflicted = '='
-  modified = ''
-  ahead = '[](purple)'
-  behind = '[](purple)'
-  diverged = '[](purple)'
-  untracked = '[▪︎](black)'
-  deleted = '[✘](red)'
-  renamed = '[⏩︎](white)'
-  staged = '[+](white)'
-  stashed = '[⭑](yellow)'
-  up_to_date = ''
+  conflicted = '= '
+  ahead = '[](purple) '
+  behind = '[](purple) '
+  diverged = '[](purple) '
+  untracked = '[▪︎](black) '
+  deleted = '[✘](red) '
+  renamed = '[⏩︎](white) '
+  staged = '[⭑](white) '
+  stashed = '[\$](yellow) '
   format = """
-($ahead_behind )\
-($stashed )\
-($conflicted )\
-($deleted )\
-($renamed)\
-($modified )\
-($staged )\
-($untracked )\
+$stashed\
+$ahead_behind\
+$conflicted\
+$renamed\
+$deleted\
+$staged\
+$untracked\
 """
 
 [hostname]
-  format = '[$hostname]($style)'
+  format = '@[$hostname]($style)'
+  style = 'green'
 
 [kubernetes]
   disabled = false
-  format = " 󰠳 [$context(/$namespace)](#09c1d1)"
+  format = " 󰠳 [$context(/$namespace)]($style)"
+  style = '#09c1d1'
 
 [lua]
   symbol = ' '
@@ -100,69 +123,57 @@ $gcloud\
 [nix_shell]
   symbol = ' '
 
-[os]
-  # disabled = false
-
-[os.symbols]
-  Alpaquita = ' '
-  Alpine = ' '
-  AlmaLinux = ' '
-  Amazon = ' '
-  Android = ' '
-  AOSC = ' '
-  Arch = ' '
-  Artix = ' '
-  CachyOS = ' '
-  CentOS = ' '
-  Debian = ' '
-  DragonFly = ' '
-  Emscripten = ' '
-  EndeavourOS = ' '
-  Fedora = ' '
-  FreeBSD = ' '
-  Garuda = '󰛓 '
-  Gentoo = ' '
-  HardenedBSD = '󰞌 '
-  Illumos = '󰈸 '
-  Kali = ' '
-  Linux = ' '
-  Mabox = ' '
-  Macos = ' '
-  Manjaro = ' '
-  Mariner = ' '
-  MidnightBSD = ' '
-  Mint = ' '
-  NetBSD = ' '
-  NixOS = ' '
-  Nobara = ' '
-  OpenBSD = '󰈺 '
-  openSUSE = ' '
-  OracleLinux = '󰌷 '
-  Pop = ' '
-  Raspbian = ' '
-  Redhat = ' '
-  RedHatEnterprise = ' '
-  RockyLinux = ' '
-  Redox = '󰀘 '
-  Solus = '󰠳 '
-  SUSE = ' '
-  Ubuntu = ' '
-  Unknown = ' '
-  Void = ' '
-  Windows = '󰍲 '
-
 [package]
-  format = ' 📦 [$version](white)'
+  format = '📦 [$version]($style) '
+  version_format = '$raw'
+  style = 'white'
 
 [pulumi]
-  format = '  [$stack](#be5188)'
+  format = '  [$stack]($style)'
+  style = '#be5188'
+
+[python]
+  symbol = ' '
+
+[ruby]
+  symbol = ' '
+
+[rust]
+  symbol = '󱘗 '
 
 [shell]
   disabled = false
+  format = ' > [$indicator]($style)'
+  style = 'yellow'
 
 [sudo]
   disabled = false
-  format = '👻'
+  format = ' 👻'
+
+[swift]
+  symbol = ' '
 
 [username]
   format = '[$user]($style)'
+  style_user = 'yellow'
+  style_root = 'red'
+
+[os]
+  disabled = false
+  format = ' [$symbol]($style) '
+  style = 'white'
+
+[os.symbols]
+  Alpine = ''
+  Arch = ''
+  Artix = ''
+  Debian = '󰣚'
+  Fedora = '󰮤'
+  Linux = ''
+  Macos = ''
+  NixOS = ''
+  Raspbian = ''
+  Redhat = '󱄛'
+  Ubuntu = ''
+  Unknown = '?'
+  Windows = '󰍲'

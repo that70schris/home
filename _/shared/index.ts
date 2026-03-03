@@ -1,2 +1,2 @@
-export * from './_Config'
+export * from './models'
 export * from './prune'

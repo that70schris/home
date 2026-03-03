@@ -32,6 +32,7 @@ berry.local:
 	apt install gh
 	apt install zsh
 	chsh -s $(which zsh)
+	curl -sS https://starship.rs/install.sh | sh
 	@make git
 	@make gh
 
