@@ -103,13 +103,13 @@ font-size = 16
 # linux-cgroup-memory-limit
 # linux-cgroup-processes-limit
 # macos-auto-secure-input
-# macos-custom-icon
+# macos-custom-icon = true
 # macos-dock-drop-behavior
 # macos-hidden
-# macos-icon
+macos-icon = custom-style
 # macos-icon-frame
-# macos-icon-ghost-color
-# macos-icon-screen-color
+macos-icon-ghost-color = #0f0
+macos-icon-screen-color = #333
 # macos-non-native-fullscreen
 # macos-option-as-alt
 # macos-secure-input-indication
