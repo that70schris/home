@@ -63,10 +63,10 @@ export class Firebase {
         actionParameters: {
           fromValue: {
             preserveQueryString: true,
+            statusCode: 307,
             targetUrl: {
               expression: 'wildcard_replace(http.host, "www.*", "https://${1}")',
             },
-            statusCode: 307,
           },
         },
       }],
