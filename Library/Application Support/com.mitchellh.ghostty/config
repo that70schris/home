@@ -1,4 +1,197 @@
-font-family = Monaco
-font-thicken = true
-cursor-style = bar
-quick-terminal-position = left
+# abnormal-command-exit-runtime
+# adjust-box-thickness
+# adjust-cell-height
+# adjust-cell-width
+# adjust-cursor-height
+# adjust-cursor-thickness
+# adjust-font-baseline
+adjust-icon-height = 100%
+# adjust-overline-position
+# adjust-overline-thickness
+# adjust-strikethrough-position
+# adjust-strikethrough-thickness
+# adjust-underline-position
+# adjust-underline-thickness
+# alpha-blending
+# app-notifications
+# async-backend
+# auto-update
+# auto-update-channel
+background = #222
+# background-blur
+# background-image
+# background-image-fit
+# background-image-opacity
+# background-image-position
+# background-image-repeat
+# background-opacity
+# background-opacity-cells
+# bell-audio-path
+# bell-audio-volume
+# bell-features
+# bold-color
+# class
+# click-repeat-interval
+# clipboard-paste-bracketed-safe
+# clipboard-paste-protection
+# clipboard-read
+# clipboard-trim-trailing-spaces
+# clipboard-write
+# command
+# command-palette-entry
+# config-default-files
+# config-file
+# confirm-close-surface
+# copy-on-select
+# cursor-click-to-move
+# cursor-color
+# cursor-opacity
+# cursor-style
+# cursor-style-blink
+# cursor-text
+# custom-shader
+# custom-shader-animation
+# desktop-notifications
+# enquiry-response
+# env
+# faint-opacity
+# focus-follows-mouse
+# font-codepoint-map
+# font-family = Monaco
+# font-family-bold
+# font-family-bold-italic
+# font-family-italic
+# font-feature
+# font-shaping-break
+font-size = 16
+# font-style
+# font-style-bold
+# font-style-bold-italic
+# font-style-italic
+# font-synthetic-style
+# font-thicken
+# font-thicken-strength
+# font-variation
+# font-variation-bold
+# font-variation-bold-italic
+# font-variation-italic
+# foreground
+# freetype-load-flags
+# fullscreen
+# grapheme-width-method
+# gtk-custom-css
+# gtk-opengl-debug
+# gtk-quick-terminal-layer
+# gtk-quick-terminal-namespace
+# gtk-single-instance
+# gtk-tabs-location
+# gtk-titlebar
+# gtk-titlebar-hide-when-maximized
+# gtk-titlebar-style
+# gtk-toolbar-style
+# gtk-wide-tabs
+# image-storage-limit
+# initial-command
+# initial-window
+# input
+# keybind
+# link
+# link-previews
+# link-url
+# linux-cgroup
+# linux-cgroup-hard-fail
+# linux-cgroup-memory-limit
+# linux-cgroup-processes-limit
+# macos-auto-secure-input
+# macos-custom-icon
+# macos-dock-drop-behavior
+# macos-hidden
+# macos-icon
+# macos-icon-frame
+# macos-icon-ghost-color
+# macos-icon-screen-color
+# macos-non-native-fullscreen
+# macos-option-as-alt
+# macos-secure-input-indication
+# macos-shortcuts
+# macos-titlebar-proxy-icon
+# macos-titlebar-style
+# macos-window-buttons
+# macos-window-shadow
+# maximize
+# minimum-contrast
+# mouse-hide-while-typing
+# mouse-scroll-multiplier
+# mouse-shift-capture
+# osc-color-report-format
+palette = 0=#777
+palette = 1=#f44
+palette = 2=#7f8
+palette = 3=#ef7
+palette = 4=#39f
+palette = 5=#a8f
+palette = 6=#0bd
+palette = 7=#eee
+palette = 8=#999
+palette = 9=#f00
+palette = 10=#0f4
+palette = 11=#ff0
+palette = 12=#9ef
+palette = 13=#eaf
+palette = 14=#3ce
+palette = 15=#fff
+# quick-terminal-animation-duration
+# quick-terminal-autohide
+# quick-terminal-keyboard-interactivity
+# quick-terminal-position
+# quick-terminal-screen
+# quick-terminal-size
+# quick-terminal-space-behavior
+# quit-after-last-window-closed
+# quit-after-last-window-closed-delay
+# resize-overlay
+# resize-overlay-duration
+# resize-overlay-position
+# right-click-action
+# scroll-to-bottom
+# scrollback-limit
+# selection-background
+# selection-clear-on-copy
+# selection-clear-on-typing
+# selection-foreground
+# shell-integration
+# shell-integration-features
+# split-divider-color
+# term
+# theme
+# title
+# title-report
+# undo-timeout
+# unfocused-split-fill
+# unfocused-split-opacity
+# vt-kam-allowed
+# wait-after-command
+# window-colorspace
+# window-decoration
+# window-height
+# window-inherit-font-size
+# window-inherit-working-directory
+# window-new-tab-position
+window-padding-balance = true
+# window-padding-color
+window-padding-x = 20
+window-padding-y = 20
+# window-position-x
+# window-position-y
+# window-save-state
+# window-show-tab-bar
+# window-step-resize
+# window-subtitle
+# window-theme
+# window-title-font-family
+# window-titlebar-background
+# window-titlebar-foreground
+# window-vsync
+# window-width
+# working-directory
+# x11-instance-name
