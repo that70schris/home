@@ -38,6 +38,7 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
+  "breadcrumbs.enabled": false,
   "breadcrumbs.filePath": "off",
   "breadcrumbs.symbolPath": "on",
   "code-runner.clearPreviousOutput": true,
