@@ -1,9 +1,9 @@
 # abnormal-command-exit-runtime
 # adjust-box-thickness
 # adjust-cell-height
-# adjust-cell-width
-# adjust-cursor-height
-# adjust-cursor-thickness
+# adjust-cell-width = -99%
+# adjust-cursor-height = -4
+adjust-cursor-thickness = 4
 # adjust-font-baseline
 # adjust-icon-height = 100%
 # adjust-overline-position
@@ -46,7 +46,7 @@ confirm-close-surface = false
 # cursor-click-to-move
 # cursor-color
 # cursor-opacity
-# cursor-style
+cursor-style = bar
 # cursor-style-blink
 # cursor-text
 # custom-shader
@@ -107,14 +107,14 @@ font-size = 16
 # macos-dock-drop-behavior
 # macos-hidden
 macos-icon = custom-style
-macos-icon-frame = plastic
+# macos-icon-frame = plastic
 macos-icon-ghost-color = #0f0
 macos-icon-screen-color = #333
 # macos-non-native-fullscreen
 # macos-option-as-alt
 # macos-secure-input-indication
 # macos-shortcuts
-# macos-titlebar-proxy-icon
+# macos-titlebar-proxy-icon = hidden
 macos-titlebar-style = tabs
 macos-window-buttons = hidden
 # macos-window-shadow
