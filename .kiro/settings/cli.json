@@ -1,6 +1,8 @@
 {
   "app.hideMenubarIcon": true,
+  "autocomplete.firstTokenCompletion": false,
   "autocomplete.fontFamily": "Monaco",
   "autocomplete.fontSize": 16,
-  "autocomplete.immediatelyRunGitAliases": false
+  "autocomplete.immediatelyRunGitAliases": false,
+  "chat.greeting.enabled": false
 }

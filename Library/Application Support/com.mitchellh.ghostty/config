@@ -41,7 +41,7 @@ background = #222
 # command-palette-entry
 # config-default-files
 # config-file
-# confirm-close-surface
+confirm-close-surface = false
 # copy-on-select
 # cursor-click-to-move
 # cursor-color
@@ -180,7 +180,7 @@ palette = 15=#fff
 window-padding-balance = true
 # window-padding-color
 window-padding-x = 20
-window-padding-y = 20
+# window-padding-y = 20
 # window-position-x
 # window-position-y
 # window-save-state
