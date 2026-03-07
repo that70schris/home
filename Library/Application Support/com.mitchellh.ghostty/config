@@ -5,7 +5,7 @@
 # adjust-cursor-height
 # adjust-cursor-thickness
 # adjust-font-baseline
-adjust-icon-height = 100%
+# adjust-icon-height = 100%
 # adjust-overline-position
 # adjust-overline-thickness
 # adjust-strikethrough-position
@@ -57,7 +57,7 @@ background = #222
 # faint-opacity
 # focus-follows-mouse
 # font-codepoint-map
-# font-family = Monaco
+font-family = Monaco
 # font-family-bold
 # font-family-bold-italic
 # font-family-italic
