@@ -3,6 +3,8 @@
   "autocomplete.firstTokenCompletion": false,
   "autocomplete.fontFamily": "Monaco",
   "autocomplete.fontSize": 16,
+  "autocomplete.fuzzySearch": true,
   "autocomplete.immediatelyRunGitAliases": false,
+  "autocomplete.preferVerboseSuggestions": true,
   "chat.greeting.enabled": false
 }
