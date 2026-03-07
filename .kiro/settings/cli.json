@@ -1,0 +1,6 @@
+{
+  "app.hideMenubarIcon": true,
+  "autocomplete.fontFamily": "Monaco",
+  "autocomplete.fontSize": 16,
+  "autocomplete.immediatelyRunGitAliases": false
+}
