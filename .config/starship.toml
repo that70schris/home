@@ -96,7 +96,7 @@ $progress_total)]\
   untracked = '[▪︎](black) '
   deleted = '[✘](red) '
   renamed = '[⏩︎](white) '
-  staged = '[⭑](white) '
+  staged = '[⭑](yellow) '
   stashed = '[\$](yellow) '
   format = """
 $stashed\
