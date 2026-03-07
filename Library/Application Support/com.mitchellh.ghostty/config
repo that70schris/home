@@ -107,7 +107,7 @@ font-size = 16
 # macos-dock-drop-behavior
 # macos-hidden
 macos-icon = custom-style
-# macos-icon-frame
+macos-icon-frame = plastic
 macos-icon-ghost-color = #0f0
 macos-icon-screen-color = #333
 # macos-non-native-fullscreen
@@ -115,8 +115,8 @@ macos-icon-screen-color = #333
 # macos-secure-input-indication
 # macos-shortcuts
 # macos-titlebar-proxy-icon
-# macos-titlebar-style
-# macos-window-buttons
+macos-titlebar-style = tabs
+macos-window-buttons = hidden
 # macos-window-shadow
 # maximize
 # minimum-contrast
@@ -172,7 +172,7 @@ palette = 15=#fff
 # vt-kam-allowed
 # wait-after-command
 # window-colorspace
-# window-decoration
+# window-decoration = false
 # window-height
 # window-inherit-font-size
 # window-inherit-working-directory

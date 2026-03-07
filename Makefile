@@ -5,6 +5,7 @@ _:
 	-softwareupdate --install-rosetta
 	curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
 	brew bundle install
+	kiro-cli integrations install input-method
 	@make git
 	@make gh
 
