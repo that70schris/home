@@ -24,6 +24,25 @@ $shell\
 $os\
 """
 
+palette = 'arcade'
+[palettes.arcade]
+  black = '#777777'
+  blue = '#3399ff'
+  cyan = '#00bbdd'
+  green = '#77ff88'
+  magenta = '#aa88ff'
+  red = '#ff4444'
+  white = '#eeeeee'
+  yellow = '#eeff77'
+  bright-black = '#999999'
+  bright-blue = '#99eeff'
+  bright-cyan = '#33ccee'
+  bright-green = '#00ff44'
+  bright-magenta = '#eeaaff'
+  bright-red = '#ff0000'
+  bright-white = '#ffffff'
+  bright-yellow = '#ffff00'
+
 [directory]
   format = '[$path]($style)[$read_only]($read_only_style) '
   read_only_style = 'bright-yellow'
