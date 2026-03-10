@@ -12,6 +12,7 @@ macos-window-buttons = hidden
 window-padding-balance = true
 window-padding-x = 20
 
+
 palette=  0 = #777
 palette=  1 = #f44
 palette=  2 = #7f8
