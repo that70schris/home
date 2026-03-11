@@ -4,7 +4,7 @@ import { Chart } from '@pulumi/kubernetes/helm/v4'
 import { Config } from '@pulumi/pulumi'
 import { _CustomResource, _Ingress, _Kube } from '.'
 import { once } from '../../decorators'
-import { Twingate } from '../twingate'
+import { _TwingateResource } from '../twingate'
 import { mDNS } from './kubes/mDNS'
 
 interface ClusterArgs {
@@ -15,12 +15,17 @@ interface ClusterArgs {
 export class _Cluster {
 
   constructor(
-    public name: string,
+    public host: string,
     public args: ClusterArgs,
   ) {
+    // new _TwingateResource(this.host, {
+    //   address: this.host,
+    // })
+
     args.kubes.forEach((kube) => {
-      kube.index
+      return kube.index
     })
+
   }
 
   twingate = new Chart('twingate', {
@@ -30,9 +35,9 @@ export class _Cluster {
     },
     values: {
       connector: {
-        network: Twingate.network,
-        accessToken: Twingate.tokens.accessToken,
-        refreshToken: Twingate.tokens.refreshToken,
+        network: _TwingateResource.network,
+        accessToken: _TwingateResource.tokens.accessToken,
+        refreshToken: _TwingateResource.tokens.refreshToken,
       },
     },
   })
@@ -157,8 +162,7 @@ export class _Cluster {
           host: [
             kube.name,
             kube.overrides.domain
-            ?? this.args.domain
-            ?? `${this.name}.local`,
+            ?? this.args.domain,
           ].filter(Boolean).join('.'),
           http: {
             paths: [{

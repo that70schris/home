@@ -13,9 +13,9 @@ interface _TwingateResourceArgs extends Omit<TwingateResourceArgs,
   udp?: number[]
 }
 
-export class Twingate extends TwingateResource {
+export class _TwingateResource extends TwingateResource {
   static config: any = new Config('twingate')
-  static network = Twingate.config.get('network')
+  static network = _TwingateResource.config.get('network')
 
   static remote = new TwingateRemoteNetwork('main', {
     location: 'ON_PREMISE',
@@ -23,12 +23,12 @@ export class Twingate extends TwingateResource {
   })
 
   static connector = new TwingateConnector('main', {
-    remoteNetworkId: Twingate.remote.id,
+    remoteNetworkId: _TwingateResource.remote.id,
     name: 'main',
   })
 
   static tokens = new TwingateConnectorTokens('main', {
-    connectorId: Twingate.connector.id,
+    connectorId: _TwingateResource.connector.id,
   })
 
   static groups = {
@@ -40,11 +40,11 @@ export class Twingate extends TwingateResource {
     args: _TwingateResourceArgs,
     opts?: CustomResourceOptions,
     defaults: TwingateResourceArgs = {
-      remoteNetworkId: Twingate.remote.id,
+      remoteNetworkId: _TwingateResource.remote.id,
       address: args.address ?? $name,
       name: $name,
       accessGroups: [
-        Twingate.groups.everyone,
+        _TwingateResource.groups.everyone,
       ],
       protocols: {
         allowIcmp: true,
@@ -68,7 +68,7 @@ export class Twingate extends TwingateResource {
       merge(defaults, args),
       merge({
         deleteBeforeReplace: true,
-        parent: Twingate.connector,
+        parent: _TwingateResource.connector,
       }, opts),
     )
   }

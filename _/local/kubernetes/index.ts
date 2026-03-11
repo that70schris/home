@@ -1,7 +1,7 @@
 import { _Cluster } from '../../shared/models/kubernetes'
 import { Homebridge, Plex } from '../../shared/models/kubernetes/kubes'
 
-new _Cluster('berry', {
+new _Cluster('berry.local', {
   domain: 'bailey.mx',
   kubes: [
     new Homebridge(),

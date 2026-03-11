@@ -7,7 +7,7 @@ export class _GKE extends _Cluster {
 
   @once
   get provider() {
-    return new Provider(this.name, {
+    return new Provider(this.host, {
       suppressHelmHookWarnings: true,
       enableConfigMapMutable: true,
       kubeconfig: all([
@@ -17,7 +17,7 @@ export class _GKE extends _Cluster {
         endpoint,
         masterAuth,
       ]) => {
-        const context = `${this.project}_${this.location}_${this.name}`
+        const context = `${this.project}_${this.location}_${this.host}`
         return YAML.stringify({
           'apiVersion': 'v1',
           'clusters': [{
