@@ -1,11 +1,12 @@
-!com.apple.menuextra.clock.plist
 !com.apple.Accessibility.plist
 !com.apple.ActivityMonitor.plist
 !com.apple.AppleMultitouch*.plist
 !com.apple.controlcenter.plist
 !com.apple.dock.plist
+!com.apple.menuextra.clock.plist
 !com.apple.Music.eq.plist
 !com.apple.screensaver.plist
+!com.apple.Terminal.plist
 !com.apple.universalaccess.plist
 !com.brnbw.Leader-Key.plist
 !com.choosyosx.Choosy.plist
