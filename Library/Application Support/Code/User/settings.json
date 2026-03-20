@@ -216,5 +216,10 @@
   "workbench.settings.openDefaultSettings": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.indent": 12,
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.svg": "default"
+  },
+  "svg.preview.mode": "svg"
 }
