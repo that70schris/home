@@ -206,7 +206,16 @@
 
   <g id="calculated">
     <g id="body">
-
+      <g id="tunnels">
+        <g id="ground" transform="translate(184.396, 0)">
+          <line x1="0.5" y1="24.048" x2="0.5" y2="0" />
+          <line x1="18.5" y1="24.12" x2="18.5" y2="5.68434189e-14" />
+        </g>
+        <g id="jack" transform="translate(396.5, 640) rotate(75)">
+          <line x1="16" y1="0" x2="151" y2="0" />
+          <line x1="0" y1="18" x2="151" y2="18" />
+        </g>
+      </g>
     </g>
     <g id="pickguard">
       <path
