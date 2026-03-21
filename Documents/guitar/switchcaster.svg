@@ -11,14 +11,14 @@
       <circle r="15" />
     </g>
 
-    <circle id="screw" r="5" fill="blue" />
+    <circle id="screw" r="7" fill="blue" />
 
-    <rect id="switch" fill="blue" width="10.44" height="23" rx="5.22" />
+    <rect id="switch" fill="blue" width="10" height="23" rx="5" />
 
     <g id="pickup" fill="blue">
-      <rect x="14" width="201" height="51" rx="25.5" />
-      <circle r="5" cx="4.5" cy="26" />
-      <circle r="5" cx="225" cy="26" />
+      <rect x="14" width="201" height="52" rx="26" />
+      <circle r="6" cx="4.6" cy="26.2" />
+      <circle r="6" cx="224.8" cy="26.2" />
     </g>
   </defs>
   <g id="calculated">
@@ -38,21 +38,21 @@
 
       <g id="pickups" transform="translate(100, 211)">
         <use xlink:href="#pickup" />
-        <use xlink:href="#pickup" transform="translate(0, 170)" />
-        <use xlink:href="#pickup" transform="translate(6.5, 312) rotate(10)" />
+        <use xlink:href="#pickup" transform="translate(0, 170.5)" />
+        <use xlink:href="#pickup" transform="translate(6.7, 311.7) rotate(10.2)" />
       </g>
 
       <g id="screws">
-        <use xlink:href="#screw" x="546" y="43" />
-        <use xlink:href="#screw" x="527" y="212" />
-        <use xlink:href="#screw" x="507" y="480" />
+        <use xlink:href="#screw" x="545.75" y="42.5" />
+        <use xlink:href="#screw" x="526.7" y="212" />
+        <use xlink:href="#screw" x="506.7" y="479.8" />
         <use xlink:href="#screw" x="571" y="621.5" />
-        <use xlink:href="#screw" x="600" y="779" />
-        <use xlink:href="#screw" x="337.5" y="673" />
-        <use xlink:href="#screw" x="75" y="669" />
-        <use xlink:href="#screw" x="26.5" y="523.5" />
-        <use xlink:href="#screw" x="73.5" y="379" />
-        <use xlink:href="#screw" x="85.5" y="92" />
+        <use xlink:href="#screw" x="600.5" y="779" />
+        <use xlink:href="#screw" x="337.8" y="672.6" />
+        <use xlink:href="#screw" x="75.05" y="668.75" />
+        <use xlink:href="#screw" x="26.7" y="523.5" />
+        <use xlink:href="#screw" x="73.6" y="379" />
+        <use xlink:href="#screw" x="85.85" y="91.7" />
         <use xlink:href="#screw" x="314" y="181" />
       </g>
     </g>
