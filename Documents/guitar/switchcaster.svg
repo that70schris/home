@@ -2,6 +2,7 @@
 
   <style>
     #reference {
+      /* display: none; */
       stroke: magenta;
       stroke-width: 1.44px;
     }
