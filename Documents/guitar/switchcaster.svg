@@ -11,14 +11,14 @@
       <circle r="15" />
     </g>
 
-    <circle id="screw" r="7" fill="blue" />
+    <circle id="screw" r="5" fill="blue" />
 
     <rect id="switch" fill="blue" width="10" height="23" rx="5" />
 
     <g id="pickup" fill="blue">
       <rect x="14" width="201" height="52" rx="26" />
-      <circle r="6" cx="4.6" cy="26.2" />
-      <circle r="6" cx="224.8" cy="26.2" />
+      <circle r="5" cx="4.66" cy="26.2" />
+      <circle r="5" cx="224.8" cy="26.2" />
     </g>
   </defs>
   <g id="calculated">
@@ -50,10 +50,10 @@
         <use xlink:href="#screw" x="600.5" y="779" />
         <use xlink:href="#screw" x="337.8" y="672.6" />
         <use xlink:href="#screw" x="75.05" y="668.75" />
-        <use xlink:href="#screw" x="26.7" y="523.5" />
-        <use xlink:href="#screw" x="73.6" y="379" />
-        <use xlink:href="#screw" x="85.85" y="91.7" />
-        <use xlink:href="#screw" x="314" y="181" />
+        <use xlink:href="#screw" x="26.7" y="523.4" />
+        <use xlink:href="#screw" x="73.6" y="379.1" />
+        <use xlink:href="#screw" x="85.8" y="91.75" />
+        <use xlink:href="#screw" x="313.9" y="181" />
       </g>
     </g>
   </g>
