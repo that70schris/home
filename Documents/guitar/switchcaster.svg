@@ -39,7 +39,15 @@
       <g id="screws" stroke-width="1.44">
         <use xlink:href="#screw" x="546" y="43" />
         <use xlink:href="#screw" x="527" y="212" />
-
+        <use xlink:href="#screw" x="507" y="480" />
+        <use xlink:href="#screw" x="571" y="621.5" />
+        <use xlink:href="#screw" x="600" y="779" />
+        <use xlink:href="#screw" x="337.5" y="673" />
+        <use xlink:href="#screw" x="75" y="669" />
+        <use xlink:href="#screw" x="26.5" y="523.5" />
+        <use xlink:href="#screw" x="73.5" y="379" />
+        <use xlink:href="#screw" x="85.5" y="92" />
+        <use xlink:href="#screw" x="527" y="212" />
       </g>
     </g>
   </g>
