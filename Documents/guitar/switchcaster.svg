@@ -1,22 +1,14 @@
 <svg width="1000px" height="1500px">
 
   <style>
-    #calculated {
-      z-index: 9;
-
-      * {
-        stroke: magenta;
-        stroke-width: 1.44px;
-      }
+    #reference {
+      stroke: magenta;
+      stroke-width: 1.44px;
     }
 
-    #reference {
-      z-index: -9;
-
-      * {
-        stroke: black;
-        stroke-width: 1.44px;
-      }
+    #calculated {
+      stroke: black;
+      stroke-width: 1.44px;
     }
 
     defs * {
