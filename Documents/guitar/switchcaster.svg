@@ -7,8 +7,8 @@
   </style>
   <defs>
     <g id="knob" fill="blue">
-      <circle r="36" opacity="0.5" fill="white" />
-      <circle r="15" />
+      <circle r="33" opacity="0.5" fill="white" />
+      <circle r="14" />
     </g>
 
     <circle id="screw" r="5" fill="blue" />
