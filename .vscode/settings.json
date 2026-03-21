@@ -12,5 +12,5 @@
     "spoon",
     "hs",
   ],
-  "svg.preview.background": "dark-transparent"
+  "svg.preview.background": "transparent"
 }
