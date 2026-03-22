@@ -25,7 +25,7 @@
 
     <circle id="screw" r="5" />
 
-    <rect id="switch" width="10" height="23" rx="5" />
+    <rect id="switch" width="10" height="24" rx="5" />
 
     <g id="pickup">
       <rect x="14" width="201" height="52" rx="26" />
@@ -226,13 +226,12 @@
         fill-opacity="0.5" fill="#FFFFFF" />
       <use xlink:href="#knob" x="573" y="735" />
 
-      <g id="bracket" transform="translate(432, 434) rotate(90)">
-        <rect height="100" width="100" fill="none" />
-        <use xlink:href="#knob" x="100" y="100" />
-        <use xlink:href="#knob" x="200" y="100" />
-        <use xlink:href="#switch" />
-        <use xlink:href="#switch" transform="translate(30,0)" />
-        <use xlink:href="#switch" transform="translate(200,0)" />
+      <g id="bracket" transform="translate(480, 653) rotate(-90) scale(1, -1)">
+        <use xlink:href="#knob" x="0" y="0" />
+        <use xlink:href="#knob" x="124.6" y="0" />
+        <use xlink:href="#switch" x="9" y="48" />
+        <use xlink:href="#switch" x="58" y="48" />
+        <use xlink:href="#switch" x="107" y="48" />
       </g>
 
       <use xlink:href="#pickup" transform="translate(100, 211)" />
