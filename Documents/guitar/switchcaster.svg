@@ -235,8 +235,8 @@
         <use xlink:href="#switch" transform="translate(200,0)" />
       </g>
 
-      <use xlink:href="#pickup" x="100" y="221" />
-      <use xlink:href="#pickup" x="100" y="391.5" />
+      <use xlink:href="#pickup" x="100" y="211" />
+      <use xlink:href="#pickup" x="100" y="381.5" />
       <use xlink:href="#pickup" x="198" y="495.5" transform="rotate(10.2)" />
 
       <use xlink:href="#screw" x="545.75" y="42.5" />
