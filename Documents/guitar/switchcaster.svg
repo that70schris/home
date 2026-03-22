@@ -228,16 +228,16 @@
 
       <g id="bracket" transform="translate(432, 434) rotate(90)">
         <rect height="100" width="100" fill="none" />
-        <use xlink:href="#knob" x="448" y="219" />
-        <use xlink:href="#knob" x="370" y="595" />
+        <use xlink:href="#knob" x="100" y="100" />
+        <use xlink:href="#knob" x="200" y="100" />
         <use xlink:href="#switch" />
         <use xlink:href="#switch" transform="translate(30,0)" />
         <use xlink:href="#switch" transform="translate(200,0)" />
       </g>
 
-      <use xlink:href="#pickup" x="100" y="211" />
-      <use xlink:href="#pickup" x="100" y="381.5" />
-      <use xlink:href="#pickup" x="198" y="495.5" transform="rotate(10.2)" />
+      <use xlink:href="#pickup" transform="translate(100, 211)" />
+      <use xlink:href="#pickup" transform="translate(100, 381.5)" />
+      <use xlink:href="#pickup" transform="translate(107, 523) rotate(10.2)" />
 
       <use xlink:href="#screw" x="545.75" y="42.5" />
       <use xlink:href="#screw" x="526.7" y="212" />
