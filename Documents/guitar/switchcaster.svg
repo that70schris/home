@@ -159,9 +159,9 @@
   <g id="calculated">
     <g id="body">
       <g id="tunnels">
-        <g id="ground" transform="translate(184.396, 0)">
-          <line x1="0.5" y1="24.048" x2="0.5" y2="0" />
-          <line x1="18.5" y1="24.12" x2="18.5" y2="5.68434189e-14" />
+        <g id="ground" transform="translate(290, 587.5)">
+          <line x1="0" y1="0" x2="30" y2="0" />
+          <line x1="0" y1="18" x2="30" y2="18" />
         </g>
         <g id="jack" transform="translate(379, 645) rotate(-15)">
           <line x1="0" y1="0" x2="0" y2="150" />
@@ -182,9 +182,11 @@
       <use xlink:href="#bracket" class="single" transform="translate(480, 653) rotate(-90) scale(1, -1)" />
       <use xlink:href="#bracket" transform="translate(480, 653) rotate(-120)" />
 
-      <use xlink:href="#pickup" transform="translate(100, 211)" />
-      <use xlink:href="#pickup" transform="translate(100, 381.5)" />
-      <use xlink:href="#pickup" transform="translate(107, 523) rotate(10.2)" />
+      <g id="pickups" transform="translate(100)">
+        <use xlink:href="#pickup" x="0" y="211" />
+        <use xlink:href="#pickup" x="0" y="381.5" />
+        <use xlink:href="#pickup" x="99" y="513" transform="rotate(10.2)" />
+      </g>
 
       <use xlink:href="#screw" x="545.75" y="42.5" />
       <use xlink:href="#screw" x="526.7" y="212" />
