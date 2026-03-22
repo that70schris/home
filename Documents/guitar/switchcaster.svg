@@ -1,4 +1,4 @@
-<svg width="636px" height="812px">
+<svg width="636px" height="812px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
   <style>
     #reference {
@@ -248,7 +248,7 @@
       <use xlink:href="#screw" x="75.05" y="668.75" />
       <use xlink:href="#screw" x="26.7" y="523.4" />
       <use xlink:href="#screw" x="73.6" y="379.1" />
-      <use xlink:href="#screw" x="85.8" y="91.75" />
+      <use xlink:href="#screw" x="85.85" y="91.75" />
       <use xlink:href="#screw" x="313.9" y="181" />
 
     </g>
