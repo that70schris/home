@@ -99,11 +99,6 @@
         <path id="knob" transform="translate(202, 218.4899)"
           d="M51.22,36 C51.22,43.8530714 44.8530714,50.22 37,50.22 C29.1469286,50.22 22.78,43.8530714 22.78,36 C22.78,28.1469286 29.1469286,21.78 37,21.78 C44.8530714,21.78 51.22,28.1469286 51.22,36 Z" />
         <g id="bracket" transform="translate(75.2625, 35.3537)">
-          <g id="switches" transform="translate(10.8, 74.3) rotate(90) translate(-10.8, -74.3)translate(-42.7, 63.5)">
-            <rect id="neck" x="-0.72" y="-0.72" width="10.44" height="23.0400004" rx="5.22" />
-            <rect id="middle" x="48.28" y="-0.72" width="10.44" height="23.0400004" rx="5.22" />
-            <rect id="bridge" x="97.28" y="-0.72" width="10.44" height="23.0400004" rx="5.22" />
-          </g>
           <path transform="translate(-75.2625, 43.1362)"
             d="M50.22,36 C50.22,43.8530714 43.8530714,50.22 36,50.22 C28.1469286,50.22 21.78,43.8530714 21.78,36 C21.78,28.1469286 28.1469286,21.78 36,21.78 C43.8530714,21.78 50.22,28.1469286 50.22,36 Z" />
         </g>
@@ -191,7 +186,7 @@
       <g id="pickups" transform="translate(104.59)">
         <use xlink:href="#pickup" x="0" y="211" />
         <use xlink:href="#pickup" x="0" y="381.5" />
-        <use xlink:href="#pickup" x="99.5" y="514.3" transform="rotate(10.2)" />
+        <use xlink:href="#pickup" x="99.3" y="514.2" transform="rotate(10.2)" />
       </g>
 
       <use xlink:href="#screw" x="545.75" y="42.5" />
