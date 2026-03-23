@@ -193,7 +193,7 @@
       <g id="pickups" transform="translate(104.59)">
         <use xlink:href="#pickup" x="0" y="211" />
         <use xlink:href="#pickup" x="0" y="381.5" />
-        <use xlink:href="#pickup" x="99" y="513" transform="rotate(10.2)" />
+        <use xlink:href="#pickup" x="99.5" y="514.3" transform="rotate(10.2)" />
       </g>
 
       <use xlink:href="#screw" x="545.75" y="42.5" />
