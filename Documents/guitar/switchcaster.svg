@@ -9,6 +9,7 @@
     }
 
     #calculated {
+      fill: blue;
       stroke: black;
       stroke-width: 1.44px;
     }
