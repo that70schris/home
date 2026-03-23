@@ -23,14 +23,14 @@
       <circle r="14" />
     </g>
 
-    <circle id="screw" r="5" />
+    <circle id="screw" r="5.2" />
 
     <rect id="switch" width="10" height="24" rx="5" />
 
     <g id="pickup">
-      <rect x="14" width="201" height="52" rx="26" />
-      <circle r="5" cx="4.66" cy="26.2" />
-      <circle r="5" cx="224.8" cy="26.2" />
+      <circle r="5.2" cy="26.16" />
+      <circle r="5.2" cx="220.13" cy="26.16" />
+      <rect x="9.5" width="201" height="52.07" rx="26.05" />
     </g>
 
     <g id="bracket">
@@ -182,7 +182,7 @@
       <use xlink:href="#bracket" class="single" transform="translate(480, 653) rotate(-90) scale(1, -1)" />
       <use xlink:href="#bracket" transform="translate(480, 653) rotate(-120)" />
 
-      <g id="pickups" transform="translate(100)">
+      <g id="pickups" transform="translate(104.59)">
         <use xlink:href="#pickup" x="0" y="211" />
         <use xlink:href="#pickup" x="0" y="381.5" />
         <use xlink:href="#pickup" x="99" y="513" transform="rotate(10.2)" />
