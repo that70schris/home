@@ -20,9 +20,9 @@ if [ $WARP_HONOR_PS1 ]; then
   PS1+=$'\n'
 fi
 
-if CLOUDSDK=$(gcloud info \
-  --configuration='~/.google' \
-  --format='value(installation.sdk_root)' \
+if CLOUDSDK=$(
+  CLOUDSDK_CONFIG=${HOME}/.google \
+  gcloud info --format='value(installation.sdk_root)' \
 ); then
   source ${CLOUDSDK}/*.zsh.inc
 fi
