@@ -10,12 +10,12 @@
     "@pulumi/tailscale": "0.27.0",
     "@pulumiverse/unifi": "0.2.0",
     "@twingate/pulumi-twingate": "4.0.2",
-    "esbuild": "0.27.3",
+    "esbuild": "0.27.4",
     "fs": "0.0.1-security",
     "globals": "17.4.0",
     "json2toml": "6.1.2",
     "lodash": "4.17.23",
-    "typescript": "5.9.3",
-    "yaml": "2.8.2"
+    "typescript": "6.0.2",
+    "yaml": "2.8.3"
   }
 }
