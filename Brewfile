@@ -79,8 +79,7 @@ mas "Homie", id: 1533590432
 mas "iCircuit", id: 454347770
 mas "Logic Pro", id: 634148309
 mas "Mapper", id: 1589391989
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
+mas "Numbers", id: 361304891
 mas "Xcode", id: 497799835
 vscode "bbenoist.nix"
 vscode "bennycode.sort-everything"

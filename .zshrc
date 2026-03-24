@@ -20,11 +20,9 @@ if [ $WARP_HONOR_PS1 ]; then
   PS1+=$'\n'
 fi
 
-if [[ -f ".gcloud" ]] \
-&& CLOUDSDK=$(gcloud info --format='value(installation.sdk_root)'); then
+if CLOUDSDK=$(gcloud info --format='value(installation.sdk_root)'); then
   source ${CLOUDSDK}/*.zsh.inc
 fi
-
 
 # Kiro CLI post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
