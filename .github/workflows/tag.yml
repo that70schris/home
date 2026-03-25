@@ -12,6 +12,9 @@ on:
       - leadscoring/**
       - www/**
 
+permissions:
+  contents: write
+
 jobs:
   tag:
     name: Tag for Production
