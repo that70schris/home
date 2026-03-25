@@ -16,6 +16,8 @@ jobs:
   tag:
     name: Tag for Production
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@main
