@@ -14,7 +14,7 @@ declare global {
 Object.defineProperties(String.prototype, {
   datadog: {
     get: function() {
-      return this.replace(/[\s:"+-=><!(){}[\]^~\\#]/g, (character) => {
+      return this.replace(/[\s:"=+\-><!(){}[\]^~\\#]/g, (character) => {
         return `\\${character}`
       })
     },

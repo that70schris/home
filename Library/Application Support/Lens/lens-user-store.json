@@ -25,6 +25,9 @@
 			},
 			{
 				"filePath": "/Users/chris/_/.kube/config"
+			},
+			{
+				"filePath": "/Users/chris/_/local/.kube/config"
 			}
 		],
 		"updateChannel": "latest"
