@@ -1,6 +1,7 @@
 alias add='git add'
 alias amend='git commit --amend'
 alias ammend='git commit -a --amend --no-edit'
+alias b='brew'
 alias bottle='brew bundle dump --force'
 alias c='gcloud'
 alias check='git checkout'
