@@ -33,6 +33,9 @@ env:
   CACHE: type=registry,ref=us-docker.pkg.dev/jgw-${{ github.ref_name }}/buildcache/${{ inputs.image || inputs.resource }}
   TAG: ${{ github.sha }}
 
+permissions:
+  contents: read
+
 jobs:
   build:
     name: Build ${{ inputs.image || inputs.resource }}

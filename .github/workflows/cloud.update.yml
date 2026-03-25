@@ -12,6 +12,9 @@ on:
       - .github/workflows/cloud.*
       - cloud/**
 
+permissions:
+  contents: read
+
 jobs:
   setup:
     uses: ./.github/workflows/cloud.yml

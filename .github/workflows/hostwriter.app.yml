@@ -15,6 +15,9 @@ defaults:
 env:
   ROOT: _/cloud/hostwriter.app
 
+permissions:
+  contents: read
+
 jobs:
   publish:
     runs-on: ubuntu-latest

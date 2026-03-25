@@ -15,6 +15,9 @@ on:
       - .github/workflows/*.shared.yml
       - events/**
 
+permissions:
+  contents: read
+
 jobs:
   salesforce_publishers:
     name: Deploy Salesforce Producer
