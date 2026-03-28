@@ -21,6 +21,11 @@
       "value" : "/System/Applications/Mail.app"
     },
     {
+      "key" : "i",
+      "type" : "application",
+      "value" : "/System/Applications/Music.app"
+    },
+    {
       "key" : "j",
       "type" : "application",
       "value" : "/System/Applications/Journal.app"
