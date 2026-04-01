@@ -32,7 +32,7 @@
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS "amazon.com" OR URL CONTAINS "carsandbids.com" OR sourceApp == "/System/Applications/Weather.app"</string>
+		<string>URL CONTAINS "amazon.com" OR URL CONTAINS "carsandbids.com" OR URL CONTAINS "mychart" OR sourceApp == "/System/Applications/Weather.app"</string>
 		<key>title</key>
 		<string>Safari</string>
 	</dict>
