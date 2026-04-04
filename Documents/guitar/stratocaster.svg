@@ -6,13 +6,13 @@
 >
 
   <style>
+
     #stratocaster {
       stroke: black;
       stroke-width: 1.44px;
     }
+
   </style>
-
-
 
   <g id="stratocaster">
     <g
