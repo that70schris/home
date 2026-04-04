@@ -32,10 +32,10 @@
   "breadcrumbs.enabled": false,
   "breadcrumbs.filePath": "off",
   "breadcrumbs.symbolPath": "on",
-  "code-runner.clearPreviousOutput": true,
-  "code-runner.preserveFocus": true,
   "code-runner.showExecutionMessage": false,
+  "code-runner.clearPreviousOutput": true,
   "currentPath.hideFileIcon": true,
+  "code-runner.preserveFocus": true,
   "custom-ui-style.electron": {
     "titleBarStyle": "hidden"
   },
