@@ -29,13 +29,13 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "breadcrumbs.enabled": false,
   "breadcrumbs.filePath": "off",
   "breadcrumbs.symbolPath": "on",
   "code-runner.showExecutionMessage": false,
   "code-runner.clearPreviousOutput": true,
   "currentPath.hideFileIcon": true,
   "code-runner.preserveFocus": true,
+  "breadcrumbs.enabled": false,
   "custom-ui-style.electron": {
     "titleBarStyle": "hidden"
   },
