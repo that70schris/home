@@ -145,7 +145,7 @@
   "gitlens.launchpad.indicator.enabled": false,
   "gitlens.statusBar.alignment": "right",
   "gitlens.statusBar.enabled": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  "js.updateImportsOnFileMove.enabled": "always",
   "lldb.launch.expressions": "native",
   "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
   "lldb.suppressUpdateNotifications": true,
@@ -162,6 +162,7 @@
   "search.useParentIgnoreFiles": false,
   "security.workspace.trust.untrustedFiles": "open",
   "svg.preview.autoShow": false,
+  "svg.preview.mode": "svg",
   "task.quickOpen.skip": true,
   "terminal.external.osxExec": "Warp.app",
   "terminal.integrated.cursorBlinking": true,
@@ -171,7 +172,7 @@
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.lineHeight": 1.1,
-  "typescript.updateImportsOnFileMove.enabled": "always",
+  "ts.updateImportsOnFileMove.enabled": "always",
   "vim.cursorStylePerMode.visual": "underline",
   "vim.startInInsertMode": false,
   "vim.vimrc.enable": true,
@@ -199,18 +200,16 @@
   "workbench.editor.showIcons": false,
   "workbench.editor.showTabs": "multiple",
   "workbench.editor.tabActionCloseVisibility": false,
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.svg": "default"
+  },
   "workbench.iconTheme": "vscode-icons",
   "workbench.preferredDarkColorTheme": "arcade",
   "workbench.preferredLightColorTheme": "arcade-light",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.settings.editor": "json",
-  "workbench.settings.openDefaultSettings": false,
+  "workbench.settings.useSplitJSON": true,
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.tree.indent": 12,
-  "workbench.tree.renderIndentGuides": "always",
-  "workbench.editorAssociations": {
-    "*.copilotmd": "vscode.markdown.preview.editor",
-    "*.svg": "default"
-  },
-  "svg.preview.mode": "svg"
+  "workbench.tree.indent": 15
 }
