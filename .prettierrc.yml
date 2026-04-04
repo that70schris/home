@@ -2,7 +2,9 @@ alignComments: false
 arrayAutoCollapse: false
 indentEntries: true
 trailingComma: all
+singleAttributePerLine: true
 singleQuote: true
 semi: false
 plugins:
   - prettier-plugin-toml
+  - '@prettier/plugin-xml'

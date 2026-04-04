@@ -5,12 +5,6 @@
   "[css]": {
     "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
-  "[dockercompose]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
@@ -28,9 +22,6 @@
   },
   "[scss]": {
     "editor.defaultFormatter": "stylelint.vscode-stylelint"
-  },
-  "[svg]": {
-    "editor.defaultFormatter": "jock.svg"
   },
   "[typescript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
