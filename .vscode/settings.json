@@ -11,6 +11,5 @@
   "Lua.diagnostics.globals": [
     "spoon",
     "hs",
-  ],
-  "svg.preview.background": "dark-transparent"
+  ]
 }
