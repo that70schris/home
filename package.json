@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@eslint/js": "latest",
+    "@prettier/plugin-xml": "3.4.2",
     "@stylistic/eslint-plugin": "latest",
     "@types/lodash": "latest",
     "@types/node": "latest",
@@ -17,8 +18,5 @@
   },
   "scripts": {
     "prepare": "husky"
-  },
-  "dependencies": {
-    "@prettier/plugin-xml": "3.4.2"
   }
 }
