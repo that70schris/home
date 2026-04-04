@@ -11,9 +11,8 @@
 
     #astrocaster {
       fill: blue;
-      stroke: black;
+      stroke: magenta;
       stroke-width: 1.44px;
-      z-index: 99;
     }
 
   </style>
