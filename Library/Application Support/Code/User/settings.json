@@ -145,7 +145,6 @@
   "gitlens.launchpad.indicator.enabled": false,
   "gitlens.statusBar.alignment": "right",
   "gitlens.statusBar.enabled": false,
-  "js/ts.updateImportsOnFileMove.enabled": "always",
   "lldb.launch.expressions": "native",
   "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
   "lldb.suppressUpdateNotifications": true,
