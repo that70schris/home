@@ -11,12 +11,6 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
   "[lua]": {
     "editor.defaultFormatter": "sumneko.lua"
   },
@@ -44,12 +38,8 @@
   ],
   "custom-ui-style.reloadWithoutPrompting": true,
   "dash.fileNameToDocsetMap": {
-    "[dD]ocker*": [
-      "docker"
-    ],
-    "*.s[ac]ss": [
-      "css"
-    ]
+    "[dD]ocker*": ["docker"],
+    "*.s[ac]ss": ["css"]
   },
   "debug.console.wordWrap": false,
   "debug.showBreakpointsInOverviewRuler": true,
@@ -93,16 +83,12 @@
   "editor.occurrencesHighlight": "off",
   "editor.overviewRulerBorder": false,
   "editor.padding.bottom": 40,
-  "editor.pasteAs.preferences": [
-    "text.updateImports"
-  ],
+  "editor.pasteAs.preferences": ["text.updateImports"],
   "editor.renderFinalNewline": "dimmed",
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "none",
   "editor.roundedSelection": false,
-  "editor.rulers": [
-    66
-  ],
+  "editor.rulers": [66],
   "editor.scrollBeyondLastLine": false,
   "editor.tabSize": 2,
   "editor.unicodeHighlight.includeStrings": false,
