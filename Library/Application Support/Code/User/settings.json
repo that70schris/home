@@ -29,13 +29,13 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
+  "breadcrumbs.enabled": false,
   "breadcrumbs.filePath": "off",
   "breadcrumbs.symbolPath": "on",
-  "code-runner.showExecutionMessage": false,
   "code-runner.clearPreviousOutput": true,
-  "currentPath.hideFileIcon": true,
   "code-runner.preserveFocus": true,
-  "breadcrumbs.enabled": false,
+  "code-runner.showExecutionMessage": false,
+  "currentPath.hideFileIcon": true,
   "custom-ui-style.electron": {
     "titleBarStyle": "hidden"
   },
@@ -161,8 +161,8 @@
   "search.useParentIgnoreFiles": false,
   "security.workspace.trust.untrustedFiles": "open",
   "svg.preview.autoFit": false,
-  "svg.preview.viewMode": "oneByOne",
   "svg.preview.background": "dark-transparent",
+  "svg.preview.viewMode": "oneByOne",
   "task.quickOpen.skip": true,
   "terminal.external.osxExec": "Warp.app",
   "terminal.integrated.cursorBlinking": true,

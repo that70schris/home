@@ -1,7 +1,5 @@
-./**/*.html: prettier --write
-./**/*.{json,jsonc}: prettier --write
-./**/*.{yaml,yml}: prettier --write
-./**/*.{scss,css}: stylelint --fix
+./**/*.{s[ac]ss,css}: stylelint --fix
+./**/*.*ml: prettier --write
 ./**/*.[cm][jt]s: eslint --fix
 ./**/*.[jt]sx: eslint --fix
 ./**/*.[jt]s: eslint --fix
