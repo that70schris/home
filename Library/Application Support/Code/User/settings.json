@@ -101,7 +101,7 @@
   "editor.renderWhitespace": "none",
   "editor.roundedSelection": false,
   "editor.rulers": [
-    66,
+    66
   ],
   "editor.scrollBeyondLastLine": false,
   "editor.tabSize": 2,
