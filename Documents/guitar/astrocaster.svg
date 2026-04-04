@@ -18,70 +18,26 @@
 
   <defs>
     <g id="knob">
-      <circle
-        r="36"
-        opacity="0.5"
-        fill="white"
-      />
+      <circle r="36" opacity="0.5" fill="white" />
       <circle r="14" />
     </g>
 
-    <circle
-      id="screw"
-      r="5.2"
-    />
+    <circle id="screw" r="5.2" />
 
-    <rect
-      id="switch"
-      width="10"
-      height="24"
-      rx="5"
-    />
+    <rect id="switch" width="10" height="24" rx="5" />
 
     <g id="pickup">
-      <circle
-        r="5.2"
-        cy="26.16"
-      />
-      <circle
-        r="5.2"
-        cx="220.13"
-        cy="26.16"
-      />
-      <rect
-        x="9.5"
-        width="201"
-        height="52.07"
-        rx="26.05"
-      />
+      <circle r="5.2" cy="26.16" />
+      <circle r="5.2" cx="220.13" cy="26.16" />
+      <rect x="9.5" width="201" height="52.07" rx="26.05" />
     </g>
 
     <g id="bracket">
-      <use
-        xlink:href="#knob"
-        x="0"
-        y="0"
-      />
-      <use
-        xlink:href="#knob"
-        x="124.6"
-        y="0"
-      />
-      <use
-        xlink:href="#switch"
-        x="8.88"
-        y="48"
-      />
-      <use
-        xlink:href="#switch"
-        x="57.88"
-        y="48"
-      />
-      <use
-        xlink:href="#switch"
-        x="106.88"
-        y="48"
-      />
+      <use xlink:href="#knob" x="0" y="0" />
+      <use xlink:href="#knob" x="124.6" y="0" />
+      <use xlink:href="#switch" x="8.88" y="48" />
+      <use xlink:href="#switch" x="57.88" y="48" />
+      <use xlink:href="#switch" x="106.88" y="48" />
     </g>
 
   </defs>
@@ -89,39 +45,13 @@
   <g id="astrocaster">
     <g id="body">
       <g id="tunnels">
-        <g
-          id="ground"
-          transform="translate(290, 587.5)"
-        >
-          <line
-            x1="0"
-            y1="0"
-            x2="30"
-            y2="0"
-          />
-          <line
-            x1="0"
-            y1="18"
-            x2="30"
-            y2="18"
-          />
+        <g id="ground" transform="translate(290, 587.5)">
+          <line x1="0" y1="0" x2="30" y2="0" />
+          <line x1="0" y1="18" x2="30" y2="18" />
         </g>
-        <g
-          id="jack"
-          transform="translate(379, 645) rotate(-15)"
-        >
-          <line
-            x1="0"
-            y1="0"
-            x2="0"
-            y2="150"
-          />
-          <line
-            x1="18"
-            y1="18"
-            x2="18"
-            y2="152"
-          />
+        <g id="jack" transform="translate(379, 645) rotate(-15)">
+          <line x1="0" y1="0" x2="0" y2="150" />
+          <line x1="18" y1="18" x2="18" y2="152" />
         </g>
       </g>
       <path
@@ -135,16 +65,8 @@
         fill-opacity="0.5"
         fill="#FFFFFF"
       />
-      <use
-        xlink:href="#knob"
-        x="573"
-        y="735"
-      />
-      <use
-        xlink:href="#knob"
-        x="370"
-        y="595"
-      />
+      <use xlink:href="#knob" x="573" y="735" />
+      <use xlink:href="#knob" x="370" y="595" />
 
       <use
         xlink:href="#bracket"
@@ -155,20 +77,9 @@
         transform="translate(480, 653) rotate(-90) scale(1, -1)"
       />
 
-      <g
-        id="pickups"
-        transform="translate(104.59)"
-      >
-        <use
-          xlink:href="#pickup"
-          x="0"
-          y="211"
-        />
-        <use
-          xlink:href="#pickup"
-          x="0"
-          y="381.5"
-        />
+      <g id="pickups" transform="translate(104.59)">
+        <use xlink:href="#pickup" x="0" y="211" />
+        <use xlink:href="#pickup" x="0" y="381.5" />
         <use
           xlink:href="#pickup"
           x="99.3"
@@ -177,61 +88,17 @@
         />
       </g>
 
-      <use
-        xlink:href="#screw"
-        x="545.75"
-        y="42.5"
-      />
-      <use
-        xlink:href="#screw"
-        x="526.7"
-        y="212"
-      />
-      <use
-        xlink:href="#screw"
-        x="506.7"
-        y="479.8"
-      />
-      <use
-        xlink:href="#screw"
-        x="571"
-        y="621.5"
-      />
-      <use
-        xlink:href="#screw"
-        x="600.5"
-        y="779"
-      />
-      <use
-        xlink:href="#screw"
-        x="337.8"
-        y="672.6"
-      />
-      <use
-        xlink:href="#screw"
-        x="75.05"
-        y="668.75"
-      />
-      <use
-        xlink:href="#screw"
-        x="26.7"
-        y="523.4"
-      />
-      <use
-        xlink:href="#screw"
-        x="73.6"
-        y="379.1"
-      />
-      <use
-        xlink:href="#screw"
-        x="85.85"
-        y="91.75"
-      />
-      <use
-        xlink:href="#screw"
-        x="313.9"
-        y="181"
-      />
+      <use xlink:href="#screw" x="545.75" y="42.5" />
+      <use xlink:href="#screw" x="526.7" y="212" />
+      <use xlink:href="#screw" x="506.7" y="479.8" />
+      <use xlink:href="#screw" x="571" y="621.5" />
+      <use xlink:href="#screw" x="600.5" y="779" />
+      <use xlink:href="#screw" x="337.8" y="672.6" />
+      <use xlink:href="#screw" x="75.05" y="668.75" />
+      <use xlink:href="#screw" x="26.7" y="523.4" />
+      <use xlink:href="#screw" x="73.6" y="379.1" />
+      <use xlink:href="#screw" x="85.85" y="91.75" />
+      <use xlink:href="#screw" x="313.9" y="181" />
 
     </g>
   </g>
