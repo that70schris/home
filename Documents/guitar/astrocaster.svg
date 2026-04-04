@@ -74,7 +74,11 @@
       />
       <use
         xlink:href="#bracket"
-        transform="translate(480, 653) rotate(-90) scale(1, -1)"
+        transform="
+          translate(480, 653)
+          rotate(-90)
+          scale(1, -1)
+        "
       />
 
       <g id="pickups" transform="translate(104.59)">
