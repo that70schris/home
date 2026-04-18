@@ -13,7 +13,7 @@ git:
 fetch:
 	git fetch
 	git checkout main
-	git submodules update --init --recursive
+	git submodule update --init --recursive
 
 berry.local:
 	@sudo true
