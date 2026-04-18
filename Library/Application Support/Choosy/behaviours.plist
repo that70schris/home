@@ -8,7 +8,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Applications/Arc.app</string>
+			<string>/Applications/Google Chrome.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -17,7 +17,7 @@
 		<key>predicate</key>
 		<string>sourceApp == "/Applications/Discord.app" OR sourceApp == "/Applications/Lens.app" OR sourceApp == "/Applications/OrbStack.app" OR sourceApp == "/Applications/Slack.app" OR sourceApp == "/Applications/Twingate.app" OR sourceApp == "/Applications/Visual Studio Code.app" OR sourceApp == "/Applications/Warp.app" OR URL CONTAINS "github.com"</string>
 		<key>title</key>
-		<string>Arc</string>
+		<string>Chrome</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>

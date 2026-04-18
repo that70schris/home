@@ -1,35 +1,32 @@
 {
-	"__internal__": {
-		"migrations": {
-			"version": "6.5.1"
-		}
-	},
-	"preferences": {
-		"colorTheme": {
-			"matchSystemTheme": true
-		},
-		"downloadBinariesPath": "",
-		"downloadKubectlBinaries": false,
-		"shell": "",
-		"kubectlBinariesPath": "",
-		"helmDriver": "",
-		"editorConfiguration": {
-			"fontFamily": "Monaco"
-		},
-		"terminalConfig": {
-			"fontSize": 14
-		},
-		"syncKubeconfigEntries": [
-			{
-				"filePath": "/Users/chris/.kube"
-			},
-			{
-				"filePath": "/Users/chris/_/.kube/config"
-			},
-			{
-				"filePath": "/Users/chris/_/local/.kube/config"
-			}
-		],
-		"updateChannel": "latest"
-	}
+  "__internal__": {
+    "migrations": {
+      "version": "6.5.1"
+    }
+  },
+  "preferences": {
+    "colorTheme": {
+      "matchSystemTheme": true
+    },
+    "downloadBinariesPath": "",
+    "downloadKubectlBinaries": false,
+    "shell": "",
+    "kubectlBinariesPath": "",
+    "helmDriver": "",
+    "editorConfiguration": {
+      "fontFamily": "Monaco"
+    },
+    "terminalConfig": {
+      "fontSize": 14
+    },
+    "syncKubeconfigEntries": [
+      {
+        "filePath": "/Users/chris/_/cloud"
+      },
+      {
+        "filePath": "/Users/chris/_/local"
+      }
+    ],
+    "updateChannel": "latest"
+  }
 }
