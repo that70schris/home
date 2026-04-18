@@ -1,43 +1,8 @@
-export HOMEBREW_BUNDLE_FILE=~/Brewfile
-
 _:
 	@sudo true
 	-softwareupdate --install-rosetta
 	curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
-	brew bundle install
+	brew bundle install --global
 	kiro-cli integrations install input-method
-	@make git
-	@make gh
-
-gh:
-	gh auth login \
-	--git-protocol ssh \
-	--hostname github.com \
-	--clipboard \
-	--web \
-
-git:
-	-cd .. && git init
-	-git remote add origin git@github.com:that70schris/-
-
-# full disk access
-fetch:
-	git fetch
-	git checkout main
-	git submodules update --init --recursive
-
-berry.local:
-	@sudo true
-	apt update
-	apt upgrade -y
-	apt install gh
-	apt install zsh
-	chsh -s $(which zsh)
-	curl -sS https://starship.rs/install.sh | sh
-	@make git
-	@make gh
-
-cluster:
-	curl -sfL https://get.k3s.io | sh -s - \
-		--tls-san=berry.local \
-		--disable=traefik \
+	@cd .. && make git
+	@cd .. && make gh

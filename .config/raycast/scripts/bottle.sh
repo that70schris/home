@@ -8,6 +8,5 @@
 # @raycast.mode silent
 # @raycast.icon 🍺
 
-export HOMEBREW_BUNDLE_FILE=~/Brewfile
-brew bundle dump --force
+brew bundle dump --force --global
 echo 'bottled'
