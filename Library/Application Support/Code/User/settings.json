@@ -109,7 +109,6 @@
   "extensions.ignoreRecommendations": true,
   "files.associations": {
     "**/*git/config": "gitconfig",
-    ".Brewfile": "ruby",
     "aliases": "shellscript",
     "Makefile.*": "makefile",
     "pre-commit": "shellscript"
@@ -163,9 +162,19 @@
   "vim.cursorStylePerMode.visual": "underline",
   "vim.startInInsertMode": false,
   "vim.vimrc.enable": true,
+  "vsicons.associations.files": [
+    {
+      "extensions": ["Brewfile", ".Brewfile"],
+      "format": "svg",
+      "icon": "homebrew"
+    }
+  ],
   "vsicons.dontShowConfigManuallyChangedMessage": true,
   "vsicons.dontShowNewVersionMessage": true,
   "vsicons.presets.hideExplorerArrows": true,
+  "vsicons.presets.jsOfficial": false,
+  "vsicons.presets.tsOfficial": true,
+  "vsicons.presets.yamlOfficial": true,
   "window.autoDetectColorScheme": true,
   "window.commandCenter": true,
   "window.customTitleBarVisibility": "never",
