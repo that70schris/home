@@ -164,7 +164,8 @@
   "vim.vimrc.enable": true,
   "vsicons.associations.files": [
     {
-      "extensions": ["Brewfile", ".Brewfile"],
+      "extensions": [".Brewfile", "Brewfile"],
+      "filename": "true",
       "format": "svg",
       "icon": "homebrew"
     }
