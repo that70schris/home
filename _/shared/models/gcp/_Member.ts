@@ -39,17 +39,31 @@ export class _Member extends IAMMember {
 }
 
 export class _GroupMember extends _Member {
-  constructor(name: string, args: _MemberArgs, opts?, defaults = {
-    scope: 'group',
-  }) {
-    super(name, merge(defaults, args), opts)
+  constructor(
+    name: string,
+    args: _MemberArgs,
+    opts?: CustomResourceOptions,
+    defaults = {
+      scope: 'group',
+    },
+  ) {
+    super(name,
+      merge(defaults, args),
+      opts)
   }
 }
 
 export class _ServiceMember extends _Member {
-  constructor(name: string, args: _MemberArgs, opts?, defaults = {
-    scope: 'serviceAccount',
-  }) {
-    super(name, merge(defaults, args), opts)
+  constructor(
+    name: string,
+    args: _MemberArgs,
+    opts?: CustomResourceOptions,
+    defaults = {
+      scope: 'serviceAccount',
+    },
+  ) {
+    super(name,
+      merge(defaults, args),
+      opts)
   }
 }

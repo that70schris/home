@@ -38,7 +38,7 @@ export class _Account {
     args.roles?.forEach((role) => {
       role.apply?.((role) => {
         new _Member(name, {
-          email: args.email,
+          email: args.email ?? '',
           role: role,
         }, opts)
       })
@@ -49,14 +49,14 @@ export class _Account {
 export class _GroupAccount {
 
   constructor(
-    name,
+    name: string,
     public args: _UserAccountArgs = {},
     opts?: CustomResourceOptions,
   ) {
     args.roles?.forEach((role) => {
       role.apply?.((role) => {
         new _GroupMember(name, {
-          email: args.email,
+          email: args.email ?? '',
           role: role,
         }, opts)
       })

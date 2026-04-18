@@ -1,6 +1,7 @@
 import { Ruleset } from '@pulumi/cloudflare'
 import { HostingCustomDomain, HostingSite, Project } from '@pulumi/gcp/firebase'
 import { Key } from '@pulumi/gcp/serviceaccount'
+import { interpolate } from '@pulumi/pulumi'
 import { _Config } from '../shared'
 import { _Record } from '../shared/models/cloudflare'
 import { _ServiceAccount } from '../shared/models/gcp'
@@ -36,7 +37,7 @@ export class Firebase {
   static domain = new HostingCustomDomain(
     'hostwriter.app', {
       customDomain: 'hostwriter.app',
-      siteId: this.site.siteId,
+      siteId: interpolate`${this.site.siteId}`,
       waitDnsVerification: true,
     }, {
       deleteBeforeReplace: true,

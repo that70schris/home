@@ -1,21 +1,21 @@
 {
   "dependencies": {
-    "@cloudflare/workers-types": "4.20260404.1",
-    "@pulumi/cloudflare": "6.14.0",
-    "@pulumi/command": "1.2.1",
-    "@pulumi/gcp": "9.18.0",
-    "@pulumi/kubernetes": "4.28.0",
-    "@pulumi/kubernetes-ingress-nginx": "0.1.3",
-    "@pulumi/pulumi": "3.229.0",
-    "@pulumi/tailscale": "0.27.0",
-    "@pulumiverse/unifi": "0.2.0",
-    "@twingate/pulumi-twingate": "4.0.2",
-    "esbuild": "0.28.0",
-    "fs": "0.0.1-security",
-    "globals": "17.4.0",
-    "json2toml": "6.1.2",
-    "lodash": "4.18.1",
-    "typescript": "6.0.2",
-    "yaml": "2.8.3"
+    "@cloudflare/workers-types": "latest",
+    "@pulumi/cloudflare": "latest",
+    "@pulumi/command": "latest",
+    "@pulumi/gcp": "latest",
+    "@pulumi/kubernetes": "latest",
+    "@pulumi/kubernetes-ingress-nginx": "latest",
+    "@pulumi/pulumi": "latest",
+    "@pulumi/tailscale": "latest",
+    "@pulumiverse/unifi": "latest",
+    "@twingate/pulumi-twingate": "latest",
+    "esbuild": "latest",
+    "fs": "latest",
+    "globals": "latest",
+    "json2toml": "latest",
+    "lodash": "latest",
+    "typescript": "latest",
+    "yaml": "latest"
   }
 }
