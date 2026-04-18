@@ -1,49 +1,56 @@
 {
   "actions": [
     {
-      "key": "b",
-      "type": "application",
-      "value": "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
-    },
-    {
-      "key": "c",
-      "type": "application",
-      "value": "/System/Applications/Calendar.app"
-    },
-    {
-      "key": "e",
-      "type": "application",
-      "value": "/System/Applications/Mail.app"
-    },
-    {
-      "key": "i",
-      "type": "application",
-      "value": "/System/Applications/Music.app"
-    },
-    {
-      "key": "j",
-      "type": "application",
-      "value": "/System/Applications/Journal.app"
-    },
-    {
-      "key": "m",
-      "type": "application",
-      "value": "/System/Applications/Messages.app"
-    },
-    {
-      "key": "r",
-      "type": "application",
-      "value": "/System/Applications/Reminders.app"
-    },
-    {
-      "key": "s",
-      "type": "application",
-      "value": "/Applications/Slack.app"
-    },
-    {
-      "key": "v",
-      "type": "application",
-      "value": "/Applications/Visual Studio Code.app"
+      "actions": [
+        {
+          "key": "b",
+          "type": "application",
+          "value": "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+        },
+        {
+          "key": "c",
+          "type": "application",
+          "value": "/System/Applications/Calendar.app"
+        },
+        {
+          "key": "e",
+          "type": "application",
+          "value": "/System/Applications/Mail.app"
+        },
+        {
+          "key": "i",
+          "type": "application",
+          "value": "/System/Applications/Music.app"
+        },
+        {
+          "key": "j",
+          "type": "application",
+          "value": "/System/Applications/Journal.app"
+        },
+        {
+          "key": "m",
+          "type": "application",
+          "value": "/System/Applications/Messages.app"
+        },
+        {
+          "key": "r",
+          "type": "application",
+          "value": "/System/Applications/Reminders.app"
+        },
+        {
+          "key": "s",
+          "type": "application",
+          "value": "/Applications/Slack.app"
+        },
+        {
+          "key": "v",
+          "type": "application",
+          "value": "/Applications/Visual Studio Code.app"
+        }
+      ],
+      "key": "o",
+      "label": "Open...",
+      "type": "group"
     }
   ],
   "type": "group"
