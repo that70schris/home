@@ -1,16 +1,13 @@
 {
   "dependencies": {
-    "@builder.io/qwik": "latest",
-    "@builder.io/qwik-city": "latest",
-    "@types/node": "latest",
-    "firebase": "latest",
-    "firebase-tools": "latest",
-    "sass": "latest",
-    "typescript": "latest",
-    "vite": "latest",
-    "vite-tsconfig-paths": "latest"
-  },
-  "overrides": {
-    "undici": "8.0.2"
+    "@builder.io/qwik": "1.19.2",
+    "@builder.io/qwik-city": "1.19.2",
+    "@types/node": "25.5.0",
+    "firebase": "12.11.0",
+    "firebase-tools": "15.11.0",
+    "sass": "1.98.0",
+    "typescript": "6.0.2",
+    "vite": "8.0.2",
+    "vite-tsconfig-paths": "6.1.1"
   }
 }
