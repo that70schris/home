@@ -165,7 +165,7 @@
   "vsicons.associations.files": [
     {
       "extensions": [".Brewfile", "Brewfile"],
-      "filename": "true",
+      "filename": true,
       "format": "svg",
       "icon": "homebrew"
     }
