@@ -17,7 +17,7 @@ gh:
 	--web \
 
 git:
-	-git init
+	-cd .. && git init
 	-git remote add origin git@github.com:that70schris/-
 
 # full disk access
