@@ -6,7 +6,7 @@ escape = hs.hotkey.bind({ '⌘' }, 'escape', function()
   if not application then return end
   if not window then return end
   if window:isStandard() then
-    hs.eventtap.keyStroke({ '⌘' }, 'h')
+    application:hide()
     return
   end
 
