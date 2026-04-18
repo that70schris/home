@@ -110,6 +110,7 @@
   "files.associations": {
     "**/*git/config": "gitconfig",
     ".Brewfile": "ruby",
+    "aliases": "shellscript",
     "Makefile.*": "makefile",
     "pre-commit": "shellscript"
   },
