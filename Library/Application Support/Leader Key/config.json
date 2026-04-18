@@ -28,6 +28,11 @@
           "value": "/System/Applications/Journal.app"
         },
         {
+          "key": "l",
+          "type": "application",
+          "value": "/Applications/Lens.app"
+        },
+        {
           "key": "m",
           "type": "application",
           "value": "/System/Applications/Messages.app"
@@ -43,13 +48,18 @@
           "value": "/Applications/Slack.app"
         },
         {
+          "key": "d",
+          "type": "application",
+          "value": "/Applications/Discord.app"
+        },
+        {
           "key": "v",
           "type": "application",
           "value": "/Applications/Visual Studio Code.app"
         }
       ],
-      "key": "o",
-      "label": "Open...",
+      "key": "l",
+      "label": "Launch...",
       "type": "group"
     }
   ],
