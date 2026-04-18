@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "@eslint/js": "latest",
-    "@prettier/plugin-xml": "3.4.2",
+    "@prettier/plugin-xml": "latest",
     "@stylistic/eslint-plugin": "latest",
     "@types/lodash": "latest",
     "@types/node": "latest",
