@@ -36,14 +36,14 @@
       "value": "/System/Applications/Reminders.app"
     },
     {
-      "key": "v",
-      "type": "application",
-      "value": "/Applications/Visual Studio Code.app"
-    },
-    {
       "key": "s",
       "type": "application",
       "value": "/Applications/Slack.app"
+    },
+    {
+      "key": "v",
+      "type": "application",
+      "value": "/Applications/Visual Studio Code.app"
     }
   ],
   "type": "group"
