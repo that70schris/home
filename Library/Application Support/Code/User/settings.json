@@ -163,14 +163,6 @@
   "vim.cursorStylePerMode.visual": "underline",
   "vim.startInInsertMode": false,
   "vim.vimrc.enable": true,
-  "vsicons.associations.files": [
-    {
-      "extensions": [".Brewfile", "Brewfile"],
-      "filename": true,
-      "format": "svg",
-      "icon": "homebrew"
-    }
-  ],
   "vsicons.dontShowConfigManuallyChangedMessage": true,
   "vsicons.dontShowNewVersionMessage": true,
   "vsicons.presets.hideExplorerArrows": true,
