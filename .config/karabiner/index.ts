@@ -34,7 +34,7 @@ writeFileSync(
                 },
               },
               to: [{
-                key_code: 'caps_lock',
+                key_code: 'right_command',
                 modifiers: [
                   'command',
                   'control',
