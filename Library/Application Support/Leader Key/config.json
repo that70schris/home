@@ -53,6 +53,11 @@
           "value": "/Applications/Discord.app"
         },
         {
+          "key": "4",
+          "type": "application",
+          "value": "/Applications/Copilot.app"
+        },
+        {
           "key": "v",
           "type": "application",
           "value": "/Applications/Visual Studio Code.app"
