@@ -1,4 +1,4 @@
-escape = hs.hotkey.bind({ '⌘' }, 'escape', function(asdf)
+escape = hs.hotkey.bind({ '⌘' }, 'escape', function()
   local window = hs.window.frontmostWindow()
   local application = window:application()
   local id = application:bundleID()
