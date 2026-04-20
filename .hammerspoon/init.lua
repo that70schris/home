@@ -41,6 +41,7 @@ hs.eventtap.new({
   end
 ):start()
 
+-- with Raycast Hyper key:
 -- flagsChanged	cmd	true	true
 -- flagsChanged	cmd	nil	nil
 -- keyDown	escape	nil	nil
@@ -52,3 +53,11 @@ hs.eventtap.new({
 -- keyDown	escape	nil	nil
 -- keyUp	escape	nil	nil
 -- flagsChanged	cmd	nil	nil
+
+-- without Raycast Hyper key:
+-- flagsChanged	capslock	nil	nil	nil	{}
+
+-- flagsChanged	rightcmd	nil	nil	nil	{}
+-- flagsChanged	cmd	true	nil	nil	{}
+-- flagsChanged	capslock	true	nil	nil	{}
+-- flagsChanged	cmd	nil	nil	nil	{}
