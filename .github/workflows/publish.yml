@@ -46,4 +46,4 @@ jobs:
         run: |
           git config user.email "chris@bailey.mx"
           git config user.name "Chris Bailey"
-          git commit -am "updates" && git push
+          git commit -am "updates" --allow-empty && git push
