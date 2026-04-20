@@ -1,9 +1,9 @@
-hs.console.clearConsole()
 hs.allowAppleScript(true)
 hs.loadSpoon('clear')
 hs.loadSpoon('enter')
 hs.loadSpoon('escape')
 hs.loadSpoon('finder')
+hs.console.clearConsole()
 
 hs.eventtap.new({
     hs.eventtap.event.types.flagsChanged,
