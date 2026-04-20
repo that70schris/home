@@ -1,4 +1,4 @@
-escape = hs.hotkey.bind({ '⌘' }, 'escape', function()
+hide = hs.hotkey.bind({ '⌘' }, 'escape', function()
   local window = hs.window.frontmostWindow()
   local application = window:application()
   local id = application:bundleID()
@@ -16,10 +16,10 @@ escape = hs.hotkey.bind({ '⌘' }, 'escape', function()
     end,
 
     ['com.raycast.macos'] = function()
-      escape:disable()
+      hide:disable()
       hs.eventtap.keyStroke({ '⌘' }, 'escape', nil,
         application)
-      escape:enable()
+      hide:enable()
     end,
 
   })[id] or function()
@@ -27,4 +27,4 @@ escape = hs.hotkey.bind({ '⌘' }, 'escape', function()
   end)()
 end)
 
-return escape
+return hide
