@@ -25,21 +25,19 @@ clear = hs.hotkey.bind({ 'cmd' }, 'k', function()
 end)
 
 hs.eventtap.new({
-    hs.eventtap.event.types.flagsChanged,
-    hs.eventtap.event.types.keyDown,
-    hs.eventtap.event.types.keyUp,
-  },
-  function(e)
-    print(
-      hs.eventtap.event.types[e:getType()],
-      hs.keycodes.map[e:getKeyCode()],
-      e:getFlags().cmd,
-      e:getFlags().alt,
-      e:getFlags().shift,
-      hs.inspect(e:systemKey()),
-      '')
-  end
-):start()
+  hs.eventtap.event.types.flagsChanged,
+  hs.eventtap.event.types.keyDown,
+  hs.eventtap.event.types.keyUp,
+}, function(e)
+  print(
+    hs.eventtap.event.types[e:getType()],
+    hs.keycodes.map[e:getKeyCode()],
+    e:getFlags().cmd,
+    e:getFlags().alt,
+    e:getFlags().shift,
+    hs.inspect(e:systemKey()),
+    '')
+end):start()
 
 -- with Raycast Hyper key:
 -- flagsChanged	cmd	true	true
