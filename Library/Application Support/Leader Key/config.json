@@ -3,6 +3,11 @@
     {
       "actions": [
         {
+          "key": "4",
+          "type": "application",
+          "value": "/Applications/Copilot.app"
+        },
+        {
           "key": "b",
           "type": "application",
           "value": "/Applications/Google Chrome.app"
@@ -13,9 +18,19 @@
           "value": "/System/Applications/Calendar.app"
         },
         {
+          "key": "d",
+          "type": "application",
+          "value": "/Applications/Discord.app"
+        },
+        {
           "key": "e",
           "type": "application",
           "value": "/System/Applications/Mail.app"
+        },
+        {
+          "key": "h",
+          "type": "application",
+          "value": "/Applications/Line6/Helix Stadium.app"
         },
         {
           "key": "i",
@@ -46,16 +61,6 @@
           "key": "s",
           "type": "application",
           "value": "/Applications/Slack.app"
-        },
-        {
-          "key": "d",
-          "type": "application",
-          "value": "/Applications/Discord.app"
-        },
-        {
-          "key": "4",
-          "type": "application",
-          "value": "/Applications/Copilot.app"
         },
         {
           "key": "v",
