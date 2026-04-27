@@ -7,6 +7,7 @@ brew "fish"
 brew "gh"
 brew "git"
 brew "gitoxide"
+brew "glaze"
 brew "go"
 brew "helm"
 brew "htop"
@@ -72,6 +73,7 @@ mas "iCircuit", id: 454347770
 mas "Logic Pro", id: 634148309
 mas "Mapper", id: 1589391989
 mas "Numbers", id: 361304891
+mas "Raycast Companion", id: 6738274497
 mas "Xcode", id: 497799835
 vscode "bbenoist.nix"
 vscode "bennycode.sort-everything"

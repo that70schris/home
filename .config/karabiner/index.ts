@@ -48,9 +48,7 @@ writeFileSync(
             }],
           },
           ...{
-            // o: {
-            //   e: 'Mail'.app,
-            // },
+            // p: 'Raycast'.toggle,
           }.sublayers,
         ] as KarabinerRule[],
       },
