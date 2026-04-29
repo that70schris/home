@@ -53,6 +53,11 @@
           "value": "/System/Applications/Messages.app"
         },
         {
+          "key": "p",
+          "type": "application",
+          "value": "/System/Applications/Phone.app"
+        },
+        {
           "key": "r",
           "type": "application",
           "value": "/System/Applications/Reminders.app"

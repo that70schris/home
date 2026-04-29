@@ -13,15 +13,16 @@ clear = hs.hotkey.bind({ 'cmd' }, 'k', function()
   if not window then return end
 
   (({
-    ['org.hammerspoon.Hammerspoon'] = function()
-      hs.console.clearConsole()
-    end,
+      ['org.hammerspoon.Hammerspoon'] = function()
+        hs.console.clearConsole()
+      end,
 
-  })[id] or function()
-    clear:disable()
-    hs.eventtap.keyStroke({ 'cmd' }, 'k')
-    clear:enable()
-  end)()
+    })[id] or
+    function()
+      clear:disable()
+      hs.eventtap.keyStroke({ 'cmd' }, 'k')
+      clear:enable()
+    end)()
 end)
 
 hs.eventtap.new({

@@ -7,16 +7,17 @@ enter = hs.hotkey.bind({ 'shift' }, 'return', function()
   if not window then return end
 
   (({
-    ['com.raycast.macos'] = function()
-      hs.eventtap.keyStroke({}, 'return', nil,
-        application)
-    end,
+      ['com.raycast.macos'] = function()
+        hs.eventtap.keyStroke({}, 'return', nil,
+          application)
+      end,
 
-  })[id] or function()
-    enter:disable()
-    hs.eventtap.keyStroke({ 'shift' }, 'return')
-    enter:enable()
-  end)()
+    })[id] or
+    function()
+      enter:disable()
+      hs.eventtap.keyStroke({ 'shift' }, 'return')
+      enter:enable()
+    end)()
 end)
 
 return enter

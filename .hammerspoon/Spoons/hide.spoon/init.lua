@@ -11,20 +11,21 @@ hide = hs.hotkey.bind({ '⌘' }, 'escape', function()
   end
 
   (({
-    ['com.apple.Spotlight'] = function()
-      hs.eventtap.keyStroke({}, 'escape')
-    end,
+      ['com.apple.Spotlight'] = function()
+        hs.eventtap.keyStroke({}, 'escape')
+      end,
 
-    ['com.raycast.macos'] = function()
-      hide:disable()
-      hs.eventtap.keyStroke({ '⌘' }, 'escape', nil,
-        application)
-      hide:enable()
-    end,
+      ['com.raycast.macos'] = function()
+        hide:disable()
+        hs.eventtap.keyStroke({ '⌘' }, 'escape', nil,
+          application)
+        hide:enable()
+      end,
 
-  })[id] or function()
-    application:hide()
-  end)()
+    })[id] or
+    function()
+      application:hide()
+    end)()
 end)
 
 return hide
