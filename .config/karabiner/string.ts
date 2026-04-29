@@ -10,6 +10,12 @@ declare global {
 
 Object.defineProperties(
   String.prototype, {
+    app: {
+      get: function() {
+        return `-a '${this}'`.open
+      },
+    },
+
     open: {
       get: function() {
         return {
@@ -20,12 +26,6 @@ Object.defineProperties(
             },
           ],
         }
-      },
-    },
-
-    app: {
-      get: function() {
-        return `-a '${this}'`.open
       },
     },
 
