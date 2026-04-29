@@ -50,7 +50,7 @@
   short = true
 
 [submodule]
-  recursive = true
+  recurse = true
 
 [includeIf "gitdir:~/"]
   path = ./config.chris
