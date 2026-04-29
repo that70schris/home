@@ -20,7 +20,7 @@ Object.defineProperties(
   {
     sublayers: {
       get: function() {
-        const variables = Object.keys(this).map(key => key.variable)
+        const flags = Object.keys(this).map(key => key.flag)
 
         return Object.entries(
           this as {
@@ -33,9 +33,9 @@ Object.defineProperties(
                 manipulators: [{
                   ...layer,
                   type: 'basic',
-                  conditions: variables.map(variable => ({
+                  conditions: flags.map(flag => ({
                     type: 'variable_if',
-                    name: variable,
+                    name: flag,
                     value: 0,
                   })),
                   from: {
@@ -51,11 +51,11 @@ Object.defineProperties(
                 manipulators: [{
                   description: `Toggle Hyper sublayer ${key}`,
                   type: 'basic',
-                  conditions: variables
-                    .filter(variable => variable !== key.variable)
-                    .map(variable => ({
+                  conditions: flags
+                    .filter(flag => flag !== key.flag)
+                    .map(flag => ({
                       type: 'variable_if',
-                      name: variable,
+                      name: flag,
                       value: 0,
                     })),
                   from: {
@@ -67,7 +67,7 @@ Object.defineProperties(
                   to: [
                     {
                       set_variable: {
-                        name: key.variable,
+                        name: key.flag,
                         value: 1,
                       },
                     },
@@ -75,7 +75,7 @@ Object.defineProperties(
                   to_after_key_up: [
                     {
                       set_variable: {
-                        name: key.variable,
+                        name: key.flag,
                         value: 0,
                       },
                     },
@@ -86,11 +86,11 @@ Object.defineProperties(
                   (command_key): Manipulator => ({
                     ...(layer[command_key] as Record<string, unknown>),
                     type: 'basic',
-                    // Only trigger this command if the variable is 1 (i.e., if Hyper + sublayer is held)
+                    // Only trigger this command if the flag is 1 (i.e., if Hyper + sublayer is held)
                     conditions: [
                       {
                         type: 'variable_if',
-                        name: key.variable,
+                        name: key.flag,
                         value: 1,
                       },
                     ],

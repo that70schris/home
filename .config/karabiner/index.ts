@@ -48,7 +48,7 @@ writeFileSync(
             }],
           },
           ...{
-            // p: 'raycast://'.open,
+            // p: 'Raycast'.app,
             // l: {
             //   h: 'Helix Statdium'.app,
             // },

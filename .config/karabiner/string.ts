@@ -4,7 +4,7 @@ declare global {
   interface String {
     get app(): LayerCommand
     get open(): LayerCommand
-    get variable(): string
+    get flag(): string
   }
 }
 
@@ -23,13 +23,14 @@ Object.defineProperties(
           to: [
             {
               shell_command: `open ${this}`,
+
             },
           ],
         }
       },
     },
 
-    variable: {
+    flag: {
       get: function() {
         return `hyper_sublayer_${this}`
       },
