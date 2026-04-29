@@ -25,6 +25,9 @@
 [difftool "vscode"]
   cmd = code -n --wait --diff $LOCAL $REMOTE
 
+[fetch]
+  prune = true
+
 [merge]
   tool = Kaleidoscope
   guitool = Kaleidoscope
@@ -42,6 +45,9 @@
 
 [pull]
   rebase = true
+
+[status]
+  short = true
 
 [submodule]
   recursive = true
