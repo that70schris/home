@@ -49,6 +49,9 @@ writeFileSync(
           },
           ...{
             // p: 'raycast://'.open,
+            // l: {
+            //   h: 'Helix Statdium'.app,
+            // },
           }.sublayers,
         ] as KarabinerRule[],
       },
