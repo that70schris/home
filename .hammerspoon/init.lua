@@ -33,10 +33,10 @@ hs.eventtap.new({
   print(
     hs.eventtap.event.types[e:getType()],
     hs.keycodes.map[e:getKeyCode()],
-    e:getFlags().cmd,
-    e:getFlags().alt,
-    e:getFlags().shift,
     hs.inspect(e:systemKey()),
+    e:getFlags().shift,
+    e:getFlags().alt,
+    e:getFlags().cmd,
     '')
 end):start()
 
