@@ -73,11 +73,17 @@
           "value": "/Applications/Slack.app"
         },
         {
+          "key": "n",
+          "type": "application",
+          "value": "/System/Applications/Notes.app"
+        },
+        {
           "key": "v",
           "type": "application",
           "value": "/Applications/Visual Studio Code.app"
         }
       ],
+      "iconPath": "/System/Applications/Mission Control.app",
       "key": "l",
       "label": "Launch...",
       "type": "group"
