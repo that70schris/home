@@ -15,7 +15,7 @@
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>sourceApp == "/Applications/Discord.app" OR sourceApp == "/Applications/Lens.app" OR sourceApp == "/Applications/OrbStack.app" OR sourceApp == "/Applications/Slack.app" OR sourceApp == "/Applications/Twingate.app" OR sourceApp == "/Applications/Visual Studio Code.app" OR sourceApp == "/Applications/Warp.app" OR URL CONTAINS "github.com"</string>
+		<string>sourceApp == "/Applications/Discord.app" OR sourceApp == "/Applications/Lens.app" OR sourceApp == "/Applications/OrbStack.app" OR sourceApp == "/Applications/Slack.app" OR sourceApp == "/Applications/Twingate.app" OR sourceApp == "/Applications/Visual Studio Code.app" OR sourceApp == "/Applications/Warp.app" OR modifierKeys != "56"</string>
 		<key>title</key>
 		<string>Chrome</string>
 	</dict>
