@@ -28,6 +28,11 @@
           "value": "/System/Applications/Mail.app"
         },
         {
+          "key": "f",
+          "type": "application",
+          "value": "/System/Library/CoreServices/Finder.app"
+        },
+        {
           "key": "h",
           "type": "application",
           "value": "/Applications/Line6/Helix Stadium.app"
