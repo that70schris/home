@@ -3,9 +3,24 @@
     {
       "actions": [
         {
+          "key": "2",
+          "type": "application",
+          "value": "/System/Applications/Mail.app"
+        },
+        {
+          "key": "3",
+          "type": "application",
+          "value": "/System/Applications/Phone.app"
+        },
+        {
           "key": "4",
           "type": "application",
           "value": "/Applications/Copilot.app"
+        },
+        {
+          "key": "9",
+          "type": "application",
+          "value": "/System/Applications/Contacts.app"
         },
         {
           "key": "b",
@@ -25,12 +40,17 @@
         {
           "key": "e",
           "type": "application",
-          "value": "/System/Applications/Mail.app"
+          "value": "/Applications/Expressions.app"
         },
         {
           "key": "f",
           "type": "application",
           "value": "/System/Library/CoreServices/Finder.app"
+        },
+        {
+          "key": "g",
+          "type": "application",
+          "value": "/Applications/Google Chrome.app"
         },
         {
           "key": "h",
@@ -58,9 +78,9 @@
           "value": "/System/Applications/Messages.app"
         },
         {
-          "key": "p",
+          "key": "n",
           "type": "application",
-          "value": "/System/Applications/Phone.app"
+          "value": "/System/Applications/Notes.app"
         },
         {
           "key": "r",
@@ -73,14 +93,19 @@
           "value": "/Applications/Slack.app"
         },
         {
-          "key": "n",
-          "type": "application",
-          "value": "/System/Applications/Notes.app"
-        },
-        {
           "key": "v",
           "type": "application",
           "value": "/Applications/Visual Studio Code.app"
+        },
+        {
+          "key": "x",
+          "type": "application",
+          "value": "/Applications/Xcode.app"
+        },
+        {
+          "key": "z",
+          "type": "application",
+          "value": "/Applications/zoom.us.app"
         }
       ],
       "iconPath": "/System/Applications/Mission Control.app",
