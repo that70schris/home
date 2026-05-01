@@ -3,6 +3,11 @@
     {
       "actions": [
         {
+          "key": "[",
+          "type": "application",
+          "value": "/Applications/Deliveries.app"
+        },
+        {
           "key": "2",
           "type": "application",
           "value": "/System/Applications/Mail.app"
@@ -21,6 +26,11 @@
           "key": "9",
           "type": "application",
           "value": "/System/Applications/Contacts.app"
+        },
+        {
+          "key": "a",
+          "type": "folder",
+          "value": "/Applications"
         },
         {
           "key": "b",
@@ -101,6 +111,11 @@
           "key": "x",
           "type": "application",
           "value": "/Applications/Xcode.app"
+        },
+        {
+          "key": "y",
+          "type": "application",
+          "value": "/Users/chris/Applications/Chrome Apps.localized/YouTube.app"
         },
         {
           "key": "z",
