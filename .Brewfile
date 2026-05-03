@@ -1,4 +1,3 @@
-brew "ctop"
 brew "dash-shell"
 brew "docker"
 brew "node"
