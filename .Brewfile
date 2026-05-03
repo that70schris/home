@@ -1,4 +1,3 @@
-brew "dash-shell"
 brew "docker"
 brew "node"
 brew "firebase-cli"
