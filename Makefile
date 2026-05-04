@@ -15,6 +15,10 @@ fetch:
 	git checkout main
 	git submodule update --init --recursive
 
+starship:
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+	@cd ../starship && cargo install --path .
+
 berry.local:
 	@sudo true
 	apt update
@@ -24,9 +28,7 @@ berry.local:
 	chsh -s $(which zsh)
 	@make git
 	@make gh
-# 	curl -sS https://starship.rs/install.sh | sh
-	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-	@cd ../starship && cargo install --path .
+	@make starship
 
 cluster:
 	curl -sfL https://get.k3s.io | sh -s - \
