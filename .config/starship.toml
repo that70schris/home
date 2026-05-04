@@ -28,12 +28,6 @@ palette = 'arcade'
 [palettes.arcade]
   black = '#777777'
   blue = '#3399ff'
-  cyan = '#00bbdd'
-  green = '#77ff88'
-  magenta = '#aa88ff'
-  red = '#ff4444'
-  white = '#eeeeee'
-  yellow = '#eeff77'
   bright-black = '#999999'
   bright-blue = '#99eeff'
   bright-cyan = '#33ccee'
@@ -42,20 +36,26 @@ palette = 'arcade'
   bright-red = '#ff0000'
   bright-white = '#ffffff'
   bright-yellow = '#ffff00'
+  cyan = '#00bbdd'
+  green = '#77ff88'
+  magenta = '#aa88ff'
+  red = '#ff4444'
+  white = '#eeeeee'
+  yellow = '#eeff77'
 
 [directory]
   format = '[$path]($style)[$read_only]($read_only_style) '
-  read_only_style = 'bright-yellow'
   read_only = ' 󰌾'
-  style = '#cccccc'
-  truncate_to_repo = false
-  truncation_length = 5
-  repo_root_style = 'blue'
+  read_only_style = 'bright-yellow'
   repo_root_format = """
 [$before_root_path]($before_repo_root_style) \
 [$repo_root]($repo_root_style)[$path]($style)\
 [$read_only]($read_only_style) \
 """
+  repo_root_style = 'blue'
+  style = '#cccccc'
+  truncate_to_repo = false
+  truncation_length = 5
 
 [docker_context]
   format = '  [$context]($style)'
@@ -107,15 +107,11 @@ $progress_total)]\
 \\) """
 
 [git_status]
-  conflicted = '= '
   ahead = '[](purple) '
   behind = '[](purple) '
-  diverged = '[](purple) '
-  untracked = '[▪︎](black) '
+  conflicted = '= '
   deleted = '[✘](red) '
-  renamed = '[⏩︎](white) '
-  staged = '[⭑](yellow) '
-  stashed = '[\$](yellow) '
+  diverged = '[](purple) '
   format = """
 $stashed\
 $ahead_behind\
@@ -125,6 +121,10 @@ $deleted\
 $staged\
 $untracked\
 """
+  renamed = '[⏩︎](white) '
+  staged = '[⭑](yellow) '
+  stashed = '[\$](yellow) '
+  untracked = '[▪︎](black) '
 
 [hostname]
   format = '@[$hostname]($style)'
@@ -143,8 +143,8 @@ $untracked\
 
 [package]
   format = '📦 [$version]($style) '
-  version_format = '$raw'
   style = 'white'
+  version_format = '$raw'
 
 [pulumi]
   format = '  [$stack]($style)'
@@ -157,6 +157,8 @@ $untracked\
   symbol = ' '
 
 [rust]
+  format = ' [$symbol$version]($style)'
+  style = '#dea584'
   symbol = '󱘗 '
 
 [shell]
@@ -173,8 +175,8 @@ $untracked\
 
 [username]
   format = '[$user]($style)'
-  style_user = 'yellow'
   style_root = 'red'
+  style_user = 'yellow'
 
 [os]
   disabled = false

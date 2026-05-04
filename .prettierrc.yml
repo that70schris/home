@@ -1,5 +1,7 @@
 alignComments: false
 arrayAutoCollapse: false
+indentEntries: true
+reorderKeys: true
 trailingComma: all
 singleQuote: true
 semi: false
