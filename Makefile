@@ -16,7 +16,6 @@ fetch:
 	git submodule update --init --recursive
 
 starship:
-
 	@cd ../starship && cargo install --path .
 
 berry.local:
