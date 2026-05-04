@@ -1,11 +1,11 @@
 # Kiro CLI pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
 
+source ~/.config/zsh/ohmy/plugins/dirhistory/dirhistory.plugin.zsh
+source ~/.config/zsh/ohmy/plugins/sudo/sudo.plugin.zsh
 source ~/.config/zsh/plugins/syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.config/zsh/plugins/autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/plugins/tab-title/zsh-tab-title.plugin.zsh
-source ~/.config/zsh/ohmy/plugins/dirhistory/dirhistory.plugin.zsh
-source ~/.config/zsh/ohmy/plugins/sudo/sudo.plugin.zsh
 source ~/.config/zsh/plugins/abbr/zsh-abbr.zsh
 source ~/.config/autoenv/activate.sh
 source ~/.config/aliases
