@@ -11,7 +11,7 @@ export default component$(() => {
           <a href="mailto:chris@bailey.mx">Support</a>
         </nav>
         <div id="ghost">
-          <img src="/gHost.png" class="icon" alt="gHost status bar menu icon" />
+          <img class="icon" src="/gHost.png" alt="gHost status bar menu icon" />
           <img
             src="/menu.png"
             class="menu"
