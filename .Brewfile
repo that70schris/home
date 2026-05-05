@@ -60,12 +60,11 @@ cask "zoom"
 mas "1Blocker", id: 1365531024
 mas "Deliveries", id: 290986013
 mas "Flighty", id: 1358823008
-mas "HomeControl", id: 1547121417
-mas "Homie", id: 1533590432
 mas "iCircuit", id: 454347770
 mas "Logic Pro", id: 634148309
 mas "Mapper", id: 1589391989
 mas "Numbers", id: 361304891
+mas "One Thing", id: 1604176982
 mas "Raycast Companion", id: 6738274497
 mas "Xcode", id: 497799835
 vscode "bbenoist.nix"
