@@ -38,3 +38,8 @@ rust:
 
 starship:
 	@cd starship && cargo install --path .
+
+update:
+	brew upgrade
+	pnpm update
+	git submodule update --init --remote
