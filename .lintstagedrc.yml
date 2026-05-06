@@ -1,6 +1,6 @@
+./**/*.{s[ac]ss,css}: stylelint --fix
 ./**/*.jso*: prettier --write
 ./**/*.*ml: prettier --write
-./**/*.{s[ac]ss,css}: stylelint --fix
 ./**/*.[cm][jt]s: eslint --fix
 ./**/*.[jt]sx: eslint --fix
 ./**/*.[jt]s: eslint --fix
