@@ -1,29 +1,29 @@
 {
-  "__internal__": {
-    "migrations": {
-      "version": "6.5.1"
-    }
-  },
-  "preferences": {
-    "colorTheme": {
-      "matchSystemTheme": true
-    },
-    "downloadBinariesPath": "",
-    "downloadKubectlBinaries": false,
-    "shell": "",
-    "kubectlBinariesPath": "",
-    "helmDriver": "",
-    "editorConfiguration": {
-      "fontFamily": "Monaco"
-    },
-    "terminalConfig": {
-      "fontSize": 14
-    },
-    "syncKubeconfigEntries": [
-      {
-        "filePath": "/Users/chris/_/local/.kube"
-      }
-    ],
-    "updateChannel": "latest"
-  }
+	"__internal__": {
+		"migrations": {
+			"version": "6.5.1"
+		}
+	},
+	"preferences": {
+		"colorTheme": {
+			"matchSystemTheme": true
+		},
+		"downloadBinariesPath": "",
+		"downloadKubectlBinaries": false,
+		"shell": "",
+		"kubectlBinariesPath": "",
+		"helmDriver": "",
+		"editorConfiguration": {
+			"fontFamily": "Monaco"
+		},
+		"terminalConfig": {
+			"fontSize": 14
+		},
+		"syncKubeconfigEntries": [
+			{
+				"filePath": "/Users/chris/_/local/.kube"
+			}
+		],
+		"updateChannel": "latest"
+	}
 }
