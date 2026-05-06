@@ -58,8 +58,9 @@ palette = 'arcade'
   truncation_length = 5
 
 [docker_context]
-  format = '  [$context]($style)'
+  format = ' $symbol[$context]($style)'
   style = '#2460ff'
+  symbol = ' '
 
 [fill]
   style = '#999999 bold'
@@ -135,7 +136,7 @@ $untracked\
   disabled = false
   format = " $symbol[$context(/$namespace)]($style)"
   style = '#09c1d1'
-  symbol = "󰠳 "
+  symbol = '󰠳 '
 
 [lua]
   symbol = ' '
