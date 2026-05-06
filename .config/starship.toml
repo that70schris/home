@@ -162,7 +162,7 @@ $untracked\
   symbol = ' '
 
 [rust]
-  format = ' [$symbol$version]($style)'
+  format = ' $symbol[$version]($style)'
   style = '#dea584'
   symbol = '󱘗 '
 
