@@ -78,8 +78,9 @@ palette = 'arcade'
   # symbol = '' #nf45b
 
 [gcloud]
-  format = '( ☁️ [$project]($style))'
+  format = '( $symbol[$project]($style))'
   style = '#1a73e8'
+  symbol = '☁️ '
 
 [git_branch]
   format = '[\($branch(:$remote_branch)\)]($style) '
@@ -132,8 +133,9 @@ $untracked\
 
 [kubernetes]
   disabled = false
-  format = " 󰠳 [$context(/$namespace)]($style)"
+  format = " $symbol[$context(/$namespace)]($style)"
   style = '#09c1d1'
+  symbol = "󰠳 "
 
 [lua]
   symbol = ' '
@@ -142,13 +144,15 @@ $untracked\
   symbol = ' '
 
 [package]
-  format = '📦 [$version]($style) '
+  format = '$symbol[$version]($style) '
   style = 'white'
+  symbol = '📦 '
   version_format = '$raw'
 
 [pulumi]
-  format = '  [$stack]($style)'
+  format = ' $symbol[$stack]($style)'
   style = '#be5188'
+  symbol = ' '
 
 [python]
   symbol = ' '
