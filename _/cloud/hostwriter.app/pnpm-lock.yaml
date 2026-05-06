@@ -3447,10 +3447,10 @@ packages:
         integrity: sha512-ZgEeZXj30q+I0EN+CbSSpIyPaJ5HVQD18Z1m+u1FXbAeT94mr1zw50q4q6jiiC447Nl/YTcIYSAftiGqetwXCA==,
       }
 
-  express-rate-limit@8.4.1:
+  express-rate-limit@8.5.0:
     resolution:
       {
-        integrity: sha512-NGVYwQSAyEQgzxX1iCM978PP9AdO/hW93gMcF6ZwQCm+rFvLsBH6w4xcXWTcliS8La5EPRN3p9wzItqBwJrfNw==,
+        integrity: sha512-XKhFohWaSBdVJNTi5TaHziqnPkv04I9UQV6q1Wy7Ui6GGQZVW12ojDFwqer14EvCXxjvPG0CyWXx7cAXpALB4Q==,
       }
     engines: { node: '>= 16' }
     peerDependencies:
@@ -7857,7 +7857,7 @@ snapshots:
       eventsource: 3.0.7
       eventsource-parser: 3.0.8
       express: 5.2.1
-      express-rate-limit: 8.4.1(express@5.2.1)
+      express-rate-limit: 8.5.0(express@5.2.1)
       hono: 4.12.16
       jose: 6.2.3
       json-schema-typed: 8.0.2
@@ -8980,7 +8980,7 @@ snapshots:
   exponential-backoff@3.1.3:
     optional: true
 
-  express-rate-limit@8.4.1(express@5.2.1):
+  express-rate-limit@8.5.0(express@5.2.1):
     dependencies:
       express: 5.2.1
       ip-address: 10.1.0
