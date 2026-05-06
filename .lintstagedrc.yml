@@ -1,5 +1,5 @@
-./**/*.jso*: prettier --write --ignore-path *lock*
-./**/*.*ml: prettier --write --ignore-path *lock*
+./**/*.jso*: prettier --write
+./**/*.*ml: prettier --write
 ./**/*.{s[ac]ss,css}: stylelint --fix
 ./**/*.[cm][jt]s: eslint --fix
 ./**/*.[jt]sx: eslint --fix

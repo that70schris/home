@@ -25,6 +25,7 @@
 !.gitleaks.toml
 !.gitmodules
 !.lintstagedrc.yml
+!.prettierignore
 !.prettierrc.yml
 !.profile
 !.npmrc
