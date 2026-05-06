@@ -5,6 +5,7 @@ reorderKeys: true
 trailingComma: all
 singleQuote: true
 semi: false
+ignorePath: false
 plugins:
   - prettier-plugin-toml
   - '@prettier/plugin-xml'
