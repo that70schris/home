@@ -66,6 +66,7 @@
       fill="#FFFFFF"
     />
 
+    <use xlink:href="#knob" x="440" y="550" />
     <use xlink:href="#knob" x="573" y="735" />
     <!-- <use xlink:href="#knob" x="370" y="595" /> -->
 
