@@ -34,10 +34,10 @@
 
     <g id="bracket">
       <use xlink:href="#knob" x="0" y="0" />
-      <use xlink:href="#knob" x="124.6" y="0" />
-      <use xlink:href="#switch" x="8.88" y="48" />
+      <!-- <use xlink:href="#knob" x="124.6" y="0" /> -->
+      <!-- <use xlink:href="#switch" x="8.88" y="48" />
       <use xlink:href="#switch" x="57.88" y="48" />
-      <use xlink:href="#switch" x="106.88" y="48" />
+      <use xlink:href="#switch" x="106.88" y="48" /> -->
     </g>
 
   </defs>
@@ -67,15 +67,15 @@
     />
 
     <use xlink:href="#knob" x="573" y="735" />
-    <use xlink:href="#knob" x="370" y="595" />
+    <!-- <use xlink:href="#knob" x="370" y="595" /> -->
 
-    <use
+    <!-- <use
       xlink:href="#bracket"
       transform="
         translate(480, 653)
         rotate(-152.3)
       "
-    />
+    /> -->
     <use
       xlink:href="#bracket"
       transform="
@@ -87,7 +87,7 @@
 
     <g id="pickups" transform="translate(104.59)">
       <use xlink:href="#pickup" x="0" y="211" />
-      <use xlink:href="#pickup" x="0" y="381.5" />
+      <!-- <use xlink:href="#pickup" x="0" y="381.5" /> -->
       <use
         xlink:href="#pickup"
         x="99.3"
