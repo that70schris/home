@@ -1,7 +1,7 @@
 import { IngressController } from '@pulumi/kubernetes-ingress-nginx'
 import { Secret } from '@pulumi/kubernetes/core/v1'
 import { Chart } from '@pulumi/kubernetes/helm/v4'
-import { Config } from '@pulumi/pulumi'
+import { Config, ResourceOptions } from '@pulumi/pulumi'
 import { _CustomResource, _Ingress, _Kube } from '.'
 import { once } from '../../decorators'
 import { _TwingateResource } from '../twingate'
@@ -12,11 +12,12 @@ interface ClusterArgs {
   kubes: _Kube[]
 }
 
-export class _Cluster extends _CustomResource {
+export class _Cluster {
 
   constructor(
     public host: string,
     public args: ClusterArgs,
+    public opts?: ResourceOptions,
   ) {
     // new _TwingateResource(this.host, {
     //   address: this.host,
@@ -26,10 +27,6 @@ export class _Cluster extends _CustomResource {
       return kube.index
     })
 
-    super(
-      host,
-      args,
-    )
   }
 
   twingate = new Chart('twingate', {

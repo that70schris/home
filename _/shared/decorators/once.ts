@@ -1,5 +1,6 @@
 export function once(
-  target, name, {
+  target: any,
+  name: string, {
     enumerable,
     configurable,
     get: getter,
@@ -12,7 +13,10 @@ export function once(
   if (setter)
     throw new Error(`@once can't be used with a setter (${target.constructor.name}.${name})`)
 
-  function set(that, value) {
+  function set(
+    that: any,
+    value: any,
+  ) {
     Object.defineProperty(that, name, {
       enumerable,
       configurable,

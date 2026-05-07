@@ -45,22 +45,22 @@ export class _Kube {
   get http_check(): input.core.v1.HTTPGetAction {
     return {
       path: this.path,
-      port: this.port.numbers.container,
+      port: this.port?.numbers.container ?? 80,
     }
   }
 
   @once
-  get port(): _Port | undefined {
-    return this.container_port && new _Port('main', {
+  get port(): _Port | null {
+    return this.container_port ? new _Port('main', {
       container: this.container_port,
       service: this.service_port,
-    })
+    }) : null
   }
 
   get ports(): _Port[] {
     return [
       this.port,
-    ].filter(Boolean)
+    ].filter(Boolean) as _Port[]
   }
 
   get livenessProbe(): input.core.v1.Probe | undefined {
@@ -129,7 +129,7 @@ export class _Kube {
     ]
   }
 
-  get args() {
+  get args(): string[] {
     return [
 
     ]
@@ -264,7 +264,7 @@ export class _Kube {
       service: {
         name: this.name,
         port: {
-          number: this.port.numbers.service,
+          number: this.port?.numbers.service,
         },
       },
     }
