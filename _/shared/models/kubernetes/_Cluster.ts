@@ -12,7 +12,7 @@ interface ClusterArgs {
   kubes: _Kube[]
 }
 
-export class _Cluster {
+export class _Cluster extends _CustomResource {
 
   constructor(
     public host: string,
@@ -26,6 +26,10 @@ export class _Cluster {
       return kube.index
     })
 
+    super(
+      host,
+      args,
+    )
   }
 
   twingate = new Chart('twingate', {

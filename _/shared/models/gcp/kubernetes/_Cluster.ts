@@ -1,4 +1,5 @@
 import { Provider } from '@pulumi/kubernetes'
+import { Input } from '@pulumi/pulumi'
 import * as YAML from 'yaml'
 import { once } from '../../../decorators'
 import { _Cluster } from '../../kubernetes'
@@ -6,7 +7,7 @@ import { _Cluster } from '../../kubernetes'
 export class _GKE extends _Cluster {
 
   @once
-  get provider() {
+  get provider(): Input<Provider> {
     return new Provider(this.host, {
       suppressHelmHookWarnings: true,
       enableConfigMapMutable: true,
