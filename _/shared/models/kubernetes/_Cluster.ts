@@ -10,6 +10,7 @@ import { mDNS } from './kubes/mDNS'
 interface ClusterArgs {
   domain?: string
   kubes: _Kube[]
+  ip?: string
 }
 
 export class _Cluster {
@@ -20,7 +21,10 @@ export class _Cluster {
     public opts?: ResourceOptions,
   ) {
     new _TwingateResource(this.host, {
-      address: this.host,
+      address: args.ip ?? this.host,
+      tcp: [
+        6443,
+      ],
     })
 
     args.kubes.forEach((kube) => {

@@ -1,7 +1,8 @@
 {
   "files.associations": {
     ".gitignore.*": "ignore",
-    ".gitmodules.*": "gitconfig"
+    ".gitmodules.*": "gitconfig",
+    "**/.kube/config": "yaml"
   },
   "github-actions.workflows.pinned.workflows": [
     ".github/workflows/hostwriter.app.yml",

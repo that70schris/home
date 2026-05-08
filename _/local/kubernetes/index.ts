@@ -3,6 +3,7 @@ import { Homebridge, Plex } from '../../shared/models/kubernetes/kubes'
 
 new _Cluster('berry.local', {
   domain: 'bailey.mx',
+  // ip: '195.168.0.5',
   kubes: [
     new Homebridge(),
     new Plex(),
