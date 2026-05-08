@@ -59,6 +59,7 @@ cask "wifi-explorer"
 cask "wifiman"
 cask "zoom"
 mas "1Blocker", id: 1365531024
+mas "Capo", id: 696977615
 mas "Deliveries", id: 290986013
 mas "Flighty", id: 1358823008
 mas "iCircuit", id: 454347770
