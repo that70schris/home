@@ -19,9 +19,9 @@ export class _Cluster {
     public args: ClusterArgs,
     public opts?: ResourceOptions,
   ) {
-    // new _TwingateResource(this.host, {
-    //   address: this.host,
-    // })
+    new _TwingateResource(this.host, {
+      address: this.host,
+    })
 
     args.kubes.forEach((kube) => {
       return kube.index
