@@ -43,6 +43,7 @@ export class _TwingateResource extends TwingateResource {
       remoteNetworkId: _TwingateResource.remote.id,
       address: args.address ?? $name,
       name: $name,
+      // alias: $name,
       accessGroups: [
         _TwingateResource.groups.everyone,
       ],

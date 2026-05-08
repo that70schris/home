@@ -22,6 +22,7 @@ export class _Cluster {
   ) {
     new _TwingateResource(this.host, {
       address: args.ip ?? this.host,
+      alias: this.host,
       tcp: [
         6443,
       ],
