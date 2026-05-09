@@ -22,10 +22,9 @@ export class _Cluster {
     public opts?: ResourceOptions,
   ) {
 
-    new _Record(`${this.name}.${args.domain}`, {
-      domain: `${this.name}.${args.domain}`,
+    new _Record(this.name, {
       content: args.ip,
-      proxied: true,
+      // proxied: true,
     })
 
     new _TwingateResource(`${this.name}.${args.domain}`, {
