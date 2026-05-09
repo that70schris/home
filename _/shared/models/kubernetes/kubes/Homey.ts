@@ -31,7 +31,7 @@ export class Homey extends _Kube {
   override get environment() {
     return super.environment.concat([{
       name: 'HOMEY_LOCAL_ADDRESS',
-      value: `homey.${this.domain}`,
+      value: 'homey.bailey.mx',
     }])
   }
 
