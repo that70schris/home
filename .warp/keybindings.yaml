@@ -9,7 +9,6 @@
 "terminal:ask_ai_assistant": none
 "workspace:decrease_font_size": cmd--
 "workspace:move_tab_right": shift-cmd->
-"terminal:executing_command_delete_word_left": none
 "project_buttons:create_new_project": none
 "workspace:decrease_zoom": none
 "workspace:toggle_launch_config_palette": none
