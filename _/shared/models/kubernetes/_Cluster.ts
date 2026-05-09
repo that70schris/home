@@ -20,6 +20,7 @@ export class _Cluster {
     public args: ClusterArgs,
     public opts?: ResourceOptions,
   ) {
+
     new _TwingateResource(this.host, {
       address: args.ip ?? this.host,
       alias: this.host,
