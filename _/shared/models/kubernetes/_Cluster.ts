@@ -22,10 +22,10 @@ export class _Cluster {
     public opts?: ResourceOptions,
   ) {
 
-    new _Record(this.name, {
+    new _Record(`${this.name}.${args.domain}`, {
       content: args.ip,
       // proxied: true,
-    })
+    }),
 
     new _TwingateResource(`${this.name}.${args.domain}`, {
       // address: `${this.name}.${args.domain}`,
@@ -33,6 +33,8 @@ export class _Cluster {
       tcp: [
         6443,
       ],
+    }, {
+      // parent:
     })
 
     args.kubes.forEach((kube) => {
