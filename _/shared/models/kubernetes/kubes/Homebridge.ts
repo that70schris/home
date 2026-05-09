@@ -1,9 +1,8 @@
-import { Resource } from '@pulumi/pulumi'
 import { readFileSync } from 'fs'
 import { _Kube, _Port } from '..'
 
 export class Homebridge extends _Kube {
-  override image = 'homebridge/homebridge:latest'
+  override image = 'homebridge/homebridge'
   config = JSON.parse(readFileSync(
     '../../.config/homebridge/config.json',
     'utf-8',
@@ -39,7 +38,7 @@ export class Homebridge extends _Kube {
     }])
   }
 
-  override get index(): Resource[] {
+  override get index() {
     return [
       this.service,
     ]

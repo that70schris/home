@@ -24,7 +24,6 @@ export class _Cluster {
 
     new _Record(`${this.name}.${args.domain}`, {
       content: args.ip,
-      // proxied: true,
     }),
 
     new _TwingateResource(`${this.name}.${args.domain}`, {

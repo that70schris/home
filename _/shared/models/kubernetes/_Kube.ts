@@ -187,7 +187,7 @@ export class _Kube {
     })
   }
 
-  get securityContext(): input.core.v1.SecurityContext | undefined {
+  get securityContext(): input.core.v1.PodSecurityContext | undefined {
     return
   }
 
