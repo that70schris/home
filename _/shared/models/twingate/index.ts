@@ -19,7 +19,7 @@ export class _TwingateResource extends TwingateResource {
 
   static remote = new TwingateRemoteNetwork('main', {
     location: 'ON_PREMISE',
-    name: 'local',
+    name: 'home',
   })
 
   static connector = new TwingateConnector('main', {

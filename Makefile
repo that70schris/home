@@ -13,9 +13,10 @@ _:
 
 cluster:
 	curl -sfL https://get.k3s.io | sh -s - \
+		--disable=traefik \
 		--tls-san=berry.bailey.mx \
 		--tls-san=berry.local \
-		--disable=traefik \
+		--tls-san=berry \
 
 gh:
 	gh auth login \
