@@ -12,26 +12,9 @@ export class Homey extends _Kube {
     }
   }
 
-  override get volumes() {
-    return super.volumes.concat([{
-      name: 'config',
-      hostPath: {
-        path: '/home/chris/.config/homey',
-      },
-    }])
-  }
-
-  override get volume_mounts() {
-    return super.volume_mounts.concat([{
-      mountPath: '/homey/user',
-      name: 'config',
-    }])
-  }
-
   override get index() {
     return [
       this.service,
     ]
   }
-
 }

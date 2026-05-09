@@ -43,5 +43,4 @@ export class Homebridge extends _Kube {
       this.service,
     ]
   }
-
 }
