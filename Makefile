@@ -14,7 +14,7 @@ _:
 cluster:
 	curl -sfL https://get.k3s.io | sh -s - \
 		--disable=traefik \
-		--tls-san=berry.bailey.mx \
+		--tls-san=192.168.0.5 \
 		--tls-san=berry.local \
 		--tls-san=berry \
 
