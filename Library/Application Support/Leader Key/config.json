@@ -28,6 +28,11 @@
           "value" : "/Applications/Copilot.app"
         },
         {
+          "key" : "8",
+          "type" : "application",
+          "value" : "/System/Applications/Passwords.app"
+        },
+        {
           "key" : "9",
           "type" : "application",
           "value" : "/System/Applications/Contacts.app"
