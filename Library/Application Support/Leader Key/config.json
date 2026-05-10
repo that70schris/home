@@ -8,6 +8,11 @@
           "value" : "/Applications/Deliveries.app"
         },
         {
+          "key" : "/",
+          "type" : "application",
+          "value" : "/System/Library/CoreServices/Finder.app"
+        },
+        {
           "key" : "2",
           "type" : "application",
           "value" : "/System/Applications/Mail.app"
@@ -50,12 +55,12 @@
         {
           "key" : "e",
           "type" : "application",
-          "value" : "/Applications/Expressions.app"
+          "value" : "/System/Applications/Mail.app"
         },
         {
           "key" : "f",
           "type" : "application",
-          "value" : "/System/Library/CoreServices/Finder.app"
+          "value" : "/Users/chris/Applications/Chrome Apps.localized/Facebook.app"
         },
         {
           "key" : "g",
@@ -110,7 +115,7 @@
         {
           "key" : "x",
           "type" : "application",
-          "value" : "/Applications/Xcode.app"
+          "value" : "/Applications/Expressions.app"
         },
         {
           "key" : "y",
