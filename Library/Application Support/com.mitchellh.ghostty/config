@@ -1,4 +1,5 @@
 adjust-cursor-thickness = 4
+adjust-box-thickness = 1
 background = #222
 confirm-close-surface = false
 cursor-style = bar
