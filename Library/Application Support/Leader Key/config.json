@@ -1,133 +1,133 @@
 {
-  "actions": [
+  "actions" : [
     {
-      "actions": [
+      "actions" : [
         {
-          "key": "[",
-          "type": "application",
-          "value": "/Applications/Deliveries.app"
+          "key" : "[",
+          "type" : "application",
+          "value" : "/Applications/Deliveries.app"
         },
         {
-          "key": "2",
-          "type": "application",
-          "value": "/System/Applications/Mail.app"
+          "key" : "2",
+          "type" : "application",
+          "value" : "/System/Applications/Mail.app"
         },
         {
-          "key": "3",
-          "type": "application",
-          "value": "/System/Applications/Phone.app"
+          "key" : "3",
+          "type" : "application",
+          "value" : "/System/Applications/Phone.app"
         },
         {
-          "key": "4",
-          "type": "application",
-          "value": "/Applications/Copilot.app"
+          "key" : "4",
+          "type" : "application",
+          "value" : "/Applications/Copilot.app"
         },
         {
-          "key": "9",
-          "type": "application",
-          "value": "/System/Applications/Contacts.app"
+          "key" : "9",
+          "type" : "application",
+          "value" : "/System/Applications/Contacts.app"
         },
         {
-          "key": "a",
-          "type": "folder",
-          "value": "/Applications"
+          "key" : "a",
+          "type" : "folder",
+          "value" : "/Applications"
         },
         {
-          "key": "b",
-          "type": "application",
-          "value": "/Applications/Google Chrome.app"
+          "key" : "b",
+          "type" : "application",
+          "value" : "/Applications/Google Chrome.app"
         },
         {
-          "key": "c",
-          "type": "application",
-          "value": "/System/Applications/Calendar.app"
+          "key" : "c",
+          "type" : "application",
+          "value" : "/System/Applications/Calendar.app"
         },
         {
-          "key": "d",
-          "type": "application",
-          "value": "/Applications/Discord.app"
+          "key" : "d",
+          "type" : "application",
+          "value" : "/Applications/Discord.app"
         },
         {
-          "key": "e",
-          "type": "application",
-          "value": "/Applications/Expressions.app"
+          "key" : "e",
+          "type" : "application",
+          "value" : "/Applications/Expressions.app"
         },
         {
-          "key": "f",
-          "type": "application",
-          "value": "/System/Library/CoreServices/Finder.app"
+          "key" : "f",
+          "type" : "application",
+          "value" : "/System/Library/CoreServices/Finder.app"
         },
         {
-          "key": "g",
-          "type": "application",
-          "value": "/Applications/Google Chrome.app"
+          "key" : "g",
+          "type" : "application",
+          "value" : "/Users/chris/Applications/Chrome Apps.localized/GitHub.app"
         },
         {
-          "key": "h",
-          "type": "application",
-          "value": "/Applications/Line6/Helix Stadium.app"
+          "key" : "h",
+          "type" : "application",
+          "value" : "/Applications/Line6/Helix Stadium.app"
         },
         {
-          "key": "i",
-          "type": "application",
-          "value": "/System/Applications/Music.app"
+          "key" : "i",
+          "type" : "application",
+          "value" : "/System/Applications/Music.app"
         },
         {
-          "key": "j",
-          "type": "application",
-          "value": "/System/Applications/Journal.app"
+          "key" : "j",
+          "type" : "application",
+          "value" : "/System/Applications/Journal.app"
         },
         {
-          "key": "k",
-          "type": "application",
-          "value": "/Applications/Lens.app"
+          "key" : "k",
+          "type" : "application",
+          "value" : "/Applications/Lens.app"
         },
         {
-          "key": "m",
-          "type": "application",
-          "value": "/System/Applications/Messages.app"
+          "key" : "m",
+          "type" : "application",
+          "value" : "/System/Applications/Messages.app"
         },
         {
-          "key": "n",
-          "type": "application",
-          "value": "/System/Applications/Notes.app"
+          "key" : "n",
+          "type" : "application",
+          "value" : "/System/Applications/Notes.app"
         },
         {
-          "key": "r",
-          "type": "application",
-          "value": "/System/Applications/Reminders.app"
+          "key" : "r",
+          "type" : "application",
+          "value" : "/System/Applications/Reminders.app"
         },
         {
-          "key": "s",
-          "type": "application",
-          "value": "/Applications/Slack.app"
+          "key" : "s",
+          "type" : "application",
+          "value" : "/Applications/Slack.app"
         },
         {
-          "key": "v",
-          "type": "application",
-          "value": "/Applications/Visual Studio Code.app"
+          "key" : "v",
+          "type" : "application",
+          "value" : "/Applications/Visual Studio Code.app"
         },
         {
-          "key": "x",
-          "type": "application",
-          "value": "/Applications/Xcode.app"
+          "key" : "x",
+          "type" : "application",
+          "value" : "/Applications/Xcode.app"
         },
         {
-          "key": "y",
-          "type": "application",
-          "value": "/Users/chris/Applications/Chrome Apps.localized/YouTube.app"
+          "key" : "y",
+          "type" : "application",
+          "value" : "/Users/chris/Applications/Chrome Apps.localized/YouTube.app"
         },
         {
-          "key": "z",
-          "type": "application",
-          "value": "/Applications/zoom.us.app"
+          "key" : "z",
+          "type" : "application",
+          "value" : "/Applications/zoom.us.app"
         }
       ],
-      "iconPath": "/System/Applications/Mission Control.app",
-      "key": "l",
-      "label": "Launch...",
-      "type": "group"
+      "iconPath" : "/System/Applications/Mission Control.app",
+      "key" : "l",
+      "label" : "Launch...",
+      "type" : "group"
     }
   ],
-  "type": "group"
+  "type" : "group"
 }
