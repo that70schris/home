@@ -1,5 +1,6 @@
-adjust-cursor-thickness = 4
-adjust-box-thickness = 1
+adjust-cursor-thickness = 3
+adjust-cell-height = 11
+adjust-cursor-height = 99
 background = #222
 confirm-close-surface = false
 cursor-style = bar

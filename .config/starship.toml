@@ -66,13 +66,13 @@ palette = 'arcade'
   style = '#999999 bold'
   symbol = '⎯' #u23af
 
-  # dashline:
-  # symbol = '―' #u2015
-  # symbol = '—' #u2014
-  # symbol = '–' #u2013
-  # symbol = '‒' #u2012
-  # symbol = '‑' #u2011
+  # consistent:
   # symbol = '‐' #u2010
+  # symbol = '‑' #u2011
+  # symbol = '‒' #u2012
+  # symbol = '–' #u2013
+  # symbol = '—' #u2014
+  # symbol = '―' #u2015
 
   # off center:
   # symbol = '─' #u2500

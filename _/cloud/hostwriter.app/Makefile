@@ -33,6 +33,5 @@ qwik:
 serve:
 	npx qwik build && firebase emulators:start
 
-
 start:
 	npx vite --open --mode ss
