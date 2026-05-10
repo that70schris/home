@@ -19,6 +19,9 @@ export class Homebridge extends _Kube {
       new _Port('bridge', {
         container: this.config.bridge?.port ?? 51826,
       }),
+      new _Port('matter', {
+        container: this.config.bridge?.matter?.port ?? 5530,
+      }),
     ])
   }
 
