@@ -1,6 +1,5 @@
-brew "node"
-brew "bit"
 brew "docker"
+brew "node"
 brew "firebase-cli"
 brew "fish"
 brew "gh"
