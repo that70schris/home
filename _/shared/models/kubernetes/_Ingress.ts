@@ -5,6 +5,7 @@ import { CustomResourceOptions, interpolate } from '@pulumi/pulumi'
 import { merge } from 'lodash'
 import { _Cluster, _CustomResource } from '.'
 import { _Record } from '../cloudflare'
+import { _TwingateResource } from '../twingate'
 
 interface _IngressServiceBackend extends input.networking.v1.IngressServiceBackend {
   port: input.networking.v1.ServiceBackendPort
@@ -107,14 +108,14 @@ export class _Ingress extends Ingress {
             parent: this,
           })
 
-          // new _TwingateResource(host, {
-          //   isBrowserShortcutEnabled: true,
-          //   tcp: rule.http?.paths?.map((path) => {
-          //     return path.backend.service.port.number as number
-          //   }),
-          // }, {
-          //   parent: this,
-          // })
+          new _TwingateResource(host, {
+            isBrowserShortcutEnabled: true,
+            tcp: rule.http?.paths?.map((path) => {
+              return path.backend.service.port.number as number
+            }),
+          }, {
+            parent: this,
+          })
 
         })
       })

@@ -20,11 +20,15 @@ export class _Cluster {
     public opts?: ResourceOptions,
   ) {
 
-    // new _TwingateKubernetesResource(this.name, {
-    //   // gatewayId: this.twingate.resources.get()
-    //   address: args.ip,
-    //   // alias: this.name,
-
+    // new _TwingateKubernetesResource(`cluster:${name}`, {
+    //   address: args.ip ?? `${this.name}.${args.domain}`,
+    //   // alias: `${this.name}.${args.domain}`,
+    //   tcp: [
+    //     22,
+    //     6443,
+    //   ],
+    // }, {
+    //   // parent:
     // })
 
     args.kubes.forEach((kube) => {
@@ -33,12 +37,42 @@ export class _Cluster {
 
   }
 
+  // twingate_connector = new Chart('twingate-connector', {
+  //   chart: 'connector',
+  //   repositoryOpts: {
+  //     repo: 'https://twingate.github.io/helm-charts',
+  //   },
+  //   values: {
+  //     connector: {
+  //       network: _TwingateResource.network,
+  //       accessToken: _TwingateResource.tokens.accessToken,
+  //       refreshToken: _TwingateResource.tokens.refreshToken,
+  //     },
+  //   },
+  // })
+
+  // twingate_gatway = new Chart('twingate-gateway', {
+  //   chart: 'oci://ghcr.io/twingate/helmcharts/gateway',
+  //   values: {
+  //     twingate: {
+  //       network: _TwingateResource.network,
+  //     },
+  //     tls: {
+  //       dnsNames: [
+  //         '195.168.0.5',
+  //         'berry.local',
+  //         'berry',
+  //       ],
+  //     },
+  //   },
+  // })
+
   twingate = new Chart('twingate', {
     chart: 'oci://ghcr.io/twingate/helmcharts/twingate-operator',
     values: {
       twingateOperator: {
         remoteNetworkId: _TwingateResource.remote.id,
-        apiKey: _TwingateResource.config.require('apiToken'),
+        apiKey: _TwingateResource.config.get('apiToken'),
         network: _TwingateResource.network,
       },
       gateway: {
