@@ -121,9 +121,9 @@ export class _Cluster {
       name: 'edit',
     },
     subjects: [{
-      kind: 'Group',
-      name: 'Chris Bailey',
       apiGroup: 'rbac.authorization.k8s.io',
+      name: 'Chris Bailey',
+      kind: 'Group',
     }],
   })
 
