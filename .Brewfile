@@ -1,3 +1,4 @@
+tap "alecharmon/tap"
 brew "docker"
 brew "node"
 brew "firebase-cli"
@@ -22,6 +23,7 @@ brew "ruby"
 brew "rust"
 brew "xh"
 brew "zsh"
+brew "alecharmon/tap/applepw"
 cask "camo-studio"
 cask "choosy"
 cask "copilot-money"
@@ -67,7 +69,6 @@ mas "iCircuit", id: 454347770
 mas "Logic Pro", id: 634148309
 mas "Mapper", id: 1589391989
 mas "Numbers", id: 361304891
-mas "One Thing", id: 1604176982
 mas "Raycast Companion", id: 6738274497
 mas "Xcode", id: 497799835
 vscode "bbenoist.nix"

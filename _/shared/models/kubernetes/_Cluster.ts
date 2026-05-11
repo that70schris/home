@@ -47,6 +47,10 @@ export class _Cluster {
           network: _TwingateResource.network,
           resource: {
             enabled: true,
+            extraAnnotations: {
+              'resource.twingate.com/name': 'Raspberries',
+              'resource.twingate.com/alias': 'raspberries.int',
+            },
           },
         },
       },
