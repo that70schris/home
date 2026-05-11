@@ -1,0 +1,2 @@
+allowBuilds:
+  '@pulumi/std': true

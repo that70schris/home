@@ -21,16 +21,11 @@ export class _Cluster {
     public opts?: ResourceOptions,
   ) {
 
-    new _TwingateResource(`cluster:${name}`, {
-      address: args.ip ?? `${this.name}.${args.domain}`,
-      // alias: `${this.name}.${args.domain}`,
-      tcp: [
-        22,
-        6443,
-      ],
-    }, {
-      // parent:
-    })
+    // new _TwingateKubernetesResource(this.name, {
+    //   address: args.ip,
+    //   // alias: this.name,
+
+    // })
 
     args.kubes.forEach((kube) => {
       return kube.index
@@ -38,16 +33,22 @@ export class _Cluster {
 
   }
 
-  twingate = new Chart('twingate', {
-    chart: 'connector',
-    repositoryOpts: {
-      repo: 'https://twingate.github.io/helm-charts',
-    },
+  twingate_operator = new Chart('twingate', {
+    chart: 'oci://ghcr.io/twingate/helmcharts/twingate-operator',
     values: {
-      connector: {
+      twingateOperator: {
+        remoteNetworkId: _TwingateResource.connector.remoteNetworkId,
+        apiKey: _TwingateResource.tokens.accessToken,
         network: _TwingateResource.network,
-        accessToken: _TwingateResource.tokens.accessToken,
-        refreshToken: _TwingateResource.tokens.refreshToken,
+      },
+      kubernetesAccessGateway: {
+        enabled: true,
+        twingate: {
+          network: _TwingateResource.network,
+          resource: {
+            enabled: true,
+          },
+        },
       },
     },
   })
@@ -189,15 +190,10 @@ export class _Cluster {
   }
 
   @once
-  get mDNS() {
-    return new mDNS().index
-  }
-
-  @once
   get index() {
     return [
       this.ingress,
-      ...this.mDNS,
+      ...new mDNS().index,
     ]
   }
 

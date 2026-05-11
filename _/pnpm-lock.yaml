@@ -29,6 +29,9 @@ importers:
       '@pulumi/pulumi':
         specifier: latest
         version: 3.236.0(typescript@6.0.3)
+      '@pulumi/std':
+        specifier: ^2.3.2
+        version: 2.3.2(typescript@6.0.3)
       '@pulumi/tailscale':
         specifier: latest
         version: 0.27.1(typescript@6.0.3)
@@ -494,6 +497,9 @@ packages:
         optional: true
       typescript:
         optional: true
+
+  '@pulumi/std@2.3.2':
+    resolution: {integrity: sha512-Xx84bDZGyVQajzuTHWMOJ8T7dF4xKGPzJaRP5eOfVR8H6KNmIA2i/0p/QSCpvwAlV8qXskfsjHkgjdHpyv4roA==}
 
   '@pulumi/tailscale@0.27.1':
     resolution: {integrity: sha512-iKWAxmfzNBkU043LcUsBMrF2b3E/POqJ7eMwltIc2c26riOeIjXcaO7tEVrCzeJCc/HEMxndyhFpZLAoSPrQGA==}
@@ -1847,6 +1853,14 @@ snapshots:
       typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
+
+  '@pulumi/std@2.3.2(typescript@6.0.3)':
+    dependencies:
+      '@pulumi/pulumi': 3.236.0(typescript@6.0.3)
+    transitivePeerDependencies:
+      - supports-color
+      - ts-node
+      - typescript
 
   '@pulumi/tailscale@0.27.1(typescript@6.0.3)':
     dependencies:
