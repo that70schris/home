@@ -37,8 +37,8 @@ export class _Cluster {
     chart: 'oci://ghcr.io/twingate/helmcharts/twingate-operator',
     values: {
       twingateOperator: {
-        remoteNetworkId: _TwingateResource.connector.remoteNetworkId,
-        apiKey: _TwingateResource.tokens.accessToken,
+        remoteNetworkId: _TwingateResource.remote.id,
+        apiKey: _TwingateResource.config.require('apiToken'),
         network: _TwingateResource.network,
       },
       gateway: {
@@ -48,8 +48,8 @@ export class _Cluster {
           resource: {
             enabled: true,
             extraAnnotations: {
+              'resource.twingate.com/alias': 'berry.local',
               'resource.twingate.com/name': 'Raspberries',
-              'resource.twingate.com/alias': 'raspberries.int',
             },
           },
         },
