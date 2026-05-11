@@ -113,17 +113,34 @@ export class _Cluster {
     apiVersion: 'rbac.authorization.k8s.io/v1',
     kind: 'ClusterRoleBinding',
     metadata: {
-      name: 'test',
+      name: 'kuberries',
     },
-    subjects: [{
-      kind: 'Group',
-      name: 'Admins',
-      apiGroup: 'rbac.authorization.k8s.io',
-    }],
     roleRef: {
       apiGroup: 'rbac.authorization.k8s.io',
       kind: 'ClusterRole',
       name: 'edit',
+    },
+    subjects: [{
+      kind: 'Group',
+      name: 'Chris Bailey',
+      apiGroup: 'rbac.authorization.k8s.io',
+    }],
+  })
+
+  twingate_resource_access = new _CustomResource('twingate:resource-access', {
+    apiVersion: 'twingate.com/v1beta',
+    kind: 'TwingateResourceAccess',
+    metadata: {
+      name: 'kuberries',
+    },
+    spec: {
+      resourceRef: {
+        name: 'Kuberries',
+      },
+      principalExternalRef: {
+        name: 'Chris Bailey',
+        type: 'group',
+      },
     },
   })
 
