@@ -99,6 +99,7 @@ export class _Cluster {
       name: 'main',
     },
     spec: {
+      name: 'main',
       imagePolicy: {
         schedule: '0 0 * * *',
       },
