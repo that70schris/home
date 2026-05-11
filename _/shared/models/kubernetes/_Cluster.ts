@@ -82,8 +82,8 @@ export class _Cluster {
           resource: {
             enabled: true,
             extraAnnotations: {
-              'resource.twingate.com/address': '192.168.0.5',
-              'resource.twingate.com/alias': 'berry.local',
+              // 'resource.twingate.com/address': '192.168.0.5',
+              // 'resource.twingate.com/alias': 'berry.local',
               'resource.twingate.com/name': 'Kuberries',
             },
           },
@@ -125,6 +125,8 @@ export class _Cluster {
       name: 'Chris Bailey',
       kind: 'Group',
     }],
+  }, {
+    dependsOn: this.twingate,
   })
 
   twingate_resource_access = new _CustomResource('twingate:resource-access', {
@@ -142,6 +144,8 @@ export class _Cluster {
         type: 'group',
       },
     },
+  }, {
+    dependsOn: this.twingate,
   })
 
   manager = new Chart('manager', {
