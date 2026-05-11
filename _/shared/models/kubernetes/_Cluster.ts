@@ -82,7 +82,7 @@ export class _Cluster {
           resource: {
             enabled: true,
             extraAnnotations: {
-              'resource.twingate.com/alias': 'berry.local',
+              'resource.twingate.com/alias': 'ingress.local',
               'resource.twingate.com/name': 'Raspberries',
             },
           },
@@ -103,7 +103,26 @@ export class _Cluster {
       },
     },
   }, {
+    dependsOn: this.twingate,
     parent: this.twingate,
+  })
+
+  twingate_role_binding = new _CustomResource('twingate:role-binding', {
+    apiVersion: 'rbac.authorization.k8s.io/v1',
+    kind: 'ClusterRoleBinding',
+    metadata: {
+      name: 'test',
+    },
+    subjects: [{
+      kind: 'Group',
+      name: 'Admins',
+      apiGroup: 'rbac.authorization.k8s.io',
+    }],
+    roleRef: {
+      apiGroup: 'rbac.authorization.k8s.io',
+      kind: 'ClusterRole',
+      name: 'edit',
+    },
   })
 
   manager = new Chart('manager', {
