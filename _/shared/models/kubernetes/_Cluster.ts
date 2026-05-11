@@ -5,7 +5,6 @@ import { Config, ResourceOptions } from '@pulumi/pulumi'
 import { _CustomResource, _Ingress, _Kube } from '.'
 import { once } from '../../decorators'
 import { _TwingateResource } from '../twingate'
-import { mDNS } from './kubes/mDNS'
 
 interface ClusterArgs {
   domain?: string
@@ -22,6 +21,7 @@ export class _Cluster {
   ) {
 
     // new _TwingateKubernetesResource(this.name, {
+    //   // gatewayId: this.twingate.resources.get()
     //   address: args.ip,
     //   // alias: this.name,
 
@@ -41,7 +41,7 @@ export class _Cluster {
         apiKey: _TwingateResource.tokens.accessToken,
         network: _TwingateResource.network,
       },
-      kubernetesAccessGateway: {
+      gateway: {
         enabled: true,
         twingate: {
           network: _TwingateResource.network,
@@ -65,7 +65,7 @@ export class _Cluster {
     },
     spec: {
       imagePolicy: {
-        schedule: '0 0 * * *',
+        schedule: '* * * * *',
       },
     },
   }, {
@@ -212,7 +212,7 @@ export class _Cluster {
   get index() {
     return [
       this.ingress,
-      ...new mDNS().index,
+      // ...new mDNS().index,
     ]
   }
 
