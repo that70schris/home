@@ -78,12 +78,13 @@ export class _Cluster {
       gateway: {
         enabled: true,
         twingate: {
-          network: _TwingateResource.network,
+          network: _TwingateResource.remote.id,
           resource: {
             enabled: true,
             extraAnnotations: {
-              'resource.twingate.com/alias': 'ingress.local',
-              'resource.twingate.com/name': 'Raspberries',
+              'resource.twingate.com/address': '192.168.0.5',
+              'resource.twingate.com/alias': 'berry.local',
+              'resource.twingate.com/name': 'Kuberries',
             },
           },
         },
