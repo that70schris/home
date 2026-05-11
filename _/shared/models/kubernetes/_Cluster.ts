@@ -33,7 +33,7 @@ export class _Cluster {
 
   }
 
-  twingate_operator = new Chart('twingate', {
+  twingate = new Chart('twingate', {
     chart: 'oci://ghcr.io/twingate/helmcharts/twingate-operator',
     values: {
       twingateOperator: {
@@ -51,6 +51,21 @@ export class _Cluster {
         },
       },
     },
+  })
+
+  twingate_connector = new _CustomResource('twingate-connector', {
+    apiVersion: 'twingate.com/v1beta',
+    kind: 'TwingateConnector',
+    metadata: {
+      name: 'main',
+    },
+    spec: {
+      imagePolicy: {
+        schedule: '0 0 * * *',
+      },
+    },
+  }, {
+    parent: this.twingate,
   })
 
   manager = new Chart('manager', {
