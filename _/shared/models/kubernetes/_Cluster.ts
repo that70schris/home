@@ -53,7 +53,7 @@ export class _Cluster {
     },
   })
 
-  twingate_connector = new _CustomResource('twingate-connector', {
+  twingate_connector = new _CustomResource('twingate:connector', {
     apiVersion: 'twingate.com/v1beta',
     kind: 'TwingateConnector',
     metadata: {
