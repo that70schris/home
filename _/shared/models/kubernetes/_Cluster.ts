@@ -84,7 +84,7 @@ export class _Cluster {
             extraAnnotations: {
               // 'resource.twingate.com/address': '192.168.0.5',
               // 'resource.twingate.com/alias': 'berry.local',
-              'resource.twingate.com/name': 'Kuberries',
+              'resource.twingate.com/name': '_Kuberries',
             },
           },
         },
@@ -92,61 +92,67 @@ export class _Cluster {
     },
   })
 
-  twingate_connector = new _CustomResource('twingate:connector', {
-    apiVersion: 'twingate.com/v1beta',
-    kind: 'TwingateConnector',
-    metadata: {
-      name: 'main',
-    },
-    spec: {
-      name: 'main',
-      imagePolicy: {
-        schedule: '0 0 * * *',
+  twingate_connector = new _CustomResource(
+    'twingate:connector', {
+      apiVersion: 'twingate.com/v1beta',
+      kind: 'TwingateConnector',
+      metadata: {
+        name: 'main',
       },
-    },
-  }, {
-    dependsOn: this.twingate,
-    parent: this.twingate,
-  })
-
-  twingate_role_binding = new _CustomResource('twingate:role-binding', {
-    apiVersion: 'rbac.authorization.k8s.io/v1',
-    kind: 'ClusterRoleBinding',
-    metadata: {
-      name: 'kuberries',
-    },
-    roleRef: {
-      apiGroup: 'rbac.authorization.k8s.io',
-      kind: 'ClusterRole',
-      name: 'edit',
-    },
-    subjects: [{
-      apiGroup: 'rbac.authorization.k8s.io',
-      name: 'Chris Bailey',
-      kind: 'Group',
-    }],
-  }, {
-    dependsOn: this.twingate,
-  })
-
-  twingate_resource_access = new _CustomResource('twingate:resource-access', {
-    apiVersion: 'twingate.com/v1beta',
-    kind: 'TwingateResourceAccess',
-    metadata: {
-      name: 'kuberries',
-    },
-    spec: {
-      resourceRef: {
-        name: 'Kuberries',
+      spec: {
+        name: 'main',
+        imagePolicy: {
+          schedule: '0 0 * * *',
+        },
       },
-      principalExternalRef: {
+    }, {
+      dependsOn: this.twingate,
+      parent: this.twingate,
+    },
+  )
+
+  twingate_role_binding = new _CustomResource(
+    'twingate:role-binding', {
+      apiVersion: 'rbac.authorization.k8s.io/v1',
+      kind: 'ClusterRoleBinding',
+      metadata: {
+        name: 'kuberries',
+      },
+      roleRef: {
+        apiGroup: 'rbac.authorization.k8s.io',
+        kind: 'ClusterRole',
+        name: 'edit',
+      },
+      subjects: [{
+        apiGroup: 'rbac.authorization.k8s.io',
         name: 'Chris Bailey',
-        type: 'group',
-      },
+        kind: 'Group',
+      }],
+    }, {
+      dependsOn: this.twingate,
     },
-  }, {
-    dependsOn: this.twingate,
-  })
+  )
+
+  twingate_resource_access = new _CustomResource(
+    'twingate:resource-access', {
+      apiVersion: 'twingate.com/v1beta',
+      kind: 'TwingateResourceAccess',
+      metadata: {
+        name: 'kuberries',
+      },
+      spec: {
+        resourceRef: {
+          name: '_Kuberries',
+        },
+        principalExternalRef: {
+          name: 'Chris Bailey',
+          type: 'group',
+        },
+      },
+    }, {
+      dependsOn: this.twingate,
+    },
+  )
 
   manager = new Chart('manager', {
     chart: 'cert-manager',
