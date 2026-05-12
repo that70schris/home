@@ -7,8 +7,8 @@ _:
 	apt install kubecolor
 	chsh -s $(which zsh)
 
-	@make git
 	@make gh
+	@make git
 	@make rust
 	@make starship
 
