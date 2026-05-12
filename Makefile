@@ -4,6 +4,7 @@ _:
 	apt upgrade -y
 	apt install gh
 	apt install zsh
+	apt install kubecolor
 	chsh -s $(which zsh)
 
 	@make git
