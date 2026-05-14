@@ -185,7 +185,7 @@ $untracked\
 
 [os]
   disabled = false
-  format = ' [$symbol]($style) '
+  format = ' [$symbol]($style)'
   style = 'white'
 
 [os.symbols]
