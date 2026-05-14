@@ -23,7 +23,7 @@ rust:
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 starship:
-	@cd starship && cargo install --path .
+	cargo install --path ./starship
 
 up update:
 	brew upgrade

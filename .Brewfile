@@ -35,7 +35,6 @@ cask "ghostty"
 cask "google-chrome"
 cask "google-gemini"
 cask "hammerspoon"
-cask "hdhomerun"
 cask "insomnia"
 cask "istat-menus"
 cask "kaleidoscope"
@@ -66,9 +65,9 @@ mas "Capo", id: 696977615
 mas "Deliveries", id: 290986013
 mas "Flighty", id: 1358823008
 mas "iCircuit", id: 454347770
+mas "iMovie", id: 408981434
 mas "Logic Pro", id: 634148309
 mas "Mapper", id: 1589391989
-mas "Numbers", id: 361304891
 mas "Raycast Companion", id: 6738274497
 mas "Xcode", id: 497799835
 vscode "bbenoist.nix"
