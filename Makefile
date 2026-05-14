@@ -26,6 +26,6 @@ shipstar:
 	cargo install --path ./starship
 
 up update:
+	git submodule update --init --remote
 	brew upgrade
 	pnpm update
-	git submodule update --init --remote
