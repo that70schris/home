@@ -68,7 +68,6 @@ mas "Flighty", id: 1358823008
 mas "iCircuit", id: 454347770
 mas "Logic Pro", id: 634148309
 mas "Mapper", id: 1589391989
-mas "MenuBot", id: 6444080295
 mas "Numbers", id: 361304891
 mas "Raycast Companion", id: 6738274497
 mas "Xcode", id: 497799835
