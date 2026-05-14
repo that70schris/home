@@ -23,3 +23,4 @@ git submodule update --init --recursive
 brew bundle install --global
 kiro-cli integrations install input-method
 make shipstar
+npm install
