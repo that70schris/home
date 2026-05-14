@@ -9,7 +9,8 @@ brew install gh
 
 git init
 git remote add origin git@github.com:that70schris/-
-gh auth status || gh auth login \
+gh auth status || \
+gh auth login \
 	--git-protocol ssh \
 	--hostname github.com \
 	--clipboard \
