@@ -19,12 +19,6 @@ cluster:
 		--tls-san=berry.local \
 		--tls-san=berry \
 
-# full disk access
-fetch:
-	git fetch
-	git checkout main
-	git submodule update --init --recursive
-
 rust:
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
