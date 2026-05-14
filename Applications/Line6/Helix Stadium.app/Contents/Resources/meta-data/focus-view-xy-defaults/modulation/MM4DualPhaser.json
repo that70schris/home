@@ -1,0 +1,94 @@
+{
+    "modelName": "Dual Phaser",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "LFOShape": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 8,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Move Me",
+            "Speed": 0.0,
+            "Depth": 0.22,
+            "Feedback": 0.0,
+            "LFOShape": false,
+            "Mix": 1.0,
+            "Level": 2.3,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Slow Phase",
+            "Speed": 0.2,
+            "Depth": 0.36,
+            "Feedback": 0.76,
+            "LFOShape": false,
+            "Mix": 1.0,
+            "Level": 0.400002,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Swirling",
+            "Speed": 2.4,
+            "Depth": 0.65,
+            "Feedback": 0.53,
+            "LFOShape": true,
+            "Mix": 1.0,
+            "Level": 2.3,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "The Pulse",
+            "Speed": 6.9,
+            "Depth": 0.71,
+            "Feedback": 0.47,
+            "LFOShape": true,
+            "Mix": 1.0,
+            "Level": 2.3,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Bubbles",
+            "Speed": 10.5,
+            "Depth": 0.71,
+            "Feedback": 1.0,
+            "LFOShape": false,
+            "Mix": 1.0,
+            "Level": 2.3,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

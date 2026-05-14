@@ -1,0 +1,15 @@
+{
+    "category": "filter",
+    "model_id": 19,
+    "model_sym": "ModelID::kFilterMutantFilterMono",
+    "display_name": "Mutant Filter",
+    "parameters-en": {
+        "Mode": "Selects the type of filter effect (Low Pass, Band Pass, or High Pass).",
+        "Peak": "Controls the resonance or width of the frequency band affected by the filter.",
+        "Gain": "Adjusts the filter’s sensitivity to the incoming signal.",
+        "Range": "Frequency range of the filter",
+        "Drive": "Selects whether the filter's cutoff frequency shifts Up or Down in response to the input signal.",
+        "Mix": "Controls the balance between the filtered and dry signals. At 0%, no filtered signal is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "modelName": "Tile",
+    "params": {
+        "Decay": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Predelay": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "LowCut": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "HighCut": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Tiny",
+            "Decay": 0.05,
+            "Predelay": 0.02,
+            "LowCut": 146.0,
+            "HighCut": 8000.0,
+            "Mix": 0.31,
+            "Level": 0.963797
+        },
+        "x_min_y_min": {
+            "name": "Flanged",
+            "Decay": 0.05,
+            "Predelay": 0.00100005,
+            "LowCut": 280.0,
+            "HighCut": 3000.0,
+            "Mix": 0.62,
+            "Level": 2.9648
+        },
+        "x_min_y_max": {
+            "name": "Slap Tile",
+            "Decay": 0.28,
+            "Predelay": 0.095,
+            "LowCut": 160.0,
+            "HighCut": 9000.0,
+            "Mix": 0.51,
+            "Level": 0.963797
+        },
+        "x_max_y_min": {
+            "name": "Doubled",
+            "Decay": 0.49,
+            "Predelay": 0.08,
+            "LowCut": 19.9,
+            "HighCut": 20100.0,
+            "Mix": 0.56,
+            "Level": -0.0367031
+        },
+        "x_max_y_max": {
+            "name": "Echo TIle",
+            "Decay": 1.0,
+            "Predelay": 0.18,
+            "LowCut": 260.0,
+            "HighCut": 10000.0,
+            "Mix": 0.53,
+            "Level": 6.0
+        }
+    }
+}

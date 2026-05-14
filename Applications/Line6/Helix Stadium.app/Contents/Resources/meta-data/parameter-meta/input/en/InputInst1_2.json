@@ -1,0 +1,19 @@
+{
+    "category": "input",
+    "model_id": 755,
+    "model_sym": "ModelID::kInputInst1_2",
+    "display_name": "Instrument 1+2",
+    "parameters-en": {
+        "Inst 1 Pad": "Applies a pad to the Instrument 1 input. Set to \"Off/Inst\" for guitars and basses with passive pickups. Set to \"On/Line\" for guitars and basses with loud active pickups or line level products like synths or drum machines. Set to \"Global\" to follow the Global Settings > Ins/Outs > Instrument In 1 Pad setting, so it doesn't need to be set for every preset.",
+        "Inst1 Trim": "Sets the Instrument 1 digital input level and is used to compensate for overly soft or loud instruments. IMPORTANT! Setting Trim to a value higher (or lower) than 0.0 dB effectively boosts (or attenuates) your signal into the first block, which may result in a less than accurate response. Or you might like it.",
+        "Inst1 Gate": "Turns the Input block's built-in noise gate for Instrument 1 on and off.",
+        "1 Thresh": "Sets the noise gate's Threshold. The gate \"opens\" when the signal's level exceeds the Threshold, to let audio pass through. The gate \"closes\" when the signal's level drops below the Threshold. Adjust Threshold so only softer, unwanted signals (such as noise or hum) are gated.",
+        "1 Decay": "Controls the length of time it takes for the open noise gate to close once the signal drops below the Threshold. Increase Decay if you want the gate to gradually lower the signal instead of chopping it off abruptly.",
+        "StereoLink": "When set to \"On,\" combines Instrument 1 and Instrument 2 into a single stereo input, with Instrument 1 on the left and Instrument 2 on the right. Both Instrument 1 and Instrument 2 parameters are controlled by Instrument 1.",
+        "Inst 2 Pad": "Applies an analog pad to the Instrument 2 input. Set to \"Off/Inst\" for guitars and basses with passive pickups. Set to \"On/Line\" for guitars and basses with loud active pickups or line level products like synths or drum machines. Set to \"Global\" to follow the Global Settings > Ins/Outs > Instrument In 2 Pad setting, so it doesn't need to be set for every preset.",
+        "Inst2 Trim": "Sets the Instrument 2 digital input level and is used to compensate for overly soft or loud instruments. IMPORTANT! Setting Trim to a value higher (or lower) than 0.0 dB effectively boosts (or attenuates) your signal into the first block, which may result in a less than accurate response. Or you might like it.",
+        "Inst2 Gate": "Turns the Input block's built-in noise gate for Instrument 2 on and off.",
+        "2 Thresh": "Sets the noise gate's Threshold. The gate \"opens\" when the signal's level exceeds the Threshold, to let audio pass through. The gate \"closes\" when the signal's level drops below the Threshold. Adjust Threshold so only softer, unwanted signals (such as noise or hum) are gated.",
+        "2 Decay": "Controls the length of time it takes for the open noise gate to close once the signal drops below the Threshold. Increase Decay if you want the gate to gradually lower the signal instead of chopping it off abruptly."
+    }
+}

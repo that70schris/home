@@ -1,0 +1,11 @@
+{
+    "category": "distortion",
+    "model_id": 172,
+    "model_sym": "ModelID::kDistVerminDistStereo",
+    "display_name": "Vermin Dist",
+    "parameters-en": {
+        "Gain": "Controls the amount of distortion applied to the signal.",
+        "Filter": "Applies a filter which gives you brighter tone at lower settings, and darker tone at higher settings.",
+        "Level": "Sets the overall level of the block."
+    }
+}

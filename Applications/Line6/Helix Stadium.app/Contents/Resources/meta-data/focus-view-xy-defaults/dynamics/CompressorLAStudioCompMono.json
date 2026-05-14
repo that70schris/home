@@ -1,0 +1,76 @@
+{
+    "modelName": "LA Studio Comp",
+    "params": {
+        "PeakReduction": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Gain": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Type": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "Emphasis": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Classic Studio",
+            "PeakReduction": 0.7000000476837158,
+            "Gain": 0.6100000143051147,
+            "Type": false,
+            "Emphasis": 0.2999999523162842,
+            "Mix": 0.7000000476837158,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Studio Polish",
+            "PeakReduction": 0.5,
+            "Gain": 0.4500000476837158,
+            "Type": false,
+            "Emphasis": 0.2999999523162842,
+            "Mix": 0.3999999761581421,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Subtle Limiter",
+            "PeakReduction": 0.5,
+            "Gain": 0.3999999761581421,
+            "Type": true,
+            "Emphasis": 0.25,
+            "Mix": 0.6000000238418579,
+            "Level": 0.5
+        },
+        "x_max_y_min": {
+            "name": "Parallel Comp",
+            "PeakReduction": 0.7999999523162842,
+            "Gain": 0.6000000238418579,
+            "Type": false,
+            "Emphasis": 0.10000002384185791,
+            "Mix": 0.5,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Thick Squish",
+            "PeakReduction": 1.0,
+            "Gain": 0.7000000476837158,
+            "Type": false,
+            "Emphasis": 0.10000002384185791,
+            "Mix": 1.0,
+            "Level": -3.5
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "category": "filter",
+    "model_id": 342,
+    "model_sym": "ModelID::kFM4VoiceBox",
+    "display_name": "Voice Box",
+    "parameters-en": {
+        "Speed": "Controls how long it takes to \"speak\" from one vowel to the other.",
+        "Start": "Selects the sound of the starting vowel.",
+        "End": "Selects the sound of the ending vowel.",
+        "Auto": "Selects one of four sequences that automatically shift between the Start and End vowels in different ways, at the speed set by the Speed knob.",
+        "Mix": "Controls the balance between the filtered and dry signals. At 0%, no filtered signal is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

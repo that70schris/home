@@ -1,0 +1,67 @@
+{
+    "modelName": "Double Take",
+    "params": {
+        "Doubles": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Slop": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Sensitivity": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Dry Level": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Wet Level": {
+            "id": 5,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Double Up",
+            "Doubles": 0,
+            "Slop": 0.6,
+            "Sensitivity": 0.72,
+            "Dry Level": 0.0,
+            "Wet Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Detune",
+            "Doubles": 0,
+            "Slop": 0.38,
+            "Sensitivity": 0.9,
+            "Dry Level": -8.8,
+            "Wet Level": -6.2
+        },
+        "x_min_y_max": {
+            "name": "Double Flange",
+            "Doubles": 1,
+            "Slop": 0.47,
+            "Sensitivity": 0.1,
+            "Dry Level": -4.8,
+            "Wet Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Dreamy",
+            "Doubles": 2,
+            "Slop": 0.23,
+            "Sensitivity": 0.15,
+            "Dry Level": -11.9,
+            "Wet Level": -0.400002
+        },
+        "x_max_y_max": {
+            "name": "Wobbly",
+            "Doubles": 2,
+            "Slop": 0.85,
+            "Sensitivity": 0.9,
+            "Dry Level": -14.9,
+            "Wet Level": 0.0
+        }
+    }
+}

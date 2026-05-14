@@ -1,0 +1,121 @@
+{
+    "modelName": "Carillon",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Presence": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Boost": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "HumSwitch": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "Bias": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "BiasX": {
+            "id": 11,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Break Up",
+            "Drive": 0.6600000858306885,
+            "Bass": 0.25999999046325684,
+            "Mid": 0.5699999332427979,
+            "Treble": 0.6000000238418579,
+            "Presence": 0.2999999523162842,
+            "ChVol": 0.5,
+            "Boost": 0.0,
+            "Sag": 0.08000004291534424,
+            "HumSwitch": false,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Clean",
+            "Drive": 0.38999998569488525,
+            "Bass": 0.33000004291534424,
+            "Mid": 0.43000006675720215,
+            "Treble": 0.559999942779541,
+            "Presence": 0.10000002384185791,
+            "ChVol": 0.57,
+            "Boost": 0.0,
+            "Sag": 0.0,
+            "HumSwitch": false,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_min_y_max": {
+            "name": "Snappy EOB",
+            "Drive": 0.5499999523162842,
+            "Bass": 0.3500000238418579,
+            "Mid": 0.7000000476837158,
+            "Treble": 0.6000000238418579,
+            "Presence": 0.4500000476837158,
+            "ChVol": 0.5,
+            "Boost": 0.0,
+            "Sag": 0.5,
+            "HumSwitch": false,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_max_y_min": {
+            "name": "Driven",
+            "Drive": 0.8500000238418579,
+            "Bass": 0.2200000286102295,
+            "Mid": 0.48000001907348633,
+            "Treble": 0.5799999237060547,
+            "Presence": 0.24000000953674316,
+            "ChVol": 0.5,
+            "Boost": 0.0,
+            "Sag": 0.12999999523162842,
+            "HumSwitch": false,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_max_y_max": {
+            "name": "Lead",
+            "Drive": 0.7400000095367432,
+            "Bass": 0.2200000286102295,
+            "Mid": 0.5,
+            "Treble": 0.1499999761581421,
+            "Presence": 0.059999942779541016,
+            "ChVol": 0.45,
+            "Boost": 0.36000001430511475,
+            "Sag": 0.12999999523162842,
+            "HumSwitch": false,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        }
+    }
+}

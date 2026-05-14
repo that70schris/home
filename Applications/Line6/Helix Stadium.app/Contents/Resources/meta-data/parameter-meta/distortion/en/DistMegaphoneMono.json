@@ -1,0 +1,14 @@
+{
+    "category": "distortion",
+    "model_id": 264,
+    "model_sym": "ModelID::kDistMegaphoneMono",
+    "display_name": "Megaphone",
+    "parameters-en": {
+        "Grit": "Determines how old and distorted the megaphone sounds.",
+        "Tone": "Controls the overall tonal balance of the effect.",
+        "Focus": "Adds more resonance to the effected signal.",
+        "Space": "Adds a bit of echo to the effected signal.",
+        "Mix": "Controls the blend between the effected and the dry signal. At 0%, no effect is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

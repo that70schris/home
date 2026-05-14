@@ -1,0 +1,85 @@
+{
+    "modelName": "Deluxe Comp",
+    "params": {
+        "Threshold": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Ratio": {
+            "id": 2,
+            "behavior": "quantize"
+        },
+        "Attack": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Release": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Knee": {
+            "id": 7,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Always On",
+            "Threshold": -31.899999618530273,
+            "Ratio": 1,
+            "Attack": 0.027000069618225098,
+            "Release": 0.6359999179840088,
+            "Mix": 0.8600000143051147,
+            "Level": 6.899993896484375,
+            "Knee": 5.299999713897705
+        },
+        "x_min_y_min": {
+            "name": "Gentle",
+            "Threshold": -20.299999237060547,
+            "Ratio": 0,
+            "Attack": 0.027000069618225098,
+            "Release": 0.6359999179840088,
+            "Mix": 0.690000057220459,
+            "Level": 0.0,
+            "Knee": 5.299999713897705
+        },
+        "x_min_y_max": {
+            "name": "Warm Hug",
+            "Threshold": -27.200000762939453,
+            "Ratio": 1,
+            "Attack": 0.08100008964538574,
+            "Release": 0.32799994945526123,
+            "Mix": 0.7000000476837158,
+            "Level": 0.40000152587890625,
+            "Knee": 5.199999809265137
+        },
+        "x_max_y_min": {
+            "name": "Snappy",
+            "Threshold": -37.599998474121094,
+            "Ratio": 2,
+            "Attack": 0.027000069618225098,
+            "Release": 0.9119999408721924,
+            "Mix": 0.9600000381469727,
+            "Level": 9.400001525878906,
+            "Knee": 5.299999713897705
+        },
+        "x_max_y_max": {
+            "name": "Smashed",
+            "Threshold": -54.900001525878906,
+            "Ratio": 4,
+            "Attack": 0.00010001659393310547,
+            "Release": 2.260999917984009,
+            "Mix": 1.0,
+            "Level": 30.099998474121094,
+            "Knee": 18.700000762939453
+        }
+    }
+}

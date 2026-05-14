@@ -1,0 +1,130 @@
+{
+    "modelName": "Voltage Queen",
+    "params": {
+        "Drive 1": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Drive Trem": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Tone": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Hum": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Ripple": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Bias": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "BiasX": {
+            "id": 12,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Victory!",
+            "Drive 1": 0.28,
+            "Drive Trem": 0.25,
+            "Tone": 0.62,
+            "Bass": 0.5,
+            "Treble": 0.55,
+            "ChVol": 0.82,
+            "Master": 0.85,
+            "Sag": 0.5,
+            "Hum": 0.25,
+            "Ripple": 0.5,
+            "Bias": 0.62,
+            "BiasX": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Spongy",
+            "Drive 1": 0.71,
+            "Drive Trem": 0.69,
+            "Tone": 0.4,
+            "Bass": 0.44,
+            "Treble": 0.94,
+            "ChVol": 0.82,
+            "Master": 0.68,
+            "Sag": 0.5,
+            "Hum": 0.48,
+            "Ripple": 0.49,
+            "Bias": 0.62,
+            "BiasX": 0.5
+        },
+        "x_min_y_max": {
+            "name": "Breakin'",
+            "Drive 1": 0.45,
+            "Drive Trem": 0.45,
+            "Tone": 0.93,
+            "Bass": 0.3,
+            "Treble": 0.55,
+            "ChVol": 0.82,
+            "Master": 0.73,
+            "Sag": 0.5,
+            "Hum": 0.48,
+            "Ripple": 0.49,
+            "Bias": 0.62,
+            "BiasX": 0.5
+        },
+        "x_max_y_min": {
+            "name": "Top End",
+            "Drive 1": 0.23,
+            "Drive Trem": 0.24,
+            "Tone": 0.95,
+            "Bass": 0.68,
+            "Treble": 0.79,
+            "ChVol": 0.88,
+            "Master": 0.84,
+            "Sag": 0.12,
+            "Hum": 0.48,
+            "Ripple": 0.49,
+            "Bias": 0.62,
+            "BiasX": 0.5
+        },
+        "x_max_y_max": {
+            "name": "Woofy",
+            "Drive 1": 1.0,
+            "Drive Trem": 1.0,
+            "Tone": 0.0599999,
+            "Bass": 0.68,
+            "Treble": 0.55,
+            "ChVol": 0.82,
+            "Master": 0.68,
+            "Sag": 0.5,
+            "Hum": 0.48,
+            "Ripple": 0.49,
+            "Bias": 0.62,
+            "BiasX": 0.5
+        }
+    }
+}

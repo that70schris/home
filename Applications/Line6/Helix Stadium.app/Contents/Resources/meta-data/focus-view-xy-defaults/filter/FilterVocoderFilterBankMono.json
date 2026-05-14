@@ -1,0 +1,58 @@
+{
+    "modelName": "Vocoder",
+    "params": {
+        "ModulatorGain": {
+            "id": 1,
+            "behavior": "exclude"
+        },
+        "Attack": {
+            "id": 2,
+            "behavior": "exclude"
+        },
+        "Decay": {
+            "id": 3,
+            "behavior": "exclude"
+        },
+        "Level": {
+            "id": 4,
+            "behavior": "exclude"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "",
+            "ModulatorGain": 0.00000,
+            "Attack": 0.100000,
+            "Decay": 0.100000,
+            "Level": 0.00000
+        },
+        "x_min_y_min": {
+            "name": "",
+            "ModulatorGain": 0.00000,
+            "Attack": 0.100000,
+            "Decay": 0.100000,
+            "Level": 0.00000
+        },
+        "x_min_y_max": {
+            "name": "",
+            "ModulatorGain": 0.00000,
+            "Attack": 0.100000,
+            "Decay": 0.100000,
+            "Level": 0.00000
+        },
+        "x_max_y_min": {
+            "name": "",
+            "ModulatorGain": 0.00000,
+            "Attack": 0.100000,
+            "Decay": 0.100000,
+            "Level": 0.00000
+        },
+        "x_max_y_max": {
+            "name": "",
+            "ModulatorGain": 0.00000,
+            "Attack": 0.100000,
+            "Decay": 0.100000,
+            "Level": 0.00000
+        }
+    }
+}

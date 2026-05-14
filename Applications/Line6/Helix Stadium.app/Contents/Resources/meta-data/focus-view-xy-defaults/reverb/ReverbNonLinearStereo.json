@@ -1,0 +1,193 @@
+{
+    "modelName": "Nonlinear",
+    "params": {
+        "Decay": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Predelay": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Shape": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "Late Dry": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Diffusion": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "LowCut": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "HighCut": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Mod": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Rate": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "Spread": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "TempoSync1": {
+            "id": 25,
+            "behavior": "quantize"
+        },
+        "SyncSelect1": {
+            "id": 26,
+            "behavior": "quantize"
+        },
+        "TempoSync2": {
+            "id": 27,
+            "behavior": "quantize"
+        },
+        "SyncSelect2": {
+            "id": 28,
+            "behavior": "quantize"
+        },
+        "Width": {
+            "id": 29,
+            "behavior": "interpolate"
+        },
+        "Manual": {
+            "id": 30,
+            "behavior": "interpolate"
+        },
+        "RoomSize": {
+            "id": 31,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Edges",
+            "Decay": 1.0,
+            "Predelay": 0.3580000400543213,
+            "Shape": 3,
+            "Late Dry": 0.3400000333786011,
+            "Mix": 0.31999993324279785,
+            "Level": 0.0,
+            "Diffusion": 0.26999998092651367,
+            "LowCut": 233.99998474121094,
+            "HighCut": 8500.0,
+            "Mod": 0.31999993324279785,
+            "Rate": 0.7000000476837158,
+            "Spread": 1.0,
+            "TempoSync1": true,
+            "SyncSelect1": 14,
+            "TempoSync2": false,
+            "SyncSelect2": 6,
+            "Width": 0.318000,
+            "Manual": 0.362000,
+            "RoomSize": 2
+        },
+        "x_min_y_min": {
+            "name": "Slap",
+            "Decay": 1.0,
+            "Predelay": 0.0,
+            "Shape": 0,
+            "Late Dry": 0.0,
+            "Mix": 0.1499999761581421,
+            "Level": 0.0,
+            "Diffusion": 0.8799999952316284,
+            "LowCut": 80.0,
+            "HighCut": 11499.9990234375,
+            "Mod": 0.5,
+            "Rate": 0.06599998474121094,
+            "Spread": 1.0,
+            "TempoSync1": true,
+            "SyncSelect1": 9,
+            "TempoSync2": false,
+            "SyncSelect2": 6,
+            "Width": 0.318000,
+            "Manual": 0.362000,
+            "RoomSize": 2
+        },
+        "x_min_y_max": {
+            "name": "Reflection",
+            "Decay": 1.0,
+            "Predelay": 0.003000020980834961,
+            "Shape": 2,
+            "Late Dry": 0.2200000286102295,
+            "Mix": 0.26999998092651367,
+            "Level": 0.0,
+            "Diffusion": 0.7599999904632568,
+            "LowCut": 80.0,
+            "HighCut": 6900.0,
+            "Mod": 0.8299999237060547,
+            "Rate": 0.0700000524520874,
+            "Spread": 1.0,
+            "TempoSync1": true,
+            "SyncSelect1": 1,
+            "TempoSync2": false,
+            "SyncSelect2": 6,
+            "Width": 0.318000,
+            "Manual": 0.362000,
+            "RoomSize": 2
+        },
+        "x_max_y_min": {
+            "name": "Wobble Slap",
+            "Decay": 1.0,
+            "Predelay": 0.008000016212463379,
+            "Shape": 6,
+            "Late Dry": 0.0700000524520874,
+            "Mix": 0.2799999713897705,
+            "Level": 0.0,
+            "Diffusion": 0.8399999141693115,
+            "LowCut": 80.0,
+            "HighCut": 6600.0,
+            "Mod": 0.43000006675720215,
+            "Rate": 0.8500000238418579,
+            "Spread": 1.0,
+            "TempoSync1": true,
+            "SyncSelect1": 9,
+            "TempoSync2": false,
+            "SyncSelect2": 6,
+            "Width": 0.318000,
+            "Manual": 0.362000,
+            "RoomSize": 2
+        },
+        "x_max_y_max": {
+            "name": "Pad",
+            "Decay": 1.0,
+            "Predelay": 0.22099995613098145,
+            "Shape": 6,
+            "Late Dry": 0.2200000286102295,
+            "Mix": 0.28999996185302734,
+            "Level": 0.0,
+            "Diffusion": 0.7599999904632568,
+            "LowCut": 80.0,
+            "HighCut": 6900.0,
+            "Mod": 0.8299999237060547,
+            "Rate": 0.16999995708465576,
+            "Spread": 1.0,
+            "TempoSync1": true,
+            "SyncSelect1": 1,
+            "TempoSync2": false,
+            "SyncSelect2": 6,
+            "Width": 0.318000,
+            "Manual": 0.362000,
+            "RoomSize": 2
+        }
+    }
+}

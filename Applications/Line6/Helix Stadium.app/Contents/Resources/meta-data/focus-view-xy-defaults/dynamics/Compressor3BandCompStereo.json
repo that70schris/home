@@ -1,0 +1,139 @@
+{
+    "modelName": "3-Band Comp",
+    "params": {
+        "Ratio": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "Attack": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Release": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Lo X Freq": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Hi X Freq": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Lo Thresh": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Lo Gain": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Mid Thresh": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Mid Gain": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Hi Thresh": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "Hi Gain": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "Detector": {
+            "id": 13,
+            "behavior": "exclude"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Balance\/Focus",
+            "Ratio": 2,
+            "Attack": 0.0350000225007534,
+            "Release": 0.20000000298023224,
+            "Lo X Freq": 400.0,
+            "Hi X Freq": 3000.0,
+            "Level": -0.5,
+            "Lo Thresh": -25.0,
+            "Lo Gain": 4.0,
+            "Mid Thresh": -28.60000228881836,
+            "Mid Gain": 4.0,
+            "Hi Thresh": -29.5,
+            "Hi Gain": 4.0,
+            "Detector": true
+        },
+        "x_min_y_min": {
+            "name": "Minor Squeeze",
+            "Ratio": 1,
+            "Attack": 0.025000018998980522,
+            "Release": 0.5209999680519104,
+            "Lo X Freq": 341.0,
+            "Hi X Freq": 4200.0,
+            "Level": -3.1999969482421875,
+            "Lo Thresh": -17.199996948242188,
+            "Lo Gain": 4.0,
+            "Mid Thresh": -19.099998474121094,
+            "Mid Gain": 4.0,
+            "Hi Thresh": -31.700000762939453,
+            "Hi Gain": 4.0,
+            "Detector": true
+        },
+        "x_min_y_max": {
+            "name": "Lift Top End",
+            "Ratio": 3,
+            "Attack": 0.0350000225007534,
+            "Release": 0.16999995708465576,
+            "Lo X Freq": 1000.0,
+            "Hi X Freq": 8500.0,
+            "Level": 2.2000045776367188,
+            "Lo Thresh": -23.800003051757812,
+            "Lo Gain": 0.0,
+            "Mid Thresh": -29.799999237060547,
+            "Mid Gain": 2.4999961853027344,
+            "Hi Thresh": -9.0,
+            "Hi Gain": 10.0,
+            "Detector": true
+        },
+        "x_max_y_min": {
+            "name": "Tame Top End",
+            "Ratio": 3,
+            "Attack": 0.0350000225007534,
+            "Release": 0.20000000298023224,
+            "Lo X Freq": 260.0,
+            "Hi X Freq": 2000.0,
+            "Level": 2.0,
+            "Lo Thresh": -17.199996948242188,
+            "Lo Gain": 0.0,
+            "Mid Thresh": -18.800003051757812,
+            "Mid Gain": 0.0,
+            "Hi Thresh": -42.5,
+            "Hi Gain": -1.0,
+            "Detector": true
+        },
+        "x_max_y_max": {
+            "name": "Squashed",
+            "Ratio": 6,
+            "Attack": 0.006000017747282982,
+            "Release": 1.1009999513626099,
+            "Lo X Freq": 350.0,
+            "Hi X Freq": 4000.0,
+            "Level": 7.200004577636719,
+            "Lo Thresh": -28.5,
+            "Lo Gain": 4.0,
+            "Mid Thresh": -26.199996948242188,
+            "Mid Gain": -0.5,
+            "Hi Thresh": -40.29999923706055,
+            "Hi Gain": 5.100006103515625,
+            "Detector": true
+        }
+    }
+}

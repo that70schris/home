@@ -1,0 +1,12 @@
+{
+    "category": "distortion",
+    "model_id": 510,
+    "model_sym": "ModelID::kDistRegalBassDIStereo",
+    "display_name": "Regal Bass DI",
+    "parameters-en": {
+        "Bass": "Adds a 150Hz bass boost to the signal. 0.0 is flat.",
+        "Treble": "Adds a 3.5kHz treble boost to the signal. 0.0 is flat.",
+        "Low Cut": "Applies a 90Hz low cut (high pass) filter to the signal (6dB/octave).",
+        "Volume": "Controls the overall output level of the DI."
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "modelName": "Vetta Comp",
+    "params": {
+        "Sens": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 2,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Boost",
+            "Sens": 0.2,
+            "Level": 1.0
+        },
+        "x_min_y_min": {
+            "name": "Gentle",
+            "Sens": 0.21,
+            "Level": 0.73
+        },
+        "x_min_y_max": {
+            "name": "Clamp",
+            "Sens": 0.29,
+            "Level": 0.82
+        },
+        "x_max_y_min": {
+            "name": "Spank",
+            "Sens": 0.4,
+            "Level": 0.77
+        },
+        "x_max_y_max": {
+            "name": "Squash",
+            "Sens": 0.88,
+            "Level": 0.57
+        }
+    }
+}

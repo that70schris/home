@@ -1,0 +1,13 @@
+{
+    "category": "distortion",
+    "model_id": 359,
+    "model_sym": "ModelID::kDM4JumboFuzz",
+    "display_name": "Jumbo Fuzz",
+    "parameters-en": {
+        "Drive": "Controls the amount of fuzz applied to the signal.",
+        "Bass": "Controls the low frequency EQ of the fuzz.",
+        "Mid": "Controls the midrange frequency EQ of the fuzz.",
+        "Treble": "Controls the high frequency EQ of the fuzz.",
+        "Output": "Sets the overall level of the block."
+    }
+}

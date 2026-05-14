@@ -1,0 +1,25 @@
+
+<xg>
+    <panel_widget height="240" id="1" left="0" top="0" width="480">
+        <anchor_pos bottom="0" left="0" right="0" top="0"/>
+        <bg_color>0x31A0A0A0</bg_color>
+        <image>321</image>
+        <script_widget height="280" id="pind" left="400" name="PIN Dialog" top="204" width="480">
+            <relative_pos x="50" y="50"/>
+            <visible>no</visible>
+            <bg_color>0xFFFFFFFF</bg_color>
+            <script>dialog_remoteaccess_pin.xml</script>
+        </script_widget>
+        <text_widget height="20" id="msgt" left="0" top="334" width="1280">
+            <anchor_pos left="0" right="0"/>
+            <relative_pos y="50"/>
+            <bg_color>0x00000000</bg_color>
+            <text>
+                <label>Remote access has been disabled on this Helix Stadium device.</label>
+                <font name="Helvetica" size="16"/>
+                <align horz="center" vert="middle"/>
+                <text_color>0xFFFFFFFF</text_color>
+            </text>
+        </text_widget>
+    </panel_widget>
+</xg>

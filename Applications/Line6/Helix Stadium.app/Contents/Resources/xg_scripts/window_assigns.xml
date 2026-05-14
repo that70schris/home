@@ -1,0 +1,16 @@
+
+<xg>
+    <panel_widget height="480" id="1" left="0" top="0" width="640">
+        <bg_color>0xFF101010</bg_color>
+        <text_widget height="142" id="1" left="197" top="169" width="246">
+            <relative_pos x="50" y="50"/>
+            <bg_color>0x00000000</bg_color>
+            <text>
+                <label>Assignments</label>
+                <font name="Inter Display" size="24"/>
+                <align horz="center" vert="middle"/>
+                <text_color>0xFFA9A9A9</text_color>
+            </text>
+        </text_widget>
+    </panel_widget>
+</xg>

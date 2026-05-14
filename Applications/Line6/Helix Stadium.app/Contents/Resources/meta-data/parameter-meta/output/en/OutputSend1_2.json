@@ -1,0 +1,11 @@
+{
+    "category": "output",
+    "model_id": 772,
+    "model_sym": "ModelID::kOutputSend1_2",
+    "display_name": "Send 1/2",
+    "parameters-en": {
+        "Pan": "Controls the balance between the Output's left and right channels. When set to L 100, signal is only heard from the left output; when set to R 100, signal is only heard from the right output.",
+        "Level": "Sets the overall level of the Output block.",
+        "PeakEventPeriodMs": ""
+    }
+}

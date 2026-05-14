@@ -1,0 +1,67 @@
+{
+    "modelName": "Sub Oct Fuzz",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Sub": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Output": {
+            "id": 5,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Distorted",
+            "Drive": 0.56,
+            "Bass": 0.6,
+            "Sub": 0.5,
+            "Treble": 0.63,
+            "Output": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Grit",
+            "Drive": 0.2,
+            "Bass": 0.5,
+            "Sub": 0.1,
+            "Treble": 0.63,
+            "Output": 0.7
+        },
+        "x_min_y_max": {
+            "name": "Boosted",
+            "Drive": 0.38,
+            "Bass": 0.6,
+            "Sub": 0.15,
+            "Treble": 0.63,
+            "Output": 0.6
+        },
+        "x_max_y_min": {
+            "name": "Heavy Sub",
+            "Drive": 0.62,
+            "Bass": 0.65,
+            "Sub": 0.65,
+            "Treble": 0.74,
+            "Output": 0.5
+        },
+        "x_max_y_max": {
+            "name": "Decimated",
+            "Drive": 1.0,
+            "Bass": 0.5,
+            "Sub": 1.0,
+            "Treble": 0.63,
+            "Output": 0.5
+        }
+    }
+}

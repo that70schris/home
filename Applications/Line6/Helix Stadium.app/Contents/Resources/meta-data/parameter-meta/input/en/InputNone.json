@@ -1,0 +1,12 @@
+{
+    "category": "input",
+    "model_id": 757,
+    "model_sym": "ModelID::kInputNone",
+    "display_name": "None",
+    "parameters-en": {
+        "Trim": "",
+        "Gate": "",
+        "Threshold": "",
+        "Decay": ""
+    }
+}

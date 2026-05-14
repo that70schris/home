@@ -1,0 +1,13 @@
+{
+    "category": "distortion",
+    "model_id": 352,
+    "model_sym": "ModelID::kDM4Screamer",
+    "display_name": "Screamer",
+    "parameters-en": {
+        "Drive": "Controls the amount of distortion applied to the signal.",
+        "Bass": "Controls the low frequency EQ of the distortion.",
+        "Tone": "Controls the overall tonal balance of the distortion. Lower values are darker and higher values are brighter.",
+        "Treble": "Controls the high frequency EQ of the distortion.",
+        "Output": "Sets the overall level of the block."
+    }
+}

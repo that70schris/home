@@ -1,0 +1,15 @@
+{
+    "category": "filter",
+    "model_id": 215,
+    "model_sym": "ModelID::kFM4SpinCycle",
+    "display_name": "Spin Cycle",
+    "parameters-en": {
+        "Speed": "Controls the speed at which the wah effects sweep, or how fast the effect spins and cycles.",
+        "Freq": "Controls the range of the filter emphasis in the wah tone.",
+        "Q": "Controls the resonance or width of the frequency band affected by the filter.",
+        "Vol Sens": "Controls how much input signal affects the speed of the effect. At 0%, the Speed is fixed; at higher values, Speed increases while playing and slows down as the signal decays.",
+        "Mix": "Controls the balance between the filtered and dry signals. At 0%, no filtered signal is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "modelName": "Minotaur",
+    "params": {
+        "Gain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Tone": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 3,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Sweet Spot",
+            "Gain": 0.41999995708465576,
+            "Tone": 0.5299999713897705,
+            "Level": 0.6000000238418579
+        },
+        "x_min_y_min": {
+            "name": "Is This On?",
+            "Gain": 0.09000003337860107,
+            "Tone": 0.5299999713897705,
+            "Level": 0.6399999856948853
+        },
+        "x_min_y_max": {
+            "name": "Mid Gain Drive",
+            "Gain": 0.25,
+            "Tone": 0.3799999952316284,
+            "Level": 0.6399999856948853
+        },
+        "x_max_y_min": {
+            "name": "Chewy Rhythm",
+            "Gain": 0.7000000476837158,
+            "Tone": 0.12999999523162842,
+            "Level": 0.7300000190734863
+        },
+        "x_max_y_max": {
+            "name": "Grilled Unicorn",
+            "Gain": 0.9900000095367432,
+            "Tone": 0.3799999952316284,
+            "Level": 0.7300000190734863
+        }
+    }
+}

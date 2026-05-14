@@ -1,0 +1,58 @@
+{
+    "modelName": "Valve Driver",
+    "params": {
+        "Gain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 4,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Drive",
+            "Gain": 0.56,
+            "Bass": 0.55,
+            "Treble": 0.45,
+            "Level": 0.57
+        },
+        "x_min_y_min": {
+            "name": "Boost",
+            "Gain": 0.3,
+            "Bass": 0.55,
+            "Treble": 0.39,
+            "Level": 0.66
+        },
+        "x_min_y_max": {
+            "name": "Chunky",
+            "Gain": 0.76,
+            "Bass": 0.55,
+            "Treble": 0.22,
+            "Level": 0.46
+        },
+        "x_max_y_min": {
+            "name": "Lead Boost",
+            "Gain": 0.76,
+            "Bass": 0.45,
+            "Treble": 0.55,
+            "Level": 0.43
+        },
+        "x_max_y_max": {
+            "name": "Bitey",
+            "Gain": 0.94,
+            "Bass": 0.55,
+            "Treble": 0.75,
+            "Level": 0.45
+        }
+    }
+}

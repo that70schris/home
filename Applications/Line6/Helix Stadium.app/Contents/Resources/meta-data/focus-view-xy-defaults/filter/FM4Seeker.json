@@ -1,0 +1,94 @@
+{
+    "modelName": "Seeker",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Freq": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Q": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Steps": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Seq Wet Wah",
+            "Speed": 5.8,
+            "Freq": 0.0,
+            "Q": 0.39,
+            "Steps": 8,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "16ths",
+            "Speed": 6.9,
+            "Freq": 0.56,
+            "Q": 0.73,
+            "Steps": 8,
+            "Mix": 0.81,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Trippin'",
+            "Speed": 2.6,
+            "Freq": 0.38,
+            "Q": 0.85,
+            "Steps": 3,
+            "Mix": 0.66,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Beep Bop",
+            "Speed": 5.9,
+            "Freq": 0.96,
+            "Q": 0.85,
+            "Steps": 4,
+            "Mix": 0.55,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Tronnic",
+            "Speed": 10.5,
+            "Freq": 0.02,
+            "Q": 0.83,
+            "Steps": 9,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

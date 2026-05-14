@@ -1,0 +1,94 @@
+{
+    "modelName": "Low Res",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Tone": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Res": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Low-ish Res",
+            "Time": 0.40299999713897705,
+            "Feedback": 0.41999998688697815,
+            "Tone": 0.41999998688697815,
+            "Res": 1.0,
+            "Mix": 0.6600000262260437,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        },
+        "x_min_y_min": {
+            "name": "Dark & Dingy",
+            "Time": 0.40299999713897705,
+            "Feedback": 0.6000000238418579,
+            "Tone": 0.2199999988079071,
+            "Res": 0.3400000035762787,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 8,
+            "TempoSync1": true
+        },
+        "x_min_y_max": {
+            "name": "Crispy Slapback",
+            "Time": 0.40299999713897705,
+            "Feedback": 0.0,
+            "Tone": 1.0,
+            "Res": 0.0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 9,
+            "TempoSync1": true
+        },
+        "x_max_y_min": {
+            "name": "Dotted Dirt",
+            "Time": 0.40299999713897705,
+            "Feedback": 0.2800000011920929,
+            "Tone": 0.5799999833106995,
+            "Res": 0.6800000071525574,
+            "Mix": 0.4000000059604645,
+            "Level": 0.0,
+            "SyncSelect1": 8,
+            "TempoSync1": true
+        },
+        "x_max_y_max": {
+            "name": "Resonance",
+            "Time": 0.40299999713897705,
+            "Feedback": 0.7900000214576721,
+            "Tone": 1.0,
+            "Res": 0.800000011920929,
+            "Mix": 1.0,
+            "Level": -3.799999237060547,
+            "SyncSelect1": 18,
+            "TempoSync1": true
+        }
+    }
+}

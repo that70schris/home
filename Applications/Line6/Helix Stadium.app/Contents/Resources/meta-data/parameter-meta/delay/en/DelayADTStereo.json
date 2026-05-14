@@ -1,0 +1,27 @@
+{
+    "category": "delay",
+    "model_id": 95,
+    "model_sym": "ModelID::kDelayADTStereo",
+    "display_name": "ADT",
+    "parameters-en": {
+        "Delay 1": "Adjusts the delay time of Deck 1. Delay 1 can go up to 20 ms and Delay 2 can go up to 200 ms.",
+        "Delay 2": "Adjusts the delay time of Deck 2. Delay 1 can go up to 20 ms and Delay 2 can go up to 200 ms.",
+        "WowFlutr1": "Controls how much warbly tape sound is heard from Deck 1.",
+        "WowFlutr2": "Controls how much warbly tape sound is heard from Deck 2.",
+        "Saturate1": "Adds analog tape saturation to Deck 1 and at high enough settings, distortion. At lower settings, it's great for simply warming up a tone.",
+        "Saturate2": "Adds analog tape saturation to Deck 2 and at high enough settings, distortion. At lower settings, it's great for simply warming up a tone.",
+        "Deck 1 Vol": "Sets the level of Deck 1. Deck 2 is a bit lower than Deck 1 by default.",
+        "Deck 2 Vol": "Sets the level of Deck 2. Deck 2 is a bit lower than Deck 1 by default.",
+        "Deck 2 Pol": "When set to \"Invert,\" inverts the polarity of Deck 2.",
+        "Mod Rate": "Controls the rate or speed of modulation applied to Deck 2.",
+        "Mod Depth": "Controls the depth or amount of modulation applied to Deck 2.",
+        "Level": "Sets the overall level of the block.",
+        "TapeSpeed": "Changes both the rate of the modulation applied by the WowFluttr control and the filtering response of the analog tape emulation.",
+        "Texture": "Adjusts the amount of the NAB tape EQ in the simulated tape path. When Saturation is set to 0.0, the texture is invisible. When Saturation is turned up, the texture will affect the tightness (or looseness) of the distortion.",
+        "Low Cut": "Applies a low cut (high pass) filter to the decks, letting you remove the effected signal below a certain frequency.",
+        "High Cut": "Applies a high cut (low pass) filter to the decks, letting you remove the effected signal above a certain frequency.",
+        "Deck 1 Pan": "Pans Deck 1 between the left and right channels.",
+        "Deck 2 Pan": "Pans Deck 2 between the left and right channels.",
+        "EnvThresh": "Sets the level above which engages the envelope. When on, picking harder can impart very slight pitch fluctuations by tweaking Deck 2's delay. Subtle, but fun."
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "category": "synth",
+    "model_id": 346,
+    "model_sym": "ModelID::kFM4Growler",
+    "display_name": "Growler",
+    "parameters-en": {
+        "Speed": "Controls the speed of the vibrato-y pulse width modulation.",
+        "Freq": "Controls the frequency of the filter, or how bright the synth gets when playing stronger notes.",
+        "Q": "Controls the resonance of the filter.",
+        "Pitch": "Sets the pitch over a 2 octave range.",
+        "Mix": "Controls the blend between the synth and the dry signal. At 0%, no synth is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

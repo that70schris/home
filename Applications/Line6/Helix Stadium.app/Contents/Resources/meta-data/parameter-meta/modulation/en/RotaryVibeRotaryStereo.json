@@ -1,0 +1,19 @@
+{
+    "category": "modulation",
+    "model_id": 159,
+    "model_sym": "ModelID::kRotaryVibeRotaryStereo",
+    "display_name": "Vibe Rotary",
+    "parameters-en": {
+        "Speed": "Selects Slow or Fast rotary speed. When changing values, the rotary speaker speed gradually changes, based on the RampTime value.",
+        "SlowSpeed": "Sets the rotary speed when Speed is set to \"Slow.\" When set to note values, SlowSpeed follows the system tempo.",
+        "FastSpeed": "Sets the rotary speed when Speed is set to \"Fast.\" When set to note values, FastSpeed follows the system tempo.",
+        "RampTime": "Determines how fast the rotary speed changes when Speed is changed from \"Slow\" to \"Fast\" or vice versa.",
+        "Drive": "Controls how much of the speaker's internal amp is overdriven. At higher values, the speaker imparts more of a gritty sound. Note that the original speaker Vibe Rotary is based on did not have an amplifier, so for the most authentic sound, leave this set to 0.0.",
+        "SpkrBlend": "Controls how much of the woofer speaker is heard vs. the horn speaker. Normally leave this set to \"Equal.\"",
+        "Mix": "Controls the blend between the rotary effect and the dry signal. At 0%, no rotary effect is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "Headroom": "Provides up to 12.0 dB of additional headroom.",
+        "TempoSync1": "",
+        "TempoSync2": ""
+    }
+}

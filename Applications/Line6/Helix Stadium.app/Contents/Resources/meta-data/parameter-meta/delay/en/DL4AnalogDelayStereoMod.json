@@ -1,0 +1,15 @@
+{
+    "category": "delay",
+    "model_id": 57,
+    "model_sym": "ModelID::kDL4AnalogDelayStereoMod",
+    "display_name": "Analog w/Mod",
+    "parameters-en": {
+        "Time": "Adjusts the length of time before the first repeat. When set to note values, Time follows the system tempo.",
+        "Feedback": "Controls the number of delay repeats. When set to 0%, only one repeat is heard. At high values, the Delay may begin to self-oscillate and squeal (perhaps in a good way).",
+        "ModSpeed": "Controls the speed or rate of the modulation applied to the repeats, from 0.05 Hz (0%) to 9.4 Hz (100%).",
+        "Depth": "Controls the depth or intensity of the modulation applied to the repeats.",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TSync1": ""
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "category": "dynamics",
+    "model_id": 5,
+    "model_sym": "ModelID::kGateHardGateStereo",
+    "display_name": "Hard Gate",
+    "parameters-en": {
+        "Open": "Sets the level above which the gate \"opens,\" or passes signal through.",
+        "Close": "Sets the level below which the gate \"closes,\" or stops signal from passing through.",
+        "Hold Time": "Adjusts the length of time after the signal drops below the Close threshold before it is gated. Increase Hold Time if your playing is chopped off too soon.",
+        "Decay": "Controls the length of time it takes for the open noise gate to close once the signal drops below the Close level/threshold. Increase Decay if you want the gate to gradually lower the signal instead of chopping it off abruptly.",
+        "Level": "Sets the overall level of the block."
+    }
+}

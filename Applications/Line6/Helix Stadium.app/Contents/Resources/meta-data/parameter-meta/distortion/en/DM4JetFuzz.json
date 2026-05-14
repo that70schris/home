@@ -1,0 +1,13 @@
+{
+    "category": "distortion",
+    "model_id": 350,
+    "model_sym": "ModelID::kDM4JetFuzz",
+    "display_name": "Jet Fuzz",
+    "parameters-en": {
+        "Drive": "Controls the amount of fuzz applied to the signal.",
+        "Feedback": "Controls the feedback of the built-in phaser.",
+        "Tone": "Controls the overall tonal balance of the fuzz. Lower values are drastically filtered while higher values are more full range.",
+        "Rate": "Controls the rate or speed of the built-in phaser.",
+        "Output": "Sets the overall level of the block."
+    }
+}

@@ -1,0 +1,175 @@
+{
+    "modelName": "German Xtra Red",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "PreEQ_Brt": {
+            "id": 5,
+            "behavior": "quantize"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Boost": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "Structure": {
+            "id": 8,
+            "behavior": "quantize"
+        },
+        "Master": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Presence": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Excursion_Depth": {
+            "id": 11,
+            "behavior": "quantize"
+        },
+        "Old_New": {
+            "id": 12,
+            "behavior": "quantize"
+        },
+        "Class_AB_A": {
+            "id": 13,
+            "behavior": "quantize"
+        },
+        "Sag": {
+            "id": 14,
+            "behavior": "interpolate"
+        },
+        "Ripple": {
+            "id": 15,
+            "behavior": "interpolate"
+        },
+        "Bias": {
+            "id": 16,
+            "behavior": "interpolate"
+        },
+        "BiasX": {
+            "id": 17,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Fire Breath",
+            "Drive": 0.81,
+            "Bass": 0.3,
+            "Mid": 0.46,
+            "Treble": 0.65,
+            "PreEQ_Brt": 0,
+            "ChVol": 0.46,
+            "Boost": true,
+            "Structure": true,
+            "Master": 0.4,
+            "Presence": 0.72,
+            "Excursion_Depth": 0,
+            "Old_New": true,
+            "Class_AB_A": true,
+            "Sag": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_min_y_min": {
+            "name": "My Emteevee",
+            "Drive": 0.48,
+            "Bass": 0.54,
+            "Mid": 0.63,
+            "Treble": 0.57,
+            "PreEQ_Brt": 2,
+            "ChVol": 0.42,
+            "Boost": true,
+            "Structure": true,
+            "Master": 0.4,
+            "Presence": 0.76,
+            "Excursion_Depth": 1,
+            "Old_New": false,
+            "Class_AB_A": false,
+            "Sag": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_min_y_max": {
+            "name": "Low Endy",
+            "Drive": 0.56,
+            "Bass": 0.69,
+            "Mid": 0.46,
+            "Treble": 0.31,
+            "PreEQ_Brt": 0,
+            "ChVol": 0.36,
+            "Boost": true,
+            "Structure": true,
+            "Master": 0.4,
+            "Presence": 0.72,
+            "Excursion_Depth": 1,
+            "Old_New": true,
+            "Class_AB_A": true,
+            "Sag": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_max_y_min": {
+            "name": "Hairrry",
+            "Drive": 0.32,
+            "Bass": 0.8,
+            "Mid": 0.63,
+            "Treble": 0.57,
+            "PreEQ_Brt": 1,
+            "ChVol": 0.42,
+            "Boost": true,
+            "Structure": false,
+            "Master": 0.4,
+            "Presence": 0.76,
+            "Excursion_Depth": 1,
+            "Old_New": false,
+            "Class_AB_A": false,
+            "Sag": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_max_y_max": {
+            "name": "Lead Me On",
+            "Drive": 0.83,
+            "Bass": 0.29,
+            "Mid": 0.63,
+            "Treble": 0.76,
+            "PreEQ_Brt": 2,
+            "ChVol": 0.36,
+            "Boost": true,
+            "Structure": true,
+            "Master": 0.36,
+            "Presence": 0.76,
+            "Excursion_Depth": 2,
+            "Old_New": true,
+            "Class_AB_A": true,
+            "Sag": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        }
+    }
+}

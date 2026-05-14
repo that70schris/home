@@ -1,0 +1,11 @@
+{
+    "category": "distortion",
+    "model_id": 378,
+    "model_sym": "ModelID::kDistAlpacaRougeMono",
+    "display_name": "Alpaca Rouge",
+    "parameters-en": {
+        "Drive": "Controls the amount of distortion applied to the signal.",
+        "High Cut": "Lower values apply more cut, which makes the sound a bit darker. Higher values apply less cut, which makes the sound a bit brighter.",
+        "Level": "Sets the overall level of the block."
+    }
+}

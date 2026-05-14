@@ -1,0 +1,13 @@
+{
+    "category": "distortion",
+    "model_id": 509,
+    "model_sym": "ModelID::kDistPrizeDriveStereo",
+    "display_name": "Prize Drive",
+    "parameters-en": {
+        "Drive": "Controls the amount of distortion.",
+        "Spectrum": "When turned down, mids are accentuated; when turned up, lows and highs are accentuated. Could almost be considered a \"scoop\" control.",
+        "Level": "Sets the overall level of the block.",
+        "Bass Cut": "When set to \"On,\" slightly attenuates low bass frequencies.",
+        "Voltage": "The original pedal can behave differently depending on how much power it receives. Choose 9V or 18V, the latter of which provides a bit more headroom."
+    }
+}

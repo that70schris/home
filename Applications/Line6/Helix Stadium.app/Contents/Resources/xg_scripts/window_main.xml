@@ -1,0 +1,58 @@
+
+<xg>
+    <panel_widget height="768" id="main" left="0" top="0" width="1024">
+        <anchor_pos bottom="0" left="0" right="0" top="0"/>
+        <bg_color>0xFF000000</bg_color>
+        <script_widget height="100" id="head" left="0" name="Header View" top="0" width="1">
+            <anchor_pos left="0" right="0" top="0"/>
+            <bg_color>0xFFFFFFFF</bg_color>
+            <script>view_header.xml</script>
+        </script_widget>
+        <script_widget height="0" id="home" left="0" name="Home-Edit View" top="100" width="1024">
+            <anchor_pos bottom="24" left="0" right="0" top="100"/>
+            <visible>no</visible>
+            <bg_color>0xFFFFFFFF</bg_color>
+            <script>view_home_edit.xml</script>
+        </script_widget>
+        <script_widget height="43" id="libr" left="0" name="Librarian View" top="100" width="180">
+            <anchor_pos bottom="24" left="0" right="0" top="100"/>
+            <visible>no</visible>
+            <bg_color>0xFFFFFFFF</bg_color>
+            <script>view_librarian.xml</script>
+        </script_widget>
+        <script_widget height="43" id="cmnd" left="0" name="Command Center View" top="100" width="180">
+            <anchor_pos bottom="24" left="0" right="0" top="100"/>
+            <visible>no</visible>
+            <bg_color>0xFFFFFFFF</bg_color>
+            <script>view_command_center.xml</script>
+        </script_widget>
+        <script_widget height="43" id="gleq" left="0" name="Global EQ View" top="100" width="180">
+            <anchor_pos bottom="24" left="0" right="0" top="100"/>
+            <visible>no</visible>
+            <bg_color>0xFFFFFFFF</bg_color>
+            <script>view_globaleq.xml</script>
+        </script_widget>
+        <script_widget height="0" id="disc" left="0" name="Disconnected View" top="100" width="1024">
+            <anchor_pos bottom="24" left="0" right="0" top="100"/>
+            <bg_color>0xFFFFFFFF</bg_color>
+            <script>view_disconnected.xml</script>
+        </script_widget>
+        <script_widget height="0" id="usbc" left="0" name="USB Connected View" top="100" width="1024">
+            <anchor_pos bottom="24" left="0" right="0" top="100"/>
+            <visible>no</visible>
+            <bg_color>0xFFFFFFFF</bg_color>
+            <script>view_usbconnected.xml</script>
+        </script_widget>
+        <script_widget height="0" id="rmta" left="0" name="Remote Access View" top="100" width="1024">
+            <anchor_pos bottom="24" left="0" right="0" top="100"/>
+            <visible>no</visible>
+            <bg_color>0xFFFFFFFF</bg_color>
+            <script>view_remoteaccess.xml</script>
+        </script_widget>
+        <script_widget height="24" id="stat" left="0" name="Status Bar View" top="143" width="180">
+            <anchor_pos bottom="0" left="0" right="0"/>
+            <bg_color>0xFFFFFFFF</bg_color>
+            <script>view_statusbar.xml</script>
+        </script_widget>
+    </panel_widget>
+</xg>

@@ -1,0 +1,19 @@
+{
+    "category": "reverb",
+    "model_id": 486,
+    "model_sym": "ModelID::kReverbDynBloomStereo",
+    "display_name": "Dynamic Bloom",
+    "parameters-en": {
+        "Decay": "Adjusts the decay of the reverb (0.1 sec ~ 45.0 sec, or Infinity).",
+        "Damping": "Determines the frequency above which the reverb will be absorbed. For example, if your hall is full of people wearing fake ocelot jumpsuits, more high frequencies would be absorbed than if the room were empty.",
+        "Mot Rate": "Motion Rate, or how fast the echoes' intensity changes.",
+        "Rise Time": "Controls how long it takes for the reverb to bloom. Choose Short, Medium (default), or Long.",
+        "Mix": "Controls the blend between the reverb and the dry signal. At 0%, no reverb is heard; at 100%, no dry signal is heard.",
+        "Low Freq": "Sets the frequency below which the Low Gain parameter is applied.",
+        "Low Gain": "Controls the reverb time for frequencies below the Low Freq value. Values below 0.0 dB mean the bass frequencies decay faster than the treble frequencies; values above 0.0 dB mean the bass frequencies decay slower than the treble frequencies.",
+        "Low Cut": "Applies a low cut (or high pass) filter to the reverb, letting you remove the effected signal below a certain frequency.",
+        "High Cut": "Applies a high cut (or low pass) filter to the reverb, letting you remove the effected signal above a certain frequency.",
+        "Ducking": "Ducking is applied to the reverb's feedback only, not the entire reverb. For example, if you set Decay high and strum one chord, you'll hear that chord sustain for a long time. While it's ringing out, hit another chord. Without ducking, both chords now sustain together. With Ducking set high, the first chord quickly fades out, and all you'll hear sustaining is the 2nd chord. This can help your bloom from turning into a sloppy mess.",
+        "Level": "Sets the overall level of the block."
+    }
+}

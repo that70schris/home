@@ -1,0 +1,121 @@
+{
+    "modelName": "Harmonic Flanger",
+    "params": {
+        "Rate": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Width": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Manual": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Enhance": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Harmonic": {
+            "id": 5,
+            "behavior": "quantize"
+        },
+        "Spread": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Headroom": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Chill",
+            "Rate": 0.54,
+            "Width": 0.64,
+            "Manual": 0.73,
+            "Enhance": 0.65,
+            "Harmonic": true,
+            "Spread": 0.54,
+            "Mix": 0.48,
+            "Level": 0.0,
+            "Headroom": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Mellow",
+            "Rate": 0.34,
+            "Width": 0.83,
+            "Manual": 0.3,
+            "Enhance": 0.42,
+            "Harmonic": true,
+            "Spread": 0.125,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "Headroom": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Buzz",
+            "Rate": 0.73,
+            "Width": 0.74,
+            "Manual": 0.73,
+            "Enhance": 0.61,
+            "Harmonic": true,
+            "Spread": 1.0,
+            "Mix": 0.48,
+            "Level": 0.0,
+            "Headroom": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Laid Back",
+            "Rate": 0.31,
+            "Width": 0.56,
+            "Manual": 0.47,
+            "Enhance": 0.64,
+            "Harmonic": true,
+            "Spread": 0.29,
+            "Mix": 0.48,
+            "Level": 0.0,
+            "Headroom": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Harsh",
+            "Rate": 0.93,
+            "Width": 0.92,
+            "Manual": 0.93,
+            "Enhance": 0.68,
+            "Harmonic": true,
+            "Spread": 1.0,
+            "Mix": 0.48,
+            "Level": 0.0,
+            "Headroom": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

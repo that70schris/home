@@ -1,0 +1,10 @@
+{
+    "category": "dynamics",
+    "model_id": 29,
+    "model_sym": "ModelID::kDM4VettaComp",
+    "display_name": "Vetta Comp",
+    "parameters-en": {
+        "Sens": "Adjusts the sensitivity of the compressor.",
+        "Level": "Sets the overall level of the block."
+    }
+}

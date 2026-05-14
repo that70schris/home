@@ -1,0 +1,58 @@
+{
+    "modelName": "Deranged Master",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 4,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "May Day",
+            "Drive": 0.77,
+            "Bass": 0.4,
+            "Treble": 0.44,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Bright",
+            "Drive": 0.61,
+            "Bass": 0.28,
+            "Treble": 0.59,
+            "Level": -6.2
+        },
+        "x_min_y_max": {
+            "name": "Top End",
+            "Drive": 0.53,
+            "Bass": 0.2,
+            "Treble": 0.59,
+            "Level": -1.9
+        },
+        "x_max_y_min": {
+            "name": "Fat Lead",
+            "Drive": 0.59,
+            "Bass": 1.0,
+            "Treble": 0.05,
+            "Level": -8.0
+        },
+        "x_max_y_max": {
+            "name": "Screamin'",
+            "Drive": 1.0,
+            "Bass": 0.41,
+            "Treble": 0.84,
+            "Level": -9.0
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "category": "dynamics",
+    "model_id": 26,
+    "model_sym": "ModelID::kDM4RedComp",
+    "display_name": "Red Comp",
+    "parameters-en": {
+        "Sustain": "Adjusts the amount of compression or sustain.",
+        "Level": "Sets the overall level of the block."
+    }
+}

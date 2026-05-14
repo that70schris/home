@@ -1,0 +1,14 @@
+{
+    "category": "modulation",
+    "model_id": 113,
+    "model_sym": "ModelID::kSampleAndHold",
+    "display_name": "Random S/H",
+    "parameters-en": {
+        "Speed": "Controls the speed or rate of the sample and hold. When set to note values, Speed follows the system tempo.",
+        "Depth": "Controls the frequency range of the randomized filters.",
+        "Q": "Controls the resonance or width of the frequency bands affected by the randomized filters.",
+        "Mix": "Controls the blend between the filtered and the dry signal. At 0%, no effect is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

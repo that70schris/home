@@ -1,0 +1,175 @@
+{
+    "modelName": "4 OSC Generator",
+    "params": {
+        "Osc1Shape": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "Osc1Freq": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Osc1Level": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Osc2Shape": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "Osc2Freq": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Osc2Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Osc3Shape": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "Osc3Freq": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Osc3Level": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Osc4Shape": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "Osc4Freq": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "Osc4Level": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "Attack": {
+            "id": 13,
+            "behavior": "interpolate"
+        },
+        "Decay": {
+            "id": 14,
+            "behavior": "interpolate"
+        },
+        "DryLevel": {
+            "id": 15,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 16,
+            "behavior": "interpolate"
+        },
+        "RiseTimeSwitch": {
+            "id": 22,
+            "behavior": "exclude"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Sit",
+            "Osc1Shape": 3,
+            "Osc1Freq": 200.0,
+            "Osc1Level": 0.42,
+            "Osc2Shape": 3,
+            "Osc2Freq": 370.0,
+            "Osc2Level": 0.41,
+            "Osc3Shape": 3,
+            "Osc3Freq": 323.0,
+            "Osc3Level": 0.41,
+            "Osc4Shape": 3,
+            "Osc4Freq": 400.0,
+            "Osc4Level": 0.48,
+            "Attack": 0.5,
+            "Decay": 3.0,
+            "DryLevel": 1.0,
+            "Level": -10.0,
+            "RiseTimeSwitch": false
+        },
+        "x_min_y_min": {
+            "name": "And",
+            "Osc1Shape": 3,
+            "Osc1Freq": 167.0,
+            "Osc1Level": 0.42,
+            "Osc2Shape": 3,
+            "Osc2Freq": 254.0,
+            "Osc2Level": 0.41,
+            "Osc3Shape": 3,
+            "Osc3Freq": 400.0,
+            "Osc3Level": 0.41,
+            "Osc4Shape": 2,
+            "Osc4Freq": 489.0,
+            "Osc4Level": 0.48,
+            "Attack": 0.5,
+            "Decay": 3.0,
+            "DryLevel": 1.0,
+            "Level": -3.0,
+            "RiseTimeSwitch": false
+        },
+        "x_min_y_max": {
+            "name": "Enjoy",
+            "Osc1Shape": 3,
+            "Osc1Freq": 157.0,
+            "Osc1Level": 0.42,
+            "Osc2Shape": 2,
+            "Osc2Freq": 231.0,
+            "Osc2Level": 0.24,
+            "Osc3Shape": 2,
+            "Osc3Freq": 426.0,
+            "Osc3Level": 0.35,
+            "Osc4Shape": 2,
+            "Osc4Freq": 764.0,
+            "Osc4Level": 0.53,
+            "Attack": 0.5,
+            "Decay": 3.0,
+            "DryLevel": 1.0,
+            "Level": 0.0,
+            "RiseTimeSwitch": false
+        },
+        "x_max_y_min": {
+            "name": "Back",
+            "Osc1Shape": 3,
+            "Osc1Freq": 189.0,
+            "Osc1Level": 0.42,
+            "Osc2Shape": 3,
+            "Osc2Freq": 264.0,
+            "Osc2Level": 0.41,
+            "Osc3Shape": 3,
+            "Osc3Freq": 363.0,
+            "Osc3Level": 0.41,
+            "Osc4Shape": 2,
+            "Osc4Freq": 436.0,
+            "Osc4Level": 0.48,
+            "Attack": 0.5,
+            "Decay": 3.0,
+            "DryLevel": 1.0,
+            "Level": -6.0,
+            "RiseTimeSwitch": false
+        },
+        "x_max_y_max": {
+            "name": "The Movie",
+            "Osc1Shape": 0,
+            "Osc1Freq": 146.0,
+            "Osc1Level": 0.65,
+            "Osc2Shape": 1,
+            "Osc2Freq": 220.0,
+            "Osc2Level": 0.72,
+            "Osc3Shape": 4,
+            "Osc3Freq": 740.0,
+            "Osc3Level": 0.28,
+            "Osc4Shape": 4,
+            "Osc4Freq": 880.0,
+            "Osc4Level": 0.35,
+            "Attack": 0.499,
+            "Decay": 3.0,
+            "DryLevel": 1.0,
+            "Level": 3.0,
+            "RiseTimeSwitch": false
+        }
+    }
+}

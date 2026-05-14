@@ -1,0 +1,15 @@
+{
+    "category": "filter",
+    "model_id": 220,
+    "model_sym": "ModelID::kFM4CometTrails",
+    "display_name": "Comet Trails",
+    "parameters-en": {
+        "Speed": "Controls the rate of filter movement. Low values result in almost a flanger-type effect while higher values can generate spaceship noises, especially with a high Q.",
+        "Freq": "Controls the range of the filters.",
+        "Q": "Controls the resonance or width of the frequency band affected by the filters.",
+        "Gain": "Controls the amount of boost or cut applied to the filtered frequencies.",
+        "Mix": "Controls the balance between the filtered and dry signals. At 0%, no filtered signal is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

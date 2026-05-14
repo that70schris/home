@@ -1,0 +1,40 @@
+{
+    "modelName": "Vetta Juice",
+    "params": {
+        "Amount": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 2,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Grab",
+            "Amount": 0.19,
+            "Level": 0.66
+        },
+        "x_min_y_min": {
+            "name": "Clean",
+            "Amount": 0.0,
+            "Level": 0.5
+        },
+        "x_min_y_max": {
+            "name": "Boost",
+            "Amount": 0.05,
+            "Level": 0.63
+        },
+        "x_max_y_min": {
+            "name": "Spank",
+            "Amount": 0.54,
+            "Level": 0.78
+        },
+        "x_max_y_max": {
+            "name": "Squash",
+            "Amount": 0.96,
+            "Level": 0.98
+        }
+    }
+}

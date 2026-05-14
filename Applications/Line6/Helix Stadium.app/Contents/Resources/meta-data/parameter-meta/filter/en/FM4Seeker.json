@@ -1,0 +1,15 @@
+{
+    "category": "filter",
+    "model_id": 217,
+    "model_sym": "ModelID::kFM4Seeker",
+    "display_name": "Seeker",
+    "parameters-en": {
+        "Speed": "Controls the rate (time) that it takes to cycle through the filter steps.",
+        "Freq": "Selects from a range of different patterns of sequenced wah filter positions. Turn slowly to find the preset that works best for your tune.",
+        "Q": "Controls the resonance or width of the frequency bands affected by the filter steps.",
+        "Steps": "Sets the number of filter steps in the sequence, from 2 to 9. Even numbers may be more rhythmic, but odd numbers can be more interesting.",
+        "Mix": "Controls the balance between the filtered and dry signals. At 0%, no filtered signal is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

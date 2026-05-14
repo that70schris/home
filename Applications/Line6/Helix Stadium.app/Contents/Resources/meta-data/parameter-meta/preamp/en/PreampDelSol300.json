@@ -1,0 +1,20 @@
+{
+    "category": "preamp",
+    "model_id": 632,
+    "model_sym": "ModelID::kPreampDelSol300",
+    "display_name": "Del Sol 300",
+    "parameters-en": {
+        "Gain": "Controls the amount of gain applied to the signal, which influences the level of distortion.",
+        "62.5 Hz": "Boost or cut up to 15.0 dB.",
+        "125 Hz": "Boost or cut up to 15.0 dB.",
+        "250 Hz": "Boost or cut up to 15.0 dB.",
+        "500 Hz": "Boost or cut up to 15.0 dB.",
+        "Level": "Controls the overall level of the Preamp block. Unlike Master Volume, it has no effect on the block's tone.",
+        "Master": "Controls the Master Volume of the amplifier.",
+        "1 kHz": "Boost or cut up to 15.0 dB.",
+        "2 kHz": "Boost or cut up to 15.0 dB.",
+        "4 kHz": "Boost or cut up to 15.0 dB.",
+        "Bright": "Selects the Input jack configuration--Normal (Off) or Bright (On).",
+        "Contour": "When on, acts as a \"mid-scoop\", reducing the midrange frequencies while boosting the low and high frequencies."
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "category": "filter",
+    "model_id": 213,
+    "model_sym": "ModelID::kFM4TronDown",
+    "display_name": "Tron Down",
+    "parameters-en": {
+        "Freq": "Controls the distance between the high and low points of the filter sweep.",
+        "Q": "Controls the width of the frequency band affected by the filter.",
+        "Range": "Selects whether the filter focuses on low or high frequencies.",
+        "Type": "Selects the type of filter effect (Low Pass, Band Pass, or High Pass).",
+        "Mix": "Controls the balance between the filtered and dry signals. At 0%, no filtered signal is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

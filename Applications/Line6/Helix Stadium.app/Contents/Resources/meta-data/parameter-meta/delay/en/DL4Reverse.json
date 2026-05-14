@@ -1,0 +1,15 @@
+{
+    "category": "delay",
+    "model_id": 109,
+    "model_sym": "ModelID::kDL4Reverse",
+    "display_name": "Reverse",
+    "parameters-en": {
+        "Time": "Determines the length of audio captured before playing it backwards. When set to note values, Time follows the system tempo.",
+        "Feedback": "Controls the number of reverse delay repeats. When set to 0%, only one reverse repeat is heard; at 100%, the reversed audio repeats forever.",
+        "ModSpeed": "Controls the speed or rate of pitch modulation applied to the signal BEFORE it's sent into the delay circuit; ModSpeed is not applied to the repeats themselves. Therefore, you can capture your playing with a slow modulation setting, and layer playing with fast modulation on top of it.",
+        "Depth": "Controls the depth or intensity of pitch modulation applied to the signal BEFORE it's sent into the delay circuit. Therefore, you can capture your playing with light or no modulation, and layer playing with heavy modulation on top of it.",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TSync1": ""
+    }
+}

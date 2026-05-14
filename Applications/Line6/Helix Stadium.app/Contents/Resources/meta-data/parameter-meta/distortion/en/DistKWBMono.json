@@ -1,0 +1,15 @@
+{
+    "category": "distortion",
+    "model_id": 321,
+    "model_sym": "ModelID::kDistKWBMono",
+    "display_name": "KWB",
+    "parameters-en": {
+        "Gain": "Controls the amount of distortion applied to the signal.",
+        "Push Diode": "Selects the type of clipping diode for the first socket. The original pedal's circuit included sockets so the user could swap out diodes to customize their sound.",
+        "Pull Diode": "Selects the type of clipping diode for the second socket. The original pedal's circuit included sockets so the user could swap out diodes to customize their sound.",
+        "Bass": "Controls the low frequency EQ of the distortion.",
+        "Treble": "Controls the high frequency EQ of the distortion.",
+        "Level": "Sets the overall level of the block.",
+        "Asymm": "Adjusts the amount of clipping symmetry. Lower values are more symmetrical; higher values are more asymmetrical, or more \"broken.\" More audible when running into a clean amp."
+    }
+}

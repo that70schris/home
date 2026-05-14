@@ -1,0 +1,21 @@
+{
+    "category": "modulation",
+    "model_id": 166,
+    "model_sym": "ModelID::kChorusTrinityChorusStereo",
+    "display_name": "Trinity Chorus",
+    "parameters-en": {
+        "Rate": "Controls the speed or rate of the chorus. Only active when LFO Man is turned on. When set to note values, Rate follows the system tempo.",
+        "L Depth": "Controls the depth or intensity of the Left delay channel/chorus circuit 1.",
+        "C Depth": "Controls the depth or intensity of the Center delay channel/chorus circuit 2.",
+        "R Depth": "Controls the depth or intensity of the Right delay channel/chorus circuit 3.",
+        "LFO Prst": "When on, engages an \"ensemble-style\" chorus preset with fixed Rate, L Depth, C Depth, and R Depth.",
+        "LFO Man": "When on, enables control of Rate, L Depth, C Depth, and R Depth. Can be used in conjunction with LFO Prst.",
+        "L Boost": "Adds an enhanced frequency response to the Left delay channel, making it a bit more pronounced.",
+        "C Boost": "Adds an enhanced frequency response to the Center delay channel, making it a bit more pronounced.",
+        "R Boost": "Adds an enhanced frequency response to the Right delay channel, making it a bit more pronounced.",
+        "Mode": "Selects whether Trinity Chorus operates in mono or stereo.",
+        "Mix": "Controls the blend between the modulation effect and the dry signal. At 0%, no modulation is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

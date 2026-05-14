@@ -1,0 +1,94 @@
+{
+    "modelName": "Reverse",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "ModSpeed": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Slow Swells",
+            "Time": 2.0,
+            "Feedback": 0.0,
+            "ModSpeed": 0.05999999865889549,
+            "Depth": 1.0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 3,
+            "TempoSync1": true
+        },
+        "x_min_y_min": {
+            "name": "Clean Notes",
+            "Time": 2.0,
+            "Feedback": 0.0,
+            "ModSpeed": 0.0,
+            "Depth": 0.0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        },
+        "x_min_y_max": {
+            "name": "Soft Ambience",
+            "Time": 2.0,
+            "Feedback": 0.8299999833106995,
+            "ModSpeed": 0.12999999523162842,
+            "Depth": 0.27000001072883606,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 1,
+            "TempoSync1": true
+        },
+        "x_max_y_min": {
+            "name": "Fake Springs",
+            "Time": 2.0,
+            "Feedback": 0.699999988079071,
+            "ModSpeed": 0.2199999988079071,
+            "Depth": 1.0,
+            "Mix": 0.5299999713897705,
+            "Level": 0.0,
+            "SyncSelect1": 15,
+            "TempoSync1": true
+        },
+        "x_max_y_max": {
+            "name": "Spacey Mod",
+            "Time": 2.0,
+            "Feedback": 0.9200000166893005,
+            "ModSpeed": 0.7699999809265137,
+            "Depth": 0.7300000190734863,
+            "Mix": 0.6000000238418579,
+            "Level": 0.0,
+            "SyncSelect1": 9,
+            "TempoSync1": true
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "category": "distortion",
+    "model_id": 149,
+    "model_sym": "ModelID::kDistHedgehogD9Stereo",
+    "display_name": "Hedgehog D9",
+    "parameters-en": {
+        "Gain": "Controls the amount of distortion applied to the signal.",
+        "Tone": "Controls the overall tonal balance of the distortion. Lower values are darker and higher values are brighter.",
+        "Level": "Sets the overall level of the block."
+    }
+}

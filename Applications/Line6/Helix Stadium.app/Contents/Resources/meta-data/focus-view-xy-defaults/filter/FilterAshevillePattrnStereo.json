@@ -1,0 +1,220 @@
+{
+    "modelName": "Asheville Pattrn",
+    "params": {
+        "Rate": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Pattern": {
+            "id": 2,
+            "behavior": "quantize"
+        },
+        "Envelope": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Voice": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Output": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Drive": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Direction": {
+            "id": 8,
+            "behavior": "quantize"
+        },
+        "LFO": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Spread": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Level1": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "Level2": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "Level3": {
+            "id": 13,
+            "behavior": "interpolate"
+        },
+        "Level4": {
+            "id": 14,
+            "behavior": "interpolate"
+        },
+        "Level5": {
+            "id": 15,
+            "behavior": "interpolate"
+        },
+        "Level6": {
+            "id": 16,
+            "behavior": "interpolate"
+        },
+        "Level7": {
+            "id": 17,
+            "behavior": "interpolate"
+        },
+        "Level8": {
+            "id": 18,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 39,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 40,
+            "behavior": "quantize"
+        },
+        "SyncSelect2": {
+            "id": 41,
+            "behavior": "quantize"
+        },
+        "TempoSync2": {
+            "id": 42,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Ping Pong 8ths",
+            "Rate": 0.5,
+            "Pattern": 4,
+            "Envelope": 0.5,
+            "Voice": true,
+            "Mix": 1.0,
+            "Output": 1.0,
+            "Drive": 0.6600000262260437,
+            "Direction": false,
+            "LFO": 0.0,
+            "Spread": 1.0,
+            "Level1": 1.0,
+            "Level2": 1.0,
+            "Level3": 1.0,
+            "Level4": 1.0,
+            "Level5": 1.0,
+            "Level6": 1.0,
+            "Level7": 1.0,
+            "Level8": 1.0,
+            "SyncSelect1": 9,
+            "TempoSync1": true,
+            "SyncSelect2": 6,
+            "TempoSync2": false
+        },
+        "x_min_y_min": {
+            "name": "Slow Sweeps",
+            "Rate": 0.5,
+            "Pattern": 0,
+            "Envelope": 0.5,
+            "Voice": false,
+            "Mix": 1.0,
+            "Output": 0.7400000095367432,
+            "Drive": 0.6600000262260437,
+            "Direction": true,
+            "LFO": 0.6000000238418579,
+            "Spread": 1.0,
+            "Level1": 0.25,
+            "Level2": 0.3799999952316284,
+            "Level3": 0.41999998688697815,
+            "Level4": 0.3799999952316284,
+            "Level5": 0.6100000143051147,
+            "Level6": 0.7099999785423279,
+            "Level7": 0.8299999833106995,
+            "Level8": 0.7099999785423279,
+            "SyncSelect1": 9,
+            "TempoSync1": true,
+            "SyncSelect2": 3,
+            "TempoSync2": true
+        },
+        "x_min_y_max": {
+            "name": "Waterlogged",
+            "Rate": 0.5,
+            "Pattern": 13,
+            "Envelope": 0.27000001072883606,
+            "Voice": true,
+            "Mix": 0.75,
+            "Output": 1.0,
+            "Drive": 0.41999998688697815,
+            "Direction": true,
+            "LFO": 0.3799999952316284,
+            "Spread": 0.4000000059604645,
+            "Level1": 1.0,
+            "Level2": 0.8500000238418579,
+            "Level3": 0.699999988079071,
+            "Level4": 0.550000011920929,
+            "Level5": 0.4000000059604645,
+            "Level6": 0.25,
+            "Level7": 0.10000000149011612,
+            "Level8": 0.0,
+            "SyncSelect1": 9,
+            "TempoSync1": true,
+            "SyncSelect2": 16,
+            "TempoSync2": true
+        },
+        "x_max_y_min": {
+            "name": "Driving Rhythm",
+            "Rate": 0.5,
+            "Pattern": 6,
+            "Envelope": 0.20000000298023224,
+            "Voice": false,
+            "Mix": 1.0,
+            "Output": 0.7699999809265137,
+            "Drive": 0.9300000071525574,
+            "Direction": false,
+            "LFO": 1.0,
+            "Spread": 1.0,
+            "Level1": 0.30000001192092896,
+            "Level2": 0.4000000059604645,
+            "Level3": 0.5,
+            "Level4": 0.6000000238418579,
+            "Level5": 0.699999988079071,
+            "Level6": 0.800000011920929,
+            "Level7": 0.8999999761581421,
+            "Level8": 1.0,
+            "SyncSelect1": 14,
+            "TempoSync1": true,
+            "SyncSelect2": 6,
+            "TempoSync2": true
+        },
+        "x_max_y_max": {
+            "name": "Brainworm",
+            "Rate": 0.5,
+            "Pattern": 2,
+            "Envelope": 0.12999999523162842,
+            "Voice": true,
+            "Mix": 0.8999999761581421,
+            "Output": 0.8600000143051147,
+            "Drive": 0.75,
+            "Direction": true,
+            "LFO": 0.0,
+            "Spread": 1.0,
+            "Level1": 0.6600000262260437,
+            "Level2": 0.7400000095367432,
+            "Level3": 0.800000011920929,
+            "Level4": 0.8600000143051147,
+            "Level5": 0.9100000262260437,
+            "Level6": 0.9599999785423279,
+            "Level7": 0.9900000095367432,
+            "Level8": 1.0,
+            "SyncSelect1": 18,
+            "TempoSync1": true,
+            "SyncSelect2": 6,
+            "TempoSync2": false
+        }
+    }
+}

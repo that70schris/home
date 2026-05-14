@@ -1,0 +1,103 @@
+{
+    "modelName": "Clarity",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Presence": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Boost": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "HumSwitch": {
+            "id": 9,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Balanced Clean",
+            "Drive": 0.5299999713897705,
+            "Bass": 0.5,
+            "Mid": 0.440000057220459,
+            "Treble": 0.5399999618530273,
+            "Presence": 0.09000003337860107,
+            "ChVol": 0.43000006675720215,
+            "Boost": 0.0,
+            "Sag": 0.48000001907348633,
+            "HumSwitch": true
+        },
+        "x_min_y_min": {
+            "name": "Warm Clean",
+            "Drive": 0.3999999761581421,
+            "Bass": 0.6600000858306885,
+            "Mid": 0.5699999332427979,
+            "Treble": 0.46000003814697266,
+            "Presence": 0.25,
+            "ChVol": 0.3700000047683716,
+            "Boost": 0.0,
+            "Sag": 0.48000001907348633,
+            "HumSwitch": true
+        },
+        "x_min_y_max": {
+            "name": "Bright & Thin",
+            "Drive": 0.46000003814697266,
+            "Bass": 0.3400000333786011,
+            "Mid": 0.5699999332427979,
+            "Treble": 0.7400000095367432,
+            "Presence": 0.25,
+            "ChVol": 0.3999999761581421,
+            "Boost": 0.0,
+            "Sag": 0.5,
+            "HumSwitch": true
+        },
+        "x_max_y_min": {
+            "name": "Mid Gain Drive",
+            "Drive": 0.5499999523162842,
+            "Bass": 0.3999999761581421,
+            "Mid": 0.6200000047683716,
+            "Treble": 0.6000000238418579,
+            "Presence": 0.0,
+            "ChVol": 0.36000001430511475,
+            "Boost": 0.7000000476837158,
+            "Sag": 0.6499999761581421,
+            "HumSwitch": true
+        },
+        "x_max_y_max": {
+            "name": "Big Mid Boost",
+            "Drive": 0.8600000143051147,
+            "Bass": 0.43000006675720215,
+            "Mid": 0.7200000286102295,
+            "Treble": 0.6200000047683716,
+            "Presence": 0.0,
+            "ChVol": 0.36000001430511475,
+            "Boost": 1.0,
+            "Sag": 0.48000001907348633,
+            "HumSwitch": true
+        }
+    }
+}

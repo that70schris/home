@@ -1,0 +1,10 @@
+{
+    "category": "send",
+    "model_id": 268,
+    "model_sym": "ModelID::kSendMono2",
+    "display_name": "Send 2",
+    "parameters-en": {
+        "Send": "Sets the level of the Send 2 signal. 0.0 dB is unity gain.",
+        "Dry Thru": "Adjusts the level of the dry (unaffected) signal passing through the Send block. Normally this should be set to 0.0 dB, but when set to -120.0 dB, the Send block can act as an A/B switch, toggling between sending signal to the external device (block enabled) and sending signal through to the next block (block bypassed)."
+    }
+}

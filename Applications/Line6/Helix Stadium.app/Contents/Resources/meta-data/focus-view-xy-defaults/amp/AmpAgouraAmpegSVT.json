@@ -1,0 +1,278 @@
+{
+    "modelName": "Ampeg SVT 50th",
+    "params": {
+        "Channel": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "1Drive": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "1Bass": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "1Mid": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "1MidFreq": {
+            "id": 5,
+            "behavior": "quantize"
+        },
+        "1Treble": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "1UltraHi": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "Level": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "1UltraLo": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "2Drive": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "2Bass": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "2Treble": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "2UltraHi": {
+            "id": 13,
+            "behavior": "quantize"
+        },
+        "2UltraLo": {
+            "id": 14,
+            "behavior": "quantize"
+        },
+        "Master": {
+            "id": 15,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 16,
+            "behavior": "interpolate"
+        },
+        "Ripple": {
+            "id": 17,
+            "behavior": "interpolate"
+        },
+        "ZPrePost": {
+            "id": 18,
+            "behavior": "interpolate"
+        },
+        "Hype": {
+            "id": 19,
+            "behavior": "interpolate"
+        },
+        "AmpCabPeak2Q": {
+            "id": 74,
+            "behavior": "exclude"
+        },
+        "AmpCabPeak2Fc": {
+            "id": 75,
+            "behavior": "exclude"
+        },
+        "AmpCabPeak2G": {
+            "id": 76,
+            "behavior": "exclude"
+        },
+        "AmpCabZFir": {
+            "id": 101,
+            "behavior": "exclude"
+        },
+        "AmpCabZUpdate": {
+            "id": 103,
+            "behavior": "exclude"
+        },
+        "AmpCabShelfF": {
+            "id": 104,
+            "behavior": "exclude"
+        },
+        "AmpCabShelfG": {
+            "id": 105,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakQ": {
+            "id": 106,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakG": {
+            "id": 107,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakFc": {
+            "id": 108,
+            "behavior": "exclude"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Classic",
+            "Channel": 0,
+            "1Drive": 0.568,
+            "1Bass": 0.440000,
+            "1Mid":          0.71,
+            "1MidFreq": 2,
+            "1Treble": 0.810000,
+            "1UltraHi": 0,
+            "Level": -10.0000,
+            "1UltraLo": 2,
+            "2Drive": 0.500000,
+            "2Bass": 0.500000,
+            "2Treble": 0.500000,
+            "2UltraHi": 0,
+            "2UltraLo": false,
+            "Master": 1.00000,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "ZPrePost": 0.500000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_min_y_min": {
+            "name": "Fat",
+            "Channel": 2,
+            "1Drive": 0.42,
+            "1Bass": 0.440000,
+            "1Mid": 0.63,
+            "1MidFreq": 2,
+            "1Treble": 0.810000,
+            "1UltraHi": 0,
+            "Level": -9.0,
+            "1UltraLo": 2,
+            "2Drive": 0.3,
+            "2Bass": 0.500000,
+            "2Treble": 0.18,
+            "2UltraHi": 0,
+            "2UltraLo": false,
+            "Master": 1.00000,
+            "Sag": 0.98,
+            "Ripple": -0.4,
+            "ZPrePost": 0.0,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_min_y_max": {
+            "name": "Scooped",
+            "Channel": 1,
+            "1Drive": 0.54,
+            "1Bass": 0.69,
+            "1Mid": 0.33,
+            "1MidFreq": 0,
+            "1Treble": 0.67,
+            "1UltraHi": 1,
+            "Level": 0.7,
+            "1UltraLo": 2,
+            "2Drive": 0.6,
+            "2Bass": 0.53,
+            "2Treble": 0.63,
+            "2UltraHi": 1,
+            "2UltraLo": false,
+            "Master": 0.74,
+            "Sag": -1.0,
+            "Ripple": -0.7,
+            "ZPrePost": 0.3,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_max_y_min": {
+            "name": "Mid Bite",
+            "Channel": 3,
+            "1Drive": 0.38,
+            "1Bass": 0.39,
+            "1Mid": 0.70,
+            "1MidFreq": 1,
+            "1Treble": 0.810000,
+            "1UltraHi": 0,
+            "Level": -16.0,
+            "1UltraLo": 1,
+            "2Drive": 0.6,
+            "2Bass": 0.53,
+            "2Treble": 0.63,
+            "2UltraHi": 1,
+            "2UltraLo": false,
+            "Master": 1.00000,
+            "Sag": -1.0,
+            "Ripple": -0.42,
+            "ZPrePost": 1.0,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_max_y_max": {
+            "name": "Growl",
+            "Channel": 4,
+            "1Drive": 0.56,
+            "1Bass": 0.81,
+            "1Mid": 0.64,
+            "1MidFreq": 0,
+            "1Treble": 0.14,
+            "1UltraHi": 1,
+            "Level": -15.6,
+            "1UltraLo": 2,
+            "2Drive": 0.71,
+            "2Bass": 0.2,
+            "2Treble": 0.28,
+            "2UltraHi": 1,
+            "2UltraLo": false,
+            "Master": 1.00000,
+            "Sag": -0.16,
+            "Ripple": -0.46,
+            "ZPrePost": 1.0,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        }
+    }
+}

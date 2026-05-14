@@ -1,0 +1,14 @@
+{
+    "category": "synth",
+    "model_id": 344,
+    "model_sym": "ModelID::kFM4SynthOMatic",
+    "display_name": "Synth O Matic",
+    "parameters-en": {
+        "Frequency": "Controls the frequency of the filter, which determines the brightness of your sound.",
+        "Q": "Adjusts filter width to add more or less additional emphasis on the selected frequency.",
+        "Wave": "Selects one of eight synth waveforms. These all sound quite different, so experiment.",
+        "Pitch": "Sets the pitch over a 2 octave range.",
+        "Mix": "Controls the blend between the synth and the dry signal. At 0%, no synth is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

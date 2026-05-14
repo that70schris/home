@@ -1,0 +1,49 @@
+{
+    "modelName": "Boctaver",
+    "params": {
+        "Oct1Level": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Oct2Level": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "DryLevel": {
+            "id": 3,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Balanced",
+            "Oct1Level": 0.75,
+            "Oct2Level": 0.04999995231628418,
+            "DryLevel": 0.5499999523162842
+        },
+        "x_min_y_min": {
+            "name": "Thick",
+            "Oct1Level": 0.1499999761581421,
+            "Oct2Level": 0.0,
+            "DryLevel": 0.8999999761581421
+        },
+        "x_min_y_max": {
+            "name": "Synth",
+            "Oct1Level": 0.7999999523162842,
+            "Oct2Level": 0.04999995231628418,
+            "DryLevel": 0.04999995231628418
+        },
+        "x_max_y_min": {
+            "name": "Rumble",
+            "Oct1Level": 0.3999999761581421,
+            "Oct2Level": 0.0,
+            "DryLevel": 0.75
+        },
+        "x_max_y_max": {
+            "name": "Sub",
+            "Oct1Level": 1.0,
+            "Oct2Level": 0.3999999761581421,
+            "DryLevel": 0.0
+        }
+    }
+}

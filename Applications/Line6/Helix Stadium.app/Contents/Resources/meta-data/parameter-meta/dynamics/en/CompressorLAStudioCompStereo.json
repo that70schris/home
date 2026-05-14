@@ -1,0 +1,14 @@
+{
+    "category": "dynamics",
+    "model_id": 13,
+    "model_sym": "ModelID::kCompressorLAStudioCompStereo",
+    "display_name": "LA Studio Comp",
+    "parameters-en": {
+        "PeakReduc": "Peak Reduction lowers the threshold, controlling how much compression is applied to the input signal.",
+        "Gain": "Increases the signal's level to compensate for the reduced level that results from compression/peak reduction.",
+        "Type": "Switches between compression (3:1 ratio) and limiting (Infinity:1 ratio).",
+        "Emphasis": "Subtly increases the compression circuit's sensitivity to high frequencies. At 0.0, no emphasis is applied.",
+        "Mix": "Controls the blend between the compressed and dry signals. At 0%, no compressed signal is heard; at 100%, no dry signal is heard. Values in between provide parallel compression.",
+        "Level": "Sets the overall level of the block."
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "category": "delay",
+    "model_id": 51,
+    "model_sym": "ModelID::kDL4EchoPlatterStereo",
+    "display_name": "Echo Platter",
+    "parameters-en": {
+        "Time": "Adjusts the length of time before the first repeat. When set to note values, Time follows the system tempo.",
+        "Feedback": "Controls the number of delay repeats. When set to 0%, only one repeat is heard. At high values, the Delay may begin to self-oscillate and squeal (perhaps in a good way).",
+        "Wow Flt": "Controls the amount of wow and flutter, or how much warbly tape sound is heard in the repeats.",
+        "Drive": "Controls how much tape saturation and drive are applied to the repeats.",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "Dry Thru": "When off, the dry signal is routed through the tape delay's circuitry (even with Mix set to 0%), which can add a bit of warmth and grit. When on, the dry signal bypasses the delay's circuitry.",
+        "TSync1": ""
+    }
+}

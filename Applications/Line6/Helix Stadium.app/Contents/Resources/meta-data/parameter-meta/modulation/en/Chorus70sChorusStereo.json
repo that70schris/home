@@ -1,0 +1,19 @@
+{
+    "category": "modulation",
+    "model_id": 167,
+    "model_sym": "ModelID::kChorus70sChorusStereo",
+    "display_name": "70s Chorus",
+    "parameters-en": {
+        "Cho Rate": "Controls the speed or rate of the chorus. When set to note values, Cho Rate follows the system tempo. Does nothing when Mode is set to \"Vibrato.\"",
+        "Mode": "Selects the type of modulation--Chorus or Vibrato.",
+        "Vib Rate": "Controls the speed or rate of the vibrato. When set to note values, Vib Rate follows the system tempo. Does nothing when Mode is set to \"Chorus.\"",
+        "Vib Depth": "Controls the depth or intensity of the vibrato. Does nothing when Mode is set to \"Chorus.\"",
+        "Spread": "Controls the apparent stereo width between the left and right channels.",
+        "Stereo": "Selects the type of stereo processing--True or Classic. \"True\" processes the signal in true stereo; \"Classic\" routes the dry signal to the left and the effected signal to the right, just like the original pedal.",
+        "Mix": "Controls the blend between the modulation effect and the dry signal. At 0%, no modulation is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "Headroom": "Some chorus pedals' internal signal paths exhibit a bit of grit, especially when placed after a high-gain amp block. Negative values increase the perceived amount of grit; positive values clean things up a bit.",
+        "TempoSync1": "",
+        "TempoSync2": ""
+    }
+}

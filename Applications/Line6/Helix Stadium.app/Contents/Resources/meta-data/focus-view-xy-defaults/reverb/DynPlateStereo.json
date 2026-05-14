@@ -1,0 +1,121 @@
+{
+    "modelName": "Dynamic Plate",
+    "params": {
+        "Decay": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "PreDelay": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Damping": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "MatrFreq": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "VarDelayAmpl": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "BassFreq": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "BassBoost": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "LowCut": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "HighCut": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 11,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Shimmery",
+            "Decay": 3.1999998092651367,
+            "PreDelay": 0.019999980926513672,
+            "Damping": 6000.00048828125,
+            "MatrFreq": 0.18000006675720215,
+            "VarDelayAmpl": 0.5799999237060547,
+            "Mix": 0.36000001430511475,
+            "BassFreq": 204.0,
+            "BassBoost": 2.0,
+            "LowCut": 212.99998474121094,
+            "HighCut": 18400.0,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Bright Splash",
+            "Decay": 0.7000000476837158,
+            "PreDelay": 0.006000041961669922,
+            "Damping": 10100.0,
+            "MatrFreq": 0.0,
+            "VarDelayAmpl": 0.0,
+            "Mix": 0.36000001430511475,
+            "BassFreq": 59.0,
+            "BassBoost": 3.0,
+            "LowCut": 212.99998474121094,
+            "HighCut": 20100.0,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Short\/Hot",
+            "Decay": 1.0,
+            "PreDelay": 0.04900002479553223,
+            "Damping": 7200.0,
+            "MatrFreq": 0.0,
+            "VarDelayAmpl": 0.0,
+            "Mix": 0.48000001907348633,
+            "BassFreq": 161.0,
+            "BassBoost": 3.0,
+            "LowCut": 212.99998474121094,
+            "HighCut": 17300.0,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Hallelujah",
+            "Decay": 4.5,
+            "PreDelay": 0.08500003814697266,
+            "Damping": 7200.0,
+            "MatrFreq": 0.7999999523162842,
+            "VarDelayAmpl": 0.7400000095367432,
+            "Mix": 0.38999998569488525,
+            "BassFreq": 219.0,
+            "BassBoost": 2.0,
+            "LowCut": 131.0,
+            "HighCut": 5100.0,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Pad Plate",
+            "Decay": 15.0,
+            "PreDelay": 0.03799998760223389,
+            "Damping": 5700.00048828125,
+            "MatrFreq": 0.8399999141693115,
+            "VarDelayAmpl": 0.7400000095367432,
+            "Mix": 0.41999995708465576,
+            "BassFreq": 219.0,
+            "BassBoost": 2.0,
+            "LowCut": 212.99998474121094,
+            "HighCut": 10800.0,
+            "Level": 0.0
+        }
+    }
+}

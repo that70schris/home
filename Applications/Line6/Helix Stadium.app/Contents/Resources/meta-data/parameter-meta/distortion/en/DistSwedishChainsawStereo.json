@@ -1,0 +1,12 @@
+{
+    "category": "distortion",
+    "model_id": 248,
+    "model_sym": "ModelID::kDistSwedishChainsawStereo",
+    "display_name": "Swedish Chainsaw",
+    "parameters-en": {
+        "Drive": "Controls the amount of distortion applied to the signal.",
+        "Bass": "Controls the low frequency EQ of the distortion.",
+        "Treble": "Controls the high frequency EQ of the distortion.",
+        "Level": "Sets the overall level of the block."
+    }
+}

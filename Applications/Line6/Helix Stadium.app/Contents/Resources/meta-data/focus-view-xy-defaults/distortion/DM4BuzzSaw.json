@@ -1,0 +1,67 @@
+{
+    "modelName": "Buzz Saw",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Output": {
+            "id": 5,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Chainsaw",
+            "Drive": 0.8700000047683716,
+            "Bass": 0.5600000023841858,
+            "Mid": 0.5,
+            "Treble": 0.4300000071525574,
+            "Output": 0.550000011920929
+        },
+        "x_min_y_min": {
+            "name": "Coping Saw",
+            "Drive": 0.10999999940395355,
+            "Bass": 0.4000000059604645,
+            "Mid": 0.5199999809265137,
+            "Treble": 0.41999998688697815,
+            "Output": 0.7099999785423279
+        },
+        "x_min_y_max": {
+            "name": "Band Saw",
+            "Drive": 0.6200000047683716,
+            "Bass": 0.36000001430511475,
+            "Mid": 0.7799999713897705,
+            "Treble": 0.20999999344348907,
+            "Output": 0.550000011920929
+        },
+        "x_max_y_min": {
+            "name": "Hack Saw",
+            "Drive": 0.6499999761581421,
+            "Bass": 0.5799999833106995,
+            "Mid": 0.6800000071525574,
+            "Treble": 0.6200000047683716,
+            "Output": 0.6299999952316284
+        },
+        "x_max_y_max": {
+            "name": "John Kramer",
+            "Drive": 1.0,
+            "Bass": 0.9800000190734863,
+            "Mid": 0.11999999731779099,
+            "Treble": 0.47999998927116394,
+            "Output": 0.47999998927116394
+        }
+    }
+}

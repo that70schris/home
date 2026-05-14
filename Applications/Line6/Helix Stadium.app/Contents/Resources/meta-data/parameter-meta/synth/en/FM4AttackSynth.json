@@ -1,0 +1,14 @@
+{
+    "category": "synth",
+    "model_id": 347,
+    "model_sym": "ModelID::kFM4AttackSynth",
+    "display_name": "Attack Synth",
+    "parameters-en": {
+        "Freq": "Controls the stop frequency of the filter.",
+        "Wave": "Selects the type of synth waveform.",
+        "Attack": "Controls the attack, or the time if takes to get to the stop frequency. Is more obvious when Freq is set to higher values.",
+        "Pitch": "Sets the pitch over a 2 octave range.",
+        "Mix": "Controls the blend between the synth and the dry signal. At 0%, no synth is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

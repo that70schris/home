@@ -1,0 +1,139 @@
+{
+    "modelName": "145 Rotary",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "SlowSpeed": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "FastSpeed": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "RampTime": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "Drive": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Blend": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Headroom": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        },
+        "SyncSelect2": {
+            "id": 12,
+            "behavior": "quantize"
+        },
+        "TempoSync2": {
+            "id": 13,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Waves",
+            "Speed": false,
+            "SlowSpeed": 2.4,
+            "FastSpeed": 4.0,
+            "RampTime": 0,
+            "Drive": 0.48,
+            "Blend": 0.37,
+            "Mix": 1.0,
+            "Level": -6.0,
+            "Headroom": 1.8,
+            "SyncSelect1": 6,
+            "TempoSync1": false,
+            "SyncSelect2": 6,
+            "TempoSync2": false
+        },
+        "x_min_y_min": {
+            "name": "Subtle",
+            "Speed": false,
+            "SlowSpeed": 1.0,
+            "FastSpeed": 1.5,
+            "RampTime": 1,
+            "Drive": 0.76,
+            "Blend": 0.48,
+            "Mix": 1.0,
+            "Level": -0.400002,
+            "Headroom": 1.1,
+            "SyncSelect1": 6,
+            "TempoSync1": false,
+            "SyncSelect2": 6,
+            "TempoSync2": false
+        },
+        "x_min_y_max": {
+            "name": "Nice n' Slow",
+            "Speed": false,
+            "SlowSpeed": 1.4,
+            "FastSpeed": 4.0,
+            "RampTime": 1,
+            "Drive": 0.63,
+            "Blend": 0.595,
+            "Mix": 0.86,
+            "Level": -2.5,
+            "Headroom": -0.2,
+            "SyncSelect1": 6,
+            "TempoSync1": false,
+            "SyncSelect2": 6,
+            "TempoSync2": false
+        },
+        "x_max_y_min": {
+            "name": "Round",
+            "Speed": true,
+            "SlowSpeed": 1.5,
+            "FastSpeed": 4.1,
+            "RampTime": 2,
+            "Drive": 0.76,
+            "Blend": 0.48,
+            "Mix": 0.51,
+            "Level": -1.4,
+            "Headroom": 1.8,
+            "SyncSelect1": 6,
+            "TempoSync1": false,
+            "SyncSelect2": 6,
+            "TempoSync2": false
+        },
+        "x_max_y_max": {
+            "name": "Bouncy",
+            "Speed": true,
+            "SlowSpeed": 1.4,
+            "FastSpeed": 5.3,
+            "RampTime": 1,
+            "Drive": 0.78,
+            "Blend": 0.375,
+            "Mix": 0.86,
+            "Level": -2.5,
+            "Headroom": -0.2,
+            "SyncSelect1": 6,
+            "TempoSync1": false,
+            "SyncSelect2": 6,
+            "TempoSync2": false
+        }
+    }
+}

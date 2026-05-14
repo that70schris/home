@@ -1,0 +1,67 @@
+{
+    "modelName": "Analog Synth",
+    "params": {
+        "Wave": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "Filter": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Decay": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Mogue",
+            "Wave": 0,
+            "Filter": 0.72,
+            "Decay": 0.37,
+            "Mix": 0.63,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Resonant",
+            "Wave": 1,
+            "Filter": 0.1,
+            "Decay": 0.65,
+            "Mix": 0.75,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Chiptune",
+            "Wave": 2,
+            "Filter": 0.62,
+            "Decay": 0.0,
+            "Mix": 0.69,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Fuzz",
+            "Wave": 5,
+            "Filter": 0.99,
+            "Decay": 0.0599999,
+            "Mix": 0.53,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Splat",
+            "Wave": 5,
+            "Filter": 0.77,
+            "Decay": 0.33,
+            "Mix": 0.8,
+            "Level": 1.4974
+        }
+    }
+}

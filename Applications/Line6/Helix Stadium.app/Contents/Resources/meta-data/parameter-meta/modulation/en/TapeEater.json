@@ -1,0 +1,13 @@
+{
+    "category": "modulation",
+    "model_id": 112,
+    "model_sym": "ModelID::kTapeEater",
+    "display_name": "Tape Eater",
+    "parameters-en": {
+        "Feedback": "Adds a bit of natural tape feedback, which can provide additional depth to your signal.",
+        "Flutter": "Adds slight pitch fluctuations to the signal, which are caused by imperfections in the tape or tape drive mechanism.",
+        "Distortion": "Adds a bit of warmth and grit to the warble.",
+        "Mix": "Controls the blend between the Tape Eater effect and the dry signal. At 0%, no effect is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

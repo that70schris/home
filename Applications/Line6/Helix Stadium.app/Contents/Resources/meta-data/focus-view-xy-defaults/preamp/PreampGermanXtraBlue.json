@@ -1,0 +1,103 @@
+{
+    "modelName": "German Xtra Blue",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "PreEQ_Brt": {
+            "id": 5,
+            "behavior": "quantize"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Boost": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "Structure": {
+            "id": 8,
+            "behavior": "quantize"
+        },
+        "Master": {
+            "id": 9,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Overdriven",
+            "Drive": 0.5,
+            "Bass": 0.309999942779541,
+            "Mid": 0.4559999704360962,
+            "Treble": 0.6200000047683716,
+            "PreEQ_Brt": 1,
+            "ChVol": 0.4500000476837158,
+            "Boost": true,
+            "Structure": true,
+            "Master": 0.5199999809265137
+        },
+        "x_min_y_min": {
+            "name": "Cleaner",
+            "Drive": 0.3999999761581421,
+            "Bass": 0.43000006675720215,
+            "Mid": 0.4700000286102295,
+            "Treble": 0.6499999761581421,
+            "PreEQ_Brt": 2,
+            "ChVol": 0.5399999618530273,
+            "Boost": true,
+            "Structure": false,
+            "Master": 0.5
+        },
+        "x_min_y_max": {
+            "name": "Chime",
+            "Drive": 0.6499999761581421,
+            "Bass": 0.5699999332427979,
+            "Mid": 0.6200000047683716,
+            "Treble": 0.6499999761581421,
+            "PreEQ_Brt": 2,
+            "ChVol": 0.5,
+            "Boost": true,
+            "Structure": false,
+            "Master": 0.6100000143051147
+        },
+        "x_max_y_min": {
+            "name": "Breakup",
+            "Drive": 0.2999999523162842,
+            "Bass": 0.43000006675720215,
+            "Mid": 0.4700000286102295,
+            "Treble": 0.6499999761581421,
+            "PreEQ_Brt": 1,
+            "ChVol": 0.4500000476837158,
+            "Boost": true,
+            "Structure": true,
+            "Master": 0.5299999713897705
+        },
+        "x_max_y_max": {
+            "name": "Push",
+            "Drive": 0.7000000476837158,
+            "Bass": 0.33000004291534424,
+            "Mid": 0.440000057220459,
+            "Treble": 0.6700000762939453,
+            "PreEQ_Brt": 1,
+            "ChVol": 0.4700000286102295,
+            "Boost": true,
+            "Structure": true,
+            "Master": 0.5199999809265137
+        }
+    }
+}

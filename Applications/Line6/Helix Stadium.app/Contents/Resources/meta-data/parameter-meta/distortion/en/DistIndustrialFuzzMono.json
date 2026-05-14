@@ -1,0 +1,14 @@
+{
+    "category": "distortion",
+    "model_id": 286,
+    "model_sym": "ModelID::kDistIndustrialFuzzMono",
+    "display_name": "Industrial Fuzz",
+    "parameters-en": {
+        "Compress": "The Compress knob doesn't actually control a compressor, it controls the pedal's transistor bias. However, higher values can pinch the dynamics of the signal, much like a compressor.",
+        "Gate": "Higher values can squelch your sustain, like a gate, but it's more spitty and nasty than a gate, not that there's anything wrong with that.",
+        "Drive": "Adjusts the amount of fuzz applied to the signal. Becomes less effective as Comp is turned up.",
+        "Stability": "Controls the amount of voltage the pedal sees. Lower settings can slightly soften or mellow out the fuzz.",
+        "Oscillator": "Turns the oscillator on and off.",
+        "Level": "Sets the overall level of the block."
+    }
+}

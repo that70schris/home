@@ -1,0 +1,18 @@
+{
+    "category": "delay",
+    "model_id": 484,
+    "model_sym": "ModelID::kDelayPitchStereo",
+    "display_name": "Pitch Echo",
+    "parameters-en": {
+        "Time": "Adjusts the length of time before the first repeat. When set to note values, Time follows the system tempo.",
+        "Feedback": "Feedback controls the number of delay repeats. When set to 0%, only one repeat is heard, which is perfect for a simple harmony appearing slightly after your playing (set by the Time parameter). Higher values cause the pitch change to feed back into itself, generating a cascading army of pitched echoes.",
+        "Interval": "Sets the interval of the initial repeat and if Feedback is sufficient, the transposition of each subsequent repeat.",
+        "Cents": "Sets the fine pitch shift of the initial repeat and if Feedback is sufficient, the shifting of each subsequent repeat.",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "Low Cut": "Applies a low cut (or high pass) filter to the repeats, letting you remove the effected signal below a certain frequency.",
+        "High Cut": "Applies a high cut (or low pass) filter to the repeats, letting you remove the effected signal above a certain frequency.",
+        "Scale": "For stereo delays, the right side's time is always some percentage of the left sides's time, and is determined by the Scale parameter. For example, if Time is set to 500 ms, and Scale is set to 70%, the left delay is 500 ms and the right delay is 350ms (or 70% of 500 ms). When scale is set to 100%, left and right delays are the same.",
+        "TSync1": ""
+    }
+}

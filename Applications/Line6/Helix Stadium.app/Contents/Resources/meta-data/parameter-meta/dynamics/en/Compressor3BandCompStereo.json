@@ -1,0 +1,21 @@
+{
+    "category": "dynamics",
+    "model_id": 16,
+    "model_sym": "ModelID::kCompressor3BandCompStereo",
+    "display_name": "3-Band Comp",
+    "parameters-en": {
+        "Ratio": "Determines how much compression is applied to the signal once it exceeds the Threshold. Higher values mean more compression.",
+        "Attack": "Controls how quickly compression is applied once the signal exceeds the Threshold. Higher values mean a slower attack, which lets the instrument's initial transient sneak through and only compresses the sustained portion of the signal.",
+        "Release": "Controls how quickly the signal returns to unity gain after it returns below the Threshold.",
+        "Lo X Freq": "Sets the crossover frequency between the Low and Mid bands.",
+        "Hi X Freq": "Sets the crossover frequency between the Mid and High bands.",
+        "Level": "Sets the overall level of the block.",
+        "Lo Thresh": "Sets the level above which compression is applied to the Low band. Lower values compress more of the signal; higher values compress only louder parts of the signal.",
+        "Lo Gain": "Adjusts the Low band's level to compensate for the reduced level that results from compression.",
+        "Mid Thresh": "Sets the level above which compression is applied to the Mid band. Lower values compress more of the signal; higher values compress only louder parts of the signal.",
+        "Mid Gain": "Adjusts the Mid band's level to compensate for the reduced level that results from compression.",
+        "Hi Thresh": "Sets the level above which compression is applied to the High band. Lower values compress more of the signal; higher values compress only louder parts of the signal.",
+        "Hi Gain": "Adjusts the High band's level to compensate for the reduced level that results from compression.",
+        "Detector": "When set to \"Separate,\", the stereo compressor reacts to the left and right channels independently. When set to \"Link,\" the stereo compressor reacts to a combination of the left and right channels."
+    }
+}

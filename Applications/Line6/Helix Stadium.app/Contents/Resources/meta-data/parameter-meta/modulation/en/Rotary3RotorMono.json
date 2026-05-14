@@ -1,0 +1,24 @@
+{
+    "category": "modulation",
+    "model_id": 412,
+    "model_sym": "ModelID::kRotary3RotorMono",
+    "display_name": "Triple Rotary",
+    "parameters-en": {
+        "Speed": "Selects Slow or Fast rotary speed. When changing values, the rotary speaker speed gradually changes, based on the RampTime value.",
+        "SlowSpeed": "Sets the rotary speed when Speed is set to \"Slow.\" When set to note values, SlowSpeed follows the system tempo.",
+        "FastSpeed": "Sets the rotary speed when Speed is set to \"Fast.\" When set to note values, FastSpeed follows the system tempo.",
+        "RampTime": "Determines how fast the rotary speed changes when Speed is changed from \"Slow\" to \"Fast\" or vice versa.",
+        "Mix": "Controls the blend between the rotary effect and the dry signal. At 0%, no rotary effect is heard; at 100%, no dry signal is heard.",
+        "Drive": "Controls the amount of drive into the speaker's power amp.",
+        "Headroom": "Provides up to 12.0dB of additional headroom.",
+        "Low Cut": "Applies a low cut (high pass) filter to the speakers, letting you remove the effected signal below a certain frequency.",
+        "High Cut": "Applies a high cut (low pass) filter to the speakers, letting you remove the effected signal above a certain frequency.",
+        "Wobble": "Models how evenly the rotating speaker and its ballast weight are balanced about the axis. At zero, the speaker and ballast are perfectly balanced; as the wobble control is increased, the rotation of the speakers becomes more eccentric.",
+        "Separation": "Adjusts the separation of the stereo field. Practically, this simulates moving the two listening points further apart as the separation knob is increased.",
+        "Rotor Drift": "Adjusts how close the three rotor motors are in sync with each other in speed. As each of the rotors were belt driven, there are often some differences in belt or motor wear, and it creates some subtle modulation effects between the three rotors.",
+        "Rotor 2 Lvl": "Controls the individual volume of the second rotor.",
+        "Rotor 3 Lvl": "Controls the individual volume of the third rotor.",
+        "TempoSync1": "",
+        "TempoSync2": ""
+    }
+}

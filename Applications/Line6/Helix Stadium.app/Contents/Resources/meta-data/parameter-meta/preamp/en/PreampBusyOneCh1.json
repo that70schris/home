@@ -1,0 +1,19 @@
+{
+    "category": "preamp",
+    "model_id": 642,
+    "model_sym": "ModelID::kPreampBusyOneCh1",
+    "display_name": "Busy One Ch1",
+    "parameters-en": {
+        "Drive": "Controls the amount of gain applied to the signal, which influences the level of distortion.",
+        "Bass": "Controls the low frequency EQ of the tonestack.",
+        "Mid": "Controls the midrange frequency EQ of the tonestack.",
+        "Mid Freq": "Sets the frequency boosted or cut by the Mid parameter.",
+        "Treble": "Controls the high frequency EQ of the tonestack.",
+        "Master": "Controls the Master Volume of the amplifier.",
+        "Input Pad": "Boosts or cuts the input signal into the preamp by 10 dB.",
+        "Boost": "When on, supplies an additional boost for noticeably more gain and distortion.",
+        "Limiter": "When on, enables the built-in limiter.",
+        "Threshold": "Sets the level above which limiting is applied. Lower values limit more of the signal; higher values limit only louder parts of the signal.",
+        "Level": "Controls the overall level of the Preamp block."
+    }
+}

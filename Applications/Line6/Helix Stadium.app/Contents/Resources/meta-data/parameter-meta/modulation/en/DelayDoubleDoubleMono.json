@@ -1,0 +1,13 @@
+{
+    "category": "modulation",
+    "model_id": 338,
+    "model_sym": "ModelID::kDelayDoubleDoubleMono",
+    "display_name": "Double Take",
+    "parameters-en": {
+        "Doubles": "Selects the number of additional voices, 1-4.",
+        "Slop": "Controls the apparent tightness or sloppiness of the additional voices. Higher values result in more slop, or more variation between the voices.",
+        "Sensitivity": "Adjusts the Slop parameter's sensitivity to playing dynamics. At higher values, playing harder generates more slop.",
+        "Dry Level": "Controls the level of the dry (uneffected) signal.",
+        "Wet Level": "Controls the level of the wet (effected) signal."
+    }
+}

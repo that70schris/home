@@ -1,0 +1,67 @@
+{
+    "modelName": "Rez Synth",
+    "params": {
+        "Wave": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "Filter": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Decay": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Octave Down",
+            "Wave": 2,
+            "Filter": 0.55,
+            "Decay": 0.6,
+            "Mix": 0.56,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Wah",
+            "Wave": 6,
+            "Filter": 0.17,
+            "Decay": 0.0700001,
+            "Mix": 0.42,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Acid",
+            "Wave": 3,
+            "Filter": 0.43,
+            "Decay": 0.36,
+            "Mix": 1.0,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Octave Up",
+            "Wave": 5,
+            "Filter": 0.83,
+            "Decay": 0.43,
+            "Mix": 0.21,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Mono Bass",
+            "Wave": 1,
+            "Filter": 0.8,
+            "Decay": 0.79,
+            "Mix": 1.0,
+            "Level": 0.0
+        }
+    }
+}

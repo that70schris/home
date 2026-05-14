@@ -1,0 +1,67 @@
+{
+    "modelName": "Vetta Wah",
+    "params": {
+        "Pedal": {
+            "id": 1,
+            "behavior": "exclude"
+        },
+        "FcLow": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "FcHigh": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 5,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Stock",
+            "Pedal": 0.0,
+            "FcLow": 300.0,
+            "FcHigh": 2300.0,
+            "Mix": 1.0,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Subtle",
+            "Pedal": 0.0,
+            "FcLow": 409.0,
+            "FcHigh": 961.0,
+            "Mix": 0.550000011920929,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Controlled",
+            "Pedal": 0.0,
+            "FcLow": 363.0,
+            "FcHigh": 1600.0,
+            "Mix": 0.699999988079071,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Extended",
+            "Pedal": 0.0,
+            "FcLow": 406.0,
+            "FcHigh": 2900.000244140625,
+            "Mix": 0.6499999761581421,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Lower Range",
+            "Pedal": 0.0,
+            "FcLow": 177.0,
+            "FcHigh": 836.0,
+            "Mix": 1.0,
+            "Level": 0.0
+        }
+    }
+}

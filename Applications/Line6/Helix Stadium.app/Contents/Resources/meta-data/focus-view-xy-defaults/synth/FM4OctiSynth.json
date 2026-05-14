@@ -1,0 +1,94 @@
+{
+    "modelName": "Octi Synth",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Freq": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Q": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Fuzz",
+            "Speed": 0.0,
+            "Freq": 0.0,
+            "Q": 0.35,
+            "Depth": 0.0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Lo-Q",
+            "Speed": 0.0,
+            "Freq": 0.07,
+            "Q": 0.04,
+            "Depth": 0.0,
+            "Mix": 0.41,
+            "Level": 2.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Hi-Q",
+            "Speed": 0.0,
+            "Freq": 0.0,
+            "Q": 0.8,
+            "Depth": 0.0,
+            "Mix": 1.0,
+            "Level": -3.6,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Ring Mod",
+            "Speed": 7.8,
+            "Freq": 0.17,
+            "Q": 0.17,
+            "Depth": 0.0,
+            "Mix": 0.84,
+            "Level": 1.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Frankenstein",
+            "Speed": 0.0,
+            "Freq": 0.56,
+            "Q": 0.0,
+            "Depth": 0.0,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

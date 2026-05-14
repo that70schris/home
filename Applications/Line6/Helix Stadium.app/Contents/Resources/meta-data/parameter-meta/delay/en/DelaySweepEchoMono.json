@@ -1,0 +1,23 @@
+{
+    "category": "delay",
+    "model_id": 119,
+    "model_sym": "ModelID::kDelaySweepEchoMono",
+    "display_name": "Sweep Echo",
+    "parameters-en": {
+        "Time": "Adjusts the length of time before the first repeat. When set to note values, Time follows the system tempo.",
+        "Feedback": "Feedback controls the number of delay repeats. When set to 0%, only one repeat is heard. At high values, the delay taps may begin to self-oscillate and squeal (perhaps in a good way).",
+        "Low Cut": "Applies a low cut (or high pass) filter to the repeats, letting you remove the effected signal below a certain frequency.",
+        "High Cut": "Applies a high cut (or low pass) filter to the repeats, letting you remove the effected signal above a certain frequency.",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "Filter": "Selects the type of filter applied to the repeats--Low Pass (High Cut), Band Pass, or High Pass (Low Cut).",
+        "Shape": "Selects the wave shape of the filter modulation applied to the repeats.",
+        "Rate": "Controls the speed or rate of the modulation applied to the repeats. When set to 0.0, Rate freezes the current filter frequency.",
+        "StartFreq": "Sets the lowest frequency in the sweep modulation.",
+        "Range": "Determines how high the modulation sweeps.",
+        "Resonance": "Controls the resonance or width of the frequency band affected by the filters.",
+        "DutyCycle": "Alters the modulation wave shape in differing ways. For example, when Shape is set to \"Triangle,\" 50% is a normal triangle wave and extreme values warp the wave toward a saw down (0%) or saw up (100%) shape. Or with Sine, 50% is a normal sine wave and extreme values warp the wave toward a parabolic down (0%) or parabolic up (100%) shape.",
+        "Headroom": "Provides up to 12.0 dB of additional headroom.",
+        "TSync1": ""
+    }
+}

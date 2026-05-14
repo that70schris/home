@@ -1,0 +1,94 @@
+{
+    "modelName": "Throbber",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Freq": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Q": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Wave": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Wowzers",
+            "Speed": 1.1,
+            "Freq": 0.23,
+            "Q": 0.25,
+            "Wave": 2,
+            "Mix": 0.66,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Underwater",
+            "Speed": 0.2,
+            "Freq": 0.22,
+            "Q": 0.82,
+            "Wave": 2,
+            "Mix": 0.84,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Flutter",
+            "Speed": 6.6,
+            "Freq": 0.28,
+            "Q": 0.05,
+            "Wave": 0,
+            "Mix": 0.78,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "On the Beat",
+            "Speed": 2.7,
+            "Freq": 0.0599999,
+            "Q": 0.33,
+            "Wave": 1,
+            "Mix": 0.78,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Chopped Up",
+            "Speed": 10.8,
+            "Freq": 0.47,
+            "Q": 0.17,
+            "Wave": 0,
+            "Mix": 0.69,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "modelName": "Blue Comp",
+    "params": {
+        "Sustain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 2,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Smooth",
+            "Sustain": 0.3500000238418579,
+            "Level": 0.6200000047683716
+        },
+        "x_min_y_min": {
+            "name": "Chicken Pickin'",
+            "Sustain": 0.10000002384185791,
+            "Level": 0.9500000476837158
+        },
+        "x_min_y_max": {
+            "name": "Thick",
+            "Sustain": 0.690000057220459,
+            "Level": 0.6000000238418579
+        },
+        "x_max_y_min": {
+            "name": "Rhythm Comp",
+            "Sustain": 0.20000004768371582,
+            "Level": 0.8999999761581421
+        },
+        "x_max_y_max": {
+            "name": "Sustain Lead",
+            "Sustain": 0.9800000190734863,
+            "Level": 0.6499999761581421
+        }
+    }
+}

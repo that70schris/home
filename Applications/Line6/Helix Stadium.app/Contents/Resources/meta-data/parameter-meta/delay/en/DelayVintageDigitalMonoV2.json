@@ -1,0 +1,18 @@
+{
+    "category": "delay",
+    "model_id": 115,
+    "model_sym": "ModelID::kDelayVintageDigitalMonoV2",
+    "display_name": "Vintage Digital",
+    "parameters-en": {
+        "Time": "Time adjusts the length of time before the first repeat. When set to note values, Time follows the system tempo.",
+        "Feedback": "Controls the number of delay repeats. When set to 0%, only one repeat is heard; at 100%, the delay repeats forever.",
+        "Bit Depth": "Lowers the bit depth of the repeats for a grungier sound. For more transparent results, set to 24 bits.",
+        "Sample Rate": "Lowers the sample rate of the repeats for a grungier, more vintage digital sound. For more transparent results, set to 48kHz.",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "Rate": "Controls the speed or rate of the pitch modulation applied to the repeats.",
+        "Depth": "Controls the depth or intensity of the pitch modulation applied to the repeats.",
+        "Headroom": "Some older rackmount delays' internal signal paths exhibit a bit of grit, especially when placed after a high-gain amp block. Negative values increase the perceived amount of grit; positive values clean things up a bit.",
+        "TSync1": ""
+    }
+}

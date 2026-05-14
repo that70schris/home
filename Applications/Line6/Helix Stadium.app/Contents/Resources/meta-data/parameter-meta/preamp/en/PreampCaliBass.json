@@ -1,0 +1,17 @@
+{
+    "category": "preamp",
+    "model_id": 581,
+    "model_sym": "ModelID::kPreampCaliBass",
+    "display_name": "Cali Bass",
+    "parameters-en": {
+        "Drive": "Controls the amount of gain applied to the signal, which influences the level of distortion.",
+        "Bass": "Controls the low frequency EQ of the tonestack.",
+        "Mid": "Controls the midrange frequency EQ of the tonestack.",
+        "High Mid": "Controls the high midrange frequency EQ of the tonestack.",
+        "Treble": "Controls the high frequency EQ of the tonestack.",
+        "Level": "Controls the overall level of the Preamp block. Unlike Master Volume, it has no effect on the block's tone.",
+        "Master": "Controls the Master Volume of the amplifier.",
+        "Sag": "Controls the amount of sag, or how much the power supply compresses or \"droops\" in response to striking the strings hard. Higher values provide more touch dynamics, sustain, and organic feel that's inherent in vintage tube amps; lower values offer a \"tighter\" responsiveness for a more modern feel.",
+        "Voice": "This 5-position parameter changes the overall tonal character of the preamp: Voices 1 and 2 are variations of a \"scooped\" sound, Voices 4 and 5 are variations of a \"mid-forward\" sound, and Voice 3 is flat."
+    }
+}

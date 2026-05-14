@@ -1,0 +1,130 @@
+{
+    "modelName": "Dynamic Hall",
+    "params": {
+        "Decay": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Predelay": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "RoomSize": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "Diffusion": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Damping": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Motion": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "BassFreq": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "BassBoost": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "LowCut": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "HighCut": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 12,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Big Hall",
+            "Decay": 6.299999713897705,
+            "Predelay": 0.20000004768371582,
+            "RoomSize": 0,
+            "Diffusion": 0.10000002384185791,
+            "Damping": 5900.00048828125,
+            "Mix": 0.3799999952316284,
+            "Motion": 0.26999998092651367,
+            "BassFreq": 100.0,
+            "BassBoost": 0.0,
+            "LowCut": 117.0,
+            "HighCut": 12700.0,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Small Hall",
+            "Decay": 1.4000000953674316,
+            "Predelay": 0.12900006771087646,
+            "RoomSize": 1,
+            "Diffusion": 0.10000002384185791,
+            "Damping": 5900.00048828125,
+            "Mix": 0.28999996185302734,
+            "Motion": 0.26999998092651367,
+            "BassFreq": 100.0,
+            "BassBoost": -6.0,
+            "LowCut": 117.0,
+            "HighCut": 9500.0,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Medium Hall",
+            "Decay": 3.9000000953674316,
+            "Predelay": 0.0,
+            "RoomSize": 1,
+            "Diffusion": 0.18000006675720215,
+            "Damping": 1600.0,
+            "Mix": 0.43000006675720215,
+            "Motion": 0.26999998092651367,
+            "BassFreq": 100.0,
+            "BassBoost": -6.0,
+            "LowCut": 117.0,
+            "HighCut": 9500.0,
+            "Level": 1.2000007629394531
+        },
+        "x_max_y_min": {
+            "name": "Pad-Like",
+            "Decay": 11.600001335144043,
+            "Predelay": 0.11300003528594971,
+            "RoomSize": 2,
+            "Diffusion": 0.08000004291534424,
+            "Damping": 5500.00048828125,
+            "Mix": 0.41999995708465576,
+            "Motion": 0.309999942779541,
+            "BassFreq": 232.0,
+            "BassBoost": -0.40000057220458984,
+            "LowCut": 140.0,
+            "HighCut": 16100.0,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "4ever-ish",
+            "Decay": 45.099998474121094,
+            "Predelay": 0.10100007057189941,
+            "RoomSize": 1,
+            "Diffusion": 0.12999999523162842,
+            "Damping": 7600.0,
+            "Mix": 0.46000003814697266,
+            "Motion": 0.6000000238418579,
+            "BassFreq": 81.0,
+            "BassBoost": -0.40000057220458984,
+            "LowCut": 140.0,
+            "HighCut": 11300.0,
+            "Level": 2.0999984741210938
+        }
+    }
+}

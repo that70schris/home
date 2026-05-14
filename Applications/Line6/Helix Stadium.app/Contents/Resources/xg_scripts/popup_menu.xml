@@ -1,0 +1,52 @@
+
+<xg>
+    <panel_widget height="167" id="1" left="0" top="0" width="180">
+        <bg_color>0xFF212121</bg_color>
+        <pushbutton_widget height="36" id="comm" left="0" top="0" width="180">
+            <anchor_pos left="0" right="0"/>
+            <bg_color>0xFF212121</bg_color>
+            <icon height="28" width="28">201</icon>
+            <icon_placement spacing="8">-1</icon_placement>
+            <text>
+                <label>Command</label>
+                <font name="Inter Display" size="14"/>
+                <align horz="left"/>
+                <offset x="8"/>
+                <text_color>0xFFA9A9A9</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF2E2E2E</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+                <offset y="1"/>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF515151</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <toggle_widget height="36" id="togl" left="0" top="45" width="180">
+            <anchor_pos left="0" right="0"/>
+            <bg_color>0xFF212121</bg_color>
+            <icon height="32" width="32">212</icon>
+            <icon_placement spacing="8">-1</icon_placement>
+            <text>
+                <label>Toggle</label>
+                <font name="Inter Display" size="14"/>
+                <align horz="left"/>
+                <offset x="8"/>
+                <text_color>0xFFA9A9A9</text_color>
+            </text>
+            <active_state>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </active_state>
+        </toggle_widget>
+        <radio_widget class="P35WidgetColorSwatch" height="56" id="colr" left="6" top="83" width="168">
+            <anchor_pos left="6" right="6"/>
+            <bg_color>0xFF212121</bg_color>
+        </radio_widget>
+        <panel_widget height="1" id="sepr" left="0" top="140" width="180">
+            <anchor_pos left="0" right="0"/>
+            <bg_color>0xFF424242</bg_color>
+        </panel_widget>
+    </panel_widget>
+</xg>

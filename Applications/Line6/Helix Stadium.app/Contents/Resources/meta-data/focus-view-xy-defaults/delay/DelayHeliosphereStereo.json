@@ -1,0 +1,130 @@
+{
+    "modelName": "Heliosphere",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Rate": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Scale": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "VerbMix": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "VerbDecay": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Headroom": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 11,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 12,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Heliosphere",
+            "Time": 0.800000011920929,
+            "Feedback": 0.8500000238418579,
+            "Rate": 0.10000002384185791,
+            "Depth": 0.44200000166893005,
+            "Mix": 0.44999998807907104,
+            "Level": 0.0,
+            "Scale": 0.75,
+            "VerbMix": 0.5,
+            "VerbDecay": 0.5,
+            "Headroom": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        },
+        "x_min_y_min": {
+            "name": "Just Delay",
+            "Time": 0.800000011920929,
+            "Feedback": 0.5,
+            "Rate": 0.10000002384185791,
+            "Depth": 0.0,
+            "Mix": 0.3499999940395355,
+            "Level": 0.0,
+            "Scale": 0.5,
+            "VerbMix": 0.0,
+            "VerbDecay": 0.800000011920929,
+            "Headroom": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        },
+        "x_min_y_max": {
+            "name": "Just Reverb",
+            "Time": 0.800000011920929,
+            "Feedback": 0.5,
+            "Rate": 0.10000002384185791,
+            "Depth": 0.0,
+            "Mix": 0.3499999940395355,
+            "Level": 0.0,
+            "Scale": 0.5,
+            "VerbMix": 1.0,
+            "VerbDecay": 0.6000000238418579,
+            "Headroom": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        },
+        "x_max_y_min": {
+            "name": "Outer Space",
+            "Time": 0.800000011920929,
+            "Feedback": 0.550000011920929,
+            "Rate": 0.10000002384185791,
+            "Depth": 0.7200000286102295,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "Scale": 1.0,
+            "VerbMix": 1.0,
+            "VerbDecay": 0.9800000190734863,
+            "Headroom": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        },
+        "x_max_y_max": {
+            "name": "Massive",
+            "Time": 0.800000011920929,
+            "Feedback": 1.0,
+            "Rate": 0.20000001788139343,
+            "Depth": 0.3499999940395355,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "Scale": 0.75,
+            "VerbMix": 0.5,
+            "VerbDecay": 0.8999999761581421,
+            "Headroom": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        }
+    }
+}

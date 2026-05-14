@@ -1,0 +1,148 @@
+{
+    "modelName": "PV Vitriol Clean",
+    "params": {
+        "PreGain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "PostGain": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Hum": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Ripple": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Bias": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "BiasX": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "Presence": {
+            "id": 13,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 14,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "PV Clean",
+            "PreGain": 0.56,
+            "Bass": 0.45,
+            "Mid": 0.6,
+            "Treble": 0.75,
+            "PostGain": 0.75,
+            "ChVol": 0.9,
+            "Master": 0.84,
+            "Sag": 0.5,
+            "Hum": 0.0,
+            "Ripple": 0.5,
+            "Bias": 0.5,
+            "BiasX": 0.5,
+            "Presence": 0.0,
+            "Depth": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Mid Boost",
+            "PreGain": 0.96,
+            "Bass": 0.36,
+            "Mid": 0.6,
+            "Treble": 0.34,
+            "PostGain": 1.0,
+            "ChVol": 0.62,
+            "Master": 0.73,
+            "Sag": 0.5,
+            "Hum": 0.34,
+            "Ripple": 0.5,
+            "Bias": 0.5,
+            "BiasX": 0.5,
+            "Presence": 0.0,
+            "Depth": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Slight Break",
+            "PreGain": 0.77,
+            "Bass": 0.36,
+            "Mid": 0.6,
+            "Treble": 0.45,
+            "PostGain": 1.0,
+            "ChVol": 0.75,
+            "Master": 0.73,
+            "Sag": 0.5,
+            "Hum": 0.0,
+            "Ripple": 0.5,
+            "Bias": 0.5,
+            "BiasX": 0.5,
+            "Presence": 0.0,
+            "Depth": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Brash",
+            "PreGain": 1.0,
+            "Bass": 0.04,
+            "Mid": 0.6,
+            "Treble": 0.49,
+            "PostGain": 1.0,
+            "ChVol": 0.62,
+            "Master": 0.73,
+            "Sag": 0.5,
+            "Hum": 0.34,
+            "Ripple": 0.5,
+            "Bias": 0.5,
+            "BiasX": 0.5,
+            "Presence": 0.0,
+            "Depth": 0.0
+        },
+        "x_max_y_max": {
+            "name": "On a Break",
+            "PreGain": 1.0,
+            "Bass": 0.58,
+            "Mid": 0.82,
+            "Treble": 0.49,
+            "PostGain": 1.0,
+            "ChVol": 0.45,
+            "Master": 0.95,
+            "Sag": 0.25,
+            "Hum": 0.34,
+            "Ripple": 0.2,
+            "Bias": 0.5,
+            "BiasX": 0.5,
+            "Presence": 0.0,
+            "Depth": 0.0
+        }
+    }
+}

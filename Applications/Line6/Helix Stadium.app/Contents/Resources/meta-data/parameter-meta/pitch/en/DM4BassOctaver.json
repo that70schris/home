@@ -1,0 +1,12 @@
+{
+    "category": "pitch",
+    "model_id": 349,
+    "model_sym": "ModelID::kDM4BassOctaver",
+    "display_name": "Bass Octaver",
+    "parameters-en": {
+        "Tone": "Changes the character of the octaver effect. Lower values result in more of a sub-bass dub sound whereas higher values provide greater note definition but may end up sounding a bit synthy.",
+        "Normal": "Controls the level of the dry signal.",
+        "Octave": "Controls the level of the octaver effect.",
+        "Level": "Sets the overall level of the block."
+    }
+}

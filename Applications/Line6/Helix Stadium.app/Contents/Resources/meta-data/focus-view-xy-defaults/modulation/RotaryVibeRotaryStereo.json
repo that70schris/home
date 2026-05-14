@@ -1,0 +1,139 @@
+{
+    "modelName": "Vibe Rotary",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "SlowSpeed": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "FastSpeed": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "RampTime": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "Drive": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Blend": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Headroom": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        },
+        "SyncSelect2": {
+            "id": 12,
+            "behavior": "quantize"
+        },
+        "TempoSync2": {
+            "id": 13,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Frio Vibe",
+            "Speed": true,
+            "SlowSpeed": 0.33000004291534424,
+            "FastSpeed": 0.5299999713897705,
+            "RampTime": 1,
+            "Drive": 0.3999999761581421,
+            "Blend": 0.5,
+            "Mix": 0.3500000238418579,
+            "Level": 0.0,
+            "Headroom": 0.0,
+            "SyncSelect1": 1,
+            "TempoSync1": true,
+            "SyncSelect2": 12,
+            "TempoSync2": true
+        },
+        "x_min_y_min": {
+            "name": "Them Vibe",
+            "Speed": false,
+            "SlowSpeed": 0.33000004291534424,
+            "FastSpeed": 0.5299999713897705,
+            "RampTime": 1,
+            "Drive": 0.25,
+            "Blend": 0.5,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "Headroom": 0.0,
+            "SyncSelect1": 1,
+            "TempoSync1": true,
+            "SyncSelect2": 12,
+            "TempoSync2": true
+        },
+        "x_min_y_max": {
+            "name": "Pequeno Vibe",
+            "Speed": false,
+            "SlowSpeed": 0.33000004291534424,
+            "FastSpeed": 0.5299999713897705,
+            "RampTime": 1,
+            "Drive": 0.25,
+            "Blend": 0.5,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "Headroom": 0.0,
+            "SyncSelect1": 1,
+            "TempoSync1": true,
+            "SyncSelect2": 12,
+            "TempoSync2": true
+        },
+        "x_max_y_min": {
+            "name": "Classic Vibe",
+            "Speed": true,
+            "SlowSpeed": 0.33000004291534424,
+            "FastSpeed": 0.5299999713897705,
+            "RampTime": 1,
+            "Drive": 0.0,
+            "Blend": 0.5,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "Headroom": 0.0,
+            "SyncSelect1": 1,
+            "TempoSync1": true,
+            "SyncSelect2": 12,
+            "TempoSync2": true
+        },
+        "x_max_y_max": {
+            "name": "Driven Vibe",
+            "Speed": false,
+            "SlowSpeed": 0.33000004291534424,
+            "FastSpeed": 0.5299999713897705,
+            "RampTime": 2,
+            "Drive": 1.0,
+            "Blend": 0.5,
+            "Mix": 1.0,
+            "Level": -5.0,
+            "Headroom": 0.0,
+            "SyncSelect1": 1,
+            "TempoSync1": true,
+            "SyncSelect2": 12,
+            "TempoSync2": true
+        }
+    }
+}

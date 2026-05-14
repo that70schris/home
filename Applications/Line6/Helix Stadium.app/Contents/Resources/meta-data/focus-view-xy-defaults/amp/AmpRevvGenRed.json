@@ -1,0 +1,148 @@
+{
+    "modelName": "Revv Gen Red",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Presence": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Resonance": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Aggression": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "Sag": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Hum": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "Ripple": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "Bias": {
+            "id": 13,
+            "behavior": "interpolate"
+        },
+        "BiasX": {
+            "id": 14,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Riff",
+            "Drive": 0.4099999666213989,
+            "Bass": 0.5399999618530273,
+            "Mid": 0.5199999809265137,
+            "Treble": 0.4500000476837158,
+            "Presence": 0.38999998569488525,
+            "ChVol": 0.8399999141693115,
+            "Master": 0.5,
+            "Resonance": 0.5499999523162842,
+            "Aggression": 1,
+            "Sag": 0.5,
+            "Hum": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Chug",
+            "Drive": 0.3799999952316284,
+            "Bass": 0.6399999856948853,
+            "Mid": 0.33000004291534424,
+            "Treble": 0.4500000476837158,
+            "Presence": 0.4500000476837158,
+            "ChVol": 0.8399999141693115,
+            "Master": 0.5,
+            "Resonance": 0.6000000238418579,
+            "Aggression": 1,
+            "Sag": 0.5,
+            "Hum": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_min_y_max": {
+            "name": "Tight",
+            "Drive": 0.31999993324279785,
+            "Bass": 0.25,
+            "Mid": 0.7000000476837158,
+            "Treble": 0.5,
+            "Presence": 0.4700000286102295,
+            "ChVol": 0.8399999141693115,
+            "Master": 0.5,
+            "Resonance": 0.5499999523162842,
+            "Aggression": 1,
+            "Sag": 0.5,
+            "Hum": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_max_y_min": {
+            "name": "Saturated",
+            "Drive": 0.38999998569488525,
+            "Bass": 0.3500000238418579,
+            "Mid": 0.43000006675720215,
+            "Treble": 0.5,
+            "Presence": 0.6100000143051147,
+            "ChVol": 0.8399999141693115,
+            "Master": 0.5,
+            "Resonance": 0.690000057220459,
+            "Aggression": 2,
+            "Sag": 0.5,
+            "Hum": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_max_y_max": {
+            "name": "Shred",
+            "Drive": 0.4700000286102295,
+            "Bass": 0.4700000286102295,
+            "Mid": 0.6700000762939453,
+            "Treble": 0.46000003814697266,
+            "Presence": 0.5,
+            "ChVol": 0.7999999523162842,
+            "Master": 0.5,
+            "Resonance": 0.5499999523162842,
+            "Aggression": 2,
+            "Sag": 0.5,
+            "Hum": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.5299999713897705,
+            "BiasX": 0.5
+        }
+    }
+}

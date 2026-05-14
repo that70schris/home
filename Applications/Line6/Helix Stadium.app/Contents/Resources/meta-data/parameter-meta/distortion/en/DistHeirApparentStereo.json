@@ -1,0 +1,15 @@
+{
+    "category": "distortion",
+    "model_id": 242,
+    "model_sym": "ModelID::kDistHeirApparentStereo",
+    "display_name": "Heir Apparent",
+    "parameters-en": {
+        "Gain": "Controls the amount of gain applied to the signal.",
+        "Tone": "Controls the overall tonal balance of the overdrive. Lower values are darker and higher values are brighter.",
+        "Presence": "Adds a bit more high end sparkle.",
+        "Clipping": "Selects the clipping mode. \"Overdrive\" has a touch of drive and compression. \"Clean\" is less compressed than \"Overdrive\" and is ideal for boosting your signal into an amp. \"Distortion\" provides even more drive and compression.",
+        "Gain Mod": "The original pedal has different variations available, one with more gain (\"Higher\").",
+        "Level": "Sets the overall level of the block.",
+        "Voltage": "The original pedal was designed to be powered by a 9V power supply but could alternatively accommodate 18V, which would provide a bit more headroom. This is especially apparent when Clipping is set to \"Boost\" and Gain is turned up."
+    }
+}

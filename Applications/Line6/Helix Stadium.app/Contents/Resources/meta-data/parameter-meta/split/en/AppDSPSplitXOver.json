@@ -1,0 +1,11 @@
+{
+    "category": "split",
+    "model_id": 468,
+    "model_sym": "ModelID::kAppDSPSplitXOver",
+    "display_name": "Crossover",
+    "parameters-en": {
+        "Frequency": "Determines the crossover point at which your signal is split into low and high frequencies. Any signal above this frequency is sent to Path A (upper); any signal below this frequency is sent to Path B (lower).",
+        "Reverse": "When set to \"On,\" reverses the path assignments. (Any signal above the crossover frequency is sent to Path B, any signal below the crossover frequency is sent to Path A.)",
+        "bypass": ""
+    }
+}

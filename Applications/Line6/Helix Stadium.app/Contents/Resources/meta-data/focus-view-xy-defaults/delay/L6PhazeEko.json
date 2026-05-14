@@ -1,0 +1,94 @@
+{
+    "modelName": "Phaze Eko",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Speed": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Dreamscape",
+            "Time": 0.682,
+            "Feedback": 0.25,
+            "Speed": 0.25,
+            "Depth": 1.0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Groove Swirl",
+            "Time": 0.419,
+            "Feedback": 0.27,
+            "Speed": 0.34,
+            "Depth": 0.4,
+            "Mix": 0.57,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Sweet Dreams",
+            "Time": 0.364,
+            "Feedback": 0.57,
+            "Speed": 0.36,
+            "Depth": 0.5,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Cool Repeat",
+            "Time": 0.335,
+            "Feedback": 0.35,
+            "Speed": 0.02,
+            "Depth": 0.8,
+            "Mix": 0.72,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "What tha?",
+            "Time": 0.653,
+            "Feedback": 0.95,
+            "Speed": 0.88,
+            "Depth": 0.93,
+            "Mix": 0.72,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

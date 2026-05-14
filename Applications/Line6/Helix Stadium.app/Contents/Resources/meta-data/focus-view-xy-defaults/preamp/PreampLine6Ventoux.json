@@ -1,0 +1,103 @@
+{
+    "modelName": "Ventoux",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "HPF": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Presence": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Hum": {
+            "id": 9,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Midrange Drive",
+            "Drive": 0.5199999809265137,
+            "HPF": 0.4099999666213989,
+            "Mid": 0.5299999713897705,
+            "Presence": 0.3999999761581421,
+            "Depth": 0.33000004291534424,
+            "ChVol": 0.8199999332427979,
+            "Master": 0.75,
+            "Sag": 0.5,
+            "Hum": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Clean It Up",
+            "Drive": 0.18000006675720215,
+            "HPF": 0.3500000238418579,
+            "Mid": 0.3999999761581421,
+            "Presence": 0.7400000095367432,
+            "Depth": 0.49000000953674316,
+            "ChVol": 1.0,
+            "Master": 0.6600000858306885,
+            "Sag": 0.5,
+            "Hum": 0.5
+        },
+        "x_min_y_max": {
+            "name": "Breaking Up",
+            "Drive": 0.2999999523162842,
+            "HPF": 0.4500000476837158,
+            "Mid": 0.5699999332427979,
+            "Presence": 0.5499999523162842,
+            "Depth": 0.33000004291534424,
+            "ChVol": 0.8700000047683716,
+            "Master": 0.7999999523162842,
+            "Sag": 0.5,
+            "Hum": 0.5
+        },
+        "x_max_y_min": {
+            "name": "Fat Crunch",
+            "Drive": 0.6600000858306885,
+            "HPF": 0.2999999523162842,
+            "Mid": 0.6499999761581421,
+            "Presence": 0.46000003814697266,
+            "Depth": 0.4099999666213989,
+            "ChVol": 0.7899999618530273,
+            "Master": 0.7999999523162842,
+            "Sag": 0.5,
+            "Hum": 0.5
+        },
+        "x_max_y_max": {
+            "name": "Tight & Heavy",
+            "Drive": 0.9100000858306885,
+            "HPF": 0.6399999856948853,
+            "Mid": 0.4500000476837158,
+            "Presence": 0.5099999904632568,
+            "Depth": 0.10000002384185791,
+            "ChVol": 0.58,
+            "Master": 0.8999999761581421,
+            "Sag": 0.5,
+            "Hum": 0.5
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "category": "distortion",
+    "model_id": 235,
+    "model_sym": "ModelID::kDistDeezOneVintageStereo",
+    "display_name": "Deez One Vintage",
+    "parameters-en": {
+        "Drive": "Controls the amount of distortion applied to the signal.",
+        "Tone": "Controls the overall tonal balance of the distortion. Lower values are darker and higher values are brighter.",
+        "Level": "Sets the overall level of the block."
+    }
+}

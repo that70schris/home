@@ -1,0 +1,25 @@
+{
+    "category": "reverb",
+    "model_id": 488,
+    "model_sym": "ModelID::kReverbNonLinearMono",
+    "display_name": "Nonlinear",
+    "parameters-en": {
+        "Decay": "Sets the decay of the reverb (1.0 ms ~ 2.000 sec). TIP: When set to note values, playing a note/chord 4 beats (Decay set to 1/1) or 2 beats (Decay set to 1/2) before a song transition can cause the reverb to stop right on the downbeat.",
+        "Predelay": "Controls the amount of delay heard before the audible onset of reverb. Can sometimes result in more definition between the dry and effected signals.",
+        "Shape": "Determines the shape of the reverb's decay. Gauss and Triangle shapes ramp up and then down, Inverse Gauss and Inverse Triangle shapes ramp down and then up, and Full doesn't ramp at all--the reverb is on full blast until the decay length is reached.",
+        "Late Dry": "Adds a bit of the original signal as the very last tap. Most audible when playing simple lines with gaussian and triangle shapes.",
+        "Mix": "Controls the blend between the reverb and the dry signal. At 0%, no reverb is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "Diffusion": "Controls the amount of smearing between discrete echoes, sometimes resulting in a softer effected signal.",
+        "Low Cut": "Applies a low cut (or high pass) filter to the reverb, letting you remove the effected signal below a certain frequency.",
+        "High Cut": "Applies a high cut (or low pass) filter to the reverb, letting you remove the effected signal above a certain frequency.",
+        "Mod": "Controls the amount of modulation applied to the reverb.",
+        "Rate": "Controls the rate or speed of modulation applied to the reverb.",
+        "TempoSync1": "",
+        "Speed": "",
+        "TempoSync2": "",
+        "Width": "",
+        "Manual": "",
+        "Room Size": ""
+    }
+}

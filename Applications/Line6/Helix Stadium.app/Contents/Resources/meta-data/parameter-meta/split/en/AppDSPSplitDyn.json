@@ -1,0 +1,13 @@
+{
+    "category": "split",
+    "model_id": 466,
+    "model_sym": "ModelID::kAppDSPSplitDyn",
+    "display_name": "Dynamic",
+    "parameters-en": {
+        "Threshold": "Determines the signal level above which gets routed to Path B. Playing softer (signal below the Threshold) is routed to Path A; playing louder (signal above the Threshold) is routed to Path B.",
+        "Attack": "Determines how fast the signal is routed to Path B once reaching the Threshold.",
+        "Decay": "Determines how fast the signal returns to Path A once it falls below the Threshold.",
+        "Reverse": "When set to \"On,\" reverses the path assignments. (Any signal above the Threshold is sent to Path B, any signal below the Threshold is sent to Path A.)",
+        "bypass": ""
+    }
+}

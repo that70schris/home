@@ -1,0 +1,125 @@
+
+<xg>
+    <panel_widget class="P35SliderParamView" height="53" id="slvw" left="0" name="Slider View" top="0" width="500">
+        <anchor_pos left="0" right="0"/>
+        <bg_color>0xFF0C0C0C</bg_color>
+        <disabled_color>0x00000000</disabled_color>
+        <image_widget class="P35CtrlAssign" height="36" id="ctrl" left="2" name="Ctrl Assign" top="10" width="28">
+            <anchor_pos bottom="5" left="2" top="10"/>
+            <bg_color>0x00000000</bg_color>
+            <image>117</image>
+            <scale_mode>keep_aspect</scale_mode>
+        </image_widget>
+        <slider_widget class="P35ParamSliderWidget" height="53" id="sldr" left="36" name="Slider" top="0" width="441">
+            <anchor_pos bottom="0" left="36" right="23" top="0"/>
+            <bg_color>0xFF1F1F1F</bg_color>
+            <thumb_color>0xFF00A700</thumb_color>
+            <thumb_center x="2" y="25"/>
+            <thumb_size height="45" width="5"/>
+            <pixel_range x="2" y="27">84</pixel_range>
+        </slider_widget>
+        <text_widget height="18" id="name" left="36" name="Label" top="0" width="60">
+            <anchor_pos left="36" top="0"/>
+            <bg_color>0x000000FF</bg_color>
+            <text>
+                <label>Text Label</label>
+                <font name="Inter Display" size="14"/>
+                <align vert="middle"/>
+                <text_color>0xFFD0D0D0</text_color>
+            </text>
+        </text_widget>
+        <number_text_edit_widget class="P35ParamEditBox" height="14" id="edit" left="307" name="Edit" top="0" width="170">
+            <anchor_pos right="23" top="0"/>
+            <visible>no</visible>
+            <bg_color>0x00000000</bg_color>
+            <text>
+                <label>0</label>
+                <font name="Inter Display" size="14"/>
+                <align horz="right"/>
+                <offset x="-5"/>
+                <text_color>0xFFD0D0D0</text_color>
+            </text>
+            <arrow_buttons size="12">
+                <chevron_size>6</chevron_size>
+                <fg_color>0xFFD0D0D0</fg_color>
+                <bg_color>0x00FFFFFF</bg_color>
+                <border_thickness>0</border_thickness>
+            </arrow_buttons>
+        </number_text_edit_widget>
+        <text_menu_widget class="P35ParamMenu" height="16" id="menu" left="327" name="Menu" top="0" width="150">
+            <anchor_pos right="23" top="0"/>
+            <bg_color>0x00000000</bg_color>
+            <chevron_pos>6</chevron_pos>
+            <text>
+                <label>Text Menu</label>
+                <font name="Inter Display" size="14"/>
+                <align horz="right"/>
+                <offset x="-4"/>
+                <text_color>0xFFD0D0D0</text_color>
+            </text>
+            <menu>
+                <item_height>24</item_height>
+                <max_menu_height>9999</max_menu_height>
+                <min_visible_items>5</min_visible_items>
+                <right_margin>10</right_margin>
+                <auto_hide_margins>no</auto_hide_margins>
+                <font name="Inter Display" size="14"/>
+                <text_color>0xFFD0D0D0</text_color>
+                <bg_color>0xFF0C0C0C</bg_color>
+                <hilite_bg_color>0xFF626262</hilite_bg_color>
+                <icon>0</icon>
+                <scrolling>
+                    <scrollbars>
+                        <width>8</width>
+                        <border_color>0x00000000</border_color>
+                        <bg_color>0xFF000000</bg_color>
+                        <thumb_color>0xFF424242</thumb_color>
+                        <thumb_hilite_color>0xFF5E5E5E</thumb_hilite_color>
+                        <arrow_buttons size="0"/>
+                    </scrollbars>
+                </scrolling>
+            </menu>
+            <arrow_buttons align="right" size="12">
+                <chevron_size>6</chevron_size>
+                <fg_color>0xFFD0D0D0</fg_color>
+                <bg_color>0x00FFFFFF</bg_color>
+                <border_color>0xFFB3B3B3</border_color>
+                <border_thickness>0</border_thickness>
+            </arrow_buttons>
+        </text_menu_widget>
+        <toggle_widget height="16" id="sync" left="484" name="Sync" top="17" width="16">
+            <anchor_pos right="0"/>
+            <relative_pos y="50"/>
+            <visible>no</visible>
+            <bg_color>0x00000000</bg_color>
+            <image>107</image>
+        </toggle_widget>
+        <panel_widget class="P35MinMaxLabel" height="13" id="mmlb" left="220" name="Floating Min-Max Label" top="0" width="60">
+            <anchor_pos top="0"/>
+            <relative_pos x="50"/>
+            <visible>no</visible>
+            <bg_color>0xFF404040</bg_color>
+            <corner_radius>3</corner_radius>
+            <text_widget height="13" id="text" left="3" top="0" width="54">
+                <anchor_pos bottom="0" left="3" right="3" top="0"/>
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>value</label>
+                    <font name="Inter Display" size="11"/>
+                    <align vert="middle"/>
+                    <text_color>0xFFE0E0E0</text_color>
+                </text>
+            </text_widget>
+        </panel_widget>
+        <image_widget height="16" id="snap" left="0" name="Snapshot" top="0" width="16">
+            <bg_color>0x00000000</bg_color>
+            <image>109</image>
+            <scale_mode>keep_aspect</scale_mode>
+        </image_widget>
+        <image_widget height="16" id="midi" left="0" name="MIDI" top="0" width="16">
+            <bg_color>0x00000000</bg_color>
+            <image>358</image>
+            <scale_mode>keep_aspect</scale_mode>
+        </image_widget>
+    </panel_widget>
+</xg>

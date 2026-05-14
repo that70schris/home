@@ -1,0 +1,215 @@
+{
+    "modelName": "Brit 2203MV",
+    "params": {
+        "Jack": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "Drive": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Presence": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Ripple": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "ZPrePost": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "Hype": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "AmpCabPeak2Q": {
+            "id": 74,
+            "behavior": "exclude"
+        },
+        "AmpCabPeak2Fc": {
+            "id": 75,
+            "behavior": "exclude"
+        },
+        "AmpCabPeak2G": {
+            "id": 76,
+            "behavior": "exclude"
+        },
+        "AmpCabZFir": {
+            "id": 101,
+            "behavior": "exclude"
+        },
+        "AmpCabZUpdate": {
+            "id": 103,
+            "behavior": "exclude"
+        },
+        "AmpCabShelfF": {
+            "id": 104,
+            "behavior": "exclude"
+        },
+        "AmpCabShelfG": {
+            "id": 105,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakQ": {
+            "id": 106,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakG": {
+            "id": 107,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakFc": {
+            "id": 108,
+            "behavior": "exclude"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Big Rock",
+            "Jack": 1,
+            "Drive": 0.76,
+            "Bass": 0.71,
+            "Mid": 0.64,
+            "Treble": 0.44,
+            "Presence": 0.37,
+            "Master": 0.45,
+            "Level": -10.0,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "ZPrePost": 0.300000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_min_y_min": {
+            "name": "Removal",
+            "Jack": 1,
+            "Drive": 0.5,
+            "Bass": 0.7,
+            "Mid": 0.5,
+            "Treble": 0.56,
+            "Presence": 0.3,
+            "Master": 0.5,
+            "Level": -13.6,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "ZPrePost": 0.300000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_min_y_max": {
+            "name": "Pyro",
+            "Jack": 1,
+            "Drive": 0.8,
+            "Bass": 0.39,
+            "Mid": 0.35,
+            "Treble": 0.75,
+            "Presence": 0.72,
+            "Master": 0.5,
+            "Level": -14.4,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "ZPrePost": 0.300000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_max_y_min": {
+            "name": "Bulls",
+            "Jack": 1,
+            "Drive": 1.0,
+            "Bass": 1.0,
+            "Mid": 1.0,
+            "Treble": 0.73,
+            "Presence": 1.0,
+            "Master": 0.65,
+            "Level": -15.6000,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "ZPrePost": 0.300000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_max_y_max": {
+            "name": "Full",
+            "Jack": 1,
+            "Drive": 1.0,
+            "Bass": 1.0,
+            "Mid": 1.0,
+            "Treble": 1.0,
+            "Presence": 1.0,
+            "Master": 0.5,
+            "Level": -13.8000,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "ZPrePost": 0.300000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        }
+    }
+}

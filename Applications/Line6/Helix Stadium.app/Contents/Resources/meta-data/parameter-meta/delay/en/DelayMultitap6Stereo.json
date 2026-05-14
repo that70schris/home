@@ -1,0 +1,33 @@
+{
+    "category": "delay",
+    "model_id": 81,
+    "model_sym": "ModelID::kDelayMultitap6Stereo",
+    "display_name": "Multitap 6",
+    "parameters-en": {
+        "Time": "Adjusts the length of time for the 6-tap delay sequence to repeat. When set to note values, Time follows the system tempo.",
+        "Feedback": "Controls how many times the 6-tap delay sequence repeats. When set to 0%, the sequence is heard only once; at 100%, the sequence cycles forever.",
+        "Low Cut": "Applies a low cut (or high pass) filter to the repeats, letting you remove the effected signal below a certain frequency.",
+        "High Cut": "Applies a high cut (or low pass) filter to the repeats, letting you remove the effected signal above a certain frequency.",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "T1 Scale": "For multitap delays, each tap's time is some percentage of the master Time parameter. For example, if Time is set to 1.000 second, and T1 Scale is set to 10%, tap 1's delay is 100ms (or 10% of 1.000 second).",
+        "T1 Pan": "Controls the panning of delay tap 1 between the left and right channels.",
+        "T1 Level": "Controls the level of delay tap 1. To mute a tap, set its Level to 0.0.",
+        "T2 Scale": "For multitap delays, each tap's time is some percentage of the master Time parameter. For example, if Time is set to 1.000 second, and T2 Scale is set to 30%, tap 2's delay is 300ms (or 30% of 1.000 second).",
+        "T2 Pan": "Controls the panning of delay tap 2 between the left and right channels.",
+        "T2 Level": "Controls the level of delay tap 2. To mute a tap, set its Level to 0.0.",
+        "T3 Scale": "For multitap delays, each tap's time is some percentage of the master Time parameter. For example, if Time is set to 1.000 second, and T3 Scale is set to 40%, tap 3's delay is 400ms (or 40% of 1.000 second).",
+        "T3 Pan": "Controls the panning of delay tap 3 between the left and right channels.",
+        "T3 Level": "Controls the level of delay tap 3. To mute a tap, set its Level to 0.0.",
+        "T4 Scale": "For multitap delays, each tap's time is some percentage of the master Time parameter. For example, if Time is set to 1.000 second, and T4 Scale is set to 60%, tap 4's delay is 600ms (or 60% of 1.000 second).",
+        "T4 Pan": "Controls the panning of delay tap 4 between the left and right channels.",
+        "T4 Level": "Controls the level of delay tap 4. To mute a tap, set its Level to 0.0.",
+        "T5 Scale": "For multitap delays, each tap's time is some percentage of the master Time parameter. For example, if Time is set to 1.000 second, and T5 Scale is set to 82%, tap 5's delay is 820ms (or 82% of 1.000 second).",
+        "T5 Pan": "Controls the panning of delay tap 5 between the left and right channels.",
+        "T5 Level": "Controls the level of delay tap 5. To mute a tap, set its Level to 0.0.",
+        "T6 Scale": "For multitap delays, each tap's time is some percentage of the master Time parameter. For example, if Time is set to 1.000 second, and T6 Scale is set to 100%, tap 6's delay is also 1.000 second (or 100% of 1.000 second).",
+        "T6 Pan": "Controls the panning of delay tap 6 between the left and right channels.",
+        "T6 Level": "Controls the level of delay tap 6. To mute a tap, set its Level to 0.0.",
+        "TSync1": ""
+    }
+}

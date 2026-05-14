@@ -1,0 +1,67 @@
+{
+    "modelName": "Tape Eater",
+    "params": {
+        "Feedback": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Flutter": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Dist": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Old Tape",
+            "Feedback": 0.6499999761581421,
+            "Flutter": 0.8999999761581421,
+            "Dist": 0.6000000238418579,
+            "Mix": 0.5,
+            "Level": -2.0
+        },
+        "x_min_y_min": {
+            "name": "Subtle Warble",
+            "Feedback": 0.05000000074505806,
+            "Flutter": 0.4699999988079071,
+            "Dist": 0.03999999910593033,
+            "Mix": 0.30000001192092896,
+            "Level": -0.5
+        },
+        "x_min_y_max": {
+            "name": "Magenetophon",
+            "Feedback": 1.0,
+            "Flutter": 0.1599999964237213,
+            "Dist": 0.30000001192092896,
+            "Mix": 0.8700000047683716,
+            "Level": 0.40000152587890625
+        },
+        "x_max_y_min": {
+            "name": "Pencil Gear",
+            "Feedback": 0.14000000059604645,
+            "Flutter": 0.05000000074505806,
+            "Dist": 0.8299999833106995,
+            "Mix": 0.5,
+            "Level": -3.299999237060547
+        },
+        "x_max_y_max": {
+            "name": "80s VHS",
+            "Feedback": 1.0,
+            "Flutter": 1.0,
+            "Dist": 0.8399999737739563,
+            "Mix": 0.9200000166893005,
+            "Level": -3.5
+        }
+    }
+}

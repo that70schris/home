@@ -1,0 +1,139 @@
+{
+    "modelName": "Moo)))n Nrm",
+    "params": {
+        "BrtDrive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "NrmDrive": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Presence": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Hum": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Ripple": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "Bias": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "BiasX": {
+            "id": 13,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Punchy",
+            "BrtDrive": 0.0,
+            "NrmDrive": 0.7200000286102295,
+            "Bass": 0.28999996185302734,
+            "Mid": 0.4500000476837158,
+            "Treble": 0.5799999237060547,
+            "ChVol": 0.75,
+            "Presence": 0.48000001907348633,
+            "Master": 0.5,
+            "Sag": 0.5,
+            "Hum": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Clean",
+            "BrtDrive": 0.0,
+            "NrmDrive": 0.3500000238418579,
+            "Bass": 0.09000003337860107,
+            "Mid": 0.31999993324279785,
+            "Treble": 0.6299999952316284,
+            "ChVol": 0.940000057220459,
+            "Presence": 0.4099999666213989,
+            "Master": 0.7000000476837158,
+            "Sag": 0.5,
+            "Hum": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.4500000476837158,
+            "BiasX": 0.5
+        },
+        "x_min_y_max": {
+            "name": "Rhythm",
+            "BrtDrive": 0.0,
+            "NrmDrive": 0.5099999904632568,
+            "Bass": 0.6299999952316284,
+            "Mid": 0.48000001907348633,
+            "Treble": 0.31999993324279785,
+            "ChVol": 0.75,
+            "Presence": 0.5199999809265137,
+            "Master": 0.5,
+            "Sag": 0.0700000524520874,
+            "Hum": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.5399999618530273,
+            "BiasX": 0.5
+        },
+        "x_max_y_min": {
+            "name": "Dark",
+            "BrtDrive": 0.0,
+            "NrmDrive": 0.7599999904632568,
+            "Bass": 0.940000057220459,
+            "Mid": 0.6100000143051147,
+            "Treble": 0.26999998092651367,
+            "ChVol": 0.7599999904632568,
+            "Presence": 0.36000001430511475,
+            "Master": 0.36000001430511475,
+            "Sag": 0.3700000047683716,
+            "Hum": 0.5,
+            "Ripple": 0.49000000953674316,
+            "Bias": 0.4500000476837158,
+            "BiasX": 0.5
+        },
+        "x_max_y_max": {
+            "name": "Cranked",
+            "BrtDrive": 0.0,
+            "NrmDrive": 0.9500000476837158,
+            "Bass": 0.809999942779541,
+            "Mid": 0.7699999809265137,
+            "Treble": 0.4500000476837158,
+            "ChVol": 0.6100000143051147,
+            "Presence": 0.36000001430511475,
+            "Master": 0.5299999713897705,
+            "Sag": 0.3700000047683716,
+            "Hum": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.6000000238418579,
+            "BiasX": 0.6000000238418579
+        }
+    }
+}

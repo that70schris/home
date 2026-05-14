@@ -1,0 +1,220 @@
+
+<xg>
+    <panel_widget height="440" id="1" left="0" top="0" width="360">
+        <bg_color>0xFF151515</bg_color>
+        <pushbutton_widget height="32" id="canc" left="60" top="302" width="80">
+            <anchor_pos left="60"/>
+            <bg_color>0xFF313131</bg_color>
+            <border_color>0xFF4A4A4A</border_color>
+            <corner_radius>5</corner_radius>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <label>Cancel</label>
+                <font name="Inter" size="14"/>
+                <text_color>0xFFCCCCCC</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF303030</bg_color>
+                <fg_color>0xFFB3B3B3</fg_color>
+                <border_color>0xFF4A4A4A</border_color>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF454545</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+                <border_color>0xFF808080</border_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <pushbutton_widget height="30" id="frgt" left="60" top="352" width="241">
+            <relative_pos x="50"/>
+            <bg_color>0x00000000</bg_color>
+            <corner_radius>4</corner_radius>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <label>Forgot username or password...</label>
+                <font name="Inter Display" size="14"/>
+                <text_color>0xCBFFFFFF</text_color>
+            </text>
+            <active_state>
+                <fg_color>0xFF808080</fg_color>
+                <offset y="1"/>
+            </active_state>
+            <hilite_state>
+                <fg_color>0xFF2289D6</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <image_widget class="P35AnimationWidget" height="48" id="anim" left="156" top="293" width="48">
+            <relative_pos x="50"/>
+            <bg_color>0x00000000</bg_color>
+            <image>287</image>
+        </image_widget>
+        <text_widget height="24" id="fail" left="27" top="249" width="307">
+            <relative_pos x="50"/>
+            <bg_color>0x00000000</bg_color>
+            <text>
+                <label>Incorrect username or password.</label>
+                <font name="Inter" size="16"/>
+                <align horz="center" vert="middle"/>
+                <text_color>0xFFE00000</text_color>
+            </text>
+        </text_widget>
+        <image_widget height="43" id="logo" left="97" top="28" width="167">
+            <relative_pos x="50"/>
+            <bg_color>0x00000000</bg_color>
+            <image>157</image>
+            <scale_mode>keep_aspect</scale_mode>
+        </image_widget>
+        <text_widget height="26" id="1" left="0" top="86" width="360">
+            <anchor_pos left="0" right="0"/>
+            <bg_color>0x00000000</bg_color>
+            <text>
+                <label>Log into your Line 6 Account</label>
+                <font name="Inter" size="16" weight="light"/>
+                <align horz="center" vert="middle"/>
+                <text_color>0xFFFFFFFF</text_color>
+            </text>
+        </text_widget>
+        <pushbutton_widget height="25" id="disc" left="30" top="396" width="300">
+            <anchor_pos bottom="19"/>
+            <relative_pos x="50"/>
+            <bg_color>0x00424242</bg_color>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <label>By signing in you are agreeing to our Conditions of Use and Sale and our Privacy Notice.</label>
+                <font name="Inter Display" size="12"/>
+                <multiline>yes</multiline>
+                <text_color>0xFF808080</text_color>
+            </text>
+            <active_state>
+                <bg_color>0x00145280</bg_color>
+                <fg_color>0xFF808080</fg_color>
+                <offset y="1"/>
+            </active_state>
+            <hilite_state>
+                <bg_color>0x002289D6</bg_color>
+                <fg_color>0xFF2289D6</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <text_edit_widget height="32" id="user" left="60" top="144" width="240">
+            <anchor_pos left="60" right="60"/>
+            <bg_color>0xFF000000</bg_color>
+            <border_color>0xFF323232</border_color>
+            <corner_radius>6</corner_radius>
+            <focus_color>0x0000FF00</focus_color>
+            <text>
+                <label>Username</label>
+                <font name="Inter Display" size="14"/>
+                <offset x="10"/>
+                <text_color>0xFFFFFFFF</text_color>
+            </text>
+            <activate_on_focus>yes</activate_on_focus>
+        </text_edit_widget>
+        <text_edit_widget height="32" id="pass" left="60" top="195" width="210">
+            <anchor_pos left="60" right="90"/>
+            <bg_color>0xFF000000</bg_color>
+            <border_color>0xFF323232</border_color>
+            <corner_radius>6</corner_radius>
+            <focus_color>0x0000FF00</focus_color>
+            <text>
+                <label>Password</label>
+                <font name="Inter Display" size="14"/>
+                <offset x="10"/>
+                <text_color>0xFFFFFFFF</text_color>
+            </text>
+            <secure>yes</secure>
+            <activate_on_focus>yes</activate_on_focus>
+        </text_edit_widget>
+        <toggle_widget height="26" id="secr" left="274" top="199" width="26">
+            <anchor_pos right="60"/>
+            <bg_color>0x00303030</bg_color>
+            <border_color>0x004F4F4F</border_color>
+            <corner_radius>5</corner_radius>
+            <icon>286</icon>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <font name="Inter Display" size="12"/>
+                <text_color>0xFFD6D6D6</text_color>
+            </text>
+            <active_state>
+                <bg_color>0x00333333</bg_color>
+                <fg_color>0xFFEBEBEB</fg_color>
+            </active_state>
+            <hilite_state>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </hilite_state>
+        </toggle_widget>
+        <pushbutton_widget height="32" id="lgin" left="220" top="302" width="80">
+            <anchor_pos right="60"/>
+            <bg_color>0xFF313131</bg_color>
+            <border_color>0xFF494949</border_color>
+            <corner_radius>5</corner_radius>
+            <focus_color>0xFFFFFFFF</focus_color>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <label>Log In</label>
+                <font name="Inter" size="14"/>
+                <text_color>0xFFCDCDCD</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF313131</bg_color>
+                <fg_color>0xFFB3B3B3</fg_color>
+                <border_color>0xFF4A4A4A</border_color>
+                <offset y="1"/>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF474747</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+                <border_color>0xFF7C7C7C</border_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <panel_widget height="166" id="totp" left="0" top="73" width="360">
+            <anchor_pos left="0" right="0" top="73"/>
+            <visible>no</visible>
+            <bg_color>0xFF151515</bg_color>
+            <text_widget height="61" id="1" left="3" top="3" width="354">
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>You have Two Factor Authentication enabled on your account. Please open your authentication app and enter the 6 digit code for Line 6</label>
+                    <font name="Inter" size="16"/>
+                    <align horz="center"/>
+                    <multiline>yes</multiline>
+                    <text_color>0xFFFFFFFF</text_color>
+                </text>
+            </text_widget>
+            <text_edit_widget height="32" id="code" left="60" top="65" width="210">
+                <anchor_pos left="60" right="90"/>
+                <bg_color>0xFF000000</bg_color>
+                <border_color>0xFF323232</border_color>
+                <corner_radius>6</corner_radius>
+                <focus_color>0x0000FF00</focus_color>
+                <text>
+                    <label>******</label>
+                    <font name="Inter Display" size="14"/>
+                    <offset x="10"/>
+                    <text_color>0xFFFFFFFF</text_color>
+                </text>
+                <text_limit>6</text_limit>
+                <secure>yes</secure>
+                <activate_on_focus>yes</activate_on_focus>
+            </text_edit_widget>
+            <toggle_widget height="26" id="tfsc" left="274" top="68" width="26">
+                <anchor_pos right="60"/>
+                <bg_color>0x00303030</bg_color>
+                <border_color>0x004F4F4F</border_color>
+                <corner_radius>5</corner_radius>
+                <icon>286</icon>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <font name="Inter Display" size="12"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0x00333333</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </active_state>
+                <hilite_state>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </hilite_state>
+            </toggle_widget>
+        </panel_widget>
+    </panel_widget>
+</xg>

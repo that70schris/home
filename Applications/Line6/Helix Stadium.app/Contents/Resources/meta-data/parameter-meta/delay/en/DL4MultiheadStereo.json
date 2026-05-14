@@ -1,0 +1,20 @@
+{
+    "category": "delay",
+    "model_id": 49,
+    "model_sym": "ModelID::kDL4MultiheadStereo",
+    "display_name": "Multi-Head",
+    "parameters-en": {
+        "Time": "Adjusts the delay time of tape head 4. Multi-Head has a maximum delay length of 2.5 seconds, with the delay time divided evenly between the 4 tape heads. So if Time is set to 2.000 seconds, tape head 1's time is 500 ms (2000 / 4 = 500). When set to note values, Time follows the system tempo.",
+        "Feedback": "Controls the number of delay repeats for all four tape heads. When set to 0%, only one repeat is heard. At high values, the Delay may begin to self-oscillate and squeal (perhaps in a good way).",
+        "Heads 1-2": "Selects whether tape heads 1 and/or 2 are on or off.",
+        "Heads 3-4": "Selects whether tape heads 3 and/or 4 are on or off.",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TSync1": "",
+        "F16_meta": "",
+        "HD1": "",
+        "HD2": "",
+        "HD3": "",
+        "HD4": ""
+    }
+}

@@ -1,0 +1,121 @@
+{
+    "modelName": "Busy One Ch2",
+    "params": {
+        "Ch2 Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Ch2 Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Ch2 Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Ch2 Mid Freq": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Ch2 Treble": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Ch2 Master": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Input Pad": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "Ch2 Boost": {
+            "id": 8,
+            "behavior": "quantize"
+        },
+        "Limiter": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "Threshold": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Ch Vol": {
+            "id": 11,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Tame",
+            "Ch2 Drive": 0.4500000476837158,
+            "Ch2 Bass": 0.21399998664855957,
+            "Ch2 Mid": 0.0,
+            "Ch2 Mid Freq": 435.9800109863281,
+            "Ch2 Treble": 0.41600000858306885,
+            "Ch2 Master": 0.9200000762939453,
+            "Input Pad": 1,
+            "Ch2 Boost": false,
+            "Limiter": true,
+            "Threshold": 3.0,
+            "Ch Vol": 0.8299999237060547
+        },
+        "x_min_y_min": {
+            "name": "Round",
+            "Ch2 Drive": 0.6000000238418579,
+            "Ch2 Bass": 0.21399998664855957,
+            "Ch2 Mid": 4.19999885559082,
+            "Ch2 Mid Freq": 255.0,
+            "Ch2 Treble": 0.31999993324279785,
+            "Ch2 Master": 0.9900000095367432,
+            "Input Pad": 0,
+            "Ch2 Boost": false,
+            "Limiter": true,
+            "Threshold": 2.0,
+            "Ch Vol": 0.940000057220459
+        },
+        "x_min_y_max": {
+            "name": "Lil Dirt",
+            "Ch2 Drive": 0.2999999523162842,
+            "Ch2 Bass": 0.2999999523162842,
+            "Ch2 Mid": 7.600000381469727,
+            "Ch2 Mid Freq": 2400.0,
+            "Ch2 Treble": 0.3799999952316284,
+            "Ch2 Master": 0.9200000762939453,
+            "Input Pad": 2,
+            "Ch2 Boost": false,
+            "Limiter": true,
+            "Threshold": 2.0,
+            "Ch Vol": 0.8299999237060547
+        },
+        "x_max_y_min": {
+            "name": "Scoop",
+            "Ch2 Drive": 0.43000006675720215,
+            "Ch2 Bass": 0.5099999904632568,
+            "Ch2 Mid": -9.300000190734863,
+            "Ch2 Mid Freq": 682.0,
+            "Ch2 Treble": 0.6200000047683716,
+            "Ch2 Master": 0.8700000047683716,
+            "Input Pad": 1,
+            "Ch2 Boost": false,
+            "Limiter": true,
+            "Threshold": 0.0,
+            "Ch Vol": 0.8999999761581421
+        },
+        "x_max_y_max": {
+            "name": "Crushing",
+            "Ch2 Drive": 0.6000000238418579,
+            "Ch2 Bass": 0.19000005722045898,
+            "Ch2 Mid": 7.600000381469727,
+            "Ch2 Mid Freq": 2400.0,
+            "Ch2 Treble": 0.5399999618530273,
+            "Ch2 Master": 0.9200000762939453,
+            "Input Pad": 2,
+            "Ch2 Boost": true,
+            "Limiter": true,
+            "Threshold": -3.0,
+            "Ch Vol": 0.67
+        }
+    }
+}

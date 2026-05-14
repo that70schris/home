@@ -1,0 +1,94 @@
+{
+    "modelName": "Obi Wah",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Freq": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Q": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Type": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Carnival",
+            "Speed": 7.7,
+            "Freq": 0.62,
+            "Q": 0.64,
+            "Type": 0,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "S&H Trem",
+            "Speed": 5.0,
+            "Freq": 0.36,
+            "Q": 0.37,
+            "Type": 1,
+            "Mix": 0.53,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Wah",
+            "Speed": 5.4,
+            "Freq": 0.33,
+            "Q": 0.73,
+            "Type": 1,
+            "Mix": 0.47,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Band Pass",
+            "Speed": 6.30000,
+            "Freq": 0.470000,
+            "Q": 0.720000,
+            "Type": 1,
+            "Mix": 1.00000,
+            "Level": 0.00000,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Hi Pass",
+            "Speed": 11.6,
+            "Freq": 0.71,
+            "Q": 0.74,
+            "Type": 2,
+            "Mix": 1.0,
+            "Level": -4.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "modelName": "Cali Texas Ch2",
+    "params": {
+        "Drive 1": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Drive 2": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "TS Shape": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "Presence": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 9,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Crunch Rhythm",
+            "Drive 1": 0.46000003814697266,
+            "Drive 2": 0.5099999904632568,
+            "Bass": 0.4099999666213989,
+            "Mid": 0.6000000238418579,
+            "Treble": 0.75,
+            "ChVol": 0.6000000238418579,
+            "TS Shape": 1,
+            "Presence": 0.6499999761581421,
+            "Master": 0.6000000238418579
+        },
+        "x_min_y_min": {
+            "name": "Clean As It Gets",
+            "Drive 1": 0.25,
+            "Drive 2": 0.31999993324279785,
+            "Bass": 0.5499999523162842,
+            "Mid": 0.48000001907348633,
+            "Treble": 0.6499999761581421,
+            "ChVol": 0.6000000238418579,
+            "TS Shape": 0,
+            "Presence": 0.6600000858306885,
+            "Master": 0.3999999761581421
+        },
+        "x_min_y_max": {
+            "name": "Pushed",
+            "Drive 1": 0.2799999713897705,
+            "Drive 2": 0.3700000047683716,
+            "Bass": 0.4500000476837158,
+            "Mid": 0.5899999141693115,
+            "Treble": 0.75,
+            "ChVol": 0.6000000238418579,
+            "TS Shape": 0,
+            "Presence": 0.6499999761581421,
+            "Master": 0.6000000238418579
+        },
+        "x_max_y_min": {
+            "name": "Power Amp Dist",
+            "Drive 1": 0.36000001430511475,
+            "Drive 2": 0.5,
+            "Bass": 0.3799999952316284,
+            "Mid": 0.6000000238418579,
+            "Treble": 0.7899999618530273,
+            "ChVol": 0.6000000238418579,
+            "TS Shape": 0,
+            "Presence": 0.5499999523162842,
+            "Master": 0.7400000095367432
+        },
+        "x_max_y_max": {
+            "name": "Thick & Huge",
+            "Drive 1": 0.5899999141693115,
+            "Drive 2": 0.7400000095367432,
+            "Bass": 0.4099999666213989,
+            "Mid": 0.5699999332427979,
+            "Treble": 0.7400000095367432,
+            "ChVol": 0.52,
+            "TS Shape": 2,
+            "Presence": 0.6499999761581421,
+            "Master": 0.6499999761581421
+        }
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "modelName": "Jet Flanger",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Manual": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 8,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Tape",
+            "Speed": 0.2999999523162842,
+            "Depth": 0.3999999761581421,
+            "Feedback": 0.10000002384185791,
+            "Manual": 0.0,
+            "Mix": 0.8999999761581421,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Takeoff",
+            "Speed": 0.0,
+            "Depth": 0.5,
+            "Feedback": 0.10000002384185791,
+            "Manual": 1.0,
+            "Mix": 0.8999999761581421,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Fast Mod",
+            "Speed": 0.5,
+            "Depth": 0.7999999523162842,
+            "Feedback": 0.2999999523162842,
+            "Manual": 0.5799999237060547,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Water",
+            "Speed": 1.4000000953674316,
+            "Depth": 0.16999995708465576,
+            "Feedback": 0.4500000476837158,
+            "Manual": 0.309999942779541,
+            "Mix": 0.8500000238418579,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Freakout",
+            "Speed": 1.7999999523162842,
+            "Depth": 0.6000000238418579,
+            "Feedback": 0.7999999523162842,
+            "Manual": 0.7999999523162842,
+            "Mix": 0.7999999523162842,
+            "Level": -1.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

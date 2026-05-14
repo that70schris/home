@@ -1,0 +1,103 @@
+{
+    "modelName": "4-Voice Chorus",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "NumVoices": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "HPFFrq": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "HighShelf": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Nice Chorus",
+            "Speed": 0.5,
+            "Depth": 0.5,
+            "NumVoices": 4,
+            "HPFFrq": 271.0,
+            "HighShelf": 1.200000286102295,
+            "Mix": 0.3999999761581421,
+            "Level": 1.9000015258789062,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Barely There",
+            "Speed": 0.10000002384185791,
+            "Depth": 0.059999942779541016,
+            "NumVoices": 2,
+            "HPFFrq": 133.0,
+            "HighShelf": -2.3999998569488525,
+            "Mix": 0.09000003337860107,
+            "Level": 2.700000762939453,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Warm and Slow",
+            "Speed": 0.2999999523162842,
+            "Depth": 0.7000000476837158,
+            "NumVoices": 2,
+            "HPFFrq": 40.0,
+            "HighShelf": -6.0,
+            "Mix": 0.3500000238418579,
+            "Level": 1.9000015258789062,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Faster Chorus",
+            "Speed": 1.0999999046325684,
+            "Depth": 0.3500000238418579,
+            "NumVoices": 3,
+            "HPFFrq": 133.0,
+            "HighShelf": -2.0999999046325684,
+            "Mix": 0.3799999952316284,
+            "Level": 2.700000762939453,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Scary Vibes",
+            "Speed": 1.2999999523162842,
+            "Depth": 0.75,
+            "NumVoices": 4,
+            "HPFFrq": 96.0,
+            "HighShelf": 0.0,
+            "Mix": 1.0,
+            "Level": 6.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

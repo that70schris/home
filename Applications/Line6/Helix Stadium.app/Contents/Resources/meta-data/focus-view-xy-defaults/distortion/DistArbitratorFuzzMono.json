@@ -1,0 +1,40 @@
+{
+    "modelName": "Arbitrator Fuzz",
+    "params": {
+        "Fuzz": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 2,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Fuzzy",
+            "Fuzz": 0.5,
+            "Level": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Tame",
+            "Fuzz": 0.0,
+            "Level": 0.3999999761581421
+        },
+        "x_min_y_max": {
+            "name": "Rhythm",
+            "Fuzz": 0.25,
+            "Level": 0.4500000476837158
+        },
+        "x_max_y_min": {
+            "name": "Lead",
+            "Fuzz": 0.75,
+            "Level": 0.5199999809265137
+        },
+        "x_max_y_max": {
+            "name": "Wild",
+            "Fuzz": 1.0,
+            "Level": 0.5499999523162842
+        }
+    }
+}

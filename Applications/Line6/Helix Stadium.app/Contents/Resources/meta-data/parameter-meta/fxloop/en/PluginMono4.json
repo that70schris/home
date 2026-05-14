@@ -1,0 +1,13 @@
+{
+    "symbol": "ModelID::kPluginMono4",
+    "category": "fxloop",
+    "class": "class",
+    "display_name": "Plugin 4",
+    "model_catalog_image": "",
+    "model_options_image": "",
+    "parameters-en": {
+        "Send": "",
+        "Return": "",
+        "Mix": ""
+    }
+}

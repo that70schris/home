@@ -1,0 +1,13 @@
+{
+    "category": "modulation",
+    "model_id": 151,
+    "model_sym": "ModelID::kTremoloOpticalTremStereo",
+    "display_name": "Optical Trem",
+    "parameters-en": {
+        "Speed": "Controls the speed or rate of the tremolo. When set to note values, Speed follows the system tempo.",
+        "Intensity": "Controls the depth of the tremolo, or the intensity of the volume fluctuations.",
+        "Spread": "Controls the apparent stereo width of the tremolo effect.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

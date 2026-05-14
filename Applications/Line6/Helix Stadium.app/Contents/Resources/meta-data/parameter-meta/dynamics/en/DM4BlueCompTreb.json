@@ -1,0 +1,10 @@
+{
+    "category": "dynamics",
+    "model_id": 27,
+    "model_sym": "ModelID::kDM4BlueCompTreb",
+    "display_name": "Blue Comp Treb",
+    "parameters-en": {
+        "Sustain": "Adjusts the amount of compression or sustain.",
+        "Level": "Sets the overall level of the block."
+    }
+}

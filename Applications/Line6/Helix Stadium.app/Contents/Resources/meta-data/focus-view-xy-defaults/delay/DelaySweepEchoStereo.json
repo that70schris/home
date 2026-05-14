@@ -1,0 +1,184 @@
+{
+    "modelName": "Sweep Echo",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "LowCut": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "HighCut": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "FilterType": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "SweepShape": {
+            "id": 8,
+            "behavior": "quantize"
+        },
+        "SweepSpeed": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "SweepStart": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "SweepDepth": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "SweepResonance": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "SweepSymmetry": {
+            "id": 13,
+            "behavior": "interpolate"
+        },
+        "Scale": {
+            "id": 14,
+            "behavior": "interpolate"
+        },
+        "SweepSpread": {
+            "id": 15,
+            "behavior": "interpolate"
+        },
+        "Headroom": {
+            "id": 16,
+            "behavior": "interpolate"
+        },
+        "TempoSync1": {
+            "id": 17,
+            "behavior": "quantize"
+        },
+        "SyncSelect1": {
+            "id": 18,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Sweeper",
+            "Time": 0.45,
+            "Feedback": 0.58,
+            "LowCut": 120.0,
+            "HighCut": 8000.0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "FilterType": 1,
+            "SweepShape": 0,
+            "SweepSpeed": 0.34,
+            "SweepStart": 205.0,
+            "SweepDepth": 2830.0,
+            "SweepResonance": 0.45,
+            "SweepSymmetry": 0.5,
+            "Scale": 1.0,
+            "SweepSpread": 1.0,
+            "Headroom": 0.0,
+            "TempoSync1": false,
+            "SyncSelect1": 6
+        },
+        "x_min_y_min": {
+            "name": "Pensive",
+            "Time": 0.545,
+            "Feedback": 0.02,
+            "LowCut": 120.0,
+            "HighCut": 20100.0,
+            "Mix": 0.57,
+            "Level": 0.0,
+            "FilterType": 2,
+            "SweepShape": 1,
+            "SweepSpeed": 0.54,
+            "SweepStart": 280.0,
+            "SweepDepth": 3200.0,
+            "SweepResonance": 0.49,
+            "SweepSymmetry": 0.81,
+            "Scale": 1.0,
+            "SweepSpread": 1.0,
+            "Headroom": 0.0,
+            "TempoSync1": false,
+            "SyncSelect1": 6
+        },
+        "x_min_y_max": {
+            "name": "Diffuse",
+            "Time": 0.303,
+            "Feedback": 0.58,
+            "LowCut": 120.0,
+            "HighCut": 12100.0,
+            "Mix": 0.57,
+            "Level": 0.0,
+            "FilterType": 0,
+            "SweepShape": 3,
+            "SweepSpeed": 0.37,
+            "SweepStart": 172.0,
+            "SweepDepth": 3200.0,
+            "SweepResonance": 0.49,
+            "SweepSymmetry": 0.64,
+            "Scale": 1.0,
+            "SweepSpread": 1.0,
+            "Headroom": 0.0,
+            "TempoSync1": false,
+            "SyncSelect1": 6
+        },
+        "x_max_y_min": {
+            "name": "Repeater",
+            "Time": 1.059,
+            "Feedback": 0.67,
+            "LowCut": 65.0,
+            "HighCut": 12100.0,
+            "Mix": 0.51,
+            "Level": 1.5,
+            "FilterType": 1,
+            "SweepShape": 3,
+            "SweepSpeed": 0.37,
+            "SweepStart": 208.0,
+            "SweepDepth": 2000.0,
+            "SweepResonance": 0.39,
+            "SweepSymmetry": 0.51,
+            "Scale": 0.47,
+            "SweepSpread": 0.6,
+            "Headroom": 0.0,
+            "TempoSync1": false,
+            "SyncSelect1": 6
+        },
+        "x_max_y_max": {
+            "name": "Wow Wee",
+            "Time": 0.805,
+            "Feedback": 0.84,
+            "LowCut": 19.9,
+            "HighCut": 12100.0,
+            "Mix": 0.94,
+            "Level": 0.0,
+            "FilterType": 1,
+            "SweepShape": 1,
+            "SweepSpeed": 0.37,
+            "SweepStart": 73.0,
+            "SweepDepth": 2300.0,
+            "SweepResonance": 0.74,
+            "SweepSymmetry": 0.1,
+            "Scale": 1.0,
+            "SweepSpread": 1.0,
+            "Headroom": 0.0,
+            "TempoSync1": false,
+            "SyncSelect1": 6
+        }
+    }
+}

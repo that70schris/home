@@ -1,0 +1,9 @@
+{
+    "category": "volume",
+    "model_id": 135,
+    "model_sym": "ModelID::kVolPanPanStereo",
+    "display_name": "Pan",
+    "parameters-en": {
+        "Pan": "Controls the balance between the signal's left and right channels. When set to L 100, only the left signal is passed through the block; when set to R 100, only the right signal is passed through the block."
+    }
+}

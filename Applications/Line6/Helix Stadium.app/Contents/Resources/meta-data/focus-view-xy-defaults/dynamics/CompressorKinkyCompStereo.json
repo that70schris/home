@@ -1,0 +1,67 @@
+{
+    "modelName": "Kinky Comp",
+    "params": {
+        "Sensitivity": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Attack": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Release": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 5,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Nice Comp",
+            "Sensitivity": 0.2799999713897705,
+            "Mix": 0.5499999523162842,
+            "Attack": 0.6000000238418579,
+            "Release": 0.4500000476837158,
+            "Level": 0.6000000238418579
+        },
+        "x_min_y_min": {
+            "name": "Barely There",
+            "Sensitivity": 0.10000002384185791,
+            "Mix": 0.25,
+            "Attack": 0.5,
+            "Release": 0.5,
+            "Level": 0.7000000476837158
+        },
+        "x_min_y_max": {
+            "name": "Parallel Comp",
+            "Sensitivity": 0.25,
+            "Mix": 0.3999999761581421,
+            "Attack": 0.5499999523162842,
+            "Release": 0.3799999952316284,
+            "Level": 0.6499999761581421
+        },
+        "x_max_y_min": {
+            "name": "Sustaaaaaain",
+            "Sensitivity": 0.6000000238418579,
+            "Mix": 0.7400000095367432,
+            "Attack": 0.4500000476837158,
+            "Release": 1.0,
+            "Level": 0.6000000238418579
+        },
+        "x_max_y_max": {
+            "name": "Super Squish",
+            "Sensitivity": 0.7400000095367432,
+            "Mix": 1.0,
+            "Attack": 0.6499999761581421,
+            "Release": 0.440000057220459,
+            "Level": 0.6000000238418579
+        }
+    }
+}

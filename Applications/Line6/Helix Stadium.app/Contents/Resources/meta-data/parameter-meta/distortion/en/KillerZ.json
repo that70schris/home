@@ -1,0 +1,14 @@
+{
+    "category": "distortion",
+    "model_id": 389,
+    "model_sym": "ModelID::kKillerZ",
+    "display_name": "Killer Z",
+    "parameters-en": {
+        "Drive": "Controls the amount of distortion applied to the signal.",
+        "Contour": "Adjusts the contour of the tone. At higher settings, the tone appears scooped, with boosts to both the low and high end.",
+        "Level": "Sets the overall level of the block.",
+        "Mid": "Controls the midrange frequency EQ of the distortion.",
+        "Mid Freq": "Adjusts the midrange EQ's frequency.",
+        "Smart": ""
+    }
+}

@@ -1,0 +1,121 @@
+{
+    "modelName": "Aristocrat",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Presence": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Boost": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "HumSwitch": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "Bias": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "BiasX": {
+            "id": 11,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Break Up",
+            "Drive": 0.5,
+            "Bass": 0.3999999761581421,
+            "Mid": 0.309999942779541,
+            "Treble": 0.3400000333786011,
+            "Presence": 0.19000005722045898,
+            "ChVol": 0.4500000476837158,
+            "Boost": 0.0,
+            "Sag": 0.5,
+            "HumSwitch": false,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Clean",
+            "Drive": 0.23000001907348633,
+            "Bass": 0.25999999046325684,
+            "Mid": 0.3999999761581421,
+            "Treble": 0.25999999046325684,
+            "Presence": 0.12999999523162842,
+            "ChVol": 0.559999942779541,
+            "Boost": 0.0,
+            "Sag": 0.5,
+            "HumSwitch": false,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_min_y_max": {
+            "name": "Chimey EOB",
+            "Drive": 0.3700000047683716,
+            "Bass": 0.309999942779541,
+            "Mid": 0.3999999761581421,
+            "Treble": 0.3999999761581421,
+            "Presence": 0.2999999523162842,
+            "ChVol": 0.4500000476837158,
+            "Boost": 0.0,
+            "Sag": 0.5,
+            "HumSwitch": false,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_max_y_min": {
+            "name": "Driven",
+            "Drive": 0.6000000238418579,
+            "Bass": 0.3999999761581421,
+            "Mid": 0.4500000476837158,
+            "Treble": 0.2799999713897705,
+            "Presence": 0.08000004291534424,
+            "ChVol": 0.4500000476837158,
+            "Boost": 0.0,
+            "Sag": 0.5,
+            "HumSwitch": false,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_max_y_max": {
+            "name": "Crank'd",
+            "Drive": 1.0,
+            "Bass": 0.3999999761581421,
+            "Mid": 0.41999995708465576,
+            "Treble": 0.43000006675720215,
+            "Presence": 0.19000005722045898,
+            "ChVol": 0.4500000476837158,
+            "Boost": 0.0,
+            "Sag": 0.5,
+            "HumSwitch": false,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "category": "modulation",
+    "model_id": 164,
+    "model_sym": "ModelID::kFlangerGrayFlangerStereo",
+    "display_name": "Gray Flanger",
+    "parameters-en": {
+        "Rate": "Controls the speed or rate of the flanger. When set to note values, Speed follows the system tempo.",
+        "Width": "Controls how wide and dramatic the flanging sweep appears.",
+        "Manual": "Controls the degree of phase shifting. Has no effect when Width is set to 100%.",
+        "Regen": "Controls the amount of feedback in the effected signal.",
+        "Spread": "Controls the apparent stereo width between the left and right channels.",
+        "Mix": "Controls the blend between the modulation effect and the dry signal.",
+        "Level": "Sets the overall level of the block.",
+        "Headroom": "Provides up to 12.0 dB of additional headroom.",
+        "TempoSync1": ""
+    }
+}

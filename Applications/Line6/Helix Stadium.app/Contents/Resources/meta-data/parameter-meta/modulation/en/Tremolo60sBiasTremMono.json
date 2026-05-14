@@ -1,0 +1,13 @@
+{
+    "category": "modulation",
+    "model_id": 282,
+    "model_sym": "ModelID::kTremolo60sBiasTremMono",
+    "display_name": "60s Bias Trem",
+    "parameters-en": {
+        "Speed": "Controls the speed or rate of the tremolo. When set to note values, Speed follows the system tempo.",
+        "Intensity": "Controls the depth of the tremolo, or the intensity of the volume fluctuations (or when Mode is set to \"Vibrato,\", pitch fluctuations).",
+        "Mode": "Selects between Tremolo (repeating volume fluctuations) and Vibrato (repeating pitch fluctuations).",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

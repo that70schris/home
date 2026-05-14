@@ -1,0 +1,76 @@
+{
+    "modelName": "Horizon Drive",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Attack": {
+            "id": 2,
+            "behavior": "quantize"
+        },
+        "Bright": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Gate": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Gate Range": {
+            "id": 5,
+            "behavior": "quantize"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Tight",
+            "Drive": 0.2200000286102295,
+            "Attack": 2,
+            "Bright": 0.38999998569488525,
+            "Gate": 0.5,
+            "Gate Range": false,
+            "Level": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Subtle",
+            "Drive": 0.029999971389770508,
+            "Attack": 0,
+            "Bright": 0.21000003814697266,
+            "Gate": 0.5,
+            "Gate Range": false,
+            "Level": 0.5
+        },
+        "x_min_y_max": {
+            "name": "Clarity",
+            "Drive": 0.31999993324279785,
+            "Attack": 3,
+            "Bright": 0.48000001907348633,
+            "Gate": 0.75,
+            "Gate Range": false,
+            "Level": 0.559999942779541
+        },
+        "x_max_y_min": {
+            "name": "Boost",
+            "Drive": 0.10000002384185791,
+            "Attack": 1,
+            "Bright": 0.3700000047683716,
+            "Gate": 0.5,
+            "Gate Range": false,
+            "Level": 0.6000000238418579
+        },
+        "x_max_y_max": {
+            "name": "Smack",
+            "Drive": 0.559999942779541,
+            "Attack": 5,
+            "Bright": 0.6499999761581421,
+            "Gate": 1.0,
+            "Gate Range": false,
+            "Level": 0.6000000238418579
+        }
+    }
+}

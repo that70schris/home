@@ -1,0 +1,16 @@
+{
+    "category": "modulation",
+    "model_id": 333,
+    "model_sym": "ModelID::kChorusPlastiChorusMono",
+    "display_name": "PlastiChorus",
+    "parameters-en": {
+        "Rate": "Controls the speed or rate of the chorus/vibrato. When set to note values, Rate follows the system tempo.",
+        "Depth": "Controls the depth or intensity of the modulation.",
+        "Mode": "Selects the type of modulation--Chorus or Vibrato.",
+        "Tone": "Controls the overall tonal balance of the modulation.",
+        "Mix": "Controls the blend between the modulation effect and the dry signal. At 0%, no modulation is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "Headroom": "Some chorus pedals' internal signal paths exhibit a bit of grit, especially when placed after a high-gain amp block. Negative values increase the perceived amount of grit; positive values clean things up a bit.",
+        "TempoSync1": ""
+    }
+}

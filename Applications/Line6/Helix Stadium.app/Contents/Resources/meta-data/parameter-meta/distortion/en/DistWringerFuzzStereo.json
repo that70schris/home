@@ -1,0 +1,13 @@
+{
+    "category": "distortion",
+    "model_id": 195,
+    "model_sym": "ModelID::kDistWringerFuzzStereo",
+    "display_name": "Wringer Fuzz",
+    "parameters-en": {
+        "Gain": "Controls the amount of fuzz applied to the signal.",
+        "Treble": "Controls the high frequency EQ of the fuzz.",
+        "Bass": "Controls the low frequency EQ of the fuzz.",
+        "Level": "Sets the overall level of the block.",
+        "Fuzz Type": "Selects the type of fuzz circuit. Type 1 emphasizes the midrange and upper harmonics. Type 2 has more of a scooped frequency response."
+    }
+}

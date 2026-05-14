@@ -1,0 +1,94 @@
+{
+    "modelName": "Agua Sledge",
+    "params": {
+        "Gain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Drive": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Ch Vol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Mid Freq": {
+            "id": 8,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Clean",
+            "Gain": 0.10000002384185791,
+            "Drive": 0.0,
+            "Bass": 0.5,
+            "Mid": 0.5,
+            "Treble": 0.5,
+            "Ch Vol": 1.0,
+            "Master": 0.7000000476837158,
+            "Mid Freq": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Fat",
+            "Gain": 0.019999980926513672,
+            "Drive": 0.16999995708465576,
+            "Bass": 0.8199999332427979,
+            "Mid": 0.6200000047683716,
+            "Treble": 0.3500000238418579,
+            "Ch Vol": 0.8799999952316284,
+            "Master": 0.5399999618530273,
+            "Mid Freq": 0.15999996662139893
+        },
+        "x_min_y_max": {
+            "name": "Scooped",
+            "Gain": 0.26999998092651367,
+            "Drive": 0.2799999713897705,
+            "Bass": 0.6100000143051147,
+            "Mid": 0.059999942779541016,
+            "Treble": 0.8199999332427979,
+            "Ch Vol": 0.7599999904632568,
+            "Master": 0.8500000238418579,
+            "Mid Freq": 0.43000006675720215
+        },
+        "x_max_y_min": {
+            "name": "Punchy",
+            "Gain": 0.12999999523162842,
+            "Drive": 0.059999942779541016,
+            "Bass": 0.4700000286102295,
+            "Mid": 0.25999999046325684,
+            "Treble": 0.5499999523162842,
+            "Ch Vol": 1.0,
+            "Master": 1.0,
+            "Mid Freq": 0.7599999904632568
+        },
+        "x_max_y_max": {
+            "name": "Mid Drive",
+            "Gain": 0.5,
+            "Drive": 0.7599999904632568,
+            "Bass": 0.4500000476837158,
+            "Mid": 0.8199999332427979,
+            "Treble": 0.6000000238418579,
+            "Ch Vol": 0.67,
+            "Master": 0.6600000858306885,
+            "Mid Freq": 0.690000057220459
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "modelName": "Blue Comp Treb",
+    "params": {
+        "Sustain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 2,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Bright",
+            "Sustain": 0.2999999523162842,
+            "Level": 0.2200000286102295
+        },
+        "x_min_y_min": {
+            "name": "Snappy",
+            "Sustain": 0.0,
+            "Level": 0.6100000143051147
+        },
+        "x_min_y_max": {
+            "name": "Bite",
+            "Sustain": 0.6000000238418579,
+            "Level": 0.23000001907348633
+        },
+        "x_max_y_min": {
+            "name": "Tight Rhythm",
+            "Sustain": 0.3500000238418579,
+            "Level": 0.16999995708465576
+        },
+        "x_max_y_max": {
+            "name": "Bright Lead",
+            "Sustain": 0.9200000762939453,
+            "Level": 0.25
+        }
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "modelName": "Autoswell",
+    "params": {
+        "Threshold": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Rel Offset": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Attack": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Decay": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Taper": {
+            "id": 5,
+            "behavior": "quantize"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Quick Swell",
+            "Threshold": -50.0,
+            "Rel Offset": 0.0,
+            "Attack": 0.40000009536743164,
+            "Decay": 1.0,
+            "Taper": false,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Subtle",
+            "Threshold": -80.4000015258789,
+            "Rel Offset": 5.0,
+            "Attack": 0.2999999523162842,
+            "Decay": 0.05500006675720215,
+            "Taper": true,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Fade In",
+            "Threshold": -45.0,
+            "Rel Offset": 2.8000030517578125,
+            "Attack": 0.6000000238418579,
+            "Decay": 2.5,
+            "Taper": false,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Eee-Bow",
+            "Threshold": -61.0,
+            "Rel Offset": 5.0,
+            "Attack": 0.746999979019165,
+            "Decay": 0.07200002670288086,
+            "Taper": true,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Slow Grow",
+            "Threshold": -50.0,
+            "Rel Offset": 4.200000762939453,
+            "Attack": 3.6630001068115234,
+            "Decay": 3.4140000343322754,
+            "Taper": true,
+            "Level": 0.0
+        }
+    }
+}

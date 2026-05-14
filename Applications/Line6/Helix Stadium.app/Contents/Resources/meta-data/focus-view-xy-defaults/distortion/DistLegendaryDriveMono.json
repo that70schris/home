@@ -1,0 +1,76 @@
+{
+    "modelName": "Legendary Drive",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Middle": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Presence": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Volume": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Full Crunch",
+            "Drive": 0.6,
+            "Bass": 0.54,
+            "Middle": 0.5,
+            "Treble": 0.5,
+            "Presence": 0.55,
+            "Volume": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Rhythm 2",
+            "Drive": 0.3,
+            "Bass": 0.27,
+            "Middle": 0.5,
+            "Treble": 0.22,
+            "Presence": 0.2,
+            "Volume": 0.29
+        },
+        "x_min_y_max": {
+            "name": "Rhythm 1",
+            "Drive": 0.24,
+            "Bass": 0.54,
+            "Middle": 0.5,
+            "Treble": 0.33,
+            "Presence": 0.2,
+            "Volume": 0.42
+        },
+        "x_max_y_min": {
+            "name": "1980s",
+            "Drive": 0.13,
+            "Bass": 0.36,
+            "Middle": 0.66,
+            "Treble": 0.22,
+            "Presence": 0.2,
+            "Volume": 0.4
+        },
+        "x_max_y_max": {
+            "name": "Solo!",
+            "Drive": 1.0,
+            "Bass": 0.16,
+            "Middle": 0.69,
+            "Treble": 0.26,
+            "Presence": 0.2,
+            "Volume": 0.36
+        }
+    }
+}

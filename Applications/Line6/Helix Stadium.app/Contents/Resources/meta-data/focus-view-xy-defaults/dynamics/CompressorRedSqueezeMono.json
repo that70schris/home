@@ -1,0 +1,49 @@
+{
+    "modelName": "Red Squeeze",
+    "params": {
+        "Sensitivity": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 3,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Always On",
+            "Sensitivity": 0.309999942779541,
+            "Mix": 0.8799999952316284,
+            "Level": 11.599998474121094
+        },
+        "x_min_y_min": {
+            "name": "This On?",
+            "Sensitivity": 0.0,
+            "Mix": 0.7899999618530273,
+            "Level": 8.699996948242188
+        },
+        "x_min_y_max": {
+            "name": "Half\/Half",
+            "Sensitivity": 0.309999942779541,
+            "Mix": 0.46000003814697266,
+            "Level": 5.700004577636719
+        },
+        "x_max_y_min": {
+            "name": "Boost Comp",
+            "Sensitivity": 0.4099999666213989,
+            "Mix": 0.8999999761581421,
+            "Level": 12.0
+        },
+        "x_max_y_max": {
+            "name": "Funk",
+            "Sensitivity": 1.0,
+            "Mix": 1.0,
+            "Level": 8.199996948242188
+        }
+    }
+}

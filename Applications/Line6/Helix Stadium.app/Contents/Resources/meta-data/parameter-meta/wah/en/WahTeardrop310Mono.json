@@ -1,0 +1,11 @@
+{
+    "category": "wah",
+    "model_id": 287,
+    "model_sym": "ModelID::kWahTeardrop310Mono",
+    "display_name": "Teardrop 310",
+    "parameters-en": {
+        "Position": "Adjusts the position or frequency of the wah effect. By default, this is assigned to Expression Pedal 1. Set Min and Max below to restrict the wah's frequency sweep range.",
+        "Mix": "Controls the blend between the wah effect and the dry signal. At 0%, no wah effect is heard; at 100%, no dry signal is heard. If the wah effect is a bit strong, consider bringing this down a bit.",
+        "Level": "Sets the overall level of the Wah block."
+    }
+}

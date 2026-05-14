@@ -1,0 +1,114 @@
+
+<xg>
+    <panel_widget height="350" id="1" left="0" top="0" width="600">
+        <bg_color>0xFF0F0F0F</bg_color>
+        <panel_widget height="346" id="ctpl" left="2" name="Category Column" top="2" width="198">
+            <anchor_pos bottom="2" left="2" top="2"/>
+            <relative_pos width="33"/>
+            <bg_color>0xFF151515</bg_color>
+            <listbox_widget height="186" id="cate" left="0" name="Category List" top="60" width="148">
+                <anchor_pos bottom="0" left="0" right="0" top="60"/>
+                <bg_color>0xFF151515</bg_color>
+                <alt_bg_color>0x00000000</alt_bg_color>
+                <text_color>0xFF929292</text_color>
+                <selected_text_color>0xFFD6D6D6</selected_text_color>
+                <selected_bg_color>0xFF212121</selected_bg_color>
+                <hilite_color>0xFF212121</hilite_color>
+                <font name="Inter" size="32" weight="bold"/>
+                <item_height>72</item_height>
+                <left_margin>9</left_margin>
+                <hilite_type>fill_bg</hilite_type>
+                <icon_margin>50</icon_margin>
+                <icon height="43" top="8" width="58">0</icon>
+                <allow_editing>no</allow_editing>
+                <scrolling>
+                    <vscroll_step snap="element"/>
+                    <scroll_stretch v="71"/>
+                    <scrollbars>
+                        <visibility h="none" overlay="yes"/>
+                        <width>8</width>
+                        <border_thickness>0</border_thickness>
+                        <bg_color>0x00000000</bg_color>
+                        <thumb_color>0xFF4D4D4D</thumb_color>
+                        <thumb_hilite_color>0xFF4D4D4D</thumb_hilite_color>
+                        <arrow_buttons size="0"/>
+                    </scrollbars>
+                </scrolling>
+            </listbox_widget>
+            <panel_widget height="31" id="srch" left="6" name="Search" top="10" width="186">
+                <anchor_pos left="6" right="6" top="10"/>
+                <relative_pos x_align="left"/>
+                <bg_color>0xFF000000</bg_color>
+                <border_thickness>0</border_thickness>
+                <corner_radius>7</corner_radius>
+                <text_edit_widget height="31" id="srht" left="40" name="Search text box" top="0" width="91">
+                    <anchor_pos bottom="0" left="40" right="5" top="0"/>
+                    <bg_color>0x00929292</bg_color>
+                    <text>
+                        <label>Search</label>
+                        <font name="Inter" size="16"/>
+                        <text_color>0xFF333333</text_color>
+                    </text>
+                </text_edit_widget>
+                <image_widget height="37" id="srhi" left="3" name="Search icon" top="-3" width="37">
+                    <relative_pos y="50"/>
+                    <bg_color>0x00000000</bg_color>
+                    <image>9</image>
+                    <scale_mode>keep_aspect</scale_mode>
+                </image_widget>
+            </panel_widget>
+        </panel_widget>
+        <panel_widget height="350" id="cmpl" left="198" name="Command Column" top="0" width="402">
+            <anchor_pos bottom="0" top="0"/>
+            <relative_pos width="67" x="33" x_align="left"/>
+            <bg_color>0x00000000</bg_color>
+            <listbox_widget height="350" id="cmdl" left="0" name="Command List" top="0" width="402">
+                <anchor_pos bottom="0" left="0" right="-162" top="0"/>
+                <bg_color>0xFF080808</bg_color>
+                <alt_bg_color>0x00000000</alt_bg_color>
+                <text_color>0xFF929292</text_color>
+                <selected_text_color>0xFFD6D6D6</selected_text_color>
+                <selected_bg_color>0xFF212121</selected_bg_color>
+                <hilite_color>0xFF212121</hilite_color>
+                <font name="Inter" size="32" weight="bold"/>
+                <item_height>75</item_height>
+                <left_margin>9</left_margin>
+                <hilite_type>fill_bg</hilite_type>
+                <icon_margin>68</icon_margin>
+                <icon height="43" top="8" width="58">0</icon>
+                <allow_editing>no</allow_editing>
+                <scrolling>
+                    <vscroll_step snap="element"/>
+                    <scroll_stretch v="71"/>
+                    <scrollbars>
+                        <visibility h="none" overlay="yes"/>
+                        <width>8</width>
+                        <border_thickness>0</border_thickness>
+                        <bg_color>0x00000000</bg_color>
+                        <thumb_color>0xFF4D4D4D</thumb_color>
+                        <thumb_hilite_color>0xFF4D4D4D</thumb_hilite_color>
+                        <arrow_buttons size="0"/>
+                    </scrollbars>
+                </scrolling>
+            </listbox_widget>
+            <text_widget height="170" id="ftxt" left="0" name="Favorites Empty text" top="90" width="240">
+                <anchor_pos left="0" right="0"/>
+                <relative_pos y="50"/>
+                <visible>no</visible>
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>Favorites List is Empty!</label>
+                    <font name="Inter" size="24" weight="light"/>
+                    <align vert="middle"/>
+                    <text_color>0xFF666666</text_color>
+                </text>
+            </text_widget>
+        </panel_widget>
+        <panel_widget height="346" id="sdbr" left="436" name="Sidebar" top="2" width="162">
+            <anchor_pos bottom="2" right="2" top="2"/>
+            <relative_pos width="27" x_align="left"/>
+            <visible>no</visible>
+            <bg_color>0xFF000000</bg_color>
+        </panel_widget>
+    </panel_widget>
+</xg>

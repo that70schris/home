@@ -1,0 +1,94 @@
+{
+    "modelName": "Panned Phaser",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Pan": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "Pan Speed": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 8,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Chewy",
+            "Speed": 3.0,
+            "Depth": 0.23,
+            "Pan": 1,
+            "Pan Speed": 0.4,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Slow Pan",
+            "Speed": 0.0,
+            "Depth": 0.0,
+            "Pan": 0,
+            "Pan Speed": 0.12,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Slow Phase",
+            "Speed": 1.6,
+            "Depth": 0.23,
+            "Pan": 1,
+            "Pan Speed": 0.0,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Pan Phaser",
+            "Speed": 2.9,
+            "Depth": 0.5,
+            "Pan": 2,
+            "Pan Speed": 0.5,
+            "Mix": 0.79,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Rotary",
+            "Speed": 6.5,
+            "Depth": 0.4,
+            "Pan": 2,
+            "Pan Speed": 0.8,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

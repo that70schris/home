@@ -1,0 +1,12 @@
+{
+    "category": "distortion",
+    "model_id": 234,
+    "model_sym": "ModelID::kDistDerangedMasterStereo",
+    "display_name": "Deranged Master",
+    "parameters-en": {
+        "Drive": "Controls the amount of distortion applied to the signal.",
+        "Bass": "Controls the low frequency EQ of the distortion.",
+        "Treble": "Controls the high frequency EQ of the distortion.",
+        "Level": "Sets the overall level of the block."
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "category": "ir",
+    "model_id": 462,
+    "model_sym": "ModelID::kImpulseResponseWithPan",
+    "display_name": "IR",
+    "parameters-en": {
+        "Low Cut": "Applies a low cut (high pass) filter, letting you remove all audio below a certain frequency. May be useful in removing undesirable low end rumble.",
+        "High Cut": "Applies a high cut (low pass) filter, letting you remove all audio above a certain frequency. May be useful in removing high end harshness.",
+        "Polarity": "Inverts the polarity of the signal.",
+        "Mix": "Controls the blend between the incoming “dry” signal and the Cab IR-processed “wet” signal. At 0%, no IR is heard; at 100%, no dry signal is heard. Normally, this should be left at 100%.",
+        "Level": "Sets the overall level of the IR.",
+        "Pan": "Controls the panning of the IR between the left and right channels. For stereo setups, the Cab block can sound much wider if the two sides are panned opposite of one another (\"L 100\" and \"R 100\")",
+        "Delay": "Delays the signal slightly to time-align with the other side of the Cab block (helping to avoid phase issues). It can also be used to purposely impart a bit of phase incoherence or at higher values, increase the Cab block's apparent stereo width. A little goes a long way here.",
+        "IrData": ""
+    }
+}

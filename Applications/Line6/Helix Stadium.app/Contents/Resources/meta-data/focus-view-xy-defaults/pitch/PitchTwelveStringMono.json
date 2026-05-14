@@ -1,0 +1,67 @@
+{
+    "modelName": "12-String",
+    "params": {
+        "Blend": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "OnsetThresh": {
+            "id": 5,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Jumbo 12",
+            "Blend": 0.96,
+            "Bass": 0.56,
+            "Treble": 0.32,
+            "Level": 0.0,
+            "OnsetThresh": 0
+        },
+        "x_min_y_min": {
+            "name": "R-Backer 12",
+            "Blend": 1.0,
+            "Bass": 0.38,
+            "Treble": 0.72,
+            "Level": 5.9,
+            "OnsetThresh": 0
+        },
+        "x_min_y_max": {
+            "name": "Delicate",
+            "Blend": 0.86,
+            "Bass": 0.3,
+            "Treble": 0.8,
+            "Level": 0.0,
+            "OnsetThresh": 2
+        },
+        "x_max_y_min": {
+            "name": "Subtle",
+            "Blend": 0.55,
+            "Bass": 0.93,
+            "Treble": 0.47,
+            "Level": -0.600002,
+            "OnsetThresh": 2
+        },
+        "x_max_y_max": {
+            "name": "Roundback 12",
+            "Blend": 1.0,
+            "Bass": 0.0,
+            "Treble": 1.0,
+            "Level": -0.600002,
+            "OnsetThresh": 0
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "category": "modulation",
+    "model_id": 186,
+    "model_sym": "ModelID::kTremoloTremoloStereo",
+    "display_name": "Tremolo/Autopan",
+    "parameters-en": {
+        "Speed": "Controls the speed or rate of the tremolo (or when Spread is turned up, how fast the signal moves back and forth between the left and right channels). When set to note values, Speed follows the system tempo.",
+        "Intensity": "Controls the depth of the tremolo, or the intensity of the volume fluctuations.",
+        "WavShape": "Selects the wave shape of the tremolo. Classic tremolo is commonly a sine or triangle wave, but cool choppy sounds can be discovered with square or saw down waves.",
+        "DutyCycle": "Alters the wave shape in differing ways. With Triangle, 50% is a normal triangle wave and extreme values warp the wave toward a saw down (0%) or saw up (100%) shape. With Sine, 50% is a normal sine wave and extreme values warp the wave toward a parabolic down (0%) or parabolic up (100%) shape. With Square, 50% is an even square wave, higher values lengthen the signal's on time, and lower values shorten the signal's on time. DutyCycle does not apply to Saw Up or Saw down.",
+        "Spread": "Controls the apparent stereo width of the tremolo effect, or how wide the signal appears to move back and forth between the left and right channels.",
+        "Level": "Adjusts the overall output level of the modulation effect",
+        "TempoSync1": ""
+    }
+}

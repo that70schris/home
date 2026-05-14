@@ -1,0 +1,15 @@
+{
+    "category": "reverb",
+    "model_id": 482,
+    "model_sym": "ModelID::kReverbHxSpringStereo",
+    "display_name": "Hot Springs",
+    "parameters-en": {
+        "Dwell": "Controls the strength of the signal sent into the spring tank. Higher values result in a longer decay.",
+        "Spring Ct": "Selects how many springs are in the tank (1, 2, or 3, and numerous values in between).",
+        "Drip": "Adjusts the intensity of the spring reverb, or how much \"ploink\" you might hear.",
+        "Low Cut": "Applies a low cut (or high pass) filter to the reverb, letting you remove the effected signal below a certain frequency.",
+        "High Cut": "Applies a high cut (or low pass) filter to the reverb, letting you remove the effected signal above a certain frequency.",
+        "Mix": "Controls the blend between the reverb and the dry signal. At 0%, no reverb is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

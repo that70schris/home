@@ -1,0 +1,67 @@
+{
+    "modelName": "Jet Fuzz",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Tone": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Rate": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Output": {
+            "id": 5,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Cockpit",
+            "Drive": 0.5,
+            "Feedback": 0.6000000238418579,
+            "Tone": 0.33000001311302185,
+            "Rate": 0.07999999821186066,
+            "Output": 0.75
+        },
+        "x_min_y_min": {
+            "name": "Fuselage",
+            "Drive": 0.05000000074505806,
+            "Feedback": 0.3499999940395355,
+            "Tone": 0.18000000715255737,
+            "Rate": 0.019999999552965164,
+            "Output": 0.9399999976158142
+        },
+        "x_min_y_max": {
+            "name": "Air Brake",
+            "Drive": 0.03999999910593033,
+            "Feedback": 0.28999999165534973,
+            "Tone": 0.8399999737739563,
+            "Rate": 0.05000000074505806,
+            "Output": 0.6200000047683716
+        },
+        "x_max_y_min": {
+            "name": "Stabilizer",
+            "Drive": 0.6600000262260437,
+            "Feedback": 0.25999999046325684,
+            "Tone": 0.7699999809265137,
+            "Rate": 0.029999999329447746,
+            "Output": 0.6700000166893005
+        },
+        "x_max_y_max": {
+            "name": "Ejector Seat",
+            "Drive": 1.0,
+            "Feedback": 0.6499999761581421,
+            "Tone": 0.6600000262260437,
+            "Rate": 1.0,
+            "Output": 0.550000011920929
+        }
+    }
+}

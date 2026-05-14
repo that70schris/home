@@ -1,0 +1,25 @@
+{
+    "category": "synth",
+    "model_id": 335,
+    "model_sym": "ModelID::kSynth4OSCGeneratorMono",
+    "display_name": "4 OSC Generator",
+    "parameters-en": {
+        "Osc1 Shp": "Selects the shape of Oscillator 1.",
+        "Osc1 Freq": "Controls the frequency of Oscillator 1, from 20 Hz to 10.0 kHz.",
+        "Osc1 Level": "Controls the level of Oscillator 1.",
+        "Osc2 Shp": "Selects the shape of Oscillator 2.",
+        "Osc2 Freq": "Controls the frequency of Oscillator 2, from 20 Hz to 10.0 kHz.",
+        "Osc2 Level": "Controls the level of Oscillator 2.",
+        "Osc3 Shp": "Selects the shape of Oscillator 3.",
+        "Osc3 Freq": "Controls the frequency of Oscillator 3, from 20 Hz to 10.0 kHz.",
+        "Osc3 Level": "Controls the level of Oscillator 3.",
+        "Osc4 Shp": "Selects the shape of Oscillator 4.",
+        "Osc4 Freq": "Controls the frequency of Oscillator 4, from 20 Hz to 10.0 kHz.",
+        "Osc4 Level": "Controls the level of Oscillator 4.",
+        "Attack": "Controls how fast the 4 OSC Generator fades in when engaged, from 10 ms to 10 sec.",
+        "Decay": "Controls how fast the 4 OSC Generator fades out when bypassed, from 10 ms to 10 sec.",
+        "Dry Level": "Controls the level of the dry signal.",
+        "Level": "Sets the overall level of the block.",
+        "RiseTimeSwitch": ""
+    }
+}

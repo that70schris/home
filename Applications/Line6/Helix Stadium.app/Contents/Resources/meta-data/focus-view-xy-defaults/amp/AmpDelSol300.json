@@ -1,0 +1,130 @@
+{
+    "modelName": "Del Sol 300",
+    "params": {
+        "Gain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bright": {
+            "id": 2,
+            "behavior": "quantize"
+        },
+        "Contour": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "Master": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "62p5Hz": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "125Hz": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "250Hz": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "500Hz": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "1kHz": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "2kHz": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "4kHz": {
+            "id": 12,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Balanced",
+            "Gain": 0.5,
+            "Bright": true,
+            "Contour": true,
+            "Master": 0.75,
+            "ChVol": 0.90,
+            "62p5Hz": 9.0,
+            "125Hz": 2.5,
+            "250Hz": -3.2,
+            "500Hz": -2.0,
+            "1kHz": 4.5,
+            "2kHz": 1.5,
+            "4kHz": 5.7
+        },
+        "x_min_y_min": {
+            "name": "Dark",
+            "Gain": 0.28,
+            "Bright": false,
+            "Contour": true,
+            "Master": 0.69,
+            "ChVol": 0.91,
+            "62p5Hz": 11.0,
+            "125Hz": 10.9,
+            "250Hz": 4.4,
+            "500Hz": -7.7,
+            "1kHz": -12.8,
+            "2kHz": -15.0,
+            "4kHz": -15.0
+        },
+        "x_min_y_max": {
+            "name": "Flat",
+            "Gain": 0.41,
+            "Bright": false,
+            "Contour": false,
+            "Master": 0.95,
+            "ChVol": 1.0,
+            "62p5Hz": 0.0,
+            "125Hz": 0.0,
+            "250Hz": 0.0,
+            "500Hz": 0.0,
+            "1kHz": 0.0,
+            "2kHz": 0.0,
+            "4kHz": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Cut",
+            "Gain": 0.76,
+            "Bright": false,
+            "Contour": false,
+            "Master": 1.0,
+            "ChVol": 0.89,
+            "62p5Hz": 0.1,
+            "125Hz": -7.0,
+            "250Hz": -4.3,
+            "500Hz": 5.8,
+            "1kHz": 8.1,
+            "2kHz": 2.7,
+            "4kHz": -4.0
+        },
+        "x_max_y_max": {
+            "name": "Punchy",
+            "Gain": 0.82,
+            "Bright": false,
+            "Contour": true,
+            "Master": 0.75,
+            "ChVol": 0.85,
+            "62p5Hz": 7.4,
+            "125Hz": 0.0,
+            "250Hz": -2.0,
+            "500Hz": -2.5,
+            "1kHz": 8.1,
+            "2kHz": 11.0,
+            "4kHz": 6.7
+        }
+    }
+}

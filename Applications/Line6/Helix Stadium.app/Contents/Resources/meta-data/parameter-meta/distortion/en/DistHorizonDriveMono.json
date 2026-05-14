@@ -1,0 +1,14 @@
+{
+    "category": "distortion",
+    "model_id": 384,
+    "model_sym": "ModelID::kDistHorizonDriveMono",
+    "display_name": "Horizon Drive",
+    "parameters-en": {
+        "Drive": "Controls the amount of distortion, saturation, and sustain.",
+        "Attack": "Affects the character of the distortion by applying a low cut (high pass) filter to the signal. Higher values increase the low cut filter's frequency.",
+        "Bright": "Controls the brightness of the signal, but acts more like a traditional tone knob. Turn up if your amp is muddy or dark; turn down if the high end appears a bit strident or harsh.",
+        "Gate": "Controls the sensitivity of the dynamic high shelf EQ filter. Lower values eliminate most noise without affecting your tone; higher values can tighten up your bass response, at the expense of note articulation.",
+        "GateRng": "Determines the range of the dynamic high shelf EQ filter, or how far the signal is attenuated while the gate is active. When set to \"Extended,\" drops the gate's threshold down to -90 dB, which is more attenuation than the real pedal.",
+        "Level": "Sets the overall level of the block."
+    }
+}

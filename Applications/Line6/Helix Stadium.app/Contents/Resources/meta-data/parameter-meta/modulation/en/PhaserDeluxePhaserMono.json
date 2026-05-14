@@ -1,0 +1,17 @@
+{
+    "category": "modulation",
+    "model_id": 324,
+    "model_sym": "ModelID::kPhaserDeluxePhaserMono",
+    "display_name": "Deluxe Phaser",
+    "parameters-en": {
+        "Rate": "Controls the speed or rate of the phaser. When set to note values, Speed follows the system tempo.",
+        "Depth": "Along with Offset, controls the depth or intensity of the phaser. For the most obvious results, set both Depth and Offset to lower values (but not all the way to 0.0).",
+        "Offset": "Along with Depth, controls the depth or intensity of the phaser. For the most obvious results, set both Depth and Offset to lower values (but not all the way to 0.0).",
+        "Feedback": "Controls how much of the processed signal feeds back into the input.",
+        "WavShape": "Selects one of seven wave shapes for the phaser sweep.",
+        "Mix": "Controls the blend between the modulation effect and the dry signal.",
+        "Stages": "Selects the number of phase stages, thus controlling the degree of out-of-phase-ness. The higher number of stages, the richer the effect.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "category": "distortion",
+    "model_id": 176,
+    "model_sym": "ModelID::kDistScream808Stereo",
+    "display_name": "Scream 808",
+    "parameters-en": {
+        "Gain": "Controls the amount of distortion applied to the signal. Low Gain and high Level settings are commonly used to tighten up the signal, especially when pushing higher gain amps.",
+        "Tone": "Controls the overall tonal balance of the distortion. Lower values are darker and higher values are brighter.",
+        "Level": "Sets the overall level of the block. Low Gain and high Level settings are commonly used to tighten up the signal, especially when pushing higher gain amps."
+    }
+}

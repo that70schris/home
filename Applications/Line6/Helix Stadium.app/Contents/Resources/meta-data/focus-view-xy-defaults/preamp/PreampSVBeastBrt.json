@@ -1,0 +1,103 @@
+{
+    "modelName": "Ampeg SVT Brt",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "MidFreq": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "Treble": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Hum": {
+            "id": 9,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Rock",
+            "Drive": 0.82,
+            "Bass": 0.6,
+            "Mid": 0.84,
+            "MidFreq": 2,
+            "Treble": 0.66,
+            "ChVol": 0.78,
+            "Master": 1.0,
+            "Sag": 0.16,
+            "Hum": 0.25
+        },
+        "x_min_y_min": {
+            "name": "Balanced",
+            "Drive": 0.33,
+            "Bass": 0.5,
+            "Mid": 0.41,
+            "MidFreq": 2,
+            "Treble": 0.48,
+            "ChVol": 0.9,
+            "Master": 1.0,
+            "Sag": 0.5,
+            "Hum": 0.5
+        },
+        "x_min_y_max": {
+            "name": "Heavy",
+            "Drive": 1.0,
+            "Bass": 0.62,
+            "Mid": 0.9,
+            "MidFreq": 2,
+            "Treble": 0.72,
+            "ChVol": 0.72,
+            "Master": 1.0,
+            "Sag": 0.0,
+            "Hum": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Deep",
+            "Drive": 0.55,
+            "Bass": 0.76,
+            "Mid": 0.7,
+            "MidFreq": 0,
+            "Treble": 0.23,
+            "ChVol": 0.75,
+            "Master": 1.0,
+            "Sag": 0.5,
+            "Hum": 0.5
+        },
+        "x_max_y_max": {
+            "name": "Thump",
+            "Drive": 0.69,
+            "Bass": 0.76,
+            "Mid": 0.09,
+            "MidFreq": 1,
+            "Treble": 0.6,
+            "ChVol": 0.83,
+            "Master": 1.0,
+            "Sag": 0.46,
+            "Hum": 0.5
+        }
+    }
+}

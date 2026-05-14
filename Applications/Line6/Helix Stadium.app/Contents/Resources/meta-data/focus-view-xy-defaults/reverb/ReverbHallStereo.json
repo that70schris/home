@@ -1,0 +1,76 @@
+{
+    "modelName": "Hall",
+    "params": {
+        "Decay": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Predelay": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "LowCut": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "HighCut": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Medium Hall",
+            "Decay": 0.57,
+            "Predelay": 0.015,
+            "LowCut": 265.0,
+            "HighCut": 6000.0,
+            "Mix": 0.43,
+            "Level": 0.496897
+        },
+        "x_min_y_min": {
+            "name": "Small Hall",
+            "Decay": 0.04,
+            "Predelay": 0.025,
+            "LowCut": 100.0,
+            "HighCut": 10000.0,
+            "Mix": 0.4,
+            "Level": 1.4974
+        },
+        "x_min_y_max": {
+            "name": "Large Hall",
+            "Decay": 0.65,
+            "Predelay": 0.025,
+            "LowCut": 280.0,
+            "HighCut": 6900.0,
+            "Mix": 0.44,
+            "Level": 0.963797
+        },
+        "x_max_y_min": {
+            "name": "Modulated",
+            "Decay": 0.7,
+            "Predelay": 0.02,
+            "LowCut": 282.0,
+            "HighCut": 5900.0,
+            "Mix": 0.59,
+            "Level": 0.963797
+        },
+        "x_max_y_max": {
+            "name": "Drone",
+            "Decay": 1.0,
+            "Predelay": 0.0,
+            "LowCut": 360.0,
+            "HighCut": 2000.0,
+            "Mix": 0.9,
+            "Level": 0.0
+        }
+    }
+}

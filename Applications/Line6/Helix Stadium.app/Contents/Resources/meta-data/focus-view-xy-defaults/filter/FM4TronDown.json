@@ -1,0 +1,76 @@
+{
+    "modelName": "Tron Down",
+    "params": {
+        "Freq": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Q": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Range": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "Type": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Open Up",
+            "Freq": 0.69,
+            "Q": 0.6,
+            "Range": false,
+            "Type": 1,
+            "Mix": 0.75,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Tiny Filter",
+            "Freq": 0.43,
+            "Q": 0.94,
+            "Range": true,
+            "Type": 0,
+            "Mix": 0.75,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Mutate",
+            "Freq": 1.0,
+            "Q": 1.0,
+            "Range": true,
+            "Type": 1,
+            "Mix": 0.5,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Crack Wah",
+            "Freq": 1.0,
+            "Q": 0.46,
+            "Range": false,
+            "Type": 1,
+            "Mix": 0.1,
+            "Level": -1.0
+        },
+        "x_max_y_max": {
+            "name": "Metallic",
+            "Freq": 1.0,
+            "Q": 0.19,
+            "Range": false,
+            "Type": 2,
+            "Mix": 1.0,
+            "Level": -1.0
+        }
+    }
+}

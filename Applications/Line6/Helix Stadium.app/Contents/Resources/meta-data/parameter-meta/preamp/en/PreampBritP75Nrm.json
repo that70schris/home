@@ -1,0 +1,16 @@
+{
+    "category": "preamp",
+    "model_id": 595,
+    "model_sym": "ModelID::kPreampBritP75Nrm",
+    "display_name": "Brit P75 Nrm",
+    "parameters-en": {
+        "Drive": "Controls the amount of gain applied to the signal, which influences the level of distortion.",
+        "Bass": "Controls the low frequency EQ of the tonestack.",
+        "Mid": "Controls the midrange frequency EQ of the tonestack.",
+        "Treble": "Controls the high frequency EQ of the tonestack.",
+        "Master": "Controls the Master Volume of the amplifier.",
+        "Level": "Controls the overall level of the Preamp block. Unlike Master Volume, it has no effect on the block's tone.",
+        "Sag": "Controls the amount of sag, or how much the power supply compresses or \"droops\" in response to striking the strings hard. Higher values provide more touch dynamics, sustain, and organic feel that's inherent in vintage tube amps; lower values offer a \"tighter\" responsiveness for a more modern feel.",
+        "Hum": "Adjusts the level of power supply hum that interacts with the signal. Preamp tube heaters in tube amps will leak a little bit of 60 cycle hum into the audio signal. When this hum mixes with the distorted audio signal, a non-musical distortion is created at low levels. To some players, this low-level, non-harmonic distortion adds a bit of realism to the amp model."
+    }
+}

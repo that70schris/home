@@ -1,0 +1,13 @@
+{
+    "category": "distortion",
+    "model_id": 362,
+    "model_sym": "ModelID::kDM4Overdrive",
+    "display_name": "Overdrive",
+    "parameters-en": {
+        "Drive": "Controls the amount of overdrive applied to the signal.",
+        "Bass": "Controls the low frequency EQ of the overdrive.",
+        "Mid": "Controls the midrange frequency of the overdrive.",
+        "Treble": "Controls the high frequency EQ of the overdrive.",
+        "Output": "Sets the overall level of the block."
+    }
+}

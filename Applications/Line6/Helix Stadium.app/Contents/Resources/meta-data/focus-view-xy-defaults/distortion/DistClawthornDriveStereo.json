@@ -1,0 +1,103 @@
+{
+    "modelName": "Clawthorn Drive",
+    "params": {
+        "ODGain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "ODTone": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "ODLevel": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "ODLowBoost": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "Fuzz": {
+            "id": 5,
+            "behavior": "quantize"
+        },
+        "FuzzOct": {
+            "id": 6,
+            "behavior": "quantize"
+        },
+        "FuzzGain": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "FuzzTone": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "FuzzLevel": {
+            "id": 9,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Crush",
+            "ODGain": 0.440000057220459,
+            "ODTone": 0.6000000238418579,
+            "ODLevel": 0.46000003814697266,
+            "ODLowBoost": true,
+            "Fuzz": true,
+            "FuzzOct": false,
+            "FuzzGain": 0.5,
+            "FuzzTone": 0.33000004291534424,
+            "FuzzLevel": 0.309999942779541
+        },
+        "x_min_y_min": {
+            "name": "Grit",
+            "ODGain": 0.2999999523162842,
+            "ODTone": 0.8500000238418579,
+            "ODLevel": 0.7000000476837158,
+            "ODLowBoost": true,
+            "Fuzz": false,
+            "FuzzOct": false,
+            "FuzzGain": 0.5,
+            "FuzzTone": 0.5,
+            "FuzzLevel": 0.20000004768371582
+        },
+        "x_min_y_max": {
+            "name": "Buzz",
+            "ODGain": 0.6299999952316284,
+            "ODTone": 0.3999999761581421,
+            "ODLevel": 0.25,
+            "ODLowBoost": true,
+            "Fuzz": true,
+            "FuzzOct": true,
+            "FuzzGain": 0.5499999523162842,
+            "FuzzTone": 0.4500000476837158,
+            "FuzzLevel": 0.5499999523162842
+        },
+        "x_max_y_min": {
+            "name": "Doom",
+            "ODGain": 0.43000006675720215,
+            "ODTone": 0.6600000858306885,
+            "ODLevel": 0.5499999523162842,
+            "ODLowBoost": true,
+            "Fuzz": true,
+            "FuzzOct": false,
+            "FuzzGain": 0.2999999523162842,
+            "FuzzTone": 0.0,
+            "FuzzLevel": 0.2999999523162842
+        },
+        "x_max_y_max": {
+            "name": "Insane",
+            "ODGain": 0.7400000095367432,
+            "ODTone": 0.7799999713897705,
+            "ODLevel": 0.3700000047683716,
+            "ODLowBoost": true,
+            "Fuzz": true,
+            "FuzzOct": true,
+            "FuzzGain": 0.75,
+            "FuzzTone": 0.7699999809265137,
+            "FuzzLevel": 0.3999999761581421
+        }
+    }
+}

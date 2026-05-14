@@ -1,0 +1,116 @@
+{
+    "modelName": "Agua 751",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Deep": {
+            "id": 5,
+            "behavior": "quantize"
+        },
+        "Bright": {
+            "id": 6,
+            "behavior": "quantize"
+        },
+        "Master": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Hype": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "AmpCabZFIR": {
+            "id": 101,
+            "behavior": "exclude"
+        },
+        "AmpCabZUpdate": {
+            "id": 103,
+            "behavior": "exclude"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Tube Power",
+            "Drive": 0.500000,
+            "Bass": 0.580000,
+            "Mid": 0.330000,
+            "Treble": 0.770000,
+            "Deep": true,
+            "Bright": false,
+            "Master": 0.550000,
+            "Level": -7.8000,
+            "Hype": 0.00000,
+            "AmpCabZUpdate": 0
+        },
+        "x_min_y_min": {
+            "name": "Round",
+            "Drive": 0.240000,
+            "Bass": 0.730000,
+            "Mid": 0.800000,
+            "Treble": 0.340000,
+            "Deep": true,
+            "Bright": false,
+            "Master": 0.720000,
+            "Level": -1.5000,
+            "Hype": 0.47000,
+            "AmpCabZUpdate": 0
+        },
+        "x_min_y_max": {
+            "name": "Contoured",
+            "Drive": 0.380000,
+            "Bass": 0.750000,
+            "Mid": 0.00000,
+            "Treble": 0.900000,
+            "Deep": true,
+            "Bright": true,
+            "Master": 0.650000,
+            "Level": -4.9000,
+            "Hype": 0.74000,
+            "AmpCabZUpdate": 0
+        },
+        "x_max_y_min": {
+            "name": "Dig In!",
+            "Drive": 0.250000,
+            "Bass": 0.660000,
+            "Mid": 0.700000,
+            "Treble": 0.890000,
+            "Deep": false,
+            "Bright": true,
+            "Master": 0.90000,
+            "Level": -1.5000,
+            "Hype": 0.33000,
+            "AmpCabZUpdate": 0
+        },
+        "x_max_y_max": {
+            "name": "AguAAAHHH",
+            "Drive": 0.580000,
+            "Bass": 0.530000,
+            "Mid": 1.00000,
+            "Treble": 0.700000,
+            "Deep": true,
+            "Bright": true,
+            "Master": 0.950000,
+            "Level": -12.4000,
+            "Hype": 0.50000,
+            "AmpCabZUpdate": 0
+        }
+    }
+}

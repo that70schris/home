@@ -1,0 +1,12 @@
+{
+    "category": "synth",
+    "model_id": 397,
+    "model_sym": "ModelID::kDoubleBass",
+    "display_name": "Double Bass",
+    "parameters-en": {
+        "-1 Octave": "Controls the level of the square wave, 1 octave down.",
+        "-2 Octave": "Controls the level of the sawtooth wave, 2 octaves down.",
+        "Mix": "Controls the blend between the synth and the dry signal. At 0%, no synth is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

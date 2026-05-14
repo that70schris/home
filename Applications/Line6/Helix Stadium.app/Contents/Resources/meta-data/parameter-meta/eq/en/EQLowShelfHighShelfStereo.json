@@ -1,0 +1,13 @@
+{
+    "category": "eq",
+    "model_id": 239,
+    "model_sym": "ModelID::kEQLowShelfHighShelfStereo",
+    "display_name": "Low/High Shelf",
+    "parameters-en": {
+        "Low Gain": "Adjusts the gain of the low-frequency band.",
+        "Low Freq": "Sets the frequency for the low-frequency band.",
+        "High Gain": "Adjusts the gain of the high-frequency band.",
+        "High Freq": "Sets the frequency for the high-frequency band.",
+        "Level": "Sets the overall level or gain of the equalizer."
+    }
+}

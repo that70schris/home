@@ -1,0 +1,33 @@
+{
+    "symbol": "ModelID::kAmpAgouraWhoWatt103",
+    "category": "amp",
+    "class": "class",
+    "display_name": "WhoWatt 103",
+    "model_catalog_image": "",
+    "model_options_image": "",
+    "parameters-en": {
+        "Channel": "Selects the amp channel or which input is connected. \"Jumped\" jumps between the Normal and Bright channels.",
+        "NrmDrive": "Controls the amount of Normal channel gain applied to the signal. The inactive channel can sometimes \"bleed into\" the active channel, resulting in interesting interactions.",
+        "BrtDrive": "Controls the amount of Bright channel gain applied to the signal. The inactive channel can sometimes \"bleed into\" the active channel, resulting in interesting interactions.",
+        "Bass": "Controls the low frequency EQ of the preamp's tonestack.",
+        "Mid": "Controls the midrange frequency EQ of the tonestack.",
+        "Treble": "Controls the high frequency EQ of the tonestack.",
+        "Presence": "Boosts upper mids and treble frequencies in the power amp, resulting in additional punch and bite.",
+        "Level": "Controls the overall level of the Amp block. Unlike Master Volume, it has no effect on the block's tone.",
+        "Master": "Controls the Master Volume of the amplifier.",
+        "Sag": "Controls the amount of sag, or how much the power supply compresses or \"droops\" in response to striking the strings hard. Higher values provide more touch dynamics, sustain, and organic feel that's inherent in vintage tube amps; lower values offer a \"tighter\" responsiveness for a more modern feel.",
+        "Ripple": "Controls how much AC ripple interacts with your tone. Power amp circuits will sometimes let a little bit of rectified 120Hz hum (that the power supply filter caps can't quite fully remove) into the audio signal when the power supply is being pushed hard. Much like Hum, Ripple provides a bit of non-musical distortion to the power amp at distorted settings.",
+        "Z PrePost": "Determines the location of speaker impedance characteristics in the power amp, primarily due to negative feedback. Higher values mean the effects of the interaction appear at the output of the power amp (Post) and lower values mean more of the effect is fed back to the input of the power amp (Pre).",
+        "Hype": "Depending on the amp and/or amp settings, increasing Hype may subtly or dramatically adjust various behind-the-scenes parameters to make the amp sound and feel smoother, fuller, punchier, tighter, and/or more forgiving, but at the expense of accuracy.",
+        "AmpCabPeak2Q": "",
+        "AmpCabPeak2Fc": "",
+        "AmpCabPeak2G": "",
+        "AmpCabZFir": "",
+        "AmpCabZUpdate": "",
+        "AmpCabShelfF": "",
+        "AmpCabShelfG": "",
+        "AmpCabPeakQ": "",
+        "AmpCabPeakG": "",
+        "AmpCabPeakFc": ""
+    }
+}

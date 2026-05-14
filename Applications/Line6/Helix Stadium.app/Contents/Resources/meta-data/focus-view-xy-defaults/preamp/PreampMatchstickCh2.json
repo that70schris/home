@@ -1,0 +1,76 @@
+{
+    "modelName": "Matchstick Ch2",
+    "params": {
+        "Ch2Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Tone": {
+            "id": 2,
+            "behavior": "quantize"
+        },
+        "Master": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Hum": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Crispy Dirt",
+            "Ch2Drive": 0.24000000953674316,
+            "Tone": 4,
+            "Master": 1.0,
+            "Sag": 0.6499999761581421,
+            "Hum": 0.0,
+            "ChVol": 0.7000000476837158
+        },
+        "x_min_y_min": {
+            "name": "Cleanish",
+            "Ch2Drive": 0.12000000476837158,
+            "Tone": 2,
+            "Master": 1.0,
+            "Sag": 0.6499999761581421,
+            "Hum": 0.0,
+            "ChVol": 0.7000000476837158
+        },
+        "x_min_y_max": {
+            "name": "Chimey EOB",
+            "Ch2Drive": 0.12999999523162842,
+            "Tone": 5,
+            "Master": 1.0,
+            "Sag": 0.6499999761581421,
+            "Hum": 0.0,
+            "ChVol": 0.7000000476837158
+        },
+        "x_max_y_min": {
+            "name": "Hot",
+            "Ch2Drive": 0.5,
+            "Tone": 5,
+            "Master": 1.0,
+            "Sag": 0.6499999761581421,
+            "Hum": 0.0,
+            "ChVol": 0.7000000476837158
+        },
+        "x_max_y_max": {
+            "name": "Dimed",
+            "Ch2Drive": 0.8999999761581421,
+            "Tone": 4,
+            "Master": 1.0,
+            "Sag": 0.6499999761581421,
+            "Hum": 0.0,
+            "ChVol": 0.62
+        }
+    }
+}

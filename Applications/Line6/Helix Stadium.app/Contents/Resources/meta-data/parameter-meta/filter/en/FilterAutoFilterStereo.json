@@ -1,0 +1,19 @@
+{
+    "category": "filter",
+    "model_id": 7,
+    "model_sym": "ModelID::kFilterAutoFilterStereo",
+    "display_name": "Autofilter",
+    "parameters-en": {
+        "Mode": "Selects the type of filter effect (Low Pass, Band Pass, or High Pass).",
+        "FilterGain": "Controls the amount of boost or cut applied to the filtered frequencies.",
+        "Filter Q": "Controls the resonance or width of the frequency band affected by the filter.",
+        "Sens": "Determines how Autofilter responds to your playing dynamics. Lower values are less sensitive to pick attack; higher values are more sensitive.",
+        "Attack": "Controls how long it takes for the filter to reach its high frequency (determined by Sensitivity and your playing dynamics) once the transient is detected. Lower values are better for funky rhythmic playing; higher values are better for slow filter sweeps and special effects.",
+        "Decay": "Controls how long it takes for the filter to return to its original cutoff frequency after the Attack stage.",
+        "Frequency": "Sets the initial filter frequency when no input signal is detected.",
+        "FreqDepth": "Sets the amount of frequency change. If FreqDepth's value is lower than Frequency's value, the filter frequency remains static.",
+        "Direction": "Determines whether playing dynamics push the filter frequency higher or lower.",
+        "Mix": "Controls the balance between the filtered and dry signals. At 0%, no filtered signal is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

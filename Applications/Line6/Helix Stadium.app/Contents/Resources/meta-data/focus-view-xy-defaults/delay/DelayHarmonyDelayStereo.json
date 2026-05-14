@@ -1,0 +1,202 @@
+{
+    "modelName": "Harmony Delay",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Key": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Scale": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "IntervalVoice1": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "LevelVoice1": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "PanVoice1": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "IntervalVoice2": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "LevelVoice2": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "PanVoice2": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "DelayVoice1": {
+            "id": 13,
+            "behavior": "interpolate"
+        },
+        "DelayVoice2": {
+            "id": 14,
+            "behavior": "interpolate"
+        },
+        "LevelRootVoice": {
+            "id": 15,
+            "behavior": "interpolate"
+        },
+        "PanRootVoice": {
+            "id": 16,
+            "behavior": "interpolate"
+        },
+        "LowCut": {
+            "id": 17,
+            "behavior": "interpolate"
+        },
+        "HighCut": {
+            "id": 18,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 19,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 20,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "A Major Triad",
+            "Time": 0.75,
+            "Feedback": 0.08,
+            "Key": 0,
+            "Scale": 0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "IntervalVoice1": 2,
+            "LevelVoice1": 1.0,
+            "PanVoice1": 0.375,
+            "IntervalVoice2": 4,
+            "LevelVoice2": 1.0,
+            "PanVoice2": 0.645,
+            "DelayVoice1": 0.33,
+            "DelayVoice2": 0.66,
+            "LevelRootVoice": 1.0,
+            "PanRootVoice": 0.5,
+            "LowCut": 160.0,
+            "HighCut": 20100.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "A Major 7",
+            "Time": 1.0,
+            "Feedback": 0.0599999,
+            "Key": 0,
+            "Scale": 0,
+            "Mix": 0.54,
+            "Level": 0.0,
+            "IntervalVoice1": 6,
+            "LevelVoice1": 1.0,
+            "PanVoice1": 0.0,
+            "IntervalVoice2": 4,
+            "LevelVoice2": 1.0,
+            "PanVoice2": 1.0,
+            "DelayVoice1": 0.33,
+            "DelayVoice2": 0.66,
+            "LevelRootVoice": 1.0,
+            "PanRootVoice": 0.5,
+            "LowCut": 160.0,
+            "HighCut": 8500.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "A Sus 4",
+            "Time": 1.5,
+            "Feedback": 0.2,
+            "Key": 0,
+            "Scale": 0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "IntervalVoice1": 4,
+            "LevelVoice1": 1.0,
+            "PanVoice1": 0.25,
+            "IntervalVoice2": 7,
+            "LevelVoice2": 1.0,
+            "PanVoice2": 0.75,
+            "DelayVoice1": 0.33,
+            "DelayVoice2": 0.66,
+            "LevelRootVoice": 1.0,
+            "PanRootVoice": 0.5,
+            "LowCut": 160.0,
+            "HighCut": 20100.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "A123!",
+            "Time": 0.48,
+            "Feedback": 0.43,
+            "Key": 0,
+            "Scale": 0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "IntervalVoice1": 1,
+            "LevelVoice1": 1.0,
+            "PanVoice1": 0.25,
+            "IntervalVoice2": 2,
+            "LevelVoice2": 1.0,
+            "PanVoice2": 0.75,
+            "DelayVoice1": 0.33,
+            "DelayVoice2": 0.66,
+            "LevelRootVoice": 1.0,
+            "PanRootVoice": 0.5,
+            "LowCut": 160.0,
+            "HighCut": 20100.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "5 Bouncy",
+            "Time": 0.75,
+            "Feedback": 0.87,
+            "Key": 0,
+            "Scale": 1,
+            "Mix": 0.54,
+            "Level": 0.0,
+            "IntervalVoice1": 5,
+            "LevelVoice1": 1.0,
+            "PanVoice1": 0.0,
+            "IntervalVoice2": 0,
+            "LevelVoice2": 1.0,
+            "PanVoice2": 1.0,
+            "DelayVoice1": 0.33,
+            "DelayVoice2": 0.66,
+            "LevelRootVoice": 0.0,
+            "PanRootVoice": 0.5,
+            "LowCut": 160.0,
+            "HighCut": 8500.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

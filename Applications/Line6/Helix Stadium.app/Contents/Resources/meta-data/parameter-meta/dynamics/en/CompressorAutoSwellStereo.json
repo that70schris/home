@@ -1,0 +1,14 @@
+{
+    "category": "dynamics",
+    "model_id": 15,
+    "model_sym": "ModelID::kCompressorAutoSwellStereo",
+    "display_name": "Autoswell",
+    "parameters-en": {
+        "Threshold": "Sets the level above which a swell (fade in) is triggered. To trigger another swell, the signal must drop below this level and then exceed it again.",
+        "Rel Offset": "Determines the behavior of the swell's Decay (fade out), relative to the Threshold. When set to 0.0, Attack and Decay have the same Threshold. Negative values cause the Decay to happen immediately after the Attack. Positive values let you continue to play after the Attack stage, preventing the Decay.",
+        "Attack": "Controls how long the swell fades in once the signal exceeds the Threshold.",
+        "Decay": "Controls how long the swell fades out.",
+        "Taper": "Determines the shape of the Attack (fade in) and Decay (fade out) curves-Linear or Logarithmic.",
+        "Level": "Sets the overall level of the block."
+    }
+}

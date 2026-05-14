@@ -1,0 +1,67 @@
+{
+    "modelName": "Script Mod Phase",
+    "params": {
+        "Rate": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Sway",
+            "Rate": 0.0700000524520874,
+            "Mix": 0.5,
+            "Level": 1.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Glide",
+            "Rate": 0.019999980926513672,
+            "Mix": 0.2999999523162842,
+            "Level": 1.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Swirl",
+            "Rate": 0.2999999523162842,
+            "Mix": 0.5,
+            "Level": 1.0,
+            "SyncSelect1": 7,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Wave",
+            "Rate": 0.20000004768371582,
+            "Mix": 0.5,
+            "Level": 1.0,
+            "SyncSelect1": 7,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Warp",
+            "Rate": 1.0,
+            "Mix": 0.5,
+            "Level": 1.2000007629394531,
+            "SyncSelect1": 7,
+            "TempoSync1": false
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "category": "delay",
+    "model_id": 42,
+    "model_sym": "ModelID::kDelayStutterEditStereo",
+    "display_name": "Tesselator",
+    "parameters-en": {
+        "First": "Determines the length of the repeats at the beginning of the sequence, that is, the length of repeated audio when the block is first engaged. When set to note values, First (Time) follows the system tempo.",
+        "Last": "Determines the length of the repeats at the end of the sequence. If shorter than the First step's time, the sequence will get shorter; if longer than the First step's time, the sequence will get longer. If First and Last are the same time, the sequence length remains constant. When set to note values, Last (Time) follows the system tempo.",
+        "Steps": "Determines how many steps there are in the sequence (1 to 50), with steps in the middle interpolating repeat length, speed/pitch, and/or filter cutoff. For example, if your first step is 100 ms and your last step is 500 ms, each successive step in the sequence will interpolate between 100 ms and 500 ms.",
+        "Direction": "Determines the direction of the repeats. \"Forward\" makes each repeat play back normally. \"Reverse\" causes repeats to play back in reverse. \"Fwd/Rev\" alternates between forward and reverse.",
+        "Boomerang": "When on, the sequence plays forward, then backward, then forward again, etc. When off, the end of the sequence repeats indefinitely.",
+        "Operation": "Determines what happens to your signal when Tesselator is turned on. When set to \"Mute All,\" THE ENTIRE PATH IS MUTED. When set to \"Dry Kill,\" only the effected signal is heard. When set to \"Normal,\" both the effected and dry signals are heard. TIP: With Tesselator on a parallel path, assign a second stomp switch to toggle between Mute All and Dry Kill.",
+        "Ramp": "Determines whether any speed/pitch changes across the sequence reference a static or semitone value. \"Speed\" sets the target speed of the last step; use the Speed parameter to set the specific value (0% ~ 200% speed). \"Pitch\" sets the target pitch of the last step; use the Pitch parameter to set the value (-12 ~ +12 semitones).",
+        "Speed": "Sets the speed for the last step in the sequence. For example, if set to 200%, the last step's speed will be twice as fast as the first step and if set to 0%, the last step will appear to stop completely, almost like a glitchy tape stop effect. Disabled unless Ramp is set to \"Speed.\"",
+        "Pitch": "Sets the pitch shift for the last step in semitones. For example, if set to -12, the last step will be an octave lower than the first step. Disabled unless Ramp is set to \"Pitch.\"",
+        "HP Filter": "Controls the high-pass (low cut) filter frequency for the last step. For example, if set to a higher value, each successive step will filter out more bass until the last step of the sequence.",
+        "LP Filter": "Controls the low-pass (high cut) filter frequency for the last step. For example, if set to a lower value, each successive step will filter out more treble until the last step of the sequence.",
+        "FX Level": "Controls the level of the effected signal.",
+        "Level": "Sets the overall level of the block.",
+        "TSync1": "",
+        "Transport": ""
+    }
+}

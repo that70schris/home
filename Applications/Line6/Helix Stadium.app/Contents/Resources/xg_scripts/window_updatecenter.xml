@@ -1,0 +1,257 @@
+
+<xg>
+    <panel_widget height="768" id="1" left="0" top="0" width="1024">
+        <anchor_pos bottom="0" left="0" right="0" top="0"/>
+        <bg_color>0xFF141414</bg_color>
+        <image_widget height="60" id="cimg" left="20" name="Component Image" top="23" width="114">
+            <anchor_pos left="20"/>
+            <bg_color>0x00000000</bg_color>
+            <image>300</image>
+            <scale_mode>keep_aspect</scale_mode>
+        </image_widget>
+        <text_widget height="28" id="hedr" left="130" name="Header Text" top="21" width="480">
+            <anchor_pos left="130" right="130"/>
+            <bg_color>0x00000000</bg_color>
+            <text>
+                <label>A new version of the Helix Stadium XL Firmware is available!</label>
+                <font name="Inter Display" size="16" weight="bold"/>
+                <align horz="center"/>
+                <text_color>0xFFFFFFFF</text_color>
+            </text>
+        </text_widget>
+        <text_widget height="41" id="desc" left="140" name="Description Text" top="48" width="440">
+            <anchor_pos left="140" right="140"/>
+            <bg_color>0x00000000</bg_color>
+            <text>
+                <label>Helix Stadium XL 1.1.0 is now available. You have 1.0.0. Would you like to download it now?</label>
+                <font name="Inter Display" size="14"/>
+                <align horz="center"/>
+                <multiline>yes</multiline>
+                <text_color>0xFFFFFFFF</text_color>
+            </text>
+        </text_widget>
+        <text_widget height="28" id="vers" left="20" name="Version #" top="100" width="303">
+            <anchor_pos left="20"/>
+            <bg_color>0x00000000</bg_color>
+            <text>
+                <label>Version: 1.1.0 (001)</label>
+                <font name="Inter Display" size="16" weight="semibold"/>
+                <align vert="middle"/>
+                <text_color>0xFFFFFFFF</text_color>
+            </text>
+        </text_widget>
+        <panel_widget height="556" id="webp" left="20" name="Web View Panel" top="136" width="984">
+            <anchor_pos bottom="76" left="20" right="20" top="136"/>
+            <bg_color>0x00000000</bg_color>
+            <border_color>0xFF595858</border_color>
+            <corner_radius>8</corner_radius>
+            <scrolling>
+                <enabled>yes</enabled>
+                <scrollbars>
+                    <visibility h="none"/>
+                    <width>8</width>
+                    <border_thickness>0</border_thickness>
+                    <arrow_buttons size="0"/>
+                </scrollbars>
+            </scrolling>
+            <text_widget height="10" id="note" left="6" top="6" width="668">
+                <anchor_pos bottom="6" left="6" right="6" top="6"/>
+                <bg_color>0xFF1B1B1B</bg_color>
+                <text>
+                    <label>FPO Web Widget</label>
+                    <font name="Inter Display" size="14"/>
+                    <align horz="center" vert="middle"/>
+                    <text_color>0x80FFFFFF</text_color>
+                </text>
+            </text_widget>
+        </panel_widget>
+        <pushbutton_widget height="36" id="skip" left="20" name="Skip Button" top="712" width="132">
+            <anchor_pos bottom="20" left="20"/>
+            <bg_color>0xFF4A4A4A</bg_color>
+            <corner_radius>6</corner_radius>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <label>Skip This Version</label>
+                <font name="Inter Display" size="14" weight="semibold"/>
+                <text_color>0xCCFFFFFF</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF3D3D3D</bg_color>
+                <fg_color>0xCCFFFFFF</fg_color>
+                <offset y="1"/>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF5C5C5C</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <pushbutton_widget height="36" id="reme" left="446" name="Remind Me Later Button" top="712" width="132">
+            <anchor_pos bottom="20"/>
+            <relative_pos x="50"/>
+            <bg_color>0xFF4A4A4A</bg_color>
+            <corner_radius>6</corner_radius>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <label>Remind Me Later</label>
+                <font name="Inter Display" size="14" weight="semibold"/>
+                <text_color>0xCCFFFFFF</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF3D3D3D</bg_color>
+                <fg_color>0xCCFFFFFF</fg_color>
+                <offset y="1"/>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF5C5C5C</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <pushbutton_widget height="36" id="down" left="862" name="Download Button" top="712" width="142">
+            <anchor_pos bottom="20" right="20"/>
+            <bg_color>0xFF0A700B</bg_color>
+            <corner_radius>6</corner_radius>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <label>Download Update</label>
+                <font name="Inter Display" size="14" weight="semibold"/>
+                <text_color>0xCCFFFFFF</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF0A700B</bg_color>
+                <fg_color>0xCCFFFFFF</fg_color>
+                <offset y="1"/>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF0E990F</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <pushbutton_widget height="36" id="inst" left="862" name="Install Button" top="712" width="142">
+            <anchor_pos bottom="20" right="20"/>
+            <bg_color>0xFF0A700B</bg_color>
+            <corner_radius>6</corner_radius>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <label>Install Update</label>
+                <font name="Inter Display" size="14" weight="semibold"/>
+                <text_color>0xCCFFFFFF</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF0A700B</bg_color>
+                <fg_color>0xCCFFFFFF</fg_color>
+                <offset y="1"/>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF0E990F</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <pushbutton_widget height="36" id="acpt" left="862" name="Accept Button" top="712" width="142">
+            <anchor_pos bottom="20" right="20"/>
+            <bg_color>0xFF0A700B</bg_color>
+            <corner_radius>6</corner_radius>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <label>Accept</label>
+                <font name="Inter Display" size="14" weight="semibold"/>
+                <text_color>0xCCFFFFFF</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF0A700B</bg_color>
+                <fg_color>0xCCFFFFFF</fg_color>
+                <offset y="1"/>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF0E990F</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <pushbutton_widget height="36" id="decl" left="862" name="Decline Button" top="712" width="142">
+            <anchor_pos bottom="20" right="170"/>
+            <bg_color>0xFF821F1F</bg_color>
+            <corner_radius>6</corner_radius>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <label>Decline</label>
+                <font name="Inter Display" size="14"/>
+                <text_color>0xCCFFFFFF</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF731B1C</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+                <offset y="1"/>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFFBF2D2F</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <text_widget height="28" id="date" left="493" name="Release Date" top="97" width="207">
+            <anchor_pos right="20"/>
+            <bg_color>0x00000000</bg_color>
+            <text>
+                <label>Released: 10/31/2025</label>
+                <font name="Inter Display" size="16"/>
+                <align horz="right" vert="middle"/>
+                <text_color>0xFF808080</text_color>
+            </text>
+        </text_widget>
+        <radio_widget height="28" id="ttyp" left="300" name="Toggle Component Type" top="100" width="100">
+            <relative_pos x="50"/>
+            <bg_color>0xFF000000</bg_color>
+            <radio_button_widget height="28" id="1" left="0" top="0" width="50">
+                <bg_color>0xFF424242</bg_color>
+                <corner_radius bl="yes" br="no" tl="yes" tr="no">6</corner_radius>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>App</label>
+                    <font name="Inter Display" size="12"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </active_state>
+                <hilite_state>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </hilite_state>
+            </radio_button_widget>
+            <radio_button_widget height="28" id="1" left="50" top="0" width="50">
+                <bg_color>0xFF424242</bg_color>
+                <corner_radius bl="no" br="yes" tl="no" tr="yes">6</corner_radius>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Device</label>
+                    <font name="Inter Display" size="12"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </active_state>
+                <hilite_state>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </hilite_state>
+            </radio_button_widget>
+        </radio_widget>
+        <pushbutton_widget height="28" id="file" left="618" top="33" width="82">
+            <anchor_pos right="20"/>
+            <bg_color>0xFF424242</bg_color>
+            <corner_radius>6</corner_radius>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <label>Select File</label>
+                <font name="Inter Display" size="12"/>
+                <text_color>0xFFD6D6D6</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF797979</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF5E5E5E</bg_color>
+                <fg_color>0xFFEBEBEB</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+    </panel_widget>
+</xg>

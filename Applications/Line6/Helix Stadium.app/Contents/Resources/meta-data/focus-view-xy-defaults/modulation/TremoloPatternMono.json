@@ -1,0 +1,112 @@
+{
+    "modelName": "Bleat Chop Trem",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "WaveShape": {
+            "id": 2,
+            "behavior": "quantize"
+        },
+        "Step1": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "Step2": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "Step3": {
+            "id": 5,
+            "behavior": "quantize"
+        },
+        "Step4": {
+            "id": 6,
+            "behavior": "quantize"
+        },
+        "Depth": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 13,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 14,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Alter Pattern",
+            "Speed": 1.0,
+            "WaveShape": 4,
+            "Step1": 2,
+            "Step2": 4,
+            "Step3": 8,
+            "Step4": 6,
+            "Depth": 0.800000011920929,
+            "Level": 1.0,
+            "SyncSelect1": 3,
+            "TempoSync1": true
+        },
+        "x_min_y_min": {
+            "name": "Accelleration",
+            "Speed": 0.5999999642372131,
+            "WaveShape": 3,
+            "Step1": 4,
+            "Step2": 8,
+            "Step3": 12,
+            "Step4": 16,
+            "Depth": 0.6399999856948853,
+            "Level": 1.0,
+            "SyncSelect1": 1,
+            "TempoSync1": true
+        },
+        "x_min_y_max": {
+            "name": "Triple Threat",
+            "Speed": 1.0,
+            "WaveShape": 1,
+            "Step1": 3,
+            "Step2": 8,
+            "Step3": 12,
+            "Step4": 1,
+            "Depth": 1.0,
+            "Level": 1.0,
+            "SyncSelect1": 3,
+            "TempoSync1": true
+        },
+        "x_max_y_min": {
+            "name": "Plodding March",
+            "Speed": 1.0,
+            "WaveShape": 0,
+            "Step1": 2,
+            "Step2": 4,
+            "Step3": 6,
+            "Step4": 8,
+            "Depth": 1.0,
+            "Level": 1.0,
+            "SyncSelect1": 1,
+            "TempoSync1": true
+        },
+        "x_max_y_max": {
+            "name": "16th Chaos",
+            "Speed": 1.0,
+            "WaveShape": 4,
+            "Step1": 16,
+            "Step2": 15,
+            "Step3": 14,
+            "Step4": 13,
+            "Depth": 1.0,
+            "Level": 1.0,
+            "SyncSelect1": 12,
+            "TempoSync1": true
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "category": "modulation",
+    "model_id": 339,
+    "model_sym": "ModelID::kTremoloPatternMono",
+    "display_name": "Bleat Chop Trem",
+    "parameters-en": {
+        "Speed": "Controls the speed or rate of the step sequence. When set to note values, Speed follows the system tempo.",
+        "WavShape": "Selects the wave shape of the tremolo. \"Square\" is generally the most audible here.",
+        "Step1": "Determines the number of pulses in the sequence's first step, with higher values resulting in progressively shorter and faster tremolo pulses. \"Mute\" mutes the signal and \"Full\" bypasses the tremolo for the entirety of the step.",
+        "Step2": "Determines the number of pulses in the sequence's second step, with higher values resulting in progressively shorter and faster tremolo pulses. \"Mute\" mutes the signal and \"Full\" bypasses the tremolo for the entirety of the step.",
+        "Step3": "Determines the number of pulses in the sequence's third step, with higher values resulting in progressively shorter and faster tremolo pulses. \"Mute\" mutes the signal and \"Full\" bypasses the tremolo for the entirety of the step.",
+        "Step4": "Determines the number of pulses in the sequence's fourth step, with higher values resulting in progressively shorter and faster tremolo pulses. \"Mute\" mutes the signal and \"Full\" bypasses the tremolo for the entirety of the step.",
+        "Depth": "Controls the depth of the tremolo, or the intensity of the volume fluctuations.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

@@ -1,0 +1,175 @@
+{
+    "modelName": "ADT",
+    "params": {
+        "DelayDeck1": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "DelayDeck2": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "WowFlutter1": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "WowFlutter2": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "DistDeck1": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "DistDeck2": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Deck1Vol": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Deck2Vol": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Deck2Pol": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "ModRate": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "ModDepth": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "TapeSpeed": {
+            "id": 13,
+            "behavior": "quantize"
+        },
+        "Texture": {
+            "id": 14,
+            "behavior": "interpolate"
+        },
+        "LowCut": {
+            "id": 15,
+            "behavior": "interpolate"
+        },
+        "HighCut": {
+            "id": 16,
+            "behavior": "interpolate"
+        },
+        "Threshold": {
+            "id": 17,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "ADT",
+            "DelayDeck1": 0.00300002,
+            "DelayDeck2": 0.05,
+            "WowFlutter1": 0.0,
+            "WowFlutter2": 0.0,
+            "DistDeck1": 0.0,
+            "DistDeck2": 0.0,
+            "Deck1Vol": 0.0,
+            "Deck2Vol": -3.0,
+            "Deck2Pol": 0,
+            "ModRate": 0.5,
+            "ModDepth": 0.0,
+            "Level": 0.0,
+            "TapeSpeed": 1,
+            "Texture": 0.625,
+            "LowCut": 61.5622,
+            "HighCut": 12000.0,
+            "Threshold": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Slap Delay",
+            "DelayDeck1": 0.00030005,
+            "DelayDeck2": 0.138,
+            "WowFlutter1": 0.0,
+            "WowFlutter2": 0.67,
+            "DistDeck1": 0.11,
+            "DistDeck2": 0.3,
+            "Deck1Vol": 0.0,
+            "Deck2Vol": -10.3,
+            "Deck2Pol": 0,
+            "ModRate": 1.0,
+            "ModDepth": 0.49,
+            "Level": 0.0,
+            "TapeSpeed": 1,
+            "Texture": 0.36,
+            "LowCut": 61.5622,
+            "HighCut": 12000.0,
+            "Threshold": 0.0
+        },
+        "x_min_y_max": {
+            "name": "St Chorus",
+            "DelayDeck1": 0.00600004,
+            "DelayDeck2": 0.00399995,
+            "WowFlutter1": 0.0,
+            "WowFlutter2": 0.67,
+            "DistDeck1": 0.11,
+            "DistDeck2": 0.11,
+            "Deck1Vol": 0.0,
+            "Deck2Vol": -10.3,
+            "Deck2Pol": 0,
+            "ModRate": 0.7,
+            "ModDepth": 1.0,
+            "Level": 0.0,
+            "TapeSpeed": 1,
+            "Texture": 0.36,
+            "LowCut": 61.5622,
+            "HighCut": 12000.0,
+            "Threshold": 0.0
+        },
+        "x_max_y_min": {
+            "name": "St Boost",
+            "DelayDeck1": 0.005,
+            "DelayDeck2": 0.0140001,
+            "WowFlutter1": 0.44,
+            "WowFlutter2": 1.0,
+            "DistDeck1": 0.3,
+            "DistDeck2": 0.3,
+            "Deck1Vol": -7.5,
+            "Deck2Vol": -7.4,
+            "Deck2Pol": 0,
+            "ModRate": 2.7,
+            "ModDepth": 0.72,
+            "Level": 0.0,
+            "TapeSpeed": 1,
+            "Texture": 0.53,
+            "LowCut": 61.5622,
+            "HighCut": 12000.0,
+            "Threshold": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Clean Dirt",
+            "DelayDeck1": 0.0,
+            "DelayDeck2": 0.00100005,
+            "WowFlutter1": 0.0,
+            "WowFlutter2": 0.5,
+            "DistDeck1": 0.0,
+            "DistDeck2": 1.0,
+            "Deck1Vol": -0.5,
+            "Deck2Vol": -14.5,
+            "Deck2Pol": 0,
+            "ModRate": 2.0,
+            "ModDepth": 0.33,
+            "Level": 0.0,
+            "TapeSpeed": 1,
+            "Texture": 0.0,
+            "LowCut": 61.5622,
+            "HighCut": 5500.0,
+            "Threshold": 0.0
+        }
+    }
+}

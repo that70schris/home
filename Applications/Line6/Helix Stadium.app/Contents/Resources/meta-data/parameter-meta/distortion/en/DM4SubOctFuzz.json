@@ -1,0 +1,13 @@
+{
+    "category": "distortion",
+    "model_id": 348,
+    "model_sym": "ModelID::kDM4SubOctFuzz",
+    "display_name": "Sub Oct Fuzz",
+    "parameters-en": {
+        "Drive": "Controls the amount of square wave distortion/fuzz applied to the signal.",
+        "Bass": "Controls the low-frequency EQ of the fuzz.",
+        "Sub": "Blends in more of the lower octave effect.",
+        "Treble": "Controls the high-frequency EQ of the fuzz.",
+        "Output": "Sets the overall level of the block."
+    }
+}

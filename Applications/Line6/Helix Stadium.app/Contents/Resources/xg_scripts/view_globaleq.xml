@@ -1,0 +1,202 @@
+
+<xg>
+    <panel_widget height="688" id="gleq" left="0" top="0" width="1024">
+        <bg_color>0xFF000000</bg_color>
+        <panel_widget height="400" id="gbeq" left="0" top="0" width="819">
+            <anchor_pos left="0" right="200" top="0"/>
+            <relative_pos width="80"/>
+            <bg_color>0x00000000</bg_color>
+        </panel_widget>
+        <panel_widget height="400" id="sdbr" left="824" top="0" width="200">
+            <anchor_pos right="0" top="0"/>
+            <bg_color>0xFF000000</bg_color>
+            <pushbutton_widget height="30" id="cpeq" left="5" top="10" width="150">
+                <anchor_pos left="5" top="10"/>
+                <bg_color>0x00424242</bg_color>
+                <icon height="30" width="30">94</icon>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Copy EQ</label>
+                    <font name="Inter" size="18"/>
+                    <align horz="left"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF5E5E5E</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+            <pushbutton_widget height="30" id="pteq" left="5" top="50" width="150">
+                <anchor_pos left="5" top="50"/>
+                <enabled>no</enabled>
+                <bg_color>0x00424242</bg_color>
+                <icon height="30" width="30">98</icon>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Paste EQ</label>
+                    <font name="Inter" size="18"/>
+                    <align horz="left"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF5E5E5E</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+            <pushbutton_widget height="30" id="rteq" left="5" top="90" width="150">
+                <anchor_pos left="5" top="90"/>
+                <enabled>no</enabled>
+                <bg_color>0x00424242</bg_color>
+                <icon height="30" width="30">95</icon>
+                <icon_placement spacing="4">4</icon_placement>
+                <text>
+                    <label>Reset EQ</label>
+                    <font name="Inter" size="18"/>
+                    <align horz="left"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF5E5E5E</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+        </panel_widget>
+        <panel_widget height="275" id="prmv" left="0" top="400" width="1024">
+            <anchor_pos bottom="0" left="0" right="0" top="400"/>
+            <bg_color>0x00000000</bg_color>
+            <panel_widget height="40" id="eqhd" left="0" name="Param Header" top="0" width="1024">
+                <anchor_pos left="0" right="0" top="0"/>
+                <bg_color>0xFF424242</bg_color>
+                <scrolling>
+                    <scrollbars>
+                        <arrow_buttons size="0"/>
+                    </scrollbars>
+                </scrolling>
+                <text_icon_widget height="40" id="gblb" left="286" top="0" width="256">
+                    <anchor_pos bottom="0" top="0"/>
+                    <relative_pos width="25" x="28" x_align="left"/>
+                    <bg_color>0x00000000</bg_color>
+                    <text>
+                        <label>Global EQ</label>
+                        <font name="Inter" size="24" weight="semibold"/>
+                        <align horz="right" vert="middle"/>
+                        <text_color>0xFFE8D62F</text_color>
+                    </text>
+                    <icon height="50" width="40">93</icon>
+                    <icon_placement spacing="4">-1</icon_placement>
+                </text_icon_widget>
+                <text_widget height="40" id="outl" left="542" top="0" width="110">
+                    <anchor_pos bottom="0" top="0"/>
+                    <relative_pos x="53" x_align="left"/>
+                    <bg_color>0x00000000</bg_color>
+                    <text>
+                        <label>1/4"</label>
+                        <font name="Inter" size="24"/>
+                        <align vert="middle"/>
+                        <offset x="2"/>
+                        <text_color>0xFFFFFFFF</text_color>
+                    </text>
+                </text_widget>
+                <toggle_widget height="40" id="eqbp" left="984" name="Global EQ Bypass" top="0" width="40">
+                    <anchor_pos bottom="0" right="0" top="0"/>
+                    <bg_color>0x00000000</bg_color>
+                    <scale_mode>keep_aspect</scale_mode>
+                    <icon>101</icon>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <text>
+                        <font name="Inter Display" size="12"/>
+                    </text>
+                </toggle_widget>
+                <radio_widget height="30" id="srcs" left="5" top="5" width="300">
+                    <relative_pos y="50"/>
+                    <bg_color>0x00000000</bg_color>
+                    <radio_button_widget height="30" id="qtrb" left="0" top="0" width="100">
+                        <bg_color>0xFF424242</bg_color>
+                        <border_color>0xFF797979</border_color>
+                        <corner_radius bl="yes" br="no" tl="yes" tr="no">8</corner_radius>
+                        <icon_placement spacing="4">-1</icon_placement>
+                        <icon height="24" index="0" width="24">326</icon>
+                        <text>
+                            <label>1/4"</label>
+                            <font name="Inter Display" size="14"/>
+                            <text_color>0xFFE8D62F</text_color>
+                        </text>
+                        <active_state>
+                            <bg_color>0xFF797979</bg_color>
+                            <fg_color>0xFFEBEBEB</fg_color>
+                        </active_state>
+                        <hilite_state>
+                            <fg_color>0xFFFFFFFF</fg_color>
+                        </hilite_state>
+                    </radio_button_widget>
+                    <radio_button_widget height="30" id="xlrb" left="99" top="0" width="100">
+                        <bg_color>0xFF424242</bg_color>
+                        <border_color>0xFF797979</border_color>
+                        <icon_placement spacing="4">-1</icon_placement>
+                        <icon height="24" index="1" width="24">326</icon>
+                        <text>
+                            <label>XLR</label>
+                            <font name="Inter Display" size="14"/>
+                            <text_color>0xFFE8D62F</text_color>
+                        </text>
+                        <active_state>
+                            <bg_color>0xFF797979</bg_color>
+                            <fg_color>0xFFEBEBEB</fg_color>
+                        </active_state>
+                        <hilite_state>
+                            <fg_color>0xFFFFFFFF</fg_color>
+                        </hilite_state>
+                    </radio_button_widget>
+                    <radio_button_widget height="30" id="phnb" left="198" top="0" width="100">
+                        <bg_color>0xFF424242</bg_color>
+                        <border_color>0xFF797979</border_color>
+                        <corner_radius bl="no" br="yes" tl="no" tr="yes">8</corner_radius>
+                        <icon_placement spacing="4">-1</icon_placement>
+                        <icon height="22" index="2" width="22">326</icon>
+                        <text>
+                            <label>Phones</label>
+                            <font name="Inter Display" size="14"/>
+                            <text_color>0xFFE8D62F</text_color>
+                        </text>
+                        <active_state>
+                            <bg_color>0xFF797979</bg_color>
+                            <fg_color>0xFFEBEBEB</fg_color>
+                        </active_state>
+                        <hilite_state>
+                            <fg_color>0xFFFFFFFF</fg_color>
+                        </hilite_state>
+                    </radio_button_widget>
+                </radio_widget>
+            </panel_widget>
+            <panel_widget height="235" id="eqpm" left="0" top="40" width="1024">
+                <anchor_pos bottom="0" left="0" right="0" top="40"/>
+                <bg_color>0x00000000</bg_color>
+                <scrolling>
+                    <enabled>yes</enabled>
+                    <vscroll_step element="53"/>
+                    <scrollbars>
+                        <visibility overlay="yes"/>
+                        <border_thickness>0</border_thickness>
+                        <bg_color>0x00FFFFFF</bg_color>
+                        <thumb_color>0x80212121</thumb_color>
+                        <thumb_hilite_color>0xFF5E5E5E</thumb_hilite_color>
+                        <thumb_margin x="5"/>
+                        <arrow_buttons size="0"/>
+                    </scrollbars>
+                </scrolling>
+            </panel_widget>
+        </panel_widget>
+    </panel_widget>
+</xg>

@@ -1,0 +1,17 @@
+{
+    "category": "modulation",
+    "model_id": 163,
+    "model_sym": "ModelID::kFlangerCourtesanFlangeStereo",
+    "display_name": "Courtesan Flange",
+    "parameters-en": {
+        "Rate": "Controls the speed or rate of the flanger. When set to note values, Speed follows the system tempo.",
+        "Range": "Sets the lower limit of the flanger sweep. Higher values result in wider, more dramatic sweeps. When FreezeLFO is on, sweeps the frequency of the comb filter.",
+        "Color": "Controls the intensity of the flanger sweep by increasing feedback. Higher values result in more of that classic \"whoosh.\"",
+        "FreezeLFO": "When on, disables the automatic flanger sweep (LFO), so Rate no longer affects the sound. Adjusting Range then manually sweeps the frequency of the comb filter.",
+        "Spread": "Controls the apparent stereo width between the left and right channels.",
+        "Mix": "Controls the blend between the modulation effect and the dry signal.",
+        "Level": "Sets the overall level of the block.",
+        "Headroom": "Provides up to 12.0 dB of additional headroom.",
+        "TempoSync1": ""
+    }
+}

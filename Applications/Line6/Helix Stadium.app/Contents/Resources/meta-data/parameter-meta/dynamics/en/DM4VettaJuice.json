@@ -1,0 +1,10 @@
+{
+    "category": "dynamics",
+    "model_id": 28,
+    "model_sym": "ModelID::kDM4VettaJuice",
+    "display_name": "Vetta Juice",
+    "parameters-en": {
+        "Amount": "Adjusts the amount of subtle compression.",
+        "Level": "Sets the overall level of the block."
+    }
+}

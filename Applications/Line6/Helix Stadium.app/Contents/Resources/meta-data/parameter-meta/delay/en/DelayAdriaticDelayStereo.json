@@ -1,0 +1,20 @@
+{
+    "category": "delay",
+    "model_id": 93,
+    "model_sym": "ModelID::kDelayAdriaticDelayStereo",
+    "display_name": "Adriatic Delay",
+    "parameters-en": {
+        "Time": "Adjusts the length of time before the first repeat. When set to note values, Time follows the system tempo.",
+        "Scale": "For stereo delays, the right side's time is always some percentage of the left sides's time, and is determined by the Scale parameter. For example, if Time is set to 500 ms, and Scale is set to 70%, the left delay is 500 ms and the right delay is 350ms (or 70% of 500 ms). When scale is set to 100%, left and right delays are the same.",
+        "Feedback": "Controls the number of delay repeats. When set to 0%, only one repeat is heard. At high values, the Delay may begin to self-oscillate and squeal (perhaps in a good way).",
+        "Noise": "Adds subtle graininess to the repeats, which is inherent in many bucket brigade delays.",
+        "BBD Size": "Sets the clock frequency of the bucket brigade device. Higher values provide a wider frequency response.",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard. If Dry Thru is off, you'll still hear the tape delay's circuitry when Mix is set to 0%.",
+        "Rate": "Controls the speed or rate of the pitch modulation applied to the repeats.",
+        "Depth": "Controls the depth or intensity of the pitch modulation applied to the repeats.",
+        "Spread": "Controls the apparent stereo width of the modulation between the left and right channels. Most evident when Scale is at 100%.",
+        "Level": "Sets the overall level of the block.",
+        "Headroom": "Some delay pedals' internal signal paths exhibit a bit of grit, especially when placed after a high-gain amp block. Negative values increase the perceived amount of grit; positive values clean things up a bit.",
+        "TSync1": ""
+    }
+}

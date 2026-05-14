@@ -1,0 +1,13 @@
+{
+    "category": "distortion",
+    "model_id": 358,
+    "model_sym": "ModelID::kDM4HeavyDistortion",
+    "display_name": "Heavy Dist",
+    "parameters-en": {
+        "Drive": "Controls the amount of distortion applied to the signal",
+        "Bass": "Controls the low frequency EQ of the distortion.",
+        "Mid": "Controls the mid frequency EQ of the distortion. How low can you go before \"scooped\" becomes \"can 'o bees?\"",
+        "Treble": "Controls the high frequency EQ of the distortion.",
+        "Output": "Sets the overall level of the block."
+    }
+}

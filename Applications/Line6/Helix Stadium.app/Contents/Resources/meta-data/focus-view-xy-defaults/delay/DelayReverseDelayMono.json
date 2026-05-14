@@ -1,0 +1,121 @@
+{
+    "modelName": "Reverse Delay",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "LowCut": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "HighCut": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "ModulationMode": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "Speed": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Reverse Texture",
+            "Time": 1.0,
+            "Feedback": 0.46000003814697266,
+            "LowCut": 85.0,
+            "HighCut": 15900.0,
+            "Mix": 0.20000004768371582,
+            "Level": 0.0,
+            "ModulationMode": 0,
+            "Speed": 0.2999999523162842,
+            "Depth": 0.5,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        },
+        "x_min_y_min": {
+            "name": "Once Back",
+            "Time": 1.0,
+            "Feedback": 0.0,
+            "LowCut": 85.0,
+            "HighCut": 13300.0,
+            "Mix": 0.20000004768371582,
+            "Level": 0.0,
+            "ModulationMode": 0,
+            "Speed": 0.2999999523162842,
+            "Depth": 0.5,
+            "SyncSelect1": 3,
+            "TempoSync1": true
+        },
+        "x_min_y_max": {
+            "name": "Mod Reverse",
+            "Time": 1.0,
+            "Feedback": 0.43000006675720215,
+            "LowCut": 85.0,
+            "HighCut": 13300.0,
+            "Mix": 0.31999993324279785,
+            "Level": 0.0,
+            "ModulationMode": 2,
+            "Speed": 0.2999999523162842,
+            "Depth": 0.5,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        },
+        "x_max_y_min": {
+            "name": "Lots o' Reverse",
+            "Time": 1.0,
+            "Feedback": 0.7599999904632568,
+            "LowCut": 139.0,
+            "HighCut": 8500.0,
+            "Mix": 0.3799999952316284,
+            "Level": 0.0,
+            "ModulationMode": 1,
+            "Speed": 0.1499999761581421,
+            "Depth": 0.2799999713897705,
+            "SyncSelect1": 9,
+            "TempoSync1": true
+        },
+        "x_max_y_max": {
+            "name": "No Dry",
+            "Time": 1.0,
+            "Feedback": 0.2999999523162842,
+            "LowCut": 102.0,
+            "HighCut": 12500.0,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "ModulationMode": 2,
+            "Speed": 0.3700000047683716,
+            "Depth": 0.41999995708465576,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

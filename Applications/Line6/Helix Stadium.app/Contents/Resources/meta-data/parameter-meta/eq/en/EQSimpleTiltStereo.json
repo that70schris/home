@@ -1,0 +1,11 @@
+{
+    "category": "eq",
+    "model_id": 238,
+    "model_sym": "ModelID::kEQSimpleTiltStereo",
+    "display_name": "Tilt",
+    "parameters-en": {
+        "Tilt": "Values above \"Flat\" boost high frequencies while simultaneously cutting low frequencies; values below \"Flat\" boost low frequencies while simultaneously cutting high frequencies. Great for quickly making tones a bit brighter or darker with the minimum of fuss.",
+        "CenterFreq": "Adjusts the frequency around which the boost and cut pivot.",
+        "Level": "Sets the overall level of the block."
+    }
+}

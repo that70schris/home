@@ -1,0 +1,49 @@
+{
+    "modelName": "Triangle Fuzz",
+    "params": {
+        "Sustain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Tone": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 3,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Pushed",
+            "Sustain": 0.75,
+            "Tone": 0.5,
+            "Level": 0.8299999833106995
+        },
+        "x_min_y_min": {
+            "name": "Barely Fuzz",
+            "Sustain": 0.05000000074505806,
+            "Tone": 0.6000000238418579,
+            "Level": 0.8999999761581421
+        },
+        "x_min_y_max": {
+            "name": "Doomy",
+            "Sustain": 0.3499999940395355,
+            "Tone": 0.25,
+            "Level": 0.8199999928474426
+        },
+        "x_max_y_min": {
+            "name": "Filled Out",
+            "Sustain": 0.6200000047683716,
+            "Tone": 0.3199999928474426,
+            "Level": 0.8299999833106995
+        },
+        "x_max_y_max": {
+            "name": "Pumpkins",
+            "Sustain": 1.0,
+            "Tone": 0.4699999988079071,
+            "Level": 0.800000011920929
+        }
+    }
+}

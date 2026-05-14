@@ -1,0 +1,18 @@
+{
+    "category": "distortion",
+    "model_id": 377,
+    "model_sym": "ModelID::kDistXenomorphFuzzMono",
+    "display_name": "Xenomorph Fuzz",
+    "parameters-en": {
+        "Gain": "Even at 0.0, Gain is buzzy, fuzzy, and nasty. Higher values provide longer sustain.",
+        "Tone": "Controls the tone or timbre of the fuzz.",
+        "Level": "Controls the overall output of the fuzz.",
+        "Clipping": "Selects the clipping type--Soft or Hard.",
+        "Osc Level": "Controls the level of the triggered oscillator.",
+        "Osc Tone": "Controls the tonal balance of the triggered oscillator. Higher values provide more harmonics.",
+        "Min Freq": "Sets the minimum frequency of the oscillator.",
+        "Max Freq": "Sets the maximum frequency of the oscillator.",
+        "WavShape": "Selects the wave shape of the triggered oscillator.",
+        "Sensitivity": "Controls the oscillator's filter envelope. Higher values drives the oscillator into higher frequencies."
+    }
+}

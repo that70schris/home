@@ -1,0 +1,175 @@
+{
+    "modelName": "German Xtra Blue",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "PreEQ_Brt": {
+            "id": 5,
+            "behavior": "quantize"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Boost": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "Structure": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Presence": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Excursion_Depth": {
+            "id": 11,
+            "behavior": "quantize"
+        },
+        "Old_New": {
+            "id": 12,
+            "behavior": "quantize"
+        },
+        "Class_AB_A": {
+            "id": 13,
+            "behavior": "quantize"
+        },
+        "Sag": {
+            "id": 14,
+            "behavior": "interpolate"
+        },
+        "Ripple": {
+            "id": 15,
+            "behavior": "interpolate"
+        },
+        "Bias": {
+            "id": 16,
+            "behavior": "interpolate"
+        },
+        "BiasX": {
+            "id": 17,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Overdriven",
+            "Drive": 0.5,
+            "Bass": 0.309999942779541,
+            "Mid": 0.4559999704360962,
+            "Treble": 0.6200000047683716,
+            "PreEQ_Brt": 1,
+            "ChVol": 0.34,
+            "Boost": true,
+            "Structure": true,
+            "Master": 0.5199999809265137,
+            "Presence": 0.23000001907348633,
+            "Excursion_Depth": 2,
+            "Old_New": true,
+            "Class_AB_A": true,
+            "Sag": 0.5,
+            "Ripple": 0.8799999952316284,
+            "Bias": 0.5,
+            "BiasX": 0.3500000238418579
+        },
+        "x_min_y_min": {
+            "name": "Cleaner",
+            "Drive": 0.3999999761581421,
+            "Bass": 0.43000006675720215,
+            "Mid": 0.4700000286102295,
+            "Treble": 0.6499999761581421,
+            "PreEQ_Brt": 2,
+            "ChVol": 0.41,
+            "Boost": true,
+            "Structure": false,
+            "Master": 0.5,
+            "Presence": 0.5,
+            "Excursion_Depth": 2,
+            "Old_New": true,
+            "Class_AB_A": true,
+            "Sag": 0.5,
+            "Ripple": 0.8899999856948853,
+            "Bias": 0.5,
+            "BiasX": 0.23000001907348633
+        },
+        "x_min_y_max": {
+            "name": "Chime",
+            "Drive": 0.6499999761581421,
+            "Bass": 0.5699999332427979,
+            "Mid": 0.6200000047683716,
+            "Treble": 0.6499999761581421,
+            "PreEQ_Brt": 2,
+            "ChVol": 0.34,
+            "Boost": true,
+            "Structure": false,
+            "Master": 0.6100000143051147,
+            "Presence": 0.23000001907348633,
+            "Excursion_Depth": 1,
+            "Old_New": true,
+            "Class_AB_A": false,
+            "Sag": 0.5,
+            "Ripple": 0.6499999761581421,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_max_y_min": {
+            "name": "Breakup",
+            "Drive": 0.2999999523162842,
+            "Bass": 0.43000006675720215,
+            "Mid": 0.4700000286102295,
+            "Treble": 0.6499999761581421,
+            "PreEQ_Brt": 1,
+            "ChVol": 0.31,
+            "Boost": true,
+            "Structure": true,
+            "Master": 0.5299999713897705,
+            "Presence": 0.5,
+            "Excursion_Depth": 2,
+            "Old_New": true,
+            "Class_AB_A": true,
+            "Sag": 0.5,
+            "Ripple": 0.8899999856948853,
+            "Bias": 0.5,
+            "BiasX": 0.2200000286102295
+        },
+        "x_max_y_max": {
+            "name": "Push",
+            "Drive": 0.7000000476837158,
+            "Bass": 0.33000004291534424,
+            "Mid": 0.440000057220459,
+            "Treble": 0.6700000762939453,
+            "PreEQ_Brt": 1,
+            "ChVol": 0.31,
+            "Boost": true,
+            "Structure": true,
+            "Master": 0.5199999809265137,
+            "Presence": 0.6600000858306885,
+            "Excursion_Depth": 2,
+            "Old_New": true,
+            "Class_AB_A": true,
+            "Sag": 0.5,
+            "Ripple": 0.8799999952316284,
+            "Bias": 0.5,
+            "BiasX": 0.3500000238418579
+        }
+    }
+}

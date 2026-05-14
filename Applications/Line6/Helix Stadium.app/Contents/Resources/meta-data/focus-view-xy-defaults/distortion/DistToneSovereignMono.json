@@ -1,0 +1,139 @@
+{
+    "modelName": "Tone Sovereign",
+    "params": {
+        "Gain 1": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Tone 1": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Presence 1": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Clipping 1": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "GainMod 1": {
+            "id": 5,
+            "behavior": "quantize"
+        },
+        "Level 1": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Gain 2": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Tone 2": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Presence 2": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Clipping 2": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "GainMod 2": {
+            "id": 11,
+            "behavior": "quantize"
+        },
+        "Level 2": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "Voltage": {
+            "id": 70,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "OD Rhythm",
+            "Gain 1": 0.5,
+            "Tone 1": 0.5,
+            "Presence 1": 0.0,
+            "Clipping 1": 1,
+            "GainMod 1": 0,
+            "Level 1": 0.5,
+            "Gain 2": 0.5,
+            "Tone 2": 0.5,
+            "Presence 2": 0.0,
+            "Clipping 2": 0,
+            "GainMod 2": 1,
+            "Level 2": 0.6000000238418579,
+            "Voltage": false
+        },
+        "x_min_y_min": {
+            "name": "Light OD",
+            "Gain 1": 0.029999971389770508,
+            "Tone 1": 0.5899999141693115,
+            "Presence 1": 0.0,
+            "Clipping 1": 1,
+            "GainMod 1": 0,
+            "Level 1": 0.690000057220459,
+            "Gain 2": 0.12999999523162842,
+            "Tone 2": 0.5099999904632568,
+            "Presence 2": 0.0,
+            "Clipping 2": 0,
+            "GainMod 2": 1,
+            "Level 2": 0.809999942779541,
+            "Voltage": true
+        },
+        "x_min_y_max": {
+            "name": "Push",
+            "Gain 1": 0.059999942779541016,
+            "Tone 1": 0.690000057220459,
+            "Presence 1": 0.0,
+            "Clipping 1": 0,
+            "GainMod 1": 0,
+            "Level 1": 0.690000057220459,
+            "Gain 2": 0.029999971389770508,
+            "Tone 2": 0.6000000238418579,
+            "Presence 2": 0.0,
+            "Clipping 2": 0,
+            "GainMod 2": 1,
+            "Level 2": 0.7799999713897705,
+            "Voltage": true
+        },
+        "x_max_y_min": {
+            "name": "Dist Rhythm",
+            "Gain 1": 0.09000003337860107,
+            "Tone 1": 0.309999942779541,
+            "Presence 1": 0.0,
+            "Clipping 1": 1,
+            "GainMod 1": 0,
+            "Level 1": 0.5799999237060547,
+            "Gain 2": 0.9700000286102295,
+            "Tone 2": 0.48000001907348633,
+            "Presence 2": 0.0,
+            "Clipping 2": 2,
+            "GainMod 2": 1,
+            "Level 2": 0.690000057220459,
+            "Voltage": false
+        },
+        "x_max_y_max": {
+            "name": "Lead",
+            "Gain 1": 0.33000004291534424,
+            "Tone 1": 0.9500000476837158,
+            "Presence 1": 0.019999980926513672,
+            "Clipping 1": 1,
+            "GainMod 1": 0,
+            "Level 1": 0.7999999523162842,
+            "Gain 2": 0.6700000762939453,
+            "Tone 2": 0.23000001907348633,
+            "Presence 2": 0.039999961853027344,
+            "Clipping 2": 2,
+            "GainMod 2": 1,
+            "Level 2": 0.9800000190734863,
+            "Voltage": true
+        }
+    }
+}

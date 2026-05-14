@@ -1,0 +1,94 @@
+{
+    "modelName": "Synth String",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Freq": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Attack": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Pitch": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Synth Lead 1",
+            "Speed": 3.4,
+            "Freq": 1.0,
+            "Attack": 0.0,
+            "Pitch": 0.5,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "String Like",
+            "Speed": 1.6,
+            "Freq": 0.54,
+            "Attack": 0.04,
+            "Pitch": 1.0,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Octave Down +",
+            "Speed": 0.5,
+            "Freq": 1.0,
+            "Attack": 0.09,
+            "Pitch": 0.0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Synth Lead 2",
+            "Speed": 0.0,
+            "Freq": 0.42,
+            "Attack": 0.16,
+            "Pitch": 0.5,
+            "Mix": 0.73,
+            "Level": 3.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Low Alienz",
+            "Speed": 2.5,
+            "Freq": 0.0,
+            "Attack": 0.43,
+            "Pitch": 0.0,
+            "Mix": 1.0,
+            "Level": 3.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

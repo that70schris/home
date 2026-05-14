@@ -1,0 +1,12 @@
+{
+    "category": "modulation",
+    "model_id": 211,
+    "model_sym": "ModelID::kMM4FrequencyShifter",
+    "display_name": "Frequency Shift",
+    "parameters-en": {
+        "Freq": "Sets the frequency of the shifter effect.",
+        "Mode": "Selects the type of frequency shifting applied. \"Up\" shifts the frequency up, \"Down\" shifts the frequency... you guessed it--down. \"Stereo\" shifts the frequency both up and down and routes them to the left and right channels, respectively.",
+        "Mix": "Controls the blend between the frequency shifter effect and the dry signal. At 0%, no effected signal is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

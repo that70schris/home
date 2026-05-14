@@ -1,0 +1,76 @@
+{
+    "modelName": "Spring",
+    "params": {
+        "Decay": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Predelay": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "LowCut": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "HighCut": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Classic",
+            "Decay": 0.35,
+            "Predelay": 0.0,
+            "LowCut": 66.0,
+            "HighCut": 4400.0,
+            "Mix": 0.4,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Short",
+            "Decay": 0.05,
+            "Predelay": 0.043,
+            "LowCut": 142.0,
+            "HighCut": 2900.0,
+            "Mix": 0.45,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Splash",
+            "Decay": 0.22,
+            "Predelay": 0.02,
+            "LowCut": 166.0,
+            "HighCut": 9300.0,
+            "Mix": 0.49,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Drippy",
+            "Decay": 0.55,
+            "Predelay": 0.059,
+            "LowCut": 187.0,
+            "HighCut": 4000.0,
+            "Mix": 0.48,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Metro",
+            "Decay": 0.77,
+            "Predelay": 0.082,
+            "LowCut": 201.0,
+            "HighCut": 3700.0,
+            "Mix": 0.53,
+            "Level": 0.0
+        }
+    }
+}

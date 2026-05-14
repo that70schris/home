@@ -1,0 +1,13 @@
+{
+    "category": "wah",
+    "model_id": 182,
+    "model_sym": "ModelID::kWahThroatyStereo",
+    "display_name": "Throaty",
+    "parameters-en": {
+        "Position": "Adjusts the position or frequency of the wah effect. By default, this is assigned to Expression Pedal 1.",
+        "Fc Low": "Sets the low frequency cutoff of the wah filter. Along with Fc High, sets the frequency range or sweep of the wah.",
+        "Fc High": "Sets the high frequency cutoff of the wah filter. Along with Fc Low, sets the frequency range or sweep of the wah.",
+        "Mix": "Controls the blend between the wah effect and the dry signal. At 0%, no wah effect is heard; at 100%, no dry signal is heard. If the wah effect is a bit strong, consider bringing this down a bit.",
+        "Level": "Sets the overall level of the Wah block."
+    }
+}

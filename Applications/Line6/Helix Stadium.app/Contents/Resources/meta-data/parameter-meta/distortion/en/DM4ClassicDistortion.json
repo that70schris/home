@@ -1,0 +1,13 @@
+{
+    "category": "distortion",
+    "model_id": 354,
+    "model_sym": "ModelID::kDM4ClassicDistortion",
+    "display_name": "Classic Dist",
+    "parameters-en": {
+        "Drive": "Controls the amount of distortion applied to the signal.",
+        "Bass": "Controls the low frequency EQ of the distortion.",
+        "Filter": "Applies a filter which gives you brighter tone at lower settings, and darker tone at higher settings.",
+        "Treble": "Controls the high frequency EQ of the distortion.",
+        "Output": "Sets the overall level of the block."
+    }
+}

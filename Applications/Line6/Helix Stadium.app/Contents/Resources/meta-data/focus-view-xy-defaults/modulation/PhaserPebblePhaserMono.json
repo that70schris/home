@@ -1,0 +1,67 @@
+{
+    "modelName": "Pebble Phaser",
+    "params": {
+        "Rate": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Color": {
+            "id": 2,
+            "behavior": "quantize"
+        },
+        "Level": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Swirl",
+            "Rate": 0.2999999523162842,
+            "Color": false,
+            "Level": 0.3000030517578125,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Slow Ride",
+            "Rate": 0.19000005722045898,
+            "Color": true,
+            "Level": 0.6000022888183594,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Pulse",
+            "Rate": 0.5,
+            "Color": false,
+            "Level": 0.10000228881835938,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Ooh Aah",
+            "Rate": 0.6000000238418579,
+            "Color": true,
+            "Level": 0.3000030517578125,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Wow Wow",
+            "Rate": 0.7000000476837158,
+            "Color": true,
+            "Level": 0.10000228881835938,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

@@ -1,0 +1,645 @@
+
+<xg>
+    <panel_widget height="920" id="1" left="0" top="0" width="580">
+        <bg_color>0xFF151515</bg_color>
+        <panel_widget height="50" id="tbar" left="0" top="0" width="580">
+            <anchor_pos left="0" right="0" top="0"/>
+            <bg_color>0x00000000</bg_color>
+            <text_widget height="50" id="htxt" left="50" top="0" width="480">
+                <anchor_pos bottom="0" left="50" right="50" top="0"/>
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>Analyze Audio to Build Song</label>
+                    <font name="Inter Display" size="24"/>
+                    <align horz="center" vert="middle"/>
+                    <text_color>0xFFFFFFFF</text_color>
+                </text>
+            </text_widget>
+            <image_widget height="40" id="hicn" left="5" top="5" width="40">
+                <anchor_pos left="5" top="5"/>
+                <bg_color>0x00000000</bg_color>
+                <image>52</image>
+            </image_widget>
+            <pushbutton_widget height="30" id="clos" left="540" top="10" width="30">
+                <anchor_pos right="10" top="10"/>
+                <bg_color>0xFF424242</bg_color>
+                <image>178</image>
+                <scale_mode>keep_aspect</scale_mode>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <font name="Inter Display" size="12"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF5E5E5E</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+        </panel_widget>
+        <panel_widget height="818" id="panl" left="0" top="51" width="580">
+            <anchor_pos bottom="51" left="0" right="0" top="51"/>
+            <bg_color>0x80000000</bg_color>
+            <image_widget height="40" id="1" left="46" top="100" width="40">
+                <anchor_pos left="46"/>
+                <bg_color>0x00000000</bg_color>
+                <image>42</image>
+            </image_widget>
+            <panel_widget height="64" id="1" left="50" top="20" width="480">
+                <anchor_pos left="50" right="50" top="20"/>
+                <bg_color>0x008CFFD2</bg_color>
+                <image>272</image>
+                <border_color>0x003DCCB3</border_color>
+                <border_thickness>2</border_thickness>
+                <corner_radius>10</corner_radius>
+                <text_widget height="64" id="1" left="0" top="0" width="480">
+                    <anchor_pos bottom="0" left="0" right="0" top="0"/>
+                    <bg_color>0x00000000</bg_color>
+                    <text>
+                        <label>Drag and drop a .wav file here or press "Import"</label>
+                        <font name="Inter Display" size="16"/>
+                        <align horz="center" vert="middle"/>
+                        <offset x="-50"/>
+                        <text_color>0x80FFFFFF</text_color>
+                    </text>
+                </text_widget>
+                <pushbutton_widget height="32" id="brws" left="385" top="16" width="75">
+                    <anchor_pos right="20"/>
+                    <relative_pos y="50"/>
+                    <bg_color>0xFF046663</bg_color>
+                    <corner_radius>6</corner_radius>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <text>
+                        <label>Import</label>
+                        <font name="Inter Display" size="16"/>
+                        <text_color>0xFFCCCCCC</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0xFF045957</bg_color>
+                        <fg_color>0xFFCCCCCC</fg_color>
+                    </active_state>
+                    <hilite_state>
+                        <bg_color>0xFF05807C</bg_color>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </pushbutton_widget>
+            </panel_widget>
+            <text_widget height="36" id="1" left="100" top="104" width="268">
+                <anchor_pos left="100"/>
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>Transfer Audio (one file)</label>
+                    <font name="Inter Display" size="18"/>
+                    <align vert="middle"/>
+                    <text_color>0xFFFFFFFF</text_color>
+                </text>
+            </text_widget>
+            <image_widget height="40" id="1" left="46" top="621" width="40">
+                <anchor_pos left="46"/>
+                <bg_color>0x00000000</bg_color>
+                <image>270</image>
+                <scale_mode>keep_aspect</scale_mode>
+            </image_widget>
+            <text_widget height="58" id="1" left="100" top="145" width="431">
+                <anchor_pos left="100" right="49"/>
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>When off, audio file(s) will still be re-analyzed for tempo, time signatures, song sections, and/or/lyrics.</label>
+                    <font name="Inter Display" size="15"/>
+                    <multiline>yes</multiline>
+                    <text_color>0xFF808080</text_color>
+                </text>
+            </text_widget>
+            <text_widget height="36" id="1" left="100" top="180" width="268">
+                <anchor_pos left="100"/>
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>Split audio into tracks?</label>
+                    <font name="Inter Display" size="18"/>
+                    <align vert="middle"/>
+                    <text_color>0xFFFFFFFF</text_color>
+                </text>
+            </text_widget>
+            <text_widget height="36" id="1" left="100" top="622" width="268">
+                <anchor_pos left="100"/>
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>Analyze song sections</label>
+                    <font name="Inter Display" size="18"/>
+                    <align vert="middle"/>
+                    <text_color>0xFFFFFFFF</text_color>
+                </text>
+            </text_widget>
+            <text_widget height="58" id="1" left="100" top="662" width="426">
+                <anchor_pos left="100" right="54"/>
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>Initial song section will appear in the song’s Start flag and any subsequent song sections (verse, chorus, outro, etc.) appear as new Marker flags. When off, song sections are ignored.</label>
+                    <font name="Inter Display" size="15"/>
+                    <multiline>yes</multiline>
+                    <text_color>0xFF808080</text_color>
+                </text>
+            </text_widget>
+            <text_widget height="21" id="1" left="100" top="782" width="429">
+                <anchor_pos left="100" right="51"/>
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>Chords will appear in Songbook view.</label>
+                    <font name="Inter Display" size="15"/>
+                    <multiline>yes</multiline>
+                    <text_color>0xFF808080</text_color>
+                </text>
+            </text_widget>
+            <text_widget height="36" id="1" left="100" top="744" width="268">
+                <anchor_pos left="100"/>
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>Analyze/Sync Chords</label>
+                    <font name="Inter Display" size="18"/>
+                    <align vert="middle"/>
+                    <text_color>0xFFFFFFFF</text_color>
+                </text>
+            </text_widget>
+            <image_widget height="40" id="1" left="46" top="743" width="40">
+                <anchor_pos left="46"/>
+                <bg_color>0x00000000</bg_color>
+                <image>271</image>
+                <scale_mode>keep_aspect</scale_mode>
+            </image_widget>
+            <image_widget height="40" id="1" left="46" top="177" width="40">
+                <anchor_pos left="46"/>
+                <bg_color>0x00000000</bg_color>
+                <image>42</image>
+            </image_widget>
+            <toggle_widget height="36" id="trns" left="470" top="104" width="60">
+                <anchor_pos right="50"/>
+                <bg_color>0xFF424242</bg_color>
+                <image>262</image>
+                <corner_radius>16</corner_radius>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Transfer</label>
+                    <font name="Inter Display" size="12"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </active_state>
+                <hilite_state>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </hilite_state>
+            </toggle_widget>
+            <toggle_widget height="36" id="splt" left="470" top="180" width="60">
+                <anchor_pos right="50"/>
+                <bg_color>0xFF424242</bg_color>
+                <image>262</image>
+                <corner_radius>16</corner_radius>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Split</label>
+                    <font name="Inter Display" size="12"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </active_state>
+                <hilite_state>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </hilite_state>
+            </toggle_widget>
+            <toggle_widget height="36" id="sect" left="470" top="622" width="60">
+                <anchor_pos right="50"/>
+                <bg_color>0xFF424242</bg_color>
+                <image>262</image>
+                <corner_radius>16</corner_radius>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Sections</label>
+                    <font name="Inter Display" size="12"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </active_state>
+                <hilite_state>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </hilite_state>
+            </toggle_widget>
+            <toggle_widget height="36" id="chrd" left="470" top="744" width="60">
+                <anchor_pos right="50"/>
+                <bg_color>0xFF424242</bg_color>
+                <image>262</image>
+                <corner_radius>16</corner_radius>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Chords</label>
+                    <font name="Inter Display" size="12"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </active_state>
+                <hilite_state>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </hilite_state>
+            </toggle_widget>
+            <text_widget height="36" id="1" left="100" top="409" width="268">
+                <anchor_pos left="100"/>
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>Analyze Tempo / Time Signature</label>
+                    <font name="Inter Display" size="18"/>
+                    <align vert="middle"/>
+                    <text_color>0xFFFFFFFF</text_color>
+                </text>
+            </text_widget>
+            <image_widget height="40" id="1" left="46" top="408" width="40">
+                <anchor_pos left="46"/>
+                <bg_color>0x00000000</bg_color>
+                <image>273</image>
+                <scale_mode>keep_aspect</scale_mode>
+            </image_widget>
+            <toggle_widget height="36" id="tmpo" left="470" top="408" width="60">
+                <anchor_pos right="50"/>
+                <bg_color>0xFF424242</bg_color>
+                <image>262</image>
+                <corner_radius>16</corner_radius>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Tempo</label>
+                    <font name="Inter Display" size="12"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </active_state>
+                <hilite_state>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </hilite_state>
+            </toggle_widget>
+            <text_widget height="65" id="1" left="100" top="452" width="426">
+                <anchor_pos left="100" right="54"/>
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>Initial tempo and time signature will appear in the song’s Start flag and any subsequent tempo or time signature changes appear as new Time flags. When off, tempo and time signature of the audio is ignored.</label>
+                    <font name="Inter Display" size="15"/>
+                    <multiline>yes</multiline>
+                    <text_color>0xFF808080</text_color>
+                </text>
+            </text_widget>
+            <radio_widget height="36" id="rflg" left="104" top="526" width="420">
+                <anchor_pos left="104"/>
+                <bg_color>0xFF000000</bg_color>
+                <radio_button_widget height="36" id="1" left="0" top="0" width="36">
+                    <anchor_pos left="0" top="0"/>
+                    <bg_color>0xFF424242</bg_color>
+                    <image>274</image>
+                    <scale_mode>keep_aspect</scale_mode>
+                    <corner_radius>18</corner_radius>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <text>
+                        <label>0</label>
+                        <font name="Inter Display" size="12"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0xFF797979</bg_color>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                    </active_state>
+                    <hilite_state>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </radio_button_widget>
+                <radio_button_widget height="36" id="1" left="48" top="0" width="36">
+                    <anchor_pos top="0"/>
+                    <bg_color>0xFF424242</bg_color>
+                    <image>274</image>
+                    <scale_mode>keep_aspect</scale_mode>
+                    <corner_radius>18</corner_radius>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <text>
+                        <label>1</label>
+                        <font name="Inter Display" size="12"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0xFF797979</bg_color>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                    </active_state>
+                    <hilite_state>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </radio_button_widget>
+                <radio_button_widget height="36" id="1" left="96" top="0" width="36">
+                    <anchor_pos top="0"/>
+                    <bg_color>0xFF424242</bg_color>
+                    <image>274</image>
+                    <scale_mode>keep_aspect</scale_mode>
+                    <corner_radius>18</corner_radius>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <text>
+                        <label>2</label>
+                        <font name="Inter Display" size="12"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0xFF797979</bg_color>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                    </active_state>
+                    <hilite_state>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </radio_button_widget>
+                <radio_button_widget height="36" id="1" left="144" top="0" width="36">
+                    <anchor_pos top="0"/>
+                    <bg_color>0xFF424242</bg_color>
+                    <image>274</image>
+                    <scale_mode>keep_aspect</scale_mode>
+                    <corner_radius>18</corner_radius>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <text>
+                        <label>3</label>
+                        <font name="Inter Display" size="12"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0xFF797979</bg_color>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                    </active_state>
+                    <hilite_state>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </radio_button_widget>
+                <radio_button_widget height="36" id="1" left="192" top="0" width="36">
+                    <anchor_pos top="0"/>
+                    <bg_color>0xFF424242</bg_color>
+                    <image>274</image>
+                    <scale_mode>keep_aspect</scale_mode>
+                    <corner_radius>18</corner_radius>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <text>
+                        <label>4</label>
+                        <font name="Inter Display" size="12"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0xFF797979</bg_color>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                    </active_state>
+                    <hilite_state>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </radio_button_widget>
+                <radio_button_widget height="36" id="1" left="240" top="0" width="36">
+                    <anchor_pos top="0"/>
+                    <bg_color>0xFF424242</bg_color>
+                    <image>274</image>
+                    <scale_mode>keep_aspect</scale_mode>
+                    <corner_radius>18</corner_radius>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <text>
+                        <label>5</label>
+                        <font name="Inter Display" size="12"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0xFF797979</bg_color>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                    </active_state>
+                    <hilite_state>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </radio_button_widget>
+                <radio_button_widget height="36" id="1" left="288" top="0" width="36">
+                    <anchor_pos top="0"/>
+                    <bg_color>0xFF424242</bg_color>
+                    <image>274</image>
+                    <scale_mode>keep_aspect</scale_mode>
+                    <corner_radius>18</corner_radius>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <text>
+                        <label>6</label>
+                        <font name="Inter Display" size="12"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0xFF797979</bg_color>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                    </active_state>
+                    <hilite_state>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </radio_button_widget>
+                <radio_button_widget height="36" id="1" left="336" top="0" width="36">
+                    <anchor_pos top="0"/>
+                    <bg_color>0xFF424242</bg_color>
+                    <image>274</image>
+                    <scale_mode>keep_aspect</scale_mode>
+                    <corner_radius>18</corner_radius>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <text>
+                        <label>7</label>
+                        <font name="Inter Display" size="12"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0xFF797979</bg_color>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                    </active_state>
+                    <hilite_state>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </radio_button_widget>
+                <radio_button_widget height="36" id="1" left="384" top="0" width="36">
+                    <anchor_pos top="0"/>
+                    <bg_color>0xFF424242</bg_color>
+                    <image>274</image>
+                    <scale_mode>keep_aspect</scale_mode>
+                    <corner_radius>18</corner_radius>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <text>
+                        <label>8</label>
+                        <font name="Inter Display" size="12"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0xFF797979</bg_color>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                    </active_state>
+                    <hilite_state>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </radio_button_widget>
+            </radio_widget>
+            <toggle_widget height="28" id="chdf" left="101" top="364" width="28">
+                <bg_color>0xFF424242</bg_color>
+                <image>276</image>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <font name="Inter Display" size="12"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </active_state>
+                <hilite_state>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </hilite_state>
+            </toggle_widget>
+            <text_widget height="18" id="1" left="100" top="577" width="111">
+                <anchor_pos left="100" right="369"/>
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>&lt;&lt; Less Flags</label>
+                    <font name="Inter Display" size="15"/>
+                    <multiline>yes</multiline>
+                    <text_color>0xFF808080</text_color>
+                </text>
+            </text_widget>
+            <text_widget height="18" id="1" left="368" top="578" width="162">
+                <anchor_pos left="368" right="50"/>
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>More Flags &gt;&gt;</label>
+                    <font name="Inter Display" size="15"/>
+                    <align horz="right"/>
+                    <multiline>yes</multiline>
+                    <text_color>0xFF808080</text_color>
+                </text>
+            </text_widget>
+            <panel_widget height="1" id="splt" left="50" top="399" width="480">
+                <anchor_pos left="50" right="50"/>
+                <bg_color>0xFF333333</bg_color>
+            </panel_widget>
+            <panel_widget height="1" id="splt" left="50" top="606" width="480">
+                <anchor_pos left="50" right="50"/>
+                <bg_color>0xFF333333</bg_color>
+            </panel_widget>
+            <panel_widget height="1" id="splt" left="50" top="724" width="480">
+                <anchor_pos left="50" right="50"/>
+                <bg_color>0xFF333333</bg_color>
+            </panel_widget>
+            <text_widget height="21" id="1" left="135" top="371" width="397">
+                <anchor_pos left="135" right="48"/>
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>Set track mapping as default</label>
+                    <font name="Inter Display" size="15"/>
+                    <multiline>yes</multiline>
+                    <text_color>0xFF808080</text_color>
+                </text>
+            </text_widget>
+            <panel_widget height="34" id="1" left="101" top="223" width="206">
+                <bg_color>0xFF424242</bg_color>
+                <corner_radius>6</corner_radius>
+                <text_menu_widget height="25" id="mtk1" left="64" top="5" width="137">
+                    <bg_color>0xFF424242</bg_color>
+                    <chevron_size>6</chevron_size>
+                    <text>
+                        <label>Drums</label>
+                        <font name="Inter Display" size="14"/>
+                        <offset x="15"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <menu>
+                        <item_height>24</item_height>
+                        <auto_hide_margins>no</auto_hide_margins>
+                        <font name="Inter Display" size="14"/>
+                        <text_color>0xFF212121</text_color>
+                        <bg_color>0xFFC0C0C0</bg_color>
+                        <border_color>0xFF424242</border_color>
+                        <hilite_text_color>0xFFD6D6D6</hilite_text_color>
+                        <hilite_bg_color>0xFF424242</hilite_bg_color>
+                        <icon>0</icon>
+                        <menu_item id="1">
+                            <label>Drums</label>
+                        </menu_item>
+                        <menu_item id="2">
+                            <label>Bass</label>
+                        </menu_item>
+                        <menu_item id="3">
+                            <label>Rhythm Guitar</label>
+                        </menu_item>
+                        <menu_item id="4">
+                            <label>Lead Guitar</label>
+                        </menu_item>
+                        <menu_item id="5">
+                            <label>Piano</label>
+                        </menu_item>
+                        <menu_item id="6">
+                            <label>Vocals</label>
+                        </menu_item>
+                        <menu_item id="7">
+                            <label>Other</label>
+                        </menu_item>
+                    </menu>
+                </text_menu_widget>
+                <text_widget height="26" id="1" left="8" top="5" width="61">
+                    <anchor_pos left="8"/>
+                    <bg_color>0x00000000</bg_color>
+                    <text>
+                        <label>Track 1</label>
+                        <font name="Inter Display" size="14"/>
+                        <align vert="middle"/>
+                        <text_color>0xFFFFFFFF</text_color>
+                    </text>
+                </text_widget>
+            </panel_widget>
+        </panel_widget>
+        <panel_widget height="50" id="bbar" left="0" top="640" width="580">
+            <anchor_pos bottom="0" left="0" right="0"/>
+            <bg_color>0x00000000</bg_color>
+            <pushbutton_widget height="32" id="cncl" left="50" top="9" width="100">
+                <anchor_pos left="50"/>
+                <relative_pos y="50"/>
+                <bg_color>0xFF424242</bg_color>
+                <corner_radius>6</corner_radius>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Cancel</label>
+                    <font name="Inter Display" size="16"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF3D3D3D</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                    <offset y="1"/>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF5C5C5C</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+            <pushbutton_widget height="32" id="anlz" left="430" top="9" width="100">
+                <anchor_pos right="50"/>
+                <relative_pos y="50"/>
+                <bg_color>0xFF046562</bg_color>
+                <corner_radius>6</corner_radius>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Analyze</label>
+                    <font name="Inter Display" size="16"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF045856</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                    <offset y="1"/>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF057D79</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+        </panel_widget>
+    </panel_widget>
+</xg>

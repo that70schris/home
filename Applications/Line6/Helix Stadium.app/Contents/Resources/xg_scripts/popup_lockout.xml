@@ -1,0 +1,28 @@
+
+<xg>
+    <panel_widget height="180" id="1" left="0" top="0" width="444">
+        <bg_color>0xFF141414</bg_color>
+        <text_widget height="32" id="titl" left="50" top="16" width="344">
+            <anchor_pos left="50" right="50" top="16"/>
+            <bg_color>0x00000000</bg_color>
+            <text>
+                <label>Device Locked for Cloning</label>
+                <font name="Inter Display" size="18" weight="semibold"/>
+                <align horz="center" vert="middle"/>
+                <text_color>0xFFFFFFFF</text_color>
+            </text>
+        </text_widget>
+        <text_widget height="50" id="desc" left="8" top="65" width="428">
+            <anchor_pos left="8" right="8"/>
+            <relative_pos y="50"/>
+            <bg_color>0x00000000</bg_color>
+            <text>
+                <label>Please finish the cloning process on your device...</label>
+                <font name="Inter Display" size="14"/>
+                <align horz="center" vert="middle"/>
+                <multiline>yes</multiline>
+                <text_color>0xFFD2D2D2</text_color>
+            </text>
+        </text_widget>
+    </panel_widget>
+</xg>

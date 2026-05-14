@@ -1,0 +1,85 @@
+{
+    "modelName": "Warble Matic",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Range": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Q": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Wah Wah",
+            "Speed": 5.8,
+            "Range": 0.5,
+            "Q": 0.2,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Flange",
+            "Speed": 0.4,
+            "Range": 0.05,
+            "Q": 0.48,
+            "Mix": 0.5,
+            "Level": -3.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Sweep Wah",
+            "Speed": 1.0,
+            "Range": 0.29,
+            "Q": 0.31,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Tremolo",
+            "Speed": 7.8,
+            "Range": 0.46,
+            "Q": 0.1,
+            "Mix": 1.0,
+            "Level": -9.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Rez Filter",
+            "Speed": 0.4,
+            "Range": 0.73,
+            "Q": 0.57,
+            "Mix": 0.5,
+            "Level": -3.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "category": "join",
+    "model_id": 470,
+    "model_sym": "ModelID::kAppDSPJoin",
+    "display_name": "Mixer",
+    "parameters-en": {
+        "A Level": "Adjusts the output level of stereo Path A (upper).",
+        "A Pan": "Adjusts the left/right stereo balance of Path A (upper). When set to L 100, only the left signal is passed through; when set to R 100, only the right signal is passed through.",
+        "B Level": "Adjusts the output level of stereo Path B (lower).",
+        "B Pan": "Adjusts the left/right stereo balance of Path B (lower). When set to L 100, only the left signal is passed through; when set to R 100, only the right signal is passed through.",
+        "B Polarity": "Inverts the polarity of Path B. Typically, this should be set to \"Normal.\"",
+        "Level": "Sets the overall output level of the Merge block."
+    }
+}

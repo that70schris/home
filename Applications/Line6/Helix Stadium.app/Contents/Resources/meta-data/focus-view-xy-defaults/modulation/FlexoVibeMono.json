@@ -1,0 +1,85 @@
+{
+    "modelName": "FlexoVibe",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Intensity": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Warp": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Mid Vibe",
+            "Speed": 0.6,
+            "Intensity": 1.0,
+            "Warp": 0.0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Slow Swirl",
+            "Speed": 0.15,
+            "Intensity": 0.61,
+            "Warp": -1.0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Swishy",
+            "Speed": 0.7,
+            "Intensity": 0.46,
+            "Warp": -1.0,
+            "Mix": 0.41,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Shallow",
+            "Speed": 0.95,
+            "Intensity": 0.2,
+            "Warp": 0.6,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Warbly",
+            "Speed": 1.0,
+            "Intensity": 1.0,
+            "Warp": 1.0,
+            "Mix": 0.57,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

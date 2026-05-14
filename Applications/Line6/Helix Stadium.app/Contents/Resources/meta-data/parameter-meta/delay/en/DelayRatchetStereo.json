@@ -1,0 +1,14 @@
+{
+    "category": "delay",
+    "model_id": 41,
+    "model_sym": "ModelID::kDelayRatchetStereo",
+    "display_name": "Ratchet",
+    "parameters-en": {
+        "Time": "Predetermines the length of the audio to be recorded and looped. To loop an entire 4/4 bar, choose 1/1; to stutter your playing, start with 1/16 or 1/32.",
+        "FX Level": "Sets the level of the Ratchet effect.",
+        "Level": "Sets the overall level of the block.",
+        "Operation": "Determines what happens to your signal when Ratchet is turned on. When set to \"Mute All,\" THE ENTIRE PATH IS MUTED. When set to \"Dry Kill,\" only the effected signal is heard. When set to \"Normal,\" both the effected and dry signals are heard. TIP: With Ratchet on a parallel path, assign a second stomp switch to toggle between Mute All and Dry Kill.",
+        "Transport": "",
+        "TSync1": ""
+    }
+}

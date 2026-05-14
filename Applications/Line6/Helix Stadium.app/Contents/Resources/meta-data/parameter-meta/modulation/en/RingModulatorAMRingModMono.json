@@ -1,0 +1,17 @@
+{
+    "category": "modulation",
+    "model_id": 291,
+    "model_sym": "ModelID::kRingModulatorAMRingModMono",
+    "display_name": "AM Ring Mod",
+    "parameters-en": {
+        "Frequency": "Controls the frequency of the FM (Frequency Modulation).",
+        "AM": "When on, adds AM (Amplitude Modulation).",
+        "AM Freq": "Controls the frequency of the AM (Amplitude Modulation).",
+        "LFO": "When on, enables the LFO (Low Frequency Oscillator) to modulate the FM and AM frequencies up and down.",
+        "LFO Rate": "Controls the rate or speed of the LFO. When LFO Rate is set to note values, it follows the system tempo. Does nothing if LFO is off.",
+        "LFO Shape": "Controls the wave shape of the LFO. Does nothing if LFO is off.",
+        "Mix": "Controls the blend between the ring modulation effect and the dry signal. At 0%, no effect is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

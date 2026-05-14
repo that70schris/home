@@ -1,0 +1,67 @@
+{
+    "modelName": "L6 Drive",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Output": {
+            "id": 5,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "L6DRVDRIVIER",
+            "Drive": 0.59,
+            "Bass": 0.49,
+            "Mid": 0.74,
+            "Treble": 0.83,
+            "Output": 0.71
+        },
+        "x_min_y_min": {
+            "name": "L6DRVIDLE",
+            "Drive": 0.1,
+            "Bass": 0.44,
+            "Mid": 0.85,
+            "Treble": 0.85,
+            "Output": 0.71
+        },
+        "x_min_y_max": {
+            "name": "L6DRVDRIVIEST",
+            "Drive": 0.77,
+            "Bass": 0.54,
+            "Mid": 0.74,
+            "Treble": 0.83,
+            "Output": 0.71
+        },
+        "x_max_y_min": {
+            "name": "L6DRVDRIVE",
+            "Drive": 0.3,
+            "Bass": 0.59,
+            "Mid": 0.85,
+            "Treble": 0.75,
+            "Output": 0.71
+        },
+        "x_max_y_max": {
+            "name": "L6DRVREDLINE",
+            "Drive": 1.0,
+            "Bass": 1.0,
+            "Mid": 1.0,
+            "Treble": 1.0,
+            "Output": 0.71
+        }
+    }
+}

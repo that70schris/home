@@ -1,0 +1,11 @@
+{
+    "category": "distortion",
+    "model_id": 251,
+    "model_sym": "ModelID::kDistRatatouilleDistStereo",
+    "display_name": "Ratatouille Dist",
+    "parameters-en": {
+        "Gain": "Controls the amount of distortion.",
+        "Filter": "Controls the amount of high cut (low pass) filter applied to the distortion, basically letting more treble through (lower values) or filtering it out (higher values).",
+        "Level": "Sets the overall level of the block."
+    }
+}

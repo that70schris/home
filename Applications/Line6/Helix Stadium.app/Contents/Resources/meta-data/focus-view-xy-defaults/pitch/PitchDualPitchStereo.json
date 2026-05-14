@@ -1,0 +1,139 @@
+{
+    "modelName": "Dual Pitch",
+    "params": {
+        "Interval1": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "Cents1": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Time1": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "LevelVoice1": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Interval2": {
+            "id": 5,
+            "behavior": "quantize"
+        },
+        "Cents2": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Time2": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "LevelVoice2": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "PanVoice1": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "PanVoice2": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "PanDry": {
+            "id": 17,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Stacked Up",
+            "Interval1": 7,
+            "Cents1": 0.0,
+            "Time1": 0.0,
+            "LevelVoice1": 1.0,
+            "Interval2": 12,
+            "Cents2": 0.0,
+            "Time2": 0.0,
+            "LevelVoice2": 1.0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "PanVoice1": 0.5,
+            "PanVoice2": 0.5,
+            "PanDry": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Racked Detune",
+            "Interval1": 0,
+            "Cents1": -8.0,
+            "Time1": 0.010000002570450306,
+            "LevelVoice1": 1.0,
+            "Interval2": 0,
+            "Cents2": 8.0,
+            "Time2": 0.020000005140900612,
+            "LevelVoice2": 1.0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "PanVoice1": 0.0,
+            "PanVoice2": 1.0,
+            "PanDry": 0.5
+        },
+        "x_min_y_max": {
+            "name": "Stacked Down",
+            "Interval1": -5,
+            "Cents1": 0.0,
+            "Time1": 0.0,
+            "LevelVoice1": 1.0,
+            "Interval2": -12,
+            "Cents2": 0.0,
+            "Time2": 0.0,
+            "LevelVoice2": 1.0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "PanVoice1": 0.5,
+            "PanVoice2": 0.5,
+            "PanDry": 0.5
+        },
+        "x_max_y_min": {
+            "name": "Sea Stack",
+            "Interval1": 7,
+            "Cents1": -12.0,
+            "Time1": 0.024000005796551704,
+            "LevelVoice1": 1.0,
+            "Interval2": 7,
+            "Cents2": 12.0,
+            "Time2": 0.03600000962615013,
+            "LevelVoice2": 1.0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "PanVoice1": 0.0,
+            "PanVoice2": 1.0,
+            "PanDry": 0.5
+        },
+        "x_max_y_max": {
+            "name": "Octaves",
+            "Interval1": -12,
+            "Cents1": 0.0,
+            "Time1": 0.0,
+            "LevelVoice1": 0.800000011920929,
+            "Interval2": 12,
+            "Cents2": 0.0,
+            "Time2": 0.0,
+            "LevelVoice2": 0.6000000238418579,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "PanVoice1": 0.5,
+            "PanVoice2": 0.5,
+            "PanDry": 0.5
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "category": "distortion",
+    "model_id": 403,
+    "model_sym": "ModelID::kDistVitalBoostMono",
+    "display_name": "Vital Boost",
+    "parameters-en": {
+        "Boost": "Sets the output level of the boost circuit."
+    }
+}

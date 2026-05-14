@@ -1,0 +1,24 @@
+{
+    "category": "preamp",
+    "model_id": 724,
+    "model_sym": "ModelID::kPreampGSG100",
+    "display_name": "Grammatico GSG",
+    "parameters-en": {
+        "Drive": "Controls the amount of gain applied to the signal, which influences the level of distortion.",
+        "Bass": "Controls the low frequency EQ of the tonestack. NOTE: Voicing changes with the Jazz Rock switch.",
+        "Mid": "Controls the midrange frequency EQ of the tonestack. NOTE: Voicing changes with the Jazz Rock switch.",
+        "Treble": "Controls the high frequency EQ of the tonestack. NOTE: Voicing changes with the Jazz Rock switch.",
+        "Master": "Controls the master volume of the amplifier. It is located between the preamp and power amp and can be used to get more or less power amp distortion. This amp is VERY loud, and if the Master is cranked, the power amp distortion can be pushed into unpleasant territory.",
+        "Level": "Controls the overall level of the Preamp block. Unlike Master Volume, it has no effect on the block's tone.",
+        "Mid Switch": "Changes the value of the treble capacitor in the tone stack. When off, the amp has more of a scooped sound; when on, there is a noticeable upper-mid boost.",
+        "Jazz Rock": "Changes the tonestack's wiring, allowing for two totally separate tonal voices. Jazz is quieter with a lower center frequency for the mids. Rock is louder with a more traditional mid frequency center. Tone controls rarely translate well between the Jazz and Rock settings. If a good sound is achieved in one mode, it is not guaranteed that the same settings in the opposite mode will still sound pleasing.",
+        "OD Switch": "Turns the two-gain-stage tube overdrive circuit on and off. This circuit is located AFTER the tone controls and Drive knob. When the overdrive is turned on it's as if third and fourth gain stages are added to the preamp.",
+        "OD Drive": "Controls the amount of drive or saturation in the overdrive circuit. Since the whole overdrive circuit is after the amp's regular Drive and Tone controls, the range of OD Drive will change based on those earlier knob settings.",
+        "OD Level": "Controls the output level of the overdrive circuit.",
+        "Bright": "Engages one of two different values of bright capacitor, and is more pronounced at lower Drive settings. When Drive is at 10.0, Bright is effectively removed from the amp circuit.",
+        "FET Boost": "Provides a 7-9 dB FET (Field Effect Transistor) boost and tweaks the EQ a bit. The result is similar to placing a FET boost pedal before the amp.",
+        "PAB": "Adds a preamp boost between tube stages 1 and 2, but at the expense of removing the tonestack controls from the circuit.",
+        "Sag": "Controls the amount of sag, or how much the power supply compresses or \"droops\" in response to striking the strings hard. Higher values provide more touch dynamics, sustain, and organic feel that's inherent in vintage tube amps; lower values offer a \"tighter\" responsiveness for a more modern feel.",
+        "Hum": "Adjusts the level of power supply hum that interacts with the signal. Preamp tube heaters in tube amps will leak a little bit of 60 cycle hum into the audio signal. When this hum mixes with the distorted audio signal, a non-musical distortion is created at low levels. To some players, this low-level, non-harmonic distortion adds a bit of realism to the amp model."
+    }
+}

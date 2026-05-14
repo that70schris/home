@@ -1,0 +1,114 @@
+
+<xg>
+    <panel_widget height="240" id="1" left="0" top="0" width="480">
+        <bg_color>0xFF141414</bg_color>
+        <text_widget height="32" id="txth" left="50" top="16" width="380">
+            <anchor_pos left="50" right="50" top="16"/>
+            <bg_color>0x00000000</bg_color>
+            <text>
+                <label>Downloading Update</label>
+                <font name="Inter Display" size="18" weight="semibold"/>
+                <align horz="center" vert="middle"/>
+                <text_color>0xFFFFFFFF</text_color>
+            </text>
+        </text_widget>
+        <text_widget height="50" id="txts" left="8" top="48" width="464">
+            <anchor_pos left="8" right="8" top="48"/>
+            <bg_color>0x00000000</bg_color>
+            <text>
+                <label>Status about the download goes here.</label>
+                <font name="Inter Display" size="14"/>
+                <align horz="center" vert="middle"/>
+                <multiline>yes</multiline>
+                <text_color>0xFFD2D2D2</text_color>
+            </text>
+        </text_widget>
+        <pushbutton_widget height="32" id="cncl" left="20" top="188" width="92">
+            <anchor_pos bottom="20" left="20"/>
+            <bg_color>0xFF821F1F</bg_color>
+            <corner_radius>6</corner_radius>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <label>Cancel</label>
+                <font name="Inter Display" size="14"/>
+                <text_color>0xCCFFFFFF</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF731B1C</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+                <offset y="1"/>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFFBF2D2F</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <pushbutton_widget height="32" id="cnfm" left="368" top="148" width="92">
+            <anchor_pos bottom="20" right="20"/>
+            <bg_color>0xFF0A700A</bg_color>
+            <corner_radius>6</corner_radius>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <label>Confirm</label>
+                <font name="Inter Display" size="14"/>
+                <text_color>0xCCFFFFFF</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF0A700A</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+                <offset y="1"/>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF0E990E</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <panel_widget height="10" id="prog" left="20" top="137" width="440">
+            <anchor_pos left="20" right="20"/>
+            <bg_color>0xFF173B19</bg_color>
+        </panel_widget>
+        <image_widget height="24" id="icon" left="20" top="20" width="24">
+            <anchor_pos left="20" top="20"/>
+            <bg_color>0x00000000</bg_color>
+            <image>315</image>
+        </image_widget>
+        <text_widget height="16" id="ptxt" left="20" top="154" width="440">
+            <anchor_pos left="20" right="20" top="154"/>
+            <bg_color>0x00000000</bg_color>
+            <text>
+                <label>0%</label>
+                <font name="Inter Display" size="12"/>
+                <align horz="center" vert="middle"/>
+                <multiline>yes</multiline>
+                <text_color>0xFFD2D2D2</text_color>
+            </text>
+        </text_widget>
+        <image_widget class="P35AnimationWidget" height="24" id="anim" left="228" name="animation throbber" top="106" width="24">
+            <relative_pos x="50"/>
+            <visible>no</visible>
+            <bg_color>0x00000000</bg_color>
+            <image>287</image>
+            <scale_mode>keep_aspect</scale_mode>
+        </image_widget>
+        <pushbutton_widget height="32" id="latr" left="20" top="188" width="92">
+            <anchor_pos bottom="20" left="20"/>
+            <bg_color>0xFF821F1F</bg_color>
+            <corner_radius>6</corner_radius>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <label>Install Later</label>
+                <font name="Inter Display" size="14"/>
+                <text_color>0xCCFFFFFF</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF731B1C</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+                <offset y="1"/>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFFBF2D2F</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+    </panel_widget>
+</xg>

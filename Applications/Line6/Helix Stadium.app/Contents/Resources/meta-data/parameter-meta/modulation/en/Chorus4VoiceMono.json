@@ -1,0 +1,17 @@
+{
+    "category": "modulation",
+    "model_id": 406,
+    "model_sym": "ModelID::kChorus4VoiceMono",
+    "display_name": "4-Voice Chorus",
+    "parameters-en": {
+        "Rate": "Controls the speed of the chorus’ low-frequency oscillator (LFO) from slow to fast.",
+        "Depth": "Controls the amplitude of the modulation, from mild to deep.",
+        "NumVoices": "Determines the number of voices in the chorus (2, 3, or 4).",
+        "Low Cut": "Applies a low cut (high pass) filter to the chorus, letting you remove the effected signal below a certain frequency.",
+        "High Shelf": "Applies a high cut (low pass) filter to the fills, letting you remove the effected signal above a certain frequency.",
+        "Mix": "Controls the blend between the chorus effect and the dry signal. At 0%, no chorus effect is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "Cho Rate": "",
+        "TempoSync1": ""
+    }
+}

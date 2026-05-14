@@ -1,0 +1,169 @@
+
+<xg>
+    <panel_widget height="270" id="1" left="0" top="0" width="820">
+        <bg_color>0xFF122323</bg_color>
+        <panel_widget height="238" id="1" left="12" top="16" width="562">
+            <anchor_pos left="12"/>
+            <relative_pos y="50"/>
+            <bg_color>0x00FFFFFF</bg_color>
+            <panel_widget height="78" id="1" left="0" top="0" width="546">
+                <anchor_pos left="0" right="0" top="0"/>
+                <relative_pos height="33"/>
+                <bg_color>0x00FFFFFF</bg_color>
+                <image_widget height="48" id="tmpi" left="0" name="Analyze Tempo Image" top="15" width="48">
+                    <anchor_pos left="0"/>
+                    <relative_pos y="50"/>
+                    <bg_color>0x00000000</bg_color>
+                    <image>338</image>
+                </image_widget>
+                <toggle_widget height="36" id="tmpg" left="54" name="Analyze Tempo Toggle" top="2" width="274">
+                    <anchor_pos left="54" top="2"/>
+                    <bg_color>0xFF424242</bg_color>
+                    <image>265</image>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <text>
+                        <label>Analyze Tempo/Time Signature</label>
+                        <font name="Helvetica" size="14" weight="bold"/>
+                        <align horz="right"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0xFF797979</bg_color>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                    </active_state>
+                    <hilite_state>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </toggle_widget>
+                <text_widget height="39" id="tmpt" left="54" name="Analyze Tempo Text" top="40" width="508">
+                    <anchor_pos bottom="-6" left="54" right="0" top="40"/>
+                    <bg_color>0x00000000</bg_color>
+                    <text>
+                        <label>Initial tempo and time signature will appear in the song's Start flag and any subsequent tempo or time signature changes appear as new Time flags. When off, tempo and time signature of the audio is ignored.</label>
+                        <font name="Helvetica" size="12"/>
+                        <multiline>yes</multiline>
+                        <text_color>0xFFCACACA</text_color>
+                    </text>
+                </text_widget>
+            </panel_widget>
+            <panel_widget height="78" id="1" left="0" top="86" width="557">
+                <anchor_pos left="0" right="-25"/>
+                <relative_pos height="33"/>
+                <bg_color>0x00FFFFFF</bg_color>
+                <image_widget height="48" id="scti" left="0" name="Analyze Sections Image" top="15" width="48">
+                    <anchor_pos left="0"/>
+                    <relative_pos y="50"/>
+                    <bg_color>0x00000000</bg_color>
+                    <image>337</image>
+                </image_widget>
+                <toggle_widget height="36" id="sect" left="54" name="Analyze Sections Toggle" top="2" width="222">
+                    <anchor_pos left="54" top="2"/>
+                    <bg_color>0xFF424242</bg_color>
+                    <image>265</image>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <text>
+                        <label>Analyze Song Sections</label>
+                        <font name="Helvetica" size="14" weight="bold"/>
+                        <align horz="right"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0xFF797979</bg_color>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                    </active_state>
+                    <hilite_state>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </toggle_widget>
+                <text_widget height="33" id="sctt" left="54" name="Analyze Sections Text" top="40" width="495">
+                    <anchor_pos bottom="0" left="54" right="-22" top="40"/>
+                    <bg_color>0x00000000</bg_color>
+                    <text>
+                        <label>Initial song section will appear in the song's Start flag and any subsequent song sections (verse, chorus, outro, etc.) appear as new Marker flags. When off, song sections are ignored.</label>
+                        <font name="Helvetica" size="12"/>
+                        <multiline>yes</multiline>
+                        <text_color>0xFFCACACA</text_color>
+                    </text>
+                </text_widget>
+            </panel_widget>
+            <panel_widget height="78" id="sptp" left="0" top="161" width="562">
+                <anchor_pos bottom="-10" left="0" right="0"/>
+                <relative_pos height="33"/>
+                <bg_color>0x00FFFFFF</bg_color>
+                <image_widget height="46" id="spti" left="0" name="Analyze Stems Image" top="16" width="48">
+                    <anchor_pos left="0"/>
+                    <relative_pos y="50"/>
+                    <bg_color>0x00000000</bg_color>
+                    <image>336</image>
+                </image_widget>
+                <toggle_widget height="36" id="splt" left="54" name="Analyze Stems Toggle" top="2" width="311">
+                    <anchor_pos left="54" top="2"/>
+                    <bg_color>0xFF424242</bg_color>
+                    <image>265</image>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <text>
+                        <label>Split single track into 5 tracks/stems</label>
+                        <font name="Helvetica" size="14" weight="bold"/>
+                        <align horz="right"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0xFF797979</bg_color>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                    </active_state>
+                    <hilite_state>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </toggle_widget>
+                <text_widget height="33" id="sptt" left="54" name="Analyze Stems Text" top="40" width="478">
+                    <anchor_pos bottom="-10" left="54" right="0" top="40"/>
+                    <bg_color>0x00000000</bg_color>
+                    <text>
+                        <label>Single track will be split into 5 separate tracks/stems. Drums, bass, guitar, vocals, and other. Unavailable if more than one track is added to a song.</label>
+                        <font name="Helvetica" size="12"/>
+                        <multiline>yes</multiline>
+                        <text_color>0xFFCACACA</text_color>
+                    </text>
+                </text_widget>
+            </panel_widget>
+        </panel_widget>
+        <panel_widget height="224" id="1" left="563" top="23" width="255">
+            <anchor_pos bottom="23" right="2"/>
+            <bg_color>0x00000000</bg_color>
+            <image_widget height="74" id="sngi" left="-1" name="Transfer Song Image" top="114" width="254">
+                <anchor_pos bottom="36"/>
+                <relative_pos x="50"/>
+                <bg_color>0x00000000</bg_color>
+                <image>330</image>
+            </image_widget>
+            <pushbutton_widget height="28" id="trns" left="41" name="Transfer Song Button" top="196" width="170">
+                <anchor_pos bottom="0"/>
+                <relative_pos x="50"/>
+                <bg_color>0xFF187777</bg_color>
+                <scale_mode>stretch</scale_mode>
+                <corner_radius>8</corner_radius>
+                <icon_placement spacing="4">1</icon_placement>
+                <text>
+                    <label>Create Empty Song</label>
+                    <font name="Helvetica" size="14"/>
+                    <text_color>0xCCFFFFFF</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF045956</bg_color>
+                    <fg_color>0xFFEAEAEA</fg_color>
+                    <offset y="1"/>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF058C88</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+            <image_widget height="74" id="mpti" left="88" name="Transfer Empty Song Image" top="114" width="76">
+                <anchor_pos bottom="36"/>
+                <relative_pos x="50"/>
+                <bg_color>0x00000000</bg_color>
+                <image>341</image>
+            </image_widget>
+        </panel_widget>
+    </panel_widget>
+</xg>

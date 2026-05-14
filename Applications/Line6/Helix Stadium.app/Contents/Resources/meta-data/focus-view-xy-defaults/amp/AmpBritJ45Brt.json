@@ -1,0 +1,130 @@
+{
+    "modelName": "Brit J45 Brt",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Presence": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Hum": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Ripple": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Bias": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "BiasX": {
+            "id": 12,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Moolah",
+            "Drive": 1.0,
+            "Bass": 0.5,
+            "Mid": 1.0,
+            "Treble": 0.7999999523162842,
+            "Presence": 0.75,
+            "ChVol": 0.60,
+            "Master": 1.0,
+            "Sag": 0.6000000238418579,
+            "Hum": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Noonish",
+            "Drive": 0.6800000667572021,
+            "Bass": 0.5,
+            "Mid": 0.5,
+            "Treble": 0.5,
+            "Presence": 0.5,
+            "ChVol": 0.55,
+            "Master": 1.0,
+            "Sag": 0.5,
+            "Hum": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_min_y_max": {
+            "name": "Classic",
+            "Drive": 0.6000000238418579,
+            "Bass": 0.7999999523162842,
+            "Mid": 1.0,
+            "Treble": 0.7999999523162842,
+            "Presence": 0.75,
+            "ChVol": 0.53,
+            "Master": 1.0,
+            "Sag": 0.5,
+            "Hum": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.7000000476837158,
+            "BiasX": 0.5
+        },
+        "x_max_y_min": {
+            "name": "Steps",
+            "Drive": 1.0,
+            "Bass": 0.75,
+            "Mid": 1.0,
+            "Treble": 1.0,
+            "Presence": 0.8299999237060547,
+            "ChVol": 0.66,
+            "Master": 0.7999999523162842,
+            "Sag": 0.3999999761581421,
+            "Hum": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_max_y_max": {
+            "name": "Full",
+            "Drive": 1.0,
+            "Bass": 1.0,
+            "Mid": 1.0,
+            "Treble": 1.0,
+            "Presence": 0.8700000047683716,
+            "ChVol": 0.70,
+            "Master": 1.0,
+            "Sag": 0.7999999523162842,
+            "Hum": 0.5,
+            "Ripple": 0.5,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        }
+    }
+}

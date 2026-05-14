@@ -1,0 +1,13 @@
+{
+    "category": "modulation",
+    "model_id": 513,
+    "model_sym": "ModelID::kPolyChorus",
+    "display_name": "Poly Detune",
+    "parameters-en": {
+        "Blend": "Controls the blend between the detuned signal and the dry signal. At 0%, no detuning is heard; at 100%, no dry signal is heard.",
+        "Detune": "Controls the amount of detuning, from -50 cents to +50 cents. Extreme values add more depth or intensity to the chorus-like sound.",
+        "Low Cut": "Applies a low cut (or high pass) filter to the detuning, letting you remove the effected signal below a certain frequency.",
+        "High Cut": "Applies a high cut (or low pass) filter to the detuning, letting you remove the effected signal above a certain frequency.",
+        "Level": "Sets the overall level of the block."
+    }
+}

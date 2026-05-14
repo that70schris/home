@@ -1,0 +1,103 @@
+{
+    "modelName": "Bubble Vibrato",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "RiseTime": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Headroom": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "RiseTimeSwitch": {
+            "id": 7,
+            "behavior": "exclude"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Wide Vibrato",
+            "Speed": 0.440000057220459,
+            "Depth": 0.5,
+            "RiseTime": 0.6000000238418579,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "Headroom": 3.0,
+            "RiseTimeSwitch": true,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Barely There",
+            "Speed": 0.10000002384185791,
+            "Depth": 0.10000002384185791,
+            "RiseTime": 0.5,
+            "Mix": 0.18000006675720215,
+            "Level": 0.7999992370605469,
+            "Headroom": 3.8000011444091797,
+            "RiseTimeSwitch": true,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Slow It Down",
+            "Speed": 0.28999996185302734,
+            "Depth": 0.8700000047683716,
+            "RiseTime": 0.6600000858306885,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "Headroom": 12.0,
+            "RiseTimeSwitch": true,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Speed It Up",
+            "Speed": 0.75,
+            "Depth": 0.5699999332427979,
+            "RiseTime": 0.4500000476837158,
+            "Mix": 0.5799999237060547,
+            "Level": 0.40000152587890625,
+            "Headroom": 3.8000011444091797,
+            "RiseTimeSwitch": true,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "You Broke It",
+            "Speed": 0.8399999141693115,
+            "Depth": 1.0,
+            "RiseTime": 0.690000057220459,
+            "Mix": 1.0,
+            "Level": 6.0,
+            "Headroom": -5.0,
+            "RiseTimeSwitch": true,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

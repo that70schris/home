@@ -1,0 +1,11 @@
+{
+    "category": "synth",
+    "model_id": 395,
+    "model_sym": "ModelID::kSeismicSynth",
+    "display_name": "Seismik Synth",
+    "parameters-en": {
+        "Wave": "Choose from 8 bass-heavy sub synth sounds.",
+        "Mix": "Blends more of the effect in. Note that even at 0%, some of the synth will be heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

@@ -1,0 +1,215 @@
+{
+    "modelName": "Mandarin Rock 3",
+    "params": {
+        "Channel": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "Drive": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ODMaster": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Attenuator": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Ripple": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "ZPrePost": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "Hype": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "AmpCabPeak2Q": {
+            "id": 74,
+            "behavior": "exclude"
+        },
+        "AmpCabPeak2Fc": {
+            "id": 75,
+            "behavior": "exclude"
+        },
+        "AmpCabPeak2G": {
+            "id": 76,
+            "behavior": "exclude"
+        },
+        "AmpCabZFir": {
+            "id": 101,
+            "behavior": "exclude"
+        },
+        "AmpCabZUpdate": {
+            "id": 103,
+            "behavior": "exclude"
+        },
+        "AmpCabShelfF": {
+            "id": 104,
+            "behavior": "exclude"
+        },
+        "AmpCabShelfG": {
+            "id": 105,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakQ": {
+            "id": 106,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakG": {
+            "id": 107,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakFc": {
+            "id": 108,
+            "behavior": "exclude"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Rocky",
+            "Channel": true,
+            "Drive": 0.500000,
+            "Bass": 0.500000,
+            "Mid": 0.500000,
+            "Treble": 0.500000,
+            "ODMaster": 0.500000,
+            "Attenuator": 0.00000,
+            "Level": -9.0000,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "ZPrePost": 0.350000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_min_y_min": {
+            "name": "Bluey",
+            "Channel": true,
+            "Drive": 0.400000,
+            "Bass": 0.610000,
+            "Mid": 0.930000,
+            "Treble": 0.230000,
+            "ODMaster": 0.520000,
+            "Attenuator": 0.00000,
+            "Level": -9.0000,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "ZPrePost": 0.350000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_min_y_max": {
+            "name": "Stoney",
+            "Channel": true,
+            "Drive": 0.460000,
+            "Bass": 0.510000,
+            "Mid": 0.620000,
+            "Treble": 0.100000,
+            "ODMaster": 0.540000,
+            "Attenuator": 0.00000,
+            "Level": -9.0000,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "ZPrePost": 0.350000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_max_y_min": {
+            "name": "Scoopy",
+            "Channel": true,
+            "Drive": 0.780000,
+            "Bass": 0.830000,
+            "Mid": 0.220000,
+            "Treble": 0.750000,
+            "ODMaster": 0.460000,
+            "Attenuator": 0.00000,
+            "Level": -9.0000,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "ZPrePost": 0.350000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_max_y_max": {
+            "name": "Sleepy",
+            "Channel": true,
+            "Drive": 0.840000,
+            "Bass": 0.800000,
+            "Mid": 0.740000,
+            "Treble": 0.460000,
+            "ODMaster": 0.420000,
+            "Attenuator": 0.00000,
+            "Level": -9.0000,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "ZPrePost": 0.350000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        }
+    }
+}

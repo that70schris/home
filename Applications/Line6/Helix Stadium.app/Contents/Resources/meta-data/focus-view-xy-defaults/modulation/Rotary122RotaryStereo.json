@@ -1,0 +1,139 @@
+{
+    "modelName": "122 Rotary",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "SlowSpeed": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "FastSpeed": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "RampTime": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "Drive": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Blend": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Headroom": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        },
+        "SyncSelect2": {
+            "id": 12,
+            "behavior": "quantize"
+        },
+        "TempoSync2": {
+            "id": 13,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Washy",
+            "Speed": true,
+            "SlowSpeed": 0.3799999952316284,
+            "FastSpeed": 0.38999998569488525,
+            "RampTime": 1,
+            "Drive": 0.0,
+            "Blend": 0.5,
+            "Mix": 1.0,
+            "Level": -5.699999809265137,
+            "Headroom": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false,
+            "SyncSelect2": 6,
+            "TempoSync2": false
+        },
+        "x_min_y_min": {
+            "name": "Slow",
+            "Speed": false,
+            "SlowSpeed": 0.04999995231628418,
+            "FastSpeed": 0.5,
+            "RampTime": 1,
+            "Drive": 0.059999942779541016,
+            "Blend": 0.5,
+            "Mix": 1.0,
+            "Level": -5.699999809265137,
+            "Headroom": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false,
+            "SyncSelect2": 6,
+            "TempoSync2": false
+        },
+        "x_min_y_max": {
+            "name": "Subtle",
+            "Speed": false,
+            "SlowSpeed": 0.38999998569488525,
+            "FastSpeed": 0.5,
+            "RampTime": 2,
+            "Drive": 0.059999942779541016,
+            "Blend": 0.4500000476837158,
+            "Mix": 1.0,
+            "Level": -5.699999809265137,
+            "Headroom": -6.300000190734863,
+            "SyncSelect1": 6,
+            "TempoSync1": false,
+            "SyncSelect2": 6,
+            "TempoSync2": false
+        },
+        "x_max_y_min": {
+            "name": "Cranky",
+            "Speed": true,
+            "SlowSpeed": 0.38999998569488525,
+            "FastSpeed": 0.5399999618530273,
+            "RampTime": 1,
+            "Drive": 0.7100000381469727,
+            "Blend": 0.5299999713897705,
+            "Mix": 1.0,
+            "Level": -11.39999771118164,
+            "Headroom": 5.5,
+            "SyncSelect1": 6,
+            "TempoSync1": false,
+            "SyncSelect2": 6,
+            "TempoSync2": false
+        },
+        "x_max_y_max": {
+            "name": "Warbly",
+            "Speed": true,
+            "SlowSpeed": 0.3799999952316284,
+            "FastSpeed": 1.0,
+            "RampTime": 1,
+            "Drive": 0.3500000238418579,
+            "Blend": 0.5249999761581421,
+            "Mix": 1.0,
+            "Level": -5.699999809265137,
+            "Headroom": 3.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false,
+            "SyncSelect2": 6,
+            "TempoSync2": false
+        }
+    }
+}

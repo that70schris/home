@@ -1,0 +1,256 @@
+{
+    "modelName": "Multitap 6",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "LowCut": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "HighCut": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Tap1Delay": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Tap1Pan": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Tap1Level": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Tap2Delay": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Tap2Pan": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "Tap2Level": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "Tap3Delay": {
+            "id": 13,
+            "behavior": "interpolate"
+        },
+        "Tap3Pan": {
+            "id": 14,
+            "behavior": "interpolate"
+        },
+        "Tap3Level": {
+            "id": 15,
+            "behavior": "interpolate"
+        },
+        "Tap4Delay": {
+            "id": 16,
+            "behavior": "interpolate"
+        },
+        "Tap4Pan": {
+            "id": 17,
+            "behavior": "interpolate"
+        },
+        "Tap4Level": {
+            "id": 18,
+            "behavior": "interpolate"
+        },
+        "Tap5Delay": {
+            "id": 19,
+            "behavior": "interpolate"
+        },
+        "Tap5Pan": {
+            "id": 20,
+            "behavior": "interpolate"
+        },
+        "Tap5Level": {
+            "id": 21,
+            "behavior": "interpolate"
+        },
+        "Tap6Delay": {
+            "id": 22,
+            "behavior": "interpolate"
+        },
+        "Tap6Pan": {
+            "id": 23,
+            "behavior": "interpolate"
+        },
+        "Tap6Level": {
+            "id": 24,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 42,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 43,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Right to Left",
+            "Time": 1.0,
+            "Feedback": 0.5,
+            "LowCut": 19.899999618530273,
+            "HighCut": 20100.0,
+            "Mix": 0.3499999940395355,
+            "Level": 0.0,
+            "Tap1Delay": 1.0,
+            "Tap1Pan": 0.0,
+            "Tap1Level": 1.0,
+            "Tap2Delay": 0.8299999833106995,
+            "Tap2Pan": 0.8999999761581421,
+            "Tap2Level": 0.8399999737739563,
+            "Tap3Delay": 0.6700000166893005,
+            "Tap3Pan": 0.20000000298023224,
+            "Tap3Level": 0.6800000071525574,
+            "Tap4Delay": 0.5,
+            "Tap4Pan": 0.699999988079071,
+            "Tap4Level": 0.5199999809265137,
+            "Tap5Delay": 0.33000001311302185,
+            "Tap5Pan": 0.4000000059604645,
+            "Tap5Level": 0.36000001430511475,
+            "Tap6Delay": 0.1599999964237213,
+            "Tap6Pan": 0.5,
+            "Tap6Level": 0.20000000298023224,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        },
+        "x_min_y_min": {
+            "name": "Exp Fade",
+            "Time": 1.0,
+            "Feedback": 0.5,
+            "LowCut": 19.899999618530273,
+            "HighCut": 20100.0,
+            "Mix": 0.3499999940395355,
+            "Level": 0.0,
+            "Tap1Delay": 0.25999999046325684,
+            "Tap1Pan": 0.0,
+            "Tap1Level": 1.0,
+            "Tap2Delay": 0.4399999976158142,
+            "Tap2Pan": 0.8999999761581421,
+            "Tap2Level": 0.8399999737739563,
+            "Tap3Delay": 0.5799999833106995,
+            "Tap3Pan": 0.20000000298023224,
+            "Tap3Level": 0.6800000071525574,
+            "Tap4Delay": 0.699999988079071,
+            "Tap4Pan": 0.699999988079071,
+            "Tap4Level": 0.5199999809265137,
+            "Tap5Delay": 0.800000011920929,
+            "Tap5Pan": 0.4000000059604645,
+            "Tap5Level": 0.36000001430511475,
+            "Tap6Delay": 0.8899999856948853,
+            "Tap6Pan": 0.5,
+            "Tap6Level": 0.20000000298023224,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        },
+        "x_min_y_max": {
+            "name": "Log Fade",
+            "Time": 1.0,
+            "Feedback": 0.5,
+            "LowCut": 19.899999618530273,
+            "HighCut": 20100.0,
+            "Mix": 0.3499999940395355,
+            "Level": 0.0,
+            "Tap1Delay": 0.0,
+            "Tap1Pan": 0.0,
+            "Tap1Level": 1.0,
+            "Tap2Delay": 0.44999998807907104,
+            "Tap2Pan": 0.8999999761581421,
+            "Tap2Level": 0.8399999737739563,
+            "Tap3Delay": 0.6700000166893005,
+            "Tap3Pan": 0.20000000298023224,
+            "Tap3Level": 0.6800000071525574,
+            "Tap4Delay": 0.8100000023841858,
+            "Tap4Pan": 0.699999988079071,
+            "Tap4Level": 0.5199999809265137,
+            "Tap5Delay": 0.8999999761581421,
+            "Tap5Pan": 0.4000000059604645,
+            "Tap5Level": 0.36000001430511475,
+            "Tap6Delay": 1.0,
+            "Tap6Pan": 0.5,
+            "Tap6Level": 0.20000000298023224,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        },
+        "x_max_y_min": {
+            "name": "Exp Ramp",
+            "Time": 1.0,
+            "Feedback": 0.0,
+            "LowCut": 19.899999618530273,
+            "HighCut": 20100.0,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "Tap1Delay": 0.25999999046325684,
+            "Tap1Pan": 0.0,
+            "Tap1Level": 0.20000000298023224,
+            "Tap2Delay": 0.4399999976158142,
+            "Tap2Pan": 0.8999999761581421,
+            "Tap2Level": 0.41999998688697815,
+            "Tap3Delay": 0.5799999833106995,
+            "Tap3Pan": 0.20000000298023224,
+            "Tap3Level": 0.5099999904632568,
+            "Tap4Delay": 0.699999988079071,
+            "Tap4Pan": 0.699999988079071,
+            "Tap4Level": 0.6200000047683716,
+            "Tap5Delay": 0.800000011920929,
+            "Tap5Pan": 0.4000000059604645,
+            "Tap5Level": 0.7599999904632568,
+            "Tap6Delay": 0.8899999856948853,
+            "Tap6Pan": 0.5,
+            "Tap6Level": 1.0,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        },
+        "x_max_y_max": {
+            "name": "Weird Tape",
+            "Time": 1.0,
+            "Feedback": 0.9800000190734863,
+            "LowCut": 249.99998474121094,
+            "HighCut": 2200.0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "Tap1Delay": 0.0,
+            "Tap1Pan": 0.0,
+            "Tap1Level": 0.20000000298023224,
+            "Tap2Delay": 0.44999998807907104,
+            "Tap2Pan": 0.8999999761581421,
+            "Tap2Level": 0.41999998688697815,
+            "Tap3Delay": 0.6700000166893005,
+            "Tap3Pan": 0.20000000298023224,
+            "Tap3Level": 0.5099999904632568,
+            "Tap4Delay": 0.8100000023841858,
+            "Tap4Pan": 0.699999988079071,
+            "Tap4Level": 0.6200000047683716,
+            "Tap5Delay": 0.8999999761581421,
+            "Tap5Pan": 0.4000000059604645,
+            "Tap5Level": 0.7599999904632568,
+            "Tap6Delay": 1.0,
+            "Tap6Pan": 0.5,
+            "Tap6Level": 1.0,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        }
+    }
+}

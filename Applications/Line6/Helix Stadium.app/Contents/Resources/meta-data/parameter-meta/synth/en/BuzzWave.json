@@ -1,0 +1,13 @@
+{
+    "category": "synth",
+    "model_id": 400,
+    "model_sym": "ModelID::kBuzzWave",
+    "display_name": "Buzz Wave",
+    "parameters-en": {
+        "Wave": "Choose from 8 different combinations of saw and square waves with fast vibrato and different octaves.",
+        "Filter": "Controls a high pass filter that removes some low end from the synth signal.",
+        "Decay": "Controls the decay of the Filter's envelope.",
+        "Mix": "Blends more of the effect in. Note that even at 0%, some of the synth will be heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

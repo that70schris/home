@@ -1,0 +1,103 @@
+{
+    "modelName": "Pitch Vibrato",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Rise": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Volsens": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "RiseTimeSwitch": {
+            "id": 7,
+            "behavior": "exclude"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Vibrations",
+            "Speed": 3.9,
+            "Depth": 0.56,
+            "Rise": 0.18,
+            "Volsens": 0.22,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "RiseTimeSwitch": true,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Quicksand",
+            "Speed": 10.1,
+            "Depth": 0.33,
+            "Rise": 0.0,
+            "Volsens": 0.29,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "RiseTimeSwitch": true,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Slow Down",
+            "Speed": 1.6,
+            "Depth": 0.58,
+            "Rise": 0.13,
+            "Volsens": 0.79,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "RiseTimeSwitch": true,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Feelin' Sick",
+            "Speed": 4.4,
+            "Depth": 0.82,
+            "Rise": 1.0,
+            "Volsens": 0.0,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "RiseTimeSwitch": true,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Aliens!",
+            "Speed": 11.0,
+            "Depth": 1.0,
+            "Rise": 0.76,
+            "Volsens": 0.23,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "RiseTimeSwitch": true,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

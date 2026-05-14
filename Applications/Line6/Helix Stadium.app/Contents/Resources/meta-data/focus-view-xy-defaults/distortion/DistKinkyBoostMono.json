@@ -1,0 +1,49 @@
+{
+    "modelName": "Kinky Boost",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Boost": {
+            "id": 2,
+            "behavior": "quantize"
+        },
+        "Bright": {
+            "id": 3,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Meaty Crunch",
+            "Drive": 0.47,
+            "Boost": true,
+            "Bright": true
+        },
+        "x_min_y_min": {
+            "name": "Clean Boost",
+            "Drive": 0.8,
+            "Boost": false,
+            "Bright": true
+        },
+        "x_min_y_max": {
+            "name": "Vintage",
+            "Drive": 0.42,
+            "Boost": false,
+            "Bright": false
+        },
+        "x_max_y_min": {
+            "name": "Beefy Boost",
+            "Drive": 0.56,
+            "Boost": true,
+            "Bright": false
+        },
+        "x_max_y_max": {
+            "name": "Lead Boost",
+            "Drive": 0.98,
+            "Boost": true,
+            "Bright": true
+        }
+    }
+}

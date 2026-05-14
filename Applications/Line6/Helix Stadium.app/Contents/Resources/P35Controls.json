@@ -1,0 +1,2801 @@
+{
+  "adt_threshold": {
+    "dspToDisplayScale": 10,
+    "step": {
+      "fine": 0.1,
+      "coarse": 1.0
+    },
+    "format": [
+      {
+        "lowerBound": 0.0,
+        "upperBound": 0.01,
+        "format": "Off"
+      },
+      {
+        "lowerBound": 0.01,
+        "upperBound": 10.1,
+        "format": "%.1f"
+      }
+    ]
+  },
+  "amp_boost": {
+    "dspToDisplayScale": 10,
+    "step": {
+      "fine": 0.1,
+      "coarse": 1.0
+    },
+    "format": [
+      {
+        "lowerBound": 0.0,
+        "upperBound": 0.09,
+        "format": "Off",
+        "formatUnits": "Off"
+      },
+      {
+        "lowerBound": 0.09,
+        "upperBound": 10.1,
+        "format": "%.1f"
+      }
+    ]
+  },
+  "amp_hype": {
+    "dspToDisplayScale": 10,
+    "step": {
+      "fine": 0.1,
+      "coarse": 1.0
+    },
+    "format": [
+      {
+        "lowerBound": 0.0,
+        "upperBound": 0.09,
+        "format": "Off",
+        "formatUnits": "Off"
+      },
+      {
+        "lowerBound": 0.09,
+        "upperBound": 10.1,
+        "format": "%.1f"
+      }
+    ]
+  },
+  "amp_sag_ripple": {
+    "minDisplayValue": -10,
+    "maxDisplayValue": 10,
+    "zeroValue": 0.0,
+    "format": [
+      {
+        "lowerBound": -99999,
+        "upperBound": -0.05,
+        "format": "%.1f",
+        "formatUnits": "%.1f"
+      },
+      {
+        "lowerBound": -0.05,
+        "upperBound": 0.05,
+        "format": "%.0f",
+        "formatUnits": "Stock"
+      },
+      {
+        "lowerBound": 0.05,
+        "upperBound": 999999,
+        "format": "%+.1f",
+        "formatUnits": "%+.1f"
+      }
+    ],
+    "step": {
+      "fine": 0.2,
+      "coarse": 1.0
+    }
+  },
+  "amp_z_prepost": {
+    "dspToDisplayScale": 10,
+    "format": [
+      {
+        "lowerBound": -0.05,
+        "upperBound": 0.05,
+        "format": "Pre"
+      },
+      {
+        "lowerBound": 0.05,
+        "upperBound": 9.95,
+        "format": "%.1f"
+      },
+      {
+        "lowerBound": 9.95,
+        "upperBound": 10.05,
+        "format": "Post"
+      }
+    ],
+    "step": {
+      "fine": 0.1,
+      "coarse": 1.0
+    }
+  },
+  "blend": {
+    "minDisplayValue": -100,
+    "maxDisplayValue": 100,
+    "format": [
+      {
+        "lowerBound": -100.0,
+        "upperBound": -0.5,
+        "format": "%.0f",
+        "formatUnits": "Woofer %.0f",
+        "unitsMultiplier": -1
+      },
+      {
+        "lowerBound": -0.5,
+        "upperBound": 0.5,
+        "format": "%.0f",
+        "formatUnits": "Equal"
+      },
+      {
+        "lowerBound": 0.5,
+        "upperBound": 100.1,
+        "format": "%.0f",
+        "formatUnits": "Horn %.0f"
+      }
+    ],
+    "step": {
+      "fine": 1,
+      "coarse": 10
+    }
+  },
+  "cab_mic_distance": {
+    "displayToWidgetScale": 4,
+    "format": "%.2f",
+    "formatUnits": "%.2f \"",
+    "step": {
+      "fine": 0.25,
+      "coarse": 1.0
+    }
+  },
+  "cab_mic_angle": {
+    "controlType": "segmented",
+    "displayToWidgetScale": 0.022222,
+    "format": "%.0f degrees",
+    "formatUnits": "%.0f degrees"
+  },
+  "cab_mic_position": {
+    "dspToDisplayScale": 10,
+    "format": [
+      {
+        "lowerBound": 0.00,
+        "upperBound": 0.09,
+        "format": "%.1f",
+        "formatUnits": "Center"
+      },
+      {
+        "lowerBound": 0.09,
+        "upperBound": 10.0,
+        "format": "%.1f"
+      },
+      {
+        "lowerBound": 10.0,
+        "upperBound": 10.1,
+        "format": "%.1f",
+        "formatUnits": "Edge"
+      }
+    ],
+    "step": {
+      "fine": 0.1,
+      "coarse": 0.1
+    }
+  },
+  "cents": {
+    "canDisplayHigherRes": true,
+    "format": [
+      {
+        "lowerBound": -99999,
+        "upperBound": -50.001,
+        "format": "%+.1f"
+      },
+      {
+        "lowerBound": -50.001,
+        "upperBound": -49.999,
+        "format": "%+.0f"
+      },
+      {
+        "lowerBound": -49.999,
+        "upperBound": -0.999,
+        "format": "%+.1f"
+      },
+      {
+        "lowerBound": -0.999,
+        "upperBound": 0.999,
+        "format": "%+.2f"
+      },
+      {
+        "lowerBound": 1.0,
+        "upperBound": 49.999,
+        "format": "%+.1f"
+      },
+      {
+        "lowerBound": 49.999,
+        "upperBound": 50.001,
+        "format": "%+.0f"
+      },
+      {
+        "lowerBound": 50.001,
+        "upperBound": 99999,
+        "format": "%+.1f"
+      }
+    ],
+    "step": {
+      "fine": 0.2,
+      "coarse": 1.0
+    }
+  },
+  "dynamic_ambience_shape": {
+    "minDisplayValue": -100,
+    "maxDisplayValue": 100,
+    "format": [
+      {
+        "lowerBound": -99999,
+        "upperBound": -0.5,
+        "format": "%.0f",
+        "formatUnits": "Early %.0f",
+        "unitsMultiplier": -1
+      },
+      {
+        "lowerBound": -0.5,
+        "upperBound": 0.5,
+        "format": "%.0f",
+        "formatUnits": "Even"
+      },
+      {
+        "lowerBound": 0.5,
+        "upperBound": 999999,
+        "format": "%.0f",
+        "formatUnits": "Late %.0f"
+      }
+    ],
+    "step": {
+      "fine": 1.0,
+      "coarse": 10.0
+    }
+  },
+  "dynamix_flanger_mix": {
+    "canDisplayHigherRes": true,
+    "dspToDisplayScale": 100,
+    "format": [
+      {
+        "lowerBound": 0.0,
+        "upperBound": 0.9,
+        "format": "%.0f",
+        "formatUnits": "Out"
+      },
+      {
+        "lowerBound": 0.9,
+        "upperBound": 49.5,
+        "format": "%.0f",
+        "formatUnits": "%.0f %%"
+      },
+      {
+        "lowerBound": 49.5,
+        "upperBound": 50.5,
+        "format": "%.0f",
+        "formatUnits": "In"
+      },
+      {
+        "lowerBound": 50.5,
+        "upperBound": 99.5,
+        "format": "%.0f",
+        "formatUnits": "%.0f %%"
+      },
+      {
+        "lowerBound": 99.5,
+        "upperBound": 100.01,
+        "format": "%.0f",
+        "formatUnits": "Delay"
+      }
+    ],
+    "step": {
+      "fine": 1.0,
+      "coarse": 10.0
+    }
+  },
+  "eq_high_cut": {
+    "step": [
+      {
+        "lowerBound": 0.0,
+        "upperBound": 20.0,
+        "fine": 0.1,
+        "coarse": 1
+      },
+      {
+        "lowerBound": 20.0,
+        "upperBound": 100.0,
+        "fine": 1,
+        "coarse": 10
+      },
+      {
+        "lowerBound": 100.0,
+        "upperBound": 1000.0,
+        "fine": 1,
+        "coarse": 10
+      },
+      {
+        "lowerBound": 1000.0,
+        "upperBound": 99999.0,
+        "fine": 100,
+        "coarse": 1000
+      }
+    ],
+    "format": [
+      {
+        "lowerBound": 0.0,
+        "upperBound": 1000.0,
+        "format": "%.0f",
+        "formatUnits": "%.0f Hz"
+      },
+      {
+        "lowerBound": 1000.0,
+        "upperBound": 20000.1,
+        "unitsMultiplier": 0.001,
+        "format": "%.0f",
+        "formatUnits": "%.1f kHz"
+      },
+      {
+        "lowerBound": 20000.1,
+        "upperBound": 99999.0,
+        "format": "Off"
+      }
+    ]
+  },
+  "eq_high_cut_tubepre": {
+    "step": [
+      {
+        "lowerBound": 0.0,
+        "upperBound": 20.0,
+        "fine": 0.1,
+        "coarse": 1
+      },
+      {
+        "lowerBound": 20.0,
+        "upperBound": 100.0,
+        "fine": 1,
+        "coarse": 10
+      },
+      {
+        "lowerBound": 100.0,
+        "upperBound": 1000.0,
+        "fine": 1,
+        "coarse": 10
+      },
+      {
+        "lowerBound": 1000.0,
+        "upperBound": 99999.0,
+        "fine": 100,
+        "coarse": 1000
+      }
+    ],
+    "format": [
+      {
+        "lowerBound": 0.0,
+        "upperBound": 1000.0,
+        "format": "%.0f",
+        "formatUnits": "%.0f Hz"
+      },
+      {
+        "lowerBound": 1000.0,
+        "upperBound": 20000.0,
+        "unitsMultiplier": 0.001,
+        "format": "%.0f",
+        "formatUnits": "%.1f kHz"
+      },
+      {
+        "lowerBound": 20000.0,
+        "upperBound": 99999.0,
+        "format": "Off"
+      }
+    ]
+  },
+  "eq_low_cut": {
+    "step": [
+      {
+        "lowerBound": 0.0,
+        "upperBound": 20.0,
+        "fine": 0.1,
+        "coarse": 1
+      },
+      {
+        "lowerBound": 20.0,
+        "upperBound": 100.0,
+        "fine": 1,
+        "coarse": 10
+      },
+      {
+        "lowerBound": 100.0,
+        "upperBound": 1000.0,
+        "fine": 1,
+        "coarse": 10
+      },
+      {
+        "lowerBound": 1000.0,
+        "upperBound": 99999.0,
+        "fine": 100,
+        "coarse": 1000
+      }
+    ],
+    "format": [
+      {
+        "lowerBound": 0.0,
+        "upperBound": 20.0,
+        "format": "Off",
+        "formatUnits": "Off"
+      },
+      {
+        "lowerBound": 20.0,
+        "upperBound": 1000.0,
+        "format": "%.0f",
+        "formatUnits": "%.0f Hz"
+      },
+      {
+        "lowerBound": 1000.0,
+        "upperBound": 99999.0,
+        "unitsMultiplier": 0.001,
+        "format": "%.0f",
+        "formatUnits": "%.1f kHz"
+      }
+    ]
+  },
+  "eq_low_cut_tubepre": {
+    "step": [
+      {
+        "lowerBound": 10.0,
+        "upperBound": 20.0,
+        "fine": 0.1,
+        "coarse": 1
+      },
+      {
+        "lowerBound": 20.0,
+        "upperBound": 100.0,
+        "fine": 1,
+        "coarse": 10
+      },
+      {
+        "lowerBound": 100.0,
+        "upperBound": 1000.0,
+        "fine": 1,
+        "coarse": 10
+      },
+      {
+        "lowerBound": 1000.0,
+        "upperBound": 99999.0,
+        "fine": 100,
+        "coarse": 1000
+      }
+    ],
+    "format": [
+      {
+        "lowerBound": 0.0,
+        "upperBound": 10.1,
+        "format": "Off",
+        "formatUnits": "Off"
+      },
+      {
+        "lowerBound": 10.1,
+        "upperBound": 20.0,
+        "format": "%.1f",
+        "formatUnits": "%.1f Hz"
+      },
+      {
+        "lowerBound": 20.0,
+        "upperBound": 1000.0,
+        "format": "%.0f",
+        "formatUnits": "%.0f Hz"
+      },
+      {
+        "lowerBound": 1000.0,
+        "upperBound": 99999.0,
+        "unitsMultiplier": 0.001,
+        "format": "%.0f",
+        "formatUnits": "%.1f kHz"
+      }
+    ]
+  },
+  "frequency": {
+    "step": [
+      {
+        "lowerBound": 0.0,
+        "upperBound": 20.0,
+        "fine": 0.1,
+        "coarse": 1
+      },
+      {
+        "lowerBound": 20.0,
+        "upperBound": 100.0,
+        "fine": 1,
+        "coarse": 10
+      },
+      {
+        "lowerBound": 100.0,
+        "upperBound": 1000.0,
+        "fine": 1,
+        "coarse": 10
+      },
+      {
+        "lowerBound": 1000.0,
+        "upperBound": 99999.0,
+        "fine": 100,
+        "coarse": 1000
+      }
+    ],
+    "format": [
+      {
+        "lowerBound": 0,
+        "upperBound": 20,
+        "format": "%.1f",
+        "formatUnits": "%.1f Hz"
+      },
+      {
+        "lowerBound": 20,
+        "upperBound": 1000,
+        "format": "%.0f",
+        "formatUnits": "%.0f Hz"
+      },
+      {
+        "lowerBound": 1000,
+        "upperBound": 999999,
+        "unitsMultiplier": 0.001,
+        "format": "%.0f",
+        "formatUnits": "%.1f kHz"
+      }
+    ]
+  },
+  "generic_knob": {
+    "dspToDisplayScale": 10,
+    "format": "%.1f",
+    "step": {
+      "fine": 0.1,
+      "coarse": 1.0
+    }
+  },
+  "osc_freq": {
+    "step": [
+      {
+        "lowerBound": -99999,
+        "upperBound": -1.1,
+        "fine": 0.096,
+        "coarse": 0.384
+      },
+      {
+        "lowerBound": -1.0999,
+        "upperBound": 1.0999,
+        "fine": 0.048,
+        "coarse": 0.192
+      },
+      {
+        "lowerBound": 1.1,
+        "upperBound": 99999,
+        "fine": 0.096,
+        "coarse": 0.384
+      }
+    ],
+    "format": [
+      {
+        "lowerBound": -99999,
+        "upperBound": -0.999,
+        "format": "%+.1f"
+      },
+      {
+        "lowerBound": -0.999,
+        "upperBound": 0.999,
+        "format": "%+.2f"
+      },
+      {
+        "lowerBound": 1.0,
+        "upperBound": 99999,
+        "format": "%+.1f"
+      }
+    ]
+  },
+  "pan": {
+    "minDisplayValue": -100,
+    "maxDisplayValue": 100,
+    "zeroValue": 0.0,
+    "format": [
+      {
+        "lowerBound": -99999,
+        "upperBound": -0.5,
+        "format": "%.0f",
+        "formatUnits": "Left %.0f",
+        "unitsMultiplier": -1
+      },
+      {
+        "lowerBound": -0.5,
+        "upperBound": 0.5,
+        "format": "%.0f",
+        "formatUnits": "Center"
+      },
+      {
+        "lowerBound": 0.5,
+        "upperBound": 999999,
+        "format": "%.0f",
+        "formatUnits": "Right %.0f"
+      }
+    ],
+    "step": {
+      "fine": 1.0,
+      "coarse": 10.0
+    }
+  },
+  "pansteroimager_width": {
+    "dspToDisplayScale": 100,
+    "format": [
+      {
+        "lowerBound": -0.5,
+        "upperBound": 0.5,
+        "format": "%.0f",
+        "formatUnits": "Mono"
+      },
+      {
+        "lowerBound": 0.5,
+        "upperBound": 199.5,
+        "format": "%.0f",
+        "formatUnits": "%.0f %%"
+      },
+      {
+        "lowerBound": 199.5,
+        "upperBound": 999999,
+        "format": "%.0f %%"
+      }
+    ],
+    "step": {
+      "fine": 1.0,
+      "coarse": 10.0
+    }
+  },
+  "percent": {
+    "dspToDisplayScale": 100,
+    "format": "%.0f",
+    "formatUnits": "%.0f %%",
+    "step": {
+      "fine": 1.0,
+      "coarse": 10.0
+    }
+  },
+  "percent_width": {
+    "dspToDisplayScale": 100,
+    "format": [
+      {
+        "lowerBound": -0.5,
+        "upperBound": 0.5,
+        "format": "%.0f",
+        "formatUnits": "Center"
+      },
+      {
+        "lowerBound": 0.5,
+        "upperBound": 99.5,
+        "format": "%.0f",
+        "formatUnits": "%.0f %%"
+      },
+      {
+        "lowerBound": 99.5,
+        "upperBound": 999999,
+        "format": "%.0f",
+        "formatUnits": "Wide"
+      }
+    ],
+    "step": {
+      "fine": 1.0,
+      "coarse": 10.0
+    }
+  },
+  "percent_zero_off": {
+    "dspToDisplayScale": 100,
+    "format": [
+      {
+        "lowerBound": -0.1,
+        "upperBound": 0.1,
+        "format": "%.0f",
+        "formatUnits": "Off"
+      },
+      {
+        "lowerBound": 0.1,
+        "upperBound": 100.1,
+        "format": "%.0f",
+        "formatUnits": "%.0f %%"
+      }
+    ],
+    "step": {
+      "fine": 1.0,
+      "coarse": 10.0
+    }
+  },
+  "raw_knob": {
+    "format": [
+      {
+        "lowerBound": -0.1,
+        "upperBound": 0.999,
+        "format": "%.2f"
+      },
+      {
+        "lowerBound": 0.999,
+        "upperBound": 1.001,
+        "format": "%.1f"
+      }
+    ],
+    "step": {
+      "fine": 0.01,
+      "coarse": 0.1
+    }
+  },
+  "rochester_ratio": {
+    "format": [
+      {
+        "lowerBound": 1.0,
+        "upperBound": 7.0,
+        "format": "%.1f",
+        "formatUnits": "%.1f:1"
+      },
+      {
+        "lowerBound": 7.0,
+        "upperBound": 40.0,
+        "format": "%.0f",
+        "formatUnits": "%.0f:1"
+      },
+      {
+        "lowerBound": 40.0,
+        "upperBound": 999.0,
+        "format": "%.0f",
+        "formatUnits": "infinity:1"
+      }
+    ],
+    "step": [
+      {
+        "lowerBound": 1.0,
+        "upperBound": 7.0,
+        "fine": 0.5,
+        "coarse": 1
+      },
+      {
+        "lowerBound": 7.0,
+        "upperBound": 10.0,
+        "fine": 1,
+        "coarse": 10
+      },
+      {
+        "lowerBound": 10.0,
+        "upperBound": 999.0,
+        "fine": 5,
+        "coarse": 10
+      }
+    ]
+  },
+  "sag_ripple": {
+    "dspToDisplayScale": 10,
+    "format": [
+      {
+        "lowerBound": -99999,
+        "upperBound": -0.09,
+        "format": "%.1f"
+      },
+      {
+        "lowerBound": -0.09,
+        "upperBound": 0.09,
+        "format": "Stock"
+      },
+      {
+        "lowerBound": 0.1,
+        "upperBound": 99999,
+        "format": "%.1f"
+      }
+    ],
+    "step": {
+      "fine": 0.1,
+      "coarse": 1.0
+    }
+  },
+  "setlist": {
+    "isDiscrete": true,
+    "controlType": "slider",
+    "format": [
+      "Factory",
+      "User"
+    ]
+  },
+  "Shimmer_pitchblend": {
+    "minDisplayValue": -100,
+    "maxDisplayValue": 100,
+    "format": [
+      {
+        "lowerBound": -999,
+        "upperBound": -0.5,
+        "unitsMultiplier": -1,
+        "format": "%.0f",
+        "formatUnits": "A %.0f"
+      },
+      {
+        "lowerBound": -0.5,
+        "upperBound": 0.5,
+        "format": "%.0f",
+        "formatUnits": "Even"
+      },
+      {
+        "lowerBound": 0.5,
+        "upperBound": 999,
+        "format": "%.0f",
+        "formatUnits": "B %.0f"
+      }
+    ],
+    "step": {
+      "fine": 1.0,
+      "coarse": 10.0
+    }
+  },
+  "Shimmer_shift_OctaveStep": {
+    "step": [
+      {
+        "lowerBound": -12.0,
+        "upperBound": 1.0,
+        "fine": 1.0,
+        "coarse": 1.0
+      },
+      {
+        "lowerBound": -1.0,
+        "upperBound": 1.0,
+        "fine": 0.1,
+        "coarse": 1.0
+      },
+      {
+        "lowerBound": 1.0,
+        "upperBound": 12.0,
+        "fine": 1.0,
+        "coarse": 1.0
+      }
+    ],
+    "format": [
+      {
+        "lowerBound": -12.09,
+        "upperBound": -11.999,
+        "format": "%.0f",
+        "formatUnits": "Oct Down"
+      },
+      {
+        "lowerBound": -11.999,
+        "upperBound": -0.999,
+        "format": "%.0f",
+        "formatUnits": "%+.0f"
+      },
+      {
+        "lowerBound": -0.999,
+        "upperBound": -0.099,
+        "format": "%.1f",
+        "formatUnits": "%+.1f"
+      },
+      {
+        "lowerBound": -0.099,
+        "upperBound": 0.099,
+        "format": "%.1f",
+        "formatUnits": "Unison"
+      },
+      {
+        "lowerBound": 0.099,
+        "upperBound": 1.0,
+        "format": "%.1f",
+        "formatUnits": "%+.1f"
+      },
+      {
+        "lowerBound": 1.0,
+        "upperBound": 11.999,
+        "format": "%.0f",
+        "formatUnits": "%+.0f"
+      },
+      {
+        "lowerBound": 11.999,
+        "upperBound": 12.099,
+        "format": "%.0f",
+        "formatUnits": "Oct Up"
+      }
+    ]
+  },
+  "split_ab_route_to": {
+    "minDisplayValue": -100,
+    "maxDisplayValue": 100,
+    "format": [
+      {
+        "lowerBound": -100,
+        "upperBound": -0.5,
+        "unitsMultiplier": -1,
+        "format": "%.0f",
+        "formatUnits": "A %.0f"
+      },
+      {
+        "lowerBound": -0.5,
+        "upperBound": 0.5,
+        "format": "%.0f",
+        "formatUnits": "Even Split"
+      },
+      {
+        "lowerBound": 0.5,
+        "upperBound": 100.1,
+        "format": "%.0f",
+        "formatUnits": "B %.0f"
+      }
+    ],
+    "step": {
+      "fine": 1.0,
+      "coarse": 10.0
+    }
+  },
+  "tenths_no_units": {
+    "format": "%.1f",
+    "step": {
+      "fine": 0.1,
+      "coarse": 1.0
+    }
+  },
+  "tenths_no_units_signed": {
+    "format": "%+.1f",
+    "step": {
+      "fine": 0.1,
+      "coarse": 1.0
+    }
+  },
+  "tilt": {
+    "minDisplayValue": -100,
+    "maxDisplayValue": 100,
+    "format": [
+      {
+        "lowerBound": -100.0,
+        "upperBound": -0.5,
+        "format": "%.0f",
+        "formatUnits": "Dark %.0f",
+        "unitsMultiplier": -1
+      },
+      {
+        "lowerBound": -0.5,
+        "upperBound": 0.5,
+        "format": "%.0f",
+        "formatUnits": "Flat"
+      },
+      {
+        "lowerBound": 0.5,
+        "upperBound": 100.1,
+        "format": "%.0f",
+        "formatUnits": "Bright %.0f"
+      }
+    ],
+    "step": {
+      "fine": 1,
+      "coarse": 10
+    }
+  },
+  "time_sec": {
+    "format": "%.1f",
+    "formatUnits": "%.1f sec",
+    "step": {
+      "fine": 0.1,
+      "coarse": 1.0
+    }
+  },
+  "time_sec_DynamicHall": {
+    "step": [
+      {
+        "lowerBound": 0.1,
+        "upperBound": 45.1,
+        "fine": 0.1,
+        "coarse": 1.0
+      }
+    ],
+    "format": [
+      {
+        "lowerBound": 0.1,
+        "upperBound": 0.99,
+        "unitsMultiplier": 1000,
+        "format": "%.1f",
+        "formatUnits": "%.0f ms"
+      },
+      {
+        "lowerBound": 1.0,
+        "upperBound": 45.09,
+        "format": "%.1f",
+        "formatUnits": "%.1f sec"
+      },
+      {
+        "lowerBound": 45.1,
+        "upperBound": 45.19,
+        "formatUnits": "Infinity"
+      }
+    ]
+  },
+  "time_ms": {
+    "canDisplayHigherRes": true,
+    "dspToDisplayScale": 1000,
+    "step": [
+      {
+        "lowerBound": 0.0,
+        "upperBound": 1.0,
+        "fine": 0.1,
+        "coarse": 1
+      },
+      {
+        "lowerBound": 1.0,
+        "upperBound": 99999.0,
+        "fine": 1,
+        "coarse": 10
+      }
+    ],
+    "format": [
+      {
+        "lowerBound": 0.0,
+        "upperBound": 9.999,
+        "format": "%.1f",
+        "formatUnits": "%.1f ms"
+      },
+      {
+        "lowerBound": 9.999,
+        "upperBound": 1000.0,
+        "format": "%.0f",
+        "formatUnits": "%.0f ms"
+      },
+      {
+        "lowerBound": 1000,
+        "upperBound": 99999.0,
+        "unitsMultiplier": 0.001,
+        "format": "%.0f",
+        "formatUnits": "%.3f sec"
+      }
+    ]
+  },
+  "time_ms_withOff": {
+    "canDisplayHigherRes": true,
+    "dspToDisplayScale": 1000,
+    "step": [
+      {
+        "lowerBound": 0.0,
+        "upperBound": 1.0,
+        "fine": 0.1,
+        "coarse": 1
+      },
+      {
+        "lowerBound": 1.0,
+        "upperBound": 99999.0,
+        "fine": 1,
+        "coarse": 10
+      }
+    ],
+    "format": [
+      {
+        "lowerBound": 0.0,
+        "upperBound": 0.099,
+        "format": "Off",
+        "formatUnits": "Off"
+      },
+      {
+        "lowerBound": 0.099,
+        "upperBound": 9.999,
+        "format": "%.1f",
+        "formatUnits": "%.1f ms"
+      },
+      {
+        "lowerBound": 9.999,
+        "upperBound": 1000.0,
+        "format": "%.0f",
+        "formatUnits": "%.0f ms"
+      },
+      {
+        "lowerBound": 1000,
+        "upperBound": 99999.0,
+        "unitsMultiplier": 0.001,
+        "format": "%.0f",
+        "formatUnits": "%.3f sec"
+      }
+    ]
+  },
+  "time_ms_dualcab": {
+    "canDisplayHigherRes": true,
+    "dspToDisplayScale": 1000,
+    "step": [
+      {
+        "lowerBound": -0.1,
+        "upperBound": 0.5,
+        "fine": 0.02,
+        "coarse": 1
+      },
+      {
+        "lowerBound": 0.5,
+        "upperBound": 5.0,
+        "fine": 0.1,
+        "coarse": 1
+      },
+      {
+        "lowerBound": 5.0,
+        "upperBound": 99999.0,
+        "fine": 1,
+        "coarse": 10
+      }
+    ],
+    "format": [
+      {
+        "lowerBound": -0.1,
+        "upperBound": 0.0,
+        "format": "%.1f",
+        "formatUnits": "Auto"
+      },
+      {
+        "lowerBound": 0.0,
+        "upperBound": 0.001,
+        "format": "%.1f",
+        "formatUnits": "%.1f ms"
+      },
+      {
+        "lowerBound": 0.01,
+        "upperBound": 0.49,
+        "format": "%.2f",
+        "formatUnits": "%.2f ms"
+      },
+      {
+        "lowerBound": 0.49,
+        "upperBound": 9.9,
+        "format": "%.1f",
+        "formatUnits": "%.1f ms"
+      },
+      {
+        "lowerBound": 9.95,
+        "upperBound": 1000.0,
+        "format": "%.0f",
+        "formatUnits": "%.0f ms"
+      }
+    ]
+  },
+  "time_ms_dualir": {
+    "dspToDisplayScale": 1000,
+    "step": [
+      {
+        "lowerBound": 0.0,
+        "upperBound": 0.5,
+        "fine": 0.02,
+        "coarse": 1
+      },
+      {
+        "lowerBound": 0.5,
+        "upperBound": 5.0,
+        "fine": 0.1,
+        "coarse": 1
+      },
+      {
+        "lowerBound": 5.0,
+        "upperBound": 50.1,
+        "fine": 1.0,
+        "coarse": 10.0
+      }
+    ],
+    "format": [
+      {
+        "lowerBound": -0.01,
+        "upperBound": 0.01,
+        "format": "%.1f",
+        "formatUnits": "Off"
+      },
+      {
+        "lowerBound": 0.01,
+        "upperBound": 0.49,
+        "format": "%.1f",
+        "formatUnits": "%.2f ms"
+      },
+      {
+        "lowerBound": 0.49,
+        "upperBound": 9.95,
+        "format": "%.1f",
+        "formatUnits": "%.1f ms"
+      },
+      {
+        "lowerBound": 9.95,
+        "upperBound": 50.1,
+        "format": "%.0f",
+        "formatUnits": "%.0f ms"
+      }
+    ]
+  },
+  "variax_volume_tone": {
+    "format": [
+      {
+        "lowerBound": -1,
+        "upperBound": 0.0,
+        "format": "%.0f",
+        "formatUnits": "Don't Force"
+      },
+      {
+        "lowerBound": 0.0,
+        "upperBound": 10.1,
+        "format": "%.1f"
+      }
+    ],
+    "step": {
+      "fine": 0.1,
+      "coarse": 1.0
+    }
+  },
+  "volume": {
+    "format": "%+.1f",
+    "formatUnits": "%+.1f dB",
+    "step": [
+      {
+        "lowerBound": -120.0,
+        "upperBound": -30.0,
+        "fine": 0.1,
+        "coarse": 10.0
+      },
+      {
+        "lowerBound": -30.0,
+        "upperBound": -20.0,
+        "fine": 0.1,
+        "coarse": 5
+      },
+      {
+        "lowerBound": -20.0,
+        "upperBound": -6.0,
+        "fine": 0.1,
+        "coarse": 2
+      },
+      {
+        "lowerBound": -6.0,
+        "upperBound": 6.0,
+        "fine": 0.1,
+        "coarse": 1
+      },
+      {
+        "lowerBound": 6.0,
+        "upperBound": 20.0,
+        "fine": 0.1,
+        "coarse": 2
+      },
+      {
+        "lowerBound": 20.0,
+        "upperBound": 30.0,
+        "fine": 0.1,
+        "coarse": 5
+      },
+      {
+        "lowerBound": 30.0,
+        "upperBound": 120.0,
+        "fine": 0.1,
+        "coarse": 10.0
+      }
+    ]
+  },
+  
+  "band": {
+    "isDiscrete": true,
+    "controlType": "segmented",
+    "format": [
+      "Low Cut",
+      "Low Shelf",
+      "Low",
+      "Mid",
+      "High",
+      "High Shelf",
+      "High Cut"
+    ]
+  },
+  "bank": {
+    "isDiscrete": true,
+    "format": [
+      {
+        "lowerBound": -999999,
+        "upperBound": 0,
+        "format": "Off"
+      },
+      {
+        "lowerBound": 0,
+        "upperBound": 999999,
+        "format": "%d"
+      }
+    ],
+    "dspToDisplayIntegerOffset": -1,
+    "step": {
+      "fine": 1,
+      "coarse": 10
+    }
+  },
+  "bypass_behavior": {
+    "isDiscrete": true,
+    "controlType": "segmented",
+    "dspToDisplayIntegerOffset": -2,
+    "format": [
+      "Toggle",
+      "Heel Down",
+      "Toe Down"
+    ]
+  },
+  "cc_action": {
+    "isDiscrete": true,
+    "format": [
+      "Press",
+      "Release",
+      "Hold",
+      "Toggle"
+    ]
+  },
+  "cc_action_no_toggle": {
+    "isDiscrete": true,
+    "format": [
+      "Press",
+      "Release",
+      "Hold"
+    ]
+  },
+  "cc_drum_action": {
+    "isDiscrete": true,
+    "format": [
+      "Strike",
+      "Toggle"
+    ]
+  },
+  "cc_presetsnapshot_command": {
+    "isDiscrete": true,
+    "format": [
+      "Next Bank",
+      "Prev Bank",
+      "Next Preset",
+      "Prev Preset",
+      "Preset",
+      "Next Snap",
+      "Prev Snap",
+      "Snapshot"
+    ]
+  },
+  "cc_song_command": {
+    "isDiscrete": true,
+    "format": [
+      "Play/Pause",
+      "Prev Song",
+      "Next Song",
+      "Prev Marker",
+      "Next Marker",
+      "Return to Zero",
+      "Cycle"
+    ]
+  },
+  "cc_looper_command": {
+    "isDiscrete": true,
+    "format": [
+      "Play/Stop",
+      "Record/Overdub",
+      "Play Once",
+      "Clear Loop",
+      "Reverse/Forward",
+      "Half/Full Speed",
+      "Undo/Redo"
+    ]
+  },
+  "cc_utility_command": {
+    "isDiscrete": true,
+    "format": [
+      "Save",
+      "Mute All",
+      "Stopwatch"
+    ]
+  },
+  "cc_extamp_select": {
+    "isDiscrete": true,
+    "format": [
+      "A (Tip)",
+      "B (Ring)",
+      "A and B",
+      "C (Tip)",
+      "D (Ring)",
+      "C and D"
+    ]
+  },
+  "cc_extamp_state": {
+    "isDiscrete": true,
+    "format": [
+      "Close",
+      "Open"
+    ]
+  },
+  "cc_midi_command": {
+    "isDiscrete": true,
+    "format": [
+      "Bank/Program",
+      "CC",
+      "Note On",
+      "MMC"
+    ]
+  },
+  "cc_midi_message": {
+    "isDiscrete": true,
+    "format": [
+      "Play",
+      "Stop",
+      "Forward",
+      "Rewind",
+      "Pause",
+      "Record",
+      "Punch In",
+      "Punch Out"
+    ]
+  },
+  "cab_mic_model": {
+    "isDiscrete": true,
+    "format": [
+      "57 Dynamic",
+      "421 Dynamic",
+      "7 Dynamic",
+      "906 Dynamic",
+      "30 Dynamic",
+      "121 Ribbon",
+      "160 Ribbon",
+      "4038 Ribbon",
+      "84 Ribbon",
+      "414 Cond",
+      "47 Cond FET",
+      "67 Cond"
+    ]
+  },
+  "cab_mic_model_bass": {
+    "isDiscrete": true,
+    "format": [
+      "57 Dynamic",
+      "421 Dynamic",
+      "7 Dynamic",
+      "88 Dynamic",
+      "52 Dynamic",
+      "112 Dynamic",
+      "D6 Dynamic",
+      "40 Dynamic",
+      "4038 Ribbon",
+      "414 Cond",
+      "47 Cond FET",
+      "67 Cond"
+    ]
+  },
+  "crisscross_shape": {
+    "isDiscrete": true,
+    "controlType": "segmented",
+    "dspToDisplayIntegerOffset": -2,
+    "format": [
+      "Sine",
+      "Triangle"
+    ]
+  },
+  "dt_12ax7boost": {
+    "isDiscrete": true,
+    "format": [
+      "Bypass",
+      "Enable"
+    ]
+  },
+  "dt_channel": {
+    "isDiscrete": true,
+    "format": [
+      "A (Helix)",
+      "B (DT Pre)"
+    ]
+  },
+  "dt_feedbackcap": {
+    "isDiscrete": true,
+    "format": [
+      "X (Tight)",
+      "Y (Smooth)"
+    ]
+  },
+  "dt_poweramp": {
+    "isDiscrete": true,
+    "format": [
+      "Class A",
+      "Class AB"
+    ]
+  },
+  "dt_remote": {
+    "isDiscrete": true,
+    "controlType": "segmented",
+    "format": [
+      "Off",
+      "Preset",
+      "Global"
+    ]
+  },
+  "dt_select": {
+    "isDiscrete": true,
+    "controlType": "segmented",
+    "format": [
+      "1",
+      "2",
+      "1+2 Link"
+    ]
+  },
+  "dt_topology": {
+    "isDiscrete": true,
+    "format": [
+      "I (Tight)",
+      "II (Loose)",
+      "III (ZNF)",
+      "IV (Resonant)"
+    ]
+  },
+  "dt_tubeconfig": {
+    "isDiscrete": true,
+    "format": [
+      "Triode",
+      "Pentode"
+    ]
+  },
+  "ext_amp_select": {
+    "isDiscrete": true,
+    "format": [
+      "1 (Tip)",
+      "2 (Ring)",
+      "1 and 2"
+    ]
+  },
+  "ext_amp_select_f15": {
+    "isDiscrete": true,
+    "format": [
+      "1 (Tip)",
+      "1 (Ring)",
+      "2 (Tip)",
+      "2 (Ring)",
+      "1(T + R)",
+      "2(T + R)"
+    ]
+  },
+  "ext_amp_instant_select": {
+    "isDiscrete": true,
+    "format": [
+      "None",
+      "1 (Tip)",
+      "2 (Ring)",
+      "1 and 2"
+    ]
+  },
+  "ext_amp_instant_select_f15": {
+    "isDiscrete": true,
+    "format": [
+      "None 1",
+      "1 (Tip)",
+      "1 (Ring)",
+      "None 2",
+      "2 (Tip)",
+      "2 (Ring)",
+      "1(T + R)",
+      "2(T + R)"
+    ]
+  },
+  "fsBehavior": {
+    "isDiscrete": true,
+    "format": [
+      "Press/Release",
+      "Press/Hold"
+    ]
+  },
+  "guitar_input_z": {
+    "isDiscrete": true,
+    "format": [
+      "Auto",
+      "10k Ohm",
+      "22k Ohm",
+      "32k Ohm",
+      "70k Ohm",
+      "90k Ohm",
+      "136k Ohm",
+      "230k Ohm",
+      "1M Ohm"
+    ]
+  },
+  "inst_pad": {
+    "isDiscrete": true,
+    "controlType": "segmented",
+    "dspToDisplayIntegerOffset": -1,
+    "format": [
+      "Off/Inst",
+      "On/Line"
+    ]
+  },
+  "input_type": {
+    "isDiscrete": true,
+    "allowDiscreteStates": true,
+    "format": [
+      "None",
+      "Multi (Guitar, Aux, Variax)",
+      "Guitar",
+      "Aux",
+      "Variax",
+      "Variax Magnetics",
+      "Mic",
+      "Return 1",
+      "Return 2",
+      "Return 3",
+      "Return 4",
+      "Return 1/2",
+      "Return 3/4",
+      "S/PDIF",
+      "USB 3/4",
+      "USB 5/6",
+      "USB 7/8"
+    ]
+  },
+  "input_type_lt": {
+    "isDiscrete": true,
+    "allowDiscreteStates": true,
+    "format": [
+      "None",
+      "Multi (Guitar, Variax)",
+      "Guitar",
+      "Aux",
+      "Variax",
+      "Variax Magnetics",
+      "Mic",
+      "Return 1",
+      "Return 2",
+      "Return 3",
+      "Return 4",
+      "Return 1/2",
+      "Return 3/4",
+      "S/PDIF",
+      "USB 3/4",
+      "USB 5/6",
+      "USB 7/8"
+    ]
+  },
+  "input_type_native": {
+    "isDiscrete": true,
+    "allowDiscreteStates": true,
+    "format": [
+      "None",
+      "Host"
+    ]
+  },
+  "integer_slider": {
+    "isDiscrete": true
+  },
+  "integer_slider_cc": {
+    "isDiscrete": true,
+    "step": {
+      "fine": 1,
+      "coarse": 10
+    }
+  },
+  "integer_slider_1based": {
+    "isDiscrete": true,
+    "dspToDisplayIntegerOffset": 1
+  },
+  "integer_slider_signed": {
+    "isDiscrete": true,
+    "format": "%+d"
+  },
+  "ir_select": {
+    "isDiscrete": true,
+    "format": [
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-",
+      "-"
+    ]
+  },
+  "key_keystroke": {
+    "isDiscrete": true,
+    "format": [
+      "None",
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U",
+      "V",
+      "W",
+      "X",
+      "Y",
+      "Z",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "0",
+      "Enter",
+      "Escape",
+      "Backspace",
+      "Tab",
+      "Space",
+      "-",
+      "=",
+      "[",
+      "]",
+      "\\",
+      "Non-US #",
+      ";",
+      "'",
+      "`",
+      ",",
+      ".",
+      "/",
+      "Caps Lock",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "F10",
+      "F11",
+      "F12",
+      "Print Screen",
+      "Scroll Lock",
+      "Pause",
+      "Insert",
+      "Home",
+      "Page Up",
+      "Delete",
+      "End",
+      "Page Down",
+      "Right Arrow",
+      "Left Arrow",
+      "Down Arrow",
+      "Up Arrow",
+      "Num Lock",
+      "Keypad /",
+      "Keypad *",
+      "Keypad -",
+      "Keypad +",
+      "Keypad Enter",
+      "Keypad 1",
+      "Keypad 2",
+      "Keypad 3",
+      "Keypad 4",
+      "Keypad 5",
+      "Keypad 6",
+      "Keypad 7",
+      "Keypad 8",
+      "Keypad 9",
+      "Keypad 0",
+      "Keypad .",
+      "Non-US \\",
+      "App",
+      "Power"
+    ]
+  },
+  "key_modifier_win": {
+    "isDiscrete": true,
+    "format": [
+      "None",
+      "Shift",
+      "Alt",
+      "Ctrl",
+      "Windows"
+    ]
+  },
+  "key_modifier_mac": {
+    "isDiscrete": true,
+    "format": [
+      "None",
+      "Shift (\u21E7)",
+      "Option (\u2325)",
+      "Ctrl (^)",
+      "Command (\u2318)"
+    ]
+  },
+  "latching": {
+    "isDiscrete": true,
+    "controlType": "segmented",
+    "format": [
+      "Latching",
+      "Momentary"
+    ]
+  },
+  "footswitchLED": {
+    "isDiscrete": true,
+    "format": [
+      "Auto Color",
+      "White",
+      "Red",
+      "Dark Orange",
+      "Light Orange",
+      "Yellow",
+      "Green",
+      "Turquoise",
+      "Blue",
+      "Violet",
+      "Pink",
+      "Off"
+    ]
+  },
+  "looperFunction": {
+    "isDiscrete": true,
+    "format": [
+      "None",
+      "Play",
+      "Stop",
+      "Play/Stop",
+      "Record",
+      "Overdub",
+      "Record/Overdub",
+      "Play Once",
+      "Reverse",
+      "Forward",
+      "Forward/Reverse",
+      "Half Speed",
+      "Full Speed",
+      "Half/Full Speed",
+      "Undo"
+    ]
+  },
+  "looperFunctionInst": {
+    "isDiscrete": true,
+    "format": [
+      "Play",
+      "Stop",
+      "Play/Stop",
+      "Record",
+      "Overdub",
+      "Record/Overdub",
+      "Play Once",
+      "Reverse",
+      "Forward",
+      "Forward/Reverse",
+      "Half Speed",
+      "Full Speed",
+      "Half/Full Speed",
+      "Undo"
+    ]
+  },
+  "mmc": {
+    "isDiscrete": true,
+    "format": [
+      "Stop",
+      "Play",
+      "Forward",
+      "Rewind",
+      "Pause"
+    ]
+  },
+  "mmc_f15_280": {
+    "isDiscrete": true,
+    "format": [
+      "Stop",
+      "Play",
+      "Forward",
+      "Rewind",
+      "Pause",
+      "Record",
+      "Punch In",
+      "Punch Out"
+    ]
+  },
+  "midi_cc": {
+    "isDiscrete": true,
+    "format": [
+      {
+        "lowerBound": 0,
+        "upperBound": 999999,
+        "format": "%d",
+        "formatUnits": "CC%d"
+      }
+    ],
+    "step": {
+      "fine": 1,
+      "coarse": 10
+    }
+  },
+  "midi_pc": {
+    "isDiscrete": true,
+    "allowDiscreteStates": true,
+    "format": [
+      {
+        "lowerBound": -1,
+        "upperBound": 0,
+        "format": "Off"
+      },
+      {
+        "lowerBound": 0,
+        "upperBound": 999999,
+        "format": "%d",
+        "formatUnits": "%d"
+      }
+    ]
+  },
+  "midi_channel": {
+    "isDiscrete": true,
+    "format": [
+      {
+        "lowerBound": 0,
+        "upperBound": 1,
+        "format": "Base"
+      },
+      {
+        "lowerBound": 1,
+        "upperBound": 999999,
+        "format": "%d"
+      }
+    ]
+  },
+  "midi_note": {
+    "isDiscrete": true,
+    "format": [
+      "C-1",
+      "C#-1",
+      "D-1",
+      "D#-1",
+      "E-1",
+      "F-1",
+      "F#-1",
+      "G-1",
+      "G#-1",
+      "A-1",
+      "A#-1",
+      "B-1",
+      "C0",
+      "C#0",
+      "D0",
+      "D#0",
+      "E0",
+      "F0",
+      "F#0",
+      "G0",
+      "G#0",
+      "A0",
+      "A#0",
+      "B0",
+      "C1",
+      "C#1",
+      "D1",
+      "D#1",
+      "E1",
+      "F1",
+      "F#1",
+      "G1",
+      "G#1",
+      "A1",
+      "A#1",
+      "B1",
+      "C2",
+      "C#2",
+      "D2",
+      "D#2",
+      "E2",
+      "F2",
+      "F#2",
+      "G2",
+      "G#2",
+      "A2",
+      "A#2",
+      "B2",
+      "C3",
+      "C#3",
+      "D3",
+      "D#3",
+      "E3",
+      "F3",
+      "F#3",
+      "G3",
+      "G#3",
+      "A3",
+      "A#3",
+      "B3",
+      "C4",
+      "C#4",
+      "D4",
+      "D#4",
+      "E4",
+      "F4",
+      "F#4",
+      "G4",
+      "G#4",
+      "A4",
+      "A#4",
+      "B4",
+      "C5",
+      "C#5",
+      "D5",
+      "D#5",
+      "E5",
+      "F5",
+      "F#5",
+      "G5",
+      "G#5",
+      "A5",
+      "A#5",
+      "B5",
+      "C6",
+      "C#6",
+      "D6",
+      "D#6",
+      "E6",
+      "F6",
+      "F#6",
+      "G6",
+      "G#6",
+      "A6",
+      "A#6",
+      "B6",
+      "C7",
+      "C#7",
+      "D7",
+      "D#7",
+      "E7",
+      "F7",
+      "F#7",
+      "G7",
+      "G#7",
+      "A7",
+      "A#7",
+      "B7",
+      "C8",
+      "C#8",
+      "D8",
+      "D#8",
+      "E8",
+      "F8",
+      "F#8",
+      "G8",
+      "G#8",
+      "A8",
+      "A#8",
+      "B8",
+      "C9",
+      "C#9",
+      "D9",
+      "D#9",
+      "E9",
+      "F9",
+      "F#9",
+      "G9"
+    ],
+    "step": {
+      "fine": 1,
+      "coarse": 12
+    }
+  },
+  "off_on": {
+    "isDiscrete": true,
+    "controlType": "segmented",
+    "format": [
+      "Off",
+      "On"
+    ]
+  },
+  "output_type": {
+    "isDiscrete": true,
+    "allowDiscreteStates": true,
+    "format": [
+      "None",
+      "Multi (1/4\", XLR, Digital, USB 1/2)",
+      "Path 2A",
+      "Path 2B",
+      "Path 2A+B",
+      "1/4\"",
+      "XLR",
+      "Send 1/2",
+      "Send 3/4",
+      "Digital (S/PDIF, AES/EBU, or L6 LINK)",
+      "USB 1/2",
+      "USB 3/4",
+      "USB 5/6"
+    ]
+  },
+  "output_type_lt": {
+    "isDiscrete": true,
+    "allowDiscreteStates": true,
+    "format": [
+      "None",
+      "Multi (1/4\", XLR, Digital, USB 1/2)",
+      "Path 2A",
+      "Path 2B",
+      "Path 2A+B",
+      "1/4\"",
+      "XLR",
+      "Send 1/2",
+      "Send 3/4",
+      "Digital (AES/EBU, or L6 LINK)",
+      "USB 1/2",
+      "USB 3/4",
+      "USB 5/6"
+    ]
+  },
+  "output_type_native": {
+    "isDiscrete": true,
+    "allowDiscreteStates": true,
+    "format": [
+      "None",
+      "Host",
+      "Path 2A",
+      "Path 2B",
+      "Path 2A+B"
+    ]
+  },
+  "pattern_trem_step": {
+    "isDiscrete": true,
+    "format": [
+      {
+        "lowerBound": 0,
+        "upperBound": 1,
+        "format": "Mute"
+      },
+      {
+        "lowerBound": 1,
+        "upperBound": 17,
+        "format": "%d"
+      },
+      {
+        "lowerBound": 17,
+        "upperBound": 999999,
+        "format": "Full"
+      }
+    ]
+  },
+  "percent_discrete": {
+    "isDiscrete": true,
+    "dspToDisplayScale": 100,
+    "format": "%d",
+    "formatUnits": "%d %%"
+  },
+  "powercab_color": {
+    "isDiscrete": true,
+    "format": [
+      "Auto",
+      "White",
+      "Red",
+      "Blue",
+      "Green",
+      "Yellow",
+      "Cyan",
+      "Magenta",
+      "Off"
+    ]
+  },
+  "powercab_mode": {
+    "isDiscrete": true,
+    "controlType": "segmented",
+    "format": [
+      "Flat",
+      "Speaker",
+      "User IR"
+    ]
+  },
+  "powercab_remote": {
+    "isDiscrete": true,
+    "controlType": "segmented",
+    "format": [
+      "Off",
+      "Preset",
+      "Global"
+    ]
+  },
+  "powercab_select": {
+    "isDiscrete": true,
+    "controlType": "segmented",
+    "format": [
+      "1",
+      "2",
+      "1+2 Link"
+    ]
+  },
+  "powercab_speaker": {
+    "isDiscrete": true,
+    "format": [
+      "Vintage",
+      "Green",
+      "Cream",
+      "Jarvis",
+      "Bayou",
+      "Essex",
+      "Natural",
+      "Dino",
+      "Lecto",
+      "Herald",
+      "Brown",
+      "Shade",
+      "Jetson"
+    ]
+  },
+  "powercab_voicing": {
+    "isDiscrete": true,
+    "controlType": "segmented",
+    "format": [
+      "FRFR",
+      "LF Flat",
+      "LF Raw"
+    ]
+  },
+  "sidechain": {
+    "isDiscrete": true,
+    "format": [
+      "Off",
+      "Instrument 1",
+      "Instrument 2",
+      "Mic",
+      "Return 1",
+      "Return 2",
+      "Return 3",
+      "Return 4",
+      "USB 3",
+      "USB 4",
+      "USB 5",
+      "USB 6",
+      "USB 7",
+      "USB 8"
+    ]
+  },
+  "slope": {
+    "isDiscrete": true,
+    "format": [
+      "6 dB/octave",
+      "12 dB/octave",
+      "18 dB/octave",
+      "24 dB/octave"
+    ]
+  },
+  "snapshotFunction": {
+    "isDiscrete": true,
+    "format": [
+      "None",
+      "Next",
+      "Prev",
+      "SNAPSHOT 1",
+      "SNAPSHOT 2",
+      "SNAPSHOT 3",
+      "SNAPSHOT 4",
+      "SNAPSHOT 5",
+      "SNAPSHOT 6",
+      "SNAPSHOT 7",
+      "SNAPSHOT 8"
+    ]
+  },
+  "snapshotFunction_F15": {
+    "isDiscrete": true,
+    "format": [
+      "None",
+      "Next",
+      "Prev",
+      "SNAPSHOT 1",
+      "SNAPSHOT 2",
+      "SNAPSHOT 3",
+      "SNAPSHOT 4"
+    ]
+  },
+  "snapshotFunction_P33": {
+    "isDiscrete": true,
+    "format": [
+      "None",
+      "Next",
+      "Prev",
+      "SNAPSHOT 1",
+      "SNAPSHOT 2",
+      "SNAPSHOT 3"
+    ]
+  },
+  "snapshotFunction_P36": {
+    "isDiscrete": true,
+    "format": [
+      "None",
+      "Next",
+      "Prev",
+      "SNAPSHOT 1",
+      "SNAPSHOT 2",
+      "SNAPSHOT 3",
+      "SNAPSHOT 4"
+    ]
+  },
+  "sync_note": {
+    "isDiscrete": true,
+    "format": [
+      "1/1",
+      "1/2 Dotted",
+      "1/2",
+      "1/2 Triplet",
+      "1/4 Dotted",
+      "1/4",
+      "1/4 Triplet",
+      "1/8 Dotted",
+      "1/8",
+      "1/8 Triplet",
+      "1/16 Dotted",
+      "1/16",
+      "1/16 Triplet",
+      "1/32 Dotted",
+      "1/32",
+      "1/32 Triplet",
+      "1/64 Dotted",
+      "1/64",
+      "1/64 Triplet"
+    ]
+  },
+  "time_ms_discrete": {
+    "isDiscrete": true,
+    "format": [
+      {
+        "lowerBound": 0,
+        "upperBound": 1000,
+        "format": "%d",
+        "formatUnits": "%d ms"
+      },
+      {
+        "lowerBound": 1000,
+        "upperBound": 999999,
+        "format": "%d",
+        "formatUnits": "1.000 sec"
+      }
+    ]
+  },
+  "variax_customtuning": {
+    "isDiscrete": true,
+    "controlType": "segmented",
+    "format": [
+      "Don't Force",
+      "Custom"
+    ]
+  },
+  "variax_lockctrls": {
+    "isDiscrete": true,
+    "format": [
+      "Unlocked",
+      "Volume Knob",
+      "Tone Knob",
+      "Pickup Select",
+      "Volume+Tone",
+      "Volume+Tone+PickupSel",
+      "Volume+Pickup Select",
+      "Tone+Pickup Select"
+    ]
+  },
+  "variax_model": {
+    "isDiscrete": true,
+    "format": [
+      "Don't Force",
+      "Custom 1-5",
+      "Custom 1-4",
+      "Custom 1-3",
+      "Custom 1-2",
+      "Custom 1-1",
+      "T-Model-5",
+      "T-Model-4",
+      "T-Model-3",
+      "T-Model-2",
+      "T-Model-1",
+      "Spank-5",
+      "Spank-4",
+      "Spank-3",
+      "Spank-2",
+      "Spank-1",
+      "Lester-5",
+      "Lester-4",
+      "Lester-3",
+      "Lester-2",
+      "Lester-1",
+      "Special-5",
+      "Special-4",
+      "Special-3",
+      "Special-2",
+      "Special-1",
+      "R-Billy-5",
+      "R-Billy-4",
+      "R-Billy-3",
+      "R-Billy-2",
+      "R-Billy-1",
+      "Chime-5",
+      "Chime-4",
+      "Chime-3",
+      "Chime-2",
+      "Chime-1",
+      "Semi-5",
+      "Semi-4",
+      "Semi-3",
+      "Semi-2",
+      "Semi-1",
+      "Jazzbox-5",
+      "Jazzbox-4",
+      "Jazzbox-3",
+      "Jazzbox-2",
+      "Jazzbox-1",
+      "Acoustic-5",
+      "Acoustic-4",
+      "Acoustic-3",
+      "Acoustic-2",
+      "Acoustic-1",
+      "Reso-5",
+      "Reso-4",
+      "Reso-3",
+      "Reso-2",
+      "Reso-1",
+      "Custom 2-5",
+      "Custom 2-4",
+      "Custom 2-3",
+      "Custom 2-2",
+      "Custom 2-1"
+    ]
+  },
+  "variax_model_shuriken": {
+    "isDiscrete": true,
+    "format": [
+      "Don't Force",
+      "User I-5",
+      "User I-4",
+      "User I-3",
+      "User I-2",
+      "User I-1",
+      "User II-5",
+      "User II-4",
+      "User II-3",
+      "User II-2",
+      "User II-1",
+      "User III-5",
+      "User III-4",
+      "User III-3",
+      "User III-2",
+      "User III-1",
+      "User IV-5",
+      "User IV-4",
+      "User IV-3",
+      "User IV-2",
+      "User IV-1",
+      "Shurken-5",
+      "Shurken-4",
+      "Shurken-3",
+      "Shurken-2",
+      "Shurken-1",
+      "T-Model-5",
+      "T-Model-4",
+      "T-Model-3",
+      "T-Model-2",
+      "T-Model-1",
+      "Spank-5",
+      "Spank-4",
+      "Spank-3",
+      "Spank-2",
+      "Spank-1",
+      "Lester-5",
+      "Lester-4",
+      "Lester-3",
+      "Lester-2",
+      "Lester-1",
+      "Acoustic-5",
+      "Acoustic-4",
+      "Acoustic-3",
+      "Acoustic-2",
+      "Acoustic-1",
+      "Jazz-5",
+      "Jazz-4",
+      "Jazz-3",
+      "Jazz-2",
+      "Jazz-1",
+      "World-5",
+      "World-4",
+      "World-3",
+      "World-2",
+      "World-1",
+      "Twang-5",
+      "Twang-4",
+      "Twang-3",
+      "Twang-2",
+      "Twang-1"
+    ]
+  },
+  "variax_settings": {
+    "isDiscrete": true,
+    "controlType": "segmented",
+    "format": [
+      "Per Preset",
+      "Global"
+    ]
+  },
+  "variax_str1tuning": {
+    "isDiscrete": true,
+    "format": [
+      "-12 (E)",
+      "-11 (F)",
+      "-10 (Gb)",
+      "-9 (G)",
+      "-8 (Ab)",
+      "-7 (A)",
+      "-6 (Bb)",
+      "-5 (B)",
+      "-4 (C)",
+      "-3 (Db)",
+      "-2 (D)",
+      "-1 (Eb)",
+      "0 (E)",
+      "+1 (F)",
+      "+2 (Gb)",
+      "+3 (G)",
+      "+4 (Ab)",
+      "+5 (A)",
+      "+6 (Bb)",
+      "+7 (B)",
+      "+8 (C)",
+      "+9 (Db)",
+      "+10 (D)",
+      "+11 (Eb)",
+      "+12 (E)"
+    ]
+  },
+  "variax_str2tuning": {
+    "isDiscrete": true,
+    "format": [
+      "-12 (B)",
+      "-11 (C)",
+      "-10 (Db)",
+      "-9 (D)",
+      "-8 (Eb)",
+      "-7 (E)",
+      "-6 (F)",
+      "-5 (Gb)",
+      "-4 (G)",
+      "-3 (Ab)",
+      "-2 (A)",
+      "-1 (Bb)",
+      "0 (B)",
+      "+1 (C)",
+      "+2 (Db)",
+      "+3 (D)",
+      "+4 (Eb)",
+      "+5 (E)",
+      "+6 (F)",
+      "+7 (Gb)",
+      "+8 (G)",
+      "+9 (Ab)",
+      "+10 (A)",
+      "+11 (Bb)",
+      "+12 (B)"
+    ]
+  },
+  "variax_str3tuning": {
+    "isDiscrete": true,
+    "format": [
+      "-12 (G)",
+      "-11 (Ab)",
+      "-10 (A)",
+      "-9 (Bb)",
+      "-8 (B)",
+      "-7 (C)",
+      "-6 (Db)",
+      "-5 (D)",
+      "-4 (Eb)",
+      "-3 (E)",
+      "-2 (F)",
+      "-1 (Gb)",
+      "0 (G)",
+      "+1 (Ab)",
+      "+2 (A)",
+      "+3 (Bb)",
+      "+4 (B)",
+      "+5 (C)",
+      "+6 (Db)",
+      "+7 (D)",
+      "+8 (Eb)",
+      "+9 (E)",
+      "+10 (F)",
+      "+11 (Gb)",
+      "+12 (G)"
+    ]
+  },
+  "variax_str4tuning": {
+    "isDiscrete": true,
+    "format": [
+      "-12 (D)",
+      "-11 (Eb)",
+      "-10 (E)",
+      "-9 (F)",
+      "-8 (Gb)",
+      "-7 (G)",
+      "-6 (Ab)",
+      "-5 (A)",
+      "-4 (Bb)",
+      "-3 (B)",
+      "-2 (C)",
+      "-1 (Db)",
+      "0 (D)",
+      "+1 (Eb)",
+      "+2 (E)",
+      "+3 (F)",
+      "+4 (Gb)",
+      "+5 (G)",
+      "+6 (Ab)",
+      "+7 (A)",
+      "+8 (Bb)",
+      "+9 (B)",
+      "+10 (C)",
+      "+11 (Db)",
+      "+12 (D)"
+    ]
+  },
+  "variax_str5tuning": {
+    "isDiscrete": true,
+    "format": [
+      "-12 (A)",
+      "-11 (Bb)",
+      "-10 (B)",
+      "-9 (C)",
+      "-8 (Db)",
+      "-7 (D)",
+      "-6 (Eb)",
+      "-5 (E)",
+      "-4 (F)",
+      "-3 (Gb)",
+      "-2 (G)",
+      "-1 (Ab)",
+      "0 (A)",
+      "+1 (Bb)",
+      "+2 (B)",
+      "+3 (C)",
+      "+4 (Db)",
+      "+5 (D)",
+      "+6 (Eb)",
+      "+7 (E)",
+      "+8 (F)",
+      "+9 (Gb)",
+      "+10 (G)",
+      "+11 (Ab)",
+      "+12 (A)"
+    ]
+  },
+  "variax_str6tuning": {
+    "isDiscrete": true,
+    "format": [
+      "-12 (E)",
+      "-11 (F)",
+      "-10 (Gb)",
+      "-9 (G)",
+      "-8 (Ab)",
+      "-7 (A)",
+      "-6 (Bb)",
+      "-5 (B)",
+      "-4 (C)",
+      "-3 (Db)",
+      "-2 (D)",
+      "-1 (Eb)",
+      "0 (E)",
+      "+1 (F)",
+      "+2 (Gb)",
+      "+3 (G)",
+      "+4 (Ab)",
+      "+5 (A)",
+      "+6 (Bb)",
+      "+7 (B)",
+      "+8 (C)",
+      "+9 (Db)",
+      "+10 (D)",
+      "+11 (Eb)",
+      "+12 (E)"
+    ]
+  }
+}

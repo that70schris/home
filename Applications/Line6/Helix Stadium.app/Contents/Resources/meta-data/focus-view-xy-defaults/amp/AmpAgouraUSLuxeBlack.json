@@ -1,0 +1,228 @@
+{
+    "modelName": "US Luxe Black",
+    "params": {
+        "Channel": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "Drive": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Ripple": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "ZPrePost": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Hype": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "AmpCabPeak2Q": {
+            "id": 74,
+            "behavior": "exclude"
+        },
+        "AmpCabPeak2Fc": {
+            "id": 75,
+            "behavior": "exclude"
+        },
+        "AmpCabPeak2G": {
+            "id": 76,
+            "behavior": "exclude"
+        },
+        "AmpCabZFir": {
+            "id": 101,
+            "behavior": "exclude"
+        },
+        "AmpCabZIir": {
+            "id": 102,
+            "behavior": "exclude"
+        },
+        "AmpCabZUpdate": {
+            "id": 103,
+            "behavior": "exclude"
+        },
+        "AmpCabShelfF": {
+            "id": 104,
+            "behavior": "exclude"
+        },
+        "AmpCabShelfG": {
+            "id": 105,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakQ": {
+            "id": 106,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakG": {
+            "id": 107,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakFc": {
+            "id": 108,
+            "behavior": "exclude"
+        },
+        "VibratoVolume": {
+            "id": 555,
+            "behavior": "exclude"
+        },
+        "VibBass": {
+            "id": 666,
+            "behavior": "exclude"
+        },
+        "VibTreb": {
+            "id": 777,
+            "behavior": "exclude"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Trade",
+            "Channel": 1,
+            "Drive": 0.40,
+            "Bass": 0.75,
+            "Treble": 0.3,
+            "Master": 1.0,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "Level": -10.0000,
+            "ZPrePost": 0.300000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 3000.00,
+            "AmpCabShelfG": 12.0000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000,
+            "VibratoVolume": 0.450000,
+            "VibBass": 0.750000,
+            "VibTreb": 0.300000
+        },
+        "x_min_y_min": {
+            "name": "Noon",
+            "Channel": 1,
+            "Drive": 0.5,
+            "Bass": 0.5,
+            "Treble": 0.5,
+            "Master": 0.3,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "Level": 6.0000,
+            "ZPrePost": 0.300000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 3000.00,
+            "AmpCabShelfG": 12.0000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000,
+            "VibratoVolume": 0.450000,
+            "VibBass": 0.750000,
+            "VibTreb": 0.300000
+        },
+        "x_min_y_max": {
+            "name": "Classic",
+            "Channel": 1,
+            "Drive": 0.46,
+            "Bass": 0.5,
+            "Treble": 0.6,
+            "Master": 0.3,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "Level": 8.7000,
+            "ZPrePost": 0.300000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 3000.00,
+            "AmpCabShelfG": 12.0000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000,
+            "VibratoVolume": 0.450000,
+            "VibBass": 0.750000,
+            "VibTreb": 0.300000
+        },
+        "x_max_y_min": {
+            "name": "Shakey",
+            "Channel": 1,
+            "Drive": 1.0,
+            "Bass": 0.41,
+            "Treble": 0.62,
+            "Master": 1.00000,
+            "Sag": 0.3,
+            "Ripple": 0.00000,
+            "Level": -20.5000,
+            "ZPrePost": 0.300000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 3000.00,
+            "AmpCabShelfG": 12.0000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000,
+            "VibratoVolume": 0.450000,
+            "VibBass": 0.750000,
+            "VibTreb": 0.300000
+        },
+        "x_max_y_max": {
+            "name": "Lane",
+            "Channel": 1,
+            "Drive": 1.0,
+            "Bass": 0.39,
+            "Treble": 0.69,
+            "Master": 1.00000,
+            "Sag": -0.3,
+            "Ripple": 0.00000,
+            "Level": -20.6000,
+            "ZPrePost": 0.300000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 3000.00,
+            "AmpCabShelfG": 12.0000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000,
+            "VibratoVolume": 0.450000,
+            "VibBass": 0.750000,
+            "VibTreb": 0.300000
+        }
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "modelName": "Growler",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Freq": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Q": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Pitch": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Dist Wah",
+            "Speed": 0.84,
+            "Freq": 0.39,
+            "Q": 0.84,
+            "Pitch": 0.0,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Perfect 4th",
+            "Speed": 6.4,
+            "Freq": 0.49,
+            "Q": 0.63,
+            "Pitch": 0.2,
+            "Mix": 0.26,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Rez Filter",
+            "Speed": 0.1,
+            "Freq": 0.75,
+            "Q": 1.0,
+            "Pitch": 0.0,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Octaves",
+            "Speed": 8.0,
+            "Freq": 0.74,
+            "Q": 0.83,
+            "Pitch": 1.0,
+            "Mix": 0.71,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Synth",
+            "Speed": 4.8,
+            "Freq": 0.66,
+            "Q": 0.72,
+            "Pitch": 0.5,
+            "Mix": 0.82,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

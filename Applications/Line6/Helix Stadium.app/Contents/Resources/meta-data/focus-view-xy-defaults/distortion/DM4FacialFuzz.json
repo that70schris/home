@@ -1,0 +1,67 @@
+{
+    "modelName": "Facial Fuzz",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Output": {
+            "id": 5,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Flavor Saver",
+            "Drive": 0.9200000166893005,
+            "Bass": 0.6200000047683716,
+            "Mid": 0.7599999904632568,
+            "Treble": 0.3799999952316284,
+            "Output": 0.6899999976158142
+        },
+        "x_min_y_min": {
+            "name": "Stubble",
+            "Drive": 0.029999999329447746,
+            "Bass": 0.4000000059604645,
+            "Mid": 0.699999988079071,
+            "Treble": 0.5699999928474426,
+            "Output": 1.0
+        },
+        "x_min_y_max": {
+            "name": "Mutton Chops",
+            "Drive": 0.44999998807907104,
+            "Bass": 0.6700000166893005,
+            "Mid": 0.6200000047683716,
+            "Treble": 0.4099999964237213,
+            "Output": 1.0
+        },
+        "x_max_y_min": {
+            "name": "Handlebar",
+            "Drive": 0.5600000023841858,
+            "Bass": 0.2800000011920929,
+            "Mid": 0.7599999904632568,
+            "Treble": 0.30000001192092896,
+            "Output": 0.8700000047683716
+        },
+        "x_max_y_max": {
+            "name": "Garibaldi",
+            "Drive": 0.9599999785423279,
+            "Bass": 0.75,
+            "Mid": 0.5799999833106995,
+            "Treble": 0.6399999856948853,
+            "Output": 0.7699999809265137
+        }
+    }
+}

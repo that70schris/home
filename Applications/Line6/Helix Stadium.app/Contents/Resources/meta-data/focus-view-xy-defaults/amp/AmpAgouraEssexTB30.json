@@ -1,0 +1,206 @@
+{
+    "modelName": "Essex TB30",
+    "params": {
+        "Channel": {
+            "id": 1,
+            "behavior": "exclude"
+        },
+        "NrmVol": {
+            "id": 2,
+            "behavior": "exclude"
+        },
+        "BrtVol": {
+            "id": 3,
+            "behavior": "exclude"
+        },
+        "Bass": {
+            "id": 4,
+            "behavior": "exclude"
+        },
+        "Treble": {
+            "id": 5,
+            "behavior": "exclude"
+        },
+        "HighCut": {
+            "id": 6,
+            "behavior": "exclude"
+        },
+        "MasterVol": {
+            "id": 7,
+            "behavior": "exclude"
+        },
+        "Level": {
+            "id": 8,
+            "behavior": "exclude"
+        },
+        "Sag": {
+            "id": 9,
+            "behavior": "exclude"
+        },
+        "Ripple": {
+            "id": 10,
+            "behavior": "exclude"
+        },
+        "PrePost": {
+            "id": 11,
+            "behavior": "exclude"
+        },
+        "AmpCabPeak2Q": {
+            "id": 74,
+            "behavior": "exclude"
+        },
+        "AmpCabPeak2Fc": {
+            "id": 75,
+            "behavior": "exclude"
+        },
+        "AmpCabPeak2G": {
+            "id": 76,
+            "behavior": "exclude"
+        },
+        "AmpCabZFir": {
+            "id": 101,
+            "behavior": "exclude"
+        },
+        "AmpCabZUpdate": {
+            "id": 103,
+            "behavior": "exclude"
+        },
+        "AmpCabShelfF": {
+            "id": 104,
+            "behavior": "exclude"
+        },
+        "AmpCabShelfG": {
+            "id": 105,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakQ": {
+            "id": 106,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakG": {
+            "id": 107,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakFc": {
+            "id": 108,
+            "behavior": "exclude"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "",
+            "Channel": 0,
+            "NrmVol": 0.500000,
+            "BrtVol": 0.500000,
+            "Bass": 0.500000,
+            "Treble": 0.500000,
+            "HighCut": 0.100000,
+            "MasterVol": 5.00000,
+            "Level": -9.00000,
+            "Sag": 0.500000,
+            "Ripple": 0.500000,
+            "PrePost": 1.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_min_y_min": {
+            "name": "",
+            "Channel": 0,
+            "NrmVol": 0.500000,
+            "BrtVol": 0.500000,
+            "Bass": 0.500000,
+            "Treble": 0.500000,
+            "HighCut": 0.100000,
+            "MasterVol": 5.00000,
+            "Level": -9.00000,
+            "Sag": 0.500000,
+            "Ripple": 0.500000,
+            "PrePost": 1.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_min_y_max": {
+            "name": "",
+            "Channel": 0,
+            "NrmVol": 0.500000,
+            "BrtVol": 0.500000,
+            "Bass": 0.500000,
+            "Treble": 0.500000,
+            "HighCut": 0.100000,
+            "MasterVol": 5.00000,
+            "Level": -9.00000,
+            "Sag": 0.500000,
+            "Ripple": 0.500000,
+            "PrePost": 1.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_max_y_min": {
+            "name": "",
+            "Channel": 0,
+            "NrmVol": 0.500000,
+            "BrtVol": 0.500000,
+            "Bass": 0.500000,
+            "Treble": 0.500000,
+            "HighCut": 0.100000,
+            "MasterVol": 5.00000,
+            "Level": -9.00000,
+            "Sag": 0.500000,
+            "Ripple": 0.500000,
+            "PrePost": 1.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_max_y_max": {
+            "name": "",
+            "Channel": 0,
+            "NrmVol": 0.500000,
+            "BrtVol": 0.500000,
+            "Bass": 0.500000,
+            "Treble": 0.500000,
+            "HighCut": 0.100000,
+            "MasterVol": 5.00000,
+            "Level": -9.00000,
+            "Sag": 0.500000,
+            "Ripple": 0.500000,
+            "PrePost": 1.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        }
+    }
+}

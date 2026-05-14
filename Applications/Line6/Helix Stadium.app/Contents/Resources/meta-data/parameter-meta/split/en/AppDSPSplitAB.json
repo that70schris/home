@@ -1,0 +1,10 @@
+{
+    "category": "split",
+    "model_id": 469,
+    "model_sym": "ModelID::kAppDSPSplitAB",
+    "display_name": "A/B",
+    "parameters-en": {
+        "Route To": "Determines the amount of the signal sent to Path A (upper) vs. Path B (lower). When set to \"Even Split,\" the signal is split evenly to each path in stereo. Assign this parameter to a Stomp switch to create an A/B toggle switch.",
+        "bypass": ""
+    }
+}

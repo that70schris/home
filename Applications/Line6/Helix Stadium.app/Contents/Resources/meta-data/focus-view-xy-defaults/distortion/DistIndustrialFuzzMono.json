@@ -1,0 +1,76 @@
+{
+    "modelName": "Industrial Fuzz",
+    "params": {
+        "Compress": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Gate": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Drive": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Stability": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Oscillator": {
+            "id": 5,
+            "behavior": "quantize"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Assembly Line",
+            "Compress": 0.5699999928474426,
+            "Gate": 0.5199999809265137,
+            "Drive": 1.0,
+            "Stability": 0.7300000190734863,
+            "Oscillator": false,
+            "Level": 0.7699999809265137
+        },
+        "x_min_y_min": {
+            "name": "Time to Market",
+            "Compress": 0.23999999463558197,
+            "Gate": 0.12999999523162842,
+            "Drive": 0.0,
+            "Stability": 0.699999988079071,
+            "Oscillator": false,
+            "Level": 0.699999988079071
+        },
+        "x_min_y_max": {
+            "name": "Clock Out",
+            "Compress": 0.6800000071525574,
+            "Gate": 1.0,
+            "Drive": 0.05999999865889549,
+            "Stability": 1.0,
+            "Oscillator": true,
+            "Level": 0.7699999809265137
+        },
+        "x_max_y_min": {
+            "name": "Downtime",
+            "Compress": 0.8600000143051147,
+            "Gate": 0.0,
+            "Drive": 0.7900000214576721,
+            "Stability": 0.6499999761581421,
+            "Oscillator": true,
+            "Level": 0.6899999976158142
+        },
+        "x_max_y_max": {
+            "name": "OSHA Violation",
+            "Compress": 0.18000000715255737,
+            "Gate": 0.75,
+            "Drive": 1.0,
+            "Stability": 1.0,
+            "Oscillator": true,
+            "Level": 0.8100000023841858
+        }
+    }
+}

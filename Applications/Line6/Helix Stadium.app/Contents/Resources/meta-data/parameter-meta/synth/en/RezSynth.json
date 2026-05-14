@@ -1,0 +1,13 @@
+{
+    "category": "synth",
+    "model_id": 399,
+    "model_sym": "ModelID::kRezSynth",
+    "display_name": "Rez Synth",
+    "parameters-en": {
+        "Wave": "Choose from 8 different sweeping resonant filter effects, all of which respond to picking dynamics.",
+        "Filter": "Controls the frequency of the resonant filter.",
+        "Decay": "Controls the decay of the Filter's envelope.",
+        "Mix": "Blends more of the effect in. Note that even at 0%, some of the synth will be heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "category": "distortion",
+    "model_id": 336,
+    "model_sym": "ModelID::kDistThrifterFuzzMono",
+    "display_name": "Thrifter Fuzz",
+    "parameters-en": {
+        "Drive": "Controls the amount of fuzz applied to the signal. Can also affect tone, depending on the Attack knob's setting.",
+        "Attack": "Increases the apparent attack of the signal, providing transient punch and a bit of additional gain.",
+        "Notch Freq": "Adjusts the frequency at which the Notch Gain boosts or cuts.",
+        "Notch Gain": "Cuts or boosts the signal at the Notch Frequency.",
+        "Thick": "Adds a bit more thickness and low end to the fuzz, particularly if Drive is set lower.",
+        "Level": "Sets the overall level of the block."
+    }
+}

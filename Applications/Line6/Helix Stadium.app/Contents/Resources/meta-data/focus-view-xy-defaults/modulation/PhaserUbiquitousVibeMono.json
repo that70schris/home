@@ -1,0 +1,94 @@
+{
+    "modelName": "Ubiquitous Vibe",
+    "params": {
+        "Rate": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Intensity": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mode": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "LampBias": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Patriotic",
+            "Rate": 0.33,
+            "Intensity": 0.57,
+            "Mode": false,
+            "LampBias": 0.45,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Moody",
+            "Rate": 0.31,
+            "Intensity": 0.22,
+            "Mode": false,
+            "LampBias": 0.26,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Vibin' Me",
+            "Rate": 0.24,
+            "Intensity": 0.62,
+            "Mode": true,
+            "LampBias": 0.5,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Dizzy",
+            "Rate": 0.51,
+            "Intensity": 1.0,
+            "Mode": true,
+            "LampBias": 0.26,
+            "Mix": 0.6,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Ray Gun",
+            "Rate": 0.87,
+            "Intensity": 1.0,
+            "Mode": false,
+            "LampBias": 1.0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

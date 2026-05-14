@@ -1,0 +1,20 @@
+{
+    "category": "preamp",
+    "model_id": 634,
+    "model_sym": "ModelID::kPreampWoodyBlue",
+    "display_name": "Woody Blue",
+    "parameters-en": {
+        "Drive": "Controls the amount of gain applied to the signal, which influences the level of distortion.",
+        "Bass": "Controls the low frequency EQ of the tonestack.",
+        "Variamp": "This 5-position switch acts selects the mid frequency to be boosted or cut with the Effect parameter.",
+        "Effect": "Controls the mid EQ of the tonestack, the frequency of which is controlled by the Variamp parameter.",
+        "Treble": "Controls the high frequency EQ of the tonestack.",
+        "Level": "Level controls the overall level of the Preamp block. Unlike Master Volume, it has no effect on the block's tone. Level is a great way to level your presets as you can quickly jump to each Amp block by pressing the Amp button.",
+        "Master": "Controls the Master Volume of the amplifier.",
+        "Bright": "When on, boosts high frequencies. Is more obvious when Drive is set low.",
+        "Hum": "Adjusts the level of power supply hum that interacts with the signal. Preamp tube heaters in tube amps will leak a little bit of 60 cycle hum into the audio signal. When this hum mixes with the distorted audio signal, a non-musical distortion is created at low levels. To some players, this low-level, non-harmonic distortion adds a bit of realism to the amp model.",
+        "Tuning Fork": "Controls the volume of the Tuning Fork's reference tone. Included only in the interest of hyper-accuracy.",
+        "TF Coarse": "Controls the coarse tuning of the Tuning Fork's reference tone.",
+        "TF Fine": "Controls the fine tuning of the Tuning Fork's reference tone."
+    }
+}

@@ -1,0 +1,336 @@
+{
+    "modelName": "Cali 2C+",
+    "params": {
+        "Channel": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "Volume1": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Middle": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Presence": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Deep": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "Level": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "ShiftBass": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "ShiftTreble": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "Bright": {
+            "id": 11,
+            "behavior": "quantize"
+        },
+        "LeadDrive": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "LeadBright": {
+            "id": 13,
+            "behavior": "quantize"
+        },
+        "LeadMaster": {
+            "id": 14,
+            "behavior": "interpolate"
+        },
+        "MasterVol": {
+            "id": 15,
+            "behavior": "interpolate"
+        },
+        "Class": {
+            "id": 16,
+            "behavior": "quantize"
+        },
+        "80 Hz": {
+            "id": 17,
+            "behavior": "interpolate"
+        },
+        "240 Hz": {
+            "id": 18,
+            "behavior": "interpolate"
+        },
+        "750 Hz": {
+            "id": 19,
+            "behavior": "interpolate"
+        },
+        "2.2 KHz": {
+            "id": 20,
+            "behavior": "interpolate"
+        },
+        "6.6 KHz": {
+            "id": 21,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 22,
+            "behavior": "interpolate"
+        },
+        "Ripple": {
+            "id": 23,
+            "behavior": "interpolate"
+        },
+        "PrePost": {
+            "id": 24,
+            "behavior": "interpolate"
+        },
+        "Hype": {
+            "id": 25,
+            "behavior": "interpolate"
+        },
+        "AmpCabPeak2Q": {
+            "id": 74,
+            "behavior": "exclude"
+        },
+        "AmpCabPeak2Fc": {
+            "id": 75,
+            "behavior": "exclude"
+        },
+        "AmpCabPeak2G": {
+            "id": 76,
+            "behavior": "exclude"
+        },
+        "AmpCabZFir": {
+            "id": 101,
+            "behavior": "exclude"
+        },
+        "AmpCabZIir": {
+            "id": 102,
+            "behavior": "exclude"
+        },
+        "AmpCabZUpdate": {
+            "id": 103,
+            "behavior": "exclude"
+        },
+        "AmpCabShelfF": {
+            "id": 104,
+            "behavior": "exclude"
+        },
+        "AmpCabShelfG": {
+            "id": 105,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakQ": {
+            "id": 106,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakG": {
+            "id": 107,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakFc": {
+            "id": 108,
+            "behavior": "exclude"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Shred",
+            "Channel": true,
+            "Volume1": 0.89,
+            "Bass": 0.2,
+            "Middle": 0.67,
+            "Treble": 0.48,
+            "Presence": 0.18,
+            "Deep": true,
+            "Level": -15.1000,
+            "ShiftBass": false,
+            "ShiftTreble": true,
+            "Bright": 0,
+            "LeadDrive": 0.86,
+            "LeadBright": 0,
+            "LeadMaster": 0.35,
+            "MasterVol": 0.49,
+            "Class": true,
+            "80 Hz": 0.8,
+            "240 Hz": 0.7,
+            "750 Hz": -6.5,
+            "2.2 KHz": 1.0,
+            "6.6 KHz": 4.3,
+            "Sag": -0.20000,
+            "Ripple": 0.00000,
+            "PrePost": 0.330000,
+            "Hype": 0.49000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 3000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_min_y_min": {
+            "name": "Jangle",
+            "Channel": false,
+            "Volume1": 0.46,
+            "Bass": 0.2,
+            "Middle": 0.76,
+            "Treble": 0.27,
+            "Presence": 0.14,
+            "Deep": true,
+            "Level": -6.5000,
+            "ShiftBass": false,
+            "ShiftTreble": false,
+            "Bright": 0,
+            "LeadDrive": 0.86,
+            "LeadBright": 0,
+            "LeadMaster": 0.61,
+            "MasterVol": 0.49,
+            "Class": false,
+            "80 Hz": 0.8,
+            "240 Hz": 0.7,
+            "750 Hz": -6.5,
+            "2.2 KHz": 1.0,
+            "6.6 KHz": 4.3,
+            "Sag": -0.20000,
+            "Ripple": 0.00000,
+            "PrePost": 0.330000,
+            "Hype": 0.49000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 3000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_min_y_max": {
+            "name": "Images",
+            "Channel": true,
+            "Volume1": 0.85,
+            "Bright": 1,
+            "Bass": 0.30,
+            "Middle": 0.30,
+            "Treble": 0.60,
+            "ShiftBass": false,
+            "ShiftTreble": true,
+            "LeadDrive": 0.85,
+            "LeadBright": 0,
+            "LeadMaster": 0.35,
+            "Deep": true,
+            "MasterVol": 0.40,
+            "80 Hz": 8.40,
+            "240 Hz": 7.00,
+            "750 Hz": -4.20,
+            "2.2 KHz": 5.00,
+            "6.6 KHz": 6.60,
+            "Presence": 0.60,
+            "Class": true,
+            "Level": -18.0,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "Hype": 0.00000,
+            "PrePost": 0.330000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 3000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_max_y_min": {
+            "name": "JT",
+            "Channel": true,
+            "Volume1": 0.80,
+            "Bass": 0.3,
+            "Middle": 0.16,
+            "Treble": 0.60,
+            "Presence": 0.30,
+            "Deep": true,
+            "Level": -12.5000,
+            "ShiftBass": false,
+            "ShiftTreble": false,
+            "Bright": 0,
+            "LeadDrive": 0.80,
+            "LeadBright": 1,
+            "LeadMaster": 0.50,
+            "MasterVol": 0.30,
+            "Class": true,
+            "80 Hz": 3.0,
+            "240 Hz": 1.0,
+            "750 Hz": -7.0,
+            "2.2 KHz": 1.0,
+            "6.6 KHz": 2.0,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "PrePost": 0.330000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 3000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_max_y_max": {
+            "name": "Chugger",
+            "Channel": true,
+            "Volume1": 0.80,
+            "Bass": 0.3,
+            "Middle": 0.14,
+            "Treble": 0.75,
+            "Presence": 0.75,
+            "Deep": true,
+            "Level": -7.0000,
+            "ShiftBass": true,
+            "ShiftTreble": false,
+            "Bright": 1,
+            "LeadDrive": 0.80,
+            "LeadBright": 1,
+            "LeadMaster": 0.31,
+            "MasterVol": 0.33,
+            "Class": true,
+            "80 Hz": 3.8,
+            "240 Hz": -0.5,
+            "750 Hz": -11.6,
+            "2.2 KHz": -1.7,
+            "6.6 KHz": 4.4,
+            "Sag": 0.26000,
+            "Ripple": -0.26000,
+            "PrePost": 0.360000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 3000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        }
+    }
+}

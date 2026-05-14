@@ -1,0 +1,67 @@
+{
+    "modelName": "Hard Gate",
+    "params": {
+        "OpenThreshold": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "CloseThreshold": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "HoldTime": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Decay": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 5,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Riffs",
+            "OpenThreshold": -50.0,
+            "CloseThreshold": -60.0,
+            "HoldTime": 0.01,
+            "Decay": 0.01,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Slow Fade",
+            "OpenThreshold": -29.0,
+            "CloseThreshold": -32.0,
+            "HoldTime": 0.8,
+            "Decay": 4.0,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Tapered",
+            "OpenThreshold": -31.1,
+            "CloseThreshold": -39.0,
+            "HoldTime": 0.124,
+            "Decay": 0.76,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Abrupt",
+            "OpenThreshold": -18.0,
+            "CloseThreshold": -18.0,
+            "HoldTime": 0.8,
+            "Decay": 0.108,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Hard Grab",
+            "OpenThreshold": -24.0,
+            "CloseThreshold": -24.0,
+            "HoldTime": 0.015,
+            "Decay": 0.00999999,
+            "Level": 0.0
+        }
+    }
+}

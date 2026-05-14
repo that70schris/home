@@ -1,0 +1,13 @@
+{
+    "category": "wah",
+    "model_id": 261,
+    "model_sym": "ModelID::kWahTeardropBassQStereo",
+    "display_name": "Teardrop Bass Q",
+    "parameters-en": {
+        "Position": "Adjusts the position or frequency of the wah effect. By default, this is assigned to Expression Pedal 1. Set Min and Max below to restrict the wah's frequency sweep range.",
+        "Q Trim": "Controls the Q or bandwidth of the effect. Lower values boost a wider frequency band and higher values boost a narrower frequency band.",
+        "Vol Trim": "Emulates the actual pedal's side volume trim knob.",
+        "Mix": "Controls the blend between the wah effect and the dry signal. At 0%, no wah effect is heard; at 100%, no dry signal is heard. If the wah effect is a bit strong, consider bringing this down a bit.",
+        "Level": "Sets the overall level of the Wah block."
+    }
+}

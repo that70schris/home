@@ -1,0 +1,121 @@
+{
+    "modelName": "70s Chorus",
+    "params": {
+        "ChorusIntensity": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Mode": {
+            "id": 2,
+            "behavior": "quantize"
+        },
+        "VibratoRate": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "VibratoDepth": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Headroom": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "SyncSelect2": {
+            "id": 11,
+            "behavior": "quantize"
+        },
+        "TempoSync2": {
+            "id": 12,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Wide and Lush",
+            "ChorusIntensity": 0.5499999523162842,
+            "Mode": false,
+            "VibratoRate": 0.5,
+            "VibratoDepth": 0.5,
+            "Mix": 0.48000001907348633,
+            "Level": 1.0,
+            "Headroom": 6.5,
+            "SyncSelect1": 6,
+            "TempoSync1": false,
+            "SyncSelect2": 6,
+            "TempoSync2": false
+        },
+        "x_min_y_min": {
+            "name": "Bit of Texture",
+            "ChorusIntensity": 0.12999999523162842,
+            "Mode": false,
+            "VibratoRate": 0.5,
+            "VibratoDepth": 0.5,
+            "Mix": 0.25,
+            "Level": 0.20000076293945312,
+            "Headroom": 2.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false,
+            "SyncSelect2": 6,
+            "TempoSync2": false
+        },
+        "x_min_y_max": {
+            "name": "Slow Chorus",
+            "ChorusIntensity": 0.23000001907348633,
+            "Mode": false,
+            "VibratoRate": 0.5,
+            "VibratoDepth": 0.5,
+            "Mix": 0.48000001907348633,
+            "Level": 0.20000076293945312,
+            "Headroom": 1.3999996185302734,
+            "SyncSelect1": 6,
+            "TempoSync1": false,
+            "SyncSelect2": 6,
+            "TempoSync2": false
+        },
+        "x_max_y_min": {
+            "name": "Subtle Vibrato",
+            "ChorusIntensity": 0.49000000953674316,
+            "Mode": true,
+            "VibratoRate": 0.3999999761581421,
+            "VibratoDepth": 0.4700000286102295,
+            "Mix": 0.2999999523162842,
+            "Level": 0.6000022888183594,
+            "Headroom": 7.399999618530273,
+            "SyncSelect1": 6,
+            "TempoSync1": false,
+            "SyncSelect2": 6,
+            "TempoSync2": false
+        },
+        "x_max_y_max": {
+            "name": "Big Time Vibe",
+            "ChorusIntensity": 0.46000003814697266,
+            "Mode": true,
+            "VibratoRate": 0.6200000047683716,
+            "VibratoDepth": 0.809999942779541,
+            "Mix": 0.7200000286102295,
+            "Level": 0.6000022888183594,
+            "Headroom": 8.600000381469727,
+            "SyncSelect1": 6,
+            "TempoSync1": false,
+            "SyncSelect2": 6,
+            "TempoSync2": false
+        }
+    }
+}

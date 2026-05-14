@@ -1,0 +1,15 @@
+{
+    "category": "dynamics",
+    "model_id": 33,
+    "model_sym": "ModelID::kCompressorDeluxeCompMono",
+    "display_name": "Deluxe Comp",
+    "parameters-en": {
+        "Threshold": "Sets the level above which compression is applied. Lower values compress more of the signal; higher values compress only louder parts of the signal.",
+        "Ratio": "Determines how much compression is applied to the signal once it exceeds the Threshold. Higher values mean more compression.",
+        "Attack": "Controls how quickly compression is applied once the signal exceeds the Threshold. Higher values mean a slower attack, which lets the instrument's initial transient sneak through and only compresses the sustained portion of the signal.",
+        "Release": "Controls how quickly the signal returns to unity gain after it returns below the Threshold.",
+        "Mix": "Controls the blend between the compressed and dry signals. At 0%, no compressed signal is heard; at 100%, no dry signal is heard. Values in between provide parallel compression.",
+        "Level": "Sets the overall level of the block.",
+        "Knee": "Controls how smoothly compression kicks in. Higher values cause more of a gradual increase in Ratio as the signal approaches the Threshold."
+    }
+}

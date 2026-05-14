@@ -1,0 +1,94 @@
+{
+    "modelName": "Comet Trails",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Freq": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Q": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Gain": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Autowah",
+            "Speed": 2.8,
+            "Freq": 0.5,
+            "Q": 0.31,
+            "Gain": 0.35,
+            "Mix": 0.43,
+            "Level": 1.364,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Slow",
+            "Speed": 0.4,
+            "Freq": 0.55,
+            "Q": 0.02,
+            "Gain": 0.5,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Chewy",
+            "Speed": 1.4,
+            "Freq": 0.24,
+            "Q": 0.5,
+            "Gain": 0.42,
+            "Mix": 0.69,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Phaser",
+            "Speed": 1.2,
+            "Freq": 0.45,
+            "Q": 0.54,
+            "Gain": 0.46,
+            "Mix": 0.5,
+            "Level": 2.031,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Gurgle",
+            "Speed": 12.0,
+            "Freq": 0.81,
+            "Q": 0.5,
+            "Gain": 0.83,
+            "Mix": 0.54,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

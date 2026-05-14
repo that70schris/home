@@ -1,0 +1,22 @@
+{
+    "category": "modulation",
+    "model_id": 323,
+    "model_sym": "ModelID::kFlangerDynamixFlangerMono",
+    "display_name": "Dynamix Flanger",
+    "parameters-en": {
+        "Speed": "Controls the speed or rate of the flanger when Ctl Select is set to \"LFO.\" When Speed is set to note values, it follows the system tempo. Does nothing when Ctl Select is set to \"Envelope\" or \"Manual.\"",
+        "Ctl Select": "Selects whether the flanger sweep shifts up and down automatically like a traditional flanger (\"LFO\"), responds to your playing dynamics (\"Envelope\"), or is adjusted manually from the Manual knob/slider (\"Manual\").",
+        "Depth": "Controls how wide and dramatic the flanging sweep appears.",
+        "Manual": "Manually controls the flanger sweep when Ctl Select is set to \"Manual.\" Does nothing when Ctl Select is set to \"LFO\" or \"Envelope.\"",
+        "Mix": "Controls the blend between the modulation effect and the dry signal.",
+        "Phasing": "Chooses whether the effect produces in-phase flanging (negative values) or out-of-phase flanging (positive values).",
+        "Recycle": "When on, adds feedback.",
+        "CV Dyn": "Controls how wide the sweep range is based on your playing dynamics when Ctl Select is set to \"Envelope.\" Higher values result in a wider range. Does nothing when Ctl Select is set to \"LFO\" or \"Manual.\"",
+        "Max Delay": "Sets the longest point of the flanger sweep. Higher values can result in spacey slapback delay and chorus-type sounds.",
+        "CVTrackng": "Selects whether the flanger sweep moves from high to low (\"Normal\") or from low to high (\"Inverted\").",
+        "Env Lag": "Delays the flanger sweep slightly when Ctl Select is set to \"Envelope.\" Does nothing when Ctl Select is set to \"LFO\" or \"Manual.\"",
+        "Env Input": "If your playing dynamics aren't generating the desired flanger sweep range (when Ctl Select is set to \"Envelope\"), adjust this setting so that your hardest picking triggers the highest point of your ideal sweep. Does nothing when Ctl Select is set to \"LFO\" or \"Manual.\"",
+        "CV Decay": "Controls the super quick initial sweep down (or sweep up if CVTrackng is set to \"Inverted\"). x1 is about 0.5 seconds long, x2 is about 1 second, and x4 is about 2 seconds. Does nothing when Ctl Select is set to \"LFO\" or \"Manual.\"",
+        "TempoSync1": ""
+    }
+}

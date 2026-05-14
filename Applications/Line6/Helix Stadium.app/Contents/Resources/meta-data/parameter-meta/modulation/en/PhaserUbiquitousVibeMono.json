@@ -1,0 +1,15 @@
+{
+    "category": "modulation",
+    "model_id": 283,
+    "model_sym": "ModelID::kPhaserUbiquitousVibeMono",
+    "display_name": "Ubiquitous Vibe",
+    "parameters-en": {
+        "Rate": "Controls the speed or rate of the effect. When set to note values, Speed follows the system tempo.",
+        "Intensity": "Controls the depth or intensity of the effect.",
+        "Mode": "Selects Chorus or Vibrato mode.",
+        "Lamp Bias": "Adjusts the amount of current going to the original pedal's filament bulb. Lower values result in a smoother LFO sweep (closer to a sine wave); higher values result in a more dramatic LFO sweep (closer to a square wave).",
+        "Mix": "Controls the blend between the modulation effect and the dry signal.",
+        "Level": "Adjusts the overall output level of the modulation effect",
+        "TempoSync1": ""
+    }
+}

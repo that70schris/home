@@ -1,0 +1,58 @@
+{
+    "modelName": "Dhyana Drive",
+    "params": {
+        "Gain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Voice": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Tone": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 5,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Drivin!",
+            "Gain": 0.74,
+            "Voice": 0.43,
+            "Tone": 0.42,
+            "Level": 0.78
+        },
+        "x_min_y_min": {
+            "name": "Lead Bite",
+            "Gain": 0.4,
+            "Voice": 0.89,
+            "Tone": 0.6,
+            "Level": 0.44
+        },
+        "x_min_y_max": {
+            "name": "Chunky Monkey",
+            "Gain": 0.75,
+            "Voice": 0.43,
+            "Tone": 0.03,
+            "Level": 0.44
+        },
+        "x_max_y_min": {
+            "name": "Fat Rhythm",
+            "Gain": 0.73,
+            "Voice": 0.23,
+            "Tone": 0.87,
+            "Level": 0.44
+        },
+        "x_max_y_max": {
+            "name": "Nasty Lead",
+            "Gain": 0.98,
+            "Voice": 0.98,
+            "Tone": 1.0,
+            "Level": 0.44
+        }
+    }
+}

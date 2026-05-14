@@ -1,0 +1,21 @@
+{
+    "symbol": "ModelID::kLooperHelixStereo",
+    "category": "looper",
+    "class": "class",
+    "display_name": "6 Switch Looper",
+    "model_catalog_image": "",
+    "model_options_image": "",
+    "parameters-en": {
+        "Playback": "Controls the level of looper playback. You may find it useful to turn this down a bit so your live guitar can be slightly louder.",
+        "Overdub": "Controls the level of your loop *relatively, over time* while overdubbing. For example, if Overdub is set to 90%, each time your loop repeats, its volume will be reduced by 10%, sounding quieter and quieter with each overdub pass.",
+        "Low Cut": "Applies a low cut (high pass) filter to loop playback, letting you remove the effected signal below a certain frequency. Filtering your loop can sometimes improve the mix with your live instrument.",
+        "High Cut": "Applies a high cut (low pass) filter to loop playback, letting you remove the effected signal above a certain frequency. Filtering your loop can sometimes improve the mix with your live instrument.",
+        "Clear": "",
+        "UndoRedo": "",
+        "FullHalfSpeed": "",
+        "ForwardReverse": "",
+        "RecordOverdub": "",
+        "StopPlay": "",
+        "PlayOnce": ""
+    }
+}

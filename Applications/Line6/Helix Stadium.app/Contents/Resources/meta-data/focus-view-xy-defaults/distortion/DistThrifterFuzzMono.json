@@ -1,0 +1,76 @@
+{
+    "modelName": "Thrifter Fuzz",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Attack": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Notch Freq": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Notch Gain": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Thick": {
+            "id": 5,
+            "behavior": "quantize"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Large",
+            "Drive": 0.61,
+            "Attack": 0.79,
+            "Notch Freq": 2000.0,
+            "Notch Gain": 5.8,
+            "Thick": 1,
+            "Level": 0.6
+        },
+        "x_min_y_min": {
+            "name": "Small",
+            "Drive": 0.21,
+            "Attack": 0.00999999,
+            "Notch Freq": 1100.0,
+            "Notch Gain": -2.1,
+            "Thick": 0,
+            "Level": 0.6
+        },
+        "x_min_y_max": {
+            "name": "XL",
+            "Drive": 0.78,
+            "Attack": 0.85,
+            "Notch Freq": 2200.0,
+            "Notch Gain": 7.4,
+            "Thick": 1,
+            "Level": 0.6
+        },
+        "x_max_y_min": {
+            "name": "Medium",
+            "Drive": 0.34,
+            "Attack": 0.43,
+            "Notch Freq": 1200.0,
+            "Notch Gain": -1.2,
+            "Thick": 0,
+            "Level": 0.6
+        },
+        "x_max_y_max": {
+            "name": "XXL",
+            "Drive": 0.99,
+            "Attack": 1.0,
+            "Notch Freq": 2500.0,
+            "Notch Gain": 10.0,
+            "Thick": 1,
+            "Level": 0.6
+        }
+    }
+}

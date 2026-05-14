@@ -1,0 +1,121 @@
+{
+    "modelName": "Transistor Tape",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "WowFlutter": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Scale": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Spread": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Headroom": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        },
+        "DryThru": {
+            "id": 12,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Goldilocks",
+            "Time": 0.5069999694824219,
+            "Feedback": 0.309999942779541,
+            "WowFlutter": 0.09000003337860107,
+            "Scale": 1.0,
+            "Spread": 1.0,
+            "Mix": 0.2999999523162842,
+            "Level": 0.0,
+            "Headroom": 4.0,
+            "SyncSelect1": 9,
+            "TempoSync1": true,
+            "DryThru": false
+        },
+        "x_min_y_min": {
+            "name": "Slap Tape",
+            "Time": 0.15799999237060547,
+            "Feedback": 0.2200000286102295,
+            "WowFlutter": 0.3500000238418579,
+            "Scale": 1.0,
+            "Spread": 1.0,
+            "Mix": 0.3700000047683716,
+            "Level": 0.0,
+            "Headroom": 4.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false,
+            "DryThru": false
+        },
+        "x_min_y_max": {
+            "name": "Light Tape",
+            "Time": 0.15799999237060547,
+            "Feedback": 0.1499999761581421,
+            "WowFlutter": 0.0,
+            "Scale": 1.0,
+            "Spread": 1.0,
+            "Mix": 0.12999999523162842,
+            "Level": 0.0,
+            "Headroom": 4.0,
+            "SyncSelect1": 9,
+            "TempoSync1": true,
+            "DryThru": false
+        },
+        "x_max_y_min": {
+            "name": "Dual Tape",
+            "Time": 0.5069999694824219,
+            "Feedback": 0.440000057220459,
+            "WowFlutter": 0.3500000238418579,
+            "Scale": 0.75,
+            "Spread": 1.0,
+            "Mix": 0.4700000286102295,
+            "Level": 0.0,
+            "Headroom": 4.0,
+            "SyncSelect1": 6,
+            "TempoSync1": true,
+            "DryThru": false
+        },
+        "x_max_y_max": {
+            "name": "Runaway Tape",
+            "Time": 0.5069999694824219,
+            "Feedback": 0.7300000190734863,
+            "WowFlutter": 0.46000003814697266,
+            "Scale": 0.9800000190734863,
+            "Spread": 1.0,
+            "Mix": 0.5099999904632568,
+            "Level": 0.0,
+            "Headroom": 4.0,
+            "SyncSelect1": 8,
+            "TempoSync1": true,
+            "DryThru": false
+        }
+    }
+}

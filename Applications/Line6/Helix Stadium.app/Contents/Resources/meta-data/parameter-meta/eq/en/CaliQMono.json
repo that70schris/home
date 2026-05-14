@@ -1,0 +1,14 @@
+{
+    "category": "eq",
+    "model_id": 329,
+    "model_sym": "ModelID::kCaliQMono",
+    "display_name": "Cali Q Graphic",
+    "parameters-en": {
+        "80Hz": "The amount of boost and cut is not equal for all bands. This is consistent with the real amp.",
+        "240Hz": "The amount of boost and cut is not equal for all bands. This is consistent with the real amp.",
+        "750Hz": "The amount of boost and cut is not equal for all bands. This is consistent with the real amp.",
+        "2200Hz": "The amount of boost and cut is not equal for all bands. This is consistent with the real amp.",
+        "6600Hz": "The amount of boost and cut is not equal for all bands. This is consistent with the real amp.",
+        "Level": "Sets the overall level of the block."
+    }
+}

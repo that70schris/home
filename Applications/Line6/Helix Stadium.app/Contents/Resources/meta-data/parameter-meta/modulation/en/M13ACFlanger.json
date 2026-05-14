@@ -1,0 +1,14 @@
+{
+    "category": "modulation",
+    "model_id": 231,
+    "model_sym": "ModelID::kM13ACFlanger",
+    "display_name": "AC Flanger",
+    "parameters-en": {
+        "Speed": "Controls the speed or rate of the flanger. When set to note values, Speed follows the system tempo.",
+        "Width": "Controls how wide and dramatic the flanging sweep appears.",
+        "Regen": "Controls the amount of feedback in the effected signal.",
+        "Manual": "Controls the degree of phase shifting. Has no effect when Width is set to 100%.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

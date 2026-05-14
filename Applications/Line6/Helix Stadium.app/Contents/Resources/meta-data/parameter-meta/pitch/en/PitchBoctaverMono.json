@@ -1,0 +1,11 @@
+{
+    "category": "pitch",
+    "model_id": 407,
+    "model_sym": "ModelID::kPitchBoctaverMono",
+    "display_name": "Boctaver",
+    "parameters-en": {
+        "-1 Oct": "Sets the level of the signal one octave down.",
+        "-2 Oct": "Sets the level of the signal two octaves down.",
+        "Dry Level": "Sets the level of the dry (unaffected) signal."
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "modelName": "80A Flanger",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Range": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Enhance": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Manual": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Harmonic": {
+            "id": 5,
+            "behavior": "quantize"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 8,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Heavy",
+            "Speed": 3.2,
+            "Range": 0.28,
+            "Enhance": 0.65,
+            "Manual": 0.66,
+            "Harmonic": true,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Light",
+            "Speed": 0.2,
+            "Range": 0.16,
+            "Enhance": 0.5,
+            "Manual": 0.38,
+            "Harmonic": true,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Extra Heavy",
+            "Speed": 5.0,
+            "Range": 0.24,
+            "Enhance": 0.65,
+            "Manual": 0.66,
+            "Harmonic": true,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Medium",
+            "Speed": 1.8,
+            "Range": 0.26,
+            "Enhance": 0.65,
+            "Manual": 0.48,
+            "Harmonic": true,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Unstable",
+            "Speed": 6.0,
+            "Range": 0.43,
+            "Enhance": 0.65,
+            "Manual": 0.66,
+            "Harmonic": true,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "category": "input",
+    "model_id": 760,
+    "model_sym": "ModelID::kInputInst2",
+    "display_name": "Instrument 2",
+    "parameters-en": {
+        "Pad": "Applies a pad to the input. Set to \"Off/Inst\" for guitars and basses with passive pickups. Set to \"On/Line\" for guitars and basses with loud active pickups or line level products like synths or drum machines. Set to \"Global\" to follow the Global Settings > Ins/Outs > Instrument In 2 Pad setting, so it doesn't need to be set for every preset.",
+        "Trim": "Sets the Instrument 2 digital input level and is used to compensate for overly soft or loud instruments. IMPORTANT! Setting Trim to a value higher (or lower) than 0.0 dB effectively boosts (or attenuates) your signal into the first block, which may result in a less than accurate response. Or you might like it.",
+        "Gate": "Turns the Input block's built-in noise gate on and off.",
+        "Threshold": "Sets the noise gate's Threshold. The gate \"opens\" when the signal's level exceeds the Threshold, to let audio pass through. The gate \"closes\" when the signal's level drops below the Threshold. Adjust Threshold so only softer, unwanted signals (such as noise or hum) are gated.",
+        "Decay": "Controls the length of time it takes for the open noise gate to close once the signal drops below the Threshold. Increase Decay if you want the gate to gradually lower the signal instead of chopping it off abruptly."
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "modelName": "Elephant Man",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mode": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "Depth": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Noise": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Headroom": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Watery",
+            "Time": 0.3169999122619629,
+            "Feedback": 0.6299999952316284,
+            "Mode": false,
+            "Depth": 0.15999996662139893,
+            "Mix": 0.41999995708465576,
+            "Level": 0.0,
+            "Noise": 0.04999995231628418,
+            "Headroom": 2.3000011444091797,
+            "SyncSelect1": 8,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Slap",
+            "Time": 0.13899993896484375,
+            "Feedback": 0.2200000286102295,
+            "Mode": false,
+            "Depth": 0.0,
+            "Mix": 0.3700000047683716,
+            "Level": 0.0,
+            "Noise": 0.20000004768371582,
+            "Headroom": -1.3999996185302734,
+            "SyncSelect1": 8,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Solo Delay",
+            "Time": 0.3710000514984131,
+            "Feedback": 0.41999995708465576,
+            "Mode": false,
+            "Depth": 0.029999971389770508,
+            "Mix": 0.2799999713897705,
+            "Level": 0.0,
+            "Noise": 0.04999995231628418,
+            "Headroom": 2.3000011444091797,
+            "SyncSelect1": 8,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "You Too",
+            "Time": 0.5,
+            "Feedback": 0.41999995708465576,
+            "Mode": false,
+            "Depth": 0.059999942779541016,
+            "Mix": 0.5499999523162842,
+            "Level": 0.0,
+            "Noise": 0.10000002384185791,
+            "Headroom": 0.0,
+            "SyncSelect1": 8,
+            "TempoSync1": true
+        },
+        "x_max_y_max": {
+            "name": "Oscillate",
+            "Time": 0.5,
+            "Feedback": 0.9500000476837158,
+            "Mode": true,
+            "Depth": 0.36000001430511475,
+            "Mix": 0.440000057220459,
+            "Level": 0.0,
+            "Noise": 0.7899999618530273,
+            "Headroom": -2.5,
+            "SyncSelect1": 9,
+            "TempoSync1": false
+        }
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "modelName": "US Deluxe Vib",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Hum": {
+            "id": 8,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "The Sweet Spot",
+            "Drive": 0.3500000238418579,
+            "Bass": 0.48000001907348633,
+            "Mid": 0.5199999809265137,
+            "Treble": 0.6000000238418579,
+            "Master": 1.0,
+            "ChVol": 0.9500000476837158,
+            "Sag": 0.5,
+            "Hum": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Squeaky Clean",
+            "Drive": 0.2200000286102295,
+            "Bass": 0.5499999523162842,
+            "Mid": 0.5,
+            "Treble": 0.6200000047683716,
+            "Master": 1.0,
+            "ChVol": 0.9500000476837158,
+            "Sag": 0.5,
+            "Hum": 0.5
+        },
+        "x_min_y_max": {
+            "name": "Push Some Mids",
+            "Drive": 0.3999999761581421,
+            "Bass": 0.46000003814697266,
+            "Mid": 0.8999999761581421,
+            "Treble": 0.6800000667572021,
+            "Master": 1.0,
+            "ChVol": 0.9500000476837158,
+            "Sag": 0.5,
+            "Hum": 0.5
+        },
+        "x_max_y_min": {
+            "name": "Drive It",
+            "Drive": 0.6000000238418579,
+            "Bass": 0.4500000476837158,
+            "Mid": 0.6000000238418579,
+            "Treble": 0.7699999809265137,
+            "Master": 1.0,
+            "ChVol": 0.9500000476837158,
+            "Sag": 0.5,
+            "Hum": 0.5
+        },
+        "x_max_y_max": {
+            "name": "Kinda British",
+            "Drive": 1.0,
+            "Bass": 0.31999993324279785,
+            "Mid": 1.0,
+            "Treble": 1.0,
+            "Master": 1.0,
+            "ChVol": 0.82,
+            "Sag": 0.5,
+            "Hum": 0.5
+        }
+    }
+}

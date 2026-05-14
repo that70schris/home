@@ -1,0 +1,188 @@
+{
+    "modelName": "US 5W Tweed",
+    "params": {
+        "Jack": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "Drive": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Ripple": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Boost": {
+            "id": 6,
+            "behavior": "quantize"
+        },
+        "ZPrePost": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Hype": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "AmpCabPeak2Q": {
+            "id": 74,
+            "behavior": "exclude"
+        },
+        "AmpCabPeak2Fc": {
+            "id": 75,
+            "behavior": "exclude"
+        },
+        "AmpCabPeak2G": {
+            "id": 76,
+            "behavior": "exclude"
+        },
+        "AmpCabZFir": {
+            "id": 101,
+            "behavior": "exclude"
+        },
+        "AmpCabZUpdate": {
+            "id": 103,
+            "behavior": "exclude"
+        },
+        "AmpCabShelfF": {
+            "id": 104,
+            "behavior": "exclude"
+        },
+        "AmpCabShelfG": {
+            "id": 105,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakQ": {
+            "id": 106,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakG": {
+            "id": 107,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakFc": {
+            "id": 108,
+            "behavior": "exclude"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Thick Edge",
+            "Jack": 1,
+            "Drive": 0.582,
+            "Master": 1.00000,
+            "Sag": 0.0,
+            "Ripple": 0.00000,
+            "Boost": 0,
+            "ZPrePost": 0.300000,
+            "Level": -10.0000,
+            "Hype": 0.0,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_min_y_min": {
+            "name": "Chime",
+            "Jack": 0,
+            "Drive": 0.33,
+            "Master": 1.00000,
+            "Sag": -0.3,
+            "Ripple": 0.00000,
+            "Boost": 1,
+            "ZPrePost": 0.300000,
+            "Level": -7.4,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_min_y_max": {
+            "name": "Squashed",
+            "Jack": 1,
+            "Drive": 0.68,
+            "Master": 1.00000,
+            "Sag": 0.28,
+            "Ripple": 0.00000,
+            "Boost": 0,
+            "ZPrePost": 0.300000,
+            "Level": -7.0000,
+            "Hype": 0.58,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_max_y_min": {
+            "name": "Broke",
+            "Jack": 1,
+            "Drive": 0.42,
+            "Master": 1.00000,
+            "Sag": 0.46,
+            "Ripple": 0.64,
+            "Boost": 1,
+            "ZPrePost": 0.300000,
+            "Level": -10.2,
+            "Hype": 0.18,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_max_y_max": {
+            "name": "Tweed Dweeb",
+            "Jack": 1,
+            "Drive": 1.0,
+            "Master": 1.00000,
+            "Sag": 1.0,
+            "Ripple": 0.00000,
+            "Boost": 1,
+            "ZPrePost": 0.300000,
+            "Level": -10.5,
+            "Hype": 0.12,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        }
+    }
+}

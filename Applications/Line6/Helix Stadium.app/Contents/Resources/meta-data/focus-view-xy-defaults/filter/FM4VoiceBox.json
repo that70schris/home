@@ -1,0 +1,94 @@
+{
+    "modelName": "Voice Box",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Start": {
+            "id": 2,
+            "behavior": "quantize"
+        },
+        "End": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "Auto": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Wowzers",
+            "Speed": 1.0,
+            "Start": 0,
+            "End": 1,
+            "Auto": 0,
+            "Mix": 0.57,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Stutter",
+            "Speed": 3.5,
+            "Start": 4,
+            "End": 0,
+            "Auto": 2,
+            "Mix": 0.9,
+            "Level": -1.7,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Air Filter",
+            "Speed": 0.9,
+            "Start": 2,
+            "End": 3,
+            "Auto": 1,
+            "Mix": 0.58,
+            "Level": -7.6,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "In and Out",
+            "Speed": 1.6,
+            "Start": 2,
+            "End": 3,
+            "Auto": 3,
+            "Mix": 0.62,
+            "Level": -7.6,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Spacey",
+            "Speed": 12.7,
+            "Start": 0,
+            "End": 4,
+            "Auto": 3,
+            "Mix": 0.66,
+            "Level": -1.7,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

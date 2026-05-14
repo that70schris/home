@@ -1,0 +1,13 @@
+{
+    "category": "modulation",
+    "model_id": 162,
+    "model_sym": "ModelID::kPhaserScriptModPhaseStereo",
+    "display_name": "Script Mod Phase",
+    "parameters-en": {
+        "Rate": "Controls the speed or rate of the phaser. When set to note values, Speed follows the system tempo.",
+        "Spread": "Controls the apparent stereo spread between the left and right channels.",
+        "Mix": "Controls the blend between the modulation effect and the dry signal. The most intense phasing happens around 50%.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

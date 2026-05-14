@@ -1,0 +1,158 @@
+
+<xg>
+    <panel_widget height="241" id="1" left="0" top="0" width="200">
+        <bg_color>0xFF212121</bg_color>
+        <pushbutton_widget height="40" id="copy" left="0" top="0" width="200">
+            <anchor_pos left="0" right="0"/>
+            <bg_color>0xFF212121</bg_color>
+            <icon height="32" width="32">160</icon>
+            <icon_placement spacing="8">-1</icon_placement>
+            <text>
+                <label>Copy Command</label>
+                <font name="Inter Display" size="16"/>
+                <align horz="left"/>
+                <offset x="8"/>
+                <text_color>0xFFA9A9A9</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF797979</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF5E5E5E</bg_color>
+                <fg_color>0xFFEBEBEB</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <pushbutton_widget height="40" id="cpya" left="0" top="40" width="200">
+            <anchor_pos left="0" right="0"/>
+            <bg_color>0xFF212121</bg_color>
+            <icon height="32" width="32">160</icon>
+            <icon_placement spacing="8">-1</icon_placement>
+            <text>
+                <label>Copy All Commands</label>
+                <font name="Inter Display" size="16"/>
+                <align horz="left"/>
+                <offset x="8"/>
+                <text_color>0xFFA9A9A9</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF797979</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF5E5E5E</bg_color>
+                <fg_color>0xFFEBEBEB</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <pushbutton_widget height="40" id="past" left="0" top="80" width="200">
+            <anchor_pos left="0" right="0"/>
+            <bg_color>0xFF212121</bg_color>
+            <icon height="32" width="32">174</icon>
+            <icon_placement spacing="8">-1</icon_placement>
+            <text>
+                <label>Paste Command</label>
+                <font name="Inter Display" size="16"/>
+                <align horz="left"/>
+                <offset x="8"/>
+                <text_color>0xFFA9A9A9</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF797979</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF5E5E5E</bg_color>
+                <fg_color>0xFFEBEBEB</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <panel_widget height="1" id="1" left="0" top="200" width="200">
+            <anchor_pos left="0" right="0" top="200"/>
+            <bg_color>0xFFA9A9A9</bg_color>
+        </panel_widget>
+        <pushbutton_widget height="40" id="cler" left="0" top="120" width="200">
+            <anchor_pos left="0" right="0"/>
+            <bg_color>0xFF212121</bg_color>
+            <icon height="32" width="32">155</icon>
+            <icon_placement spacing="8">-1</icon_placement>
+            <text>
+                <label>Clear Command</label>
+                <font name="Inter Display" size="16"/>
+                <align horz="left"/>
+                <offset x="8"/>
+                <text_color>0xFFA9A9A9</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF797979</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF5E5E5E</bg_color>
+                <fg_color>0xFFEBEBEB</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <pushbutton_widget height="40" id="clra" left="0" top="160" width="200">
+            <anchor_pos left="0" right="0"/>
+            <bg_color>0xFF212121</bg_color>
+            <icon height="32" width="32">211</icon>
+            <icon_placement spacing="8">-1</icon_placement>
+            <text>
+                <label>Clear/Reset All</label>
+                <font name="Inter Display" size="16"/>
+                <align horz="left"/>
+                <offset x="8"/>
+                <text_color>0xFFA9A9A9</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF797979</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF5E5E5E</bg_color>
+                <fg_color>0xFFEBEBEB</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <pushbutton_widget height="40" id="afav" left="0" top="201" width="200">
+            <anchor_pos left="0" right="0"/>
+            <visible>no</visible>
+            <bg_color>0xFF212121</bg_color>
+            <icon height="32" width="32">189</icon>
+            <icon_placement spacing="8">-1</icon_placement>
+            <text>
+                <label>Add to Favorites</label>
+                <font name="Inter Display" size="16"/>
+                <align horz="left"/>
+                <offset x="8"/>
+                <text_color>0xFFA9A9A9</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF797979</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF5E5E5E</bg_color>
+                <fg_color>0xFFEBEBEB</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <pushbutton_widget height="40" id="lbcl" left="0" top="201" width="200">
+            <anchor_pos left="0" right="0"/>
+            <bg_color>0xFF212121</bg_color>
+            <icon height="32" width="32">182</icon>
+            <icon_placement spacing="8">-1</icon_placement>
+            <text>
+                <label>Label/Color</label>
+                <font name="Inter Display" size="16"/>
+                <align horz="left"/>
+                <offset x="8"/>
+                <text_color>0xFFA9A9A9</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF797979</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF5E5E5E</bg_color>
+                <fg_color>0xFFEBEBEB</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+    </panel_widget>
+</xg>

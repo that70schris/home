@@ -1,0 +1,16 @@
+{
+    "category": "modulation",
+    "model_id": 256,
+    "model_sym": "ModelID::kFlexoVibeStereo",
+    "display_name": "FlexoVibe",
+    "parameters-en": {
+        "Rate": "Controls the speed of the chorus’ low-frequency oscillator (LFO) from slow to fast.",
+        "Intensity": "Controls the amplitude of the modulation, from mild to deep.",
+        "Warp": "Controls the shape of the LFO. At 0.0, the LFO waveform is a triangle; at +1.0 and -1.0, the waveforms exhibit more chaos, or \"warping.\"",
+        "Spread": "Controls the phase offset between the two LFOs. At 0.0, no offset is heard; at 10.0, the two LFOs are separated by 180°. Generally sounds best somewhere in the middle.",
+        "Mix": "Controls the blend between the effected signal and the dry signal. At 0%, no effect is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "Cho Rate": "",
+        "TempoSync1": ""
+    }
+}

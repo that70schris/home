@@ -1,0 +1,67 @@
+{
+    "modelName": "Screamer",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Tone": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Output": {
+            "id": 5,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Crunch",
+            "Drive": 0.2999999523162842,
+            "Bass": 0.5499999523162842,
+            "Tone": 0.559999942779541,
+            "Treble": 0.5299999713897705,
+            "Output": 0.75
+        },
+        "x_min_y_min": {
+            "name": "Boost",
+            "Drive": 0.09000003337860107,
+            "Bass": 0.6000000238418579,
+            "Tone": 0.5,
+            "Treble": 0.5499999523162842,
+            "Output": 0.9500000476837158
+        },
+        "x_min_y_max": {
+            "name": "Bite",
+            "Drive": 0.5,
+            "Bass": 0.5399999618530273,
+            "Tone": 0.7000000476837158,
+            "Treble": 0.6299999952316284,
+            "Output": 0.7699999809265137
+        },
+        "x_max_y_min": {
+            "name": "Warm",
+            "Drive": 0.5,
+            "Bass": 0.7000000476837158,
+            "Tone": 0.2999999523162842,
+            "Treble": 0.5,
+            "Output": 0.8999999761581421
+        },
+        "x_max_y_max": {
+            "name": "Lead",
+            "Drive": 0.9500000476837158,
+            "Bass": 0.6499999761581421,
+            "Tone": 0.7000000476837158,
+            "Treble": 0.7000000476837158,
+            "Output": 0.7300000190734863
+        }
+    }
+}

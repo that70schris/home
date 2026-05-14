@@ -1,0 +1,94 @@
+{
+    "modelName": "Auto-Volume Echo",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Swell": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Swell Delay",
+            "Time": 0.592,
+            "Feedback": 0.63,
+            "Depth": 0.49,
+            "Swell": 0.49,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Fading",
+            "Time": 0.833,
+            "Feedback": 0.25,
+            "Depth": 0.5,
+            "Swell": 0.1,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Wait Swell",
+            "Time": 1.205,
+            "Feedback": 0.61,
+            "Depth": 0.13,
+            "Swell": 1.0,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Short Swell",
+            "Time": 0.186,
+            "Feedback": 0.25,
+            "Depth": 0.5,
+            "Swell": 0.31,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Fade Detune",
+            "Time": 1.104,
+            "Feedback": 0.75,
+            "Depth": 0.75,
+            "Swell": 1.0,
+            "Mix": 0.52,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

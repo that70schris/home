@@ -1,0 +1,11 @@
+{
+    "category": "output",
+    "model_id": 770,
+    "model_sym": "ModelID::kOutputUSB3_4",
+    "display_name": "USB 3/4",
+    "parameters-en": {
+        "Pan": "Controls the balance between the Output's left and right channels. When set to L 100, signal is only heard from the left output; when set to R 100, signal is only heard from the right output.",
+        "Level": "Sets the overall level of the Output block.",
+        "PeakEventPeriodMs": ""
+    }
+}

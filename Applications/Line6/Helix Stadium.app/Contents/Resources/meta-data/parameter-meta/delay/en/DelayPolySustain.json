@@ -1,0 +1,22 @@
+{
+    "category": "delay",
+    "model_id": 473,
+    "model_sym": "ModelID::kDelayPolySustain",
+    "display_name": "Poly Sustain",
+    "parameters-en": {
+        "Interval": "Sets the pitch of the sustained note or chord. TIP: This parameter is especially cool for creating massive drones to play over.",
+        "Attack": "Controls the speed at which the sustained note or chord fades in.",
+        "Decay": "Controls the speed at which the sustained note or chord fades out after bypassing the effect.",
+        "Mod Freq": "Controls the speed of the built-in modulation.",
+        "Mod Depth": "Controls the depth of the built-in modulation.",
+        "FX Level": "Controls the level of the sustained signal.",
+        "RandDepth": "Higher values increase the randomization of the section of audio being sustained, resulting in a more natural, but less predictable drone.",
+        "RandSpeed": "Controls how fast the randomization wanders.",
+        "Level": "Sets the overall level of the block.",
+        "Auto EQ": "Determines how much compensation EQ is applied to the sustained signal. If the sustained signal sounds too harsh when pitched up (or dull when pitched down), adjust this setting to taste. The higher the value, the more EQ is applied at the shift end points; when set to 0.0, no compensation EQ is applied.",
+        "Operation": "Determines what happens to your signal when Poly Sustain is turned on. When set to \"Mute All,\" THE ENTIRE PATH IS MUTED. When set to \"Dry Kill,\" only the sustained signal is heard. When set to \"Normal,\" both the sustained and dry signals are heard. TIP: With Poly Sustain on a parallel path, assign a second stomp switch to toggle between Mute All and Dry Kill.",
+        "FreezeSwitch": "",
+        "TSync2": "",
+        "TSync1": ""
+    }
+}

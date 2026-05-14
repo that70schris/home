@@ -1,0 +1,11 @@
+{
+    "category": "modulation",
+    "model_id": 205,
+    "model_sym": "ModelID::kMM4ScriptPhase",
+    "display_name": "Script Phase",
+    "parameters-en": {
+        "Speed": "Controls the speed or rate of the phaser. When set to note values, Speed follows the system tempo.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

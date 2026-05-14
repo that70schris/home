@@ -1,0 +1,76 @@
+{
+    "modelName": "Ganymede",
+    "params": {
+        "Decay": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Predelay": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Tone": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Modulation": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Classic Mod",
+            "Decay": 0.7400000095367432,
+            "Predelay": 0.0830000638961792,
+            "Tone": 0.6000000238418579,
+            "Modulation": 0.7000000476837158,
+            "Mix": 0.3500000238418579,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Small Hall",
+            "Decay": 0.0,
+            "Predelay": 0.0140000581741333,
+            "Tone": 0.5,
+            "Modulation": 0.0,
+            "Mix": 0.20000004768371582,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Dark Verb",
+            "Decay": 0.4500000476837158,
+            "Predelay": 0.08899998664855957,
+            "Tone": 0.13999998569488525,
+            "Modulation": 0.3500000238418579,
+            "Mix": 0.3500000238418579,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Bright Verb",
+            "Decay": 0.5399999618530273,
+            "Predelay": 0.13999998569488525,
+            "Tone": 0.9500000476837158,
+            "Modulation": 0.5799999237060547,
+            "Mix": 0.31999993324279785,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Endless Space",
+            "Decay": 0.9500000476837158,
+            "Predelay": 0.12100005149841309,
+            "Tone": 0.3999999761581421,
+            "Modulation": 0.7999999523162842,
+            "Mix": 0.4500000476837158,
+            "Level": 0.0
+        }
+    }
+}

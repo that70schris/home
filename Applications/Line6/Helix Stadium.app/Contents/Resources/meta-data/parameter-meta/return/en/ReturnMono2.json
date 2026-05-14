@@ -1,0 +1,10 @@
+{
+    "category": "return",
+    "model_id": 272,
+    "model_sym": "ModelID::kReturnMono2",
+    "display_name": "Return 2",
+    "parameters-en": {
+        "Return": "Sets the level of the Return 2 signal. 0.0 dB is unity gain.",
+        "Mix": "Sets the balance between the Return signal and the dry signal passed through the Return block. When set to 0%, the path bypasses the Return completely. When set to 100%, the entire signal is fed from the Return, and no dry signal is heard."
+    }
+}

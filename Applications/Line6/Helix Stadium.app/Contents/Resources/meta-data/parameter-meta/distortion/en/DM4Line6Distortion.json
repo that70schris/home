@@ -1,0 +1,13 @@
+{
+    "category": "distortion",
+    "model_id": 360,
+    "model_sym": "ModelID::kDM4Line6Distortion",
+    "display_name": "L6 Distortion",
+    "parameters-en": {
+        "Drive": "Controls the amount of distortion applied to the signal.",
+        "Bass": "Controls the low frequency EQ of the distortion.",
+        "Mid": "Controls the midrange frequency EQ of the distortion.",
+        "Treble": "Controls the high frequency EQ of the distortion.",
+        "Output": "Sets the overall level of the block."
+    }
+}

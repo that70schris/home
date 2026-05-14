@@ -1,0 +1,27 @@
+{
+    "category": "delay",
+    "model_id": 483,
+    "model_sym": "ModelID::kDelayHarmonyDelayStereo",
+    "display_name": "Harmony Delay",
+    "parameters-en": {
+        "Time": "Adjusts the length of time before the first repeat. When set to note values, Time follows the system tempo.",
+        "Feedback": "Feedback controls the number of repeated pitch sequences. When set to 0%, the two voice/harmony repeats are heard only once, followed by the root note again. At higher values, the three note sequence (root, voice/harmony 1, and voice/harmony 2) cycle repeatedly.",
+        "Key": "Along with Scale, specifies the scale reference for V1 Shift and V2 Shift values. For example, if you choose D Minor and then PLAY IN D MINOR (Harmony Delay can't fix bad notes), V1 Shift and V2 Shift will always shift your repeats to pitches in that scale.",
+        "Scale": "Along with Key, specifies the scale reference for V1 Shift and V2 Shift values. For example, if you choose D Minor and then PLAY IN D MINOR (Harmony Delay can't fix wrong notes), V1 Shift and V2 Shift will shift your repeats to pitches in that scale.",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "V1 Shift": "Selects voice/harmony 1's note in the specified Key. For example, if Key is set to \"D\" and Scale is set to \"Minor\" (which I always find is the saddest of all keys), setting V1 Shift to +3 will repeat an F (or the third note above D in the D minor scale).",
+        "V1 Level": "Controls the level of the voice/harmony 1 repeats.",
+        "V1 Pan": "Controls the panning of the voice/harmony 1 repeats between the left and right channels.",
+        "V2 Shift": "Selects voice/harmony 2's note in the specified Key. For example, if Key is set to \"D\" and Scale is set to \"Minor\" (which I always find is the saddest of all keys), setting V2 Shift to -2 will repeat a Bb (or the second note below D in the D minor scale).",
+        "V2 Level": "Controls the level of the voice/harmony 2 repeats.",
+        "V2 Pan": "Controls the panning of the voice/harmony 2 repeats between the left and right channels.",
+        "V1 Scale": "Voice/harmony 1's delay time is always some percentage of the root note's time (controlled via Time), and is determined by the V1 Scale parameter. For example, if Time is set to 800 ms and V1 Scale is set to 75%, voice/harmony 1's delay is 600 ms (or 75% of 800 ms). When scale is set to 100%, voice/harmony 1 and root delays are the same.",
+        "V2 Scale": "Voice/harmony 2's delay time is always some percentage of the root note's time (controlled via Time), and is determined by the V2 Scale parameter. For example, if Time is set to 800 ms and V2 Scale is set to 25%, voice/harmony 2's delay is 200 ms (or 25% of 800 ms). When scale is set to 100%, voice/harmony 2 and root delays are the same.",
+        "Root Level": "Controls the level of the root (unpitched) repeats. If you only want to hear the harmony repeats, set Root Level to 0.0.",
+        "Root Pan": "Controls the panning of the root (unhitched) repeats between the left and right channels.",
+        "Low Cut": "Applies a low cut (high pass) filter to the repeats, letting you remove the effected signal below a certain frequency.",
+        "High Cut": "Applies a high cut (low pass) filter to the repeats, letting you remove the effected signal above a certain frequency.",
+        "TSync1": ""
+    }
+}

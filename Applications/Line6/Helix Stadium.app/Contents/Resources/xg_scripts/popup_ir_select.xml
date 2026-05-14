@@ -1,0 +1,29 @@
+
+<xg>
+    <panel_widget height="360" id="irpu" left="0" top="0" width="800">
+        <bg_color>0xFF000000</bg_color>
+        <script_widget class="P35FileBrowserWidget" height="340" id="file" left="10" top="10" width="780">
+            <anchor_pos bottom="10" left="10" right="10" top="10"/>
+            <bg_color>0xFFFFFFFF</bg_color>
+            <script>widget_file_browser.xml</script>
+        </script_widget>
+        <toggle_widget height="28" id="snpa" left="640" top="322" width="150">
+            <anchor_pos bottom="10" right="10"/>
+            <bg_color>0x00212121</bg_color>
+            <icon height="32" width="32">212</icon>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <label>Snapshot Control</label>
+                <font name="Inter" size="14"/>
+                <text_color>0xFFA9A9A9</text_color>
+            </text>
+            <active_state>
+                <bg_color>0x00797979</bg_color>
+                <fg_color>0x00EBEBEB</fg_color>
+            </active_state>
+            <hilite_state>
+                <fg_color>0x00FFFFFF</fg_color>
+            </hilite_state>
+        </toggle_widget>
+    </panel_widget>
+</xg>

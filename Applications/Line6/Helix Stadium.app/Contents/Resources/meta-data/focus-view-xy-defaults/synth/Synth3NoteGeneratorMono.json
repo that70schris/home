@@ -1,0 +1,202 @@
+{
+    "modelName": "3 Note Generator",
+    "params": {
+        "Osc1Shape": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "Osc1Octave": {
+            "id": 2,
+            "behavior": "quantize"
+        },
+        "Osc1Note": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "Osc1Level": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Osc1Glide": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Osc2Shape": {
+            "id": 6,
+            "behavior": "quantize"
+        },
+        "Osc2Octave": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "Osc2Note": {
+            "id": 8,
+            "behavior": "quantize"
+        },
+        "Osc2Level": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Osc2Glide": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Osc3Shape": {
+            "id": 11,
+            "behavior": "quantize"
+        },
+        "Osc3Octave": {
+            "id": 12,
+            "behavior": "quantize"
+        },
+        "Osc3Note": {
+            "id": 13,
+            "behavior": "quantize"
+        },
+        "Osc3Level": {
+            "id": 14,
+            "behavior": "interpolate"
+        },
+        "Osc3Glide": {
+            "id": 15,
+            "behavior": "interpolate"
+        },
+        "Attack": {
+            "id": 16,
+            "behavior": "interpolate"
+        },
+        "Decay": {
+            "id": 17,
+            "behavior": "interpolate"
+        },
+        "DryLevel": {
+            "id": 18,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 19,
+            "behavior": "interpolate"
+        },
+        "RiseTimeSwitch": {
+            "id": 24,
+            "behavior": "exclude"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "D Maj Sub",
+            "Osc1Shape": 3,
+            "Osc1Octave": 2,
+            "Osc1Note": 2,
+            "Osc1Level": 0.8299999833106995,
+            "Osc1Glide": 0.5199999809265137,
+            "Osc2Shape": 3,
+            "Osc2Octave": 2,
+            "Osc2Note": 9,
+            "Osc2Level": 0.6800000071525574,
+            "Osc2Glide": 0.5699999928474426,
+            "Osc3Shape": 3,
+            "Osc3Octave": 3,
+            "Osc3Note": 6,
+            "Osc3Level": 0.47999998927116394,
+            "Osc3Glide": 0.8700000047683716,
+            "Attack": 0.29999998211860657,
+            "Decay": 0.29999998211860657,
+            "DryLevel": 1.0,
+            "Level": 0.0,
+            "RiseTimeSwitch": false
+        },
+        "x_min_y_min": {
+            "name": "D Engine Room",
+            "Osc1Shape": 2,
+            "Osc1Octave": 2,
+            "Osc1Note": 2,
+            "Osc1Level": 1.0,
+            "Osc1Glide": 0.4699999988079071,
+            "Osc2Shape": 3,
+            "Osc2Octave": 3,
+            "Osc2Note": 9,
+            "Osc2Level": 0.12999999523162842,
+            "Osc2Glide": 0.5600000023841858,
+            "Osc3Shape": 3,
+            "Osc3Octave": 3,
+            "Osc3Note": 6,
+            "Osc3Level": 0.27000001072883606,
+            "Osc3Glide": 0.6200000047683716,
+            "Attack": 1.8420000076293945,
+            "Decay": 1.8209999799728394,
+            "DryLevel": 1.0,
+            "Level": 0.0,
+            "RiseTimeSwitch": false
+        },
+        "x_min_y_max": {
+            "name": "Saws in E",
+            "Osc1Shape": 1,
+            "Osc1Octave": 1,
+            "Osc1Note": 4,
+            "Osc1Level": 0.8100000023841858,
+            "Osc1Glide": 0.699999988079071,
+            "Osc2Shape": 1,
+            "Osc2Octave": 2,
+            "Osc2Note": 11,
+            "Osc2Level": 0.6700000166893005,
+            "Osc2Glide": 0.699999988079071,
+            "Osc3Shape": 1,
+            "Osc3Octave": 3,
+            "Osc3Note": 8,
+            "Osc3Level": 0.5600000023841858,
+            "Osc3Glide": 0.699999988079071,
+            "Attack": 5.0,
+            "Decay": 3.0,
+            "DryLevel": 0.6399999856948853,
+            "Level": 0.0,
+            "RiseTimeSwitch": true
+        },
+        "x_max_y_min": {
+            "name": "G Nasal",
+            "Osc1Shape": 0,
+            "Osc1Octave": 2,
+            "Osc1Note": 7,
+            "Osc1Level": 0.8399999737739563,
+            "Osc1Glide": 0.3100000023841858,
+            "Osc2Shape": 2,
+            "Osc2Octave": 4,
+            "Osc2Note": 2,
+            "Osc2Level": 0.7099999785423279,
+            "Osc2Glide": 0.4699999988079071,
+            "Osc3Shape": 4,
+            "Osc3Octave": 3,
+            "Osc3Note": 11,
+            "Osc3Level": 0.46000000834465027,
+            "Osc3Glide": 0.6800000071525574,
+            "Attack": 2.8219997882843018,
+            "Decay": 3.5889997482299805,
+            "DryLevel": 1.0,
+            "Level": 0.0,
+            "RiseTimeSwitch": false
+        },
+        "x_max_y_max": {
+            "name": "G5 Maj7 Drone",
+            "Osc1Shape": 0,
+            "Osc1Octave": 1,
+            "Osc1Note": 7,
+            "Osc1Level": 1.0,
+            "Osc1Glide": 0.5199999809265137,
+            "Osc2Shape": 1,
+            "Osc2Octave": 3,
+            "Osc2Note": 2,
+            "Osc2Level": 0.5199999809265137,
+            "Osc2Glide": 0.5799999833106995,
+            "Osc3Shape": 1,
+            "Osc3Octave": 3,
+            "Osc3Note": 6,
+            "Osc3Level": 0.44999998807907104,
+            "Osc3Glide": 0.6499999761581421,
+            "Attack": 2.0119998455047607,
+            "Decay": 4.376999855041504,
+            "DryLevel": 1.0,
+            "Level": 0.0,
+            "RiseTimeSwitch": false
+        }
+    }
+}

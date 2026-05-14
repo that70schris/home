@@ -1,0 +1,94 @@
+{
+    "modelName": "Voltage",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Boost": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "HumSwitch": {
+            "id": 9,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Break Up",
+            "Drive": 0.6499999761581421,
+            "Bass": 0.7000000476837158,
+            "Mid": 0.7000000476837158,
+            "Treble": 0.5299999713897705,
+            "ChVol": 0.5,
+            "Boost": 0.0,
+            "Sag": 0.5,
+            "HumSwitch": false
+        },
+        "x_min_y_min": {
+            "name": "Mellow",
+            "Drive": 0.12000000476837158,
+            "Bass": 0.49000000953674316,
+            "Mid": 0.18000006675720215,
+            "Treble": 0.2200000286102295,
+            "ChVol": 0.56,
+            "Boost": 0.0,
+            "Sag": 0.5,
+            "HumSwitch": false
+        },
+        "x_min_y_max": {
+            "name": "Bright EOB",
+            "Drive": 0.13999998569488525,
+            "Bass": 0.36000001430511475,
+            "Mid": 0.31999993324279785,
+            "Treble": 0.3400000333786011,
+            "ChVol": 0.5,
+            "Boost": 0.0,
+            "Sag": 0.5,
+            "HumSwitch": false
+        },
+        "x_max_y_min": {
+            "name": "Crunch",
+            "Drive": 0.809999942779541,
+            "Bass": 0.3799999952316284,
+            "Mid": 0.5199999809265137,
+            "Treble": 0.3999999761581421,
+            "ChVol": 0.5,
+            "Boost": 0.0,
+            "Sag": 0.5,
+            "HumSwitch": false
+        },
+        "x_max_y_max": {
+            "name": "Lead",
+            "Drive": 0.7100000381469727,
+            "Bass": 0.3799999952316284,
+            "Mid": 0.5199999809265137,
+            "Treble": 0.2999999523162842,
+            "ChVol": 0.5,
+            "Boost": 0.24000000953674316,
+            "Sag": 0.5,
+            "HumSwitch": false
+        }
+    }
+}

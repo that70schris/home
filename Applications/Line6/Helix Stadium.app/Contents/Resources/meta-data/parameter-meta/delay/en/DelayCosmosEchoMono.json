@@ -1,0 +1,22 @@
+ {
+    "category": "delay",
+    "model_id": 127,
+    "model_sym": "ModelID::kDelayCosmosEchoMono",
+    "display_name": "Cosmos Echo",
+    "parameters-en": {
+        "Time": "Adjusts the delay time of tape head 3. Cosmos Echo has a maximum delay length of 2 seconds, with the delay time divided evenly between the 3 tape heads. So if Time is set to 1.500 seconds, tape head 1's time is 500 ms (1500 / 3 = 500). When set to note values, Time follows the system tempo.",
+        "Ramp": "Controls how fast the tape speed changes when adjusting the Time parameter. Ramp has no affect on the signal except when Time is being adjusted.",
+        "Feedback": "Controls the number of delay repeats for all four tape heads. When set to 0%, only one repeat is heard. At high values, the Delay may begin to self-oscillate and squeal (perhaps in a good way).",
+        "Wow Fluttr": "Controls how much warbly tape sound is heard. Lower values result in the sound of a tape echo in pristine condition; higher values result in the sound of a tape echo that may have seen one too many trips in the back of a van.",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "Headroom": "Some delay units' internal signal paths exhibit a bit of grit, especially when placed after a high-gain amp block. Negative values increase the perceived amount of grit; positive values clean things up a bit.",
+        "Mode": "Determines which combination of up to three tape heads is active. Head 3 reflects the full delay time (set with the Time parameter). Head 1's time is 1/3 that of Head 3, and Head 2's time is 2/3 that of Head 3.",
+        "Bass": "Controls the low frequency EQ applied to the repeats.",
+        "Treble": "Controls the high frequency EQ applied to the repeats.",
+        "FB Tone": "Determines how the frequency bandwidth of the repeats changes over time, particularly when Feedback is set high. Lower values gradually roll off more of the highs, approximating the behavior of older tape. Higher values maintain more high end for more repeats, like new tape fresh out of the box.",
+        "Splice": "Controls the level of the tape splice. Like the original unit, Cosmos Echo uses virtual tape with ends that are spliced together. When this spliced area of the tape travels over the heads, a slight warble can be heard. Time also affects how frequently the tape splice occurs.",
+        "Dry Thru": "When off, the dry signal is routed through the tape delay's circuitry (even with Mix set to 0%), which can add a bit of warmth and grit. When on, the dry signal bypasses the delay's circuitry.",
+        "TSync1": ""
+    }
+}

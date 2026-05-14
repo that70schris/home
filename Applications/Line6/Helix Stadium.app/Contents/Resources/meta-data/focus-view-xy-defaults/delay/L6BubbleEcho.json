@@ -1,0 +1,94 @@
+{
+    "modelName": "Bubble Echo",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Speed": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Soap",
+            "Time": 0.5450000166893005,
+            "Feedback": 0.4000000059604645,
+            "Speed": 0.3499999940395355,
+            "Depth": 0.6200000047683716,
+            "Mix": 0.4300000071525574,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        },
+        "x_min_y_min": {
+            "name": "Chewing Gum",
+            "Time": 0.545000,
+            "Feedback": 0.650000,
+            "Speed": 1.000000,
+            "Depth": 0.80000,
+            "Mix": 0.38,
+            "Level": 0.00000,
+            "SyncSelect1": 15,
+            "TempoSync1": true
+        },
+        "x_min_y_max": {
+            "name": "Housing",
+            "Time": 0.5450000166893005,
+            "Feedback": 0.30000001192092896,
+            "Speed": 0.0,
+            "Depth": 0.6899999976158142,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 3,
+            "TempoSync1": true
+        },
+        "x_max_y_min": {
+            "name": "Wrap",
+            "Time": 0.5450000166893005,
+            "Feedback": 0.699999988079071,
+            "Speed": 0.49000000953674316,
+            "Depth": 0.14000000059604645,
+            "Mix": 0.4300000071525574,
+            "Level": 0.0,
+            "SyncSelect1": 8,
+            "TempoSync1": true
+        },
+        "x_max_y_max": {
+            "name": "Bath",
+            "Time": 0.5450000166893005,
+            "Feedback": 0.3199999928474426,
+            "Speed": 0.1899999976158142,
+            "Depth": 0.03999999910593033,
+            "Mix": 0.41999998688697815,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        }
+    }
+}

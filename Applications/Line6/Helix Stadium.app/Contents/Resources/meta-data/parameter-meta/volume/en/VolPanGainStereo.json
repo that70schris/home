@@ -1,0 +1,9 @@
+{
+    "category": "volume",
+    "model_id": 146,
+    "model_sym": "ModelID::kVolPanGainStereo",
+    "display_name": "Gain",
+    "parameters-en": {
+        "Gain": "Sets the amount of gain. Unity is 0.0 dB. Values above 0.0 dB provide an ultra-transparent boost. A value of -120.0 dB effectively mutes the signal passing though the block."
+    }
+}

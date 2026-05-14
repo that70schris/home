@@ -1,0 +1,11 @@
+{
+    "category": "dynamics",
+    "model_id": 36,
+    "model_sym": "ModelID::kCompressorRedSqueezeMono",
+    "display_name": "Red Squeeze",
+    "parameters-en": {
+        "Sensitivity": "Controls the sensitivity of the compressor's input. Higher values apply more compression.",
+        "Mix": "Controls the blend between the compressed and dry signals. At 0%, no compressed signal is heard; at 100%, no dry signal is heard. Values in between provide parallel compression.",
+        "Level": "Sets the overall level of the block."
+    }
+}

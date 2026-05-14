@@ -1,0 +1,409 @@
+{
+    "modelName": "3 OSC Synth",
+    "params": {
+        "ShapeVoice1": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "DutyVoice1": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "OctaveVoice1": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "PitchVoice1": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "PanVoice1": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "LevelVoice1": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "ShapeVoice2": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "DutyVoice2": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "OctaveVoice2": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "PitchVoice2": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "PanVoice2": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "LevelVoice2": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "ShapeVoice3": {
+            "id": 13,
+            "behavior": "interpolate"
+        },
+        "DutyVoice3": {
+            "id": 14,
+            "behavior": "interpolate"
+        },
+        "OctaveVoice3": {
+            "id": 15,
+            "behavior": "quantize"
+        },
+        "PitchVoice3": {
+            "id": 16,
+            "behavior": "quantize"
+        },
+        "PanVoice3": {
+            "id": 17,
+            "behavior": "interpolate"
+        },
+        "LevelVoice3": {
+            "id": 18,
+            "behavior": "interpolate"
+        },
+        "SynthPreset": {
+            "id": 19,
+            "behavior": "quantize"
+        },
+        "FM Voice3to1": {
+            "id": 20,
+            "behavior": "interpolate"
+        },
+        "LowCut": {
+            "id": 21,
+            "behavior": "interpolate"
+        },
+        "HighCut": {
+            "id": 22,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 23,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 24,
+            "behavior": "interpolate"
+        },
+        "EnvelopeADSR_EF": {
+            "id": 25,
+            "behavior": "exclude"
+        },
+        "TriggerSensitivityEF": {
+            "id": 26,
+            "behavior": "exclude"
+        },
+        "EFAttack": {
+            "id": 27,
+            "behavior": "exclude"
+        },
+        "EFDecay": {
+            "id": 28,
+            "behavior": "exclude"
+        },
+        "EFSustain": {
+            "id": 29,
+            "behavior": "exclude"
+        },
+        "EFRelease": {
+            "id": 30,
+            "behavior": "exclude"
+        },
+        "EnvelopeADSR_EA": {
+            "id": 31,
+            "behavior": "exclude"
+        },
+        "TriggerSensitivityEA": {
+            "id": 32,
+            "behavior": "exclude"
+        },
+        "EAAttack": {
+            "id": 33,
+            "behavior": "exclude"
+        },
+        "EADecay": {
+            "id": 34,
+            "behavior": "exclude"
+        },
+        "EASustain": {
+            "id": 35,
+            "behavior": "exclude"
+        },
+        "EARelease": {
+            "id": 36,
+            "behavior": "exclude"
+        },
+        "ReleaseThresholdEF": {
+            "id": 37,
+            "behavior": "exclude"
+        },
+        "ReleaseThresholdEA": {
+            "id": 38,
+            "behavior": "exclude"
+        },
+        "Portamento": {
+            "id": 199,
+            "behavior": "exclude"
+        },
+        "Filter": {
+            "id": 211,
+            "behavior": "exclude"
+        },
+        "FrequencyEF": {
+            "id": 221,
+            "behavior": "exclude"
+        },
+        "ResonanceEF": {
+            "id": 231,
+            "behavior": "exclude"
+        },
+        "DepthEF": {
+            "id": 241,
+            "behavior": "exclude"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Synthwave",
+            "ShapeVoice1": 0.17,
+            "DutyVoice1": 0.12,
+            "OctaveVoice1": 0,
+            "PitchVoice1": 0.0,
+            "PanVoice1": 0.25,
+            "LevelVoice1": 0.5,
+            "ShapeVoice2": 0.24,
+            "DutyVoice2": 0.71,
+            "OctaveVoice2": -1,
+            "PitchVoice2": -0.1,
+            "PanVoice2": 0.75,
+            "LevelVoice2": 0.5,
+            "ShapeVoice3": 1.0,
+            "DutyVoice3": 0.38,
+            "OctaveVoice3": -1,
+            "PitchVoice3": -0.15,
+            "PanVoice3": 0.5,
+            "LevelVoice3": 0.5,
+            "SynthPreset": 1,
+            "FM Voice3to1": 0.0,
+            "LowCut": 259.0,
+            "HighCut": 13100.0,
+            "Mix": 0.88,
+            "Level": 0.0,
+            "EnvelopeADSR_EF": true,
+            "TriggerSensitivityEF": 0.750000,
+            "EFAttack": 0.00500000,
+            "EFDecay": 0.125000,
+            "EFSustain": 0.00000,
+            "EFRelease": 0.00000,
+            "EnvelopeADSR_EA": true,
+            "TriggerSensitivityEA": 1.00000,
+            "EAAttack": 0.000500000,
+            "EADecay": 7.26000,
+            "EASustain": 0.670000,
+            "EARelease": 0.00000,
+            "ReleaseThresholdEF": 0.494000,
+            "ReleaseThresholdEA": 0.216500,
+            "Portamento": 0.00000,
+            "Filter": 0,
+            "FrequencyEF": 362.000,
+            "ResonanceEF": 0.900000,
+            "DepthEF": 3500.00
+        },
+        "x_min_y_min": {
+            "name": "Wow Bass",
+            "ShapeVoice1": 0.27,
+            "DutyVoice1": 0.59,
+            "OctaveVoice1": 0,
+            "PitchVoice1": 0.0,
+            "PanVoice1": 0.25,
+            "LevelVoice1": 0.5,
+            "ShapeVoice2": 0.24,
+            "DutyVoice2": 0.02,
+            "OctaveVoice2": -1,
+            "PitchVoice2": 0.0,
+            "PanVoice2": 0.63,
+            "LevelVoice2": 0.78,
+            "ShapeVoice3": 1.0,
+            "DutyVoice3": 0.38,
+            "OctaveVoice3": -1,
+            "PitchVoice3": -0.15,
+            "PanVoice3": 0.5,
+            "LevelVoice3": 0.0,
+            "SynthPreset": 0,
+            "FM Voice3to1": 0.0,
+            "LowCut": 414.0,
+            "HighCut": 9100.0,
+            "Mix": 0.76,
+            "Level": 0.0,
+            "EnvelopeADSR_EF": true,
+            "TriggerSensitivityEF": 0.750000,
+            "EFAttack": 0.00500000,
+            "EFDecay": 0.125000,
+            "EFSustain": 0.00000,
+            "EFRelease": 0.00000,
+            "EnvelopeADSR_EA": true,
+            "TriggerSensitivityEA": 1.00000,
+            "EAAttack": 0.000500000,
+            "EADecay": 7.26000,
+            "EASustain": 0.670000,
+            "EARelease": 0.00000,
+            "ReleaseThresholdEF": 0.494000,
+            "ReleaseThresholdEA": 0.216500,
+            "Portamento": 0.00000,
+            "Filter": 0,
+            "FrequencyEF": 362.000,
+            "ResonanceEF": 0.900000,
+            "DepthEF": 3500.00
+        },
+        "x_min_y_max": {
+            "name": "Synth Lead 1",
+            "ShapeVoice1": 0.27,
+            "DutyVoice1": 0.12,
+            "OctaveVoice1": 0,
+            "PitchVoice1": 0.0,
+            "PanVoice1": 0.25,
+            "LevelVoice1": 0.5,
+            "ShapeVoice2": 0.24,
+            "DutyVoice2": 0.71,
+            "OctaveVoice2": -1,
+            "PitchVoice2": 0.0,
+            "PanVoice2": 0.63,
+            "LevelVoice2": 0.0,
+            "ShapeVoice3": 1.0,
+            "DutyVoice3": 0.38,
+            "OctaveVoice3": -1,
+            "PitchVoice3": -0.15,
+            "PanVoice3": 0.5,
+            "LevelVoice3": 0.0,
+            "SynthPreset": 0,
+            "FM Voice3to1": 0.0,
+            "LowCut": 414.0,
+            "HighCut": 9100.0,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "EnvelopeADSR_EF": true,
+            "TriggerSensitivityEF": 0.750000,
+            "EFAttack": 0.00500000,
+            "EFDecay": 0.125000,
+            "EFSustain": 0.00000,
+            "EFRelease": 0.00000,
+            "EnvelopeADSR_EA": true,
+            "TriggerSensitivityEA": 1.00000,
+            "EAAttack": 0.000500000,
+            "EADecay": 7.26000,
+            "EASustain": 0.670000,
+            "EARelease": 0.00000,
+            "ReleaseThresholdEF": 0.494000,
+            "ReleaseThresholdEA": 0.216500,
+            "Portamento": 0.00000,
+            "Filter": 0,
+            "FrequencyEF": 362.000,
+            "ResonanceEF": 0.900000,
+            "DepthEF": 3500.00
+        },
+        "x_max_y_min": {
+            "name": "Synth Lead 2",
+            "ShapeVoice1": 0.43,
+            "DutyVoice1": 0.7,
+            "OctaveVoice1": 0,
+            "PitchVoice1": 0.0,
+            "PanVoice1": 0.375,
+            "LevelVoice1": 0.5,
+            "ShapeVoice2": 0.43,
+            "DutyVoice2": 0.7,
+            "OctaveVoice2": -1,
+            "PitchVoice2": 0.0,
+            "PanVoice2": 0.625,
+            "LevelVoice2": 0.34,
+            "ShapeVoice3": 1.0,
+            "DutyVoice3": 0.38,
+            "OctaveVoice3": -1,
+            "PitchVoice3": -0.15,
+            "PanVoice3": 0.5,
+            "LevelVoice3": 0.0,
+            "SynthPreset": 0,
+            "FM Voice3to1": 0.0,
+            "LowCut": 414.0,
+            "HighCut": 9100.0,
+            "Mix": 0.91,
+            "Level": 0.0,
+            "EnvelopeADSR_EF": true,
+            "TriggerSensitivityEF": 0.750000,
+            "EFAttack": 0.00500000,
+            "EFDecay": 0.125000,
+            "EFSustain": 0.00000,
+            "EFRelease": 0.00000,
+            "EnvelopeADSR_EA": true,
+            "TriggerSensitivityEA": 1.00000,
+            "EAAttack": 0.000500000,
+            "EADecay": 7.26000,
+            "EASustain": 0.670000,
+            "EARelease": 0.00000,
+            "ReleaseThresholdEF": 0.494000,
+            "ReleaseThresholdEA": 0.216500,
+            "Portamento": 0.00000,
+            "Filter": 0,
+            "FrequencyEF": 362.000,
+            "ResonanceEF": 0.900000,
+            "DepthEF": 3500.00
+        },
+        "x_max_y_max": {
+            "name": "Warble Lead",
+            "ShapeVoice1": 0.27,
+            "DutyVoice1": 0.17,
+            "OctaveVoice1": 1,
+            "PitchVoice1": 0.0,
+            "PanVoice1": 0.25,
+            "LevelVoice1": 0.71,
+            "ShapeVoice2": 0.14,
+            "DutyVoice2": 0.13,
+            "OctaveVoice2": -1,
+            "PitchVoice2": 0.0,
+            "PanVoice2": 0.63,
+            "LevelVoice2": 0.82,
+            "ShapeVoice3": 1.0,
+            "DutyVoice3": 0.86,
+            "OctaveVoice3": 0,
+            "PitchVoice3": 0.0,
+            "PanVoice3": 0.5,
+            "LevelVoice3": 0.61,
+            "SynthPreset": 1,
+            "FM Voice3to1": 0.0700001,
+            "LowCut": 182.0,
+            "HighCut": 15900.0,
+            "Mix": 0.98,
+            "Level": 0.0,
+            "EnvelopeADSR_EF": true,
+            "TriggerSensitivityEF": 0.750000,
+            "EFAttack": 0.00500000,
+            "EFDecay": 0.125000,
+            "EFSustain": 0.00000,
+            "EFRelease": 0.00000,
+            "EnvelopeADSR_EA": true,
+            "TriggerSensitivityEA": 1.00000,
+            "EAAttack": 0.000500000,
+            "EADecay": 7.26000,
+            "EASustain": 0.670000,
+            "EARelease": 0.00000,
+            "ReleaseThresholdEF": 0.494000,
+            "ReleaseThresholdEA": 0.216500,
+            "Portamento": 0.00000,
+            "Filter": 0,
+            "FrequencyEF": 362.000,
+            "ResonanceEF": 0.900000,
+            "DepthEF": 3500.00
+        }
+    }
+}

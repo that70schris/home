@@ -1,0 +1,15 @@
+{
+    "category": "filter",
+    "model_id": 214,
+    "model_sym": "ModelID::kFM4Throbber",
+    "display_name": "Throbber",
+    "parameters-en": {
+        "Speed": "Controls the rate of the LFO (Low Frequency Oscillator), or how fast the effect throbs.",
+        "Freq": "Adjusts the center frequency of the filter.",
+        "Q": "Controls the resonance or width of the frequency band affected by the filter.",
+        "Wave": "Selects one of four wave shapes for the Throbber (Ramp Up, Ramp Down, Triangle, or Square).",
+        "Mix": "Controls the balance between the filtered and dry signals. At 0%, no filtered signal is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

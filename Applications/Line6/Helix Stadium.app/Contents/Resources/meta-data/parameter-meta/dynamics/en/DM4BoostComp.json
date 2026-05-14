@@ -1,0 +1,14 @@
+{
+    "category": "dynamics",
+    "model_id": 30,
+    "model_sym": "ModelID::kDM4BoostComp",
+    "display_name": "Boost Comp",
+    "parameters-en": {
+        "Drive": "Adjusts the amount of signal boost. At higher values, distortion can be heard.",
+        "Bass": "Boosts or attenuates low frequencies. 5.0 is normal.",
+        "Comp": "Adjusts the amount of compression. Helps \"push\" the front end of non-master volume tube amps to achieve a cranked sound at bedroom volume.",
+        "Treble": "Boosts or attenuates high frequencies. 5.0 is normal.",
+        "Output": "Sets the overall level of the block.",
+        "Level": "Sets the overall level of the block."
+    }
+}

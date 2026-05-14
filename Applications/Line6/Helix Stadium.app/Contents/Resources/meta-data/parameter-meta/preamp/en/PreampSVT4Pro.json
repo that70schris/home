@@ -1,0 +1,29 @@
+{
+    "category": "preamp",
+    "model_id": 666,
+    "model_sym": "ModelID::kPreampSVT4Pro",
+    "display_name": "Ampeg SVT-4 PRO",
+    "parameters-en": {
+        "Drive": "Controls the amount of gain applied to the signal, which influences the level of distortion.",
+        "Bass": "Controls the low frequency EQ (50 Hz) of the tonestack.",
+        "Mid": "Controls the midrange frequency EQ of the tonestack.",
+        "Mid Freq": "Sets the frequency controlled by the Mid parameter--1 (220 Hz), 2 (450 Hz), 3 (800 Hz), 4 (1.6 kHz), or 5 (3 kHz).",
+        "Treble": "Controls the high frequency EQ (5 kHz) of the tonestack.",
+        "Level": "Controls the overall level of the Preamp block. Unlike Master Volume, it has no effect on the block's tone.",
+        "Master": "Controls the Master Volume of the amplifier.",
+        "Ultra Lo": "When on, boosts the low end (40 Hz) output by 2 dB and simultaneously cuts the midrange (500 Hz) by 10dB.",
+        "Ultra Hi": "When on, boosts the high end (5 kHz) output by 6 dB.",
+        "Bright": "When on, boosts the high end response (2 kHz) of the input signal by 6 dB.",
+        "EQ": "When on, enables the 9-band graphic EQ.",
+        "33Hz": "Boost or cut up to 12 dB.",
+        "80Hz": "Boost or cut up to 12 dB.",
+        "150Hz": "Boost or cut up to 12 dB.",
+        "300Hz": "Boost or cut up to 12 dB.",
+        "600Hz": "Boost or cut up to 12 dB.",
+        "900Hz": "Boost or cut up to 12 dB.",
+        "2kHz": "Boost or cut up to 12 dB.",
+        "5kHz": "Boost or cut up to 12 dB.",
+        "8kHz": "Boost or cut up to 12 dB.",
+        "EQ Level": "Controls the output level of the 9-band graphic EQ. If the EQ’d signal is too soft, turn EQ Level up; if it’s too loud, turn EQ Level down."
+    }
+}

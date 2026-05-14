@@ -1,0 +1,49 @@
+{
+    "modelName": "UK Wah 846",
+    "params": {
+        "Pedal": {
+            "id": 1,
+            "behavior": "exclude"
+        },
+        "Mix": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 3,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Halfway",
+            "Pedal": 0.5,
+            "Mix": 1.0,
+            "Level": 4.0
+        },
+        "x_min_y_min": {
+            "name": "Heel Down 70%",
+            "Pedal": 0.0,
+            "Mix": 0.699999988079071,
+            "Level": 4.0
+        },
+        "x_min_y_max": {
+            "name": "Heel Down 100%",
+            "Pedal": 0.0,
+            "Mix": 1.0,
+            "Level": 4.0
+        },
+        "x_max_y_min": {
+            "name": "Toe Down 70%",
+            "Pedal": 1.0,
+            "Mix": 0.699999988079071,
+            "Level": 4.0
+        },
+        "x_max_y_max": {
+            "name": "Toe Down 100%",
+            "Pedal": 1.0,
+            "Mix": 1.0,
+            "Level": 4.0
+        }
+    }
+}

@@ -1,0 +1,130 @@
+{
+    "modelName": "Dynamic Room",
+    "params": {
+        "Decay": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "PreDelay": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Damping": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Diffusion": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "MatrFreq": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "BassFreq": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "BassBoost": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "LowCut": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "HighCut": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "ERLevel": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 12,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Jam Room",
+            "Decay": 1.2000000476837158,
+            "PreDelay": 0.009999990463256836,
+            "Damping": 3720.0,
+            "Diffusion": 0.5,
+            "MatrFreq": 0.33299994468688965,
+            "Mix": 0.2999999523162842,
+            "BassFreq": 100.0,
+            "BassBoost": 0.0,
+            "LowCut": 100.0,
+            "HighCut": 10000.0,
+            "ERLevel": 0.7999999523162842,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Tight Room",
+            "Decay": 0.5,
+            "PreDelay": 0.003999948501586914,
+            "Damping": 3720.0,
+            "Diffusion": 0.11000001430511475,
+            "MatrFreq": 0.11000001430511475,
+            "Mix": 0.2999999523162842,
+            "BassFreq": 100.0,
+            "BassBoost": 0.0,
+            "LowCut": 100.0,
+            "HighCut": 10000.0,
+            "ERLevel": 0.7999999523162842,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Booth",
+            "Decay": 0.7000000476837158,
+            "PreDelay": 0.004999995231628418,
+            "Damping": 3720.0,
+            "Diffusion": 0.5,
+            "MatrFreq": 1.0,
+            "Mix": 0.33000004291534424,
+            "BassFreq": 100.0,
+            "BassBoost": 0.0,
+            "LowCut": 100.0,
+            "HighCut": 10000.0,
+            "ERLevel": 0.7999999523162842,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Medium Room",
+            "Decay": 1.5,
+            "PreDelay": 0.011999964714050293,
+            "Damping": 3800.0,
+            "Diffusion": 0.6100000143051147,
+            "MatrFreq": 0.5999999046325684,
+            "Mix": 0.3299999237060547,
+            "BassFreq": 100.0,
+            "BassBoost": 0.0,
+            "LowCut": 100.0,
+            "HighCut": 10000.0,
+            "ERLevel": 0.7999999523162842,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Big Room",
+            "Decay": 2.5,
+            "PreDelay": 0.019999980926513672,
+            "Damping": 3720.0,
+            "Diffusion": 0.7999999523162842,
+            "MatrFreq": 0.9300000667572021,
+            "Mix": 0.2999999523162842,
+            "BassFreq": 100.0,
+            "BassBoost": 0.0,
+            "LowCut": 100.0,
+            "HighCut": 10000.0,
+            "ERLevel": 0.7999999523162842,
+            "Level": 0.0
+        }
+    }
+}

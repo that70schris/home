@@ -1,0 +1,14 @@
+{
+    "category": "modulation",
+    "model_id": 229,
+    "model_sym": "ModelID::kMM4Dimension",
+    "display_name": "Dimension",
+    "parameters-en": {
+        "SW1": "Enables/disables Mode 1, which has the lowest level of effect intensity. Like the original, multiple modes can be enabled at once.",
+        "SW2": "Enables/disables Mode 2, which has a medium level of effect intensity. Like the original, multiple modes can be enabled at once.",
+        "SW3": "Enables/disables Mode 3, which has a higher level of effect intensity. Like the original, multiple modes can be enabled at once.",
+        "SW4": "Enables/disables Mode 4, which has the highest level of effect intensity. Like the original, multiple modes can be enabled at once.",
+        "Mix": "Controls the blend between the modulation effect and the dry signal. At 0%, no modulation is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

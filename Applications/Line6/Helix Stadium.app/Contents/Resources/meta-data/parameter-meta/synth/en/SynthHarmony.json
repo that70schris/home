@@ -1,0 +1,13 @@
+{
+    "category": "synth",
+    "model_id": 398,
+    "model_sym": "ModelID::kSynthHarmony",
+    "display_name": "Synth Harmony",
+    "parameters-en": {
+        "Wave": "Controls the gain of the saw wave, blending it in with the constant square wave.",
+        "Interval 1": "Sets the interval of the 1st harmony.",
+        "Interval 2": "Sets the interval of the 2nd harmony.",
+        "Mix": "Controls the blend between the synth and the dry signal. At 0%, no synth is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

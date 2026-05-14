@@ -1,0 +1,67 @@
+{
+    "modelName": "Buzz Wave",
+    "params": {
+        "Wave": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "Filter": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Decay": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Nice Lead",
+            "Wave": 1,
+            "Filter": 0.36,
+            "Decay": 0.5,
+            "Mix": 0.35,
+            "Level": 2.2311
+        },
+        "x_min_y_min": {
+            "name": "Subtle",
+            "Wave": 4,
+            "Filter": 0.7,
+            "Decay": 0.22,
+            "Mix": 0.16,
+            "Level": 1.0305
+        },
+        "x_min_y_max": {
+            "name": "Filter Bass",
+            "Wave": 0,
+            "Filter": 0.62,
+            "Decay": 0.63,
+            "Mix": 0.75,
+            "Level": 1.9643
+        },
+        "x_max_y_min": {
+            "name": "Octave Down",
+            "Wave": 5,
+            "Filter": 0.79,
+            "Decay": 0.36,
+            "Mix": 0.56,
+            "Level": 1.5641
+        },
+        "x_max_y_max": {
+            "name": "Super Saw",
+            "Wave": 6,
+            "Filter": 0.49,
+            "Decay": 1.0,
+            "Mix": 0.75,
+            "Level": 1.9643
+        }
+    }
+}

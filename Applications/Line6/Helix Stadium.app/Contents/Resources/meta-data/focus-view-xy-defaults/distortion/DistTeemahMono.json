@@ -1,0 +1,67 @@
+{
+    "modelName": "Teemah!",
+    "params": {
+        "Gain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Clipping": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "Level": {
+            "id": 5,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Mid Gain Drive",
+            "Gain": 0.2999999523162842,
+            "Bass": 0.5199999809265137,
+            "Treble": 0.38999998569488525,
+            "Clipping": 0,
+            "Level": 0.6600000858306885
+        },
+        "x_min_y_min": {
+            "name": "Low Gain Push",
+            "Gain": 0.059999942779541016,
+            "Bass": 0.5499999523162842,
+            "Treble": 0.4500000476837158,
+            "Clipping": 0,
+            "Level": 0.7000000476837158
+        },
+        "x_min_y_max": {
+            "name": "Pushed Harder",
+            "Gain": 0.2200000286102295,
+            "Bass": 0.5,
+            "Treble": 0.4500000476837158,
+            "Clipping": 0,
+            "Level": 0.6200000047683716
+        },
+        "x_max_y_min": {
+            "name": "Higher Gain",
+            "Gain": 0.4500000476837158,
+            "Bass": 0.6200000047683716,
+            "Treble": 0.3799999952316284,
+            "Clipping": 1,
+            "Level": 0.6100000143051147
+        },
+        "x_max_y_max": {
+            "name": "Tim Is Angry",
+            "Gain": 0.7200000286102295,
+            "Bass": 0.6200000047683716,
+            "Treble": 0.2999999523162842,
+            "Clipping": 2,
+            "Level": 0.7599999904632568
+        }
+    }
+}

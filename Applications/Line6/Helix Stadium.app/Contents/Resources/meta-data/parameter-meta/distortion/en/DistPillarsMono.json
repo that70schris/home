@@ -1,0 +1,12 @@
+{
+    "category": "distortion",
+    "model_id": 404,
+    "model_sym": "ModelID::kDistPillarsMono",
+    "display_name": "Pillars",
+    "parameters-en": {
+        "Gain": "Controls the amount of distortion.",
+        "Tone": "Controls the overall tonal balance of the distortion. Lower values are darker and higher values are brighter.",
+        "Level": "Sets the overall output level of the block.",
+        "Mode": "Chooses the type of clipping circuit. 1 is LED, 2 is Clean Op-amp, 3 is Asymmetrical."
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "modelName": "Acoustic Sim",
+    "params": {
+        "Mode": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Body": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Top": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Shimmer": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 5,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Standard",
+            "Mode": 0,
+            "Body": 0.5,
+            "Top": 0.72,
+            "Shimmer": 0.2,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Fingerpick",
+            "Mode": 0,
+            "Body": 0.28,
+            "Top": 0.45,
+            "Shimmer": 0.0,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Jumbo",
+            "Mode": 1,
+            "Body": 0.58,
+            "Top": 0.39,
+            "Shimmer": 0.2,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Piezo",
+            "Mode": 3,
+            "Body": 0.32,
+            "Top": 0.64,
+            "Shimmer": 0.3,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Enhanced",
+            "Mode": 2,
+            "Body": 0.4,
+            "Top": 0.67,
+            "Shimmer": 0.55,
+            "Level": 0.0
+        }
+    }
+}

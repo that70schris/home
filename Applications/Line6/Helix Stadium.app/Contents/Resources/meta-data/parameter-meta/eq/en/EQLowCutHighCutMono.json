@@ -1,0 +1,11 @@
+{
+    "category": "eq",
+    "model_id": 281,
+    "model_sym": "ModelID::kEQLowCutHighCutMono",
+    "display_name": "Low and High Cut",
+    "parameters-en": {
+        "Low Cut": "Adjusts the low-frequency cutoff.",
+        "High Cut": "Adjusts the high-frequency cutoff.",
+        "Level": "Sets the overall level or gain of the equalizer."
+    }
+}

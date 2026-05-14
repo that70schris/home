@@ -1,0 +1,20 @@
+{
+    "category": "pitch",
+    "model_id": 155,
+    "model_sym": "ModelID::kPitchTwinHarmonyStereo",
+    "display_name": "Twin Harmony",
+    "parameters-en": {
+        "V1 Key": "Selects the key of the Voice 1 harmony.",
+        "V1 Scale": "Selects the scale of the Voice 1 harmony.",
+        "V1 Shift": "Sets the interval of the Voice 1 harmony, from a 9th below to a 9th above. When set to 0, the incoming signal is doubled.",
+        "V1 Level": "Controls the level of the Voice 1 harmony.",
+        "V1 Pan": "Controls the panning of the Voice 1 harmony between the left and right channels.",
+        "Mix": "Controls the blend between the effected signal and the dry signal. At 0%, no effected signal is heard; at 100%, no dry signal is heard.",
+        "V2 Key": "Selects the key of the Voice 2 harmony.",
+        "V2 Scale": "Selects the scale of the Voice 2 harmony.",
+        "V2 Shift": "Sets the interval of the Voice 2 harmony, from a 9th below to a 9th above. When set to 0, the incoming signal is doubled.",
+        "V2 Level": "Controls the level of the Voice 2 harmony.",
+        "V2 Pan": "Controls the panning of the Voice 2 harmony between the left and right channels.",
+        "Level": "Controls the overall level of the block."
+    }
+}

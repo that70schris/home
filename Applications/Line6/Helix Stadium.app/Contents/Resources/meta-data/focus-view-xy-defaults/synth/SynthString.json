@@ -1,0 +1,67 @@
+{
+    "modelName": "String Theory",
+    "params": {
+        "Wave": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "Filter": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Attack": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Lead",
+            "Wave": 2,
+            "Filter": 0.62,
+            "Attack": 0.53,
+            "Mix": 0.76,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "High Strings",
+            "Wave": 7,
+            "Filter": 1.0,
+            "Attack": 0.11,
+            "Mix": 1.0,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Pulse Wave",
+            "Wave": 6,
+            "Filter": 0.22,
+            "Attack": 0.17,
+            "Mix": 0.8,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Ensemble",
+            "Wave": 4,
+            "Filter": 0.76,
+            "Attack": 0.63,
+            "Mix": 0.76,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Gamer",
+            "Wave": 2,
+            "Filter": 0.56,
+            "Attack": 0.48,
+            "Mix": 0.8,
+            "Level": 0.0
+        }
+    }
+}

@@ -1,0 +1,121 @@
+{
+    "modelName": "Bitcrusher",
+    "params": {
+        "Gain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "BitDepth": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "SampleRate": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "LowCut": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "HighCut": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "OpenThreshold": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "CloseThreshold": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "HoldTime": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Decay": {
+            "id": 11,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Broken A\/D",
+            "Gain": 0.0,
+            "BitDepth": 8.0,
+            "SampleRate": 24000.0,
+            "LowCut": 80.0,
+            "HighCut": 12000.0,
+            "Level": -3.0,
+            "Mix": 1.0,
+            "OpenThreshold": -50.0,
+            "CloseThreshold": -50.0,
+            "HoldTime": 0.009999999776482582,
+            "Decay": 0.009999999776482582
+        },
+        "x_min_y_min": {
+            "name": "Thin Crust",
+            "Gain": 6.0,
+            "BitDepth": 12.0,
+            "SampleRate": 48000.0,
+            "LowCut": 40.0,
+            "HighCut": 18000.0,
+            "Level": -9.0,
+            "Mix": 0.5,
+            "OpenThreshold": -50.0,
+            "CloseThreshold": -50.0,
+            "HoldTime": 0.009999999776482582,
+            "Decay": 0.009999999776482582
+        },
+        "x_min_y_max": {
+            "name": "Bender Lament",
+            "Gain": 35.0,
+            "BitDepth": 12.0,
+            "SampleRate": 12000.0,
+            "LowCut": 19.899999618530273,
+            "HighCut": 5999.99951171875,
+            "Level": -12.0,
+            "Mix": 1.0,
+            "OpenThreshold": -50.0,
+            "CloseThreshold": -50.0,
+            "HoldTime": 0.009999999776482582,
+            "Decay": 0.009999999776482582
+        },
+        "x_max_y_min": {
+            "name": "Spam Radio",
+            "Gain": 38.0,
+            "BitDepth": 4.0,
+            "SampleRate": 7000.0,
+            "LowCut": 239.99998474121094,
+            "HighCut": 1900.0001220703125,
+            "Level": 2.5,
+            "Mix": 1.0,
+            "OpenThreshold": -40.0,
+            "CloseThreshold": -40.0,
+            "HoldTime": 0.009999999776482582,
+            "Decay": 0.009999999776482582
+        },
+        "x_max_y_max": {
+            "name": "Just A Bit",
+            "Gain": 15.0,
+            "BitDepth": 1.0,
+            "SampleRate": 2000.0,
+            "LowCut": 135.0,
+            "HighCut": 16400.0,
+            "Level": 6.0,
+            "Mix": 1.0,
+            "OpenThreshold": -40.0,
+            "CloseThreshold": -40.0,
+            "HoldTime": 0.009999999776482582,
+            "Decay": 0.009999999776482582
+        }
+    }
+}

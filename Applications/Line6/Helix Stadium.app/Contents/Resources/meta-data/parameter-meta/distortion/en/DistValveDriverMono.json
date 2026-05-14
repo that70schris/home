@@ -1,0 +1,12 @@
+{
+    "category": "distortion",
+    "model_id": 284,
+    "model_sym": "ModelID::kDistValveDriverMono",
+    "display_name": "Valve Driver",
+    "parameters-en": {
+        "Gain": "Controls the amount of overdrive applied to the signal.",
+        "Bass": "Controls the low frequency EQ of the overdrive.",
+        "Treble": "Controls the high frequency EQ of the overdrive.",
+        "Level": "Sets the overall level of the block."
+    }
+}

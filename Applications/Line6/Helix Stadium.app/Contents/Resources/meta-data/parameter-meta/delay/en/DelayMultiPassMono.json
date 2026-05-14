@@ -1,0 +1,15 @@
+{
+    "category": "delay",
+    "model_id": 122,
+    "model_sym": "ModelID::kDelayMultiPassMono",
+    "display_name": "Multi Pass",
+    "parameters-en": {
+        "Time": "Adjusts the length of the entire 6-tap delay pattern. When set to note values, Time follows the system tempo.",
+        "Feedback": "Controls how many times the 6-tap delay pattern repeats. When set to 0%, the pattern is heard only once; at 100%, the pattern cycles forever.",
+        "Pattern": "Selects one of 8 preset patterns, all utilizing different sequences of filters. Experiment to see which pattern sounds the best for your application.",
+        "Mode": "Determines the type of repeat mode. \"Delay\" results in cleaner rhythmic patterns, with the same pattern repeating every sequence. \"Echo\" applies delays within the pattern itself, creating more of a sea of echoes, especially when Feedback is set high.",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TSync1": ""
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "modelName": "Dynamic",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Threshold": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Ducking": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Ducked Delay",
+            "Time": 0.5,
+            "Feedback": 0.38,
+            "Threshold": 0.49,
+            "Ducking": 0.61,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Bouncy",
+            "Time": 0.4,
+            "Feedback": 0.56,
+            "Threshold": 0.5,
+            "Ducking": 0.72,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Plush Delay",
+            "Time": 0.5,
+            "Feedback": 0.59,
+            "Threshold": 0.49,
+            "Ducking": 0.61,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Double Take",
+            "Time": 0.44,
+            "Feedback": 0.09,
+            "Threshold": 0.61,
+            "Ducking": 0.49,
+            "Mix": 0.61,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Forever",
+            "Time": 0.96,
+            "Feedback": 1.0,
+            "Threshold": 0.49,
+            "Ducking": 0.61,
+            "Mix": 0.71,
+            "Level": -2.9,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

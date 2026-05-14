@@ -1,0 +1,139 @@
+{
+    "modelName": "Feedbacker",
+    "params": {
+        "Gain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "FeedbackType": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Attack": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "ReleaseTime": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "DryCtrl": {
+            "id": 5,
+            "behavior": "quantize"
+        },
+        "DryLevel": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Reference": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "SilenceThresh": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "OnsetThresh": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "OffsetThresh": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Retrigger": {
+            "id": 11,
+            "behavior": "quantize"
+        },
+        "Trails": {
+            "id": 12,
+            "behavior": "quantize"
+        },
+        "Enable": {
+            "id": 13,
+            "behavior": "exclude"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Classic Squeal",
+            "Gain": 0.699999988079071,
+            "FeedbackType": 6,
+            "Attack": 2.0,
+            "ReleaseTime": 3.0,
+            "DryCtrl": 0,
+            "DryLevel": 0.0,
+            "Reference": 0,
+            "SilenceThresh": -100.0,
+            "OnsetThresh": 10.0,
+            "OffsetThresh": -6.0,
+            "Retrigger": 0,
+            "Trails": true,
+            "Enable": false
+        },
+        "x_min_y_min": {
+            "name": "More Harmonics",
+            "Gain": 0.4000000059604645,
+            "FeedbackType": 9,
+            "Attack": 0.35999998450279236,
+            "ReleaseTime": 0.527999997138977,
+            "DryCtrl": 0,
+            "DryLevel": 0.0,
+            "Reference": 0,
+            "SilenceThresh": -100.0,
+            "OnsetThresh": 10.0,
+            "OffsetThresh": -6.0,
+            "Retrigger": 0,
+            "Trails": true,
+            "Enable": false
+        },
+        "x_min_y_max": {
+            "name": "Octave Eee-Bow",
+            "Gain": 0.6800000071525574,
+            "FeedbackType": 2,
+            "Attack": 0.1499999761581421,
+            "ReleaseTime": 0.1499999761581421,
+            "DryCtrl": 0,
+            "DryLevel": 0.0,
+            "Reference": 1,
+            "SilenceThresh": -100.0,
+            "OnsetThresh": 10.0,
+            "OffsetThresh": -6.0,
+            "Retrigger": 0,
+            "Trails": true,
+            "Enable": false
+        },
+        "x_max_y_min": {
+            "name": "Choked By Sub",
+            "Gain": 0.6499999761581421,
+            "FeedbackType": 0,
+            "Attack": 1.1999999284744263,
+            "ReleaseTime": 0.1499999761581421,
+            "DryCtrl": 0,
+            "DryLevel": 0.0,
+            "Reference": 0,
+            "SilenceThresh": -100.0,
+            "OnsetThresh": 10.0,
+            "OffsetThresh": -6.0,
+            "Retrigger": 0,
+            "Trails": true,
+            "Enable": false
+        },
+        "x_max_y_max": {
+            "name": "High to Low",
+            "Gain": 0.8299999833106995,
+            "FeedbackType": 9,
+            "Attack": 1.6519999504089355,
+            "ReleaseTime": 3.700000286102295,
+            "DryCtrl": 0,
+            "DryLevel": 0.0,
+            "Reference": 1,
+            "SilenceThresh": -100.0,
+            "OnsetThresh": 10.0,
+            "OffsetThresh": -6.0,
+            "Retrigger": 0,
+            "Trails": true,
+            "Enable": false
+        }
+    }
+}

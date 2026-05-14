@@ -1,0 +1,67 @@
+{
+    "modelName": "Heavy Dist",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Output": {
+            "id": 5,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Thrasher",
+            "Drive": 1.0,
+            "Bass": 0.73,
+            "Mid": 0.31,
+            "Treble": 0.59,
+            "Output": 0.73
+        },
+        "x_min_y_min": {
+            "name": "Dark",
+            "Drive": 1.0,
+            "Bass": 0.95,
+            "Mid": 0.47,
+            "Treble": 0.0,
+            "Output": 0.73
+        },
+        "x_min_y_max": {
+            "name": "80sMetal",
+            "Drive": 1.0,
+            "Bass": 0.44,
+            "Mid": 0.47,
+            "Treble": 0.42,
+            "Output": 0.73
+        },
+        "x_max_y_min": {
+            "name": "TheMiddle",
+            "Drive": 0.3,
+            "Bass": 0.49,
+            "Mid": 0.56,
+            "Treble": 0.48,
+            "Output": 0.73
+        },
+        "x_max_y_max": {
+            "name": "HardSolo",
+            "Drive": 0.78,
+            "Bass": 0.61,
+            "Mid": 0.5,
+            "Treble": 0.42,
+            "Output": 0.83
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "category": "synth",
+    "model_id": 334,
+    "model_sym": "ModelID::kSynth3NoteGeneratorMono",
+    "display_name": "3 Note Generator",
+    "parameters-en": {
+        "Osc1 Shp": "Selects the shape of Oscillator 1.",
+        "Osc1 Oct": "Sets the octave of Oscillator 1, with a 9-octave range.",
+        "Osc1 Note": "Sets the note of Oscillator 1.",
+        "Osc1 Level": "Controls the level of Oscillator 1.",
+        "Osc1 Glide": "Controls the length of time it takes for Osc1 Oct and Osc1 Note to change when adjusting values manually or via snapshots and controllers. 0.0 causes immediate stepped changes whereas higher values cause the octave or note adjustment to glide smoothly.",
+        "Osc2 Shp": "Selects the shape of Oscillator 2.",
+        "Osc2 Oct": "Sets the octave of Oscillator 2, with a 9-octave range.",
+        "Osc2 Note": "Sets the note of Oscillator 2.",
+        "Osc2 Level": "Controls the level of Oscillator 2.",
+        "Osc2 Glide": "Controls the length of time it takes for Osc2 Oct and Osc2 Note to change when adjusting values manually or via snapshots and controllers. 0.0 causes immediate stepped changes whereas higher values cause the octave or note adjustment to glide smoothly.",
+        "Osc3 Shp": "Selects the shape of Oscillator 3.",
+        "Osc3 Oct": "Sets the octave of Oscillator 3, with a 9-octave range.",
+        "Osc3 Note": "Sets the note of Oscillator 3.",
+        "Osc3 Level": "Controls the level of Oscillator 3.",
+        "Osc3 Glide": "Controls the length of time it takes for Osc3 Oct and Osc3 Note to change when adjusting values manually or via snapshots and controllers. 0.0 causes immediate stepped changes whereas higher values cause the octave or note adjustment to glide smoothly.",
+        "Attack": "Controls how fast the 3 Note Generator fades in when engaged, from 10 ms to 10 sec.",
+        "Decay": "Controls how fast the 3 Note Generator fades out when bypassed, from 10 ms to 10 sec.",
+        "Dry Level": "Controls the level of the dry signal.",
+        "Level": "Sets the overall level of the block.",
+        "RiseTimeSwitch": ""
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "modelName": "Q Filter",
+    "params": {
+        "Freq": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Q": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Gain": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Type": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Low IQ",
+            "Freq": 0.4,
+            "Q": 0.45,
+            "Gain": 0.63,
+            "Type": 0,
+            "Mix": 1.0,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Bottle Cap",
+            "Freq": 0.21,
+            "Q": 1.0,
+            "Gain": 0.5,
+            "Type": 1,
+            "Mix": 0.69,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "High IQ",
+            "Freq": 0.5,
+            "Q": 0.5,
+            "Gain": 0.49,
+            "Type": 2,
+            "Mix": 0.63,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "AM Radio",
+            "Freq": 0.65,
+            "Q": 0.0,
+            "Gain": 0.35,
+            "Type": 2,
+            "Mix": 0.66,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Megaphone",
+            "Freq": 0.71,
+            "Q": 0.77,
+            "Gain": 0.35,
+            "Type": 1,
+            "Mix": 1.0,
+            "Level": 0.0
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "category": "split",
+    "model_id": 467,
+    "model_sym": "ModelID::kAppDSPSplitY",
+    "display_name": "Y",
+    "parameters-en": {
+        "Balance A": "Adjusts the left/right stereo balance (pan) of the signal sent to Path A (upper). By default, the signal before the Split > Y block is sent evenly to both Path A and Path B, both in stereo. If you set Balance A to L 100 and Balance B to R 100, the Split > Y block splits the stereo signal into two mono signals--left to Path A and right to Path B.",
+        "Balance B": "Adjusts the left/right stereo balance (pan) of the signal sent to Path B (lower). By default, the signal before the Split > Y block is sent evenly to both Path A and Path B, both in stereo. If you set Balance A to L 100 and Balance B to R 100, the Split > Y block splits the stereo signal into two mono signals--left to Path A and right to Path B.",
+        "bypass": ""
+    }
+}

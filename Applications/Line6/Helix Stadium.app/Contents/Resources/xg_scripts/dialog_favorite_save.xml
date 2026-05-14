@@ -1,0 +1,279 @@
+
+<xg>
+    <panel_widget height="500" id="svtm" left="0" top="0" width="500">
+        <bg_color>0xFF000000</bg_color>
+        <panel_widget height="100" id="head" left="0" top="0" width="500">
+            <anchor_pos left="0" right="0" top="0"/>
+            <bg_color>0x00000000</bg_color>
+            <text_widget height="42" id="1" left="4" top="4" width="492">
+                <anchor_pos left="4" right="4" top="4"/>
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>Select favorite to overwrite or add new favorite...</label>
+                    <font name="Inter Display" size="20"/>
+                    <align vert="middle"/>
+                    <offset x="4"/>
+                    <text_color>0xFFEBEBEB</text_color>
+                </text>
+            </text_widget>
+            <text_widget height="42" id="1" left="4" top="54" width="180">
+                <anchor_pos left="4" top="54"/>
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>Favorite Name:</label>
+                    <font name="Inter Display" size="22"/>
+                    <align vert="middle"/>
+                    <offset x="4"/>
+                    <text_color>0xFFC0C0C0</text_color>
+                </text>
+            </text_widget>
+            <text_edit_widget height="42" id="name" left="180" top="54" width="316">
+                <anchor_pos left="180" right="4" top="54"/>
+                <bg_color>0xFF000000</bg_color>
+                <text>
+                    <label>&lt;Favorite Name&gt;</label>
+                    <font name="Inter Display" size="22" weight="semibold"/>
+                    <text_color>0xFFFFFFFF</text_color>
+                </text>
+            </text_edit_widget>
+        </panel_widget>
+        <panel_widget height="400" id="side" left="310" top="100" width="190">
+            <anchor_pos bottom="0" right="0" top="100"/>
+            <bg_color>0xFF000000</bg_color>
+            <pushbutton_widget height="50" id="newf" left="8" top="8" width="150">
+                <anchor_pos left="8" top="8"/>
+                <bg_color>0x00000000</bg_color>
+                <corner_radius>4</corner_radius>
+                <icon>84</icon>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>New Folder</label>
+                    <font name="Inter Display" size="18"/>
+                    <align horz="left"/>
+                    <multiline>yes</multiline>
+                    <text_color>0xFFC0C0C0</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF5E5E5E</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                    <offset x="1" y="1"/>
+                </active_state>
+                <hilite_state>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+            <pushbutton_widget height="43" id="over" left="8" top="217" width="174">
+                <anchor_pos left="8" right="8"/>
+                <bg_color>0xFF424242</bg_color>
+                <image>166</image>
+                <scale_mode>stretch</scale_mode>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Overwrite</label>
+                    <font name="Inter Display" size="18"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                    <offset x="1" y="1"/>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF5E5E5E</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+            <pushbutton_widget height="43" id="save" left="8" top="270" width="174">
+                <anchor_pos left="8" right="8"/>
+                <bg_color>0xFF424242</bg_color>
+                <image>177</image>
+                <scale_mode>stretch</scale_mode>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Save New</label>
+                    <font name="Inter Display" size="18"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                    <offset x="1" y="1"/>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF5E5E5E</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+            <pushbutton_widget height="43" id="!cls" left="8" top="349" width="174">
+                <anchor_pos bottom="8" left="8" right="8"/>
+                <bg_color>0xFF424242</bg_color>
+                <image>194</image>
+                <scale_mode>stretch</scale_mode>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Cancel</label>
+                    <font name="Inter Display" size="18"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                    <offset x="1" y="1"/>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF5E5E5E</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+            <toggle_widget height="35" id="byps" left="8" top="67" width="182">
+                <anchor_pos left="8" right="0" top="67"/>
+                <bg_color>0x00424242</bg_color>
+                <corner_radius>6</corner_radius>
+                <icon height="30" width="32">258</icon>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Bypass Assign</label>
+                    <font name="Inter Display" size="18" weight="light"/>
+                    <align horz="left"/>
+                    <text_color>0xFFC0C0C0</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0x00797979</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </active_state>
+                <hilite_state>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </toggle_widget>
+            <panel_widget height="1" id="1" left="4" top="59" width="182">
+                <anchor_pos left="4" right="4" top="59"/>
+                <bg_color>0xFF303030</bg_color>
+            </panel_widget>
+            <toggle_widget height="35" id="lnkc" left="8" top="172" width="182">
+                <anchor_pos left="8" right="0" top="172"/>
+                <bg_color>0x00424242</bg_color>
+                <corner_radius>6</corner_radius>
+                <icon height="30" width="32">258</icon>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Linked Cab</label>
+                    <font name="Inter Display" size="18" weight="light"/>
+                    <align horz="left"/>
+                    <text_color>0xFFC0C0C0</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0x00797979</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </active_state>
+                <hilite_state>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </toggle_widget>
+            <toggle_widget height="35" id="ctrl" left="8" top="102" width="182">
+                <anchor_pos left="8" right="0" top="102"/>
+                <bg_color>0x00424242</bg_color>
+                <corner_radius>6</corner_radius>
+                <icon height="30" width="32">258</icon>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Controller Assigns</label>
+                    <font name="Inter Display" size="18" weight="light"/>
+                    <align horz="left"/>
+                    <text_color>0xFFC0C0C0</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0x00797979</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </active_state>
+                <hilite_state>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </toggle_widget>
+            <toggle_widget height="35" id="snps" left="8" top="137" width="182">
+                <anchor_pos left="8" right="0" top="137"/>
+                <bg_color>0x00424242</bg_color>
+                <corner_radius>6</corner_radius>
+                <icon height="30" width="32">258</icon>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Snapshot Assigns</label>
+                    <font name="Inter Display" size="18" weight="light"/>
+                    <align horz="left"/>
+                    <text_color>0xFFC0C0C0</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0x00797979</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </active_state>
+                <hilite_state>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </toggle_widget>
+        </panel_widget>
+        <panel_widget class="P35WidgetContentHierList" height="397" id="flst" left="3" name="Favorite List" top="100" width="307">
+            <anchor_pos bottom="3" left="3" right="190" top="100"/>
+            <bg_color>0xFF151515</bg_color>
+            <panel_widget height="40" id="head" left="0" name="Folder Header" top="0" width="1">
+                <bg_color>0xFF151515</bg_color>
+                <image_widget height="32" id="fico" left="40" top="0" width="32">
+                    <relative_pos y="50"/>
+                    <bg_color>0x00000000</bg_color>
+                    <scale_mode>keep_aspect</scale_mode>
+                </image_widget>
+                <text_widget height="20" id="fnam" left="0" name="Folder name" top="0" width="75">
+                    <anchor_pos bottom="1" left="80" right="0" top="0"/>
+                    <bg_color>0x00000000</bg_color>
+                    <text>
+                        <label>[Folder Name Here]</label>
+                        <font name="Inter Display" size="20"/>
+                        <align vert="middle"/>
+                        <text_color>0xFFD0D0D0</text_color>
+                    </text>
+                </text_widget>
+                <pushbutton_widget height="24" id="back" left="8" name="Back arrow" top="0" width="24">
+                    <relative_pos y="50"/>
+                    <bg_color>0x00000000</bg_color>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <text>
+                        <font name="Helvetica" size="12"/>
+                    </text>
+                    <active_state>
+                        <offset x="1" y="1"/>
+                    </active_state>
+                </pushbutton_widget>
+                <panel_widget height="1" id="1" left="0" top="0" width="100">
+                    <anchor_pos bottom="0" left="0" right="0"/>
+                    <bg_color>0xFF808080</bg_color>
+                </panel_widget>
+            </panel_widget>
+            <listbox_widget class="P35WidgetContentList_T" height="1" id="list" left="0" top="0" width="1">
+                <anchor_pos bottom="0" left="0" top="77"/>
+                <bg_color>0xFF151515</bg_color>
+                <alt_bg_color>0x00000000</alt_bg_color>
+                <text_color>0xFFD0D0D0</text_color>
+                <selected_text_color>0xFFFDFDFD</selected_text_color>
+                <selected_bg_color>0xFF606060</selected_bg_color>
+                <hilite_color>0xFF424242</hilite_color>
+                <hilite_text_color>0xFFEBD567</hilite_text_color>
+                <font name="Inter Display" size="20"/>
+                <item_height>40</item_height>
+                <left_margin>4</left_margin>
+                <hilite_type>fill_bg</hilite_type>
+                <icon_margin>36</icon_margin>
+                <icon height="32" top="4" width="32">74</icon>
+                <scrolling>
+                    <enabled>yes</enabled>
+                    <scrollbars>
+                        <visibility h="none"/>
+                        <width>12</width>
+                        <border_thickness>0</border_thickness>
+                        <bg_color>0x00212121</bg_color>
+                        <thumb_color>0xFF424242</thumb_color>
+                        <thumb_hilite_color>0xFF797979</thumb_hilite_color>
+                        <arrow_buttons size="0"/>
+                    </scrollbars>
+                </scrolling>
+            </listbox_widget>
+        </panel_widget>
+    </panel_widget>
+</xg>

@@ -1,0 +1,15 @@
+{
+    "category": "modulation",
+    "model_id": 222,
+    "model_sym": "ModelID::kMM4TriChorus",
+    "display_name": "Tri Chorus",
+    "parameters-en": {
+        "Speed": "Controls the speed or rate of the chorus. When set to note values, Speed follows the system tempo.",
+        "Depth1": "Controls the depth or intensity of the Left delay channel/chorus circuit 1.",
+        "Depth2": "Controls the depth or intensity of the Center delay channel/chorus circuit 2.",
+        "Depth3": "Controls the depth or intensity of the Right delay channel/chorus circuit 3.",
+        "Mix": "Controls the blend between the chorus effect and the dry signal.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

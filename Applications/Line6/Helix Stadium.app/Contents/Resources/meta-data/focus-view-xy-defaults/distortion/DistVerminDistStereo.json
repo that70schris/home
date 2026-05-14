@@ -1,0 +1,49 @@
+{
+    "modelName": "Vermin Dist",
+    "params": {
+        "Gain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Filter": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 3,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Balanced",
+            "Gain": 0.6499999761581421,
+            "Filter": 0.5199999809265137,
+            "Level": 0.8500000238418579
+        },
+        "x_min_y_min": {
+            "name": "Nesting",
+            "Gain": 0.23000001907348633,
+            "Filter": 0.559999942779541,
+            "Level": 0.8299999237060547
+        },
+        "x_min_y_max": {
+            "name": "Ribbon?",
+            "Gain": 0.8600000143051147,
+            "Filter": 1.0,
+            "Level": 0.940000057220459
+        },
+        "x_max_y_min": {
+            "name": "Static",
+            "Gain": 0.8600000143051147,
+            "Filter": 0.0,
+            "Level": 0.8199999332427979
+        },
+        "x_max_y_max": {
+            "name": "Big Cheese",
+            "Gain": 1.0,
+            "Filter": 0.6000000238418579,
+            "Level": 0.8700000047683716
+        }
+    }
+}

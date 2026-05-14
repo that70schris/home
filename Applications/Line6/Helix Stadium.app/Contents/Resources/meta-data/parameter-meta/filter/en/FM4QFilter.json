@@ -1,0 +1,14 @@
+{
+    "category": "filter",
+    "model_id": 218,
+    "model_sym": "ModelID::kFM4QFilter",
+    "display_name": "Q Filter",
+    "parameters-en": {
+        "Freq": "Controls the frequency of the filter (or the \"parked\" wah's pedal position).",
+        "Q": "Controls the resonance or width of the frequency band affected by the filter.",
+        "Gain": "Adjusts the amount of boost or cut applied to the filtered frequencies.",
+        "Type": "Selects the type of filter effect (Low Pass, Band Pass, or High Pass).",
+        "Mix": "Controls the balance between the filtered and dry signals. At 0%, no filtered signal is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

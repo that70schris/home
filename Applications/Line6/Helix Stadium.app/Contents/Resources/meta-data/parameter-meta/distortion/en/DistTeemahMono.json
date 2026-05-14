@@ -1,0 +1,13 @@
+{
+    "category": "distortion",
+    "model_id": 325,
+    "model_sym": "ModelID::kDistTeemahMono",
+    "display_name": "Teemah!",
+    "parameters-en": {
+        "Gain": "Controls the amount of overdrive applied to the signal.",
+        "Bass Cut": "Cuts low end frequencies from the signal before the overdrive circuit.",
+        "TrebleCut": "Cuts high end frequencies from the signal after the overdrive circuit.",
+        "Clipping": "Selects the clipping mode. \"Up\" provides asymmetrical clipping with a bit of compression and saturation. \"Center\" provides symmetrical clipping with a bit of saturation and high headroom. \"Down\" is similar to \"Center\" except with more saturation and lower headroom.",
+        "Level": "Sets the overall level of the block."
+    }
+}

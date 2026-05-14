@@ -1,0 +1,76 @@
+{
+    "modelName": "Killer Z",
+    "params": {
+        "Dist": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Contour": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Gain": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mid Amt": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Mid Freq": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Smart": {
+            "id": 10000,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Rockout",
+            "Dist": 0.69,
+            "Contour": 0.5,
+            "Gain": 0.5,
+            "Mid Amt": 0.49,
+            "Mid Freq": 0.49,
+            "Smart": 0.500000
+        },
+        "x_min_y_min": {
+            "name": "MidPush",
+            "Dist": 0.33,
+            "Contour": 0.72,
+            "Gain": 0.39,
+            "Mid Amt": 0.79,
+            "Mid Freq": 0.1,
+            "Smart": 0.500000
+        },
+        "x_min_y_max": {
+            "name": "Focused",
+            "Dist": 0.51,
+            "Contour": 0.46,
+            "Gain": 0.59,
+            "Mid Amt": 0.64,
+            "Mid Freq": 0.02,
+            "Smart": 0.500000
+        },
+        "x_max_y_min": {
+            "name": "SmashIt",
+            "Dist": 0.77,
+            "Contour": 0.83,
+            "Gain": 0.58,
+            "Mid Amt": 0.38,
+            "Mid Freq": 0.38,
+            "Smart": 0.500000
+        },
+        "x_max_y_max": {
+            "name": "RazorsEdge",
+            "Dist": 0.82,
+            "Contour": 1.0,
+            "Gain": 0.59,
+            "Mid Amt": 0.77,
+            "Mid Freq": 0.29,
+            "Smart": 0.500000
+        }
+    }
+}

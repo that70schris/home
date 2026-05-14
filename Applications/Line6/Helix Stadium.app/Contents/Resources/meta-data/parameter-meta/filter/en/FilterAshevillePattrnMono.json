@@ -1,0 +1,27 @@
+{
+    "category": "filter",
+    "model_id": 373,
+    "model_sym": "ModelID::kFilterAshevillePattrnMono",
+    "display_name": "Asheville Pattrn",
+    "parameters-en": {
+        "Rate": "Controls the rate or speed of the filter step sequence. Has no affect if Pattern is set to \"Off.\"",
+        "Pattern": "Selects one of 20 different filter sequence patterns. When set to \"Off,\" the LFO can be used.",
+        "Envelope": "Controls the envelope of all 8 filters. Low values result in choppy steps with a fast attack and slower release. High values result in choppy steps with a slower attack and fast release. Values in the middle result in smoother steps with a noticeably slower attack and release, almost like a tremolo. Has no affect if Pattern is set to \"Off.\"",
+        "Voice": "Determines whether the 8 filters' fixed frequencies are optimized for Bass (\"Bass\") or Guitar (\"Mid\").",
+        "Mix": "Controls the balance between the filtered and dry signals. At 0%, no filtered signal is heard; at 100%, no dry signal is heard.",
+        "Output": "Sets the overall output level of the effect.",
+        "Drive": "Controls the input level into the filter section. Higher settings can overdrive the filters, resulting in a bit of (perhaps pleasing) distortion.",
+        "Direction": "When on, reverses direction of the filter step sequence pattern. Has no affect if Pattern is set to \"Off.\"",
+        "LFO": "Controls the speed of the LFO that . Has no affect unless Pattern is set to \"Off.\"",
+        "Level 1": "Controls the level of the lowpass filter fixed at 110 Hz (Voice set to \"Bass\") or 200 Hz (Voice set to \"Mid\").",
+        "Level 2": "Controls the level of the resonant filter fixed at 160 Hz (Voice set to \"Bass\") or 300 Hz (Voice set to \"Mid\").",
+        "Level 3": "Controls the level of the resonant filter fixed at 240 Hz (Voice set to \"Bass\") or 450 Hz (Voice set to \"Mid\").",
+        "Level 4": "Controls the level of the resonant filter fixed at 350 Hz (Voice set to \"Bass\") or 675 Hz (Voice set to \"Mid\").",
+        "Level 5": "Controls the level of the resonant filter fixed at 525 Hz (Voice set to \"Bass\") or 1 kHz (Voice set to \"Mid\").",
+        "Level 6": "Controls the level of the resonant filter fixed at 775 Hz (Voice set to \"Bass\") or 1.5 kHz (Voice set to \"Mid\").",
+        "Level 7": "Controls the level of the resonant filter fixed at 1.2 kHz (Voice set to \"Bass\") or 2.2 kHz (Voice set to \"Mid\").",
+        "Level 8": "Controls the level of the resonant filter fixed at 1.8 kHz (Voice set to \"Bass\") or 3.4 kHz (Voice set to \"Mid\").",
+        "TempoSync1": "",
+        "TempoSync2": ""
+    }
+}

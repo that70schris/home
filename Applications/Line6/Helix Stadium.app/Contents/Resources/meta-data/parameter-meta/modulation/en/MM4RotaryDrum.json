@@ -1,0 +1,14 @@
+{
+    "category": "modulation",
+    "model_id": 226,
+    "model_sym": "ModelID::kMM4RotaryDrum",
+    "display_name": "Rotary Drum",
+    "parameters-en": {
+        "Speed": "Selects Slow or Fast rotary speed.",
+        "Depth": "Controls the depth or intensity of the rotary effect.",
+        "Tone": "Controls the overall tonal balance of the effect.",
+        "Drive": "Controls how much of the speaker's internal amp is overdriven. At higher values, the speaker imparts more of a gritty sound.",
+        "Mix": "Controls the blend between the rotary effect and the dry signal. At 0%, no rotary effect is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

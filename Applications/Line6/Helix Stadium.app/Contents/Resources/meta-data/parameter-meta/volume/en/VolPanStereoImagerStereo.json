@@ -1,0 +1,12 @@
+{
+    "category": "volume",
+    "model_id": 247,
+    "model_sym": "ModelID::kVolPanStereoImagerStereo",
+    "display_name": "Stereo Imager",
+    "parameters-en": {
+        "Mode": "Specifies the type of signal sent to the Stereo Imager block. When set to \"Mono In\", the signal is collapsed to mono before any stereo processing.",
+        "Width": "Controls the apparent stereo width of the signal. Values greater than 100% increase the signal's apparent stereo width. Values less than 100% narrow the signal's stereo width. At 0%, the signal is collapsed to mono.",
+        "Pan": "Controls the balance between the signal's left and right channels. When set to L 100, only the left signal is passed through the block; when set to R 100, only the right signal is passed through the block.",
+        "Level": "Sets the overall level of the block."
+    }
+}

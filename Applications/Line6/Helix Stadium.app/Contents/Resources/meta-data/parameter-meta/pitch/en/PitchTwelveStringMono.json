@@ -1,0 +1,13 @@
+{
+    "category": "pitch",
+    "model_id": 512,
+    "model_sym": "ModelID::kPitchTwelveStringMono",
+    "display_name": "12-String",
+    "parameters-en": {
+        "Blend": "Controls how much of the 12-String effect is blended in with the dry signal.",
+        "Bass": "Controls the bass response of the effected signal.",
+        "Treble": "Controls the treble response of the effected signal.",
+        "Level": "Sets the overall level of the block.",
+        "PluckType": "Optimizes the 12 String emulation for specific types of playing styles."
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "modelName": "Oblivion",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Boost": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "HumSwitch": {
+            "id": 9,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Rock Out!",
+            "Drive": 0.4,
+            "Bass": 0.7,
+            "Mid": 0.44,
+            "Treble": 0.29,
+            "ChVol": 0.4,
+            "Boost": 0.0,
+            "Sag": 0.5,
+            "HumSwitch": true
+        },
+        "x_min_y_min": {
+            "name": "Crunch 1",
+            "Drive": 0.18,
+            "Bass": 0.51,
+            "Mid": 0.44,
+            "Treble": 0.32,
+            "ChVol": 0.44,
+            "Boost": 0.0,
+            "Sag": 0.83,
+            "HumSwitch": false
+        },
+        "x_min_y_max": {
+            "name": "Solo 1",
+            "Drive": 0.63,
+            "Bass": 0.16,
+            "Mid": 0.65,
+            "Treble": 0.44,
+            "ChVol": 0.4,
+            "Boost": 0.0,
+            "Sag": 0.5,
+            "HumSwitch": true
+        },
+        "x_max_y_min": {
+            "name": "Crunch 2",
+            "Drive": 0.18,
+            "Bass": 0.51,
+            "Mid": 0.44,
+            "Treble": 0.44,
+            "ChVol": 0.38,
+            "Boost": 0.65,
+            "Sag": 0.83,
+            "HumSwitch": false
+        },
+        "x_max_y_max": {
+            "name": "Big Lead",
+            "Drive": 0.87,
+            "Bass": 0.02,
+            "Mid": 0.46,
+            "Treble": 0.24,
+            "ChVol": 0.39,
+            "Boost": 0.71,
+            "Sag": 0.15,
+            "HumSwitch": false
+        }
+    }
+}

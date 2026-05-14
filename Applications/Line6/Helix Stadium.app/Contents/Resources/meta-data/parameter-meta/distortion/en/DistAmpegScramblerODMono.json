@@ -1,0 +1,12 @@
+{
+    "category": "distortion",
+    "model_id": 370,
+    "model_sym": "ModelID::kDistAmpegScramblerODMono",
+    "display_name": "Ampeg Scrambler",
+    "parameters-en": {
+        "Drive": "Controls the amount of overdrive applied to the signal.",
+        "Blend": "Blends the overdriven signal with the dry signal.",
+        "Treble": "Controls the high frequency EQ of the overdrive.",
+        "Level": "Sets the overall level of the block."
+    }
+}

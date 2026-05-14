@@ -1,0 +1,193 @@
+{
+    "modelName": "Triple Rotary",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "SlowSpeed": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "FastSpeed": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "RampTime": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Drive": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Headroom": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "LowCut": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "HighCut": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Wobble": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "Separation": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "RotorFcDrift": {
+            "id": 13,
+            "behavior": "interpolate"
+        },
+        "Rotor2Level": {
+            "id": 14,
+            "behavior": "interpolate"
+        },
+        "Rotor3Level": {
+            "id": 15,
+            "behavior": "interpolate"
+        },
+        "TempoSync1": {
+            "id": 21,
+            "behavior": "quantize"
+        },
+        "SyncSelect1": {
+            "id": 22,
+            "behavior": "quantize"
+        },
+        "TempoSync2": {
+            "id": 23,
+            "behavior": "quantize"
+        },
+        "SyncSelect2": {
+            "id": 24,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Spinnin'",
+            "Speed": false,
+            "SlowSpeed": 0.85,
+            "FastSpeed": 0.94,
+            "RampTime": 0.25,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "Drive": 0.21,
+            "Headroom": 7.6,
+            "LowCut": 19.9,
+            "HighCut": 12600.0,
+            "Wobble": 0.29,
+            "Separation": 1.0,
+            "RotorFcDrift": 1.0,
+            "Rotor2Level": 1.0,
+            "Rotor3Level": 1.0,
+            "TempoSync1": false,
+            "SyncSelect1": 6,
+            "TempoSync2": false,
+            "SyncSelect2": 6
+        },
+        "x_min_y_min": {
+            "name": "Dreamsy",
+            "Speed": false,
+            "SlowSpeed": 0.62,
+            "FastSpeed": 0.76,
+            "RampTime": 0.25,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "Drive": 0.0,
+            "Headroom": 12.0,
+            "LowCut": 19.9,
+            "HighCut": 20100.0,
+            "Wobble": 0.32,
+            "Separation": 1.0,
+            "RotorFcDrift": 1.0,
+            "Rotor2Level": 1.0,
+            "Rotor3Level": 0.1,
+            "TempoSync1": false,
+            "SyncSelect1": 6,
+            "TempoSync2": false,
+            "SyncSelect2": 6
+        },
+        "x_min_y_max": {
+            "name": "Fast n' Bulbous",
+            "Speed": true,
+            "SlowSpeed": 0.62,
+            "FastSpeed": 0.94,
+            "RampTime": 0.25,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "Drive": 0.21,
+            "Headroom": 7.6,
+            "LowCut": 77.0,
+            "HighCut": 15000.0,
+            "Wobble": 1.0,
+            "Separation": 1.0,
+            "RotorFcDrift": 1.0,
+            "Rotor2Level": 0.52,
+            "Rotor3Level": 1.0,
+            "TempoSync1": false,
+            "SyncSelect1": 6,
+            "TempoSync2": false,
+            "SyncSelect2": 6
+        },
+        "x_max_y_min": {
+            "name": "Low n' Slow",
+            "Speed": false,
+            "SlowSpeed": 0.32,
+            "FastSpeed": 0.94,
+            "RampTime": 0.25,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "Drive": 0.53,
+            "Headroom": 7.6,
+            "LowCut": 96.0,
+            "HighCut": 13400.0,
+            "Wobble": 0.34,
+            "Separation": 0.66,
+            "RotorFcDrift": 1.0,
+            "Rotor2Level": 1.0,
+            "Rotor3Level": 0.05,
+            "TempoSync1": false,
+            "SyncSelect1": 6,
+            "TempoSync2": false,
+            "SyncSelect2": 6
+        },
+        "x_max_y_max": {
+            "name": "Territorial",
+            "Speed": true,
+            "SlowSpeed": 0.62,
+            "FastSpeed": 0.76,
+            "RampTime": 0.25,
+            "Mix": 1.0,
+            "Level": 2.5,
+            "Drive": 0.78,
+            "Headroom": 3.7,
+            "LowCut": 19.9,
+            "HighCut": 20100.0,
+            "Wobble": 0.96,
+            "Separation": 0.78,
+            "RotorFcDrift": 0.18,
+            "Rotor2Level": 1.0,
+            "Rotor3Level": 1.0,
+            "TempoSync1": false,
+            "SyncSelect1": 6,
+            "TempoSync2": false,
+            "SyncSelect2": 6
+        }
+    }
+}

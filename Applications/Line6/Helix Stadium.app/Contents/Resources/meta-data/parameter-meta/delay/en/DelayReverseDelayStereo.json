@@ -1,0 +1,19 @@
+ {
+    "category": "delay",
+    "model_id": 82,
+    "model_sym": "ModelID::kDelayReverseDelayStereo",
+    "display_name": "Reverse Delay",
+    "parameters-en": {
+        "Time": "Determines the length of audio captured before playing it backwards. When set to note values, Time follows the system tempo.",
+        "Feedback": "Controls the number of reverse delay repeats. When set to 0%, only one reverse repeat is heard; at 100%, the reversed audio repeats forever.",
+        "Low Cut": "Applies a low cut (or high pass) filter to the repeats, letting you remove the effected signal below a certain frequency.",
+        "High Cut": "Applies a high cut (or low pass) filter to the repeats, letting you remove the effected signal above a certain frequency.",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "Mod Mode": "Selects the type of modulation applied to the repeats--None (Off), Chorus, or Vibrato.",
+        "Speed": "Controls the speed or rate of the modulation applied to the repeats.",
+        "Depth": "Controls the depth or intensity of the modulation applied to the repeats.",
+        "Spread": "Controls the apparent stereo width of the modulation.",
+        "TSync1": ""
+    }
+}

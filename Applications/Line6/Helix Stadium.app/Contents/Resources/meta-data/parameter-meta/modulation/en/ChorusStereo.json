@@ -1,0 +1,17 @@
+{
+    "category": "modulation",
+    "model_id": 134,
+    "model_sym": "ModelID::kChorusStereo",
+    "display_name": "Chorus",
+    "parameters-en": {
+        "Speed": "Controls the speed or rate of the chorus. When set to note values, Speed follows the system tempo.",
+        "Depth": "Controls the depth or intensity of the chorus. Higher values can get into pretty warbly territory, depending on the WavShape value.",
+        "Predelay": "Applies a bit of delay to the affected signal which at higher values, can impart a bit of ADT (Automatic Double Tracking) sound. Most evident when Mix is not maxed out or the Chorus block is on a parallel path.",
+        "WavShape": "Selects one of seven wave shapes for the modulation.",
+        "Tone": "Controls the overall tonal balance of the chorus.",
+        "Spread": "Controls the apparent stereo width of the chorus between the left and right channels.",
+        "Mix": "Controls the blend between the modulation effect and the dry signal. At 0%, no modulation is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

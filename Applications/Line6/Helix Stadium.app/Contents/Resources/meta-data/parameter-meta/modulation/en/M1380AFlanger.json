@@ -1,0 +1,15 @@
+{
+    "category": "modulation",
+    "model_id": 230,
+    "model_sym": "ModelID::kM1380AFlanger",
+    "display_name": "80A Flanger",
+    "parameters-en": {
+        "Speed": "Controls the speed or rate of the flanger. When set to note values, Speed follows the system tempo.",
+        "Range": "Sets the lower limit of the flanger sweep. Higher values result in wider, more dramatic sweeps.",
+        "Enhance": "Controls the amount of feedback in the effected signal.",
+        "Manual": "Controls the degree of phase shifting. Has no effect when Range is set to 100%.",
+        "Harmonic": "Selects an Even or Odd harmonic relationship between the passband peaks.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

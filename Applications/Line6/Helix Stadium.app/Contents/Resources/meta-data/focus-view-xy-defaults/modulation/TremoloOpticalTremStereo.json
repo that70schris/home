@@ -1,0 +1,76 @@
+{
+    "modelName": "Optical Trem",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Intensity": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Spread": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Optimal Optical",
+            "Speed": 0.309999942779541,
+            "Intensity": 0.6000000238418579,
+            "Spread": 0.309999942779541,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Light Movement",
+            "Speed": 0.309999942779541,
+            "Intensity": 0.33000004291534424,
+            "Spread": 0.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Medium Movement",
+            "Speed": 0.41999995708465576,
+            "Intensity": 0.5099999904632568,
+            "Spread": 0.23000001907348633,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Wide",
+            "Speed": 0.2999999523162842,
+            "Intensity": 0.5099999904632568,
+            "Spread": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Excessive",
+            "Speed": 0.6100000143051147,
+            "Intensity": 1.0,
+            "Spread": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

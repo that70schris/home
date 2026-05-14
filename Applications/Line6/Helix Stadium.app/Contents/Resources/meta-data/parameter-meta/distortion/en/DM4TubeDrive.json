@@ -1,0 +1,13 @@
+{
+    "category": "distortion",
+    "model_id": 363,
+    "model_sym": "ModelID::kDM4TubeDrive",
+    "display_name": "Tube Drive",
+    "parameters-en": {
+        "Drive": "Controls the amount of distortion applied to the signal",
+        "Bass": "Controls the low frequency EQ of the distortion.",
+        "Mid": "Boosts or cuts the midrange to tailor the tone for you and your guitar. At 50%, MID had no effect.",
+        "Treble": "Controls the high frequency EQ of the distortion.",
+        "Output": "Sets the overall level of the block."
+    }
+}

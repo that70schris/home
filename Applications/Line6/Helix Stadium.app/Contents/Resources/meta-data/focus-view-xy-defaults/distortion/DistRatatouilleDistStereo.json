@@ -1,0 +1,49 @@
+{
+    "modelName": "Ratatouille Dist",
+    "params": {
+        "Gain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Filter": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 3,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Balanced",
+            "Gain": 0.7419999837875366,
+            "Filter": 0.33000004291534424,
+            "Level": 0.7400000095367432
+        },
+        "x_min_y_min": {
+            "name": "Crunchy",
+            "Gain": 0.20000004768371582,
+            "Filter": 0.3799999952316284,
+            "Level": 0.7400000095367432
+        },
+        "x_min_y_max": {
+            "name": "Woof!",
+            "Gain": 0.7300000190734863,
+            "Filter": 1.0,
+            "Level": 0.9700000286102295
+        },
+        "x_max_y_min": {
+            "name": "Buzz!",
+            "Gain": 0.7419999837875366,
+            "Filter": 0.059999942779541016,
+            "Level": 0.7699999809265137
+        },
+        "x_max_y_max": {
+            "name": "Bowstain",
+            "Gain": 0.9700000286102295,
+            "Filter": 0.440000057220459,
+            "Level": 0.7699999809265137
+        }
+    }
+}

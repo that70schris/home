@@ -1,0 +1,130 @@
+{
+    "modelName": "Interstate Zed",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Presence": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Hum": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Ripple": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Bias": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "BiasX": {
+            "id": 12,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Mid Gain",
+            "Drive": 0.5,
+            "Bass": 0.43000006675720215,
+            "Mid": 0.4700000286102295,
+            "Treble": 0.6000000238418579,
+            "Presence": 0.33000004291534424,
+            "ChVol": 0.7999999523162842,
+            "Master": 1.0,
+            "Sag": 0.6800000667572021,
+            "Hum": 0.3799999952316284,
+            "Ripple": 0.5,
+            "Bias": 0.75,
+            "BiasX": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Clean",
+            "Drive": 0.20000004768371582,
+            "Bass": 0.3999999761581421,
+            "Mid": 0.6000000238418579,
+            "Treble": 0.75,
+            "Presence": 0.33000004291534424,
+            "ChVol": 0.9100000858306885,
+            "Master": 0.75,
+            "Sag": 0.6800000667572021,
+            "Hum": 0.3799999952316284,
+            "Ripple": 0.5,
+            "Bias": 0.75,
+            "BiasX": 0.5
+        },
+        "x_min_y_max": {
+            "name": "Edge of Breakup",
+            "Drive": 0.25999999046325684,
+            "Bass": 0.440000057220459,
+            "Mid": 0.4700000286102295,
+            "Treble": 0.7100000381469727,
+            "Presence": 0.38999998569488525,
+            "ChVol": 0.8199999332427979,
+            "Master": 1.0,
+            "Sag": 0.6800000667572021,
+            "Hum": 0.3799999952316284,
+            "Ripple": 0.5,
+            "Bias": 0.75,
+            "BiasX": 0.5
+        },
+        "x_max_y_min": {
+            "name": "Thick Rhythm",
+            "Drive": 0.559999942779541,
+            "Bass": 0.3799999952316284,
+            "Mid": 0.5799999237060547,
+            "Treble": 0.7300000190734863,
+            "Presence": 0.5699999332427979,
+            "ChVol": 0.809999942779541,
+            "Master": 1.0,
+            "Sag": 0.6800000667572021,
+            "Hum": 0.3799999952316284,
+            "Ripple": 0.5,
+            "Bias": 0.75,
+            "BiasX": 0.5
+        },
+        "x_max_y_max": {
+            "name": "Cranked",
+            "Drive": 0.8700000047683716,
+            "Bass": 0.2999999523162842,
+            "Mid": 0.7000000476837158,
+            "Treble": 1.0,
+            "Presence": 0.5699999332427979,
+            "ChVol": 0.809999942779541,
+            "Master": 0.9100000858306885,
+            "Sag": 0.6800000667572021,
+            "Hum": 0.3799999952316284,
+            "Ripple": 0.5,
+            "Bias": 0.75,
+            "BiasX": 0.5
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "category": "distortion",
+    "model_id": 337,
+    "model_sym": "ModelID::kDistKinkyBoostMono",
+    "display_name": "Kinky Boost",
+    "parameters-en": {
+        "Drive": "Controls the amount of drive applied to the signal.",
+        "Boost": "Adds a 3dB boost to the signal via a virtual dip switch.",
+        "Bright": "Adds additional brightness via a virtual dip switch."
+    }
+}

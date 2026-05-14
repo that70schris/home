@@ -1,0 +1,15 @@
+{
+    "category": "modulation",
+    "model_id": 208,
+    "model_sym": "ModelID::kMM4OptoTremolo",
+    "display_name": "Opto Tremolo",
+    "parameters-en": {
+        "Speed": "Controls the speed or rate of the tremolo. When set to note values, Speed follows the system tempo.",
+        "Depth": "Controls the depth of the tremolo, or the intensity of the volume fluctuations.",
+        "Shape": "Adjusts the shape of the tremolo, from classic gentle tremolo all the way to dramatic sci-fi throb.",
+        "Vol Sens": "Controls the tremolo effect's sensitivity to input level. Increasing Vol Sens causes louder input signals to speed up the tremolo and lower input signals to slow it down.",
+        "Mix": "Controls the blend between the modulation effect and the dry signal. At 0%, no modulation is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

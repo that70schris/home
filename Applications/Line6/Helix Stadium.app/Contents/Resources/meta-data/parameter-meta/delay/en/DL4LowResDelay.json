@@ -1,0 +1,15 @@
+{
+    "category": "delay",
+    "model_id": 50,
+    "model_sym": "ModelID::kDL4LowResDelay",
+    "display_name": "Low Res",
+    "parameters-en": {
+        "Time": "Adjusts the length of time before the first repeat. When set to note values, Time follows the system tempo.",
+        "Feedback": "Controls the number of delay repeats. When set to 0%, only one repeat is heard. At high values, the Delay may begin to self-oscillate and squeal (perhaps in a good way).",
+        "Tone": "Applies a high cut (low pass) filter to the repeats, from 300 Hz (0%) to 12 kHz (100%).",
+        "Res": "Sets the amount of bit depth reduction applied to the repeats, from full resolution 24-bit (0%) to lo-fi 6-bit crunchiness (100%).",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TSync1": ""
+    }
+}

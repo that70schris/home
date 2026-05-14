@@ -1,0 +1,21 @@
+{
+    "category": "distortion",
+    "model_id": 198,
+    "model_sym": "ModelID::kDistObsidian7000Stereo",
+    "display_name": "Obsidian 7000",
+    "parameters-en": {
+        "Drive": "Controls the amount of distortion and saturation applied to the signal.",
+        "Level": "Controls the level of the overdriven signal.",
+        "Blend": "Blends in the overdriven signal with the dry, unprocessed signal. At 0.0, no effect is heard.",
+        "Grunt": "Boosts or cuts low frequencies of the distorted signal. Does not affect the sound when set to \"Flat.\"",
+        "Attack": "Boosts or cuts high frequencies of the distorted signal. Does not affect the sound when set to \"Flat.\"",
+        "Master": "Sets the overall level of the block.",
+        "Bass": "Controls the level of the bass EQ band sent into the distortion.",
+        "Lo MidFreq": "Sets the frequency of the low mid EQ band sent into the distortion.",
+        "Lo Mid": "Controls the level of the low mid EQ band sent into the distortion.",
+        "Hi MidFreq": "Sets the frequency of the high mid EQ band sent into the distortion.",
+        "Hi Mid": "Controls the level of the high mid EQ band sent into the distortion.",
+        "Treble": "Controls the level of the treble EQ band sent into the distortion.",
+        "Distortion": "Turns the distortion circuit on and off. When off, the EQ parameters remain active."
+    }
+}

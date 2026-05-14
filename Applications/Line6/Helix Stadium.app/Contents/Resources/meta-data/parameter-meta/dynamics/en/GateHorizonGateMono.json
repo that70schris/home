@@ -1,0 +1,12 @@
+{
+    "category": "dynamics",
+    "model_id": 22,
+    "model_sym": "ModelID::kGateHorizonGateMono",
+    "display_name": "Horizon Gate",
+    "parameters-en": {
+        "Mode": "Determines whether the gate's response is optimized for bass or guitar.",
+        "Sensitivity": "Lower values eliminate most noise without affecting your tone; higher values can tighten up your bass response, at the expense of note articulation. Note that Horizon Gate isn't a traditional gate as much as it's a dynamic high shelf EQ filter that squashes high end noise while letting lower end signals continue to decay naturally.",
+        "GateRange": "Determines the range of the dynamic high shelf EQ filter, or how far the signal's high end is attenuated while the gate is active. When set to \"Extended,\" drops the gate's threshold down to -90 dB, which is more attenuation than the real pedal.",
+        "Level": "Sets the overall level of the block."
+    }
+}

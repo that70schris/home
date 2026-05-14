@@ -1,0 +1,58 @@
+{
+    "modelName": "Script Phase",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 4,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "70s Vibe",
+            "Speed": 1.0,
+            "Level": 0.20000076293945312,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Low Cycle",
+            "Speed": 0.2999999523162842,
+            "Level": 0.20000076293945312,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Wobble",
+            "Speed": 3.0,
+            "Level": 0.3000030517578125,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Fast Cycle",
+            "Speed": 6.0,
+            "Level": 0.3000030517578125,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Stutter",
+            "Speed": 12.5,
+            "Level": 0.5,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

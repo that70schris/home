@@ -1,0 +1,19 @@
+{
+    "category": "delay",
+    "model_id": 94,
+    "model_sym": "ModelID::kDelayElephantManStereo",
+    "display_name": "Elephant Man",
+    "parameters-en": {
+       "Time": "Adjusts the length of time before the first repeat. When set to note values, Time follows the system tempo. IMPORTANT! The original pedal's delay time was limited to 500 ms, so depending on the tempo, your repeats may appear twice as fast.",
+        "Feedback": "Controls the number of delay repeats. When set to 0%, only one repeat is heard. At high values, the Delay may begin to self-oscillate and squeal (perhaps in a good way).",
+        "Mode": "Selects the type of modulation applied to the repeats--Chorus or Vibrato.",
+        "Depth": "Controls the depth or intensity of the modulation applied to the repeats.",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "Scale": "For stereo delays, the right side's time is always some percentage of the left sides's time, and is determined by the Scale parameter. For example, if Time is set to 500 ms, and Scale is set to 70%, the left delay is 500 ms and the right delay is 350ms (or 70% of 500 ms). When scale is set to 100%, left and right delays are the same.",
+        "Spread": "Controls the apparent stereo width of the repeats.",
+        "Noise": "Adds subtle graininess to the repeats, which is inherent in many bucket brigade delays.",
+        "Headroom": "Some delay pedals' internal signal paths exhibit a bit of grit, especially when placed after a high-gain amp block. Negative values increase the perceived amount of grit; positive values clean things up a bit.",
+        "TSync1": ""
+    }
+}

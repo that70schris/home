@@ -1,0 +1,13 @@
+{
+    "category": "synth",
+    "model_id": 394,
+    "model_sym": "ModelID::kSynthAnalog",
+    "display_name": "Analog Synth",
+    "parameters-en": {
+        "Wave": "Choose from 8 different analog monophonic synth lead sounds.",
+        "Filter": "Controls a low pass filter that removes some high end from the synth signal.",
+        "Decay": "Controls the decay of the Filter's envelope.",
+        "Mix": "Controls the blend between the synth and the dry signal. At 0%, no synth is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

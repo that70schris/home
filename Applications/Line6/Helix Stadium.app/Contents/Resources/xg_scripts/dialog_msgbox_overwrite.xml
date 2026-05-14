@@ -1,0 +1,183 @@
+
+<xg>
+    <panel_widget height="400" id="1" left="0" top="0" width="400">
+        <bg_color>0xFF121212</bg_color>
+        <border_color>0xFFFFFFFF</border_color>
+        <border_thickness>2</border_thickness>
+        <corner_radius>12</corner_radius>
+        <panel_widget height="2" id="1" left="2" top="448" width="396">
+            <anchor_pos bottom="150" left="2" right="2"/>
+            <bg_color>0xFF808080</bg_color>
+        </panel_widget>
+        <panel_widget height="40" id="1btp" left="120" top="535" width="160">
+            <anchor_pos bottom="25"/>
+            <relative_pos x="50"/>
+            <visible>no</visible>
+            <bg_color>0x00000000</bg_color>
+            <pushbutton_widget height="40" id="but1" left="0" top="0" width="160">
+                <anchor_pos bottom="0" left="0" right="0" top="0"/>
+                <bg_color>0xFF424242</bg_color>
+                <scale_mode>stretch</scale_mode>
+                <corner_radius>8</corner_radius>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Button 1</label>
+                    <font name="Inter Display" size="18"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                    <offset x="1" y="1"/>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF5E5E5E</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+        </panel_widget>
+        <panel_widget height="100" id="2btp" left="110" top="475" width="180">
+            <anchor_pos bottom="25"/>
+            <relative_pos x="50"/>
+            <visible>no</visible>
+            <bg_color>0x00000000</bg_color>
+            <pushbutton_widget height="40" id="but1" left="0" top="0" width="160">
+                <anchor_pos left="0" right="0" top="0"/>
+                <bg_color>0xFF424242</bg_color>
+                <scale_mode>stretch</scale_mode>
+                <corner_radius>8</corner_radius>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Button 1</label>
+                    <font name="Inter Display" size="18"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                    <offset x="1" y="1"/>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF5E5E5E</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+            <pushbutton_widget height="40" id="but2" left="0" top="60" width="160">
+                <anchor_pos bottom="0" left="0" right="0"/>
+                <bg_color>0xFF424242</bg_color>
+                <scale_mode>stretch</scale_mode>
+                <corner_radius>8</corner_radius>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Button 2</label>
+                    <font name="Inter Display" size="18"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                    <offset x="1" y="1"/>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF5E5E5E</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+        </panel_widget>
+        <panel_widget height="40" id="3btp" left="-20" top="535" width="440">
+            <anchor_pos bottom="25"/>
+            <relative_pos x="50"/>
+            <visible>no</visible>
+            <bg_color>0x00000000</bg_color>
+            <pushbutton_widget height="40" id="but1" left="0" top="0" width="120">
+                <anchor_pos bottom="0" left="0" top="0"/>
+                <bg_color>0xFF424242</bg_color>
+                <scale_mode>stretch</scale_mode>
+                <corner_radius>8</corner_radius>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Button 1</label>
+                    <font name="Inter Display" size="18"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                    <offset x="1" y="1"/>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF5E5E5E</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+            <pushbutton_widget height="40" id="but2" left="160" top="0" width="120">
+                <anchor_pos bottom="0" left="160" top="0"/>
+                <bg_color>0xFF424242</bg_color>
+                <scale_mode>stretch</scale_mode>
+                <corner_radius>8</corner_radius>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Button 2</label>
+                    <font name="Inter Display" size="18"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                    <offset x="1" y="1"/>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF5E5E5E</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+            <pushbutton_widget height="40" id="but3" left="320" top="0" width="120">
+                <anchor_pos bottom="0" right="0" top="0"/>
+                <bg_color>0xFF424242</bg_color>
+                <scale_mode>stretch</scale_mode>
+                <corner_radius>8</corner_radius>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Button 3</label>
+                    <font name="Inter Display" size="18"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                    <offset x="1" y="1"/>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF5E5E5E</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+        </panel_widget>
+        <text_widget height="70" id="text" left="60" top="100" width="280">
+            <anchor_pos bottom="230" left="60" right="60" top="100"/>
+            <bg_color>0x00000000</bg_color>
+            <text>
+                <label>This is a lot of text, so we have to make sure the line is long so it wraps. How does this look?</label>
+                <font name="Inter Display" size="18"/>
+                <multiline>yes</multiline>
+                <text_color>0xFFD0D0D0</text_color>
+            </text>
+        </text_widget>
+        <image_widget height="64" id="icon" left="136" top="25" width="128">
+            <anchor_pos top="25"/>
+            <relative_pos x="50"/>
+            <bg_color>0x00000000</bg_color>
+        </image_widget>
+        <toggle_widget height="48" id="dask" left="60" top="392" width="280">
+            <anchor_pos bottom="160" left="60" right="60"/>
+            <bg_color>0x00000000</bg_color>
+            <icon_placement spacing="8">-1</icon_placement>
+            <text>
+                <label>Don't ask me again.</label>
+                <font name="Inter Display" size="18"/>
+                <align horz="left"/>
+                <text_color>0xFFD6D6D6</text_color>
+            </text>
+        </toggle_widget>
+    </panel_widget>
+</xg>

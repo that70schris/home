@@ -1,0 +1,211 @@
+{
+    "modelName": "Ampeg SVT-4 PRO",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "MidFreq": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "Treble": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "UltraLo": {
+            "id": 8,
+            "behavior": "quantize"
+        },
+        "UltraHi": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "Bright": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "EQ": {
+            "id": 11,
+            "behavior": "quantize"
+        },
+        "33Hz": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "80Hz": {
+            "id": 13,
+            "behavior": "interpolate"
+        },
+        "150Hz": {
+            "id": 14,
+            "behavior": "interpolate"
+        },
+        "300Hz": {
+            "id": 15,
+            "behavior": "interpolate"
+        },
+        "600Hz": {
+            "id": 16,
+            "behavior": "interpolate"
+        },
+        "900Hz": {
+            "id": 17,
+            "behavior": "interpolate"
+        },
+        "2kHz": {
+            "id": 18,
+            "behavior": "interpolate"
+        },
+        "5kHz": {
+            "id": 19,
+            "behavior": "interpolate"
+        },
+        "8kHz": {
+            "id": 20,
+            "behavior": "interpolate"
+        },
+        "EQLevel": {
+            "id": 21,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Clean",
+            "Drive": 0.3999999761581421,
+            "Bass": 0.5,
+            "Mid": 0.5,
+            "MidFreq": 1,
+            "Treble": 0.5,
+            "ChVol": 1.0,
+            "Master": 0.8500000238418579,
+            "UltraLo": false,
+            "UltraHi": false,
+            "Bright": false,
+            "EQ": false,
+            "33Hz": 0.0,
+            "80Hz": 0.0,
+            "150Hz": 0.0,
+            "300Hz": 0.0,
+            "600Hz": 0.0,
+            "900Hz": 0.0,
+            "2kHz": 0.0,
+            "5kHz": 0.0,
+            "8kHz": 0.0,
+            "EQLevel": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Round",
+            "Drive": 0.25,
+            "Bass": 0.5499999523162842,
+            "Mid": 0.6200000047683716,
+            "MidFreq": 0,
+            "Treble": 0.3999999761581421,
+            "ChVol": 1.0,
+            "Master": 0.8999999761581421,
+            "UltraLo": false,
+            "UltraHi": false,
+            "Bright": false,
+            "EQ": true,
+            "33Hz": -2.1999998092651367,
+            "80Hz": 0.5,
+            "150Hz": 1.2000007629394531,
+            "300Hz": 0.5,
+            "600Hz": 1.5,
+            "900Hz": -1.6000003814697266,
+            "2kHz": -2.3000001907348633,
+            "5kHz": -2.0,
+            "8kHz": -3.299999237060547,
+            "EQLevel": 2.5
+        },
+        "x_min_y_max": {
+            "name": "Bright",
+            "Drive": 0.5499999523162842,
+            "Bass": 0.49000000953674316,
+            "Mid": 0.3500000238418579,
+            "MidFreq": 1,
+            "Treble": 0.6100000143051147,
+            "ChVol": 0.8999999761581421,
+            "Master": 0.7400000095367432,
+            "UltraLo": true,
+            "UltraHi": false,
+            "Bright": true,
+            "EQ": true,
+            "33Hz": 1.7000007629394531,
+            "80Hz": 0.8000011444091797,
+            "150Hz": 0.39999961853027344,
+            "300Hz": -1.0999994277954102,
+            "600Hz": 1.3999996185302734,
+            "900Hz": 0.19999980926513672,
+            "2kHz": -0.5,
+            "5kHz": 1.6999998092651367,
+            "8kHz": 0.2999992370605469,
+            "EQLevel": -0.40000057220458984
+        },
+        "x_max_y_min": {
+            "name": "Deep",
+            "Drive": 0.3500000238418579,
+            "Bass": 0.6000000238418579,
+            "Mid": 0.31999993324279785,
+            "MidFreq": 1,
+            "Treble": 0.4500000476837158,
+            "ChVol": 1.0,
+            "Master": 0.8999999761581421,
+            "UltraLo": true,
+            "UltraHi": false,
+            "Bright": false,
+            "EQ": true,
+            "33Hz": 3.700000762939453,
+            "80Hz": 2.700000762939453,
+            "150Hz": 1.7999992370605469,
+            "300Hz": 0.10000038146972656,
+            "600Hz": -2.5,
+            "900Hz": -5.0,
+            "2kHz": -2.8999996185302734,
+            "5kHz": -2.0,
+            "8kHz": -0.8000001907348633,
+            "EQLevel": -0.19999980926513672
+        },
+        "x_max_y_max": {
+            "name": "Pushed",
+            "Drive": 0.940000057220459,
+            "Bass": 0.46000003814697266,
+            "Mid": 0.75,
+            "MidFreq": 2,
+            "Treble": 0.5799999237060547,
+            "ChVol": 1.0,
+            "Master": 0.3500000238418579,
+            "UltraLo": true,
+            "UltraHi": true,
+            "Bright": false,
+            "EQ": true,
+            "33Hz": 0.39999961853027344,
+            "80Hz": 2.3000011444091797,
+            "150Hz": 1.1000003814697266,
+            "300Hz": 1.1000003814697266,
+            "600Hz": 4.899999618530273,
+            "900Hz": 5.399999618530273,
+            "2kHz": -4.300000190734863,
+            "5kHz": -5.399999618530273,
+            "8kHz": -0.8999996185302734,
+            "EQLevel": -2.0
+        }
+    }
+}

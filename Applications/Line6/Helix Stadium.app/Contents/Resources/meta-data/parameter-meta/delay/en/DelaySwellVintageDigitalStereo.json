@@ -1,0 +1,21 @@
+{
+    "category": "delay",
+    "model_id": 78,
+    "model_sym": "ModelID::kDelaySwellVintageDigitalStereo",
+    "display_name": "Vintage Swell",
+    "parameters-en": {
+        "Time": "Time adjusts the length of time before the first repeat. When set to note values, Time follows the system tempo.",
+        "Feedback": "Controls the number of delay repeats. When set to 0%, only one repeat is heard; at 100%, the delay repeats forever.",
+        "Bit Depth": "Lowers the bit depth of the repeats for a grungier sound. For more transparent results, set to 24 bits.",
+        "Sample Rate": "Lowers the sample rate of the repeats for a grungier, more vintage digital sound. For more transparent results, set to 48kHz.",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "Rate": "Controls the speed or rate of the pitch modulation applied to the repeats.",
+        "Depth": "Controls the depth or intensity of the pitch modulation applied to the repeats.",
+        "Scale": "For stereo delays, the right side's time is always some percentage of the left sides's time, and is determined by the Scale parameter. For example, if Time is set to 500 ms, and Scale is set to 70%, the left delay is 500 ms and the right delay is 350ms (or 70% of 500 ms). When scale is set to 100%, left and right delays are the same.",
+        "Headroom": "Some delay pedals' internal signal paths exhibit a bit of grit, especially when placed after a high-gain amp block. Negative values increase the perceived amount of grit; positive values clean things up a bit.",
+        "Threshold": "Sets the level below which the volume swell resets.",
+        "Attack": "Sets the ramp time for the volume swell applied to the dry signal, and therefore, any delay repeats.",
+        "TSync1": ""
+    }
+}

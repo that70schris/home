@@ -1,0 +1,26 @@
+{
+    "symbol": "ModelID::kLooperShufflingStereo",
+    "category": "looper",
+    "class": "class",
+    "display_name": "Shuffling Looper",
+    "model_catalog_image": "",
+    "model_options_image": "",
+    "parameters-en": {
+        "Slices": "Changes the number of slices your loop will be chopped into.",
+        "SeqLength": "Determines the number of slices in the sequence. This can be changed even after recording a loop.",
+        "Shuffle": "Determines the likelihood of slices shuffling/reordering. At 0%, the slices never shuffle; at 100%, they're constantly reshuffling.",
+        "Pitch": "Determines the likelihood of slices playing back an interval higher or lower.",
+        "Reverse": "Determines the likelihood of slices playing backward. At 0%, all slices play forward; at 100% all slices play backward.",
+        "Repeat": "Determines the likelihood of slices repeating. At 0%, no slices repeat; at 100%, all slices repeat.",
+        "Smoothing": "Higher values apply smoothing between slices and can give a synth-pad type quality, lower values maintain transients. Or set it just high enough to avoid pops and clicks.",
+        "Seq Drift": "Determines the likelihood of the entire slice sequence changing every time it loops around. When set to 0%, the same sequence repeats forever; when set to 100%, the sequence changes completely every time it loops.",
+        "Playback": "Sets the overall level of the block.",
+        "Low Cut": "Applies a low cut (or high pass) filter to the loop, letting you remove the looper signal below a certain frequency.",
+        "High Cut": "Applies a high cut (or low pass) filter to the loop, letting you remove the looper signal above a certain frequency.",
+        "Interval 1": "Sets the pitch of some slices, the likelihood of which is determined by the Pitch parameter (from one octave down to one octave up).",
+        "Interval 2": "Sets the pitch of other slices, the likelihood of which is determined by the Pitch parameter (from -1 octave to +1 octave).",
+        "Midi Command": "",
+        "Transport": "",
+        "DirectStop": ""
+    }
+}

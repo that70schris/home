@@ -1,0 +1,103 @@
+{
+    "modelName": "GrammaticoLG Jmp",
+    "params": {
+        "DriveNorm": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "DriveBright": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Tone": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Hum": {
+            "id": 9,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "GLG Jump",
+            "DriveNorm": 0.5,
+            "DriveBright": 0.5,
+            "Bass": 0.4700000286102295,
+            "Tone": 0.7100000381469727,
+            "Treble": 0.5199999809265137,
+            "ChVol": 0.7200000286102295,
+            "Master": 0.809999942779541,
+            "Sag": 0.5099999904632568,
+            "Hum": 0.6499999761581421
+        },
+        "x_min_y_min": {
+            "name": "Clean",
+            "DriveNorm": 0.12000000476837158,
+            "DriveBright": 0.12000000476837158,
+            "Bass": 0.8199999332427979,
+            "Tone": 0.7100000381469727,
+            "Treble": 0.7999999523162842,
+            "ChVol": 0.7200000286102295,
+            "Master": 0.8700000047683716,
+            "Sag": 0.24000000953674316,
+            "Hum": 0.25999999046325684
+        },
+        "x_min_y_max": {
+            "name": "Less Clean",
+            "DriveNorm": 0.28999996185302734,
+            "DriveBright": 0.2799999713897705,
+            "Bass": 0.6399999856948853,
+            "Tone": 0.6399999856948853,
+            "Treble": 0.6600000858306885,
+            "ChVol": 0.7200000286102295,
+            "Master": 0.8700000047683716,
+            "Sag": 0.3700000047683716,
+            "Hum": 0.3700000047683716
+        },
+        "x_max_y_min": {
+            "name": "Less Bite",
+            "DriveNorm": 0.6600000858306885,
+            "DriveBright": 0.6700000762939453,
+            "Bass": 0.7200000286102295,
+            "Tone": 0.8899999856948853,
+            "Treble": 0.5199999809265137,
+            "ChVol": 0.7200000286102295,
+            "Master": 0.7200000286102295,
+            "Sag": 0.21000003814697266,
+            "Hum": 0.28999996185302734
+        },
+        "x_max_y_max": {
+            "name": "Bitey",
+            "DriveNorm": 0.7300000190734863,
+            "DriveBright": 0.75,
+            "Bass": 0.7599999904632568,
+            "Tone": 1.0,
+            "Treble": 0.5199999809265137,
+            "ChVol": 0.65,
+            "Master": 0.7200000286102295,
+            "Sag": 0.04999995231628418,
+            "Hum": 0.18000006675720215
+        }
+    }
+}

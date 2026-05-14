@@ -1,0 +1,224 @@
+{
+    "modelName": "WhoWatt 103",
+    "params": {
+        "Channel": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "NormDrive": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "BrtDrive": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Presence": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Output Volume": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Ripple": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "ZPrePost": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "Hype": {
+            "id": 13,
+            "behavior": "interpolate"
+        },
+        "AmpCabPeak2Q": {
+            "id": 74,
+            "behavior": "exclude"
+        },
+        "AmpCabPeak2Fc": {
+            "id": 75,
+            "behavior": "exclude"
+        },
+        "AmpCabPeak2G": {
+            "id": 76,
+            "behavior": "exclude"
+        },
+        "AmpCabZFir": {
+            "id": 101,
+            "behavior": "exclude"
+        },
+        "AmpCabZUpdate": {
+            "id": 103,
+            "behavior": "exclude"
+        },
+        "AmpCabShelfF": {
+            "id": 104,
+            "behavior": "exclude"
+        },
+        "AmpCabShelfG": {
+            "id": 105,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakQ": {
+            "id": 106,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakG": {
+            "id": 107,
+            "behavior": "exclude"
+        },
+        "AmpCabPeakFc": {
+            "id": 108,
+            "behavior": "exclude"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Lily",
+            "Channel": 2,
+            "NormDrive": 0.50,
+            "BrtDrive": 0.25,
+            "Bass": 0.7,
+            "Mid": 0.46,
+            "Treble": 0.62,
+            "Presence": 0.422,
+            "Output Volume": -3.1,
+            "Master": 0.6,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "ZPrePost": 0.300000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_min_y_min": {
+            "name": "Who Noon",
+            "Channel": 0,
+            "NormDrive": 0.500000,
+            "BrtDrive": 0.00000,
+            "Bass": 0.500000,
+            "Mid": 0.500000,
+            "Treble": 0.500000,
+            "Presence": 0.500000,
+            "Output Volume": -4.2000,
+            "Master": 0.500000,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "ZPrePost": 0.300000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_min_y_max": {
+            "name": "Miles",
+            "Channel": 1,
+            "NormDrive": 0.65,
+            "BrtDrive": 1.0,
+            "Bass": 0.0,
+            "Mid": 0.9,
+            "Treble": 0.95,
+            "Presence": 0.5,
+            "Output Volume": -7.3000,
+            "Master": 0.600000,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "ZPrePost": 0.300000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_max_y_min": {
+            "name": "Wall",
+            "Channel": 2,
+            "NormDrive": 0.55,
+            "BrtDrive": 0.65,
+            "Bass": 0.35,
+            "Mid": 0.80,
+            "Treble": 0.40,
+            "Presence": 0.65,
+            "Output Volume": -11.3,
+            "Master": 0.45,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "ZPrePost": 0.300000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        },
+        "x_max_y_max": {
+            "name": "Spirit",
+            "Channel": 2,
+            "NormDrive": 1.0,
+            "BrtDrive": 1.0,
+            "Bass": 0.52,
+            "Mid": 0.76,
+            "Treble": 0.7,
+            "Presence": 0.58,
+            "Output Volume": -11.3,
+            "Master": 1.0,
+            "Sag": 0.00000,
+            "Ripple": 0.00000,
+            "ZPrePost": 0.300000,
+            "Hype": 0.00000,
+            "AmpCabPeak2Q": 0.707000,
+            "AmpCabPeak2Fc": 1000.00,
+            "AmpCabPeak2G": 0.00000,
+            "AmpCabZUpdate": 0,
+            "AmpCabShelfF": 1000.00,
+            "AmpCabShelfG": 0.00000,
+            "AmpCabPeakQ": 0.707000,
+            "AmpCabPeakG": 0.00000,
+            "AmpCabPeakFc": 100.000
+        }
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "modelName": "Pattern Tremolo",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Step1": {
+            "id": 2,
+            "behavior": "quantize"
+        },
+        "Step2": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "Step3": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "Step4": {
+            "id": 5,
+            "behavior": "quantize"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Soundwave",
+            "Speed": 2.5,
+            "Step1": 3,
+            "Step2": 2,
+            "Step3": 2,
+            "Step4": 2,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Space Pulse",
+            "Speed": 1.5,
+            "Step1": 1,
+            "Step2": 2,
+            "Step3": 2,
+            "Step4": 2,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Stumble",
+            "Speed": 2.0,
+            "Step1": 2,
+            "Step2": 3,
+            "Step3": 4,
+            "Step4": 3,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Repeater",
+            "Speed": 2.0,
+            "Step1": 6,
+            "Step2": 6,
+            "Step3": 6,
+            "Step4": 3,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Glitched",
+            "Speed": 1.5,
+            "Step1": 2,
+            "Step2": 5,
+            "Step3": 9,
+            "Step4": 13,
+            "Level": 0.10000228881835938,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "category": "delay",
+    "model_id": 77,
+    "model_sym": "ModelID::kDelayTransistorTapeStereo",
+    "display_name": "Transistor Tape",
+    "parameters-en": {
+        "Time": "Adjusts the length of time before the first repeat. When set to note values, Time follows the system tempo.",
+        "Feedback": "Controls the number of delay repeats. When set to 0%, only one repeat is heard. At high values, the Delay may begin to self-oscillate and squeal (perhaps in a good way).",
+        "Wow Fluttr": "Controls how much warbly tape sound is heard. Lower values result in the sound of a tape echo in pristine condition; higher values result in the sound of a tape echo that may have seen one too many trips in the back of a van.",
+        "Scale": "For stereo delays, the right side's time is always some percentage of the left sides's time, and is determined by the Scale parameter. For example, if Time is set to 500 ms, and Scale is set to 70%, the left delay is 500 ms and the right delay is 350ms (or 70% of 500 ms). When scale is set to 100%, left and right delays are the same.",
+        "Spread": "Controls the apparent stereo width of any new repeats.",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "Headroom": "Some delay devices' internal signal paths exhibit a bit of grit, especially when placed after a high-gain amp block. Negative values increase the perceived amount of grit; positive values clean things up a bit.",
+        "TSync1": "",
+        "Dry Thru": ""
+    }
+}

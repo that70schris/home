@@ -1,0 +1,49 @@
+{
+    "modelName": "Dark Dove Fuzz",
+    "params": {
+        "Sustain": {
+            "id": 1,
+            "behavior": "exclude"
+        },
+        "Tone": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 3,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Hey Comrade",
+            "Sustain": 0.5600000023841858,
+            "Tone": 0.4099999964237213,
+            "Level": 0.6000000238418579
+        },
+        "x_min_y_min": {
+            "name": "Zdravstvuyte",
+            "Sustain": 0.05000000074505806,
+            "Tone": 0.5,
+            "Level": 0.800000011920929
+        },
+        "x_min_y_max": {
+            "name": "Pozhaluysta",
+            "Sustain": 0.8399999737739563,
+            "Tone": 0.23999999463558197,
+            "Level": 0.5799999833106995
+        },
+        "x_max_y_min": {
+            "name": "Spasibo",
+            "Sustain": 0.41999998688697815,
+            "Tone": 0.4099999964237213,
+            "Level": 0.6100000143051147
+        },
+        "x_max_y_max": {
+            "name": "Do Svidaniya",
+            "Sustain": 0.9200000166893005,
+            "Tone": 0.7099999785423279,
+            "Level": 0.5799999833106995
+        }
+    }
+}

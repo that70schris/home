@@ -1,0 +1,16 @@
+{
+    "category": "modulation",
+    "model_id": 365,
+    "model_sym": "ModelID::kMM4PitchVibrato",
+    "display_name": "Pitch Vibrato",
+    "parameters-en": {
+        "Speed": "Controls the speed or rate of the vibrato. When set to note values, Speed follows the system tempo.",
+        "Depth": "Controls the depth or intensity of the vibrato.",
+        "Rise": "Controls how long it takes for the vibrato to \"ramp up\" to full depth. At 0%, vibrato happens immediately; at higher values it slowly appears over several seconds.",
+        "Vol Sens": "Turning this parameter up provides more sensitive \"peak follower\" control over vibrato speed. Louder playing speeds up the vibrato and softer playing slows it down.",
+        "Mix": "Controls the blend between the modulation effect and the dry signal. At 0%, no modulation is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "RiseTimeSwitch": "",
+        "TempoSync1": ""
+    }
+}

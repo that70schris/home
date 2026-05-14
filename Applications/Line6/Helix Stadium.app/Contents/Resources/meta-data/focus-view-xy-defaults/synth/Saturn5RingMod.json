@@ -1,0 +1,49 @@
+{
+    "modelName": "Saturn 5 RingMod",
+    "params": {
+        "Wave": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Synth Octave",
+            "Wave": 0,
+            "Mix": 0.65,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Ringzzz",
+            "Wave": 3,
+            "Mix": 0.78,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Low Octave",
+            "Wave": 1,
+            "Mix": 0.79,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Sweepin'",
+            "Wave": 6,
+            "Mix": 1.0,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Third Wave",
+            "Wave": 2,
+            "Mix": 1.0,
+            "Level": 0.0
+        }
+    }
+}

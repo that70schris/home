@@ -1,0 +1,12 @@
+{
+    "category": "reverb",
+    "model_id": 71,
+    "model_sym": "ModelID::kReverbParticleStereo",
+    "display_name": "Particle Verb",
+    "parameters-en": {
+        "Dwell": "Controls the intensity or regeneration of the reverb. WARNING: At higher values, Particle Verb can get a little bit out of control, which isn't necessarily a bad thing.",
+        "Condition": "Selects the mode of Particle Verb. Stable mode turns your chords into a lush modulated pad. Critical mode is similar, but with a slight rise in pitch. In Hazard mode, all stops are removed.",
+        "Mix": "Controls the blend between the reverb and the dry signal. At 0%, no reverb is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

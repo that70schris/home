@@ -1,0 +1,85 @@
+{
+    "modelName": "AC Flanger",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Width": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Regen": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Manual": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 14,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 15,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Width",
+            "Speed": 1.1999998092651367,
+            "Width": 0.5,
+            "Regen": 0.4500000476837158,
+            "Manual": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Slow Open",
+            "Speed": 0.2999999523162842,
+            "Width": 0.3999999761581421,
+            "Regen": 0.2999999523162842,
+            "Manual": 0.2999999523162842,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Siren",
+            "Speed": 1.5,
+            "Width": 0.75,
+            "Regen": 0.7000000476837158,
+            "Manual": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "VHS Repeat",
+            "Speed": 2.5,
+            "Width": 0.309999942779541,
+            "Regen": 0.49000000953674316,
+            "Manual": 0.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Deep Wah",
+            "Speed": 4.0,
+            "Width": 1.0,
+            "Regen": 1.0,
+            "Manual": 1.0,
+            "Level": -1.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

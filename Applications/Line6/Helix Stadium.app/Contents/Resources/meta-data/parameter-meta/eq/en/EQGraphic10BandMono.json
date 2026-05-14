@@ -1,0 +1,19 @@
+{
+    "category": "eq",
+    "model_id": 263,
+    "model_sym": "ModelID::kEQGraphic10BandMono",
+    "display_name": "10 Band Graphic",
+    "parameters-en": {
+        "31.25 Hz": "Boost or cut up to 15.0 dB.",
+        "62.5 Hz": "Boost or cut up to 15.0 dB.",
+        "125 Hz": "Boost or cut up to 15.0 dB.",
+        "250 Hz": "Boost or cut up to 15.0 dB.",
+        "500 Hz": "Boost or cut up to 15.0 dB.",
+        "1 kHz": "Boost or cut up to 15.0 dB.",
+        "2 kHz": "Boost or cut up to 15.0 dB.",
+        "4 kHz": "Boost or cut up to 15.0 dB.",
+        "8 kHz": "Boost or cut up to 15.0 dB.",
+        "16 kHz": "Boost or cut up to 15.0 dB.",
+        "Level": "Sets the overall level of the block."
+    }
+}

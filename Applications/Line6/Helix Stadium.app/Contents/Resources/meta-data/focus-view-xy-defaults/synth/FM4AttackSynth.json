@@ -1,0 +1,76 @@
+{
+    "modelName": "Attack Synth",
+    "params": {
+        "Freq": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Wave": {
+            "id": 2,
+            "behavior": "quantize"
+        },
+        "Attack": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Pitch": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Square Bass",
+            "Freq": 0.5,
+            "Wave": 0,
+            "Attack": 0.15,
+            "Pitch": 0.5,
+            "Mix": 1.0,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Detuned",
+            "Freq": 0.35,
+            "Wave": 1,
+            "Attack": 0.02,
+            "Pitch": 0.99,
+            "Mix": 0.44,
+            "Level": 1.6
+        },
+        "x_min_y_max": {
+            "name": "Broken Speaker",
+            "Freq": 0.34,
+            "Wave": 0,
+            "Attack": 0.09,
+            "Pitch": 1.0,
+            "Mix": 0.45,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Frog Wah",
+            "Freq": 0.4,
+            "Wave": 1,
+            "Attack": 0.48,
+            "Pitch": 0.5,
+            "Mix": 0.74,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Sweep",
+            "Freq": 0.8,
+            "Wave": 2,
+            "Attack": 1.0,
+            "Pitch": 0.0,
+            "Mix": 1.0,
+            "Level": 0.0
+        }
+    }
+}

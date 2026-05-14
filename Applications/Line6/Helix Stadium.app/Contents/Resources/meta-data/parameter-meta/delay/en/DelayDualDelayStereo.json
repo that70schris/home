@@ -1,0 +1,23 @@
+{
+    "category": "delay",
+    "model_id": 89,
+    "model_sym": "ModelID::kDelayDualDelayStereo",
+    "display_name": "Dual Delay",
+    "parameters-en": {
+        "Left Time": "Adjusts the length of time before the left delay's first repeat. When set to note values, Time follows the system tempo.",
+        "Right Time": "Adjusts the length of time before the right delay's first repeat. When set to note values, Time follows the system tempo.",
+        "LFeedback": "Controls the number of repeats for the left delay. When set to 0%, only one repeat is heard; at 100%, the delay repeats forever.",
+        "RFeedback": "Controls the number of repeats for the right delay. When set to 0%, only one repeat is heard; at 100%, the delay repeats forever.",
+        "Left Mix": "Controls the blend between the left channel's repeats and the dry signal.",
+        "Right Mix": "Controls the blend between the left channel's repeats and the dry signal.",
+        "Level": "Sets the overall level of the block.",
+        "Low Cut": "Applies a low cut (or high pass) filter to the repeats, letting you remove the effected signal below a certain frequency.",
+        "High Cut": "Applies a high cut (or low pass) filter to the repeats, letting you remove the effected signal above a certain frequency.",
+        "Mod Mode": "Selects the type of modulation applied to the repeats--None (\"Off\"), Chorus, or Vibrato.",
+        "Speed": "Controls the speed or rate of the modulation. Does nothing if Mod Mode is set to \"Off\"",
+        "Depth": "Controls the depth or intensity of the modulation. Does nothing if Mod Mode is set to \"Off\"",
+        "Spread": "Controls the apparent stereo width of the modulation between the left and right channels. Does nothing if Mod Mode is set to \"Off\"",
+        "TSync1": "",
+        "TSync2": ""
+    }
+}

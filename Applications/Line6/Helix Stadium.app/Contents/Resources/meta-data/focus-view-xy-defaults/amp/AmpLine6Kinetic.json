@@ -1,0 +1,121 @@
+{
+    "modelName": "Kinetic",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Presence": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Boost": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "HumSwitch": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "Bias": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "BiasX": {
+            "id": 11,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Dynamic",
+            "Drive": 0.44,
+            "Bass": 0.45,
+            "Mid": 0.5,
+            "Treble": 0.42,
+            "Presence": 0.0599999,
+            "ChVol": 0.53,
+            "Boost": 0.0,
+            "Sag": 0.5,
+            "HumSwitch": true,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Chunk Rhythm",
+            "Drive": 0.78,
+            "Bass": 0.45,
+            "Mid": 0.33,
+            "Treble": 0.32,
+            "Presence": 0.18,
+            "ChVol": 0.47,
+            "Boost": 0.55,
+            "Sag": 0.37,
+            "HumSwitch": false,
+            "Bias": 0.24,
+            "BiasX": 0.86
+        },
+        "x_min_y_max": {
+            "name": "Little Crunch",
+            "Drive": 0.75,
+            "Bass": 0.24,
+            "Mid": 0.4,
+            "Treble": 0.32,
+            "Presence": 0.0599999,
+            "ChVol": 0.4,
+            "Boost": 0.33,
+            "Sag": 0.45,
+            "HumSwitch": false,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_max_y_min": {
+            "name": "Crunchy",
+            "Drive": 0.44,
+            "Bass": 0.41,
+            "Mid": 0.5,
+            "Treble": 0.32,
+            "Presence": 0.0599999,
+            "ChVol": 0.53,
+            "Boost": 0.55,
+            "Sag": 0.77,
+            "HumSwitch": false,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_max_y_max": {
+            "name": "Throaty Lead",
+            "Drive": 1.0,
+            "Bass": 0.32,
+            "Mid": 0.63,
+            "Treble": 0.32,
+            "Presence": 0.0599999,
+            "ChVol": 0.45,
+            "Boost": 0.55,
+            "Sag": 0.13,
+            "HumSwitch": false,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        }
+    }
+}

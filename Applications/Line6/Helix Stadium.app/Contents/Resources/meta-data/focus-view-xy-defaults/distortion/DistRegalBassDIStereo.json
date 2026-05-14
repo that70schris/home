@@ -1,0 +1,58 @@
+{
+    "modelName": "Regal Bass DI",
+    "params": {
+        "Bass": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Low Cut": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "Volume": {
+            "id": 4,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Clean",
+            "Bass": 0.5499999523162842,
+            "Treble": 0.5799999237060547,
+            "Low Cut": false,
+            "Volume": 0.2999999523162842
+        },
+        "x_min_y_min": {
+            "name": "Subtle",
+            "Bass": 0.04999995231628418,
+            "Treble": 0.04999995231628418,
+            "Low Cut": false,
+            "Volume": 0.3999999761581421
+        },
+        "x_min_y_max": {
+            "name": "Boost",
+            "Bass": 0.20000004768371582,
+            "Treble": 0.4500000476837158,
+            "Low Cut": false,
+            "Volume": 0.5499999523162842
+        },
+        "x_max_y_min": {
+            "name": "Deep",
+            "Bass": 0.3999999761581421,
+            "Treble": 0.10000002384185791,
+            "Low Cut": false,
+            "Volume": 0.3500000238418579
+        },
+        "x_max_y_max": {
+            "name": "Enhanced",
+            "Bass": 0.3999999761581421,
+            "Treble": 0.6000000238418579,
+            "Low Cut": true,
+            "Volume": 0.6000000238418579
+        }
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "modelName": "Cali Rectifire",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Presence": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Hum": {
+            "id": 9,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Agro",
+            "Drive": 0.7999999523162842,
+            "Bass": 0.5,
+            "Mid": 0.3999999761581421,
+            "Treble": 0.5499999523162842,
+            "Presence": 0.6499999761581421,
+            "ChVol": 0.4700000286102295,
+            "Master": 0.3500000238418579,
+            "Sag": 0.5,
+            "Hum": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Grungy",
+            "Drive": 0.6299999952316284,
+            "Bass": 0.7000000476837158,
+            "Mid": 0.6000000238418579,
+            "Treble": 0.5,
+            "Presence": 0.2999999523162842,
+            "ChVol": 0.4700000286102295,
+            "Master": 0.3999999761581421,
+            "Sag": 0.8999999761581421,
+            "Hum": 0.2999999523162842
+        },
+        "x_min_y_max": {
+            "name": "Fluid",
+            "Drive": 0.8500000238418579,
+            "Bass": 0.0,
+            "Mid": 0.6499999761581421,
+            "Treble": 0.6499999761581421,
+            "Presence": 0.2999999523162842,
+            "ChVol": 0.4700000286102295,
+            "Master": 0.3500000238418579,
+            "Sag": 0.0,
+            "Hum": 0.4099999666213989
+        },
+        "x_max_y_min": {
+            "name": "Poppy",
+            "Drive": 0.6600000858306885,
+            "Bass": 0.5499999523162842,
+            "Mid": 0.6200000047683716,
+            "Treble": 0.6700000762939453,
+            "Presence": 0.3500000238418579,
+            "ChVol": 0.4500000476837158,
+            "Master": 0.2999999523162842,
+            "Sag": 0.3400000333786011,
+            "Hum": 0.26999998092651367
+        },
+        "x_max_y_max": {
+            "name": "Nu",
+            "Drive": 0.7000000476837158,
+            "Bass": 1.0,
+            "Mid": 0.7999999523162842,
+            "Treble": 0.6000000238418579,
+            "Presence": 0.3999999761581421,
+            "ChVol": 0.4700000286102295,
+            "Master": 0.3999999761581421,
+            "Sag": 0.7000000476837158,
+            "Hum": 0.7000000476837158
+        }
+    }
+}

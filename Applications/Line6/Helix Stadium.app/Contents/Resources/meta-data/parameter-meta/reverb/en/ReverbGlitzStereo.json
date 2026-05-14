@@ -1,0 +1,20 @@
+{
+    "category": "reverb",
+    "model_id": 73,
+    "model_sym": "ModelID::kReverbGlitzStereo",
+    "display_name": "Glitz",
+    "parameters-en": {
+        "Decay": "Adjusts the decay time of the reverb effect.",
+        "Predelay": "Controls the amount of delay heard before the audible onset of reverb. Can sometimes result in more definition between the dry and effected signals.",
+        "Low Cut": "Applies a low cut (or high pass) filter to the reverb, letting you remove the effected signal below a certain frequency.",
+        "High Cut": "Applies a high cut (or low pass) filter to the reverb, letting you remove the effected signal above a certain frequency.",
+        "Mix": "Controls the blend between the reverb and the dry signal. At 0%, no reverb is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "Delay": "Adjusts the time before the second modulation is applied to the reverb.",
+        "Rate": "Controls the speed of modulation applied to the reverb.",
+        "Depth": "Controls the depth of modulation applied to the reverb.",
+        "Xover": "Determines the frequencies above which the second modulation is applied. Frequencies below this value are only affected by the first modulation.",
+        "Mod Mix": "Controls the blend of reverb with and without the second modulation.",
+        "TempoSync1": ""
+    }
+}

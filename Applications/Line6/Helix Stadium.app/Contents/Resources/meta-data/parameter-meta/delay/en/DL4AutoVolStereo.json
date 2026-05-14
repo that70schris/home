@@ -1,0 +1,15 @@
+ {
+    "category": "delay",
+    "model_id": 56,
+    "model_sym": "ModelID::kDL4AutoVolStereo",
+    "display_name": "Auto-Volume Echo",
+    "parameters-en": {
+        "Time": "Adjusts the length of time before the first repeat. When set to note values, Time follows the system tempo.",
+        "Feedback": "Controls the number of delay repeats. When set to 0%, only one repeat is heard; at 100%, the delay repeats forever.",
+        "Depth": "Controls the intensity of the tape-style wow & flutter modulation applied to the repeats.",
+        "Swell": "Sets the ramp time for the volume swell applied to the dry signal, from 0.03 seconds (0%) to 1.9 seconds (100%).",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TSync1": ""
+    }
+}

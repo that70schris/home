@@ -1,0 +1,31 @@
+{
+    "modelName": "Vital Boost",
+    "params": {
+        "Boost": {
+            "id": 1,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Vital Boost!",
+            "Boost": 0.7
+        },
+        "x_min_y_min": {
+            "name": "Vital Boost?",
+            "Boost": 0.3
+        },
+        "x_min_y_max": {
+            "name": "Vital Boostish",
+            "Boost": 0.85
+        },
+        "x_max_y_min": {
+            "name": "Vital Boost",
+            "Boost": 0.5
+        },
+        "x_max_y_max": {
+            "name": "Vital Too Much?",
+            "Boost": 1.0
+        }
+    }
+}

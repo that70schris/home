@@ -1,0 +1,94 @@
+{
+    "modelName": "Opto Tremolo",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Shape": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "VolSens": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 8,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Slow Beat",
+            "Speed": 2.1,
+            "Depth": 0.81,
+            "Shape": 0.25,
+            "VolSens": 0.0,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Pick It Up",
+            "Speed": 5.3,
+            "Depth": 0.81,
+            "Shape": 1.0,
+            "VolSens": 0.0,
+            "Mix": 0.82,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Slow It Down",
+            "Speed": 2.7,
+            "Depth": 0.68,
+            "Shape": 0.56,
+            "VolSens": 0.12,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Subtle",
+            "Speed": 7.7,
+            "Depth": 0.69,
+            "Shape": 1.0,
+            "VolSens": 0.08,
+            "Mix": 0.83,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Bleep",
+            "Speed": 7.3,
+            "Depth": 0.97,
+            "Shape": 0.93,
+            "VolSens": 0.03,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

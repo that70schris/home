@@ -1,0 +1,12 @@
+{
+    "category": "distortion",
+    "model_id": 237,
+    "model_sym": "ModelID::kDistDhyanaDriveStereo",
+    "display_name": "Dhyana Drive",
+    "parameters-en": {
+        "Gain": "Controls the amount of distortion applied to the signal.",
+        "Voice": "Lower values result in a warmer and softer sound. Higher values provide more punchiness, clarity, treble, and gain.",
+        "Tone": "Controls the overall tonal balance of the distortion. Lower values are darker and higher values are brighter.",
+        "Level": "Sets the overall level of the block."
+    }
+}

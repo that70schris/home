@@ -1,0 +1,94 @@
+{
+    "modelName": "Analog w/Mod",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "ModSpeed": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Cup",
+            "Time": 1.184,
+            "Feedback": 0.5,
+            "ModSpeed": 0.51,
+            "Depth": 0.51,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 8,
+            "TempoSync1": true
+        },
+        "x_min_y_min": {
+            "name": "Teaspoon",
+            "Time": 0.47,
+            "Feedback": 0.25,
+            "ModSpeed": 0.34,
+            "Depth": 0.25,
+            "Mix": 0.22,
+            "Level": 0.0,
+            "SyncSelect1": 3,
+            "TempoSync1": true
+        },
+        "x_min_y_max": {
+            "name": "Quart",
+            "Time": 1.184,
+            "Feedback": 0.54,
+            "ModSpeed": 0.51,
+            "Depth": 0.51,
+            "Mix": 0.57,
+            "Level": 0.0,
+            "SyncSelect1": 10,
+            "TempoSync1": true
+        },
+        "x_max_y_min": {
+            "name": "Tablespoon",
+            "Time": 0.671,
+            "Feedback": 0.28,
+            "ModSpeed": 0.34,
+            "Depth": 0.34,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        },
+        "x_max_y_max": {
+            "name": "Gallon",
+            "Time": 1.184,
+            "Feedback": 0.66,
+            "ModSpeed": 0.7,
+            "Depth": 0.72,
+            "Mix": 0.82,
+            "Level": 0.0,
+            "SyncSelect1": 12,
+            "TempoSync1": true
+        }
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "modelName": "Panner",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Shape": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "VolSen": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 8,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Panner",
+            "Speed": 1.0,
+            "Depth": 1.0,
+            "Shape": 0,
+            "VolSen": 0.30000001192092896,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 9,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Glacial",
+            "Speed": 0.29999998211860657,
+            "Depth": 1.0,
+            "Shape": 1,
+            "VolSen": 0.0,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 9,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Dynamic Pan",
+            "Speed": 0.0,
+            "Depth": 1.0,
+            "Shape": 1,
+            "VolSen": 1.0,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 9,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Tri Trem",
+            "Speed": 5.0,
+            "Depth": 0.75,
+            "Shape": 1,
+            "VolSen": 0.25,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 9,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Audio Rate",
+            "Speed": 15.0,
+            "Depth": 0.800000011920929,
+            "Shape": 2,
+            "VolSen": 0.0,
+            "Mix": 1.0,
+            "Level": 1.5,
+            "SyncSelect1": 9,
+            "TempoSync1": false
+        }
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "modelName": "Tron Up",
+    "params": {
+        "Freq": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Q": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Range": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "Type": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Auto Wow",
+            "Freq": 0.5,
+            "Q": 1.0,
+            "Range": false,
+            "Type": 1,
+            "Mix": 1.0,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Quack Up",
+            "Freq": 0.98,
+            "Q": 0.34,
+            "Range": false,
+            "Type": 2,
+            "Mix": 0.84,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Low Q",
+            "Freq": 0.11,
+            "Q": 0.72,
+            "Range": false,
+            "Type": 0,
+            "Mix": 0.84,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Sensitive",
+            "Freq": 0.2,
+            "Q": 0.34,
+            "Range": false,
+            "Type": 1,
+            "Mix": 0.64,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Alien Voice",
+            "Freq": 0.65,
+            "Q": 0.35,
+            "Range": true,
+            "Type": 2,
+            "Mix": 0.49,
+            "Level": 0.0
+        }
+    }
+}

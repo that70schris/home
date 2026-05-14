@@ -1,0 +1,13 @@
+{
+    "category": "eq",
+    "model_id": 246,
+    "model_sym": "ModelID::kAcousGtrSimStereo",
+    "display_name": "Acoustic Sim",
+    "parameters-en": {
+        "Mode": "Selects one of four acoustic guitar sounds: Standard is a traditional acoustic guitar, Jumbo is larger and fuller, Enhanced has a more prominent attack for cutting through a mix, and Piezo approximates the sound of a piezo pickup installed on the guitar.",
+        "Body": "Adds body resonance, which can provide additional fullness or fatness.",
+        "Top": "Accentuates higher end string attack and harmonics.",
+        "Shimmer": "Imparts some motion to the harmonics, reminiscent of how a string's vibration tends to affect the other strings.",
+        "Level": "Sets the overall level of the block."
+    }
+}

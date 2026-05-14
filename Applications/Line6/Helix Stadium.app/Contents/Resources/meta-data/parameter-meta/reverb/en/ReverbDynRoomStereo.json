@@ -1,0 +1,20 @@
+{
+    "category": "reverb",
+    "model_id": 59,
+    "model_sym": "ModelID::kReverbDynRoomStereo",
+    "display_name": "Dynamic Room",
+    "parameters-en": {
+        "Decay": "Adjusts the decay of the reverb (0.1 sec ~ 3.0 sec)",
+        "Predelay": "Controls the amount of delay heard before the signal enters the room. Can sometimes result in more definition between the dry and effected signals.",
+        "Damping": "Determines the frequency above which the reverb will be absorbed. For example, if your room is full of people wearing foam high school mascot costumes, more high frequencies would be absorbed than if the room were empty.",
+        "Diffusion": "Controls the amount of smearing between discrete echoes, sometimes resulting in a softer effected signal.",
+        "Mot Rate": "Controls the Motion Rate, or how quickly the room's shape may be changing, due to people moving, doors opening or closing, etc.",
+        "Mix": "Controls the blend between the reverb and the dry signal. At 0%, no reverb is heard; at 100%, no dry signal is heard.",
+        "Low Freq": "Sets the frequency below which the Low Gain parameter is applied.",
+        "Low Gain": "Controls the reverb time for frequencies below the Low Freq value. Values below 0.0 dB mean the bass frequencies decay faster than the treble frequencies; values above 0.0 dB mean the bass frequencies decay slower than the treble frequencies.",
+        "Low Cut": "Applies a low cut (or high pass) filter to the reverb, letting you remove the effected signal below a certain frequency.",
+        "High Cut": "Applies a high cut (or low pass) filter to the reverb, letting you remove the effected signal above a certain frequency.",
+        "EarlyReflc": "Controls the amount of early reflective room sound.",
+        "Level": "Sets the overall level of the block."
+    }
+}

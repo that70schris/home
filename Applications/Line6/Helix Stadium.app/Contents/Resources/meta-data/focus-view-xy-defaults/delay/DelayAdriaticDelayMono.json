@@ -1,0 +1,121 @@
+{
+    "modelName": "Adriatic Delay",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Noise": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "BBD Size": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Rate": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Headroom": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Warm Chew",
+            "Time": 0.5,
+            "Feedback": 0.4700000286102295,
+            "Noise": 0.08000004291534424,
+            "BBD Size": 3,
+            "Mix": 0.3700000047683716,
+            "Level": 0.0,
+            "Rate": 0.2999999523162842,
+            "Depth": 0.039999961853027344,
+            "Headroom": 12.0,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        },
+        "x_min_y_min": {
+            "name": "Subtle",
+            "Time": 0.5,
+            "Feedback": 0.5,
+            "Noise": 0.46000003814697266,
+            "BBD Size": 3,
+            "Mix": 0.28999996185302734,
+            "Level": 0.0,
+            "Rate": 0.2999999523162842,
+            "Depth": 0.04999995231628418,
+            "Headroom": 7.299999237060547,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        },
+        "x_min_y_max": {
+            "name": "Medium",
+            "Time": 0.5,
+            "Feedback": 0.2200000286102295,
+            "Noise": 0.08000004291534424,
+            "BBD Size": 3,
+            "Mix": 0.46000003814697266,
+            "Level": 0.0,
+            "Rate": 0.10000002384185791,
+            "Depth": 0.0,
+            "Headroom": 12.0,
+            "SyncSelect1": 8,
+            "TempoSync1": true
+        },
+        "x_max_y_min": {
+            "name": "Wash",
+            "Time": 0.5,
+            "Feedback": 0.6700000762939453,
+            "Noise": 0.38999998569488525,
+            "BBD Size": 3,
+            "Mix": 0.49000000953674316,
+            "Level": 0.0,
+            "Rate": 0.7000000476837158,
+            "Depth": 0.18000006675720215,
+            "Headroom": 12.0,
+            "SyncSelect1": 9,
+            "TempoSync1": true
+        },
+        "x_max_y_max": {
+            "name": "Bitcrushy",
+            "Time": 0.5,
+            "Feedback": 0.8700000047683716,
+            "Noise": 1.0,
+            "BBD Size": 1,
+            "Mix": 0.49000000953674316,
+            "Level": 0.0,
+            "Rate": 0.7000000476837158,
+            "Depth": 0.18000006675720215,
+            "Headroom": 12.0,
+            "SyncSelect1": 8,
+            "TempoSync1": true
+        }
+    }
+}

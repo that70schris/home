@@ -1,0 +1,11 @@
+{
+    "category": "output",
+    "model_id": 765,
+    "model_sym": "ModelID::kOutputPath2A",
+    "display_name": "Path 2A",
+    "parameters-en": {
+        "Pan": "Controls the balance between the Output's left and right channels. When set to L 100, signal is only heard from the left output; when set to R 100, signal is only heard from the right output.",
+        "Level": "Sets the overall level of the Output block.",
+        "PeakEventPeriodMs": ""
+    }
+}

@@ -1,0 +1,447 @@
+
+<xg>
+    <panel_widget height="100" id="head" left="0" top="0" width="1024">
+        <bg_fill angle="0" gradient="0xFF1E1832,0xFF2A1F14" position="20,100"/>
+        <panel_widget height="46" id="conn" left="2" top="2" width="252">
+            <anchor_pos bottom="52" left="2" top="2"/>
+            <bg_color>0x00000000</bg_color>
+            <pushbutton_widget height="32" id="conn" left="6" top="8" width="160">
+                <anchor_pos bottom="6" left="6" top="8"/>
+                <relative_pos x_align="left"/>
+                <bg_color>0x00000000</bg_color>
+                <corner_radius>6</corner_radius>
+                <icon index="0">132</icon>
+                <icon_placement spacing="4">4</icon_placement>
+                <text>
+                    <label>Not Connected</label>
+                    <font name="Inter Display" size="14"/>
+                    <align horz="left"/>
+                    <offset x="4"/>
+                    <text_color>0xFFEBEBEB</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0x1AFFFFFF</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                    <offset y="1"/>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0x1AFFFFFF</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+            <pushbutton_widget height="32" id="updt" left="167" top="8" width="75">
+                <anchor_pos bottom="6" right="10" top="8"/>
+                <bg_color>0x33000000</bg_color>
+                <corner_radius>6</corner_radius>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Update</label>
+                    <font name="Inter Display" size="14"/>
+                    <text_color>0xFFEBEBEB</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0x1A000000</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                    <offset y="1"/>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0x1AFFFFFF</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+        </panel_widget>
+        <pushbutton_widget height="28" id="sett" left="984" top="12" width="28">
+            <anchor_pos right="12"/>
+            <visible>no</visible>
+            <bg_color>0x00424242</bg_color>
+            <image>128</image>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <font name="Inter Display" size="12"/>
+                <text_color>0xFFD6D6D6</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF797979</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF5E5E5E</bg_color>
+                <fg_color>0xFFEBEBEB</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <pushbutton_widget height="28" id="hlpb" left="984" top="12" width="28">
+            <anchor_pos right="12"/>
+            <bg_color>0x00424242</bg_color>
+            <image>130</image>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <font name="Inter Display" size="12"/>
+                <text_color>0xFFD6D6D6</text_color>
+            </text>
+            <active_state>
+                <bg_color>0xFF797979</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </active_state>
+            <hilite_state>
+                <bg_color>0xFF5E5E5E</bg_color>
+                <fg_color>0xFFEBEBEB</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <panel_widget height="8" id="log-" left="827" name="Login indicator" top="21" width="8">
+            <anchor_pos right="189"/>
+            <relative_pos y="25"/>
+            <visible>no</visible>
+            <bg_color>0x00000000</bg_color>
+            <border_color>0xFFABABAB</border_color>
+            <corner_radius>3</corner_radius>
+        </panel_widget>
+        <pushbutton_widget height="32" id="aunb" left="841" name="My Account button" top="9" width="128">
+            <anchor_pos right="55"/>
+            <bg_color>0x00FFFFFF</bg_color>
+            <border_color>0x00FF0000</border_color>
+            <border_thickness>0</border_thickness>
+            <corner_radius>6</corner_radius>
+            <icon index="0" x="-6">290</icon>
+            <icon_placement spacing="10">2</icon_placement>
+            <text>
+                <label>My Account</label>
+                <font name="Inter Display" size="14"/>
+                <align horz="right"/>
+                <text_color>0xFFC0C0C0</text_color>
+                <disabled_opacity>33</disabled_opacity>
+            </text>
+            <active_state>
+                <bg_color>0x1A000000</bg_color>
+                <fg_color>0xFFCCCCCC</fg_color>
+                <offset y="1"/>
+            </active_state>
+            <hilite_state>
+                <bg_color>0x1AFFFFFF</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <panel_widget height="42" id="snpv" left="613" name="Snapshot View" top="55" width="216">
+            <anchor_pos right="195" top="55"/>
+            <bg_color>0x33000000</bg_color>
+            <corner_radius>8</corner_radius>
+            <text_widget height="24" id="snap" left="51" top="11" width="123">
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>SNAPSHOT 1</label>
+                    <font name="Inter Display" size="18"/>
+                    <align vert="middle"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+            </text_widget>
+            <updown_widget height="14" id="snpd" left="176" top="14" width="32">
+                <anchor_pos right="8"/>
+                <relative_pos y="52"/>
+                <bg_color>0x00000000</bg_color>
+                <orientationHV>H</orientationHV>
+                <arrow_buttons>
+                    <chevron_size>14</chevron_size>
+                    <image_up_left>347</image_up_left>
+                    <image_down_right>348</image_down_right>
+                    <fg_color>0xFF919191</fg_color>
+                    <bg_color>0x00000000</bg_color>
+                    <border_thickness>0</border_thickness>
+                    <active_state>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                    </active_state>
+                    <hilite_state>
+                        <bg_color>0x32FFFFFF</bg_color>
+                        <fg_color>0xFFC0C0C0</fg_color>
+                    </hilite_state>
+                </arrow_buttons>
+            </updown_widget>
+            <image_widget class="P35SnapshotIcon" height="28" id="snpi" left="7" top="8" width="42">
+                <bg_color>0x00000000</bg_color>
+                <image>325</image>
+                <scale_mode>keep_aspect</scale_mode>
+            </image_widget>
+        </panel_widget>
+        <panel_widget height="42" id="prsv" left="207" name="Preset View" top="55" width="405">
+            <anchor_pos left="207" top="55"/>
+            <bg_color>0x33000000</bg_color>
+            <corner_radius>8</corner_radius>
+            <pushbutton_widget height="38" id="pmnu" left="8" name="Menu" top="2" width="32">
+                <anchor_pos bottom="2" left="8" top="2"/>
+                <bg_color>0x00000000</bg_color>
+                <icon height="28" width="23">247</icon>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <font name="Inter Display" size="12"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </active_state>
+                <hilite_state>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+            <updown_widget height="14" id="pinc" left="46" top="14" width="32">
+                <relative_pos y="52"/>
+                <bg_color>0x00000000</bg_color>
+                <orientationHV>H</orientationHV>
+                <arrow_buttons>
+                    <chevron_size>14</chevron_size>
+                    <image_up_left>347</image_up_left>
+                    <image_down_right>348</image_down_right>
+                    <fg_color>0xFF919191</fg_color>
+                    <bg_color>0x00000000</bg_color>
+                    <border_thickness>0</border_thickness>
+                    <active_state>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                    </active_state>
+                    <hilite_state>
+                        <bg_color>0x32FFFFFF</bg_color>
+                        <fg_color>0xFFC0C0C0</fg_color>
+                    </hilite_state>
+                </arrow_buttons>
+            </updown_widget>
+            <panel_widget height="42" id="pcon" left="78" top="0" width="265">
+                <anchor_pos bottom="0" left="78" right="62" top="0"/>
+                <bg_color>0x00000000</bg_color>
+                <panel_widget height="42" id="plab" left="6" top="0" width="243">
+                    <anchor_pos bottom="0" left="6" right="-2" top="0"/>
+                    <bg_color>0x00000000</bg_color>
+                    <text_edit_widget height="42" id="pnam" left="60" name="Name Label" top="0" width="181">
+                        <anchor_pos bottom="0" top="0"/>
+                        <bg_color>0x00191324</bg_color>
+                        <text>
+                            <label>Stadium Rock Rig</label>
+                            <font name="Inter Display" size="22"/>
+                            <offset y="1"/>
+                            <text_color>0x00000000</text_color>
+                        </text>
+                    </text_edit_widget>
+                    <text_widget height="42" id="pidx" left="-2" name="Index Label" top="0" width="58">
+                        <anchor_pos bottom="0" top="0"/>
+                        <bg_color>0x00000000</bg_color>
+                        <text>
+                            <label>128A</label>
+                            <font name="Inter Display" size="22" weight="semibold"/>
+                            <align horz="right" vert="middle"/>
+                            <offset y="1"/>
+                            <text_color>0xFFEBEBEB</text_color>
+                        </text>
+                    </text_widget>
+                </panel_widget>
+            </panel_widget>
+            <pushbutton_widget height="24" id="psav" left="352" name="Save Button" top="10" width="23">
+                <anchor_pos right="12" top="10"/>
+                <bg_color>0x00000000</bg_color>
+                <image>278</image>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <font name="Inter Display" size="12"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </active_state>
+                <hilite_state>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+            <pushbutton_widget height="28" id="pinf" left="333" name="Info Button" top="8" width="28">
+                <anchor_pos right="44" top="8"/>
+                <bg_color>0x00000000</bg_color>
+                <image>279</image>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <font name="Inter Display" size="12"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </active_state>
+                <hilite_state>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+        </panel_widget>
+        <pushbutton_widget height="50" id="undo" left="5" top="50" width="40">
+            <anchor_pos bottom="0" left="5" top="50"/>
+            <bg_color>0x00000000</bg_color>
+            <icon height="22" width="22">250</icon>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <font name="Inter Display" size="12"/>
+                <text_color>0xFFD6D6D6</text_color>
+            </text>
+            <active_state>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </active_state>
+            <hilite_state>
+                <fg_color>0xFFEBEBEB</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <pushbutton_widget height="50" id="redo" left="45" top="50" width="40">
+            <anchor_pos bottom="0" left="45" top="50"/>
+            <bg_color>0x00000000</bg_color>
+            <icon height="22" width="22">249</icon>
+            <icon_placement spacing="4">-1</icon_placement>
+            <text>
+                <font name="Inter Display" size="12"/>
+                <text_color>0xFFD6D6D6</text_color>
+            </text>
+            <active_state>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </active_state>
+            <hilite_state>
+                <fg_color>0xFFEBEBEB</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <panel_widget height="46" id="vpnl" left="322" name="View Selector" top="2" width="380">
+            <anchor_pos bottom="52" top="2"/>
+            <relative_pos x="50"/>
+            <bg_color>0x00000000</bg_color>
+            <radio_widget height="46" id="vsel" left="0" name="View Selector" top="0" width="295">
+                <anchor_pos bottom="0" left="0" top="0"/>
+                <enabled>no</enabled>
+                <bg_color>0x00000000</bg_color>
+                <disabled_color>0x00808080</disabled_color>
+                <radio_button_widget height="46" id="1" left="0" top="0" width="70">
+                    <anchor_pos bottom="0" left="0" top="0"/>
+                    <bg_color>0x00000000</bg_color>
+                    <border_color>0xFF5E5E5E</border_color>
+                    <border_thickness>0</border_thickness>
+                    <corner_radius>8</corner_radius>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <icon height="26" width="29">242</icon>
+                    <text>
+                        <font name="Inter Display" size="12"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0x33000000</bg_color>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                        <border_color>0x33000000</border_color>
+                        <offset y="1"/>
+                        <rencer_mode>1</rencer_mode>
+                    </active_state>
+                    <hilite_state>
+                        <bg_color>0x1AFFFFFF</bg_color>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </radio_button_widget>
+                <radio_button_widget height="46" id="1" left="75" top="0" width="70">
+                    <anchor_pos bottom="0" left="75" top="0"/>
+                    <bg_color>0x00000000</bg_color>
+                    <border_color>0xFF5E5E5E</border_color>
+                    <border_thickness>0</border_thickness>
+                    <corner_radius>8</corner_radius>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <icon height="26" width="28">245</icon>
+                    <text>
+                        <font name="Inter Display" size="12"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0x33000000</bg_color>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                        <border_color>0x33000000</border_color>
+                        <offset y="1"/>
+                        <rencer_mode>1</rencer_mode>
+                    </active_state>
+                    <hilite_state>
+                        <bg_color>0x1AFFFFFF</bg_color>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </radio_button_widget>
+                <radio_button_widget height="46" id="1" left="150" top="0" width="70">
+                    <anchor_pos bottom="0" left="150" top="0"/>
+                    <bg_color>0x00000000</bg_color>
+                    <border_color>0xFF5E5E5E</border_color>
+                    <border_thickness>0</border_thickness>
+                    <corner_radius>8</corner_radius>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <icon height="26" width="26">248</icon>
+                    <text>
+                        <font name="Inter Display" size="12"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0x33000000</bg_color>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                        <border_color>0x33000000</border_color>
+                        <offset y="1"/>
+                        <rencer_mode>1</rencer_mode>
+                    </active_state>
+                    <hilite_state>
+                        <bg_color>0x1AFFFFFF</bg_color>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </radio_button_widget>
+                <radio_button_widget height="46" id="1" left="225" top="0" width="70">
+                    <anchor_pos bottom="0" left="225" top="0"/>
+                    <bg_color>0x00000000</bg_color>
+                    <border_color>0xFF5E5E5E</border_color>
+                    <border_thickness>0</border_thickness>
+                    <corner_radius>8</corner_radius>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <icon height="28" width="28">240</icon>
+                    <text>
+                        <font name="Inter Display" size="12"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0x33000000</bg_color>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                        <border_color>0x33000000</border_color>
+                        <offset y="1"/>
+                        <rencer_mode>1</rencer_mode>
+                    </active_state>
+                    <hilite_state>
+                        <bg_color>0x1AFFFFFF</bg_color>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </radio_button_widget>
+            </radio_widget>
+            <pushbutton_widget height="46" id="song" left="305" top="0" width="75">
+                <anchor_pos bottom="0" right="0" top="0"/>
+                <enabled>no</enabled>
+                <bg_color>0x00424242</bg_color>
+                <image>327</image>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <font name="Inter Display" size="9"/>
+                    <align horz="left" vert="bottom"/>
+                    <multiline>yes</multiline>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0x00797979</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0x005E5E5E</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+        </panel_widget>
+        <text_widget height="47" id="titl" left="312" name="Title" top="53" width="400">
+            <anchor_pos bottom="0" top="53"/>
+            <relative_pos x="50"/>
+            <visible>no</visible>
+            <bg_color>0x00000000</bg_color>
+            <text>
+                <label>Title Bar</label>
+                <font name="Inter Display" size="32"/>
+                <align horz="center" vert="middle"/>
+                <offset x="8"/>
+                <text_color>0xFFEBEBEB</text_color>
+            </text>
+        </text_widget>
+        <panel_widget height="42" id="tmpp" left="839" top="55" width="180">
+            <anchor_pos right="5" top="55"/>
+            <bg_color>0x00000000</bg_color>
+        </panel_widget>
+        <panel_widget height="1" id="line" left="0" top="50" width="1024">
+            <anchor_pos left="0" right="0" top="50"/>
+            <bg_color>0x33FFFFFF</bg_color>
+        </panel_widget>
+    </panel_widget>
+</xg>

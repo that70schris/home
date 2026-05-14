@@ -1,0 +1,10 @@
+{
+    "category": "distortion",
+    "model_id": 386,
+    "model_sym": "ModelID::kDistPocketFuzzMono",
+    "display_name": "Pocket Fuzz",
+    "parameters-en": {
+        "Drive": "Controls the amount of fuzz applied to the signal.",
+        "Level": "Sets the overall level of the block."
+    }
+}

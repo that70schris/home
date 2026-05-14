@@ -1,0 +1,13 @@
+{
+    "category": "distortion",
+    "model_id": 507,
+    "model_sym": "ModelID::kDistVitalDistStereo",
+    "display_name": "Vital Dist",
+    "parameters-en": {
+        "Gain": "Controls the amount of distortion.",
+        "Filter": "Applies a high cut (or low pass) filter to the signal, letting you remove treble frequencies. At 0.0, no filter is applied.",
+        "Level": "Sets the overall level of the block.",
+        "Clipping": "Chooses the type of clipping circuit. Choose Op-amp, Asymmetrical, or Symmetrical.",
+        "Octave": "Blends in a signal one octave up. At 0.0, no octave signal is heard. Works best when playing single notes."
+    }
+}

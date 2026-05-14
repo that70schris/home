@@ -1,0 +1,13 @@
+{
+    "category": "volume",
+    "model_id": 201,
+    "model_sym": "ModelID::kVolPanStereoWidthStereo",
+    "display_name": "Stereo Width",
+    "parameters-en": {
+        "Width": "Controls the apparent stereo width of the signal. When set to \"Center,\" the signal is collapsed to mono. When set to \"Wide,\", the signal maintains its stereo width.",
+        "LR In Swap": "When set to \"On,\" swaps the position of left and right channels, so the left signal appears on the right and the right signal appears on the left.",
+        "Balance": "Controls the balance between the signal's left and right channels. When set to L 100, only the left signal is passed through the block; when set to R 100, only the right signal is passed through the block.",
+        "Level": "Sets the overall level of the block.",
+        "R Polarity": "Inverts the polarity of the right signal."
+    }
+}

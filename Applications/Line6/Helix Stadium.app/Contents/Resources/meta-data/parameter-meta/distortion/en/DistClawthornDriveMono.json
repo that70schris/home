@@ -1,0 +1,17 @@
+{
+    "category": "distortion",
+    "model_id": 332,
+    "model_sym": "ModelID::kDistClawthornDriveMono",
+    "display_name": "Clawthorn Drive",
+    "parameters-en": {
+        "OD Gain": "Controls the amount of overdrive applied to the signal.",
+        "OD Tone": "Controls the overall tonal balance of the overdrive.",
+        "OD Level": "Controls the level of the overdrive output.",
+        "Low Boost": "Turns a low boost for the overdrive on and off.",
+        "Fuzz": "Turns the fuzz portion of the circuit on and off.",
+        "Fuzz Oct": "When on, changes the fuzz into an octave up fuzz.",
+        "Fuzz Gain": "Controls the amount of fuzz applied to the signal.",
+        "Fuzz Tone": "Controls the tone of the fuzz from cutting the treble (at 0.0) to flat (5.0) to treble boost (10.0).",
+        "Fuzz Level": "Controls the level of the fuzz output."
+    }
+}

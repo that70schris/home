@@ -1,0 +1,58 @@
+{
+    "modelName": "Pillars",
+    "params": {
+        "Gain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Tone": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Mode": {
+            "id": 4,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Mid Gain TS",
+            "Gain": 0.23000001907348633,
+            "Tone": 0.6200000047683716,
+            "Level": 0.5,
+            "Mode": 0
+        },
+        "x_min_y_min": {
+            "name": "Just A Push",
+            "Gain": 0.0,
+            "Tone": 0.5099999904632568,
+            "Level": 0.3999999761581421,
+            "Mode": 1
+        },
+        "x_min_y_max": {
+            "name": "Classic 808",
+            "Gain": 0.13999998569488525,
+            "Tone": 0.5099999904632568,
+            "Level": 0.6100000143051147,
+            "Mode": 1
+        },
+        "x_max_y_min": {
+            "name": "Juicy Drive",
+            "Gain": 0.41999995708465576,
+            "Tone": 0.5299999713897705,
+            "Level": 1.0,
+            "Mode": 2
+        },
+        "x_max_y_max": {
+            "name": "Huge",
+            "Gain": 0.7000000476837158,
+            "Tone": 0.6700000762939453,
+            "Level": 1.0,
+            "Mode": 0
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "category": "delay",
+    "model_id": 86,
+    "model_sym": "ModelID::kDelayDuckedDelayStereo",
+    "display_name": "Ducked Delay",
+    "parameters-en": {
+        "Time": "Adjusts the length of time before the delay's first repeat. When set to note values, Time follows the system tempo.",
+        "Feedback": "Controls the number of delay repeats. When set to 0%, only one repeat is heard; at 100%, the delay repeats forever.",
+        "Low Cut": "Applies a low cut (or high pass) filter to the repeats, letting you remove the effected signal below a certain frequency.",
+        "High Cut": "Applies a high cut (or low pass) filter to the repeats, letting you remove the effected signal above a certain frequency.",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "Scale": "For stereo delays, the right side's time is always some percentage of the left sides's time, and is determined by the Scale parameter. For example, if Time is set to 500 ms, and Scale is set to 70%, the left delay is 500 ms and the right delay is 350ms (or 70% of 500 ms). When scale is set to 100%, left and right delays are the same.",
+        "Threshold": "Controls the sensitivity of the ducking circuit. Higher values increase the likelihood of ducking to occur.",
+        "Ducking": "Controls the amount of ducking applied. Or rather, how far the repeats drop in volume while playing.",
+        "DynAttack": "Sets the length of time it takes for ducking to occur (and therefore, repeats to decrease in volume) once you start playing.",
+        "Dyn Rel": "Sets the length of time it takes for ducking to stop (and therefore, repeats to ramp up in volume) once you stop playing.",
+        "Dyn Type": "When set to \"Ducking,\" repeats are only heard after you stop playing, which can help maintain note definition. \"Gating,\" inverts the ducking behavior; that is, repeats are only heard while playing, and they're ducked after you stop playing.",
+        "TSync1": ""
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "category": "synth",
+    "model_id": 343,
+    "model_sym": "ModelID::kFM4SynthString",
+    "display_name": "Synth String",
+    "parameters-en": {
+        "Speed": "Controls the speed of the vibrato-y pulse width modulation.",
+        "Freq": "Controls the low pass filter's cutoff frequency, from 0.08 kHz to 18.0 kHz.",
+        "Attack": "Controls the attack time from 0 to 2.07 seconds.",
+        "Pitch": "Sets the pitch over a 2 octave range.",
+        "Mix": "Controls the blend between the synth and the dry signal. At 0%, no synth is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

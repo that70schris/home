@@ -1,0 +1,10 @@
+{
+    "category": "volume",
+    "model_id": 136,
+    "model_sym": "ModelID::kVolPanVolStereo",
+    "display_name": "Volume Pedal",
+    "parameters-en": {
+        "Position": "Adjusts the position of the Volume Pedal. By default, this is assigned to Expression Pedal 2.",
+        "Curve": "Sets the Volume Pedal's taper to \"Linear\" (consistent level change across the pedal's travel) or \"Logarithmic\" (concave curve, with more control toward the heel and faster changes toward the toe)"
+    }
+}

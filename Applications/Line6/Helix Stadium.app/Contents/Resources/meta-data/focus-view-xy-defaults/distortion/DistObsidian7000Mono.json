@@ -1,0 +1,139 @@
+{
+    "modelName": "Obsidian 7000",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Blend": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Grunt": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Attack": {
+            "id": 5,
+            "behavior": "quantize"
+        },
+        "Master": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "LoMidFreq": {
+            "id": 8,
+            "behavior": "quantize"
+        },
+        "LoMid": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "HiMidFreq": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "HiMid": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "Distortion": {
+            "id": 13,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Throaty",
+            "Drive": 0.43000006675720215,
+            "Level": 0.7000000476837158,
+            "Blend": 0.7300000190734863,
+            "Grunt": 1,
+            "Attack": 1,
+            "Master": 0.6000000238418579,
+            "Bass": 5.5,
+            "LoMidFreq": 0,
+            "LoMid": -3.0,
+            "HiMidFreq": 1,
+            "HiMid": 3.8999996185302734,
+            "Treble": 0.2999992370605469,
+            "Distortion": true
+        },
+        "x_min_y_min": {
+            "name": "Bright",
+            "Drive": 0.31999993324279785,
+            "Level": 0.7000000476837158,
+            "Blend": 0.7799999713897705,
+            "Grunt": 0,
+            "Attack": 2,
+            "Master": 0.6499999761581421,
+            "Bass": 5.5,
+            "LoMidFreq": 2,
+            "LoMid": -5.699999809265137,
+            "HiMidFreq": 0,
+            "HiMid": 1.5,
+            "Treble": 0.39999961853027344,
+            "Distortion": true
+        },
+        "x_min_y_max": {
+            "name": "Mean",
+            "Drive": 0.559999942779541,
+            "Level": 0.6399999856948853,
+            "Blend": 0.6299999952316284,
+            "Grunt": 2,
+            "Attack": 1,
+            "Master": 0.5699999332427979,
+            "Bass": 3.0999984741210938,
+            "LoMidFreq": 0,
+            "LoMid": -3.40000057220459,
+            "HiMidFreq": 1,
+            "HiMid": 3.8999996185302734,
+            "Treble": 6.700000762939453,
+            "Distortion": true
+        },
+        "x_max_y_min": {
+            "name": "Modern",
+            "Drive": 0.23000001907348633,
+            "Level": 0.5899999141693115,
+            "Blend": 0.5699999332427979,
+            "Grunt": 2,
+            "Attack": 1,
+            "Master": 0.6499999761581421,
+            "Bass": 5.0,
+            "LoMidFreq": 0,
+            "LoMid": -5.699999809265137,
+            "HiMidFreq": 0,
+            "HiMid": -1.6999998092651367,
+            "Treble": 3.8000011444091797,
+            "Distortion": true
+        },
+        "x_max_y_max": {
+            "name": "Clank",
+            "Drive": 0.8500000238418579,
+            "Level": 0.7000000476837158,
+            "Blend": 0.5399999618530273,
+            "Grunt": 2,
+            "Attack": 2,
+            "Master": 0.5,
+            "Bass": 8.099998474121094,
+            "LoMidFreq": 0,
+            "LoMid": -2.09999942779541,
+            "HiMidFreq": 2,
+            "HiMid": 3.8999996185302734,
+            "Treble": 6.700000762939453,
+            "Distortion": true
+        }
+    }
+}

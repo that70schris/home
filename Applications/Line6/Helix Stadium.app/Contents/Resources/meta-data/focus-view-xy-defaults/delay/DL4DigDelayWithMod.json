@@ -1,0 +1,94 @@
+{
+    "modelName": "Dig w/Mod",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "ModSpeed": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Rhythmic",
+            "Time": 0.42,
+            "Feedback": 0.3,
+            "ModSpeed": 0.32,
+            "Depth": 0.74,
+            "Mix": 0.56,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Slapback",
+            "Time": 0.13,
+            "Feedback": 0.00999999,
+            "ModSpeed": 0.390000,
+            "Depth": 0.590000,
+            "Mix": 0.55,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Chorus",
+            "Time": 0.0,
+            "Feedback": 0.0,
+            "ModSpeed": 0.5,
+            "Depth": 1.0,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Chr/Dly",
+            "Time": 0.8,
+            "Feedback": 0.3,
+            "ModSpeed": 0.55,
+            "Depth": 0.79,
+            "Mix": 0.6,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Scary THX",
+            "Time": 0.0599999,
+            "Feedback": 1.0,
+            "ModSpeed": 0.12,
+            "Depth": 1.0,
+            "Mix": 1.0,
+            "Level": -14.9,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

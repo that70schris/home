@@ -1,0 +1,11 @@
+{
+    "category": "synth",
+    "model_id": 396,
+    "model_sym": "ModelID::kSaturn5RingMod",
+    "display_name": "Saturn 5 RingMod",
+    "parameters-en": {
+        "Wave": "Choose from 8 different Ring Modulation sounds.",
+        "Mix": "Controls the blend between the effect and the dry signal. At 0%, no effect is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

@@ -1,0 +1,302 @@
+
+<xg>
+    <panel_widget height="640" id="cmnd" left="0" top="0" width="1024">
+        <bg_color>0xFF151515</bg_color>
+        <panel_widget height="640" id="mpnl" left="112" top="0" width="800">
+            <anchor_pos bottom="0" top="0"/>
+            <relative_pos x="50"/>
+            <bg_color>0xFF151515</bg_color>
+            <panel_widget height="490" id="fspa" left="0" top="149" width="480">
+                <anchor_pos bottom="1" left="0" top="149"/>
+                <bg_color>0xFF151515</bg_color>
+            </panel_widget>
+            <panel_widget height="490" id="fspb" left="0" top="149" width="480">
+                <anchor_pos bottom="1" left="0" top="149"/>
+                <bg_color>0xFF151515</bg_color>
+            </panel_widget>
+            <toggle_widget height="41" id="fsab" left="0" top="108" width="485">
+                <bg_color>0xFF151515</bg_color>
+                <icon height="41" width="485">35</icon>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <font name="Inter Display" size="12"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0x00797979</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </active_state>
+                <hilite_state>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </hilite_state>
+            </toggle_widget>
+            <panel_widget height="520" id="rlin" left="481" top="120" width="1">
+                <anchor_pos bottom="0" top="120"/>
+                <bg_color>0xFF4D4D4D</bg_color>
+            </panel_widget>
+            <panel_widget height="280" id="rln2" left="557" top="10" width="1">
+                <bg_color>0xFF262626</bg_color>
+            </panel_widget>
+            <panel_widget height="120" id="xpp1" left="490" top="150" width="60">
+                <anchor_pos left="490" top="150"/>
+                <bg_color>0x00000000</bg_color>
+            </panel_widget>
+            <panel_widget height="120" id="xpp2" left="490" top="150" width="60">
+                <anchor_pos left="490" top="150"/>
+                <bg_color>0x00000000</bg_color>
+            </panel_widget>
+            <radio_widget height="12" id="expt" left="489" top="140" width="60">
+                <anchor_pos left="489" top="140"/>
+                <bg_color>0xFF000000</bg_color>
+                <radio_button_widget height="12" id="1" left="0" top="0" width="29">
+                    <anchor_pos bottom="0" left="0" top="0"/>
+                    <bg_color>0x65A761D6</bg_color>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <text>
+                        <font name="Helvetica" size="12"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0xFFA761D6</bg_color>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                    </active_state>
+                    <hilite_state>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </radio_button_widget>
+                <radio_button_widget height="12" id="1" left="31" top="0" width="29">
+                    <anchor_pos bottom="0" right="0" top="0"/>
+                    <bg_color>0x674ECAC8</bg_color>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <text>
+                        <font name="Helvetica" size="12"/>
+                        <text_color>0xFFD6D6D6</text_color>
+                    </text>
+                    <active_state>
+                        <bg_color>0xFF4ECAC8</bg_color>
+                        <fg_color>0xFFEBEBEB</fg_color>
+                    </active_state>
+                    <hilite_state>
+                        <fg_color>0xFFFFFFFF</fg_color>
+                    </hilite_state>
+                </radio_button_widget>
+            </radio_widget>
+        </panel_widget>
+        <panel_widget height="340" id="incc" left="0" top="300" width="1024">
+            <anchor_pos bottom="0" left="0" right="0" top="300"/>
+            <bg_color>0x00000000</bg_color>
+            <panel_widget height="40" id="cchd" left="0" name="Param Header" top="0" width="1024">
+                <anchor_pos left="0" right="0" top="0"/>
+                <bg_color>0xFF424242</bg_color>
+                <scrolling>
+                    <scrollbars>
+                        <arrow_buttons size="0"/>
+                    </scrollbars>
+                </scrolling>
+                <radio_widget height="40" id="cmds" left="0" top="0" width="1024">
+                    <anchor_pos bottom="0" left="0" right="0" top="0"/>
+                    <visible>no</visible>
+                    <bg_color>0xFF000000</bg_color>
+                    <radio_button_widget height="40" id="cmdo" left="0" top="0" width="512">
+                        <anchor_pos bottom="0" left="0" top="0"/>
+                        <relative_pos width="50"/>
+                        <bg_color>0xFF424242</bg_color>
+                        <icon_placement spacing="4">-1</icon_placement>
+                        <text>
+                            <label>None</label>
+                            <font name="Inter" size="12"/>
+                            <text_color>0xFFD6D6D6</text_color>
+                        </text>
+                        <active_state>
+                            <bg_color>0xFF797979</bg_color>
+                            <fg_color>0xFFEBEBEB</fg_color>
+                        </active_state>
+                        <hilite_state>
+                            <fg_color>0xFFFFFFFF</fg_color>
+                        </hilite_state>
+                    </radio_button_widget>
+                    <radio_button_widget height="40" id="cmdt" left="512" top="0" width="512">
+                        <anchor_pos bottom="0" right="0" top="0"/>
+                        <relative_pos width="50"/>
+                        <bg_color>0xFF424242</bg_color>
+                        <icon_placement spacing="4">-1</icon_placement>
+                        <text>
+                            <label>None</label>
+                            <font name="Inter" size="12"/>
+                            <text_color>0xFFD6D6D6</text_color>
+                        </text>
+                        <active_state>
+                            <bg_color>0xFF797979</bg_color>
+                            <fg_color>0xFFEBEBEB</fg_color>
+                        </active_state>
+                        <hilite_state>
+                            <fg_color>0xFFFFFFFF</fg_color>
+                        </hilite_state>
+                    </radio_button_widget>
+                </radio_widget>
+                <panel_widget height="40" id="cicp" left="0" top="0" width="100">
+                    <anchor_pos bottom="0" left="0" top="0"/>
+                    <bg_color>0x00000000</bg_color>
+                    <image_widget height="40" id="cic1" left="5" top="0" width="40">
+                        <anchor_pos bottom="0" left="5" top="0"/>
+                        <bg_color>0x00000000</bg_color>
+                        <scale_mode>keep_aspect</scale_mode>
+                    </image_widget>
+                    <panel_widget height="36" id="cics" left="50" top="2" width="1">
+                        <anchor_pos bottom="2" top="2"/>
+                        <relative_pos x="50"/>
+                        <bg_color>0xFF5D5D5D</bg_color>
+                    </panel_widget>
+                    <image_widget height="40" id="cic2" left="55" top="0" width="40">
+                        <anchor_pos bottom="0" right="5" top="0"/>
+                        <bg_color>0x00000000</bg_color>
+                        <scale_mode>keep_aspect</scale_mode>
+                    </image_widget>
+                </panel_widget>
+                <panel_widget height="40" id="1" left="0" top="0" width="1024">
+                    <anchor_pos bottom="0" left="0" right="0" top="0"/>
+                    <bg_color>0x00000000</bg_color>
+                    <text_widget height="40" id="srcl" left="412" top="0" width="200">
+                        <anchor_pos bottom="0" top="0"/>
+                        <relative_pos x="50"/>
+                        <bg_color>0x00000000</bg_color>
+                        <text>
+                            <label>Stomp A1</label>
+                            <font name="Inter" size="26"/>
+                            <align horz="center" vert="middle"/>
+                            <text_color>0xFFD6D6D6</text_color>
+                        </text>
+                    </text_widget>
+                </panel_widget>
+            </panel_widget>
+            <panel_widget height="300" id="ccpm" left="320" top="40" width="704">
+                <anchor_pos bottom="0" left="320" right="0" top="40"/>
+                <bg_color>0x00000000</bg_color>
+                <scrolling>
+                    <enabled>yes</enabled>
+                    <vscroll_step element="53"/>
+                    <scrollbars>
+                        <visibility h="none" v="none"/>
+                        <width>12</width>
+                        <bg_color>0xFF000000</bg_color>
+                        <thumb_color>0xFF3C3C3C</thumb_color>
+                        <thumb_hilite_color>0xFF3C3C3C</thumb_hilite_color>
+                        <arrow_buttons size="0"/>
+                    </scrollbars>
+                </scrolling>
+            </panel_widget>
+            <panel_widget height="300" id="ccms" left="0" top="40" width="320">
+                <anchor_pos bottom="0" left="0" top="40"/>
+                <bg_color>0xFF151515</bg_color>
+                <border_color>0x00525252</border_color>
+                <border_thickness>0</border_thickness>
+                <listbox_widget height="299" id="cmdl" left="2" top="1" width="147">
+                    <anchor_pos bottom="0" left="2" top="1"/>
+                    <bg_color>0xFF000000</bg_color>
+                    <border_color>0x005E5E5E</border_color>
+                    <border_thickness>0</border_thickness>
+                    <alt_bg_color>0x00F0F0F0</alt_bg_color>
+                    <text_color>0xFFC0C0C0</text_color>
+                    <selected_text_color>0xFFD6D6D6</selected_text_color>
+                    <selected_bg_color>0xFF404040</selected_bg_color>
+                    <hilite_color>0xFF262626</hilite_color>
+                    <hilite_text_color>0xFFC0C0C0</hilite_text_color>
+                    <font name="Inter" size="14" weight="semibold"/>
+                    <item_height>30</item_height>
+                    <left_margin>4</left_margin>
+                    <hilite_type>fill_bg</hilite_type>
+                    <icon>0</icon>
+                    <allow_editing>no</allow_editing>
+                    <listbox_item id="0">
+                        <label>Item 1</label>
+                    </listbox_item>
+                    <listbox_item id="1">
+                        <label>Item 2</label>
+                    </listbox_item>
+                    <listbox_item id="2">
+                        <label>Item 3</label>
+                    </listbox_item>
+                    <listbox_item id="3">
+                        <label>Item 4</label>
+                    </listbox_item>
+                    <listbox_item id="4">
+                        <label>Item 5</label>
+                    </listbox_item>
+                    <listbox_item id="5">
+                        <label>Item 6</label>
+                    </listbox_item>
+                    <listbox_item id="6">
+                        <label>Item 7</label>
+                    </listbox_item>
+                    <listbox_item id="7">
+                        <label>Item 8</label>
+                    </listbox_item>
+                    <listbox_item id="8">
+                        <label>Item 9</label>
+                    </listbox_item>
+                    <listbox_item id="9">
+                        <label>Item 10</label>
+                    </listbox_item>
+                </listbox_widget>
+                <listbox_widget height="299" id="cmtl" left="151" top="1" width="167">
+                    <anchor_pos bottom="0" left="151" right="2" top="1"/>
+                    <bg_color>0xFF000000</bg_color>
+                    <border_thickness>0</border_thickness>
+                    <alt_bg_color>0x00F0F0F0</alt_bg_color>
+                    <text_color>0xFFC0C0C0</text_color>
+                    <selected_text_color>0xFFD6D6D6</selected_text_color>
+                    <selected_bg_color>0xFF404040</selected_bg_color>
+                    <hilite_color>0xFF333333</hilite_color>
+                    <hilite_text_color>0xFFFFFFFF</hilite_text_color>
+                    <font name="Inter" size="14"/>
+                    <item_height>30</item_height>
+                    <left_margin>4</left_margin>
+                    <hilite_type>fill_bg</hilite_type>
+                    <icon_margin>30</icon_margin>
+                    <icon height="25" width="25">0</icon>
+                    <allow_editing>no</allow_editing>
+                    <scrolling>
+                        <enabled>yes</enabled>
+                        <scrollbars>
+                            <width>12</width>
+                            <bg_color>0xFF000000</bg_color>
+                            <thumb_color>0xFF3C3C3C</thumb_color>
+                            <thumb_hilite_color>0xFF3C3C3C</thumb_hilite_color>
+                            <arrow_buttons size="0"/>
+                        </scrollbars>
+                    </scrolling>
+                    <listbox_item id="0">
+                        <label>Item 1</label>
+                    </listbox_item>
+                    <listbox_item id="1">
+                        <label>Item 2</label>
+                    </listbox_item>
+                    <listbox_item id="2">
+                        <label>Item 3</label>
+                    </listbox_item>
+                    <listbox_item id="3">
+                        <label>Item 4</label>
+                    </listbox_item>
+                    <listbox_item id="4">
+                        <label>Item 5</label>
+                    </listbox_item>
+                    <listbox_item id="5">
+                        <label>Item 6</label>
+                    </listbox_item>
+                    <listbox_item id="6">
+                        <label>Item 7</label>
+                    </listbox_item>
+                    <listbox_item id="7">
+                        <label>Item 8</label>
+                    </listbox_item>
+                    <listbox_item id="8">
+                        <label>Item 9</label>
+                    </listbox_item>
+                    <listbox_item id="9">
+                        <label>Item 10</label>
+                    </listbox_item>
+                </listbox_widget>
+            </panel_widget>
+        </panel_widget>
+    </panel_widget>
+</xg>

@@ -1,0 +1,15 @@
+{
+    "category": "filter",
+    "model_id": 6,
+    "model_sym": "ModelID::kFilterMysterFilterStereo",
+    "display_name": "Mystery Filter",
+    "parameters-en": {
+        "Sensitivity": "Controls the filter envelope's input sensitivity. Higher values are more sensitive to your playing dynamics.",
+        "Frequency": "Sets the highest frequency in the filter sweep. Higher values are more extreme.",
+        "Resonance": "Controls the resonance or width of the frequency band affected by the filters.",
+        "Attack": "Controls how long it takes for the filter to sweep down (the Attack stage) before sweeping back up (the Release stage). Lower values result in a longer downward filter sweep. Is somewhat interactive with the Sensitivity parameter.",
+        "Release": "Controls how long it takes for the filter to sweep back up (the Release Stage) after first sweeping down (the Attack stage).",
+        "Mix": "Controls the balance between the filtered and dry signals. At 0%, no filtered signal is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

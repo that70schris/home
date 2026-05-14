@@ -1,0 +1,58 @@
+{
+    "modelName": "Swedish Chainsaw",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 4,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Horns Up",
+            "Drive": 0.55,
+            "Bass": 0.37,
+            "Treble": 0.47,
+            "Level": 0.7
+        },
+        "x_min_y_min": {
+            "name": "Low End",
+            "Drive": 0.62,
+            "Bass": 0.71,
+            "Treble": 0.32,
+            "Level": 0.55
+        },
+        "x_min_y_max": {
+            "name": "70s Crunch",
+            "Drive": 0.0599999,
+            "Bass": 0.2,
+            "Treble": 0.28,
+            "Level": 0.7
+        },
+        "x_max_y_min": {
+            "name": "Rock Solo",
+            "Drive": 0.37,
+            "Bass": 0.37,
+            "Treble": 0.4,
+            "Level": 0.7
+        },
+        "x_max_y_max": {
+            "name": "Nails",
+            "Drive": 0.96,
+            "Bass": 0.12,
+            "Treble": 0.91,
+            "Level": 0.73
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "modelName": "Stereo Width",
+    "params": {
+        "Width": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "LR In Swap": {
+            "id": 2,
+            "behavior": "quantize"
+        },
+        "Balance": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "R Polarity": {
+            "id": 5,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Stereo Wide",
+            "Width": 1.0,
+            "LR In Swap": false,
+            "Balance": 0.5,
+            "Level": 0.0,
+            "R Polarity": false
+        },
+        "x_min_y_min": {
+            "name": "Skew Left",
+            "Width": 0.800000011920929,
+            "LR In Swap": false,
+            "Balance": 0.25,
+            "Level": 0.0,
+            "R Polarity": false
+        },
+        "x_min_y_max": {
+            "name": "Mono Center",
+            "Width": 0.0,
+            "LR In Swap": false,
+            "Balance": 0.5,
+            "Level": 0.0,
+            "R Polarity": false
+        },
+        "x_max_y_min": {
+            "name": "Skew Right",
+            "Width": 0.800000011920929,
+            "LR In Swap": false,
+            "Balance": 0.75,
+            "Level": 0.0,
+            "R Polarity": false
+        },
+        "x_max_y_max": {
+            "name": "Flip Polarity",
+            "Width": 1.0,
+            "LR In Swap": false,
+            "Balance": 0.5,
+            "Level": 0.0,
+            "R Polarity": true
+        }
+    }
+}

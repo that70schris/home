@@ -1,0 +1,13 @@
+{
+    "category": "distortion",
+    "model_id": 355,
+    "model_sym": "ModelID::kDM4ColorDrive",
+    "display_name": "Colordrive",
+    "parameters-en": {
+        "Drive": "Controls the amount of overdrive applied to the signal.",
+        "Bass": "Controls the low frequency EQ of the overdrive.",
+        "Mid": "Boosts or cuts the midrange to tailor the tone for you and your guitar. At 50%, MID had no effect.",
+        "Treble": "Controls the high frequency EQ of the overdrive.",
+        "Output": "Sets the overall level of the block."
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "modelName": "Fuzz Pi",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Output": {
+            "id": 5,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Peach",
+            "Drive": 0.5299999713897705,
+            "Bass": 0.30000001192092896,
+            "Mid": 0.44999998807907104,
+            "Treble": 0.5,
+            "Output": 0.9399999976158142
+        },
+        "x_min_y_min": {
+            "name": "Teddy Bear",
+            "Drive": 0.20000000298023224,
+            "Bass": 0.6000000238418579,
+            "Mid": 0.20000000298023224,
+            "Treble": 0.5600000023841858,
+            "Output": 0.8999999761581421
+        },
+        "x_min_y_max": {
+            "name": "Navel Lint",
+            "Drive": 0.699999988079071,
+            "Bass": 0.6700000166893005,
+            "Mid": 0.1599999964237213,
+            "Treble": 0.6100000143051147,
+            "Output": 0.8899999856948853
+        },
+        "x_max_y_min": {
+            "name": "Caterpillar",
+            "Drive": 0.8399999737739563,
+            "Bass": 0.27000001072883606,
+            "Mid": 0.9800000190734863,
+            "Treble": 0.4300000071525574,
+            "Output": 0.8899999856948853
+        },
+        "x_max_y_max": {
+            "name": "Bumble Bee",
+            "Drive": 1.0,
+            "Bass": 0.5400000214576721,
+            "Mid": 0.2800000011920929,
+            "Treble": 0.800000011920929,
+            "Output": 0.7599999904632568
+        }
+    }
+}

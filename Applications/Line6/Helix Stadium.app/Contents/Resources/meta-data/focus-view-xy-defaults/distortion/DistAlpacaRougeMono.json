@@ -1,0 +1,49 @@
+{
+    "modelName": "Alpaca Rouge",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "HiCut": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Volume": {
+            "id": 3,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Singin'",
+            "Drive": 1.0,
+            "HiCut": 0.0,
+            "Volume": 0.72
+        },
+        "x_min_y_min": {
+            "name": "Red Crunch",
+            "Drive": 0.47,
+            "HiCut": 0.49,
+            "Volume": 0.42
+        },
+        "x_min_y_max": {
+            "name": "Warm Lead",
+            "Drive": 0.27,
+            "HiCut": 0.0,
+            "Volume": 0.93
+        },
+        "x_max_y_min": {
+            "name": "Mellow Lead",
+            "Drive": 0.34,
+            "HiCut": 0.5,
+            "Volume": 0.59
+        },
+        "x_max_y_max": {
+            "name": "Meaty!",
+            "Drive": 1.0,
+            "HiCut": 0.74,
+            "Volume": 0.93
+        }
+    }
+}

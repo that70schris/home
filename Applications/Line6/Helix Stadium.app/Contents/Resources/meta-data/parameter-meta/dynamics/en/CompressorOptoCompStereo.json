@@ -1,0 +1,12 @@
+{
+    "category": "dynamics",
+    "model_id": 11,
+    "model_sym": "ModelID::kCompressorOptoCompStereo",
+    "display_name": "Ampeg Opto Comp",
+    "parameters-en": {
+        "Compress": "Controls how much level the compressor detector circuit receives. More level = more compression. (Ampeg Opto Comp has a fixed threshold and ratio.)",
+        "Release": "Controls how quickly the effect returns to unity gain after the input signal falls below the threshold. At 0.0, the release is 75 ms; at 10.0, the release is around 600 ms.",
+        "Mix": "Controls the blend between the compressed and dry signals. At 0%, no compressed signal is heard; at 100%, no dry signal is heard. Values in between provide parallel compression.",
+        "Level": "Sets the overall level of the block."
+    }
+}

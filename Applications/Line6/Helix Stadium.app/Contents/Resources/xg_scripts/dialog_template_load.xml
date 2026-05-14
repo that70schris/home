@@ -1,0 +1,159 @@
+
+<xg>
+    <panel_widget height="500" id="ldtm" left="0" top="0" width="420">
+        <bg_color>0xFF141414</bg_color>
+        <panel_widget height="50" id="head" left="0" top="0" width="420">
+            <anchor_pos left="0" right="0" top="0"/>
+            <bg_color>0x00000000</bg_color>
+            <text_widget height="24" id="1" left="40" top="8" width="340">
+                <anchor_pos left="40" right="40" top="8"/>
+                <bg_color>0x00000000</bg_color>
+                <text>
+                    <label>Create A New Preset from Template</label>
+                    <font name="Inter Display" size="14"/>
+                    <align horz="center" vert="middle"/>
+                    <offset x="4"/>
+                    <text_color>0xFFCCCCCC</text_color>
+                </text>
+            </text_widget>
+            <pushbutton_widget height="24" id="!cls" left="388" top="8" width="24">
+                <anchor_pos right="8" top="8"/>
+                <bg_color>0xFF424242</bg_color>
+                <image>294</image>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <font name="Inter Display" size="12"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF797979</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF5E5E5E</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+            <image_widget height="24" id="1" left="8" top="8" width="24">
+                <anchor_pos left="8" top="8"/>
+                <bg_color>0x00000000</bg_color>
+                <image>277</image>
+            </image_widget>
+        </panel_widget>
+        <panel_widget height="52" id="side" left="0" top="448" width="420">
+            <anchor_pos bottom="0" left="0" right="0"/>
+            <bg_color>0xFF141414</bg_color>
+            <pushbutton_widget height="36" id="mang" left="12" top="4" width="184">
+                <anchor_pos bottom="12" left="12"/>
+                <bg_color>0xFF665B1E</bg_color>
+                <corner_radius>6</corner_radius>
+                <icon height="28" width="28">156</icon>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>Manage Templates</label>
+                    <font name="Inter Display" size="16" weight="light"/>
+                    <align horz="left"/>
+                    <multiline>yes</multiline>
+                    <offset x="6"/>
+                    <text_color>0xCCFFFFFF</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF59501A</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                    <offset y="1"/>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF807225</bg_color>
+                    <fg_color>0xFFEBEBEB</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+            <pushbutton_widget height="36" id="crea" left="224" top="4" width="184">
+                <anchor_pos bottom="12" right="12"/>
+                <bg_color>0xFF0A700A</bg_color>
+                <scale_mode>stretch</scale_mode>
+                <corner_radius>6</corner_radius>
+                <icon>299</icon>
+                <icon_placement spacing="4">-1</icon_placement>
+                <text>
+                    <label>New Preset</label>
+                    <font name="Inter Display" size="18" weight="light"/>
+                    <text_color>0xFFD6D6D6</text_color>
+                </text>
+                <active_state>
+                    <bg_color>0xFF0A700A</bg_color>
+                    <fg_color>0xB3FFFFFF</fg_color>
+                    <offset y="1"/>
+                </active_state>
+                <hilite_state>
+                    <bg_color>0xFF0E990E</bg_color>
+                    <fg_color>0xFFFFFFFF</fg_color>
+                </hilite_state>
+            </pushbutton_widget>
+        </panel_widget>
+        <panel_widget class="P35WidgetContentHierList" height="410" id="tlst" left="8" name="Template List" top="38" width="404">
+            <anchor_pos bottom="52" left="8" right="8" top="38"/>
+            <bg_color>0xFF151515</bg_color>
+            <panel_widget height="40" id="head" left="0" name="Folder Header" top="0" width="1">
+                <bg_color>0xFF151515</bg_color>
+                <image_widget height="32" id="fico" left="40" top="4" width="32">
+                    <relative_pos y="50"/>
+                    <bg_color>0x00000000</bg_color>
+                    <scale_mode>keep_aspect</scale_mode>
+                </image_widget>
+                <text_widget height="39" id="fnam" left="80" name="Folder name" top="0" width="0">
+                    <anchor_pos bottom="1" left="80" right="0" top="0"/>
+                    <bg_color>0x00000000</bg_color>
+                    <text>
+                        <label>[Folder Name Here]</label>
+                        <font name="Inter Display" size="20"/>
+                        <align vert="middle"/>
+                        <text_color>0xFFD0D0D0</text_color>
+                    </text>
+                </text_widget>
+                <pushbutton_widget height="24" id="back" left="8" name="Back arrow" top="8" width="24">
+                    <relative_pos y="50"/>
+                    <bg_color>0x00000000</bg_color>
+                    <icon_placement spacing="4">-1</icon_placement>
+                    <text>
+                        <font name="Inter Display" size="12"/>
+                    </text>
+                    <active_state>
+                        <offset x="1" y="1"/>
+                    </active_state>
+                </pushbutton_widget>
+                <panel_widget height="1" id="1" left="0" top="39" width="1">
+                    <anchor_pos bottom="0" left="0" right="0"/>
+                    <bg_color>0xFF808080</bg_color>
+                </panel_widget>
+            </panel_widget>
+            <listbox_widget class="P35WidgetContentList_T" height="370" id="list" left="0" top="77" width="1">
+                <anchor_pos bottom="0" left="0" top="77"/>
+                <bg_color>0xFF151515</bg_color>
+                <alt_bg_color>0x00000000</alt_bg_color>
+                <text_color>0xFFD0D0D0</text_color>
+                <selected_text_color>0xFFFDFDFD</selected_text_color>
+                <selected_bg_color>0xFF606060</selected_bg_color>
+                <hilite_color>0xFF424242</hilite_color>
+                <hilite_text_color>0xFFEBD567</hilite_text_color>
+                <font name="Inter Display" size="20"/>
+                <item_height>40</item_height>
+                <left_margin>4</left_margin>
+                <hilite_type>fill_bg</hilite_type>
+                <icon_margin>36</icon_margin>
+                <icon height="32" top="4" width="32">74</icon>
+                <scrolling>
+                    <enabled>yes</enabled>
+                    <scrollbars>
+                        <visibility h="none"/>
+                        <width>12</width>
+                        <border_thickness>0</border_thickness>
+                        <bg_color>0x00212121</bg_color>
+                        <thumb_color>0xFF424242</thumb_color>
+                        <thumb_hilite_color>0xFF797979</thumb_hilite_color>
+                        <arrow_buttons size="0"/>
+                    </scrollbars>
+                </scrolling>
+            </listbox_widget>
+        </panel_widget>
+    </panel_widget>
+</xg>

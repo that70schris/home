@@ -1,0 +1,94 @@
+{
+    "modelName": "Bucket Brigade",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Noise": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Headroom": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Medium",
+            "Time": 0.26999998092651367,
+            "Feedback": 0.36000001430511475,
+            "Noise": 0.24000000953674316,
+            "Mix": 0.4700000286102295,
+            "Level": 0.0,
+            "Headroom": 2.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Analog Slap",
+            "Time": 0.10500001907348633,
+            "Feedback": 0.46000003814697266,
+            "Noise": 0.26999998092651367,
+            "Mix": 0.3999999761581421,
+            "Level": -1.4000015258789062,
+            "Headroom": 1.6999998092651367,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Warm Space",
+            "Time": 0.16999995708465576,
+            "Feedback": 0.46000003814697266,
+            "Noise": 0.26999998092651367,
+            "Mix": 0.3799999952316284,
+            "Level": 0.0,
+            "Headroom": 5.5,
+            "SyncSelect1": 6,
+            "TempoSync1": true
+        },
+        "x_max_y_min": {
+            "name": "Long",
+            "Time": 0.2999999523162842,
+            "Feedback": 0.4700000286102295,
+            "Noise": 0.23000001907348633,
+            "Mix": 0.48000001907348633,
+            "Level": 0.0,
+            "Headroom": 5.899999618530273,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Out of Control",
+            "Time": 0.18400001525878906,
+            "Feedback": 0.8700000047683716,
+            "Noise": 0.3500000238418579,
+            "Mix": 0.48000001907348633,
+            "Level": 0.0,
+            "Headroom": 1.6999998092651367,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

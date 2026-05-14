@@ -1,0 +1,15 @@
+{
+    "category": "pitch",
+    "model_id": 514,
+    "model_sym": "ModelID::kPolyWham",
+    "display_name": "Poly Wham",
+    "parameters-en": {
+        "Position": "Adjusts the position of the controller. By default, this is assigned to Expression Pedal 1.",
+        "Heel Shift": "Sets the pitch when the pedal/controller is in its lowest position.",
+        "Toe Shift": "Sets the pitch when the pedal/controller is in its highest position.",
+        "Tracking": "Determines how the poly pitch engine reacts to your playing. Leave this set to \"X Stable\" (fewest artifacts when pitch shifting complex chords) and only select a different setting if you experience too much latency when playing fast lead lines.",
+        "Auto EQ": "Determines how much compensation EQ is applied to the shifted signal. If the effected signal sounds too harsh when pitched up (or dull when pitched down), adjust this setting to taste. The higher the value, the more EQ is applied at the shift end points; when set to 0.0, no compensation EQ is applied.",
+        "Mix": "Controls the blend between the pitch-shifted signal and the dry signal. At 0%, no pitch-shifted signal is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

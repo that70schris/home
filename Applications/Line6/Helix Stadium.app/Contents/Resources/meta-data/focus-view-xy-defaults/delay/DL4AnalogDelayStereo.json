@@ -1,0 +1,94 @@
+{
+    "modelName": "Analog Echo",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Short Echo",
+            "Time": 0.255,
+            "Feedback": 0.23,
+            "Bass": 0.63,
+            "Treble": 0.56,
+            "Mix": 0.23,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Cut n' Edge",
+            "Time": 0.524,
+            "Feedback": 0.27,
+            "Bass": 0.44,
+            "Treble": 0.48,
+            "Mix": 0.41,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Wait a Sec",
+            "Time": 1.0,
+            "Feedback": 0.03,
+            "Bass": 0.45,
+            "Treble": 0.56,
+            "Mix": 0.56,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Hold On",
+            "Time": 2.038,
+            "Feedback": 0.65,
+            "Bass": 0.44,
+            "Treble": 0.45,
+            "Mix": 0.51,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "On and On",
+            "Time": 0.346,
+            "Feedback": 0.88,
+            "Bass": 0.44,
+            "Treble": 0.56,
+            "Mix": 0.43,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

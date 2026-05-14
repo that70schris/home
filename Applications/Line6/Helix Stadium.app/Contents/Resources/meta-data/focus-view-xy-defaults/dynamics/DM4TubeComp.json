@@ -1,0 +1,40 @@
+{
+    "modelName": "Tube Comp",
+    "params": {
+        "Thresh": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 2,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Classic",
+            "Thresh": 0.67,
+            "Level": 0.24
+        },
+        "x_min_y_min": {
+            "name": "Bass",
+            "Thresh": 0.55,
+            "Level": 0.35
+        },
+        "x_min_y_max": {
+            "name": "Acoustic",
+            "Thresh": 0.8,
+            "Level": 0.3
+        },
+        "x_max_y_min": {
+            "name": "Limit",
+            "Thresh": 0.8,
+            "Level": 0.39
+        },
+        "x_max_y_max": {
+            "name": "Squash",
+            "Thresh": 0.26,
+            "Level": 0.43
+        }
+    }
+}

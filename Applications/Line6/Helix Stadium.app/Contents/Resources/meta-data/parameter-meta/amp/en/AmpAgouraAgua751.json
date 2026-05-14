@@ -1,0 +1,21 @@
+{
+    "symbol": "ModelID::kAmpAgouraAgua751",
+    "category": "amp",
+    "class": "class",
+    "display_name": "Agua 751",
+    "model_catalog_image": "",
+    "model_options_image": "",
+    "parameters-en": {
+        "Drive": "Controls the amount of gain applied to the signal, which influences the level of distortion.",
+        "Bass": "Controls the low frequency EQ of the tonestack.",
+        "Mid": "Controls the midrange frequency EQ of the tonestack.",
+        "Treble": "Controls the high frequency EQ of the tonestack.",
+        "Deep": "When on, applies a 5 dB boost at 30 Hz.",
+        "Bright": "When on, applies a 5 dB boost at 5-7 kHz.",
+        "Master": "Controls the Master Volume of the amplifier.",
+        "Level": "Controls the overall level of the Amp block. Unlike Master Volume, it has no effect on the block's tone.",
+        "Hype": "Depending on the amp and/or amp settings, increasing Hype may subtly or dramatically adjust various behind-the-scenes parameters to make the amp sound and feel smoother, fuller, punchier, tighter, and/or more forgiving, but at the expense of accuracy.",
+        "AmpCabZFIR": "",
+        "AmpCabZUpdate": ""
+    }
+}

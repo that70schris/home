@@ -1,0 +1,103 @@
+{
+    "modelName": "Tape Echo",
+    "params": {
+        "Time": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "DryThru": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "SyncSelect1": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 11,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Clean Echo",
+            "Time": 0.262,
+            "Feedback": 0.3,
+            "Bass": 0.49,
+            "Treble": 0.43,
+            "Mix": 0.43,
+            "Level": 0.0,
+            "DryThru": true,
+            "SyncSelect1": 3,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Slapback",
+            "Time": 0.145,
+            "Feedback": 0.02,
+            "Bass": 0.73,
+            "Treble": 0.28,
+            "Mix": 0.49,
+            "Level": 0.0,
+            "DryThru": true,
+            "SyncSelect1": 3,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Low Boost",
+            "Time": 0.0,
+            "Feedback": 0.0,
+            "Bass": 0.99,
+            "Treble": 0.47,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "DryThru": false,
+            "SyncSelect1": 3,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Top Boost",
+            "Time": 0.0,
+            "Feedback": 0.0,
+            "Bass": 0.96,
+            "Treble": 1.0,
+            "Mix": 1.0,
+            "Level": -2.0,
+            "DryThru": false,
+            "SyncSelect1": 3,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Feedback",
+            "Time": 1.0,
+            "Feedback": 0.86,
+            "Bass": 0.5,
+            "Treble": 0.36,
+            "Mix": 0.83,
+            "Level": 0.0,
+            "DryThru": true,
+            "SyncSelect1": 3,
+            "TempoSync1": false
+        }
+    }
+}

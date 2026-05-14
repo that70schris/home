@@ -1,0 +1,14 @@
+{
+    "category": "reverb",
+    "model_id": 101,
+    "model_sym": "ModelID::kReverbGanymedeMono",
+    "display_name": "Ganymede",
+    "parameters-en": {
+        "Decay": "Adjusts the decay time of the reverb effect.",
+        "Predelay": "Controls the amount of delay heard before the audible onset of reverb. Can sometimes result in more definition between the dry and effected signals.",
+        "Tone": "Controls the tonal balance of the reverb. Lower values are darker, higher values are brighter.",
+        "Modulation": "Controls the amount of modulation applied to the reverb.",
+        "Mix": "Controls the blend between the reverb and the dry signal. At 0%, no reverb is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

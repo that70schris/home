@@ -1,0 +1,13 @@
+{
+    "category": "input",
+    "model_id": 752,
+    "model_sym": "ModelID::kInputMic",
+    "display_name": "Mic",
+    "parameters-en": {
+        "Trim": "Overall mic input gain is set globally from Global Settings > Ins/Outs > Mic In Gain. This parameter trims the preset's mic input level up or down in relation to overall gain.",
+        "Low Cut": "Applies a low cut (high pass) filter, letting you remove all audio below a certain frequency. May be useful in removing undesirable plosives or excessive proximity effect.",
+        "Gate": "Turns the Input block's built-in noise gate on and off.",
+        "Threshold": "Sets the noise gate's Threshold. The gate \"opens\" when the signal's level exceeds the Threshold, to let audio pass through. The gate \"closes\" when the signal's level drops below the Threshold. Adjust Threshold so only softer, unwanted signals (such as noise or mouth clicks) are gated.",
+        "Decay": "Controls the length of time it takes for the open noise gate to close once the signal drops below the Threshold. Increase Decay if you want the gate to gradually lower the signal instead of chopping it off abruptly."
+    }
+}

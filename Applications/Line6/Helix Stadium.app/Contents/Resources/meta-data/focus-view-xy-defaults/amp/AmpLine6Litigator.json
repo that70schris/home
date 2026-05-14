@@ -1,0 +1,130 @@
+{
+    "modelName": "Litigator",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Presence": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Hum": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Ripple": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Bias": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "BiasX": {
+            "id": 12,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Summons",
+            "Drive": 0.53,
+            "Bass": 0.52,
+            "Mid": 0.56,
+            "Treble": 0.45,
+            "Presence": 0.12,
+            "ChVol": 0.85,
+            "Master": 0.5,
+            "Sag": 0.58,
+            "Hum": 0.5,
+            "Ripple": 0.38,
+            "Bias": 0.5,
+            "BiasX": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Clean Slate",
+            "Drive": 0.15,
+            "Bass": 0.69,
+            "Mid": 0.39,
+            "Treble": 0.61,
+            "Presence": 0.39,
+            "ChVol": 0.79,
+            "Master": 0.65,
+            "Sag": 0.18,
+            "Hum": 0.5,
+            "Ripple": 0.38,
+            "Bias": 0.91,
+            "BiasX": 0.9
+        },
+        "x_min_y_max": {
+            "name": "The Jury",
+            "Drive": 0.36,
+            "Bass": 0.53,
+            "Mid": 0.7,
+            "Treble": 0.61,
+            "Presence": 0.0700001,
+            "ChVol": 0.82,
+            "Master": 0.82,
+            "Sag": 0.98,
+            "Hum": 0.5,
+            "Ripple": 0.38,
+            "Bias": 0.58,
+            "BiasX": 0.58
+        },
+        "x_max_y_min": {
+            "name": "The Judge",
+            "Drive": 0.63,
+            "Bass": 0.58,
+            "Mid": 0.49,
+            "Treble": 0.49,
+            "Presence": 0.0599999,
+            "ChVol": 0.7,
+            "Master": 1.0,
+            "Sag": 0.82,
+            "Hum": 0.5,
+            "Ripple": 0.38,
+            "Bias": 0.39,
+            "BiasX": 1.0
+        },
+        "x_max_y_max": {
+            "name": "Executioner",
+            "Drive": 0.93,
+            "Bass": 0.6,
+            "Mid": 0.81,
+            "Treble": 0.52,
+            "Presence": 0.12,
+            "ChVol": 0.65,
+            "Master": 0.61,
+            "Sag": 0.17,
+            "Hum": 0.5,
+            "Ripple": 0.38,
+            "Bias": 0.5,
+            "BiasX": 0.78
+        }
+    }
+}

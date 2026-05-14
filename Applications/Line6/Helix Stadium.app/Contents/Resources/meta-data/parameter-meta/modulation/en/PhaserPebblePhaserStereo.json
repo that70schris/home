@@ -1,0 +1,13 @@
+{
+    "category": "modulation",
+    "model_id": 244,
+    "model_sym": "ModelID::kPhaserPebblePhaserStereo",
+    "display_name": "Pebble Phaser",
+    "parameters-en": {
+        "Rate": "Controls the speed or rate of the phaser. When set to note values, Speed follows the system tempo.",
+        "Color": "When turned on, results in a more pronounced phase shifting effect.",
+        "Spread": "Adjusts the apparent stereo spread between the left and right channels.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

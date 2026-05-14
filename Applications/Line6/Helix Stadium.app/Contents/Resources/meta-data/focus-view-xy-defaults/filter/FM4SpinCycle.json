@@ -1,0 +1,94 @@
+{
+    "modelName": "Spin Cycle",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Freq": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Q": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Vol Sens": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Wow Wow",
+            "Speed": 0.6,
+            "Freq": 0.64,
+            "Q": 0.41,
+            "Vol Sens": 0.0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Woo Woo!",
+            "Speed": 0.8,
+            "Freq": 0.0,
+            "Q": 1.0,
+            "Vol Sens": 0.16,
+            "Mix": 0.59,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Slow Wah",
+            "Speed": 0.2,
+            "Freq": 0.96,
+            "Q": 1.0,
+            "Vol Sens": 0.0,
+            "Mix": 0.41,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "On the Beat",
+            "Speed": 2.3,
+            "Freq": 0.96,
+            "Q": 0.35,
+            "Vol Sens": 0.03,
+            "Mix": 0.47,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "UFO",
+            "Speed": 7.5,
+            "Freq": 0.56,
+            "Q": 0.99,
+            "Vol Sens": 0.0,
+            "Mix": 0.87,
+            "Level": 0.200001,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

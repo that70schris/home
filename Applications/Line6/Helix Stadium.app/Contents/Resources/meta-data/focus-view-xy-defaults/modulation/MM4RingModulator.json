@@ -1,0 +1,94 @@
+{
+    "modelName": "Ring Modulator",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Shape": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "AM/FM": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 8,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Stun Gun",
+            "Speed": 0.0,
+            "Depth": 0.25,
+            "Shape": 0.44,
+            "AM/FM": 0.47,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Spinning",
+            "Speed": 0.0,
+            "Depth": 0.69,
+            "Shape": 0.03,
+            "AM/FM": 0.47,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Aliens!",
+            "Speed": 0.75,
+            "Depth": 1.0,
+            "Shape": 1.0,
+            "AM/FM": 0.92,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Robot",
+            "Speed": 0.45,
+            "Depth": 0.5,
+            "Shape": 1.0,
+            "AM/FM": 0.49,
+            "Mix": 0.72,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Computer",
+            "Speed": 1.0,
+            "Depth": 1.0,
+            "Shape": 1.0,
+            "AM/FM": 0.00999999,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

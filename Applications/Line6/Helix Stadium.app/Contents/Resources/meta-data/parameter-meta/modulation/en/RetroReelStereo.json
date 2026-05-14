@@ -1,0 +1,15 @@
+{
+    "category": "modulation",
+    "model_id": 250,
+    "model_sym": "ModelID::kRetroReelStereo",
+    "display_name": "Retro Reel",
+    "parameters-en": {
+        "Wow Fluttr": "Controls how much warbly tape sound is heard.",
+        "Saturation": "Adds analog tape saturation and at high enough settings, distortion. At lower settings, it's great for simply warming up a tone.",
+        "Low Cut": "Determines the frequency of the Low Cut (High Pass) filter. At higher settings, can provide a lo-fi effect.",
+        "High Cut": "Determines the frequency of the High Cut (Low Pass) filter. At lower settings, can provide the natural high-end roll-off of old tape.",
+        "TapeSpeed": "Changes both the rate of the modulation applied by the WowFluttr control and the filtering response of the analog tape emulation.",
+        "Level": "Sets the overall level of the block.",
+        "Texture": "Controls the amount of the NAB tape EQ in the simulated tape path. When Saturation is set to 0.0, the texture is invisible. When Saturation is turned up, the texture will affect the tightness (or looseness) of the distortion."
+    }
+}

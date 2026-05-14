@@ -1,0 +1,12 @@
+{
+    "category": "modulation",
+    "model_id": 379,
+    "model_sym": "ModelID::kPhaserPebblePhaserMono",
+    "display_name": "Pebble Phaser",
+    "parameters-en": {
+        "Rate": "Controls the speed or rate of the phaser. When set to note values, Speed follows the system tempo.",
+        "Color": "When turned on, results in a more pronounced phase shifting effect.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

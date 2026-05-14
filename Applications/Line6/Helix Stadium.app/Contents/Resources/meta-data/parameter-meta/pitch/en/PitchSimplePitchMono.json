@@ -1,0 +1,14 @@
+{
+    "category": "pitch",
+    "model_id": 326,
+    "model_sym": "ModelID::kPitchSimplePitchMono",
+    "display_name": "Simple Pitch",
+    "parameters-en": {
+        "Interval": "Sets the pitch of the effected signal in semitones, from 2 octaves down to 2 octaves up.",
+        "Cents": "Sets the pitch of the effected signal in cents, from -50.0 to +50.0.",
+        "Delay": "Delays the pitch-shifted signal slightly. At lower values, it can thicken up your tone or at higher values, it can kind of emulate strumming from a single note.",
+        "Shift Level": "Controls the level of the pitch-shifted signal.",
+        "Mix": "Controls the blend between the pitch-shifted signal and the dry signal. At 0%, no pitch-shifted signal is heard; at 100%, no dry signal is heard.",
+        "Level": "Controls the overall level of the block."
+    }
+}

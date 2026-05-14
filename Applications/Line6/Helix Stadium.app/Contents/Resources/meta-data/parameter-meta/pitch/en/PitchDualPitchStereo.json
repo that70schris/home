@@ -1,0 +1,21 @@
+{
+    "category": "pitch",
+    "model_id": 192,
+    "model_sym": "ModelID::kPitchDualPitchStereo",
+    "display_name": "Dual Pitch",
+    "parameters-en": {
+        "Interval 1": "Sets the pitch of the first pitch-shifted voice in semitones, from 2 octaves down to 2 octaves up.",
+        "Cents 1": "Sets the pitch of the first pitch-shifted voice in cents, from -50.0 to +50.0.",
+        "Delay 1": "Delays the first pitch-shifted voice slightly. At lower values, it can thicken up your tone or at higher values, it can kinda of emulate strumming from a single note.",
+        "V1 Level": "Controls the level of the first pitch-shifted voice.",
+        "Interval 2": "Sets the pitch of the second pitch-shifted voice in semitones, from 2 octaves down to 2 octaves up.",
+        "Cents 2": "Sets the pitch of the second pitch-shifted voice in cents, from -50.0 to +50.0.",
+        "Delay 2": "Delays the second pitch-shifted voice slightly. At lower values, it can thicken up your tone or at higher values, it can kind of emulate strumming from a single note.",
+        "V2 Level": "Controls the level of the second pitch-shifted voice.",
+        "Mix": "Controls the blend between the pitch-shifted signal and the dry signal. At 0%, no pitch-shifted signal is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "V1 Pan": "Controls panning of the first pitch-shifted voice between the left and right channels.",
+        "V2 Pan": "Controls panning of the second pitch-shifted voice between the left and right channels.",
+        "Dry Pan": "Controls panning of the dry signal between the left and right channels."
+    }
+}

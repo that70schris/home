@@ -1,0 +1,20 @@
+{
+    "category": "amp",
+    "model_id": 592,
+    "model_sym": "ModelID::kAmpBritP75Brt",
+    "display_name": "Brit P75 Brt",
+    "parameters-en": {
+        "Drive": "Controls the amount of gain applied to the signal, which influences the level of distortion.",
+        "Bass": "Controls the low frequency EQ of the tonestack.",
+        "Mid": "Controls the midrange frequency EQ of the tonestack.",
+        "Treble": "Controls the high frequency EQ of the tonestack.",
+        "Presence": "Boosts upper mid and high frequencies in the power amp, resulting in additional punch and bite.",
+        "Level": "Controls the overall level of the Amp block. Unlike Master Volume, it has no effect on the block's tone.",
+        "Master": "Controls the Master Volume of the amplifier.",
+        "Sag": "Controls the amount of sag, or how much the power supply compresses or \"droops\" in response to striking the strings hard. Higher values provide more touch dynamics, sustain, and organic feel that's inherent in vintage tube amps; lower values offer a \"tighter\" responsiveness for a more modern feel.",
+        "Hum": "Adjusts the level of power supply hum that interacts with the signal. Preamp tube heaters in tube amps will leak a little bit of 60 cycle hum into the audio signal. When this hum mixes with the distorted audio signal, a non-musical distortion is created at low levels. To some players, this low-level, non-harmonic distortion adds a bit of realism to the amp model.",
+        "Ripple": "Controls how much AC ripple interacts with your tone. Power amp circuits will sometimes let a little bit of rectified 120Hz hum (that the power supply filter caps can't quite fully remove) into the audio signal when the power supply is being pushed hard. Much like Hum, Ripple provides a bit of non-musical distortion to the power amp at distorted settings.",
+        "Bias": "Adjusts the bias of the tubes in the power amp, causing a change in tonality and the distortion characteristic.",
+        "Bias X": "Determines how the power amp tubes’ voicing reacts when pushed hard. Set low for a tighter feel. Set high for more tube compression. This parameter is highly reactive with the Drive and Master settings."
+    }
+}

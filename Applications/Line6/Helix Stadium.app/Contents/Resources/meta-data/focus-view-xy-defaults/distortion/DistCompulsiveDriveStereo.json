@@ -1,0 +1,67 @@
+{
+    "modelName": "Compulsive Drive",
+    "params": {
+        "Gain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Tone": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "LPHP": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Version": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 5,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Hot Rod",
+            "Gain": 0.26999998092651367,
+            "Tone": 0.5699999332427979,
+            "LPHP": true,
+            "Version": true,
+            "Level": 0.7200000286102295
+        },
+        "x_min_y_min": {
+            "name": "V4 Push",
+            "Gain": 0.0,
+            "Tone": 0.5899999141693115,
+            "LPHP": false,
+            "Version": true,
+            "Level": 0.8299999237060547
+        },
+        "x_min_y_max": {
+            "name": "V2 Distortion",
+            "Gain": 0.20000004768371582,
+            "Tone": 0.31999993324279785,
+            "LPHP": true,
+            "Version": false,
+            "Level": 0.7400000095367432
+        },
+        "x_max_y_min": {
+            "name": "Scooped Dist",
+            "Gain": 0.28999996185302734,
+            "Tone": 0.3500000238418579,
+            "LPHP": false,
+            "Version": true,
+            "Level": 0.7000000476837158
+        },
+        "x_max_y_max": {
+            "name": "Huge Mids",
+            "Gain": 0.7300000190734863,
+            "Tone": 0.6000000238418579,
+            "LPHP": false,
+            "Version": false,
+            "Level": 0.8999999761581421
+        }
+    }
+}

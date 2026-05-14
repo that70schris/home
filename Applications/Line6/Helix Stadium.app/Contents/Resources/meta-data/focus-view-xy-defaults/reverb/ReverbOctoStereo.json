@@ -1,0 +1,76 @@
+{
+    "modelName": "Octo",
+    "params": {
+        "Decay": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Intensity": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "LowCut": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "HighCut": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Effloresce",
+            "Decay": 0.7200000286102295,
+            "Intensity": 0.6299999952316284,
+            "LowCut": 80.0,
+            "HighCut": 8000.0,
+            "Mix": 0.4000000059604645,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Dark Pulses",
+            "Decay": 0.5199999809265137,
+            "Intensity": 0.5,
+            "LowCut": 500.0,
+            "HighCut": 1000.0,
+            "Mix": 0.5,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Glitter Bomb",
+            "Decay": 0.800000011920929,
+            "Intensity": 0.7900000214576721,
+            "LowCut": 426.0,
+            "HighCut": 20100.0,
+            "Mix": 0.5799999833106995,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Mostly Pitch",
+            "Decay": 0.10000000149011612,
+            "Intensity": 1.0,
+            "LowCut": 19.899999618530273,
+            "HighCut": 7000.0,
+            "Mix": 0.5199999809265137,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Resonator",
+            "Decay": 1.0,
+            "Intensity": 0.15000000596046448,
+            "LowCut": 93.0,
+            "HighCut": 7900.0,
+            "Mix": 0.5,
+            "Level": -3.6999969482421875
+        }
+    }
+}

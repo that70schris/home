@@ -1,0 +1,14 @@
+{
+    "category": "filter",
+    "model_id": 216,
+    "model_sym": "ModelID::kFM4SlowFilter",
+    "display_name": "Slow Filter",
+    "parameters-en": {
+        "Freq": "Adjusts the frequency where the filter begins its tone shaping roll-off.",
+        "Q": "Controls the resonance or width of the frequency band affected by the filter.",
+        "Speed": "Controls the length of the filter sweep. Higher values result in a longer filter sweep.",
+        "Mode": "Selects whether the filter sweep goes Up (dark to bright) or Down (bright to dark).",
+        "Mix": "Controls the balance between the filtered and dry signals. At 0%, no filtered signal is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

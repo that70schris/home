@@ -1,0 +1,13 @@
+{
+    "category": "distortion",
+    "model_id": 303,
+    "model_sym": "ModelID::kDistCompulsiveDriveMono",
+    "display_name": "Compulsive Drive",
+    "parameters-en": {
+        "Gain": "Controls the amount of distortion applied to the signal.",
+        "Tone": "Controls the overall tonal balance of the distortion. Lower values are darker and higher values are brighter.",
+        "Peak Type": "Low is more transparent, and better for a clean boost. High has more distortion, volume, and exhibits a slight bump in the midrange.",
+        "Version": "Selects which version of the original pedal to emulate--V2 or V4. V4 has a slight upper mid boost and a bit more sustain.",
+        "Level": "Controls the output level of the distortion."
+    }
+}

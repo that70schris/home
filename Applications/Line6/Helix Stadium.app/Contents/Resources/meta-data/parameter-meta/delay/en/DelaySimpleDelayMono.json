@@ -1,0 +1,13 @@
+{
+    "category": "delay",
+    "model_id": 125,
+    "model_sym": "ModelID::kDelaySimpleDelayMono",
+    "display_name": "Simple Delay",
+    "parameters-en": {
+        "Time": "Adjusts the length of time before the first repeat. When set to note values, Time follows the system tempo.",
+        "Feedback": "Controls the number of delay repeats. When set to 0%, only one repeat is heard; at 100%, the delay repeats forever.",
+        "Mix": "Controls the blend between the delay repeats and the dry signal. At 0%, no repeats are heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TSync1": ""
+    }
+}

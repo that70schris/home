@@ -1,0 +1,13 @@
+{
+    "category": "synth",
+    "model_id": 391,
+    "model_sym": "ModelID::kSynthFX",
+    "display_name": "Synth FX",
+    "parameters-en": {
+        "Wave": "Selects one of 8 crazy sci-fi effects. These aren't so much musical as they are weird fun and perhaps a method of scaring away small woodland creatures.",
+        "Filter": "Controls the frequency of the filter, which determines the brightness of your sound.",
+        "Decay": "Slightly controls the decay of the synth.",
+        "Mix": "Blends more of the effect in. Note that even at 0%, some of the synth will be heard.",
+        "Level": "Sets the overall level of the block."
+    }
+}

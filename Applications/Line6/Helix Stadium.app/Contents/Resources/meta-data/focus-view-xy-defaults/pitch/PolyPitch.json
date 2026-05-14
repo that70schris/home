@@ -1,0 +1,157 @@
+{
+    "modelName": "Poly Pitch",
+    "params": {
+        "Interval": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "Cents": {
+            "id": 2,
+            "behavior": "quantize"
+        },
+        "ShiftTime": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "ShiftCurve": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "ReturnTime": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ReturnCurve": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Tracking": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "AutoEQ": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "RiseFallSwitch": {
+            "id": 11,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 101,
+            "behavior": "quantize"
+        },
+        "SyncSelect1": {
+            "id": 102,
+            "behavior": "quantize"
+        },
+        "TempoSync2": {
+            "id": 103,
+            "behavior": "quantize"
+        },
+        "SyncSelect2": {
+            "id": 104,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Low Octave",
+            "Interval": -12,
+            "Cents": 1.0,
+            "ShiftTime": 0.497,
+            "ShiftCurve": -5,
+            "ReturnTime": 1.377,
+            "ReturnCurve": -5,
+            "Tracking": 1,
+            "AutoEQ": 0.74,
+            "Mix": 1.0,
+            "Level": 0.0,
+            "RiseFallSwitch": false,
+            "TempoSync1": false,
+            "SyncSelect1": 6,
+            "TempoSync2": false,
+            "SyncSelect2": 6
+        },
+        "x_min_y_min": {
+            "name": "Plus 1",
+            "Interval": 12,
+            "Cents": -2.8,
+            "ShiftTime": 0.0,
+            "ShiftCurve": -5,
+            "ReturnTime": 0.406,
+            "ReturnCurve": 3,
+            "Tracking": 3,
+            "AutoEQ": 0.59,
+            "Mix": 0.38,
+            "Level": 0.0,
+            "RiseFallSwitch": false,
+            "TempoSync1": false,
+            "SyncSelect1": 2,
+            "TempoSync2": false,
+            "SyncSelect2": 10
+        },
+        "x_min_y_max": {
+            "name": "1 and 5",
+            "Interval": -5,
+            "Cents": 0.800003,
+            "ShiftTime": 0.24,
+            "ShiftCurve": 0,
+            "ReturnTime": 0.48,
+            "ReturnCurve": 0,
+            "Tracking": 0,
+            "AutoEQ": 0.0,
+            "Mix": 0.46,
+            "Level": 0.0,
+            "RiseFallSwitch": false,
+            "TempoSync1": true,
+            "SyncSelect1": 7,
+            "TempoSync2": true,
+            "SyncSelect2": 10
+        },
+        "x_max_y_min": {
+            "name": "Down 1",
+            "Interval": -12,
+            "Cents": 0.199997,
+            "ShiftTime": 0.327,
+            "ShiftCurve": -5,
+            "ReturnTime": 0.0,
+            "ReturnCurve": 3,
+            "Tracking": 3,
+            "AutoEQ": 0.59,
+            "Mix": 0.6,
+            "Level": 0.0,
+            "RiseFallSwitch": false,
+            "TempoSync1": false,
+            "SyncSelect1": 2,
+            "TempoSync2": false,
+            "SyncSelect2": 10
+        },
+        "x_max_y_max": {
+            "name": "2 Oct Up",
+            "Interval": 24,
+            "Cents": 0.800003,
+            "ShiftTime": 0.24,
+            "ShiftCurve": -4,
+            "ReturnTime": 0.48,
+            "ReturnCurve": 3,
+            "Tracking": 3,
+            "AutoEQ": 0.59,
+            "Mix": 0.85,
+            "Level": 0.0,
+            "RiseFallSwitch": false,
+            "TempoSync1": true,
+            "SyncSelect1": 7,
+            "TempoSync2": false,
+            "SyncSelect2": 10
+        }
+    }
+}

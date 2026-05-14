@@ -1,0 +1,67 @@
+{
+    "modelName": "Vital Dist",
+    "params": {
+        "Gain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Filter": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Clipping": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Octave": {
+            "id": 5,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Vital Crust",
+            "Gain": 0.58,
+            "Filter": 0.18,
+            "Level": 0.61,
+            "Clipping": 1,
+            "Octave": 0.66
+        },
+        "x_min_y_min": {
+            "name": "Lil Drive",
+            "Gain": 0.16,
+            "Filter": 0.38,
+            "Level": 0.91,
+            "Clipping": 2,
+            "Octave": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Chunks",
+            "Gain": 0.73,
+            "Filter": 0.0599999,
+            "Level": 0.61,
+            "Clipping": 1,
+            "Octave": 0.77
+        },
+        "x_max_y_min": {
+            "name": "Splat",
+            "Gain": 0.57,
+            "Filter": 0.42,
+            "Level": 0.82,
+            "Clipping": 0,
+            "Octave": 0.03
+        },
+        "x_max_y_max": {
+            "name": "Bodied",
+            "Gain": 1.0,
+            "Filter": 0.0,
+            "Level": 0.76,
+            "Clipping": 0,
+            "Octave": 1.0
+        }
+    }
+}

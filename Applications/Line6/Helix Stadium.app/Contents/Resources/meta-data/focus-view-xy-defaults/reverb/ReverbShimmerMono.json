@@ -1,0 +1,166 @@
+{
+    "modelName": "Shimmer",
+    "params": {
+        "Mode": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "Shift1": {
+            "id": 2,
+            "behavior": "quantize"
+        },
+        "Shift2": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "Intensity": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Feedback": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Balance": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Decay": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Predelay": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "RoomSize": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "Damping": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "Diffusion": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "Motion": {
+            "id": 13,
+            "behavior": "interpolate"
+        },
+        "LowCut": {
+            "id": 14,
+            "behavior": "interpolate"
+        },
+        "HighCut": {
+            "id": 15,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 16,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Shimmer",
+            "Mode": true,
+            "Shift1": 12.0,
+            "Shift2": 0.0,
+            "Intensity": 0.8999999761581421,
+            "Feedback": 0.8999999761581421,
+            "Mix": 0.6000000238418579,
+            "Balance": 0.5,
+            "Decay": 4.0,
+            "Predelay": 0.1499999761581421,
+            "RoomSize": 2,
+            "Damping": 1700.0,
+            "Diffusion": 1.0,
+            "Motion": 0.0,
+            "LowCut": 39.0,
+            "HighCut": 3600.0,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Pad-like",
+            "Mode": true,
+            "Shift1": 12.0,
+            "Shift2": -12.0,
+            "Intensity": 0.6100000143051147,
+            "Feedback": 0.3700000047683716,
+            "Mix": 0.5499999523162842,
+            "Balance": 0.8899999856948853,
+            "Decay": 7.600000381469727,
+            "Predelay": 0.07400000095367432,
+            "RoomSize": 2,
+            "Damping": 18400.0,
+            "Diffusion": 0.12000000476837158,
+            "Motion": 0.4700000286102295,
+            "LowCut": 114.0,
+            "HighCut": 16100.0,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Subtle Shimmer",
+            "Mode": false,
+            "Shift1": 12.0,
+            "Shift2": -12.0,
+            "Intensity": 0.5099999904632568,
+            "Feedback": 0.8999999761581421,
+            "Mix": 0.3799999952316284,
+            "Balance": 0.6499999761581421,
+            "Decay": 8.100000381469727,
+            "Predelay": 0.15900003910064697,
+            "RoomSize": 2,
+            "Damping": 4900.0,
+            "Diffusion": 1.0,
+            "Motion": 0.33000004291534424,
+            "LowCut": 137.0,
+            "HighCut": 6800.0,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Anti-Shimmer",
+            "Mode": true,
+            "Shift1": -12.0,
+            "Shift2": 12.0,
+            "Intensity": 1.0,
+            "Feedback": 0.7200000286102295,
+            "Mix": 0.5499999523162842,
+            "Balance": 0.17499995231628418,
+            "Decay": 13.300000190734863,
+            "Predelay": 0.050999999046325684,
+            "RoomSize": 2,
+            "Damping": 6400.0,
+            "Diffusion": 0.7000000476837158,
+            "Motion": 0.18000006675720215,
+            "LowCut": 120.0,
+            "HighCut": 17700.0,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Orchestra",
+            "Mode": true,
+            "Shift1": -12.0,
+            "Shift2": 12.0,
+            "Intensity": 0.7300000190734863,
+            "Feedback": 0.559999942779541,
+            "Mix": 0.49000000953674316,
+            "Balance": 0.24500000476837158,
+            "Decay": 8.40000057220459,
+            "Predelay": 0.1499999761581421,
+            "RoomSize": 1,
+            "Damping": 9500.0,
+            "Diffusion": 0.24000000953674316,
+            "Motion": 0.4500000476837158,
+            "LowCut": 120.0,
+            "HighCut": 10300.0,
+            "Level": 0.0
+        }
+    }
+}

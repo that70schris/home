@@ -1,0 +1,18 @@
+{
+    "category": "cab",
+    "model_id": 428,
+    "model_sym": "ModelID::kCabMicIr_1x10USPrincessWithPan",
+    "display_name": "1x10 US Princess",
+    "parameters-en": {
+        "Mic": "Selects the mic pointed at the cabinet. (Guitar and Bass cabs have different sets of mics available.) Mic selection can have as big an impact on your tone as tweaking the Amp's tonestack or even applying an EQ block, so experimentation is key here.",
+        "Position": "Sets the lateral location of the mic in relation to the speaker cone, from center of the speaker to the edge. The \"Cap Edge\" value may appear in a different location depending on the selected cab.",
+        "Distance": "Sets the distance of the mic from the speaker cone. Choose from 1.00\" to 12.00\" in 1/4\" increments.",
+        "Angle": "Sets the angle of the mic relative to the front of the speaker cabinet. 0 degrees is pointing directly at the speaker, 45 degrees is pointing off-axis.",
+        "Low Cut": "Applies a low cut (high pass) filter, letting you remove all audio below a certain frequency. May be useful in removing undesirable low end rumble.",
+        "High Cut": "Applies a high cut (low pass) filter, letting you remove all audio above a certain frequency. May be useful in removing high end harshness.",
+        "Level": "Sets the overall level of the Cab. Use to adjust level against the other side of the Cab block.",
+        "Pan": "Controls the panning of the Cab between the left and right channels. For stereo setups, the Cab block can sound much wider if the two sides are panned opposite of one another (\"L 100\" and \"R 100\")",
+        "Delay": "Delays the signal slightly to purposely impart a bit of phase incoherence or at higher values, increase the Cab block's apparent stereo width. A little goes a long way here. When set to \"Auto\" (all the way left, before 0.0 ms), it approximates the delay through the air when changing the mic Distance parameter.",
+        "IrData": ""
+    }
+}

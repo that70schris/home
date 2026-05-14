@@ -1,0 +1,103 @@
+{
+    "modelName": "Ampeg B-15NF",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "LowMid": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "HighMid": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Master": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Hum": {
+            "id": 9,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Warm",
+            "Drive": 0.3700000047683716,
+            "Bass": 0.7000000476837158,
+            "LowMid": 0.5,
+            "HighMid": 0.5,
+            "Treble": 0.7000000476837158,
+            "ChVol": 1.0,
+            "Master": 1.0,
+            "Sag": 0.5,
+            "Hum": 0.20000004768371582
+        },
+        "x_min_y_min": {
+            "name": "Focused",
+            "Drive": 0.20000004768371582,
+            "Bass": 0.5,
+            "LowMid": 0.8399999141693115,
+            "HighMid": 0.25,
+            "Treble": 1.0,
+            "ChVol": 1.0,
+            "Master": 1.0,
+            "Sag": 0.5,
+            "Hum": 0.10000002384185791
+        },
+        "x_min_y_max": {
+            "name": "Scooped",
+            "Drive": 0.3500000238418579,
+            "Bass": 0.8199999332427979,
+            "LowMid": 0.0,
+            "HighMid": 0.0,
+            "Treble": 0.7400000095367432,
+            "ChVol": 1.0,
+            "Master": 1.0,
+            "Sag": 0.5,
+            "Hum": 0.10000002384185791
+        },
+        "x_max_y_min": {
+            "name": "Punchy",
+            "Drive": 0.2799999713897705,
+            "Bass": 0.2999999523162842,
+            "LowMid": 0.8700000047683716,
+            "HighMid": 0.8700000047683716,
+            "Treble": 0.10000002384185791,
+            "ChVol": 1.0,
+            "Master": 1.0,
+            "Sag": 0.5,
+            "Hum": 0.25
+        },
+        "x_max_y_max": {
+            "name": "Gritty",
+            "Drive": 0.5499999523162842,
+            "Bass": 0.7200000286102295,
+            "LowMid": 0.4500000476837158,
+            "HighMid": 0.5499999523162842,
+            "Treble": 0.6100000143051147,
+            "ChVol": 0.7300000190734863,
+            "Master": 1.0,
+            "Sag": 0.5,
+            "Hum": 0.5
+        }
+    }
+}

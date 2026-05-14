@@ -1,0 +1,40 @@
+{
+    "modelName": "Pocket Fuzz",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 3,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Fuzz",
+            "Drive": 0.48,
+            "Level": 0.44
+        },
+        "x_min_y_min": {
+            "name": "Boutique",
+            "Drive": 0.13,
+            "Level": 0.6
+        },
+        "x_min_y_max": {
+            "name": "Distortion",
+            "Drive": 0.25,
+            "Level": 0.6
+        },
+        "x_max_y_min": {
+            "name": "Sharp",
+            "Drive": 0.87,
+            "Level": 0.37
+        },
+        "x_max_y_max": {
+            "name": "Hi Gain",
+            "Drive": 1.0,
+            "Level": 0.38
+        }
+    }
+}

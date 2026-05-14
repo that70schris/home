@@ -1,0 +1,14 @@
+{
+    "category": "preamp",
+    "model_id": 517,
+    "model_sym": "ModelID::kPreampVintagePre",
+    "display_name": "Studio Tube Pre",
+    "parameters-en": {
+        "Gain": "Controls the amount of preamp gain applied to the signal.",
+        "Polarity": "Inverts the polarity of the signal.",
+        "Low Cut": "Applies a low cut (high pass) filter, letting you remove all audio below a certain frequency. May be useful in removing undesirable low end rumble or mic plosives.",
+        "High Cut": "Applies a high cut (low pass) filter, letting you remove all audio above a certain frequency. May be useful in removing high end harshness.",
+        "Level": "Controls the overall level of the Preamp block.",
+        "Sensitivity": "Determines whether the preamp accommodates a mic-level or line-level signal."
+    }
+}

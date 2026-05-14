@@ -1,0 +1,13 @@
+{
+    "category": "distortion",
+    "model_id": 390,
+    "model_sym": "ModelID::kLine6BronzeMaster",
+    "display_name": "Bronze Master",
+    "parameters-en": {
+        "Drive": "Controls the amount of distortion applied to the signal.",
+        "Tone": "This one's a lot of fun. Choose from 8 distinctly different tonal voicings of distortion.",
+        "Blend": "Blends in the dry, undistorted instrument signal.",
+        "Level": "Sets the overall level of the block.",
+        "Smart": ""
+    }
+}

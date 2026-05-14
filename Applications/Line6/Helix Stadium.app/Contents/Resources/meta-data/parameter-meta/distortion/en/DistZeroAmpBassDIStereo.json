@@ -1,0 +1,14 @@
+{
+    "category": "distortion",
+    "model_id": 241,
+    "model_sym": "ModelID::kDistZeroAmpBassDIStereo",
+    "display_name": "ZeroAmp Bass DI",
+    "parameters-en": {
+        "Drive": "Controls the input sensitivity as well as the amount of gain and overdrive applied to the signal.",
+        "Bass": "Controls the low frequency EQ of the overdrive.",
+        "Treble": "Controls the high frequency EQ of the overdrive.",
+        "Presence": "Adds upper harmonic content and increases attack.",
+        "Blend": "Controls the blend between the tube amp emulation circuitry and the dry signal. The Bass and Treble knobs remain active, even when Blend is set to 0.0.",
+        "Level": "Sets the overall level of the block."
+    }
+}

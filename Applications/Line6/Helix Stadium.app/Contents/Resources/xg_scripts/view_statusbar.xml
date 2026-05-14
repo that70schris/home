@@ -1,0 +1,36 @@
+
+<xg>
+    <panel_widget height="24" id="stat" left="0" top="0" width="824">
+        <anchor_pos left="0" right="0" top="0"/>
+        <bg_color>0xFF151515</bg_color>
+        <text_widget height="24" id="text" left="4" top="0" width="720">
+            <anchor_pos bottom="0" left="4" right="100" top="0"/>
+            <bg_color>0x00FF0000</bg_color>
+            <text>
+                <label>Status bar text...</label>
+                <font name="Inter Display" size="14"/>
+                <align vert="middle"/>
+                <offset x="8"/>
+                <text_color>0xFFC0C0C0</text_color>
+            </text>
+        </text_widget>
+        <text_widget height="24" id="prgt" left="4" top="0" width="250">
+            <anchor_pos bottom="0" left="4" top="0"/>
+            <bg_color>0x00FF0000</bg_color>
+            <text>
+                <label>Progress text...</label>
+                <font name="Inter Display" size="14"/>
+                <align vert="middle"/>
+                <offset x="8"/>
+                <text_color>0xFFC0C0C0</text_color>
+            </text>
+        </text_widget>
+        <statusbar_widget height="16" id="prgb" left="255" top="4" width="200">
+            <anchor_pos bottom="4" left="255" top="4"/>
+            <bg_color>0xFF212121</bg_color>
+            <fill_area height="200" left="0" top="0" width="200"/>
+            <fill_image tile="yes"/>
+            <fill_color>0xFF797979</fill_color>
+        </statusbar_widget>
+    </panel_widget>
+</xg>

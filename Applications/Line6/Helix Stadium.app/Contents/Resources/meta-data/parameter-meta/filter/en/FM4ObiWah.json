@@ -1,0 +1,15 @@
+{
+    "category": "filter",
+    "model_id": 219,
+    "model_sym": "ModelID::kFM4ObiWah",
+    "display_name": "Obi Wah",
+    "parameters-en": {
+        "Speed": "Sets the rate of the random filter changes.",
+        "Freq": "Sets the frequency area where the filter changes your tone.",
+        "Q": "Controls the resonance or width of the frequency band affected by the filter.",
+        "Type": "Selects the type of filter effect (Low Pass, Band Pass, or High Pass).",
+        "Mix": "Controls the balance between the filtered and dry signals. At 0%, no filtered signal is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "modelName": "Xenomorph Fuzz",
+    "params": {
+        "Gain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Tone": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Clipping": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "OscLevel": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "OscTone": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "MinFreq": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "MaxFreq": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "WaveShape": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "Sensitivity": {
+            "id": 10,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Ripley",
+            "Gain": 0.5,
+            "Tone": 0.41999998688697815,
+            "Level": 0.6499999761581421,
+            "Clipping": 1,
+            "OscLevel": 0.5,
+            "OscTone": 0.5,
+            "MinFreq": 65.0,
+            "MaxFreq": 1100.0,
+            "WaveShape": 2,
+            "Sensitivity": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Parker",
+            "Gain": 0.4000000059604645,
+            "Tone": 0.5,
+            "Level": 0.6499999761581421,
+            "Clipping": 1,
+            "OscLevel": 0.5,
+            "OscTone": 0.5,
+            "MinFreq": 0.0,
+            "MaxFreq": 0.0,
+            "WaveShape": 2,
+            "Sensitivity": 0.5
+        },
+        "x_min_y_max": {
+            "name": "Lambert",
+            "Gain": 0.4000000059604645,
+            "Tone": 0.5,
+            "Level": 0.6499999761581421,
+            "Clipping": 1,
+            "OscLevel": 0.5,
+            "OscTone": 0.5,
+            "MinFreq": 659.0,
+            "MaxFreq": 0.0,
+            "WaveShape": 2,
+            "Sensitivity": 0.5
+        },
+        "x_max_y_min": {
+            "name": "Dallas",
+            "Gain": 0.6000000238418579,
+            "Tone": 0.41999998688697815,
+            "Level": 0.6499999761581421,
+            "Clipping": 1,
+            "OscLevel": 0.5,
+            "OscTone": 0.5,
+            "MinFreq": 0.0,
+            "MaxFreq": 659.0,
+            "WaveShape": 2,
+            "Sensitivity": 0.5
+        },
+        "x_max_y_max": {
+            "name": "Ash",
+            "Gain": 0.8399999737739563,
+            "Tone": 0.41999998688697815,
+            "Level": 0.6499999761581421,
+            "Clipping": 1,
+            "OscLevel": 0.5,
+            "OscTone": 0.5,
+            "MinFreq": 82.0,
+            "MaxFreq": 5300.0,
+            "WaveShape": 2,
+            "Sensitivity": 0.30000001192092896
+        }
+    }
+}

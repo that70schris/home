@@ -1,0 +1,157 @@
+{
+    "modelName": "Dynamix Flanger",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Control Select": {
+            "id": 2,
+            "behavior": "quantize"
+        },
+        "Depth": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Manual": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Phasing": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Recycle": {
+            "id": 7,
+            "behavior": "quantize"
+        },
+        "CV Dynamics": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Max Delay": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "CV Tracking": {
+            "id": 10,
+            "behavior": "quantize"
+        },
+        "Env Lag": {
+            "id": 11,
+            "behavior": "interpolate"
+        },
+        "Env Input": {
+            "id": 12,
+            "behavior": "interpolate"
+        },
+        "CV Decay": {
+            "id": 13,
+            "behavior": "quantize"
+        },
+        "SyncSelect1": {
+            "id": 14,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 15,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Slow Flange",
+            "Speed": 0.009999999776482582,
+            "Control Select": 0,
+            "Depth": 0.20999999344348907,
+            "Manual": 0.4180000126361847,
+            "Mix": 0.5,
+            "Phasing": 0.38999998569488525,
+            "Recycle": true,
+            "CV Dynamics": 0.0,
+            "Max Delay": 0.024999987334012985,
+            "CV Tracking": true,
+            "Env Lag": 0.0,
+            "Env Input": 0.0,
+            "CV Decay": 1,
+            "SyncSelect1": 1,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Light Envelope",
+            "Speed": 0.04399999976158142,
+            "Control Select": 1,
+            "Depth": 0.6600000262260437,
+            "Manual": 0.4180000126361847,
+            "Mix": 0.5,
+            "Phasing": -1.0,
+            "Recycle": true,
+            "CV Dynamics": 1.0,
+            "Max Delay": 0.009999990463256836,
+            "CV Tracking": true,
+            "Env Lag": 0.10000002384185791,
+            "Env Input": 70.0,
+            "CV Decay": 1,
+            "SyncSelect1": 3,
+            "TempoSync1": true
+        },
+        "x_min_y_max": {
+            "name": "Deep Envelope",
+            "Speed": 0.04399999976158142,
+            "Control Select": 1,
+            "Depth": 0.20000000298023224,
+            "Manual": 0.0,
+            "Mix": 0.3499999940395355,
+            "Phasing": 1.0,
+            "Recycle": true,
+            "CV Dynamics": 0.949999988079071,
+            "Max Delay": 0.009999990463256836,
+            "CV Tracking": true,
+            "Env Lag": 0.03500000759959221,
+            "Env Input": 32.20000076293945,
+            "CV Decay": 2,
+            "SyncSelect1": 1,
+            "TempoSync1": true
+        },
+        "x_max_y_min": {
+            "name": "Oil Drum",
+            "Speed": 0.04399999976158142,
+            "Control Select": 1,
+            "Depth": 0.0,
+            "Manual": 0.0,
+            "Mix": 0.5,
+            "Phasing": -0.49000000953674316,
+            "Recycle": true,
+            "CV Dynamics": 0.5400000214576721,
+            "Max Delay": 0.028999987989664078,
+            "CV Tracking": false,
+            "Env Lag": 0.10000002384185791,
+            "Env Input": 50.0,
+            "CV Decay": 1,
+            "SyncSelect1": 1,
+            "TempoSync1": true
+        },
+        "x_max_y_max": {
+            "name": "Drunk Robot",
+            "Speed": 0.009999999776482582,
+            "Control Select": 0,
+            "Depth": 1.0,
+            "Manual": 0.0,
+            "Mix": 0.5,
+            "Phasing": 1.0,
+            "Recycle": true,
+            "CV Dynamics": 0.0,
+            "Max Delay": 0.0996999740600586,
+            "CV Tracking": true,
+            "Env Lag": 0.0,
+            "Env Input": 0.0,
+            "CV Decay": 0,
+            "SyncSelect1": 1,
+            "TempoSync1": false
+        }
+    }
+}

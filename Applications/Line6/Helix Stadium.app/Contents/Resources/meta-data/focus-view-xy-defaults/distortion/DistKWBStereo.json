@@ -1,0 +1,85 @@
+{
+    "modelName": "KWB",
+    "params": {
+        "Gain": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "PushDiode": {
+            "id": 2,
+            "behavior": "quantize"
+        },
+        "PullDiode": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "Bass": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Asym": {
+            "id": 7,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Mid Gain Dist",
+            "Gain": 0.43000006675720215,
+            "PushDiode": 1,
+            "PullDiode": 2,
+            "Bass": -1.9000005722045898,
+            "Treble": 2.09999942779541,
+            "Level": 0.8500000238418579,
+            "Asym": 0.36000001430511475
+        },
+        "x_min_y_min": {
+            "name": "Light OD",
+            "Gain": 0.25999999046325684,
+            "PushDiode": 2,
+            "PullDiode": 1,
+            "Bass": 0.6999988555908203,
+            "Treble": 1.0,
+            "Level": 0.8500000238418579,
+            "Asym": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Smooth OD",
+            "Gain": 0.36000001430511475,
+            "PushDiode": 3,
+            "PullDiode": 3,
+            "Bass": 0.5999994277954102,
+            "Treble": -1.0,
+            "Level": 0.7400000095367432,
+            "Asym": 0.440000057220459
+        },
+        "x_max_y_min": {
+            "name": "Angry Bunny",
+            "Gain": 0.5099999904632568,
+            "PushDiode": 0,
+            "PullDiode": 3,
+            "Bass": -1.3999996185302734,
+            "Treble": 1.2000007629394531,
+            "Level": 0.8700000047683716,
+            "Asym": 0.3700000047683716
+        },
+        "x_max_y_max": {
+            "name": "Almost Fuzz",
+            "Gain": 0.8199999332427979,
+            "PushDiode": 1,
+            "PullDiode": 1,
+            "Bass": -3.1000003814697266,
+            "Treble": 2.5,
+            "Level": 1.0,
+            "Asym": 0.8500000238418579
+        }
+    }
+}

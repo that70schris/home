@@ -1,0 +1,49 @@
+{
+    "modelName": "Stupor OD",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Tone": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 3,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Driiive!",
+            "Drive": 0.63,
+            "Tone": 0.5,
+            "Level": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Fat",
+            "Drive": 0.22,
+            "Tone": 0.00999999,
+            "Level": 0.88
+        },
+        "x_min_y_max": {
+            "name": "Rhythm 1",
+            "Drive": 0.31,
+            "Tone": 0.09,
+            "Level": 0.55
+        },
+        "x_max_y_min": {
+            "name": "Solo",
+            "Drive": 0.76,
+            "Tone": 0.93,
+            "Level": 0.53
+        },
+        "x_max_y_max": {
+            "name": "Screamin'",
+            "Drive": 0.99,
+            "Tone": 0.6,
+            "Level": 0.48
+        }
+    }
+}

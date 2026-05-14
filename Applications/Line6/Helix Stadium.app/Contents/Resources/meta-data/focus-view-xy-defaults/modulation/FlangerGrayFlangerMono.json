@@ -1,0 +1,103 @@
+{
+    "modelName": "Gray Flanger",
+    "params": {
+        "Rate": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Width": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Manual": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Regen": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Headroom": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "SyncSelect1": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "TempoSync1": {
+            "id": 10,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Jet Mod",
+            "Rate": 0.3999999761581421,
+            "Width": 0.3999999761581421,
+            "Manual": 0.3999999761581421,
+            "Regen": 1.0,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "Headroom": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_min": {
+            "name": "Light Swirl",
+            "Rate": 0.19000005722045898,
+            "Width": 0.3999999761581421,
+            "Manual": 0.4099999666213989,
+            "Regen": 0.4700000286102295,
+            "Mix": 0.36000001430511475,
+            "Level": 0.0,
+            "Headroom": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_min_y_max": {
+            "name": "Classic",
+            "Rate": 0.15999996662139893,
+            "Width": 0.7799999713897705,
+            "Manual": 0.7699999809265137,
+            "Regen": 0.559999942779541,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "Headroom": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_min": {
+            "name": "Whoosh",
+            "Rate": 0.1499999761581421,
+            "Width": 0.8999999761581421,
+            "Manual": 0.2999999523162842,
+            "Regen": 0.6000000238418579,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "Headroom": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        },
+        "x_max_y_max": {
+            "name": "Crash",
+            "Rate": 0.3999999761581421,
+            "Width": 0.6000000238418579,
+            "Manual": 0.20000004768371582,
+            "Regen": 0.7999999523162842,
+            "Mix": 0.5,
+            "Level": 0.0,
+            "Headroom": 0.0,
+            "SyncSelect1": 6,
+            "TempoSync1": false
+        }
+    }
+}

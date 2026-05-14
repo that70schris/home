@@ -1,0 +1,13 @@
+{
+    "category": "eq",
+    "model_id": 279,
+    "model_sym": "ModelID::kEQSimple3BandMono",
+    "display_name": "Simple EQ",
+    "parameters-en": {
+        "Low Gain": "Adjusts the gain of the low-frequency band.",
+        "Mid Freq": "Sets the frequency for the mid-frequency band.",
+        "Mid Gain": "Adjusts the gain of the mid-frequency band.",
+        "High Gain": "Adjusts the gain of the high-frequency band.",
+        "Level": "Sets the overall level or gain of the equalizer."
+    }
+}

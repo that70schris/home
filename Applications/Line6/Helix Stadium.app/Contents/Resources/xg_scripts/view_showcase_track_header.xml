@@ -1,0 +1,43 @@
+
+<xg>
+    <panel_widget class="P35ShowcaseTrackHeaderWidget" height="40" id="1" left="0" top="0" width="240">
+        <bg_color>0xFF363636</bg_color>
+        <border_color>0xFF1E1E1E</border_color>
+        <corner_radius>2</corner_radius>
+        <text_edit_widget height="20" id="tnam" left="8" top="10" width="160">
+            <anchor_pos left="8"/>
+            <relative_pos y="50"/>
+            <bg_color>0x00000000</bg_color>
+            <text>
+                <label>Rhythm Guitar</label>
+                <font name="Inter Display" size="14"/>
+                <text_color>0xFFDEDEDE</text_color>
+            </text>
+            <text_limit>24</text_limit>
+        </text_edit_widget>
+        <pushbutton_widget height="24" id="tdel" left="172" top="8" width="24">
+            <bg_color>0x00424242</bg_color>
+            <icon height="24" width="24">215</icon>
+            <icon_placement spacing="4">0</icon_placement>
+            <text>
+                <font name="Inter Display" size="12"/>
+                <text_color>0xFFD6D6D6</text_color>
+            </text>
+            <active_state>
+                <bg_color>0x00797979</bg_color>
+                <fg_color>0xFFFFFFFF</fg_color>
+            </active_state>
+            <hilite_state>
+                <bg_color>0x005E5E5E</bg_color>
+                <fg_color>0xFFEBEBEB</fg_color>
+            </hilite_state>
+        </pushbutton_widget>
+        <image_widget height="28" id="rord" left="204" top="6" width="28">
+            <anchor_pos right="8"/>
+            <relative_pos y="50"/>
+            <bg_color>0x00000000</bg_color>
+            <image>219</image>
+            <scale_mode>keep_aspect</scale_mode>
+        </image_widget>
+    </panel_widget>
+</xg>

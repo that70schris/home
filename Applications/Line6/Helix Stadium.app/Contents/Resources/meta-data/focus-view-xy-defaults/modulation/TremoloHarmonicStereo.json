@@ -1,0 +1,121 @@
+{
+    "modelName": "Harmonic Tremolo",
+    "params": {
+        "Speed": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Intensity": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "WaveShape": {
+            "id": 3,
+            "behavior": "quantize"
+        },
+        "DutyCycle": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "BassFreq": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "TrebFreq": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Spread": {
+            "id": 9,
+            "behavior": "interpolate"
+        },
+        "TempoSync1": {
+            "id": 12,
+            "behavior": "quantize"
+        },
+        "SyncSelect1": {
+            "id": 20,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Harm Chew",
+            "Speed": 1.9000000953674316,
+            "Intensity": 0.7599999904632568,
+            "WaveShape": 3,
+            "DutyCycle": 0.5,
+            "BassFreq": 334.0,
+            "TrebFreq": 1200.0,
+            "Level": 0.0,
+            "Mix": 1.0,
+            "Spread": 0.5,
+            "TempoSync1": false,
+            "SyncSelect1": 6
+        },
+        "x_min_y_min": {
+            "name": "Subtle Move",
+            "Speed": 2.0,
+            "Intensity": 0.5,
+            "WaveShape": 3,
+            "DutyCycle": 0.5,
+            "BassFreq": 381.0,
+            "TrebFreq": 276.0,
+            "Level": 0.0,
+            "Mix": 1.0,
+            "Spread": 0.5,
+            "TempoSync1": false,
+            "SyncSelect1": 6
+        },
+        "x_min_y_max": {
+            "name": "Harm Medium",
+            "Speed": 2.5999999046325684,
+            "Intensity": 0.48000001907348633,
+            "WaveShape": 3,
+            "DutyCycle": 0.5,
+            "BassFreq": 381.0,
+            "TrebFreq": 1100.0,
+            "Level": 0.0,
+            "Mix": 1.0,
+            "Spread": 0.53,
+            "TempoSync1": false,
+            "SyncSelect1": 6
+        },
+        "x_max_y_min": {
+            "name": "Harm Heavy",
+            "Speed": 4.099999904632568,
+            "Intensity": 0.8799999952316284,
+            "WaveShape": 2,
+            "DutyCycle": 0.5,
+            "BassFreq": 381.0,
+            "TrebFreq": 1100.0,
+            "Level": 0.0,
+            "Mix": 1.0,
+            "Spread": 0.34,
+            "TempoSync1": false,
+            "SyncSelect1": 6
+        },
+        "x_max_y_max": {
+            "name": "Broke",
+            "Speed": 6.0,
+            "Intensity": 0.9700000286102295,
+            "WaveShape": 4,
+            "DutyCycle": 0.43000006675720215,
+            "BassFreq": 381.0,
+            "TrebFreq": 1100.0,
+            "Level": 0.0,
+            "Mix": 1.0,
+            "Spread": 0.89,
+            "TempoSync1": false,
+            "SyncSelect1": 6
+        }
+    }
+}

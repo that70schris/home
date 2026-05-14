@@ -1,0 +1,236 @@
+{
+  "id": [
+    "0x00260000"
+  ],
+  "ver": "0x12000000"
+}
+{
+    "Undefined":{
+      "id": 0,
+      "commands": {
+      }
+    },
+    "PresetSnapshot":{
+      "id": 1,
+      "params": {
+        "Action":   {"id": 0, "type": "i", "def": 0, "min": 0, "max": 3},
+        "Command":  {"id": 1, "type": "i", "def": 0, "min": 0, "max": 7},
+        "Setlist":  {"id": 2, "type": "i", "def": 0, "min": 0, "max": 1024},
+        "Preset":   {"id": 3, "type": "i", "def": 0, "min": 0, "max": 1024},
+        "Snapshot": {"id": 4, "type": "i", "def": 0, "min": 0, "max": 7}
+        }
+    },
+    "PresetSnapshot-Instant":{
+      "id": 10,
+      "params": {
+        "Command":  {"id": 0, "type": "i", "def": 0, "min": 0, "max": 7},
+        "Setlist":  {"id": 1, "type": "i", "def": 0, "min": 0, "max": 1024},
+        "Preset":   {"id": 2, "type": "i", "def": 0, "min": 0, "max": 1024},
+        "Snapshot": {"id": 3, "type": "i", "def": 0, "min": 0, "max": 7},
+        "Wait":     {"id": 4, "type": "i", "def": 0, "min": 0, "max": 1000}
+      }
+    },
+    "PresetSnapshot-Drum":{
+      "id": 11,
+      "params": {
+        "Action":   {"id": 0, "type": "i", "def": 0, "min": 0, "max": 1},
+        "Command":  {"id": 1, "type": "i", "def": 0, "min": 0, "max": 7},
+        "Setlist":  {"id": 2, "type": "i", "def": 0, "min": 0, "max": 1024},
+        "Preset":   {"id": 3, "type": "i", "def": 0, "min": 0, "max": 1024},
+        "Snapshot": {"id": 4, "type": "i", "def": 0, "min": 0, "max": 7}
+        }
+    },
+    "Song":{
+      "id": 2,
+      "params": {
+        "Action": {"id": 0, "type": "i", "def": 0, "min": 0, "max": 3},
+        "Command":{"id": 1, "type": "i", "def": 0, "min": 0, "max": 6}
+      }
+    },
+    "Song-Instant":{
+      "id": 20,
+      "params": {
+        "Command":{"id": 0, "type": "i", "def": 0, "min": 0, "max": 6},
+        "Wait":   {"id": 1, "type": "i", "def": 0, "min": 0, "max": 1000}
+      }
+    },
+    "Song-Drum":{
+      "id": 21,
+      "params": {
+        "Action": {"id": 0, "type": "i", "def": 0, "min": 0, "max": 1},
+        "Command":{"id": 1, "type": "i", "def": 0, "min": 0, "max": 6}
+      }
+    },
+    "Looper":{
+      "id": 3,
+      "params": {
+        "Action": {"id": 0, "type": "i", "def": 0, "min": 0, "max": 3},
+        "Command":{"id": 1, "type": "i", "def": 0, "min": 0, "max": 6}
+      }
+    },
+    "Looper-Instant":{
+      "id": 30,
+      "params": {
+        "Command":{"id": 0, "type": "i", "def": 0, "min": 0, "max": 6},
+        "Wait":   {"id": 1, "type": "i", "def": 0, "min": 0, "max": 1000}
+      }
+    },
+    "Looper-Drum":{
+      "id": 31,
+      "params": {
+        "Action": {"id": 0, "type": "i", "def": 0, "min": 0, "max": 1},
+        "Command":{"id": 1, "type": "i", "def": 0, "min": 0, "max": 6}
+      }
+    },
+    "Utility":{
+      "id": 4,
+      "params": {
+        "Action":     {"id": 0, "type": "i", "def": 0, "min": 0, "max": 3},
+        "Command":    {"id": 1, "type": "i", "def": 0, "min": 0, "max": 2},
+        "Level Trim": {"id": 2, "type": "f", "def": 0.0, "min": -20.0, "max": 20.0}
+      }
+    },
+    "Utility-Instant":{
+      "id": 40,
+      "params": {
+        "Command":    {"id": 0, "type": "i", "def": 0, "min": 0, "max": 2},
+        "Level Trim": {"id": 1, "type": "f", "def": 0.0, "min": -20.0, "max": 20.0},
+        "Wait":       {"id": 2, "type": "i", "def": 0, "min": 0, "max": 1000}
+      }
+    },
+    "Utility-Drum":{
+      "id": 41,
+      "params": {
+        "Action":     {"id": 0, "type": "i", "def": 0, "min": 0, "max": 1},
+        "Command":    {"id": 1, "type": "i", "def": 0, "min": 0, "max": 2},
+        "Level Trim": {"id": 2, "type": "f", "def": 0.0, "min": -20.0, "max": 20.0}
+      }
+    },
+    "ExtAmp":{
+      "id": 5,
+      "params": {
+        "Action": {"id": 0, "type": "i", "def": 0, "min": 0, "max": 3},
+        "Select": {"id": 1, "type": "i", "def": 0, "min": 0, "max": 5},
+        "toggle": {"id": 2, "type": "b", "def": true, "min": false, "max": true}
+      }
+    },
+    "ExtAmp-Instant":{
+      "id": 50,
+      "params": {
+        "Select": {"id": 0, "type": "i", "def": 0, "min": 0, "max": 5},
+        "State": {"id": 1, "type": "i", "def": 1, "min": 0, "max": 1},
+        "Wait":   {"id": 2, "type": "i", "def": 0, "min": 0, "max": 1000}
+      }
+    },
+    "ExtAmp-Drum":{
+      "id": 51,
+      "params": {
+        "Action": {"id": 0, "type": "i", "def": 0, "min": 0, "max": 1},
+        "Select": {"id": 1, "type": "i", "def": 0, "min": 0, "max": 5},
+        "toggle": {"id": 2, "type": "b", "def": true, "min": false, "max": true}
+      }
+    },
+    "MIDI-Instant":{
+      "id": 60,
+      "params": {
+        "Command": {"id": 0, "type": "i", "def": 0, "min": 0, "max": 3},
+        "MIDI Ch": {"id": 1, "type": "i", "def": 1, "min": 1, "max": 16},
+        "MSB":     {"id": 2, "type": "i", "def": -1, "min": -1, "max": 127},
+        "LSB":     {"id": 3, "type": "i", "def": -1, "min": -1, "max": 127},
+        "PC":      {"id": 4, "type": "i", "def": -1, "min": -1, "max": 127},
+        "CC#":     {"id": 5, "type": "i", "def": 0, "min": 0, "max": 127},
+        "Value":   {"id": 6, "type": "i", "def": 0, "min": 0, "max": 127},
+        "Note":    {"id": 7, "type": "i", "def": 0, "min": 0, "max": 127},
+        "Velocity":{"id": 8, "type": "i", "def": 0, "min": 0, "max": 127},
+        "NoteOff": {"id": 9, "type": "i", "def": 1, "min": 0, "max": 1},
+        "Message": {"id": 10, "type": "i", "def": 0, "min": 0, "max": 7},
+        "Wait":   {"id": 11, "type": "i", "def": 0, "min": 0, "max": 1000}
+      }
+    },
+    "MIDI-FS":{
+      "id": 61,
+      "params": {
+        "Action":  {"id": 0, "type": "i", "def": 0, "min": 0, "max": 3},
+        "Command": {"id": 1, "type": "i", "def": 0, "min": 0, "max": 3},
+        "MIDI Ch": {"id": 2, "type": "i", "def": 1, "min": 1, "max": 16},
+        "MSB":     {"id": 3, "type": "i", "def": -1, "min": -1, "max": 127},
+        "LSB":     {"id": 4, "type": "i", "def": -1, "min": -1, "max": 127},
+        "PC":      {"id": 5, "type": "i", "def": -1, "min": -1, "max": 127},
+        "CC#":     {"id": 6, "type": "i", "def": 0, "min": 0, "max": 127},
+        "Value":   {"id": 7, "type": "i", "def": 0, "min": 0, "max": 127},
+        "Note":    {"id": 8, "type": "i", "def": 0, "min": 0, "max": 127},
+        "Velocity":{"id": 9, "type": "i", "def": 0, "min": 0, "max": 127},
+        "NoteOff": {"id": 10, "type": "i", "def": 1, "min": 0, "max": 1},
+        "Message": {"id": 11, "type": "i", "def": 0, "min": 0, "max": 7}
+      }
+    },
+    "MIDI-Exp":{
+      "id": 62,
+      "params": {
+        "MIDI Ch": {"id": 0, "type": "i", "def": 1, "min": 1, "max": 16},
+        "CC#":     {"id": 1, "type": "i", "def": 0, "min": 0, "max": 127},
+        "Min Value": {"id": 2, "type": "i", "def": 0, "min": 0, "max": 127},
+        "Max Value": {"id": 3, "type": "i", "def": 127, "min": 0, "max": 127},
+        "Curve": {"id": 4, "type": "i", "def": 5, "min": 0, "max": 10},
+        "Value": {"id": 5, "type": "i", "def": 0, "min": 0, "max": 127}
+      }
+    },
+    "MIDI-Drum":{
+      "id": 63,
+      "params": {
+        "Action":  {"id": 0, "type": "i", "def": 0, "min": 0, "max": 1},
+        "Command": {"id": 1, "type": "i", "def": 0, "min": 0, "max": 3},
+        "MIDI Ch": {"id": 2, "type": "i", "def": 1, "min": 1, "max": 16},
+        "MSB":     {"id": 3, "type": "i", "def": -1, "min": -1, "max": 127},
+        "LSB":     {"id": 4, "type": "i", "def": -1, "min": -1, "max": 127},
+        "PC":      {"id": 5, "type": "i", "def": -1, "min": -1, "max": 127},
+        "CC#":     {"id": 6, "type": "i", "def": 0, "min": 0, "max": 127},
+        "Value":   {"id": 7, "type": "i", "def": 0, "min": 0, "max": 127},
+        "Note":    {"id": 8, "type": "i", "def": 0, "min": 0, "max": 127},
+        "Velocity":{"id": 9, "type": "i", "def": 0, "min": 0, "max": 127},
+        "NoteOff": {"id": 10, "type": "i", "def": 1, "min": 0, "max": 1},
+        "Message": {"id": 11, "type": "i", "def": 0, "min": 0, "max": 7}
+      }
+    },
+    "MIDI-XY":{
+      "id": 63,
+      "params": {
+        "MIDI Ch": {"id": 0, "type": "i", "def": 1, "min": 1, "max": 16},
+        "CC#":     {"id": 1, "type": "i", "def": 0, "min": 0, "max": 127},
+        "Min Value": {"id": 2, "type": "i", "def": 0, "min": 0, "max": 127},
+        "Max Value": {"id": 3, "type": "i", "def": 127, "min": 0, "max": 127},
+        "Curve": {"id": 4, "type": "i", "def": 5, "min": 0, "max": 10},
+        "Value": {"id": 5, "type": "i", "def": 0, "min": 0, "max": 127}
+      }
+    },
+    "HotKey":{
+      "id": 7,
+      "params": {
+        "Action":     {"id": 0, "type": "i", "def": 0, "min": 0, "max": 3},
+        "Modifier 1": {"id": 1, "type": "i", "def": 0, "min": 0, "max": 4},
+        "Modifier 2": {"id": 2, "type": "i", "def": 0, "min": 0, "max": 4},
+        "Modifier 3": {"id": 3, "type": "i", "def": 0, "min": 0, "max": 4},
+        "Keystroke":  {"id": 4, "type": "i", "def": 0, "min": 0, "max": 99}
+      }
+    },
+    "HotKey-Instant":{
+      "id": 70,
+      "params": {
+        "Modifier 1": {"id": 0, "type": "i", "def": 0, "min": 0, "max": 4},
+        "Modifier 2": {"id": 1, "type": "i", "def": 0, "min": 0, "max": 4},
+        "Modifier 3": {"id": 2, "type": "i", "def": 0, "min": 0, "max": 4},
+        "Keystroke":  {"id": 3, "type": "i", "def": 0, "min": 0, "max": 99},
+        "Wait":       {"id": 4, "type": "i", "def": 0, "min": 0, "max": 1000}
+      }
+    },
+    "HotKey-Drum":{
+      "id": 71,
+      "params": {
+        "Action":     {"id": 0, "type": "i", "def": 0, "min": 0, "max": 1},
+        "Modifier 1": {"id": 1, "type": "i", "def": 0, "min": 0, "max": 4},
+        "Modifier 2": {"id": 2, "type": "i", "def": 0, "min": 0, "max": 4},
+        "Modifier 3": {"id": 3, "type": "i", "def": 0, "min": 0, "max": 4},
+        "Keystroke":  {"id": 4, "type": "i", "def": 0, "min": 0, "max": 99}
+      }
+    }
+}

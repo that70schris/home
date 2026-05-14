@@ -1,0 +1,21 @@
+{
+    "category": "dynamics",
+    "model_id": 474,
+    "model_sym": "ModelID::kFeedbackSim",
+    "display_name": "Feedbacker",
+    "parameters-en": {
+        "Fdbk Gain": "Controls the amount of feedback. At higher settings, can easily overwhelm your guitar signal; at lower settings, the feedback can better \"sit\" between chords. WARNING! Be careful, as this effect can quickly go off the rails, just like real feedback. Consider assigning it to a momentary stomp so feedback only appears while you hold the switch.",
+        "Fdbk Type": "Determines the type of the feedback generated. For Mid to Low (or High to Low), feedback starts on the highest harmonic below 500 Hz (or 1200 Hz) and descends to lower harmonics. Rndm Onset harmonics are selected randomly every time a new note or chord is detected. Rndm Trigger harmonics are selected randomly every time Retrigger is set to \"Trigger.\"",
+        "Attack": "Controls how quickly feedback appears.",
+        "Release": "Controls how quickly each harmonic dies out or transitions to a different one. At higher values, you may hear more than one harmonic as they transition.",
+        "Dry Kill": "Determines what happens to the dry signal: Off-The dry signal is controlled by the Dry Level parameter but is unaffected when the block is turned on. On-The dry signal is muted when the block is turned on. Always-The dry signal is muted from the entire path, regardless of whether the block is on or off. Use this setting only when Feedbacker is on a parallel path.",
+        "Dry Level": "Adjusts the amount of dry signal through the Feedbacker block.",
+        "Reference": "Determines which note within a chord is referenced by the feedback. \"Lowest\" prioritizes a chord's lowest-pitched note while \"Loudest\" prioritizes the loudest note in the chord.",
+        "Silence Thr": "Adjusts the level threshold above which feedback is generated. Below this level, no feedback is generated.",
+        "Onset Thr": "When Feedback Type is set to Rndm Offset, sets the threshold of onsets (plucks) that cause changes to the feedback note. Lower values increase sensitivity to plucking and strumming and higher values reduce sensitivity.",
+        "Offset Thr": "Rapid drops in the signal level by this amount will quickly kill the feedback to prevent warbling.",
+        "Retrigger": "Meant to be assigned to a Stomp switch. Every time you press the switch, the feedback changes, depending on the type of mode: Mid to Low or High to Low-Feedback descends to lower harmonics. Rndm Trigger or Rndm Offset-Feedback randomly chooses a different harmonic. All other modes-Feedback regenerates at the mode's selected frequency.",
+        "Trails": "Determines whether feedback continues to ring out (for the duration of the Release parameter) after the block is bypassed.",
+        "Enable": ""
+    }
+}

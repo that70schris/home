@@ -1,0 +1,76 @@
+{
+    "modelName": "Megaphone",
+    "params": {
+        "Grit": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Tone": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Focus": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Space": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 6,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Test 2",
+            "Grit": 0.7599999904632568,
+            "Tone": 0.5,
+            "Focus": 0.6499999761581421,
+            "Space": 0.4000000059604645,
+            "Mix": 0.7900000214576721,
+            "Level": 0.7699999809265137
+        },
+        "x_min_y_min": {
+            "name": "Bit Crispy",
+            "Grit": 0.9300000071525574,
+            "Tone": 0.3799999952316284,
+            "Focus": 0.23999999463558197,
+            "Space": 0.7200000286102295,
+            "Mix": 0.30000001192092896,
+            "Level": 0.6299999952316284
+        },
+        "x_min_y_max": {
+            "name": "911 Dispatch",
+            "Grit": 0.25999999046325684,
+            "Tone": 0.6200000047683716,
+            "Focus": 1.0,
+            "Space": 0.5299999713897705,
+            "Mix": 0.75,
+            "Level": 0.7799999713897705
+        },
+        "x_max_y_min": {
+            "name": "Stuffed Nose",
+            "Grit": 0.05999999865889549,
+            "Tone": 0.47999998927116394,
+            "Focus": 0.9200000166893005,
+            "Space": 0.0,
+            "Mix": 1.0,
+            "Level": 0.8700000047683716
+        },
+        "x_max_y_max": {
+            "name": "Mall Intercom",
+            "Grit": 0.09000000357627869,
+            "Tone": 0.9100000262260437,
+            "Focus": 0.7599999904632568,
+            "Space": 0.7200000286102295,
+            "Mix": 0.8999999761581421,
+            "Level": 0.8299999833106995
+        }
+    }
+}

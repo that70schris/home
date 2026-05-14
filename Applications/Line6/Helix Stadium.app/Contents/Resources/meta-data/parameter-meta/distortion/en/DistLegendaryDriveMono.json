@@ -1,0 +1,14 @@
+{
+    "category": "distortion",
+    "model_id": 380,
+    "model_sym": "ModelID::kDistLegendaryDriveMono",
+    "display_name": "Legendary Drive",
+    "parameters-en": {
+        "Drive": "Controls the amount of distortion applied to the signal.",
+        "Bass": "Controls the low frequency EQ of the distortion.",
+        "Mid": "Controls the midrange frequency EQ of the distortion.",
+        "Treble": "Controls the high frequency EQ of the distortion.",
+        "Presence": "Adds a bit more high end sparkle to clean sounds and allows for driven signals to cut through a mix. At lower levels, provides thicker and warmer sounds.",
+        "Level": "Controls the overall level of the block."
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "category": "modulation",
+    "model_id": 206,
+    "model_sym": "ModelID::kMM4RingModulator",
+    "display_name": "Ring Modulator",
+    "parameters-en": {
+        "Freq": "Controls the frequency of the ring modulation.",
+        "Depth": "Controls the depth or intensity of the modulation.",
+        "Shape": "Adjusts the shape of the modulation from sine (0%) to square (100%).",
+        "AM/FM": "Controls the blend between AM (Amplitude Modulation) at 0% to FM (Frequency Modulation) at 100%.",
+        "Mix": "Controls the blend between the modulation effect and the dry signal. At 0%, no modulation is heard; at 100%, no dry signal is heard.",
+        "Level": "Sets the overall level of the block.",
+        "TempoSync1": ""
+    }
+}

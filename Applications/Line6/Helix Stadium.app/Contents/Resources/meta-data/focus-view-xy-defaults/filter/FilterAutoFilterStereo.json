@@ -1,0 +1,121 @@
+{
+    "modelName": "Autofilter",
+    "params": {
+        "Mode": {
+            "id": 1,
+            "behavior": "quantize"
+        },
+        "FilterGain": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "FilterQ": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Sens": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Attack": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Decay": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Frequency": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "FreqDepth": {
+            "id": 8,
+            "behavior": "interpolate"
+        },
+        "Direction": {
+            "id": 9,
+            "behavior": "quantize"
+        },
+        "Mix": {
+            "id": 10,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 11,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Funkeee!",
+            "Mode": 2,
+            "FilterGain": 11.9,
+            "FilterQ": 6.2,
+            "Sens": 0.24,
+            "Attack": 0.005,
+            "Decay": 1.292,
+            "Frequency": 355.0,
+            "FreqDepth": 3800.0,
+            "Direction": true,
+            "Mix": 1.0,
+            "Level": 0.0
+        },
+        "x_min_y_min": {
+            "name": "Quackers",
+            "Mode": 1,
+            "FilterGain": 20.7,
+            "FilterQ": 3.5,
+            "Sens": 0.58,
+            "Attack": 0.285,
+            "Decay": 1.112,
+            "Frequency": 386.0,
+            "FreqDepth": 3100.0,
+            "Direction": true,
+            "Mix": 0.98,
+            "Level": 0.0
+        },
+        "x_min_y_max": {
+            "name": "Petee F",
+            "Mode": 2,
+            "FilterGain": 18.0,
+            "FilterQ": 7.5,
+            "Sens": 0.35,
+            "Attack": 0.145,
+            "Decay": 1.16,
+            "Frequency": 325.0,
+            "FreqDepth": 5600.0,
+            "Direction": true,
+            "Mix": 1.0,
+            "Level": 0.0
+        },
+        "x_max_y_min": {
+            "name": "Wow Filter",
+            "Mode": 0,
+            "FilterGain": 17.6,
+            "FilterQ": 2.1,
+            "Sens": 0.47,
+            "Attack": 0.113,
+            "Decay": 1.388,
+            "Frequency": 303.0,
+            "FreqDepth": 5700.0,
+            "Direction": true,
+            "Mix": 0.98,
+            "Level": 0.0
+        },
+        "x_max_y_max": {
+            "name": "Auto Wahhh",
+            "Mode": 1,
+            "FilterGain": 16.6,
+            "FilterQ": 4.7,
+            "Sens": 0.3,
+            "Attack": 0.31,
+            "Decay": 1.725,
+            "Frequency": 20.0,
+            "FreqDepth": 8200.0,
+            "Direction": true,
+            "Mix": 1.0,
+            "Level": 0.0
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "category": "distortion",
+    "model_id": 236,
+    "model_sym": "ModelID::kDistDeezOneModStereo",
+    "display_name": "Deez One Mod",
+    "parameters-en": {
+        "Drive": "Controls the amount of distortion applied to the signal.",
+        "Tone": "Controls the overall tonal balance of the distortion. Lower values are darker and higher values are brighter.",
+        "Level": "Sets the overall level of the block.",
+        "Clipping": "Selects the type of clipping. Symmetric results in a bit more compression, sustain, and distortion. Asymmetric results in a bit more clarity and less compression."
+    }
+}

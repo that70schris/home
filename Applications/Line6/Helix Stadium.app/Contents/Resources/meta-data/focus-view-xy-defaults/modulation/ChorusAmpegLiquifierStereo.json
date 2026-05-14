@@ -1,0 +1,103 @@
+{
+    "modelName": "Ampeg Liquifier",
+    "params": {
+        "Rate": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Depth": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Mix": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Level": {
+            "id": 4,
+            "behavior": "interpolate"
+        },
+        "Headroom": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "Mode": {
+            "id": 6,
+            "behavior": "quantize"
+        },
+        "Spread": {
+            "id": 7,
+            "behavior": "interpolate"
+        },
+        "TempoSync1": {
+            "id": 25,
+            "behavior": "quantize"
+        },
+        "SyncSelect1": {
+            "id": 26,
+            "behavior": "quantize"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Lush and Wide",
+            "Rate": 0.559999942779541,
+            "Depth": 0.559999942779541,
+            "Mix": 0.46000003814697266,
+            "Level": 0.0,
+            "Headroom": 6.0,
+            "Mode": true,
+            "Spread": 1.0,
+            "TempoSync1": false,
+            "SyncSelect1": 6
+        },
+        "x_min_y_min": {
+            "name": "Subtle Texture",
+            "Rate": 0.2799999713897705,
+            "Depth": 0.1499999761581421,
+            "Mix": 0.15999996662139893,
+            "Level": 0.0,
+            "Headroom": 4.5,
+            "Mode": false,
+            "Spread": 0.2200000286102295,
+            "TempoSync1": false,
+            "SyncSelect1": 6
+        },
+        "x_min_y_max": {
+            "name": "Slower Chorus",
+            "Rate": 0.309999942779541,
+            "Depth": 0.8399999141693115,
+            "Mix": 0.7100000381469727,
+            "Level": 0.0,
+            "Headroom": 9.0,
+            "Mode": false,
+            "Spread": 0.6600000858306885,
+            "TempoSync1": false,
+            "SyncSelect1": 6
+        },
+        "x_max_y_min": {
+            "name": "Faster Chorus",
+            "Rate": 0.8799999952316284,
+            "Depth": 0.5,
+            "Mix": 0.6499999761581421,
+            "Level": 0.0,
+            "Headroom": 1.0,
+            "Mode": true,
+            "Spread": 0.7899999618530273,
+            "TempoSync1": false,
+            "SyncSelect1": 6
+        },
+        "x_max_y_max": {
+            "name": "Is It Broken?",
+            "Rate": 0.7899999618530273,
+            "Depth": 1.0,
+            "Mix": 0.7999999523162842,
+            "Level": 0.0,
+            "Headroom": -8.0,
+            "Mode": true,
+            "Spread": 1.0,
+            "TempoSync1": false,
+            "SyncSelect1": 6
+        }
+    }
+}

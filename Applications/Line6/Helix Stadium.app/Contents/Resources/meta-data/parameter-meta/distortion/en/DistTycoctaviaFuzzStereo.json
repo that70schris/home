@@ -1,0 +1,10 @@
+{
+    "category": "distortion",
+    "model_id": 174,
+    "model_sym": "ModelID::kDistTycoctaviaFuzzStereo",
+    "display_name": "Tycoctavia Fuzz",
+    "parameters-en": {
+        "Fuzz": "Controls the amount of fuzz applied to the signal.",
+        "Level": "Sets the overall level of the block."
+    }
+}

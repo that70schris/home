@@ -1,0 +1,12 @@
+{
+    "category": "filter",
+    "model_id": 39,
+    "model_sym": "ModelID::kFilterVocoderFilterBankMono",
+    "display_name": "Vocoder",
+    "parameters-en": {
+        "Mod Gain": "Controls the gain of the modulator signal. Select the modulator input with the Sidechain parameter.",
+        "Attack": "Controls how quickly the vocoder responds to changes in the modulator signal.",
+        "Decay": "Controls how quickly the vocoder sound fades from its peak level.",
+        "Level": "Sets the overall level of the block."
+    }
+}

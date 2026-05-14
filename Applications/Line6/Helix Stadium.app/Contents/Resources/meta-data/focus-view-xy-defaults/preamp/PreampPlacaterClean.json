@@ -1,0 +1,85 @@
+{
+    "modelName": "Placater Clean",
+    "params": {
+        "Drive": {
+            "id": 1,
+            "behavior": "interpolate"
+        },
+        "Bass": {
+            "id": 2,
+            "behavior": "interpolate"
+        },
+        "Treble": {
+            "id": 3,
+            "behavior": "interpolate"
+        },
+        "Bright": {
+            "id": 4,
+            "behavior": "quantize"
+        },
+        "Master": {
+            "id": 5,
+            "behavior": "interpolate"
+        },
+        "ChVol": {
+            "id": 6,
+            "behavior": "interpolate"
+        },
+        "Sag": {
+            "id": 7,
+            "behavior": "interpolate"
+        }
+    },
+    "regions": {
+        "origin": {
+            "name": "Hairy",
+            "Drive": 0.559999942779541,
+            "Bass": 0.3400000333786011,
+            "Treble": 0.6399999856948853,
+            "Bright": 2,
+            "Master": 1.0,
+            "ChVol": 0.8199999332427979,
+            "Sag": 0.5
+        },
+        "x_min_y_min": {
+            "name": "Spanky",
+            "Drive": 0.3400000333786011,
+            "Bass": 0.28999996185302734,
+            "Treble": 0.6399999856948853,
+            "Bright": 1,
+            "Master": 1.0,
+            "ChVol": 0.8899999856948853,
+            "Sag": 0.5
+        },
+        "x_min_y_max": {
+            "name": "Jazzy",
+            "Drive": 0.2999999523162842,
+            "Bass": 0.36000001430511475,
+            "Treble": 0.4099999666213989,
+            "Bright": 0,
+            "Master": 1.0,
+            "ChVol": 0.8999999761581421,
+            "Sag": 0.5
+        },
+        "x_max_y_min": {
+            "name": "Crunchy",
+            "Drive": 0.75,
+            "Bass": 0.3700000047683716,
+            "Treble": 0.9200000762939453,
+            "Bright": 1,
+            "Master": 1.0,
+            "ChVol": 0.7899999618530273,
+            "Sag": 0.48000001907348633
+        },
+        "x_max_y_max": {
+            "name": "Punchy",
+            "Drive": 1.0,
+            "Bass": 0.3999999761581421,
+            "Treble": 0.9200000762939453,
+            "Bright": 2,
+            "Master": 1.0,
+            "ChVol": 0.7899999618530273,
+            "Sag": 0.48000001907348633
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "category": "distortion",
+    "model_id": 249,
+    "model_sym": "ModelID::kDistPocketFuzzStereo",
+    "display_name": "Pocket Fuzz",
+    "parameters-en": {
+        "Drive": "Controls the amount of fuzz applied to the signal.",
+        "Level": "Sets the overall level of the block."
+    }
+}
