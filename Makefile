@@ -19,17 +19,6 @@ cluster:
 		--tls-san=berry.local \
 		--tls-san=berry \
 
-gh:
-	gh auth login \
-	--git-protocol ssh \
-	--hostname github.com \
-	--clipboard \
-	--web \
-
-git:
-	-git init
-	-git remote add origin git@github.com:that70schris/-
-
 # full disk access
 fetch:
 	git fetch
