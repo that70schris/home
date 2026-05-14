@@ -22,4 +22,4 @@ git submodule update --init --recursive
 
 brew bundle install --global
 kiro-cli integrations install input-method
-make starship
+make shipstar
