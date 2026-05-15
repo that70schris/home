@@ -67,30 +67,33 @@ export class _Cluster {
   //   },
   // })
 
-  twingate = new Chart('twingate', {
-    chart: 'oci://ghcr.io/twingate/helmcharts/twingate-operator',
-    values: {
-      twingateOperator: {
-        remoteNetworkId: _TwingateResource.remote.id,
-        apiKey: _TwingateResource.config.get('apiToken'),
-        network: _TwingateResource.network,
-      },
-      gateway: {
-        enabled: true,
-        twingate: {
-          network: _TwingateResource.remote.id,
-          resource: {
-            enabled: true,
-            extraAnnotations: {
-              // 'resource.twingate.com/address': '192.168.0.5',
-              // 'resource.twingate.com/alias': 'berry.local',
-              'resource.twingate.com/name': '_Kuberries',
+  @once
+  get twingate() {
+    return new Chart('twingate', {
+      chart: 'oci://ghcr.io/twingate/helmcharts/twingate-operator',
+      values: {
+        twingateOperator: {
+          remoteNetworkId: _TwingateResource.remote.id,
+          apiKey: _TwingateResource.config.get('apiToken'),
+          network: _TwingateResource.network,
+        },
+        gateway: {
+          enabled: true,
+          twingate: {
+            network: _TwingateResource.remote.id,
+            resource: {
+              enabled: true,
+              extraAnnotations: {
+                // 'resource.twingate.com/address': this.args.ip,
+                // 'resource.twingate.com/alias': this.args.domain,
+                'resource.twingate.com/name': `_${this.name}`,
+              },
             },
           },
         },
       },
-    },
-  })
+    })
+  }
 
   twingate_connector = new _CustomResource(
     'twingate:connector', {
