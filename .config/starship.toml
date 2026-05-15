@@ -173,7 +173,13 @@ $untracked\
 
 [shell]
   disabled = false
-  format = ' > [$indicator]($style)'
+
+  # format = ' > [$indicator]($style)'
+  # format = '  [$indicator]($style)'
+
+  # format = '  [$indicator]($style)'
+  format = '  [$indicator]($style)'
+
   style = 'yellow'
 
 [sudo]
