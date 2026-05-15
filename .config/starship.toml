@@ -63,8 +63,10 @@ palette = 'arcade'
   symbol = ' '
 
 [fill]
-  style = '#999999 bold'
+  style = '#999999'
   symbol = '⎯' #u23af
+  # symbol = '' #uf48b
+  # symbol = '' #ueacc
 
   # consistent:
   # symbol = '‐' #u2010
@@ -76,7 +78,10 @@ palette = 'arcade'
 
   # off center:
   # symbol = '─' #u2500
+  # symbol = '━' #u2501
   # symbol = '' #nf45b
+  # symbol = '﹣' #uFE63
+  # symbol = '－' #uFF0D
 
 [gcloud]
   format = '( $symbol[$project]($style))'
