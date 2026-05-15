@@ -64,7 +64,7 @@ palette = 'arcade'
 
 [fill]
   style = '#999999'
-  # symbol = '⎯' #u23af
+  symbol = '⎯' #u23af
 
   # consistent:
   # symbol = '‐' #u2010
@@ -72,7 +72,7 @@ palette = 'arcade'
   # symbol = '‒' #u2012
   # symbol = '–' #u2013
   # symbol = '—' #u2014
-  symbol = '―' #u2015
+  # symbol = '―' #u2015
 
   # off center:
   # symbol = '─' #u2500
