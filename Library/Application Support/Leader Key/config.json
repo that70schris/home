@@ -113,6 +113,11 @@
           "value" : "/Applications/Slack.app"
         },
         {
+          "key" : "t",
+          "type" : "application",
+          "value" : "/Applications/TablePlus.app"
+        },
+        {
           "key" : "v",
           "type" : "application",
           "value" : "/Applications/Visual Studio Code.app"
