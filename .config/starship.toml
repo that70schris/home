@@ -63,7 +63,7 @@ palette = 'arcade'
   symbol = ' '
 
 [fill]
-  style = '#999999'
+  style = '#999999 bold'
   symbol = '⎯' #u23af
 
   # consistent:
