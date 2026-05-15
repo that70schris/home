@@ -65,10 +65,9 @@ palette = 'arcade'
 [fill]
   style = '#999999'
   symbol = '⎯' #u23af
-  # symbol = '' #uf48b
-  # symbol = '' #ueacc
 
   # consistent:
+  # symbol = '' #ueacc
   # symbol = '‐' #u2010
   # symbol = '‑' #u2011
   # symbol = '‒' #u2012
@@ -80,6 +79,7 @@ palette = 'arcade'
   # symbol = '─' #u2500
   # symbol = '━' #u2501
   # symbol = '' #nf45b
+  # symbol = '' #uf48b
   # symbol = '﹣' #uFE63
   # symbol = '－' #uFF0D
 
