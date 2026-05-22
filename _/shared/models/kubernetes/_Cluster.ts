@@ -4,6 +4,7 @@ import { Chart } from '@pulumi/kubernetes/helm/v4'
 import { Config, ResourceOptions } from '@pulumi/pulumi'
 import { _CustomResource, _Ingress, _Kube } from '.'
 import { once } from '../../decorators'
+import { _Record } from '../cloudflare'
 import { _TwingateResource } from '../twingate'
 
 interface ClusterArgs {
@@ -20,6 +21,10 @@ export class _Cluster {
     public opts?: ResourceOptions,
   ) {
 
+    new _Record(this.name, {
+      content: this.args.ip,
+      domain: this.args.domain,
+    })
     // new _TwingateKubernetesResource(`cluster:${name}`, {
     //   address: args.ip ?? `${this.name}.${args.domain}`,
     //   // alias: `${this.name}.${args.domain}`,
@@ -84,8 +89,8 @@ export class _Cluster {
             resource: {
               enabled: true,
               extraAnnotations: {
-                // 'resource.twingate.com/address': this.args.ip,
-                // 'resource.twingate.com/alias': this.args.domain,
+                'resource.twingate.com/address': this.args.ip,
+                'resource.twingate.com/alias': `${this.name}.${this.args.domain}`,
                 'resource.twingate.com/name': `_${this.name}`,
               },
             },
