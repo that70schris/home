@@ -4,7 +4,7 @@
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink"
 >
-  <image href="./stratocaster.svg" />
+  <!-- <image href="./stratocaster.svg" /> -->
 
   <style>
 
@@ -66,8 +66,8 @@
       fill="#FFFFFF"
     />
 
-    <use xlink:href="#knob" x="573" y="735" />
-    <!-- <use xlink:href="#knob" x="370" y="595" /> -->
+    <use xlink:href="#knob" transform="translate(573, 735)" />
+    <!-- <use xlink:href="#knob" transform="translate(370, 595)" /> -->
 
     <!-- <use
       xlink:href="#bracket"
@@ -86,13 +86,11 @@
     />
 
     <g id="pickups" transform="translate(104.59)">
-      <use xlink:href="#pickup" x="0" y="211" />
-      <!-- <use xlink:href="#pickup" x="0" y="381.5" /> -->
+      <use xlink:href="#pickup" transform="translate(0, 211)" />
+      <!-- <use xlink:href="#pickup" transform="translate(0, 381.5)" /> -->
       <use
         xlink:href="#pickup"
-        x="99.3"
-        y="514.2"
-        transform="rotate(10.2)"
+        transform="translate(0, 514.2) rotate(10.2)"
       />
     </g>
 
