@@ -39,6 +39,7 @@ export class _TwingateResource extends TwingateResource {
   }
 
   static groups = {
+    admin: { groupId: 'R3JvdXA6ODE3MTA4' },
     everyone: { groupId: 'R3JvdXA6Mjg1NTA4' },
   }
 

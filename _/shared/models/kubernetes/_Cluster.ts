@@ -25,52 +25,12 @@ export class _Cluster {
       content: this.args.ip,
       domain: this.args.domain,
     })
-    // new _TwingateKubernetesResource(`cluster:${name}`, {
-    //   address: args.ip ?? `${this.name}.${args.domain}`,
-    //   // alias: `${this.name}.${args.domain}`,
-    //   tcp: [
-    //     22,
-    //     6443,
-    //   ],
-    // }, {
-    //   // parent:
-    // })
 
     args.kubes.forEach((kube) => {
       return kube.index
     })
 
   }
-
-  // twingate_connector = new Chart('twingate-connector', {
-  //   chart: 'connector',
-  //   repositoryOpts: {
-  //     repo: 'https://twingate.github.io/helm-charts',
-  //   },
-  //   values: {
-  //     connector: {
-  //       network: _TwingateResource.network,
-  //       accessToken: _TwingateResource.tokens.accessToken,
-  //       refreshToken: _TwingateResource.tokens.refreshToken,
-  //     },
-  //   },
-  // })
-
-  // twingate_gatway = new Chart('twingate-gateway', {
-  //   chart: 'oci://ghcr.io/twingate/helmcharts/gateway',
-  //   values: {
-  //     twingate: {
-  //       network: _TwingateResource.network,
-  //     },
-  //     tls: {
-  //       dnsNames: [
-  //         '195.168.0.5',
-  //         'berry.local',
-  //         'berry',
-  //       ],
-  //     },
-  //   },
-  // })
 
   @once
   get twingate() {
@@ -90,7 +50,7 @@ export class _Cluster {
               enabled: true,
               extraAnnotations: {
                 'resource.twingate.com/address': this.args.ip,
-                'resource.twingate.com/alias': `${this.name}.${this.args.domain}`,
+                'resource.twingate.com/alias': this.args.domain,
                 'resource.twingate.com/name': `_${this.name}`,
               },
             },
@@ -119,27 +79,27 @@ export class _Cluster {
     },
   )
 
-  twingate_role_binding = new _CustomResource(
-    'twingate:role-binding', {
-      apiVersion: 'rbac.authorization.k8s.io/v1',
-      kind: 'ClusterRoleBinding',
-      metadata: {
-        name: 'kuberries',
-      },
-      roleRef: {
-        apiGroup: 'rbac.authorization.k8s.io',
-        kind: 'ClusterRole',
-        name: 'edit',
-      },
-      subjects: [{
-        apiGroup: 'rbac.authorization.k8s.io',
-        name: 'Chris Bailey',
-        kind: 'Group',
-      }],
-    }, {
-      dependsOn: this.twingate,
-    },
-  )
+  // twingate_role_binding = new _CustomResource(
+  //   'twingate:role-binding', {
+  //     apiVersion: 'rbac.authorization.k8s.io/v1',
+  //     kind: 'ClusterRoleBinding',
+  //     metadata: {
+  //       name: 'kuberries',
+  //     },
+  //     roleRef: {
+  //       apiGroup: 'rbac.authorization.k8s.io',
+  //       kind: 'ClusterRole',
+  //       name: 'edit',
+  //     },
+  //     subjects: [{
+  //       apiGroup: 'rbac.authorization.k8s.io',
+  //       name: 'Chris Bailey',
+  //       kind: 'Group',
+  //     }],
+  //   }, {
+  //     dependsOn: this.twingate,
+  //   },
+  // )
 
   twingate_resource_access = new _CustomResource(
     'twingate:resource-access', {
@@ -150,10 +110,10 @@ export class _Cluster {
       },
       spec: {
         resourceRef: {
-          name: '_Kuberries',
+          name: '_berry',
         },
         principalExternalRef: {
-          name: 'Chris Bailey',
+          name: _TwingateResource.groups.admin.groupId,
           type: 'group',
         },
       },

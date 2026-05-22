@@ -3,6 +3,7 @@ cluster:
 		--disable=traefik \
 		--tls-san=192.168.0.5 \
 		--tls-san=berry.bailey.mx \
+		--tls-san=bailey.mx \
 		--tls-san=berry.local \
 		--tls-san=berry \
 
