@@ -63,7 +63,7 @@
   "editor.folding": false,
   "editor.fontFamily": "Monaco Nerd Font, Monaco",
   "editor.fontLigatures": false,
-  "editor.fontSize": 14,
+  "editor.fontSize": 12,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
