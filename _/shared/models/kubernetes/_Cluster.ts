@@ -1,10 +1,9 @@
 import { IngressController } from '@pulumi/kubernetes-ingress-nginx'
-import { Secret } from '@pulumi/kubernetes/core/v1'
+import { Secret, Service } from '@pulumi/kubernetes/core/v1'
 import { Chart } from '@pulumi/kubernetes/helm/v4'
 import { Config, ResourceOptions } from '@pulumi/pulumi'
 import { _CustomResource, _Ingress, _Kube } from '.'
 import { once } from '../../decorators'
-import { _Record } from '../cloudflare'
 import { _TwingateResource } from '../twingate'
 
 interface ClusterArgs {
@@ -21,12 +20,20 @@ export class _Cluster {
     public opts?: ResourceOptions,
   ) {
 
-    new _Record(this.name, {
-      content: this.args.ip,
-      domain: this.args.domain,
-    })
-
     args.kubes.forEach((kube) => {
+      kube.index?.forEach((resource) => {
+        switch (resource.constructor) {
+          case Service:
+            new _TwingateResource(kube.name, {
+              address: `${kube.name}.${kube.metadata.namespace ?? 'default'}.svc.cluster.local`,
+            }, {
+              dependsOn: resource,
+              parent: resource,
+            })
+            break
+        }
+      })
+
       return kube.index
     })
 
@@ -49,8 +56,8 @@ export class _Cluster {
             resource: {
               enabled: true,
               extraAnnotations: {
-                'resource.twingate.com/address': this.args.ip,
-                'resource.twingate.com/alias': this.args.domain,
+                // 'resource.twingate.com/address': `${this.args.ip}`,
+                'resource.twingate.com/address': 'kubernetes.default.svc.cluster.local',
                 'resource.twingate.com/name': `_${this.name}`,
               },
             },
@@ -98,6 +105,7 @@ export class _Cluster {
   //     }],
   //   }, {
   //     dependsOn: this.twingate,
+  //     parent: this.twingate,
   //   },
   // )
 
@@ -113,12 +121,13 @@ export class _Cluster {
           name: '_berry',
         },
         principalExternalRef: {
-          name: _TwingateResource.groups.admin.groupId,
+          name: 'Chris Bailey',
           type: 'group',
         },
       },
     }, {
       dependsOn: this.twingate,
+      // parent: this.twingate,
     },
   )
 
