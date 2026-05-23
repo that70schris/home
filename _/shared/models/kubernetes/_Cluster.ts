@@ -65,6 +65,9 @@ export class _Cluster {
     return new Chart('twingate-gateway', {
       chart: 'oci://ghcr.io/twingate/helmcharts/gateway',
       values: {
+        kubernetes: {
+          enabled: true,
+        },
         twingate: {
           network: _TwingateResource.network,
         },
@@ -77,6 +80,8 @@ export class _Cluster {
           ],
         },
       },
+    }, {
+      dependsOn: this.twingate_connector,
     })
   }
 
@@ -315,8 +320,8 @@ export class _Cluster {
   get index() {
     return [
       this.ingress,
-      this.twingate_operator_connector,
       this.twingate_gatway,
+      // this.twingate_operator_connector,
       // ...new mDNS().index,
     ]
   }

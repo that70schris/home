@@ -1,6 +1,5 @@
 import { Config, CustomResourceOptions } from '@pulumi/pulumi'
-import * as std from '@pulumi/std'
-import { TwingateConnector, TwingateConnectorTokens, TwingateGateway, TwingateKubernetesResource, TwingateKubernetesResourceArgs, TwingateRemoteNetwork, TwingateResource, TwingateResourceArgs, TwingateSSHCertificateAuthority, TwingateX509CertificateAuthority } from '@twingate/pulumi-twingate'
+import { TwingateConnector, TwingateConnectorTokens, TwingateKubernetesResourceArgs, TwingateRemoteNetwork, TwingateResource, TwingateResourceArgs } from '@twingate/pulumi-twingate'
 import { merge } from 'lodash'
 import { once } from '../../decorators'
 
@@ -96,70 +95,70 @@ interface _TwingateKubernetesResourceArgs extends Omit<TwingateKubernetesResourc
   udp?: number[]
 }
 
-export class _TwingateKubernetesResource extends TwingateKubernetesResource {
+// export class _TwingateKubernetesResource extends TwingateKubernetesResource {
 
-  static tls = new TwingateX509CertificateAuthority('tls', {
-    name: 'My TLS CA',
-    certificate: std.file({
-      input: '/Users/chris/.ssh/id_ed25519',
-    }).then(invoke => invoke.result),
-  })
+//   static tls = new TwingateX509CertificateAuthority('tls', {
+//     name: 'My TLS CA',
+//     certificate: std.file({
+//       input: '/Users/chris/.ssh/id_ed25519',
+//     }).then(invoke => invoke.result),
+//   })
 
-  static ssh = new TwingateSSHCertificateAuthority('ssh', {
-    name: 'My SSH CA',
-    publicKey: std.file({
-      input: '/Users/chris/.ssh/id_ed25519.pub',
-    }).then(invoke => std.trimspace({
-      input: invoke.result,
-    })).then(invoke => invoke.result),
-  })
+//   static ssh = new TwingateSSHCertificateAuthority('ssh', {
+//     name: 'My SSH CA',
+//     publicKey: std.file({
+//       input: '/Users/chris/.ssh/id_ed25519.pub',
+//     }).then(invoke => std.trimspace({
+//       input: invoke.result,
+//     })).then(invoke => invoke.result),
+//   })
 
-  // Gateway with both X.509 and SSH CAs
-  static gateway = new TwingateGateway('main', {
-    remoteNetworkId: _TwingateResource.remote.id,
-    address: '192.168.0.1:8443',
-    x509CaId: _TwingateKubernetesResource.tls.id,
-    sshCaId: _TwingateKubernetesResource.ssh.id,
-  })
+//   // Gateway with both X.509 and SSH CAs
+//   static gateway = new TwingateGateway('main', {
+//     remoteNetworkId: _TwingateResource.remote.id,
+//     address: '192.168.0.1:8443',
+//     x509CaId: _TwingateKubernetesResource.tls.id,
+//     sshCaId: _TwingateKubernetesResource.ssh.id,
+//   })
 
-  constructor(
-    public $name: string,
-    args: _TwingateKubernetesResourceArgs,
-    opts?: CustomResourceOptions,
-    defaults: TwingateKubernetesResourceArgs = {
-      gatewayId: _TwingateKubernetesResource.gateway.id,
-      remoteNetworkId: _TwingateKubernetesResource.gateway.remoteNetworkId,
-      address: args.address ?? $name,
-      name: $name,
-      // alias: $name,
-      accessGroups: [
-        _TwingateResource.groups.everyone,
-      ],
-      protocols: {
-        allowIcmp: true,
-        tcp: {
-          policy: args.tcp?.length == 0 ? 'ALLOW_ALL'
-            : args.tcp?.length ? 'RESTRICTED' : 'DENY_ALL',
-          ports: args.tcp?.map(port =>
-            port.toString()),
-        },
-        udp: {
-          policy: args.udp?.length == 0 ? 'ALLOW_ALL'
-            : args.udp?.length ? 'RESTRICTED' : 'DENY_ALL',
-          ports: args.udp?.map(port =>
-            port.toString()),
-        },
-      },
-    },
-  ) {
-    super(
-      $name,
-      merge(defaults, args),
-      merge({
-        deleteBeforeReplace: true,
-        parent: _TwingateResource.remote,
-      }, opts),
-    )
-  }
+//   constructor(
+//     public $name: string,
+//     args: _TwingateKubernetesResourceArgs,
+//     opts?: CustomResourceOptions,
+//     defaults: TwingateKubernetesResourceArgs = {
+//       gatewayId: _TwingateKubernetesResource.gateway.id,
+//       remoteNetworkId: _TwingateKubernetesResource.gateway.remoteNetworkId,
+//       address: args.address ?? $name,
+//       name: $name,
+//       // alias: $name,
+//       accessGroups: [
+//         _TwingateResource.groups.everyone,
+//       ],
+//       protocols: {
+//         allowIcmp: true,
+//         tcp: {
+//           policy: args.tcp?.length == 0 ? 'ALLOW_ALL'
+//             : args.tcp?.length ? 'RESTRICTED' : 'DENY_ALL',
+//           ports: args.tcp?.map(port =>
+//             port.toString()),
+//         },
+//         udp: {
+//           policy: args.udp?.length == 0 ? 'ALLOW_ALL'
+//             : args.udp?.length ? 'RESTRICTED' : 'DENY_ALL',
+//           ports: args.udp?.map(port =>
+//             port.toString()),
+//         },
+//       },
+//     },
+//   ) {
+//     super(
+//       $name,
+//       merge(defaults, args),
+//       merge({
+//         deleteBeforeReplace: true,
+//         parent: _TwingateResource.remote,
+//       }, opts),
+//     )
+//   }
 
-}
+// }
