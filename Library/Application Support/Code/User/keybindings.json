@@ -166,4 +166,20 @@
     "command": "-git.unstageSelectedRanges",
     "when": "editorTextFocus && isInDiffEditor && isInDiffRightEditor && !operationInProgress && resourceScheme == 'git'",
   },
+  {
+    "key": "shift+cmd+'",
+    "command": "bracketeer.removeQuotes",
+  },
+  {
+    "key": "shift+alt+cmd+'",
+    "command": "-bracketeer.removeQuotes",
+  },
+  {
+    "key": "cmd+'",
+    "command": "bracketeer.swapQuotes",
+  },
+  {
+    "key": "shift+alt+cmd+;",
+    "command": "-bracketeer.swapQuotes",
+  },
 ]

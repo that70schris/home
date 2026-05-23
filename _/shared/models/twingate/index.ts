@@ -1,5 +1,6 @@
 import { Config, CustomResourceOptions } from '@pulumi/pulumi'
-import { TwingateConnector, TwingateConnectorTokens, TwingateKubernetesResource, TwingateKubernetesResourceArgs, TwingateRemoteNetwork, TwingateResource, TwingateResourceArgs } from '@twingate/pulumi-twingate'
+import * as std from '@pulumi/std'
+import { TwingateConnector, TwingateConnectorTokens, TwingateGateway, TwingateKubernetesResource, TwingateKubernetesResourceArgs, TwingateRemoteNetwork, TwingateResource, TwingateResourceArgs, TwingateSSHCertificateAuthority, TwingateX509CertificateAuthority } from '@twingate/pulumi-twingate'
 import { merge } from 'lodash'
 import { once } from '../../decorators'
 
@@ -85,6 +86,7 @@ export class _TwingateResource extends TwingateResource {
 
 interface _TwingateKubernetesResourceArgs extends Omit<TwingateKubernetesResourceArgs,
   | 'remoteNetworkId'
+  | 'gatewayId'
   | 'protocols'
   | 'address'
   | 'name'
@@ -96,37 +98,37 @@ interface _TwingateKubernetesResourceArgs extends Omit<TwingateKubernetesResourc
 
 export class _TwingateKubernetesResource extends TwingateKubernetesResource {
 
-  // static tls = new TwingateX509CertificateAuthority('tls', {
-  //   name: 'My TLS CA',
-  //   certificate: std.file({
-  //     input: 'ca.pem',
-  //   }).then(invoke => invoke.result),
-  // })
+  static tls = new TwingateX509CertificateAuthority('tls', {
+    name: 'My TLS CA',
+    certificate: std.file({
+      input: '/Users/chris/.ssh/id_ed25519',
+    }).then(invoke => invoke.result),
+  })
 
-  // static ssh = new TwingateSSHCertificateAuthority('ssh', {
-  //   name: 'My SSH CA',
-  //   publicKey: std.file({
-  //     input: '~/.ssh/id_ed25519.pub',
-  //   }).then(invoke => std.trimspace({
-  //     input: invoke.result,
-  //   })).then(invoke => invoke.result),
-  // })
+  static ssh = new TwingateSSHCertificateAuthority('ssh', {
+    name: 'My SSH CA',
+    publicKey: std.file({
+      input: '/Users/chris/.ssh/id_ed25519.pub',
+    }).then(invoke => std.trimspace({
+      input: invoke.result,
+    })).then(invoke => invoke.result),
+  })
 
-  // // Gateway with both X.509 and SSH CAs
-  // static main = new TwingateGateway('main', {
-  //   remoteNetworkId: _TwingateResource.network.id,
-  //   address: '192.168.0.1:8443',
-  //   x509CaId: _TwingateKubernetesResource.tls.id,
-  //   sshCaId: _TwingateKubernetesResource.ssh.id,
-  // })
+  // Gateway with both X.509 and SSH CAs
+  static gateway = new TwingateGateway('main', {
+    remoteNetworkId: _TwingateResource.remote.id,
+    address: '192.168.0.1:8443',
+    x509CaId: _TwingateKubernetesResource.tls.id,
+    sshCaId: _TwingateKubernetesResource.ssh.id,
+  })
 
   constructor(
     public $name: string,
     args: _TwingateKubernetesResourceArgs,
     opts?: CustomResourceOptions,
     defaults: TwingateKubernetesResourceArgs = {
-      gatewayId: _TwingateResource.connector.id,
-      remoteNetworkId: _TwingateResource.remote.id,
+      gatewayId: _TwingateKubernetesResource.gateway.id,
+      remoteNetworkId: _TwingateKubernetesResource.gateway.remoteNetworkId,
       address: args.address ?? $name,
       name: $name,
       // alias: $name,

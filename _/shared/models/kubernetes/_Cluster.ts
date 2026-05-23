@@ -20,16 +20,20 @@ export class _Cluster {
     public opts?: ResourceOptions,
   ) {
 
+    // new _TwingateKubernetesResource(this.name, {
+
+    // })
+
     args.kubes.forEach((kube) => {
       kube.index?.forEach((resource) => {
         switch (resource.constructor) {
           case Service:
-            new _TwingateResource(kube.name, {
-              address: `${kube.name}.${kube.metadata.namespace ?? 'default'}.svc.cluster.local`,
-            }, {
-              dependsOn: resource,
-              parent: resource,
-            })
+            // new _TwingateResource(kube.name, {
+            //   address: `${kube.name}.${kube.metadata.namespace ?? 'default'}.svc.cluster.local`,
+            // }, {
+            //   dependsOn: resource,
+            //   parent: resource,
+            // })
             break
         }
       })
@@ -40,7 +44,44 @@ export class _Cluster {
   }
 
   @once
-  get twingate() {
+  get twingate_connector() {
+    return new Chart('twingate-connector', {
+      chart: 'connector',
+      repositoryOpts: {
+        repo: 'https://twingate.github.io/helm-charts',
+      },
+      values: {
+        connector: {
+          network: _TwingateResource.network,
+          accessToken: _TwingateResource.tokens.accessToken,
+          refreshToken: _TwingateResource.tokens.refreshToken,
+        },
+      },
+    })
+  }
+
+  @once
+  get twingate_gatway() {
+    return new Chart('twingate-gateway', {
+      chart: 'oci://ghcr.io/twingate/helmcharts/gateway',
+      values: {
+        twingate: {
+          network: _TwingateResource.network,
+        },
+        tls: {
+          dnsNames: [
+            '195.168.0.5',
+            'kubernetes.default.svc.cluster.local',
+            'berry.local',
+            'berry',
+          ],
+        },
+      },
+    })
+  }
+
+  @once
+  get twingate_operator() {
     return new Chart('twingate', {
       chart: 'oci://ghcr.io/twingate/helmcharts/twingate-operator',
       values: {
@@ -56,9 +97,9 @@ export class _Cluster {
             resource: {
               enabled: true,
               extraAnnotations: {
-                // 'resource.twingate.com/address': `${this.args.ip}`,
-                'resource.twingate.com/address': 'kubernetes.default.svc.cluster.local',
+                'resource.twingate.com/address': this.args.ip,
                 'resource.twingate.com/name': `_${this.name}`,
+                'resource.twingate.com/port': '6443',
               },
             },
           },
@@ -67,24 +108,49 @@ export class _Cluster {
     })
   }
 
-  twingate_connector = new _CustomResource(
-    'twingate:connector', {
-      apiVersion: 'twingate.com/v1beta',
-      kind: 'TwingateConnector',
-      metadata: {
-        name: 'main',
-      },
-      spec: {
-        name: 'main',
-        imagePolicy: {
-          schedule: '0 0 * * *',
+  @once
+  get twingate_operator_connector() {
+    return new _CustomResource(
+      'twingate:connector', {
+        apiVersion: 'twingate.com/v1beta',
+        kind: 'TwingateConnector',
+        metadata: {
+          name: 'main',
         },
+        spec: {
+          name: 'main',
+          imagePolicy: {
+            schedule: '0 0 * * *',
+          },
+        },
+      }, {
+        dependsOn: this.twingate_operator,
+        parent: this.twingate_operator,
       },
-    }, {
-      dependsOn: this.twingate,
-      parent: this.twingate,
-    },
-  )
+    )
+  }
+
+  // twingate_resource_access = new _CustomResource(
+  //   'twingate:resource-access', {
+  //     apiVersion: 'twingate.com/v1beta',
+  //     kind: 'TwingateResourceAccess',
+  //     metadata: {
+  //       name: 'kuberries',
+  //     },
+  //     spec: {
+  //       resourceRef: {
+  //         name: '_berry',
+  //       },
+  //       principalExternalRef: {
+  //         name: 'Chris Bailey',
+  //         type: 'group',
+  //       },
+  //     },
+  //   }, {
+  //     dependsOn: this.twingate,
+  //     // parent: this.twingate,
+  //   },
+  // )
 
   // twingate_role_binding = new _CustomResource(
   //   'twingate:role-binding', {
@@ -108,28 +174,6 @@ export class _Cluster {
   //     parent: this.twingate,
   //   },
   // )
-
-  twingate_resource_access = new _CustomResource(
-    'twingate:resource-access', {
-      apiVersion: 'twingate.com/v1beta',
-      kind: 'TwingateResourceAccess',
-      metadata: {
-        name: 'kuberries',
-      },
-      spec: {
-        resourceRef: {
-          name: '_berry',
-        },
-        principalExternalRef: {
-          name: 'Chris Bailey',
-          type: 'group',
-        },
-      },
-    }, {
-      dependsOn: this.twingate,
-      // parent: this.twingate,
-    },
-  )
 
   manager = new Chart('manager', {
     chart: 'cert-manager',
@@ -271,6 +315,8 @@ export class _Cluster {
   get index() {
     return [
       this.ingress,
+      this.twingate_operator_connector,
+      this.twingate_gatway,
       // ...new mDNS().index,
     ]
   }
