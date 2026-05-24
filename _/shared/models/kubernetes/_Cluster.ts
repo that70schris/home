@@ -278,7 +278,7 @@ export class _Cluster {
       // this.twingate_gatway,
       this.twingate_operator,
       this.twingate_operator_connector,
-      // this.twingate_resource_access,
+      this.twingate_resource_access,
       // ...new mDNS().index,
     ]
   }
@@ -291,16 +291,12 @@ export class _Cluster {
         kind: 'TwingateResourceAccess',
         spec: {
           resourceRef: {
-            name: 'berry', // BROKEN
+            name: 'twingate-gateway-resource',
           },
-          principalId: 'VXNlcjoxMTQ0MTY3',
-        // groups: [
-        //   'Everyone',
-        // ],
-        // principalExternalRef: {
-        //   name: 'Everyone',
-        //   type: 'group',
-        // },
+          principalExternalRef: {
+            name: 'Chris Bailey',
+            type: 'group',
+          },
         },
       }, {
         dependsOn: this.twingate_operator,
@@ -309,27 +305,24 @@ export class _Cluster {
     )
   }
 
-  // twingate_role_binding = new _CustomResource(
-  //   'twingate:role-binding', {
-  //     apiVersion: 'rbac.authorization.k8s.io/v1',
-  //     kind: 'ClusterRoleBinding',
-  //     metadata: {
-  //       name: 'kuberries',
-  //     },
-  //     roleRef: {
-  //       apiGroup: 'rbac.authorization.k8s.io',
-  //       kind: 'ClusterRole',
-  //       name: 'edit',
-  //     },
-  //     subjects: [{
-  //       apiGroup: 'rbac.authorization.k8s.io',
-  //       name: 'Chris Bailey',
-  //       kind: 'Group',
-  //     }],
-  //   }, {
-  //     dependsOn: this.twingate,
-  //     parent: this.twingate,
-  //   },
-  // )
+  twingate_role_binding = new _CustomResource(
+    'twingate-role-binding', {
+      apiVersion: 'rbac.authorization.k8s.io/v1',
+      kind: 'ClusterRoleBinding',
+      roleRef: {
+        apiGroup: 'rbac.authorization.k8s.io',
+        kind: 'ClusterRole',
+        name: 'edit',
+      },
+      subjects: [{
+        apiGroup: 'rbac.authorization.k8s.io',
+        name: 'Chris Bailey',
+        kind: 'Group',
+      }],
+    }, {
+      dependsOn: this.twingate_operator,
+      // parent: this.twingate_operator,
+    },
+  )
 
 }
