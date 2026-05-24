@@ -43,143 +43,6 @@ export class _Cluster {
 
   }
 
-  @once
-  get twingate_connector() {
-    return new Chart('twingate-connector', {
-      chart: 'connector',
-      repositoryOpts: {
-        repo: 'https://twingate.github.io/helm-charts',
-      },
-      values: {
-        connector: {
-          network: _TwingateResource.network,
-          accessToken: _TwingateResource.tokens.accessToken,
-          refreshToken: _TwingateResource.tokens.refreshToken,
-        },
-      },
-    })
-  }
-
-  @once
-  get twingate_gatway() {
-    return new Chart('twingate-gateway', {
-      chart: 'oci://ghcr.io/twingate/helmcharts/gateway',
-      values: {
-        kubernetes: {
-          enabled: true,
-        },
-        twingate: {
-          network: _TwingateResource.network,
-        },
-        tls: {
-          dnsNames: [
-            '195.168.0.5',
-            'kubernetes.default.svc.cluster.local',
-            'berry.local',
-            'berry',
-          ],
-        },
-      },
-    }, {
-      dependsOn: this.twingate_connector,
-    })
-  }
-
-  @once
-  get twingate_operator() {
-    return new Chart('twingate', {
-      chart: 'oci://ghcr.io/twingate/helmcharts/twingate-operator',
-      values: {
-        twingateOperator: {
-          remoteNetworkId: _TwingateResource.remote.id,
-          apiKey: _TwingateResource.config.get('apiToken'),
-          network: _TwingateResource.network,
-        },
-        gateway: {
-          enabled: true,
-          twingate: {
-            network: _TwingateResource.remote.id,
-            resource: {
-              enabled: true,
-              extraAnnotations: {
-                'resource.twingate.com/address': this.args.ip,
-                'resource.twingate.com/name': `_${this.name}`,
-                'resource.twingate.com/port': '6443',
-              },
-            },
-          },
-        },
-      },
-    })
-  }
-
-  @once
-  get twingate_operator_connector() {
-    return new _CustomResource(
-      'twingate:connector', {
-        apiVersion: 'twingate.com/v1beta',
-        kind: 'TwingateConnector',
-        metadata: {
-          name: 'main',
-        },
-        spec: {
-          name: 'main',
-          imagePolicy: {
-            schedule: '0 0 * * *',
-          },
-        },
-      }, {
-        dependsOn: this.twingate_operator,
-        parent: this.twingate_operator,
-      },
-    )
-  }
-
-  // twingate_resource_access = new _CustomResource(
-  //   'twingate:resource-access', {
-  //     apiVersion: 'twingate.com/v1beta',
-  //     kind: 'TwingateResourceAccess',
-  //     metadata: {
-  //       name: 'kuberries',
-  //     },
-  //     spec: {
-  //       resourceRef: {
-  //         name: '_berry',
-  //       },
-  //       principalExternalRef: {
-  //         name: 'Chris Bailey',
-  //         type: 'group',
-  //       },
-  //     },
-  //   }, {
-  //     dependsOn: this.twingate,
-  //     // parent: this.twingate,
-  //   },
-  // )
-
-  // twingate_role_binding = new _CustomResource(
-  //   'twingate:role-binding', {
-  //     apiVersion: 'rbac.authorization.k8s.io/v1',
-  //     kind: 'ClusterRoleBinding',
-  //     metadata: {
-  //       name: 'kuberries',
-  //     },
-  //     roleRef: {
-  //       apiGroup: 'rbac.authorization.k8s.io',
-  //       kind: 'ClusterRole',
-  //       name: 'edit',
-  //     },
-  //     subjects: [{
-  //       apiGroup: 'rbac.authorization.k8s.io',
-  //       name: 'Chris Bailey',
-  //       kind: 'Group',
-  //     }],
-  //   }, {
-  //     dependsOn: this.twingate,
-  //     parent: this.twingate,
-  //   },
-  // )
-
   manager = new Chart('manager', {
     chart: 'cert-manager',
     repositoryOpts: {
@@ -317,13 +180,156 @@ export class _Cluster {
   }
 
   @once
+  get twingate_connector() {
+    return new Chart('twingate-connector', {
+      chart: 'connector',
+      repositoryOpts: {
+        repo: 'https://twingate.github.io/helm-charts',
+      },
+      values: {
+        connector: {
+          network: _TwingateResource.network,
+          accessToken: _TwingateResource.tokens.accessToken,
+          refreshToken: _TwingateResource.tokens.refreshToken,
+        },
+      },
+    })
+  }
+
+  @once
+  get twingate_gatway() {
+    return new Chart('twingate-gateway', {
+      chart: 'oci://ghcr.io/twingate/helmcharts/gateway',
+      values: {
+        kubernetes: {
+          enabled: true,
+        },
+        twingate: {
+          network: _TwingateResource.network,
+        },
+        tls: {
+          dnsNames: [
+            '195.168.0.5',
+            'kubernetes.default.svc.cluster.local',
+            'berry.local',
+            'berry',
+          ],
+        },
+      },
+    }, {
+      dependsOn: this.twingate_connector,
+    })
+  }
+
+  @once
+  get twingate_operator() {
+    return new Chart('twingate', {
+      chart: 'oci://ghcr.io/twingate/helmcharts/twingate-operator',
+      values: {
+        nameOverride: 'operator',
+        twingateOperator: {
+          remoteNetworkId: _TwingateResource.remote.id,
+          apiKey: _TwingateResource.config.get('apiToken'),
+          network: _TwingateResource.network,
+        },
+        gateway: {
+          enabled: true,
+          twingate: {
+            network: _TwingateResource.remote.id,
+            resource: {
+              enabled: true,
+              extraAnnotations: {
+                // 'resource.twingate.com/address': this.args.ip,
+                'resource.twingate.com/alias': `kube.${this.name}.home`,
+                'resource.twingate.com/name': `_${this.name}`,
+                // 'resource.twingate.com/namespace': 'default',
+                // 'resource.twingate.com/port': '6443',
+              },
+            },
+          },
+        },
+      },
+    })
+  }
+
+  @once
+  get twingate_operator_connector() {
+    return new _CustomResource(
+      'twingate-connector', {
+        apiVersion: 'twingate.com/v1beta',
+        kind: 'TwingateConnector',
+        spec: {
+          name: 'main',
+          imagePolicy: {
+            schedule: '0 0 * * *',
+          },
+        },
+      }, {
+        dependsOn: this.twingate_operator,
+        parent: this.twingate_operator,
+      },
+    )
+  }
+
+  @once
   get index() {
     return [
       this.ingress,
       // this.twingate_gatway,
-      // this.twingate_operator_connector,
+      this.twingate_operator,
+      this.twingate_operator_connector,
+      // this.twingate_resource_access,
       // ...new mDNS().index,
     ]
   }
+
+  @once
+  get twingate_resource_access() {
+    return new _CustomResource(
+      'twingate-resource-access', {
+        apiVersion: 'twingate.com/v1beta',
+        kind: 'TwingateResourceAccess',
+        spec: {
+          resourceRef: {
+            name: 'berry', // BROKEN
+          },
+          principalId: 'VXNlcjoxMTQ0MTY3',
+        // groups: [
+        //   'Everyone',
+        // ],
+        // principalExternalRef: {
+        //   name: 'Everyone',
+        //   type: 'group',
+        // },
+        },
+      }, {
+        dependsOn: this.twingate_operator,
+        // parent: this.twingate_operator,
+      },
+    )
+  }
+
+  // twingate_role_binding = new _CustomResource(
+  //   'twingate:role-binding', {
+  //     apiVersion: 'rbac.authorization.k8s.io/v1',
+  //     kind: 'ClusterRoleBinding',
+  //     metadata: {
+  //       name: 'kuberries',
+  //     },
+  //     roleRef: {
+  //       apiGroup: 'rbac.authorization.k8s.io',
+  //       kind: 'ClusterRole',
+  //       name: 'edit',
+  //     },
+  //     subjects: [{
+  //       apiGroup: 'rbac.authorization.k8s.io',
+  //       name: 'Chris Bailey',
+  //       kind: 'Group',
+  //     }],
+  //   }, {
+  //     dependsOn: this.twingate,
+  //     parent: this.twingate,
+  //   },
+  // )
 
 }

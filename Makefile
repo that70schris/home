@@ -4,6 +4,7 @@ cluster:
 		--tls-san=192.168.0.5 \
 		--tls-san=berry.bailey.mx \
 		--tls-san=bailey.mx \
+		--tls-san=kube.berry.home \
 		--tls-san=berry.local \
 		--tls-san=berry \
 
