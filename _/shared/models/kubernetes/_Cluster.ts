@@ -320,7 +320,7 @@ export class _Cluster {
   get index() {
     return [
       this.ingress,
-      this.twingate_gatway,
+      // this.twingate_gatway,
       // this.twingate_operator_connector,
       // ...new mDNS().index,
     ]
