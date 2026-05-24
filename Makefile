@@ -5,6 +5,7 @@ cluster:
 		--tls-san=berry.bailey.mx \
 		--tls-san=bailey.mx \
 		--tls-san=kube.berry.home \
+		--tls-san=kubernetes.default.svc.cluster.local \
 		--tls-san=berry.local \
 		--tls-san=berry \
 
