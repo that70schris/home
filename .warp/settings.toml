@@ -9,6 +9,7 @@ ai_auto_detection_enabled = false
 
 [agents.warp_agent.other]
 show_agent_notifications = false
+should_render_use_agent_toolbar_for_user_commands = false
 
 [privacy]
 custom_secret_regex_list = [
