@@ -72,7 +72,6 @@ mas "Raycast Companion", id: 6738274497
 mas "Xcode", id: 497799835
 vscode "bbenoist.nix"
 vscode "bennycode.sort-everything"
-vscode "britesnow.vscode-toggle-quotes"
 vscode "dbaeumer.vscode-eslint"
 vscode "deerawan.vscode-dash"
 vscode "dnicolson.binary-plist"
