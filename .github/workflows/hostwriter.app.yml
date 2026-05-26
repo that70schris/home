@@ -42,6 +42,6 @@ jobs:
           channelId: live
           entryPoint: ${{ env.ROOT }}
           firebaseServiceAccount: ${{ secrets.FIREBASE }}
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
           projectId: bailey-production
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
           target: hostwriter
