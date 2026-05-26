@@ -1,4 +1,8 @@
-name: hostwriter.app
+name: Hostwriter.app
+
+concurrency:
+  group: hostwriter.app/${{ github.ref_name }}
+  cancel-in-progress: true
 
 on:
   push:
