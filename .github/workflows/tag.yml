@@ -1,5 +1,8 @@
 name: Tag Release
 
+concurrency:
+  group: tag/${{ github.ref_name }}
+
 on:
   push:
     branches:
