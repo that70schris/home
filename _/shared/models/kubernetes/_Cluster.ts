@@ -1,5 +1,5 @@
 import { IngressController } from '@pulumi/kubernetes-ingress-nginx'
-import { Secret, Service } from '@pulumi/kubernetes/core/v1'
+import { Secret, Service, ServiceSpecType } from '@pulumi/kubernetes/core/v1'
 import { Chart } from '@pulumi/kubernetes/helm/v4'
 import { Config, ResourceOptions } from '@pulumi/pulumi'
 import { _CustomResource, _Ingress, _Kube } from '.'
@@ -23,6 +23,30 @@ export class _Cluster {
     // new _TwingateKubernetesResource(this.name, {
 
     // })
+
+    new Service('twingate', {
+      metadata: {
+        name: 'twingate',
+        annotations: {
+          'resource.twingate.com': 'true',
+          'resource.twingate.com/name': `_${this.name}`,
+          'resource.twingate.com/tlsSecret': 'twingate-gateway-tls',
+          'resource.twingate.com/type': 'Kubernetes',
+        },
+      },
+      spec: {
+        type: ServiceSpecType.ClusterIP,
+        ports: [
+          {
+            name: 'https',
+            // makes it to twingate,
+            // but not to the kube config
+            port: 443,
+            targetPort: 6443,
+          },
+        ],
+      },
+    })
 
     args.kubes.forEach((kube) => {
       kube.index?.forEach((resource) => {
@@ -194,16 +218,12 @@ export class _Cluster {
           enabled: true,
           twingate: {
             network: _TwingateResource.remote.id,
-            resource: {
-              enabled: true,
-              extraAnnotations: {
-                // 'resource.twingate.com/address': this.args.ip,
-                // 'resource.twingate.com/alias': `kube.${this.name}.home`,
-                'resource.twingate.com/name': `_${this.name}`,
-                // 'resource.twingate.com/namespace': 'default',
-                // 'resource.twingate.com/port': '6443',
-              },
-            },
+            // resource: {
+            //   enabled: true,
+            //   extraAnnotations: {
+            //     // doesn't support ports
+            //   },
+            // },
           },
         },
       },
@@ -230,6 +250,37 @@ export class _Cluster {
   }
 
   @once
+  get twingate_resource() {
+    return new _CustomResource(
+      'twingate-resource', {
+        apiVersion: 'twingate.com/v1beta',
+        kind: 'TwingateResource',
+        spec: {
+          // needs a proxy?
+          address: 'kubernetes.default.svc.cluster.local',
+          name: `_${this.name}`,
+          tlsSecret: 'twingate-gateway-tls',
+          alias: 'kube.berry.home',
+          type: 'Kubernetes',
+        },
+      },
+    )
+  }
+
+  @once
+  get index() {
+    return [
+      this.ingress,
+      this.twingate_operator,
+      this.twingate_connector,
+      // this.twingate_resource,
+      this.twingate_resource_access,
+      // this.twingate_role_binding,
+      // ...new mDNS().index,
+    ]
+  }
+
+  @once
   get twingate_resource_access() {
     return new _CustomResource(
       'twingate-resource-access', {
@@ -237,7 +288,7 @@ export class _Cluster {
         kind: 'TwingateResourceAccess',
         spec: {
           resourceRef: {
-            name: 'twingate-gateway-resource',
+            name: 'twingate-resource',
           },
           principalExternalRef: {
             name: 'Chris Bailey',
@@ -249,18 +300,6 @@ export class _Cluster {
         // parent: this.twingate_operator,
       },
     )
-  }
-
-  @once
-  get index() {
-    return [
-      this.ingress,
-      this.twingate_operator,
-      this.twingate_connector,
-      this.twingate_resource_access,
-      this.twingate_role_binding,
-      // ...new mDNS().index,
-    ]
   }
 
   @once

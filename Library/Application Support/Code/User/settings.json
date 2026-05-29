@@ -23,7 +23,6 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   },
-  "breadcrumbs.enabled": false,
   "code-runner.clearPreviousOutput": true,
   "code-runner.preserveFocus": true,
   "code-runner.showExecutionMessage": false,
@@ -201,4 +200,5 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.indent": 15,
   "yaml.maxItemsComputed": 99999,
+  "breadcrumbs.enabled": false,
 }
