@@ -36,6 +36,7 @@
 !package.json
 !pnpm-lock.yaml
 !pnpm-workspace.yaml
+!rustfmt.toml
 !tsconfig.json
 
 !*.config.*
