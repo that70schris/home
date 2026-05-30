@@ -6,5 +6,6 @@ trailingComma: all
 singleQuote: true
 semi: false
 plugins:
+  - prettier-plugin-rust
   - prettier-plugin-toml
   - '@prettier/plugin-xml'
