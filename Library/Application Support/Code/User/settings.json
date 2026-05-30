@@ -1,42 +1,46 @@
 {
   "[applescript]": {
-    "editor.defaultFormatter": "idleberg.applescript",
+    "editor.defaultFormatter": "idleberg.applescript"
   },
   "[css]": {
-    "editor.defaultFormatter": "stylelint.vscode-stylelint",
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[lua]": {
-    "editor.defaultFormatter": "sumneko.lua",
+    "editor.defaultFormatter": "sumneko.lua"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[scss]": {
-    "editor.defaultFormatter": "stylelint.vscode-stylelint",
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
+  "breadcrumbs.enabled": false,
   "code-runner.clearPreviousOutput": true,
   "code-runner.preserveFocus": true,
   "code-runner.showExecutionMessage": false,
   "currentPath.hideFileIcon": true,
   "custom-ui-style.electron": {
-    "titleBarStyle": "hidden",
+    "titleBarStyle": "hidden"
   },
   "custom-ui-style.external.imports": [
-    "file://${userHome}/.vscode/style.css",
+    "file://${userHome}/.vscode/style.css"
   ],
   "custom-ui-style.reloadWithoutPrompting": true,
   "dash.fileNameToDocsetMap": {
     "[dD]ocker*": ["docker"],
-    "*.s[ac]ss": ["css"],
+    "*.s[ac]ss": ["css"]
   },
   "debug.console.wordWrap": false,
   "debug.showBreakpointsInOverviewRuler": true,
@@ -48,7 +52,7 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
-    "source.organizeImports": "explicit",
+    "source.organizeImports": "explicit"
   },
   "editor.colorDecorators": false,
   "editor.copyWithSyntaxHighlighting": false,
@@ -93,7 +97,7 @@
   "editor.wordWrap": "off",
   "emmet.triggerExpansionOnTab": true,
   "eslint.codeAction.showDocumentation": {
-    "enable": false,
+    "enable": false
   },
   "eslint.format.enable": true,
   "explorer.autoReveal": false,
@@ -105,11 +109,11 @@
   "extensions.closeExtensionDetailsOnViewChange": true,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
-    "**/*git/config": "gitconfig",
     ".Brewfile": "ruby",
+    "**/*git/config": "gitconfig",
     "aliases": "shellscript",
     "Makefile.*": "makefile",
-    "pre-commit": "shellscript",
+    "pre-commit": "shellscript"
   },
   "files.encoding": "utf8",
   "files.insertFinalNewline": true,
@@ -136,7 +140,7 @@
   "Lua.window.statusBar": false,
   "nginx-conf-hint.enableStrictCompletion": true,
   "notebook.cellToolbarLocation": {
-    "default": "right",
+    "default": "right"
   },
   "problems.showCurrentInStatus": true,
   "redhat.telemetry.enabled": true,
@@ -189,7 +193,7 @@
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.editorAssociations": {
     "*.copilotmd": "vscode.markdown.preview.editor",
-    "*.svg": "default",
+    "*.svg": "default"
   },
   "workbench.iconTheme": "vscode-icons",
   "workbench.preferredDarkColorTheme": "arcade",
@@ -199,6 +203,5 @@
   "workbench.settings.useSplitJSON": true,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.indent": 15,
-  "yaml.maxItemsComputed": 99999,
-  "breadcrumbs.enabled": false,
+  "yaml.maxItemsComputed": 99999
 }
