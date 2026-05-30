@@ -2,6 +2,7 @@ import { IngressController } from '@pulumi/kubernetes-ingress-nginx'
 import { Secret, Service, ServiceSpecType } from '@pulumi/kubernetes/core/v1'
 import { Chart } from '@pulumi/kubernetes/helm/v4'
 import { Config, ResourceOptions } from '@pulumi/pulumi'
+import * as tailscale from '@pulumi/tailscale'
 import { _CustomResource, _Ingress, _Kube } from '.'
 import { once } from '../../decorators'
 import { _TwingateResource } from '../twingate'
@@ -276,11 +277,14 @@ export class _Cluster {
       },
       values: {
         oauth: {
-          clientId: new Config('tailscale').require('oauthClientId'),
-          clientSecret: new Config('tailscale').require('oauthClientSecret'),
+          clientId: tailscale.config.oauthClientId,
+          clientSecret: tailscale.config.oauthClientSecret,
         },
         apiServerProxyConfig: {
           mode: true,
+        },
+        operatorConfig: {
+          hostname: 'operator',
         },
       },
     })
