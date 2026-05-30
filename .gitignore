@@ -33,6 +33,7 @@
 !.vimrc
 !.zshrc
 !Makefile
+!k3s.yaml
 !package.json
 !pnpm-lock.yaml
 !pnpm-workspace.yaml

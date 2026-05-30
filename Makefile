@@ -1,13 +1,6 @@
 cluster:
-	curl -sfL https://get.k3s.io | sh -s - \
-		--disable=traefik \
-		--tls-san=192.168.0.5 \
-		--tls-san=berry.bailey.mx \
-		--tls-san=bailey.mx \
-		--tls-san=kube.berry.home \
-		--tls-san=kubernetes.default.svc.cluster.local \
-		--tls-san=berry.local \
-		--tls-san=berry \
+  sudo cp k3s.yaml /etc/rancher/k3s/config.yaml
+	curl -sfL https://get.k3s.io | sh -s -
 
 up update:
 	git submodule update --init --remote

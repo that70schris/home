@@ -268,9 +268,29 @@ export class _Cluster {
   }
 
   @once
+  get tailscale() {
+    return new Chart('tailscale', {
+      chart: 'tailscale-operator',
+      repositoryOpts: {
+        repo: 'https://pkgs.tailscale.com/helmcharts',
+      },
+      values: {
+        oauth: {
+          clientId: new Config('tailscale').require('oauthClientId'),
+          clientSecret: new Config('tailscale').require('oauthClientSecret'),
+        },
+        apiServerProxyConfig: {
+          mode: true,
+        },
+      },
+    })
+  }
+
+  @once
   get index() {
     return [
       this.ingress,
+      this.tailscale,
       this.twingate_operator,
       this.twingate_connector,
       // this.twingate_resource,

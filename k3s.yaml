@@ -1,0 +1,13 @@
+#https-listen-port: 443
+disable:
+  - traefik
+  - servicelb
+tls-san:
+  - kube.berry.home
+  - kubernetes.default.svc.cluster.local
+  - 192.168.0.5
+  - berry.bailey.mx
+  - bailey.mx
+  - berry.local
+  - berry
+  - berry.home
