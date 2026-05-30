@@ -35,6 +35,9 @@ importers:
       '@pulumi/tailscale':
         specifier: latest
         version: 0.28.0(typescript@6.0.3)
+      '@pulumiverse/talos':
+        specifier: ^0.8.0
+        version: 0.8.0(typescript@6.0.3)
       '@pulumiverse/unifi':
         specifier: latest
         version: 0.2.0(typescript@6.0.3)
@@ -515,6 +518,9 @@ packages:
 
   '@pulumi/tailscale@0.28.0':
     resolution: {integrity: sha512-cBmzs+8+A1yJSRiQD/Snb2CI6mLYz1S2Q5Lm6WShZEVTxfvXW1lIAJ5hpX1EQuhHnrmbym9pLf45/bL4kljRog==}
+
+  '@pulumiverse/talos@0.8.0':
+    resolution: {integrity: sha512-XMKYDdVSKO2KyTNUOA5MaYTjG+FSTKYX4oj1FpomaUGQ2i1ZIc2YWwXQGs+3J57/iviMbYYyaTrAfUi9ZM9oUg==}
 
   '@pulumiverse/unifi@0.2.0':
     resolution: {integrity: sha512-NJuYUkbjri9hwOPnyoE4qufrsUtTwZ9Ax32As47basbZIQfmg1fdJemnqfuMsSX7iRzHXiFyTVsWmkFT4/Nwdw==}
@@ -1910,6 +1916,14 @@ snapshots:
   '@pulumi/tailscale@0.28.0(typescript@6.0.3)':
     dependencies:
       '@pulumi/pulumi': 3.243.0(typescript@6.0.3)
+    transitivePeerDependencies:
+      - supports-color
+      - ts-node
+      - typescript
+
+  '@pulumiverse/talos@0.8.0(typescript@6.0.3)':
+    dependencies:
+      '@pulumi/pulumi': 3.244.0(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - ts-node

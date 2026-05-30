@@ -9,6 +9,7 @@
     "@pulumi/pulumi": "latest",
     "@pulumi/std": "^2.3.2",
     "@pulumi/tailscale": "latest",
+    "@pulumiverse/talos": "^0.8.0",
     "@pulumiverse/unifi": "latest",
     "@twingate/pulumi-twingate": "latest",
     "esbuild": "latest",
