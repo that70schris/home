@@ -2,4 +2,3 @@
 ./**/*.*[jt]{s,sx}: eslint --fix
 ./**/*.json*: prettier --write
 ./**/*.*ml: prettier --write
-./**/*.rs: prettier --write

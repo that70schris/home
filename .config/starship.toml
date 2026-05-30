@@ -168,7 +168,7 @@ $untracked\
 
 [rust]
   format = ' $symbol[$version]($style)'
-  style = '#dea584'
+  style = '#dea584#ff7138'
   symbol = ' '
 
 [shell]
