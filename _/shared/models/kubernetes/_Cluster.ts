@@ -276,12 +276,12 @@ export class _Cluster {
         repo: 'https://pkgs.tailscale.com/helmcharts',
       },
       values: {
+        apiServerProxyConfig: {
+          mode: true,
+        },
         oauth: {
           clientId: tailscale.config.oauthClientId,
           clientSecret: tailscale.config.oauthClientSecret,
-        },
-        apiServerProxyConfig: {
-          mode: true,
         },
         operatorConfig: {
           hostname: 'operator',
