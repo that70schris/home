@@ -1,6 +1,10 @@
 # Kiro CLI pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/bashrc.pre.bash" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/bashrc.pre.bash"
 
+autoload -U compinit; compinit
+source <(kubectl completion bash)
+source <(talosctl completion bash)
+
 source ~/.config/autoenv/activate.sh
 source ~/.config/aliases
 

@@ -82,13 +82,13 @@ override_opacity = 100
 zoom_level = 100
 
 [appearance.full_screen_apps]
-alt_screen_padding = { custom = { uniform_padding = 0.0 } }
+alt_screen_padding = "match_blocklist"
 
 [appearance.panes]
 should_dim_inactive_panes = true
 
 [appearance.text]
-ligature_rendering_enabled = false
+ligature_rendering_enabled = true
 enforce_minimum_contrast = "never"
 font_name = "Monaco Nerd Font"
 notebook_font_size = 14.0

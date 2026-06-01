@@ -1,6 +1,10 @@
 # Kiro CLI pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
 
+autoload -U compinit; compinit
+source <(kubectl completion zsh)
+source <(talosctl completion zsh)
+
 source ~/.config/zsh/ohmy/plugins/dirhistory/dirhistory.plugin.zsh
 source ~/.config/zsh/ohmy/plugins/sudo/sudo.plugin.zsh
 source ~/.config/zsh/plugins/syntax-highlighting/zsh-syntax-highlighting.zsh
