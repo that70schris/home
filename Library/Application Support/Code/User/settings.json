@@ -206,4 +206,5 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.indent": 15,
   "yaml.maxItemsComputed": 99999,
+  "yaml2json.yamlIndentationSpaces": 2,
 }
