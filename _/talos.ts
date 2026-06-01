@@ -1,11 +1,11 @@
 import * as talos from '@pulumiverse/talos'
 
-const secrets = new talos.machine.Secrets('secrets', {})
-
-const configurationApply = new talos.machine.ConfigurationApply('configurationApply', {
+const node = '192.168.0.5'
+const secrets = new talos.machine.Secrets('berry', {})
+const config = new talos.machine.ConfigurationApply('berry', {
   clientConfiguration: secrets.clientConfiguration,
   // machineConfigurationInput: configuration.machineConfiguration,
-  node: '192.168.0.5',
+  node,
   configPatches: [
     {
       machine: {
@@ -150,9 +150,11 @@ const configurationApply = new talos.machine.ConfigurationApply('configurationAp
   }),
 })
 
-const bootstrap = new talos.machine.Bootstrap('bootstrap', {
-  node: '10.5.0.2',
-  clientConfiguration: secrets.clientConfiguration,
-}, {
-  dependsOn: [configurationApply],
-})
+// new talos.machine.Bootstrap('bootstrap', {
+//   clientConfiguration: secrets.clientConfiguration,
+//   node,
+// }, {
+//   dependsOn: [
+//     config,
+//   ],
+// })
