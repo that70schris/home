@@ -194,9 +194,6 @@ $untracked\
   style = 'white'
 
 [os.symbols]
-  AIX = '➿'
-  ALTLinux = 'Ⓐ'
-  AOSC = '�'
   AlmaLinux = '💠'
   Alpaquita = '🔔'
   Alpine = '🏔️'
