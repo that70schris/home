@@ -294,7 +294,7 @@ export class _Cluster {
   get index() {
     return [
       this.ingress,
-      this.tailscale,
+      // this.tailscale,
       this.twingate_operator,
       this.twingate_connector,
       // this.twingate_resource,

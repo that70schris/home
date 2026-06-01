@@ -1,1 +1,2 @@
 import './kubernetes'
+import './talos'
