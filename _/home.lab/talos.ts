@@ -22,8 +22,8 @@ export class Talos {
     return `https://${this.host}`
   }
 
-  // version = 'v1.36.1'
-  version = 'latest'
+  kubeVersion = 'v1.36.1'
+  talosVersion = 'v1.13.3'
 
   @once
   get config() {
@@ -34,6 +34,7 @@ export class Talos {
         clusterName: this.name,
         machineType: 'controlplane',
         machineSecrets: this.secrets.machineSecrets,
+        talosVersion: this.talosVersion,
       }).machineConfiguration,
       node: this.host,
       timeouts: {
@@ -61,13 +62,13 @@ export class Talos {
               'kubernetes.default.svc.cluster.local',
             ],
             kubelet: {
-              image: `ghcr.io/siderolabs/kubelet:${this.version}`,
+              image: `ghcr.io/siderolabs/kubelet:${this.kubeVersion}`,
               defaultRuntimeSeccompProfileEnabled: true,
               disableManifestsDirectory: true,
             },
             install: {
               disk: '/dev/nvme0n1',
-              image: 'ghcr.io/siderolabs/installer:v1.13.3',
+              image: `ghcr.io/siderolabs/installer:${this.talosVersion}`,
               wipe: true,
             },
             features: {
@@ -116,7 +117,7 @@ export class Talos {
               key: 'LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKS0FJQkFBS0NBZ0VBcWp6R2xBRCtmaTNaUlVVQlpwU1FETmJhU1lrMUZRZ21pSFBQU1h0NWdlV0NKcmpZCm4vMzdOTHJQRU5Odi9WTUgyMG1qaWhWTWJNNDUvOTROM0Z6L0xCQ1BaUzhiblR6RDk5ZDYwVGlQS1U4aFphMzMKdHE0STJsR25JR2RMRFNyY2xBWEZOc0ZiNkRVRG0yOXlXMTNtaml5WnVMdVVyeXh1MTdIWmNLTEFxcE9JWkFQNgpMKzEyVExDdEQ1dGN5QnY1U0VjZVZKVVJZN2R6RDZZOHJHcWI2ajV6SmJBK2k5SGdTSzRCRWt0MVFNdHRBS0tlCkgwQmtiSVI5VEVyaFNEWDlTc3FvYitkc0M1VUFSdDVNT3poZjFrcWo2cTJqZ1RuR1RGYjBqYmdjYWh1d201d3EKSlV2MTFoZXp5eUtiYVo0RDNVYW5YMHl4Y0FJS3NOVHZMTGFSTnV2c0pKalFFdGgxTjU5Q1h0R1FTM2xzQVdVVwpXcmQ4ZjRPOXhTWVplOTJPU29RMG9Nbm0yWWk5UHJ2V3pwcEhaU25CMnpIdE52SDUvQ3kyOU5XR2EybDJTcjRmCndUUkhMMVMvdTBleHA2NFdhR21UMVpOdWhVVWFHTnl5NGZWbUF1Uk1CSE1TRnE5cmtFOU1MK1VqR0ZtaFVGYWIKRmxjN0NQYlUwV2JqelNVR0dCWXNCS3QyVGk2Nk9LeUFkUnNjblFWK3ZDMElSL0VqTEcxMDh4Y3VOY1lEMHk2ZApaWkdWNWdVRlhtUi9Qdm1WanJFaCsyV0Y5Y2xlL1UxOCswQ3hqVld5M2EzbTYxQWdkNzBEVGtRYys5cmlkeFBFCkpieUY1d0NpS2FQS3JrUEgxRGozQjdaVkV0SWFRbFo2TzZUM1pBQUoyQWpkTDVpY1p3UlVKWnp3Y2VFQ0F3RUEKQVFLQ0FnQUNuWGZrZHFaeUxFU2g3SWN5dXZZQ2lIdG1kVW5nTnBXVzg0Wjc1NzVzV1NqNGJNOEJHQzczZHFZdgpLVHhYYlNMYUFzWFZIWElrMnI4bjE5S3BMN0dJelFGUzZkZ1lBSUszS0ROK0Nzc2lOSkc4Qk9IaEI4ZmhpSzhUClQ1cm15eUdEMFpuZnR6VXcrajJCc2dMVTlmcVFkUTF3ZWNzMUxLN1FOKzV4N1VJZDdMSEQ3WTYybFVTRHRaUVgKQVFrNkZybnIyeEhUZFUzRTFTRGFuUEJpS3FvVi9Wc1orVnpnbTNzQlN0RC81YkpacWpaVXMrclBhcGNRVnJHeApEaFpyWEU3MWl1cnUreVJkQWk4MHAzNE95OVVuRHRMNVRDME9rMk5oTVZYRTVvN2pMMlUxWXI3Ly95eDUyemZiCkZ6OUJibGk3V2JaQS84WGJCV0VDS2VjNXJkMUpyd2VPUTdWMTZQREV0clV6QXBIdms2N0czT2N2eHQ5V2RJOTAKbER4aU5jRlFnZkhGOWQ1VDc3VklXbTVCaEtVZ3lRM2U5NzdCVEJSS3QvRSt3bG54T3VKa3JtdEs3L3ZsLzI5WQpaYXYvcGc0T3VXak1mNnFNaDNFcHRERDRPUUxkNDhWRG5jUEVjbHo0R0gzZ3FnblI4ZWJ3RkxLbktiOEhyTDMvCm9QemVReWREV1lxa0g5blVKeFlXbVg2ZHJTVGRSOXpOWUhFdlp0ajgwQzNMclJRR0FWYktkYTZDRTdHY1d4T00KalFUK2hjQkVkTnN6VElGd0xKd1dMdVZKV2RRWER2azN0UHBMbXNGYUZaQzVrNFo3UXdvV1RpRGMvMHZ4cjhoSwp0YmxnTFVrbkVjNi9zcnBtT1QwYmNkcjVrbDMxNDA3Z3pjbGZ3ZU02STAvUjlnOXA1UUtDQVFFQXlUeVRmU1VHCjQ2ZnBSVENoYzNaMnFXeEJPeUFqcm1tRGJidEs3RmQvNWlqdnVaMmZjUTNpUHpxVzFub3B6QUlDNytNVDdFamMKZDV5VXRVU211R3M0bkNoa2RoTXRYeTlJNkxqS0Q5Nk1TTFRURVJudnRseWpUTHpHUzlwazNoejZJRk9GemxnLwpmRFQwQnE1TEhMZjdnbklTbWRWd1pKcGpJMSthUkJMUS9ONEZnYnBRY0RBS2NIT2lKcGdoaFdTL2UvaHZMK0JiCldFdDhYRWtvMkxjdUl3UjlOakxaWHdHWW83R3ZsSGVjN0kvekJtSENUYXZTd1dGUUswU1JNbFZUM2laWkM0YXAKMjEyS1NzdVd0UFZQalQrdUdZZ0M0RlJnRGxXdEJTY0pMTE14ZDZ5OEZFb2x6Tk1iUjdaRWZPTWQ0U0IvY05mQgpLRDRPRmN4dlFRQ2xqUUtDQVFFQTJKQ1l1NTV0OGJTSnEyWUsrNVJzRk1HaFdaQlVJc3FPeFJ0TVY2VkRrMVJBCk4ycFcwRm5mc1hUb3J4dXY5TEc1NkZVa1QzQlhkLzEycWY2ZVVNMDlaaGp0bzhuZFVFV2N1TnhVTVk3QUdEZWUKZ2h2MnA3akZMTUwvdE5palBRWU9RdUgwci9HcWFiY0l2dDJOVktqb1p0SXRmZ2dkZkpkQ1pUN1UyOTg1ajVSMQp6TlYzMTFwYUpFOHZ0VGFKNzNoUVNkNTU3MWhucVhaeWJLOTdjcnVxU1RrOGpJdHBYM25vWWN2TXJHc3Nvdm03CktxM2dDcUgxUDN4TWNtUVduekNVZS80Q2hNQmFuZ2V3UDVta3prUWtzNFBOVHg5dkNuenRMS21PZXFMb1BsamkKVmdkYWsvZitkNjljdUpWek9Ud3g5c3RQNkFNQktGaS9KTlNRVDRJMnBRS0NBUUVBeEtmREJtQWgzR1loNjNDNwp4bWMxVFJveW9RSW1mSEkyY3d5K0NqcjBEVXRpQWdXTVkrSUtnSG5VSUNMZ0o3S3JoaHhtUXRsdFFpS3RuSHRMClpodTZCYmpmZkJmL2xlNVNsTUxKRERzUzRwWjdVVklFVlRVd2pIUktZS1E3UUdnVzgzSkw1N3VMeHVqRXRLYXQKVnBKaFlqZngvNDE2dVlXNmJqNG1ObklnODR4UTIxYms5czJyMWZyYXNsYW5JNEd5TXdjME9SaEtpLzJ3dVVyeApkTitHWWNnb1NNZm1ieGJUUU4wSzFjOFNkb2V5R2tGOHJZVEZnQitHUmRKTEJtSW1oSWo3S2UxZW5yWkp5QkF1CjVnWjR5SE03dzAyTWFnZHFtM2VVanQxMzlNdmxBcXUyWFNtY3lRNWdzWExvZVJkR0F0Uk1WazB5UVE1cm0xZmUKUFNyUm5RS0NBUUFjb2htZmpOWHFoRDFEalMxY2tBWXVSRitwOE53KzhWc3BFbS9va3JBNWxZVWNEcEpGMyt3awprVm1HZFhteE42Smw1b1B6Z04zL3ZtSm5IWVFmR05QS1lQZGlsWGtPZVBXOHQxem1aSUpmY1ZNaXpzR3c4VXdZCm0vdWxGSk9ZcU9sUHpJSkdsUVE4RC9nM0RDSDRsSkNOcjdKV0hJcVJnNHBDeXFqb0hUNkdEbEg0OEN4MUs3d0oKV3ZMcTJiZ3BFbFpEUGdnUExqZ2Vmc3VvTlJkMFZ2MnZ5c0tIcnBNVERaSTlBKzRleWRqUC80YlFvTWFqZ1VCawowWEZtR25lbk9vd1hUTUZXZmZ3OU1yVUo0NjJYbkFqaU4wWDQ5U1lBVS80anpwTkpBYXNGTzBsSnFKVkFSU1MrCi9FK2RGQjEwN3RHSVdOOUt4TUx0YTdaeUR5eTVablVGQW9JQkFEUGl2NTlGcitKaTBDUzFoaHkrTFhGZnJESTQKa3ppdkNvN0cwZ0hLc0tvT2lrTkVMN2QvZE9yaEJ2eHFGeDhBdU03SWVvTmhzcHJKUlRxSXRjU2VUbDdhYUJOcwpxNlkzcEU5WVd1eHpsRGtna0xUOFlsMG9RT0dVdmliNjZ2MGx6QTFGSC9iVzdrZlpLNlJmbm9XQkdqK0E2KzYvClVQbDFERUhQcndTSTRGNmdHamtYbmxmSUw2b2Q5VUJOOXl4OTFZQWYvckgzTlUzd1VNU3RJd3BKQko3Wmo0TUwKZDJuWHkvMGhmVFFmUEtZaVMxUzYzby9jS1hOMklndThUUXZLcjYrQ2Z1TTA2eTdkbExWL1daL3dqYUErK1JMWQp1MXlUM0M1QzRSMU0rUjlXK0dJa0ZjMWwwdnQvZ1VITmlPNS9XYnYyRFZEWkJTSnJ2em8wY2lJOE1HMD0KLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K',
             },
             apiServer: {
-              image: `registry.k8s.io/kube-apiserver:${this.version}`,
+              image: `registry.k8s.io/kube-apiserver:${this.kubeVersion}`,
               admissionControl: [
                 {
                   name: 'PodSecurity',
@@ -152,13 +153,13 @@ export class Talos {
               },
             },
             controllerManager: {
-              image: `registry.k8s.io/kube-controller-manager:${this.version}`,
+              image: `registry.k8s.io/kube-controller-manager:${this.kubeVersion}`,
             },
             proxy: {
-              image: `registry.k8s.io/kube-proxy:${this.version}`,
+              image: `registry.k8s.io/kube-proxy:${this.kubeVersion}`,
             },
             scheduler: {
-              image: `registry.k8s.io/kube-scheduler:${this.version}`,
+              image: `registry.k8s.io/kube-scheduler:${this.kubeVersion}`,
             },
             discovery: {
               enabled: true,
@@ -194,7 +195,11 @@ export class Talos {
   get bootstrap() {
     return new talos.machine.Bootstrap(this.name, {
       clientConfiguration: this.secrets.clientConfiguration,
+      endpoint: this.endpoint,
       node: this.host,
+      timeouts: {
+        create: '60s',
+      },
     }, {
       dependsOn: [
         this.config,
