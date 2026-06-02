@@ -27,15 +27,20 @@ export class Talos {
 
   @once
   get config() {
+    return talos.machine.getConfigurationOutput({
+      clusterEndpoint: `${this.endpoint}:6443`,
+      clusterName: this.name,
+      machineType: 'controlplane',
+      machineSecrets: this.secrets.machineSecrets,
+      talosVersion: this.talosVersion,
+    })
+  }
+
+  @once
+  get apply() {
     return new talos.machine.ConfigurationApply(this.name, {
       clientConfiguration: this.secrets.clientConfiguration,
-      machineConfigurationInput: talos.machine.getConfigurationOutput({
-        clusterEndpoint: `${this.endpoint}:6443`,
-        clusterName: this.name,
-        machineType: 'controlplane',
-        machineSecrets: this.secrets.machineSecrets,
-        talosVersion: this.talosVersion,
-      }).machineConfiguration,
+      machineConfigurationInput: this.config.machineConfiguration,
       node: this.host,
       timeouts: {
         create: '10s',
@@ -195,14 +200,14 @@ export class Talos {
   get bootstrap() {
     return new talos.machine.Bootstrap(this.name, {
       clientConfiguration: this.secrets.clientConfiguration,
-      endpoint: this.endpoint,
+      endpoint: this.host,
       node: this.host,
       timeouts: {
-        create: '60s',
+        // create: '60s',
       },
     }, {
       dependsOn: [
-        this.config,
+        this.apply,
       ],
     })
   }
