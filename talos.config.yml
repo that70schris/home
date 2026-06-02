@@ -14,6 +14,7 @@ machine:
     - berry.local
     - kube.berry.home
     - kubernetes.default.svc.cluster.local
+
   kubelet:
     image: ghcr.io/siderolabs/kubelet
     defaultRuntimeSeccompProfileEnabled: true
