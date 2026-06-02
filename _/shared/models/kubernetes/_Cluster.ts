@@ -1,9 +1,8 @@
-import { IngressController } from '@pulumi/kubernetes-ingress-nginx'
-import { Secret, Service, ServiceSpecType } from '@pulumi/kubernetes/core/v1'
+import { Service, ServiceSpecType } from '@pulumi/kubernetes/core/v1'
 import { Chart } from '@pulumi/kubernetes/helm/v4'
-import { Config, ResourceOptions } from '@pulumi/pulumi'
+import { ResourceOptions } from '@pulumi/pulumi'
 import * as tailscale from '@pulumi/tailscale'
-import { _CustomResource, _Ingress, _Kube } from '.'
+import { _CustomResource, _Kube } from '.'
 import { once } from '../../decorators'
 import { _TwingateResource } from '../twingate'
 
@@ -49,6 +48,7 @@ export class _Cluster {
       },
     })
 
+    // this.index
     args.kubes.forEach((kube) => {
       kube.index?.forEach((resource) => {
         switch (resource.constructor) {
@@ -65,144 +65,143 @@ export class _Cluster {
 
       return kube.index
     })
-
   }
 
-  manager = new Chart('manager', {
-    chart: 'cert-manager',
-    repositoryOpts: {
-      repo: 'https://charts.jetstack.io',
-    },
-    values: {
-      fullnameOverride: 'certificate',
-      crds: {
-        enabled: true,
-        keep: false,
-      },
-      global: {
-        leaderElection: {
-          namespace: 'default',
-        },
-      },
-    },
-  })
+  // manager = new Chart('manager', {
+  //   chart: 'cert-manager',
+  //   repositoryOpts: {
+  //     repo: 'https://charts.jetstack.io',
+  //   },
+  //   values: {
+  //     fullnameOverride: 'certificate',
+  //     crds: {
+  //       enabled: true,
+  //       keep: false,
+  //     },
+  //     global: {
+  //       leaderElection: {
+  //         namespace: 'default',
+  //       },
+  //     },
+  //   },
+  // })
 
-  cloudflare = new Secret('cloudflare', {
-    metadata: {
-      name: 'cloudflare',
-    },
-    stringData: {
-      token: new Config('cloudflare')
-        .require('apiToken'),
-    },
-  })
+  // cloudflare = new Secret('cloudflare', {
+  //   metadata: {
+  //     name: 'cloudflare',
+  //   },
+  //   stringData: {
+  //     token: new Config('cloudflare')
+  //       .require('apiToken'),
+  //   },
+  // })
 
-  root = new _CustomResource('root', {
-    apiVersion: 'cert-manager.io/v1',
-    kind: 'ClusterIssuer',
-    spec: {
-      selfSigned: {},
-    },
-  })
+  // root = new _CustomResource('root', {
+  //   apiVersion: 'cert-manager.io/v1',
+  //   kind: 'ClusterIssuer',
+  //   spec: {
+  //     selfSigned: {},
+  //   },
+  // })
 
-  cert = new _CustomResource('root', {
-    apiVersion: 'cert-manager.io/v1',
-    kind: 'Certificate',
-    spec: {
-      isCA: true,
-      commonName: 'bailey.mx',
-      secretName: this.root.metadata.name,
-      privateKey: {
-        algorithm: 'ECDSA',
-        size: 256,
-      },
-      issuerRef: {
-        kind: this.root.kind,
-        name: this.root.metadata.name,
-      },
-    },
-  }, {
-    dependsOn: [
-      this.root,
-    ],
-  })
+  // cert = new _CustomResource('root', {
+  //   apiVersion: 'cert-manager.io/v1',
+  //   kind: 'Certificate',
+  //   spec: {
+  //     isCA: true,
+  //     commonName: 'bailey.mx',
+  //     secretName: this.root.metadata.name,
+  //     privateKey: {
+  //       algorithm: 'ECDSA',
+  //       size: 256,
+  //     },
+  //     issuerRef: {
+  //       kind: this.root.kind,
+  //       name: this.root.metadata.name,
+  //     },
+  //   },
+  // }, {
+  //   dependsOn: [
+  //     this.root,
+  //   ],
+  // })
 
-  private = new _CustomResource('private', {
-    apiVersion: 'cert-manager.io/v1',
-    kind: 'ClusterIssuer',
-    spec: {
-      ca: {
-        secretName: this.cert.metadata.name,
-      },
-    },
-  }, {
-    dependsOn: [
-      this.cert,
-    ],
-  })
+  // private = new _CustomResource('private', {
+  //   apiVersion: 'cert-manager.io/v1',
+  //   kind: 'ClusterIssuer',
+  //   spec: {
+  //     ca: {
+  //       secretName: this.cert.metadata.name,
+  //     },
+  //   },
+  // }, {
+  //   dependsOn: [
+  //     this.cert,
+  //   ],
+  // })
 
-  letsencrypt = new _CustomResource('letsencrypt', {
-    apiVersion: 'cert-manager.io/v1',
-    kind: 'ClusterIssuer',
-    spec: {
-      acme: {
-        server: 'https://acme-v02.api.letsencrypt.org/directory',
-        email: new Config().require('email'),
-        privateKeySecretRef: {
-          name: 'letsencrypt',
-        },
-        solvers: [{
-          dns01: {
-            cloudflare: {
-              apiTokenSecretRef: {
-                name: this.cloudflare.metadata.name,
-                key: 'token',
-              },
-            },
-          },
-        }],
-      },
-    },
-  }, {
-    deleteBeforeReplace: true,
-    dependsOn: [
-      this.cloudflare,
-      this.manager,
-    ],
-  })
+  // letsencrypt = new _CustomResource('letsencrypt', {
+  //   apiVersion: 'cert-manager.io/v1',
+  //   kind: 'ClusterIssuer',
+  //   spec: {
+  //     acme: {
+  //       server: 'https://acme-v02.api.letsencrypt.org/directory',
+  //       email: new Config().require('email'),
+  //       privateKeySecretRef: {
+  //         name: 'letsencrypt',
+  //       },
+  //       solvers: [{
+  //         dns01: {
+  //           cloudflare: {
+  //             apiTokenSecretRef: {
+  //               name: this.cloudflare.metadata.name,
+  //               key: 'token',
+  //             },
+  //           },
+  //         },
+  //       }],
+  //     },
+  //   },
+  // }, {
+  //   deleteBeforeReplace: true,
+  //   dependsOn: [
+  //     this.cloudflare,
+  //     this.manager,
+  //   ],
+  // })
 
-  nginx = new IngressController('nginx', {
-    fullnameOverride: 'nginx',
-    controller: {
-      containerName: 'main',
-    },
-  })
+  // nginx = new IngressController('nginx', {
+  //   fullnameOverride: 'nginx',
+  //   controller: {
+  //     containerName: 'main',
+  //   },
+  // })
 
-  @once
-  get ingress() {
-    return new _Ingress('nginx', {
-      rules: this.args?.kubes
-        .filter((kube) => {
-          return kube.ingress
-        }).map(kube => ({
-          host: [
-            kube.name,
-            kube.overrides.domain
-            ?? this.args.domain,
-          ].filter(Boolean).join('.'),
-          http: {
-            paths: [{
-              backend: kube.backend,
-              pathType: 'Prefix',
-              path: '/',
-            }],
-          },
-        })),
-    }, {
-      cluster: this,
-      issuer: this.letsencrypt,
-    })
-  }
+  // @once
+  // get ingress() {
+  //   return new _Ingress('nginx', {
+  //     rules: this.args?.kubes
+  //       .filter((kube) => {
+  //         return kube.ingress
+  //       }).map(kube => ({
+  //         host: [
+  //           kube.name,
+  //           kube.overrides.domain
+  //           ?? this.args.domain,
+  //         ].filter(Boolean).join('.'),
+  //         http: {
+  //           paths: [{
+  //             backend: kube.backend,
+  //             pathType: 'Prefix',
+  //             path: '/',
+  //           }],
+  //         },
+  //       })),
+  //   }, {
+  //     cluster: this,
+  //     issuer: this.letsencrypt,
+  //   })
+  // }
 
   @once
   get twingate_operator() {
@@ -293,7 +292,7 @@ export class _Cluster {
   @once
   get index() {
     return [
-      this.ingress,
+      // this.ingress,
       // this.tailscale,
       this.twingate_operator,
       this.twingate_connector,

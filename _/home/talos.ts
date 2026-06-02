@@ -1,161 +1,187 @@
 import * as talos from '@pulumiverse/talos'
+import { once } from '../shared/decorators'
 
-const node = '192.168.0.5'
-const name = 'berry'
-const secrets = new talos.machine.Secrets(name, {})
-const config = new talos.machine.ConfigurationApply(name, {
-  clientConfiguration: secrets.clientConfiguration,
-  // machineConfigurationInput: configuration.machineConfiguration,
-  node,
-  configPatches: [
-    {
-      machine: {
-        type: 'controlplane',
-        token: '5lx59j.dxspqju8nuck2ipt',
-        ca: {
-          crt: 'LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJQekNCOHFBREFnRUNBaEVBd25LUndORHdXZ0Q0TDUvRTlGUnc0akFGQmdNclpYQXdFREVPTUF3R0ExVUUKQ2hNRmRHRnNiM013SGhjTk1qWXdOVE13TWpFek9EUXhXaGNOTXpZd05USTNNakV6T0RReFdqQVFNUTR3REFZRApWUVFLRXdWMFlXeHZjekFxTUFVR0F5dGxjQU1oQU4vMlAyNHlQVFI5NHBYRFlmSklibjNPNFBiYklKeEcwNzFKCnpnMEYrK2VLbzJFd1h6QU9CZ05WSFE4QkFmOEVCQU1DQW9Rd0hRWURWUjBsQkJZd0ZBWUlLd1lCQlFVSEF3RUcKQ0NzR0FRVUZCd01DTUE4R0ExVWRFd0VCL3dRRk1BTUJBZjh3SFFZRFZSME9CQllFRk1FVktESDFWSHA5U3g3SQo1WUFKVDdYb0dEejlNQVVHQXl0bGNBTkJBSkdneDI1WmpMaGNsdVNFWCtZajJKekkrTExtS2tQemFKOTExbE1CCmZWZ3NJcDhlejIxakl4Rmh4cUZ6R2FjWjlpQnhVTk5RcUY3R3YzL3kzanpSMmd3PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==',
-          key: 'LS0tLS1CRUdJTiBFRDI1NTE5IFBSSVZBVEUgS0VZLS0tLS0KTUM0Q0FRQXdCUVlESzJWd0JDSUVJSVArUWFWQVo2U2ZQc3pmbGYxckU5c2x4OEtWem16R0ExZXp4V2trbFZQawotLS0tLUVORCBFRDI1NTE5IFBSSVZBVEUgS0VZLS0tLS0K',
-        },
-        certSANs: [
-          node,
-          'bailey.mx',
-          'berry',
-          'berry.bailey.mx',
-          'berry.home',
-          'berry.local',
-          'kube.berry.home',
-          'kubernetes.default.svc.cluster.local',
-        ],
-        kubelet: {
-          image: 'ghcr.io/siderolabs/kubelet',
-          defaultRuntimeSeccompProfileEnabled: true,
-          disableManifestsDirectory: true,
-        },
-        install: {
-          disk: '/dev/nvme0n1',
-          image: 'ghcr.io/siderolabs/installer',
-          wipe: true,
-        },
-        features: {
-          diskQuotaSupport: true,
-          kubePrism: {
-            enabled: true,
-            port: 7445,
-          },
-          hostDNS: {
-            enabled: true,
-            forwardKubeDNSToHost: true,
-          },
-        },
-        nodeLabels: {
-          'node.kubernetes.io/exclude-from-external-load-balancers': '',
-        },
+export class Talos {
+
+  constructor(
+    public name: string,
+    public ip: string,
+  ) {
+    this.config
+  }
+
+  @once
+  get secrets() {
+    return new talos.machine.Secrets(this.name, {})
+  }
+
+  @once
+  get config() {
+    return new talos.machine.ConfigurationApply(this.name, {
+      clientConfiguration: this.secrets.clientConfiguration,
+      machineConfigurationInput: talos.machine.getConfigurationOutput({
+        clusterEndpoint: `https://${this.ip}:6443`,
+        clusterName: this.name,
+        machineType: 'controlplane',
+        machineSecrets: this.secrets.machineSecrets,
+      }).machineConfiguration,
+      node: this.ip,
+      timeouts: {
+        create: '10s',
+        update: '10s',
+        delete: '10s',
       },
-      cluster: {
-        allowSchedulingOnControlPlanes: true,
-        id: 'dhXJGOKxEkK-ClfBQxZ53NHFFIrjhoKtZgNpLyNF8qg=',
-        secret: '3bDUsCsDHylqLAhlkxUing7jiRaOboEpnGXGhMDlfno=',
-        controlPlane: {
-          endpoint: 'https://192.168.0.5',
-        },
-        clusterName: 'berry',
-        network: {
-          dnsDomain: 'cluster.local',
-          podSubnets: [
-            '10.244.0.0/16',
-          ],
-          serviceSubnets: [
-            '10.96.0.0/12',
-          ],
-        },
-        token: 'e3gzo6.0bfbt1b7zsmyjqx2',
-        secretboxEncryptionSecret: 'S3Vktyx3FW54gsCjCycJXFKCqyYZEKO0lvWndkW6G+I=',
-        ca: {
-          crt: 'LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJpakNDQVRDZ0F3SUJBZ0lSQVAyaVR6VkNqNWVpVkxWMjZxMXo1all3Q2dZSUtvWkl6ajBFQXdJd0ZURVQKTUJFR0ExVUVDaE1LYTNWaVpYSnVaWFJsY3pBZUZ3MHlOakExTXpBeU1UTTROREZhRncwek5qQTFNamN5TVRNNApOREZhTUJVeEV6QVJCZ05WQkFvVENtdDFZbVZ5Ym1WMFpYTXdXVEFUQmdjcWhrak9QUUlCQmdncWhrak9QUU1CCkJ3TkNBQVNEcGw2OTAxdm9LR2V0OFc3NzF1SVhRa0EyaUhIenlhRFgrVGxCRmlNUXBaUHZ3Z1hKQ0F1MjZPT1kKVEVkVUVWckpFK2JQN1RGenJ2eEJOSkd6bDhva28yRXdYekFPQmdOVkhROEJBZjhFQkFNQ0FvUXdIUVlEVlIwbApCQll3RkFZSUt3WUJCUVVIQXdFR0NDc0dBUVVGQndNQ01BOEdBMVVkRXdFQi93UUZNQU1CQWY4d0hRWURWUjBPCkJCWUVGTWRYNWhWalV4ZDh2d0ZHNEVJa21LaTMybkh2TUFvR0NDcUdTTTQ5QkFNQ0EwZ0FNRVVDSUQ2RGZLcGoKZXJjZ3ZpcXpXdk51Q2xTdm1KbmNabUJwUlRSSXV6L283ejJvQWlFQTlCRmhvME15WTFqckVSY2MrZVYxYmVWeAoyMTAzOC9nOFhCU1Rac0tZSVlJPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==',
-          key: 'LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUxlOGFUdVlNYzNrR1E1a05CVGg5V0V1SXVzTXZVditJQjdSdUw3N2RNWk1vQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFZzZaZXZkTmI2Q2hucmZGdSs5YmlGMEpBTm9oeDg4bWcxL2s1UVJZakVLV1Q3OElGeVFnTAp0dWpqbUV4SFZCRmF5UlBteisweGM2NzhRVFNSczVmS0pBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQo=',
-        },
-        aggregatorCA: {
-          crt: 'LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJZRENDQVFhZ0F3SUJBZ0lSQU5DT2NWY1RGOU5uTzJWbmEvZGRsZnd3Q2dZSUtvWkl6ajBFQXdJd0FEQWUKRncweU5qQTFNekF5TVRNNE5ERmFGdzB6TmpBMU1qY3lNVE00TkRGYU1BQXdXVEFUQmdjcWhrak9QUUlCQmdncQpoa2pPUFFNQkJ3TkNBQVFKL2ZNd001SGp5R1F3Wk9wbE9reE85ekJmTFFPd1BMbGFRM0JIaXc4TnZlb3U0dGZxCnZETjZMUGsxdUJlRjg3RlE5NkJWL21QUVVJWk9IbFpxd3ROcW8yRXdYekFPQmdOVkhROEJBZjhFQkFNQ0FvUXcKSFFZRFZSMGxCQll3RkFZSUt3WUJCUVVIQXdFR0NDc0dBUVVGQndNQ01BOEdBMVVkRXdFQi93UUZNQU1CQWY4dwpIUVlEVlIwT0JCWUVGSzJDYTRCeUYwQkVpVjNBVFlFbm9VeG1NdFJBTUFvR0NDcUdTTTQ5QkFNQ0EwZ0FNRVVDCklRRHZHZ3BYUlZSdll4eGU5eWlESUU3WFp0dDRudCt0Q0lRUE1qdmN4b2gyTXdJZ1ZSRDBxU2R4c1g5ZDRaaDgKZkU2d0RmbGJrUXJ1cnRldklWY09XUE1vV3JzPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==',
-          key: 'LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUtCaVZuSUpzSFJGNSs1T2J4Q0JLZU94ekp0ZDdrUlNLbFFndEU1cUYwR1pvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFQ2Yzek1ET1I0OGhrTUdUcVpUcE1UdmN3WHkwRHNEeTVXa053UjRzUERiM3FMdUxYNnJ3egplaXo1TmJnWGhmT3hVUGVnVmY1ajBGQ0dUaDVXYXNMVGFnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQo=',
-        },
-        serviceAccount: {
-          key: 'LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKS0FJQkFBS0NBZ0VBcWp6R2xBRCtmaTNaUlVVQlpwU1FETmJhU1lrMUZRZ21pSFBQU1h0NWdlV0NKcmpZCm4vMzdOTHJQRU5Odi9WTUgyMG1qaWhWTWJNNDUvOTROM0Z6L0xCQ1BaUzhiblR6RDk5ZDYwVGlQS1U4aFphMzMKdHE0STJsR25JR2RMRFNyY2xBWEZOc0ZiNkRVRG0yOXlXMTNtaml5WnVMdVVyeXh1MTdIWmNLTEFxcE9JWkFQNgpMKzEyVExDdEQ1dGN5QnY1U0VjZVZKVVJZN2R6RDZZOHJHcWI2ajV6SmJBK2k5SGdTSzRCRWt0MVFNdHRBS0tlCkgwQmtiSVI5VEVyaFNEWDlTc3FvYitkc0M1VUFSdDVNT3poZjFrcWo2cTJqZ1RuR1RGYjBqYmdjYWh1d201d3EKSlV2MTFoZXp5eUtiYVo0RDNVYW5YMHl4Y0FJS3NOVHZMTGFSTnV2c0pKalFFdGgxTjU5Q1h0R1FTM2xzQVdVVwpXcmQ4ZjRPOXhTWVplOTJPU29RMG9Nbm0yWWk5UHJ2V3pwcEhaU25CMnpIdE52SDUvQ3kyOU5XR2EybDJTcjRmCndUUkhMMVMvdTBleHA2NFdhR21UMVpOdWhVVWFHTnl5NGZWbUF1Uk1CSE1TRnE5cmtFOU1MK1VqR0ZtaFVGYWIKRmxjN0NQYlUwV2JqelNVR0dCWXNCS3QyVGk2Nk9LeUFkUnNjblFWK3ZDMElSL0VqTEcxMDh4Y3VOY1lEMHk2ZApaWkdWNWdVRlhtUi9Qdm1WanJFaCsyV0Y5Y2xlL1UxOCswQ3hqVld5M2EzbTYxQWdkNzBEVGtRYys5cmlkeFBFCkpieUY1d0NpS2FQS3JrUEgxRGozQjdaVkV0SWFRbFo2TzZUM1pBQUoyQWpkTDVpY1p3UlVKWnp3Y2VFQ0F3RUEKQVFLQ0FnQUNuWGZrZHFaeUxFU2g3SWN5dXZZQ2lIdG1kVW5nTnBXVzg0Wjc1NzVzV1NqNGJNOEJHQzczZHFZdgpLVHhYYlNMYUFzWFZIWElrMnI4bjE5S3BMN0dJelFGUzZkZ1lBSUszS0ROK0Nzc2lOSkc4Qk9IaEI4ZmhpSzhUClQ1cm15eUdEMFpuZnR6VXcrajJCc2dMVTlmcVFkUTF3ZWNzMUxLN1FOKzV4N1VJZDdMSEQ3WTYybFVTRHRaUVgKQVFrNkZybnIyeEhUZFUzRTFTRGFuUEJpS3FvVi9Wc1orVnpnbTNzQlN0RC81YkpacWpaVXMrclBhcGNRVnJHeApEaFpyWEU3MWl1cnUreVJkQWk4MHAzNE95OVVuRHRMNVRDME9rMk5oTVZYRTVvN2pMMlUxWXI3Ly95eDUyemZiCkZ6OUJibGk3V2JaQS84WGJCV0VDS2VjNXJkMUpyd2VPUTdWMTZQREV0clV6QXBIdms2N0czT2N2eHQ5V2RJOTAKbER4aU5jRlFnZkhGOWQ1VDc3VklXbTVCaEtVZ3lRM2U5NzdCVEJSS3QvRSt3bG54T3VKa3JtdEs3L3ZsLzI5WQpaYXYvcGc0T3VXak1mNnFNaDNFcHRERDRPUUxkNDhWRG5jUEVjbHo0R0gzZ3FnblI4ZWJ3RkxLbktiOEhyTDMvCm9QemVReWREV1lxa0g5blVKeFlXbVg2ZHJTVGRSOXpOWUhFdlp0ajgwQzNMclJRR0FWYktkYTZDRTdHY1d4T00KalFUK2hjQkVkTnN6VElGd0xKd1dMdVZKV2RRWER2azN0UHBMbXNGYUZaQzVrNFo3UXdvV1RpRGMvMHZ4cjhoSwp0YmxnTFVrbkVjNi9zcnBtT1QwYmNkcjVrbDMxNDA3Z3pjbGZ3ZU02STAvUjlnOXA1UUtDQVFFQXlUeVRmU1VHCjQ2ZnBSVENoYzNaMnFXeEJPeUFqcm1tRGJidEs3RmQvNWlqdnVaMmZjUTNpUHpxVzFub3B6QUlDNytNVDdFamMKZDV5VXRVU211R3M0bkNoa2RoTXRYeTlJNkxqS0Q5Nk1TTFRURVJudnRseWpUTHpHUzlwazNoejZJRk9GemxnLwpmRFQwQnE1TEhMZjdnbklTbWRWd1pKcGpJMSthUkJMUS9ONEZnYnBRY0RBS2NIT2lKcGdoaFdTL2UvaHZMK0JiCldFdDhYRWtvMkxjdUl3UjlOakxaWHdHWW83R3ZsSGVjN0kvekJtSENUYXZTd1dGUUswU1JNbFZUM2laWkM0YXAKMjEyS1NzdVd0UFZQalQrdUdZZ0M0RlJnRGxXdEJTY0pMTE14ZDZ5OEZFb2x6Tk1iUjdaRWZPTWQ0U0IvY05mQgpLRDRPRmN4dlFRQ2xqUUtDQVFFQTJKQ1l1NTV0OGJTSnEyWUsrNVJzRk1HaFdaQlVJc3FPeFJ0TVY2VkRrMVJBCk4ycFcwRm5mc1hUb3J4dXY5TEc1NkZVa1QzQlhkLzEycWY2ZVVNMDlaaGp0bzhuZFVFV2N1TnhVTVk3QUdEZWUKZ2h2MnA3akZMTUwvdE5palBRWU9RdUgwci9HcWFiY0l2dDJOVktqb1p0SXRmZ2dkZkpkQ1pUN1UyOTg1ajVSMQp6TlYzMTFwYUpFOHZ0VGFKNzNoUVNkNTU3MWhucVhaeWJLOTdjcnVxU1RrOGpJdHBYM25vWWN2TXJHc3Nvdm03CktxM2dDcUgxUDN4TWNtUVduekNVZS80Q2hNQmFuZ2V3UDVta3prUWtzNFBOVHg5dkNuenRMS21PZXFMb1BsamkKVmdkYWsvZitkNjljdUpWek9Ud3g5c3RQNkFNQktGaS9KTlNRVDRJMnBRS0NBUUVBeEtmREJtQWgzR1loNjNDNwp4bWMxVFJveW9RSW1mSEkyY3d5K0NqcjBEVXRpQWdXTVkrSUtnSG5VSUNMZ0o3S3JoaHhtUXRsdFFpS3RuSHRMClpodTZCYmpmZkJmL2xlNVNsTUxKRERzUzRwWjdVVklFVlRVd2pIUktZS1E3UUdnVzgzSkw1N3VMeHVqRXRLYXQKVnBKaFlqZngvNDE2dVlXNmJqNG1ObklnODR4UTIxYms5czJyMWZyYXNsYW5JNEd5TXdjME9SaEtpLzJ3dVVyeApkTitHWWNnb1NNZm1ieGJUUU4wSzFjOFNkb2V5R2tGOHJZVEZnQitHUmRKTEJtSW1oSWo3S2UxZW5yWkp5QkF1CjVnWjR5SE03dzAyTWFnZHFtM2VVanQxMzlNdmxBcXUyWFNtY3lRNWdzWExvZVJkR0F0Uk1WazB5UVE1cm0xZmUKUFNyUm5RS0NBUUFjb2htZmpOWHFoRDFEalMxY2tBWXVSRitwOE53KzhWc3BFbS9va3JBNWxZVWNEcEpGMyt3awprVm1HZFhteE42Smw1b1B6Z04zL3ZtSm5IWVFmR05QS1lQZGlsWGtPZVBXOHQxem1aSUpmY1ZNaXpzR3c4VXdZCm0vdWxGSk9ZcU9sUHpJSkdsUVE4RC9nM0RDSDRsSkNOcjdKV0hJcVJnNHBDeXFqb0hUNkdEbEg0OEN4MUs3d0oKV3ZMcTJiZ3BFbFpEUGdnUExqZ2Vmc3VvTlJkMFZ2MnZ5c0tIcnBNVERaSTlBKzRleWRqUC80YlFvTWFqZ1VCawowWEZtR25lbk9vd1hUTUZXZmZ3OU1yVUo0NjJYbkFqaU4wWDQ5U1lBVS80anpwTkpBYXNGTzBsSnFKVkFSU1MrCi9FK2RGQjEwN3RHSVdOOUt4TUx0YTdaeUR5eTVablVGQW9JQkFEUGl2NTlGcitKaTBDUzFoaHkrTFhGZnJESTQKa3ppdkNvN0cwZ0hLc0tvT2lrTkVMN2QvZE9yaEJ2eHFGeDhBdU03SWVvTmhzcHJKUlRxSXRjU2VUbDdhYUJOcwpxNlkzcEU5WVd1eHpsRGtna0xUOFlsMG9RT0dVdmliNjZ2MGx6QTFGSC9iVzdrZlpLNlJmbm9XQkdqK0E2KzYvClVQbDFERUhQcndTSTRGNmdHamtYbmxmSUw2b2Q5VUJOOXl4OTFZQWYvckgzTlUzd1VNU3RJd3BKQko3Wmo0TUwKZDJuWHkvMGhmVFFmUEtZaVMxUzYzby9jS1hOMklndThUUXZLcjYrQ2Z1TTA2eTdkbExWL1daL3dqYUErK1JMWQp1MXlUM0M1QzRSMU0rUjlXK0dJa0ZjMWwwdnQvZ1VITmlPNS9XYnYyRFZEWkJTSnJ2em8wY2lJOE1HMD0KLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K',
-        },
-        apiServer: {
-          image: 'registry.k8s.io/kube-apiserver',
-          admissionControl: [
-            {
-              name: 'PodSecurity',
-              configuration: {
-                apiVersion: 'pod-security.admission.config.k8s.io/v1alpha1',
-                kind: 'PodSecurityConfiguration',
-                defaults: {
-                  'audit': 'restricted',
-                  'audit-version': 'latest',
-                  'enforce': 'baseline',
-                  'enforce-version': 'latest',
-                  'warn': 'restricted',
-                  'warn-version': 'latest',
-                },
-                exemptions: {
-                  namespaces: [
-                    'kube-system',
-                  ],
-                  runtimeClasses: [],
-                  usernames: [],
-                },
-              },
+      configPatches: [
+        {
+          machine: {
+            type: 'controlplane',
+            token: '5lx59j.dxspqju8nuck2ipt',
+            ca: {
+              crt: 'LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJQekNCOHFBREFnRUNBaEVBd25LUndORHdXZ0Q0TDUvRTlGUnc0akFGQmdNclpYQXdFREVPTUF3R0ExVUUKQ2hNRmRHRnNiM013SGhjTk1qWXdOVE13TWpFek9EUXhXaGNOTXpZd05USTNNakV6T0RReFdqQVFNUTR3REFZRApWUVFLRXdWMFlXeHZjekFxTUFVR0F5dGxjQU1oQU4vMlAyNHlQVFI5NHBYRFlmSklibjNPNFBiYklKeEcwNzFKCnpnMEYrK2VLbzJFd1h6QU9CZ05WSFE4QkFmOEVCQU1DQW9Rd0hRWURWUjBsQkJZd0ZBWUlLd1lCQlFVSEF3RUcKQ0NzR0FRVUZCd01DTUE4R0ExVWRFd0VCL3dRRk1BTUJBZjh3SFFZRFZSME9CQllFRk1FVktESDFWSHA5U3g3SQo1WUFKVDdYb0dEejlNQVVHQXl0bGNBTkJBSkdneDI1WmpMaGNsdVNFWCtZajJKekkrTExtS2tQemFKOTExbE1CCmZWZ3NJcDhlejIxakl4Rmh4cUZ6R2FjWjlpQnhVTk5RcUY3R3YzL3kzanpSMmd3PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==',
+              key: 'LS0tLS1CRUdJTiBFRDI1NTE5IFBSSVZBVEUgS0VZLS0tLS0KTUM0Q0FRQXdCUVlESzJWd0JDSUVJSVArUWFWQVo2U2ZQc3pmbGYxckU5c2x4OEtWem16R0ExZXp4V2trbFZQawotLS0tLUVORCBFRDI1NTE5IFBSSVZBVEUgS0VZLS0tLS0K',
             },
-          ],
-          auditPolicy: {
-            apiVersion: 'audit.k8s.io/v1',
-            kind: 'Policy',
-            rules: [
-              {
-                level: 'Metadata',
-              },
+            certSANs: [
+              this.ip,
+              'bailey.mx',
+              'berry',
+              'berry.bailey.mx',
+              'berry.home',
+              'berry.local',
+              'kube.berry.home',
+              'kubernetes.default.svc.cluster.local',
             ],
-          },
-        },
-        controllerManager: {
-          image: 'registry.k8s.io/kube-controller-manager',
-        },
-        proxy: {
-          image: 'registry.k8s.io/kube-proxy',
-        },
-        scheduler: {
-          image: 'registry.k8s.io/kube-scheduler',
-        },
-        discovery: {
-          enabled: true,
-          registries: {
-            kubernetes: {
-              disabled: true,
+            kubelet: {
+              image: 'ghcr.io/siderolabs/kubelet',
+              defaultRuntimeSeccompProfileEnabled: true,
+              disableManifestsDirectory: true,
             },
-            service: {},
+            install: {
+              disk: '/dev/nvme0n1',
+              image: 'ghcr.io/siderolabs/installer',
+              wipe: true,
+            },
+            features: {
+              diskQuotaSupport: true,
+              kubePrism: {
+                enabled: true,
+                port: 7445,
+              },
+              hostDNS: {
+                enabled: true,
+                forwardKubeDNSToHost: true,
+              },
+            },
+            nodeLabels: {
+              'node.kubernetes.io/exclude-from-external-load-balancers': '',
+            },
           },
-        },
-        etcd: {
-          ca: {
-            crt: 'LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJmVENDQVNPZ0F3SUJBZ0lRRjJhMGx2d2s3eDgyS0RIQUxLdDRWekFLQmdncWhrak9QUVFEQWpBUE1RMHcKQ3dZRFZRUUtFd1JsZEdOa01CNFhEVEkyTURVek1ESXhNemcwTVZvWERUTTJNRFV5TnpJeE16ZzBNVm93RHpFTgpNQXNHQTFVRUNoTUVaWFJqWkRCWk1CTUdCeXFHU000OUFnRUdDQ3FHU000OUF3RUhBMElBQkNzbG5TblpEdWhoCmQwMXBTdlVSL0d4MEdKdmFsbnhLZEoramtTSmJNYWRPU2VSUEtPMUtacm5hMzV4RElGbzI3aFY3TTNkVXoxaXYKQVpLR1FpSEY5TWlqWVRCZk1BNEdBMVVkRHdFQi93UUVBd0lDaERBZEJnTlZIU1VFRmpBVUJnZ3JCZ0VGQlFjRApBUVlJS3dZQkJRVUhBd0l3RHdZRFZSMFRBUUgvQkFVd0F3RUIvekFkQmdOVkhRNEVGZ1FVQk5HYnBlT0JJdkpUCjAvdERiLzV0ZU1YczJtY3dDZ1lJS29aSXpqMEVBd0lEU0FBd1JRSWhBT1NWRnloSkpuZlpuWmk4aVVFVTFvd0wKVnBUN1pPWVpVTk1QQ2d3cUNxN1NBaUFEOFUvUG9DN1htMXo3VUJmajZiVm0yb0VCU3NuY2tRMHBQMTJ4Vk5QagpTUT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K',
-            key: 'LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUIxd0FHaUFwSzI5UmFpNnlQUk53YXBKNmx5ZFVseHZ6SVdWTHVmYWNGN1RvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFS3lXZEtka082R0YzVFdsSzlSSDhiSFFZbTlxV2ZFcDBuNk9SSWxzeHAwNUo1RThvN1VwbQp1ZHJmbkVNZ1dqYnVGWHN6ZDFUUFdLOEJrb1pDSWNYMHlBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQo=',
+          cluster: {
+            allowSchedulingOnControlPlanes: true,
+            id: 'dhXJGOKxEkK-ClfBQxZ53NHFFIrjhoKtZgNpLyNF8qg=',
+            secret: '3bDUsCsDHylqLAhlkxUing7jiRaOboEpnGXGhMDlfno=',
+            controlPlane: {
+              endpoint: 'https://192.168.0.5',
+            },
+            clusterName: 'berry',
+            network: {
+              dnsDomain: 'cluster.local',
+              podSubnets: [
+                '10.244.0.0/16',
+              ],
+              serviceSubnets: [
+                '10.96.0.0/12',
+              ],
+            },
+            token: 'e3gzo6.0bfbt1b7zsmyjqx2',
+            secretboxEncryptionSecret: 'S3Vktyx3FW54gsCjCycJXFKCqyYZEKO0lvWndkW6G+I=',
+            ca: {
+              crt: 'LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJpakNDQVRDZ0F3SUJBZ0lSQVAyaVR6VkNqNWVpVkxWMjZxMXo1all3Q2dZSUtvWkl6ajBFQXdJd0ZURVQKTUJFR0ExVUVDaE1LYTNWaVpYSnVaWFJsY3pBZUZ3MHlOakExTXpBeU1UTTROREZhRncwek5qQTFNamN5TVRNNApOREZhTUJVeEV6QVJCZ05WQkFvVENtdDFZbVZ5Ym1WMFpYTXdXVEFUQmdjcWhrak9QUUlCQmdncWhrak9QUU1CCkJ3TkNBQVNEcGw2OTAxdm9LR2V0OFc3NzF1SVhRa0EyaUhIenlhRFgrVGxCRmlNUXBaUHZ3Z1hKQ0F1MjZPT1kKVEVkVUVWckpFK2JQN1RGenJ2eEJOSkd6bDhva28yRXdYekFPQmdOVkhROEJBZjhFQkFNQ0FvUXdIUVlEVlIwbApCQll3RkFZSUt3WUJCUVVIQXdFR0NDc0dBUVVGQndNQ01BOEdBMVVkRXdFQi93UUZNQU1CQWY4d0hRWURWUjBPCkJCWUVGTWRYNWhWalV4ZDh2d0ZHNEVJa21LaTMybkh2TUFvR0NDcUdTTTQ5QkFNQ0EwZ0FNRVVDSUQ2RGZLcGoKZXJjZ3ZpcXpXdk51Q2xTdm1KbmNabUJwUlRSSXV6L283ejJvQWlFQTlCRmhvME15WTFqckVSY2MrZVYxYmVWeAoyMTAzOC9nOFhCU1Rac0tZSVlJPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==',
+              key: 'LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUxlOGFUdVlNYzNrR1E1a05CVGg5V0V1SXVzTXZVditJQjdSdUw3N2RNWk1vQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFZzZaZXZkTmI2Q2hucmZGdSs5YmlGMEpBTm9oeDg4bWcxL2s1UVJZakVLV1Q3OElGeVFnTAp0dWpqbUV4SFZCRmF5UlBteisweGM2NzhRVFNSczVmS0pBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQo=',
+            },
+            aggregatorCA: {
+              crt: 'LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJZRENDQVFhZ0F3SUJBZ0lSQU5DT2NWY1RGOU5uTzJWbmEvZGRsZnd3Q2dZSUtvWkl6ajBFQXdJd0FEQWUKRncweU5qQTFNekF5TVRNNE5ERmFGdzB6TmpBMU1qY3lNVE00TkRGYU1BQXdXVEFUQmdjcWhrak9QUUlCQmdncQpoa2pPUFFNQkJ3TkNBQVFKL2ZNd001SGp5R1F3Wk9wbE9reE85ekJmTFFPd1BMbGFRM0JIaXc4TnZlb3U0dGZxCnZETjZMUGsxdUJlRjg3RlE5NkJWL21QUVVJWk9IbFpxd3ROcW8yRXdYekFPQmdOVkhROEJBZjhFQkFNQ0FvUXcKSFFZRFZSMGxCQll3RkFZSUt3WUJCUVVIQXdFR0NDc0dBUVVGQndNQ01BOEdBMVVkRXdFQi93UUZNQU1CQWY4dwpIUVlEVlIwT0JCWUVGSzJDYTRCeUYwQkVpVjNBVFlFbm9VeG1NdFJBTUFvR0NDcUdTTTQ5QkFNQ0EwZ0FNRVVDCklRRHZHZ3BYUlZSdll4eGU5eWlESUU3WFp0dDRudCt0Q0lRUE1qdmN4b2gyTXdJZ1ZSRDBxU2R4c1g5ZDRaaDgKZkU2d0RmbGJrUXJ1cnRldklWY09XUE1vV3JzPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==',
+              key: 'LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUtCaVZuSUpzSFJGNSs1T2J4Q0JLZU94ekp0ZDdrUlNLbFFndEU1cUYwR1pvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFQ2Yzek1ET1I0OGhrTUdUcVpUcE1UdmN3WHkwRHNEeTVXa053UjRzUERiM3FMdUxYNnJ3egplaXo1TmJnWGhmT3hVUGVnVmY1ajBGQ0dUaDVXYXNMVGFnPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQo=',
+            },
+            serviceAccount: {
+              key: 'LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKS0FJQkFBS0NBZ0VBcWp6R2xBRCtmaTNaUlVVQlpwU1FETmJhU1lrMUZRZ21pSFBQU1h0NWdlV0NKcmpZCm4vMzdOTHJQRU5Odi9WTUgyMG1qaWhWTWJNNDUvOTROM0Z6L0xCQ1BaUzhiblR6RDk5ZDYwVGlQS1U4aFphMzMKdHE0STJsR25JR2RMRFNyY2xBWEZOc0ZiNkRVRG0yOXlXMTNtaml5WnVMdVVyeXh1MTdIWmNLTEFxcE9JWkFQNgpMKzEyVExDdEQ1dGN5QnY1U0VjZVZKVVJZN2R6RDZZOHJHcWI2ajV6SmJBK2k5SGdTSzRCRWt0MVFNdHRBS0tlCkgwQmtiSVI5VEVyaFNEWDlTc3FvYitkc0M1VUFSdDVNT3poZjFrcWo2cTJqZ1RuR1RGYjBqYmdjYWh1d201d3EKSlV2MTFoZXp5eUtiYVo0RDNVYW5YMHl4Y0FJS3NOVHZMTGFSTnV2c0pKalFFdGgxTjU5Q1h0R1FTM2xzQVdVVwpXcmQ4ZjRPOXhTWVplOTJPU29RMG9Nbm0yWWk5UHJ2V3pwcEhaU25CMnpIdE52SDUvQ3kyOU5XR2EybDJTcjRmCndUUkhMMVMvdTBleHA2NFdhR21UMVpOdWhVVWFHTnl5NGZWbUF1Uk1CSE1TRnE5cmtFOU1MK1VqR0ZtaFVGYWIKRmxjN0NQYlUwV2JqelNVR0dCWXNCS3QyVGk2Nk9LeUFkUnNjblFWK3ZDMElSL0VqTEcxMDh4Y3VOY1lEMHk2ZApaWkdWNWdVRlhtUi9Qdm1WanJFaCsyV0Y5Y2xlL1UxOCswQ3hqVld5M2EzbTYxQWdkNzBEVGtRYys5cmlkeFBFCkpieUY1d0NpS2FQS3JrUEgxRGozQjdaVkV0SWFRbFo2TzZUM1pBQUoyQWpkTDVpY1p3UlVKWnp3Y2VFQ0F3RUEKQVFLQ0FnQUNuWGZrZHFaeUxFU2g3SWN5dXZZQ2lIdG1kVW5nTnBXVzg0Wjc1NzVzV1NqNGJNOEJHQzczZHFZdgpLVHhYYlNMYUFzWFZIWElrMnI4bjE5S3BMN0dJelFGUzZkZ1lBSUszS0ROK0Nzc2lOSkc4Qk9IaEI4ZmhpSzhUClQ1cm15eUdEMFpuZnR6VXcrajJCc2dMVTlmcVFkUTF3ZWNzMUxLN1FOKzV4N1VJZDdMSEQ3WTYybFVTRHRaUVgKQVFrNkZybnIyeEhUZFUzRTFTRGFuUEJpS3FvVi9Wc1orVnpnbTNzQlN0RC81YkpacWpaVXMrclBhcGNRVnJHeApEaFpyWEU3MWl1cnUreVJkQWk4MHAzNE95OVVuRHRMNVRDME9rMk5oTVZYRTVvN2pMMlUxWXI3Ly95eDUyemZiCkZ6OUJibGk3V2JaQS84WGJCV0VDS2VjNXJkMUpyd2VPUTdWMTZQREV0clV6QXBIdms2N0czT2N2eHQ5V2RJOTAKbER4aU5jRlFnZkhGOWQ1VDc3VklXbTVCaEtVZ3lRM2U5NzdCVEJSS3QvRSt3bG54T3VKa3JtdEs3L3ZsLzI5WQpaYXYvcGc0T3VXak1mNnFNaDNFcHRERDRPUUxkNDhWRG5jUEVjbHo0R0gzZ3FnblI4ZWJ3RkxLbktiOEhyTDMvCm9QemVReWREV1lxa0g5blVKeFlXbVg2ZHJTVGRSOXpOWUhFdlp0ajgwQzNMclJRR0FWYktkYTZDRTdHY1d4T00KalFUK2hjQkVkTnN6VElGd0xKd1dMdVZKV2RRWER2azN0UHBMbXNGYUZaQzVrNFo3UXdvV1RpRGMvMHZ4cjhoSwp0YmxnTFVrbkVjNi9zcnBtT1QwYmNkcjVrbDMxNDA3Z3pjbGZ3ZU02STAvUjlnOXA1UUtDQVFFQXlUeVRmU1VHCjQ2ZnBSVENoYzNaMnFXeEJPeUFqcm1tRGJidEs3RmQvNWlqdnVaMmZjUTNpUHpxVzFub3B6QUlDNytNVDdFamMKZDV5VXRVU211R3M0bkNoa2RoTXRYeTlJNkxqS0Q5Nk1TTFRURVJudnRseWpUTHpHUzlwazNoejZJRk9GemxnLwpmRFQwQnE1TEhMZjdnbklTbWRWd1pKcGpJMSthUkJMUS9ONEZnYnBRY0RBS2NIT2lKcGdoaFdTL2UvaHZMK0JiCldFdDhYRWtvMkxjdUl3UjlOakxaWHdHWW83R3ZsSGVjN0kvekJtSENUYXZTd1dGUUswU1JNbFZUM2laWkM0YXAKMjEyS1NzdVd0UFZQalQrdUdZZ0M0RlJnRGxXdEJTY0pMTE14ZDZ5OEZFb2x6Tk1iUjdaRWZPTWQ0U0IvY05mQgpLRDRPRmN4dlFRQ2xqUUtDQVFFQTJKQ1l1NTV0OGJTSnEyWUsrNVJzRk1HaFdaQlVJc3FPeFJ0TVY2VkRrMVJBCk4ycFcwRm5mc1hUb3J4dXY5TEc1NkZVa1QzQlhkLzEycWY2ZVVNMDlaaGp0bzhuZFVFV2N1TnhVTVk3QUdEZWUKZ2h2MnA3akZMTUwvdE5palBRWU9RdUgwci9HcWFiY0l2dDJOVktqb1p0SXRmZ2dkZkpkQ1pUN1UyOTg1ajVSMQp6TlYzMTFwYUpFOHZ0VGFKNzNoUVNkNTU3MWhucVhaeWJLOTdjcnVxU1RrOGpJdHBYM25vWWN2TXJHc3Nvdm03CktxM2dDcUgxUDN4TWNtUVduekNVZS80Q2hNQmFuZ2V3UDVta3prUWtzNFBOVHg5dkNuenRMS21PZXFMb1BsamkKVmdkYWsvZitkNjljdUpWek9Ud3g5c3RQNkFNQktGaS9KTlNRVDRJMnBRS0NBUUVBeEtmREJtQWgzR1loNjNDNwp4bWMxVFJveW9RSW1mSEkyY3d5K0NqcjBEVXRpQWdXTVkrSUtnSG5VSUNMZ0o3S3JoaHhtUXRsdFFpS3RuSHRMClpodTZCYmpmZkJmL2xlNVNsTUxKRERzUzRwWjdVVklFVlRVd2pIUktZS1E3UUdnVzgzSkw1N3VMeHVqRXRLYXQKVnBKaFlqZngvNDE2dVlXNmJqNG1ObklnODR4UTIxYms5czJyMWZyYXNsYW5JNEd5TXdjME9SaEtpLzJ3dVVyeApkTitHWWNnb1NNZm1ieGJUUU4wSzFjOFNkb2V5R2tGOHJZVEZnQitHUmRKTEJtSW1oSWo3S2UxZW5yWkp5QkF1CjVnWjR5SE03dzAyTWFnZHFtM2VVanQxMzlNdmxBcXUyWFNtY3lRNWdzWExvZVJkR0F0Uk1WazB5UVE1cm0xZmUKUFNyUm5RS0NBUUFjb2htZmpOWHFoRDFEalMxY2tBWXVSRitwOE53KzhWc3BFbS9va3JBNWxZVWNEcEpGMyt3awprVm1HZFhteE42Smw1b1B6Z04zL3ZtSm5IWVFmR05QS1lQZGlsWGtPZVBXOHQxem1aSUpmY1ZNaXpzR3c4VXdZCm0vdWxGSk9ZcU9sUHpJSkdsUVE4RC9nM0RDSDRsSkNOcjdKV0hJcVJnNHBDeXFqb0hUNkdEbEg0OEN4MUs3d0oKV3ZMcTJiZ3BFbFpEUGdnUExqZ2Vmc3VvTlJkMFZ2MnZ5c0tIcnBNVERaSTlBKzRleWRqUC80YlFvTWFqZ1VCawowWEZtR25lbk9vd1hUTUZXZmZ3OU1yVUo0NjJYbkFqaU4wWDQ5U1lBVS80anpwTkpBYXNGTzBsSnFKVkFSU1MrCi9FK2RGQjEwN3RHSVdOOUt4TUx0YTdaeUR5eTVablVGQW9JQkFEUGl2NTlGcitKaTBDUzFoaHkrTFhGZnJESTQKa3ppdkNvN0cwZ0hLc0tvT2lrTkVMN2QvZE9yaEJ2eHFGeDhBdU03SWVvTmhzcHJKUlRxSXRjU2VUbDdhYUJOcwpxNlkzcEU5WVd1eHpsRGtna0xUOFlsMG9RT0dVdmliNjZ2MGx6QTFGSC9iVzdrZlpLNlJmbm9XQkdqK0E2KzYvClVQbDFERUhQcndTSTRGNmdHamtYbmxmSUw2b2Q5VUJOOXl4OTFZQWYvckgzTlUzd1VNU3RJd3BKQko3Wmo0TUwKZDJuWHkvMGhmVFFmUEtZaVMxUzYzby9jS1hOMklndThUUXZLcjYrQ2Z1TTA2eTdkbExWL1daL3dqYUErK1JMWQp1MXlUM0M1QzRSMU0rUjlXK0dJa0ZjMWwwdnQvZ1VITmlPNS9XYnYyRFZEWkJTSnJ2em8wY2lJOE1HMD0KLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K',
+            },
+            apiServer: {
+              image: 'registry.k8s.io/kube-apiserver',
+              admissionControl: [
+                {
+                  name: 'PodSecurity',
+                  configuration: {
+                    apiVersion: 'pod-security.admission.config.k8s.io/v1alpha1',
+                    kind: 'PodSecurityConfiguration',
+                    defaults: {
+                      'audit': 'restricted',
+                      'audit-version': 'latest',
+                      'enforce': 'baseline',
+                      'enforce-version': 'latest',
+                      'warn': 'restricted',
+                      'warn-version': 'latest',
+                    },
+                    exemptions: {
+                      namespaces: [
+                        'kube-system',
+                      ],
+                      runtimeClasses: [],
+                      usernames: [],
+                    },
+                  },
+                },
+              ],
+              auditPolicy: {
+                apiVersion: 'audit.k8s.io/v1',
+                kind: 'Policy',
+                rules: [
+                  {
+                    level: 'Metadata',
+                  },
+                ],
+              },
+            },
+            controllerManager: {
+              image: 'registry.k8s.io/kube-controller-manager',
+            },
+            proxy: {
+              image: 'registry.k8s.io/kube-proxy',
+            },
+            scheduler: {
+              image: 'registry.k8s.io/kube-scheduler',
+            },
+            discovery: {
+              enabled: true,
+              registries: {
+                kubernetes: {
+                  disabled: true,
+                },
+                service: {},
+              },
+            },
+            etcd: {
+              ca: {
+                crt: 'LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJmVENDQVNPZ0F3SUJBZ0lRRjJhMGx2d2s3eDgyS0RIQUxLdDRWekFLQmdncWhrak9QUVFEQWpBUE1RMHcKQ3dZRFZRUUtFd1JsZEdOa01CNFhEVEkyTURVek1ESXhNemcwTVZvWERUTTJNRFV5TnpJeE16ZzBNVm93RHpFTgpNQXNHQTFVRUNoTUVaWFJqWkRCWk1CTUdCeXFHU000OUFnRUdDQ3FHU000OUF3RUhBMElBQkNzbG5TblpEdWhoCmQwMXBTdlVSL0d4MEdKdmFsbnhLZEoramtTSmJNYWRPU2VSUEtPMUtacm5hMzV4RElGbzI3aFY3TTNkVXoxaXYKQVpLR1FpSEY5TWlqWVRCZk1BNEdBMVVkRHdFQi93UUVBd0lDaERBZEJnTlZIU1VFRmpBVUJnZ3JCZ0VGQlFjRApBUVlJS3dZQkJRVUhBd0l3RHdZRFZSMFRBUUgvQkFVd0F3RUIvekFkQmdOVkhRNEVGZ1FVQk5HYnBlT0JJdkpUCjAvdERiLzV0ZU1YczJtY3dDZ1lJS29aSXpqMEVBd0lEU0FBd1JRSWhBT1NWRnloSkpuZlpuWmk4aVVFVTFvd0wKVnBUN1pPWVpVTk1QQ2d3cUNxN1NBaUFEOFUvUG9DN1htMXo3VUJmajZiVm0yb0VCU3NuY2tRMHBQMTJ4Vk5QagpTUT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K',
+                key: 'LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUIxd0FHaUFwSzI5UmFpNnlQUk53YXBKNmx5ZFVseHZ6SVdWTHVmYWNGN1RvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFS3lXZEtka082R0YzVFdsSzlSSDhiSFFZbTlxV2ZFcDBuNk9SSWxzeHAwNUo1RThvN1VwbQp1ZHJmbkVNZ1dqYnVGWHN6ZDFUUFdLOEJrb1pDSWNYMHlBPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQo=',
+              },
+            },
+            extraManifests: [],
+            inlineManifests: [],
           },
+
         },
-        extraManifests: [],
-        inlineManifests: [],
-      },
+      ].map((asdf) => {
+        return JSON.stringify(asdf)
+      }),
+    })
+  }
 
-    },
-  ].map((asdf) => {
-    return JSON.stringify(asdf)
-  }),
-})
-
-// new talos.machine.Bootstrap('bootstrap', {
-//   clientConfiguration: secrets.clientConfiguration,
-//   node,
-// }, {
-//   dependsOn: [
-//     config,
-//   ],
-// })
+  // new talos.machine.Bootstrap('bootstrap', {
+  //   clientConfiguration: secrets.clientConfiguration,
+  //   node,
+  // }, {
+  //   dependsOn: [
+  //     config,
+  //   ],
+  // })
+}

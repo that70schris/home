@@ -1,12 +1,15 @@
-import { _Cluster } from '../../shared/models/kubernetes'
-import { Homebridge, Plex } from '../../shared/models/kubernetes/kubes'
+import { Talos } from '../talos'
 
-new _Cluster('berry', {
-  domain: 'bailey.mx',
-  ip: '195.168.0.5',
-  kubes: [
-    new Homebridge(),
-    // new Homey(),
-    new Plex(),
-  ],
-}).index
+const berry = new Talos(
+  'berry', '195.168.0.5',
+)
+
+// new _Cluster(berry.name, {
+//   domain: 'bailey.mx',
+//   ip: berry.ip,
+//   kubes: [
+//     // new Homebridge(),
+//     // new Homey(),
+//     // new Plex(),
+//   ],
+// })
