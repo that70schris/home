@@ -5,7 +5,7 @@ export class Talos {
 
   constructor(
     public name: string,
-    public ip: string,
+    public host: string = `${this.name}.home`,
   ) {
     this.config
   }
@@ -20,12 +20,12 @@ export class Talos {
     return new talos.machine.ConfigurationApply(this.name, {
       clientConfiguration: this.secrets.clientConfiguration,
       machineConfigurationInput: talos.machine.getConfigurationOutput({
-        clusterEndpoint: `https://${this.ip}:6443`,
+        clusterEndpoint: `https://${this.host}:6443`,
         clusterName: this.name,
         machineType: 'controlplane',
         machineSecrets: this.secrets.machineSecrets,
       }).machineConfiguration,
-      node: this.ip,
+      node: this.host,
       timeouts: {
         create: '10s',
         update: '10s',
@@ -41,7 +41,7 @@ export class Talos {
               key: 'LS0tLS1CRUdJTiBFRDI1NTE5IFBSSVZBVEUgS0VZLS0tLS0KTUM0Q0FRQXdCUVlESzJWd0JDSUVJSVArUWFWQVo2U2ZQc3pmbGYxckU5c2x4OEtWem16R0ExZXp4V2trbFZQawotLS0tLUVORCBFRDI1NTE5IFBSSVZBVEUgS0VZLS0tLS0K',
             },
             certSANs: [
-              this.ip,
+              this.host,
               'bailey.mx',
               'berry',
               'berry.bailey.mx',

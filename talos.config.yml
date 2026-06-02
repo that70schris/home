@@ -6,7 +6,6 @@ machine:
     key: LS0tLS1CRUdJTiBFRDI1NTE5IFBSSVZBVEUgS0VZLS0tLS0KTUM0Q0FRQXdCUVlESzJWd0JDSUVJSVArUWFWQVo2U2ZQc3pmbGYxckU5c2x4OEtWem16R0ExZXp4V2trbFZQawotLS0tLUVORCBFRDI1NTE5IFBSSVZBVEUgS0VZLS0tLS0K
 
   certSANs:
-    - 192.168.0.5
     - bailey.mx
     - berry
     - berry.bailey.mx
@@ -43,7 +42,7 @@ cluster:
   id: dhXJGOKxEkK-ClfBQxZ53NHFFIrjhoKtZgNpLyNF8qg=
   secret: 3bDUsCsDHylqLAhlkxUing7jiRaOboEpnGXGhMDlfno=
   controlPlane:
-    endpoint: https://192.168.0.5
+    endpoint: https://berry.home
 
   clusterName: berry
   network:

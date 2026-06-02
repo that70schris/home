@@ -118,6 +118,11 @@
           "value" : "/Applications/TablePlus.app"
         },
         {
+          "key" : "u",
+          "type" : "url",
+          "value" : "raycast-x://extensions/lewj/unifi/open-dashboard"
+        },
+        {
           "key" : "v",
           "type" : "application",
           "value" : "/Applications/Visual Studio Code.app"

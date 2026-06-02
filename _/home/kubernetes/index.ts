@@ -1,7 +1,7 @@
 import { Talos } from '../talos'
 
 const berry = new Talos(
-  'berry', '195.168.0.5',
+  'berry',
 )
 
 // new _Cluster(berry.name, {
