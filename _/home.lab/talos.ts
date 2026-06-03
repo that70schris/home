@@ -84,6 +84,12 @@ export class Talos {
               'berry.local',
               'berry',
             ],
+            features: {
+              hostDNS: {
+                enabled: true,
+                forwardKubeDNSToHost: true,
+              },
+            },
             install: {
               // disk: '/dev/mmcblk0',
               disk: '/dev/nvme0n1',
@@ -110,7 +116,7 @@ export class Talos {
       endpoint: this.host,
       node: this.host,
       timeouts: {
-        create: '10s',
+        create: '1m',
       },
     }, {
       dependsOn: [

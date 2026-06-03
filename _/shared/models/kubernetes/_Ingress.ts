@@ -4,7 +4,6 @@ import { input } from '@pulumi/kubernetes/types'
 import { CustomResourceOptions, interpolate } from '@pulumi/pulumi'
 import { merge } from 'lodash'
 import { _Cluster, _CustomResource } from '.'
-import { _Record } from '../cloudflare'
 import { _TwingateResource } from '../twingate'
 
 interface _IngressServiceBackend extends input.networking.v1.IngressServiceBackend {
@@ -100,13 +99,13 @@ export class _Ingress extends Ingress {
     this.status.loadBalancer?.ingress[0].ip.apply((ip) => {
       args.rules.forEach((rule) => {
         interpolate`${rule.host}`.apply((host) => {
-          new _Record(host, {
-            domain: host,
-            content: ip,
-            proxied: rule.proxied,
-          }, {
-            parent: this,
-          })
+          // new _Record(host, {
+          //   domain: host,
+          //   content: ip,
+          //   proxied: rule.proxied,
+          // }, {
+          //   parent: this,
+          // })
 
           new _TwingateResource(host, {
             isBrowserShortcutEnabled: true,

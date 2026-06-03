@@ -1,13 +1,10 @@
 import { _Cluster } from '../../shared/models/kubernetes'
-import { Talos } from '../talos'
+import { Talos } from '../Talos'
 
-const berry = new Talos(
-  'berry',
-  // '192.168.0.5',
-)
+const berry = new Talos('berry')
 
 new _Cluster(berry.name, {
-  domain: 'berry.home.lab',
+  domain: berry.host,
   // ip: berry.host,
   kubes: [
     // new Homebridge(),

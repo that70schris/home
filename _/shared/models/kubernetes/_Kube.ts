@@ -15,8 +15,8 @@ interface KubeOverrides {
 export class _Kube {
   name = this.constructor.name.toLowerCase()
   image: string = this.name
-  container_port?: number
-  service_port?: number
+  container_port: number = 80
+  service_port: number = 443
   path = '/'
   replicas = 1
   ingress: boolean = false
@@ -30,7 +30,7 @@ export class _Kube {
     merge(
       this,
       overrides,
-    )
+    ).index
   }
 
   get metadata(): input.meta.v1.ObjectMeta {

@@ -19,7 +19,6 @@ export class _Cluster {
     public args: ClusterArgs,
     public opts?: ResourceOptions,
   ) {
-
     // new _TwingateKubernetesResource(this.name, {
 
     // })
@@ -48,7 +47,7 @@ export class _Cluster {
       },
     })
 
-    // this.index
+    this.index
     args.kubes.forEach((kube) => {
       kube.index?.forEach((resource) => {
         switch (resource.constructor) {
@@ -218,12 +217,12 @@ export class _Cluster {
           enabled: true,
           twingate: {
             network: _TwingateResource.remote.id,
-            // resource: {
-            //   enabled: true,
-            //   extraAnnotations: {
-            //     // doesn't support ports
-            //   },
-            // },
+            resource: {
+              enabled: true,
+              extraAnnotations: {
+                // doesn't support ports
+              },
+            },
           },
         },
       },

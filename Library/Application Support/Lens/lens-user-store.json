@@ -21,7 +21,7 @@
 		},
 		"syncKubeconfigEntries": [
 			{
-				"filePath": "/Users/chris/_/home/.kube/config"
+				"filePath": "/Users/chris/_/home.lab/.kube/config"
 			}
 		],
 		"updateChannel": "latest"
