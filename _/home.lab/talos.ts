@@ -47,6 +47,7 @@ export class Talos {
       ],
       tcp: [
         6443,
+        50000,
       ],
     })
   }
