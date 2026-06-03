@@ -10,9 +10,30 @@ export class Talos {
 
   constructor(
     public name: string,
-    public host: string = `${this.name}.home`,
+    public host: string = `${name}.home.lab`,
   ) {
     this.bootstrap
+    this.secrets.clientConfiguration.apply((config) => {
+      try {
+        const path = './.talos/config'
+        const _config = yaml.parse(readFileSync(path, 'utf8'))
+        _config.contexts.berry = merge(
+          _config.contexts.berry, {
+            ca: config.caCertificate,
+            crt: config.clientCertificate,
+            key: config.clientKey,
+            endpoints: [this.endpoint],
+          },
+        )
+
+        writeFileSync(
+          path,
+          yaml.stringify(_config),
+        )
+      } catch(err) {
+
+      }
+    })
   }
 
   @once
@@ -24,13 +45,13 @@ export class Talos {
 
   @once
   get endpoint() {
-    return `https://${this.host}`
+    return `${this.host}`
   }
 
   @once
   get config() {
     return talos.machine.getConfigurationOutput({
-      clusterEndpoint: `${this.endpoint}:6443`,
+      clusterEndpoint: `https://${this.endpoint}:6443`,
       clusterName: this.name,
       machineType: 'controlplane',
       machineSecrets: this.secrets.machineSecrets,
@@ -40,23 +61,6 @@ export class Talos {
 
   @once
   get apply() {
-    this.secrets.clientConfiguration.apply((config) => {
-      const path = './.talos/config'
-      const _config = yaml.parse(readFileSync(path, 'utf8'))
-      _config.contexts.berry = merge(
-        _config.contexts.berry, {
-          ca: config.caCertificate,
-          crt: config.clientCertificate,
-          key: config.clientKey,
-        },
-      )
-
-      writeFileSync(
-        path,
-        yaml.stringify(_config),
-      )
-    })
-
     return new talos.machine.ConfigurationApply(this.name, {
       clientConfiguration: this.secrets.clientConfiguration,
       machineConfigurationInput: this.config.machineConfiguration,
@@ -77,13 +81,12 @@ export class Talos {
             },
             certSANs: [
               this.host,
-              'bailey.mx',
-              'berry',
-              'berry.bailey.mx',
-              'berry.home',
-              'berry.local',
-              'kube.berry.home',
               'kubernetes.default.svc.cluster.local',
+              'kube.berry.home.lab',
+              'berry.home.lab',
+              'home.lab',
+              'berry.local',
+              'berry',
             ],
             kubelet: {
               image: `ghcr.io/siderolabs/kubelet:${this.kubeVersion}`,
@@ -91,9 +94,10 @@ export class Talos {
               disableManifestsDirectory: true,
             },
             install: {
-              disk: '/dev/nvme0n1',
+              disk: '/dev/mmcblk0',
+              // disk: '/dev/nvme0n1',
               image: `ghcr.io/siderolabs/installer:${this.talosVersion}`,
-              wipe: true,
+              wipe: false,
             },
             features: {
               diskQuotaSupport: true,
@@ -222,7 +226,7 @@ export class Talos {
       endpoint: this.host,
       node: this.host,
       timeouts: {
-        create: '30s',
+        create: '1m',
       },
     }, {
       dependsOn: [
