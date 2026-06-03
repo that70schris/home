@@ -2,6 +2,8 @@ import * as talos from '@pulumiverse/talos'
 import { once } from '../shared/decorators'
 
 export class Talos {
+  kubeVersion = 'v1.36.1'
+  talosVersion = 'v1.13.3'
 
   constructor(
     public name: string,
@@ -13,7 +15,7 @@ export class Talos {
   @once
   get secrets() {
     return new talos.machine.Secrets(this.name, {
-
+      talosVersion: this.talosVersion,
     })
   }
 
@@ -21,9 +23,6 @@ export class Talos {
   get endpoint() {
     return `https://${this.host}`
   }
-
-  kubeVersion = 'v1.36.1'
-  talosVersion = 'v1.13.3'
 
   @once
   get config() {
@@ -200,7 +199,7 @@ export class Talos {
   get bootstrap() {
     return new talos.machine.Bootstrap(this.name, {
       clientConfiguration: this.secrets.clientConfiguration,
-      endpoint: `https://${this.host}:6443`,
+      endpoint: this.host,
       node: this.host,
       timeouts: {
         create: '30s',
