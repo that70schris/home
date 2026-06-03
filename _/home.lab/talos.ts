@@ -40,7 +40,8 @@ export class Talos {
     })
 
     // for remote access later
-    new _TwingateResource(name, {
+    new _TwingateResource(`_${name}`, {
+      address: host,
       accessGroups: [
         Twingate.groups.admin,
       ],
@@ -103,7 +104,6 @@ export class Talos {
               },
             },
             install: {
-              // disk: '/dev/mmcblk0',
               disk: '/dev/nvme0n1',
             },
           },
