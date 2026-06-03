@@ -184,19 +184,19 @@ export class _Cluster {
           apiKey: Twingate.config.get('apiToken'),
           network: Twingate.network,
         },
-        gateway: {
-          enabled: true,
-          twingate: {
-            network: Twingate.remote.id,
-            resource: {
-              enabled: true,
-              extraAnnotations: {
-                'resource.twingate.com/name': `_${this.name}`,
-                'resource.twingate.com/alias': this.args.host,
-              },
-            },
-          },
-        },
+        // gateway: {
+        //   enabled: true,
+        //   twingate: {
+        //     network: Twingate.remote.id,
+        //     resource: {
+        //       enabled: true,
+        //       extraAnnotations: {
+        //         'resource.twingate.com/name': `_${this.name}`,
+        //         'resource.twingate.com/alias': this.args.host,
+        //       },
+        //     },
+        //   },
+        // },
       },
     })
   }
@@ -268,7 +268,7 @@ export class _Cluster {
       this.twingate_operator,
       this.twingate_connector,
       // this.twingate_resource,
-      this.twingate_resource_access,
+      // this.twingate_resource_access,
       // this.twingate_role_binding,
       // ...new mDNS().index,
     ]
