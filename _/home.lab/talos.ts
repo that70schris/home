@@ -104,6 +104,30 @@ export class Talos {
           },
           cluster: {
             allowSchedulingOnControlPlanes: true,
+            // apiServer: {
+            //   admissionControl: [
+            //     {
+            //       name: 'PodSecurity',
+            //       configuration: {
+            //         apiVersion: 'pod-security.admission.config.k8s.io/v1',
+            //         kind: 'PodSecurityConfiguration',
+            //         defaults: {
+            //           audit: 'restricted',
+            //           enforce: 'privileged',
+            //           warn: 'baseline',
+            //         },
+            //         exemptions: {
+            //           runtimeClasses: [],
+            //           usernames: [],
+            //           namespaces: [
+            //             'kube-system',
+            //           ],
+            //         },
+
+            //       },
+            //     },
+            //   ],
+            // },
           },
         },
       ].map((asdf) => {

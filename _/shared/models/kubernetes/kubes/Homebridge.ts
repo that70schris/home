@@ -1,29 +1,32 @@
 import { readFileSync } from 'fs'
-import { _Kube } from '..'
+import { _Kube, _Port, KubeOverrides } from '..'
 
 export class Homebridge extends _Kube {
-  override image = 'homebridge/homebridge'
-  config = JSON.parse(readFileSync(
+  static config = JSON.parse(readFileSync(
     '../../.config/homebridge/config.json',
     'utf-8',
   ))
 
-  override container_port = this.config.platforms
-    .find((p: any) => p.platform == 'config')?.port ?? 8581
+  constructor(
+    overrides: KubeOverrides = {
+      image: 'homebridge/homebridge',
+      container_port: Homebridge.config.platforms
+        .find((p: any) => p.platform == 'config')?.port ?? 8581,
+    },
+  ) {
+    super(overrides)
+  }
 
-  override service_port = 80
-  // override ingress = true
-
-  // override get ports() {
-  //   return super.ports.concat([
-  //     new _Port('bridge', {
-  //       container: this.config.bridge?.port ?? 51826,
-  //     }),
-  //     new _Port('matter', {
-  //       container: this.config.bridge?.matter?.port ?? 5530,
-  //     }),
-  //   ])
-  // }
+  override get ports() {
+    return super.ports.concat([
+      new _Port('bridge', {
+        container: Homebridge.config.bridge?.port ?? 51826,
+      }),
+      new _Port('matter', {
+        container: Homebridge.config.bridge?.matter?.port ?? 5530,
+      }),
+    ])
+  }
 
   // override get volumes() {
   //   return super.volumes.concat([{

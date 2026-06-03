@@ -1,4 +1,4 @@
-import { Service } from '@pulumi/kubernetes/core/v1'
+import { Namespace, Service } from '@pulumi/kubernetes/core/v1'
 import { Chart } from '@pulumi/kubernetes/helm/v4'
 import { ResourceOptions } from '@pulumi/pulumi'
 import * as tailscale from '@pulumi/tailscale'
@@ -18,6 +18,19 @@ export class _Cluster {
     public args: ClusterArgs,
     public opts?: ResourceOptions,
   ) {
+    new Namespace('default', {
+      metadata: {
+        name: 'default',
+        labels: {
+          'pod-security.kubernetes.io/enforce': 'privileged',
+          'pod-security.kubernetes.io/audit': 'restricted',
+          'pod-security.kubernetes.io/warn': 'baseline',
+        },
+      },
+    }, {
+      import: 'default',
+    })
+
     this.index
     args.kubes.forEach((kube) => {
       kube.index?.forEach((resource) => {

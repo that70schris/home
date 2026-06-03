@@ -7,23 +7,29 @@ import { merge } from 'lodash'
 import { _IngressBackend, _Port } from '.'
 import { once } from '../../decorators'
 
-interface KubeOverrides {
+export interface KubeOverrides {
   domain?: string
   name?: string
+  image?: string
+  container_port?: number
+  service_port?: number
+  path?: string
+  replicas?: number
+  ingress?: boolean
 }
 
 export class _Kube {
   name = this.constructor.name.toLowerCase()
   image: string = this.name
-  container_port: number = 80
-  service_port: number = 443
+  container_port: number = 8080
+  service_port: number = 8443
   path = '/'
   replicas = 1
   ingress: boolean = false
   domain?: string
 
   constructor(
-    public overrides: KubeOverrides = {
+    overrides: KubeOverrides = {
 
     },
   ) {
