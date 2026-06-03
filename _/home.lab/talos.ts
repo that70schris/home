@@ -22,7 +22,9 @@ export class Talos {
             ca: config.caCertificate,
             crt: config.clientCertificate,
             key: config.clientKey,
-            endpoints: [this.endpoint],
+            endpoints: [
+              this.endpoint,
+            ],
           },
         )
 
@@ -108,7 +110,7 @@ export class Talos {
       endpoint: this.host,
       node: this.host,
       timeouts: {
-        create: '1m',
+        create: '10s',
       },
     }, {
       dependsOn: [

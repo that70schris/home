@@ -20,7 +20,7 @@ export class _TwingateResource extends TwingateResource {
 
   static remote = new TwingateRemoteNetwork('main', {
     location: 'ON_PREMISE',
-    name: 'Home',
+    name: 'home.lab',
   })
 
   @once
