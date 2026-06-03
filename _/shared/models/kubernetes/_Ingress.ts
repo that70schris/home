@@ -91,7 +91,7 @@ export class _Ingress extends Ingress {
       {
         ...opts,
         dependsOn: [
-          opts.cluster.nginx,
+          // opts.cluster.nginx,
           ...Object.values(certs),
         ].concat(opts.dependsOn as any),
       },
