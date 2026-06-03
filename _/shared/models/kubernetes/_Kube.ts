@@ -29,7 +29,7 @@ export class _Kube {
   domain?: string
 
   constructor(
-    overrides: KubeOverrides = {
+    public overrides: KubeOverrides = {
 
     },
   ) {
