@@ -4,7 +4,7 @@ import { ResourceOptions } from '@pulumi/pulumi'
 import * as tailscale from '@pulumi/tailscale'
 import { _CustomResource, _Kube } from '.'
 import { once } from '../../decorators'
-import { _TwingateResource } from '../twingate/resource'
+import { Twingate } from '../twingate'
 
 interface ClusterArgs {
   domain?: string
@@ -181,14 +181,14 @@ export class _Cluster {
       values: {
         nameOverride: 'operator',
         twingateOperator: {
-          remoteNetworkId: _TwingateResource.remote.id,
-          apiKey: _TwingateResource.config.get('apiToken'),
-          network: _TwingateResource.network,
+          remoteNetworkId: Twingate.remote.id,
+          apiKey: Twingate.config.get('apiToken'),
+          network: Twingate.network,
         },
         gateway: {
           enabled: true,
           twingate: {
-            network: _TwingateResource.remote.id,
+            network: Twingate.remote.id,
             resource: {
               enabled: true,
               extraAnnotations: {

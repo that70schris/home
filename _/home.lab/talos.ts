@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync } from 'fs'
 import { merge } from 'lodash'
 import * as yaml from 'yaml'
 import { once } from '../shared/decorators'
+import { Twingate } from '../shared/models/twingate'
 import { _TwingateResource } from '../shared/models/twingate/resource'
 
 export class Talos {
@@ -40,7 +41,7 @@ export class Talos {
 
     new _TwingateResource(host, {
       accessGroups: [
-        _TwingateResource.groups.admin,
+        Twingate.groups.admin,
       ],
       tcp: [
         6443,
