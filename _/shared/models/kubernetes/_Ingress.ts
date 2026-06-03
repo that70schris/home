@@ -4,7 +4,7 @@ import { input } from '@pulumi/kubernetes/types'
 import { CustomResourceOptions, interpolate } from '@pulumi/pulumi'
 import { merge } from 'lodash'
 import { _Cluster, _CustomResource } from '.'
-import { _TwingateResource } from '../twingate'
+import { _TwingateResource } from '../twingate/resource'
 
 interface _IngressServiceBackend extends input.networking.v1.IngressServiceBackend {
   port: input.networking.v1.ServiceBackendPort

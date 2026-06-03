@@ -207,4 +207,5 @@
   "workbench.tree.indent": 15,
   "yaml.maxItemsComputed": 99999,
   "yaml2json.yamlIndentationSpaces": 2,
+  "js/ts.updateImportsOnFileMove.enabled": "always",
 }

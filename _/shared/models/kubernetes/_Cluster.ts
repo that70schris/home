@@ -1,10 +1,10 @@
-import { Service, ServiceSpecType } from '@pulumi/kubernetes/core/v1'
+import { Service } from '@pulumi/kubernetes/core/v1'
 import { Chart } from '@pulumi/kubernetes/helm/v4'
 import { ResourceOptions } from '@pulumi/pulumi'
 import * as tailscale from '@pulumi/tailscale'
 import { _CustomResource, _Kube } from '.'
 import { once } from '../../decorators'
-import { _TwingateResource } from '../twingate'
+import { _TwingateResource } from '../twingate/resource'
 
 interface ClusterArgs {
   domain?: string
@@ -22,30 +22,6 @@ export class _Cluster {
     // new _TwingateKubernetesResource(this.name, {
 
     // })
-
-    new Service('twingate', {
-      metadata: {
-        name: 'twingate',
-        annotations: {
-          'resource.twingate.com': 'true',
-          'resource.twingate.com/name': `_${this.name}`,
-          'resource.twingate.com/tlsSecret': 'twingate-gateway-tls',
-          'resource.twingate.com/type': 'Kubernetes',
-        },
-      },
-      spec: {
-        type: ServiceSpecType.ClusterIP,
-        ports: [
-          {
-            name: 'https',
-            // makes it to twingate,
-            // but not to the kube config
-            port: 443,
-            targetPort: 6443,
-          },
-        ],
-      },
-    })
 
     this.index
     args.kubes.forEach((kube) => {
@@ -220,7 +196,7 @@ export class _Cluster {
             resource: {
               enabled: true,
               extraAnnotations: {
-                // doesn't support ports
+                'resource.twingate.com/name': `_${this.name}`,
               },
             },
           },
@@ -310,7 +286,7 @@ export class _Cluster {
         kind: 'TwingateResourceAccess',
         spec: {
           resourceRef: {
-            name: 'twingate-resource',
+            name: 'twingate-gateway-resource',
           },
           principalExternalRef: {
             name: 'Chris Bailey',

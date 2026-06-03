@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync } from 'fs'
 import { merge } from 'lodash'
 import * as yaml from 'yaml'
 import { once } from '../shared/decorators'
+import { _TwingateResource } from '../shared/models/twingate/resource'
 
 export class Talos {
   kubeVersion = 'v1.36.1'
@@ -35,6 +36,16 @@ export class Talos {
       } catch(err) {
 
       }
+    })
+
+    new _TwingateResource(host, {
+      accessGroups: [
+        _TwingateResource.groups.admin,
+      ],
+      tcp: [
+        6443,
+        443,
+      ],
     })
   }
 
