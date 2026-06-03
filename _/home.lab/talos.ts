@@ -96,7 +96,6 @@ export class Talos {
             features: {
               hostDNS: {
                 enabled: true,
-                forwardKubeDNSToHost: true,
               },
             },
             install: {
