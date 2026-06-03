@@ -7,9 +7,8 @@ import { once } from '../../decorators'
 import { Twingate } from '../twingate'
 
 interface ClusterArgs {
-  domain?: string
+  host: string
   kubes: _Kube[]
-  ip?: string
 }
 
 export class _Cluster {
@@ -193,6 +192,7 @@ export class _Cluster {
               enabled: true,
               extraAnnotations: {
                 'resource.twingate.com/name': `_${this.name}`,
+                'resource.twingate.com/alias': this.args.host,
               },
             },
           },
