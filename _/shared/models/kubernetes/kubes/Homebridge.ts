@@ -3,7 +3,7 @@ import { _Kube, _Port, KubeOverrides } from '..'
 
 export class Homebridge extends _Kube {
   static config = JSON.parse(readFileSync(
-    '../../.config/homebridge/config.json',
+    `${process.cwd()}/homebridge.json`,
     'utf-8',
   ))
 
