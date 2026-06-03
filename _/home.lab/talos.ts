@@ -1,4 +1,7 @@
 import * as talos from '@pulumiverse/talos'
+import { readFileSync, writeFileSync } from 'fs'
+import { merge } from 'lodash'
+import * as yaml from 'yaml'
 import { once } from '../shared/decorators'
 
 export class Talos {
@@ -37,6 +40,23 @@ export class Talos {
 
   @once
   get apply() {
+    this.secrets.clientConfiguration.apply((config) => {
+      const path = './.talos/config'
+      const _config = yaml.parse(readFileSync(path, 'utf8'))
+      _config.contexts.berry = merge(
+        _config.contexts.berry, {
+          ca: config.caCertificate,
+          crt: config.clientCertificate,
+          key: config.clientKey,
+        },
+      )
+
+      writeFileSync(
+        path,
+        yaml.stringify(_config),
+      )
+    })
+
     return new talos.machine.ConfigurationApply(this.name, {
       clientConfiguration: this.secrets.clientConfiguration,
       machineConfigurationInput: this.config.machineConfiguration,
