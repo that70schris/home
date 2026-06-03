@@ -1,5 +1,5 @@
 import { readFileSync } from 'fs'
-import { _Kube, _Port, KubeOverrides } from '..'
+import { _ConfigMap, _Kube, _Port, KubeOverrides } from '..'
 
 export class Homebridge extends _Kube {
   static config = JSON.parse(readFileSync(
@@ -12,10 +12,19 @@ export class Homebridge extends _Kube {
       image: 'homebridge/homebridge',
       container_port: Homebridge.config.platforms
         .find((p: any) => p.platform == 'config')?.port ?? 8581,
-      service_port: 443,
+      // service_port: 443,
     },
   ) {
     super(overrides)
+
+  }
+
+  get config() {
+    return new _ConfigMap(this.name, {
+      data: {
+        'config.json': JSON.stringify(Homebridge.config),
+      },
+    })
   }
 
   override get ports() {
@@ -29,21 +38,22 @@ export class Homebridge extends _Kube {
     ])
   }
 
-  // override get volumes() {
-  //   return super.volumes.concat([{
-  //     name: 'config',
-  //     hostPath: {
-  //       path: '/home/chris/.config/homebridge',
-  //     },
-  //   }])
-  // }
+  override get volumes() {
+    return super.volumes.concat([{
+      name: 'config',
+      configMap: {
+        name: this.config.name,
+      },
+    }])
+  }
 
-  // override get volume_mounts() {
-  //   return super.volume_mounts.concat([{
-  //     mountPath: '/homebridge',
-  //     name: 'config',
-  //   }])
-  // }
+  override get volume_mounts() {
+    return super.volume_mounts.concat([{
+      mountPath: '/homebridge/config.json',
+      subPath: 'config.json',
+      name: 'config',
+    }])
+  }
 
   override get index() {
     return [
