@@ -1,17 +1,28 @@
 import { Resource } from '@pulumi/pulumi'
-import { _Kube } from '..'
+import { _Kube, KubeOverrides } from '..'
 
 export class Plex extends _Kube {
-  override image = 'linuxserver/plex'
-  override container_port = 32400
-  override service_port = 443
-  override ingress = true
+
+  constructor(
+    overrides: KubeOverrides = {
+      image: 'linuxserver/plex',
+      container_port: 32400,
+      service_port: 443,
+      ingress: true,
+    },
+  ) {
+    super(overrides)
+  }
+
+  // get volume() {
+  //   return new PersistentVolume('plex')
+  // }
 
   override get volumes() {
     return super.volumes.concat([{
       name: 'config',
       hostPath: {
-        path: '/home/chris/.config/plex',
+        path: '/.config/plex',
       },
     }])
   }

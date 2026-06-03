@@ -77,66 +77,75 @@ export class Talos {
 
   @once
   get apply() {
-    return new talos.machine.ConfigurationApply(this.name, {
+    return talos.machine.getDisksOutput({
       clientConfiguration: this.secrets.clientConfiguration,
-      machineConfigurationInput: this.config.machineConfiguration,
       node: this.host,
-      timeouts: {
-        create: '10s',
-        update: '10s',
-        delete: '10s',
-      },
-      configPatches: [
-        {
-          machine: {
-            certSANs: [
+    }).apply((output) => {
+      const disk = output.disks.find((disk) => {
+        return disk.transport == 'nvme'
+      })
+
+      return new talos.machine.ConfigurationApply(this.name, {
+        clientConfiguration: this.secrets.clientConfiguration,
+        machineConfigurationInput: this.config.machineConfiguration,
+        node: this.host,
+        timeouts: {
+          create: '10s',
+          update: '10s',
+          delete: '10s',
+        },
+        configPatches: [
+          {
+            machine: {
+              certSANs: [
               // 'kubernetes.default.svc.cluster.local',
-              this.host,
-            ],
-            features: {
-              hostDNS: {
-                enabled: true,
+                this.host,
+              ],
+              features: {
+                hostDNS: {
+                  enabled: true,
+                },
+              },
+              install: {
+                disk: disk?.devPath,
               },
             },
-            install: {
-              disk: '/dev/nvme0n1',
-            },
-          },
-          cluster: {
-            allowSchedulingOnControlPlanes: true,
-            // apiServer: {
-            //   admissionControl: [
-            //     {
-            //       name: 'PodSecurity',
-            //       configuration: {
-            //         apiVersion: 'pod-security.admission.config.k8s.io/v1',
-            //         kind: 'PodSecurityConfiguration',
-            //         defaults: {
-            //           audit: 'restricted',
-            //           enforce: 'privileged',
-            //           warn: 'baseline',
-            //         },
-            //         exemptions: {
-            //           runtimeClasses: [],
-            //           usernames: [],
-            //           namespaces: [
-            //             'kube-system',
-            //           ],
-            //         },
+            cluster: {
+              allowSchedulingOnControlPlanes: true,
+              // apiServer: {
+              //   admissionControl: [
+              //     {
+              //       name: 'PodSecurity',
+              //       configuration: {
+              //         apiVersion: 'pod-security.admission.config.k8s.io/v1',
+              //         kind: 'PodSecurityConfiguration',
+              //         defaults: {
+              //           audit: 'restricted',
+              //           enforce: 'privileged',
+              //           warn: 'baseline',
+              //         },
+              //         exemptions: {
+              //           runtimeClasses: [],
+              //           usernames: [],
+              //           namespaces: [
+              //             'kube-system',
+              //           ],
+              //         },
 
             //       },
             //     },
             //   ],
             // },
+            },
           },
-        },
-      ].map((asdf) => {
-        return JSON.stringify(asdf)
-      }),
-    }, {
-      dependsOn: [
-        this.secrets,
-      ],
+        ].map((asdf) => {
+          return JSON.stringify(asdf)
+        }),
+      }, {
+        dependsOn: [
+          this.secrets,
+        ],
+      })
     })
   }
 
