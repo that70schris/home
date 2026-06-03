@@ -90,13 +90,8 @@ export class Talos {
         {
           machine: {
             certSANs: [
+              // 'kubernetes.default.svc.cluster.local',
               this.host,
-              'kubernetes.default.svc.cluster.local',
-              'kube.berry.home.lab',
-              'berry.home.lab',
-              'home.lab',
-              'berry.local',
-              'berry',
             ],
             features: {
               hostDNS: {
