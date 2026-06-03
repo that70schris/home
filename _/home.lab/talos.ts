@@ -200,10 +200,10 @@ export class Talos {
   get bootstrap() {
     return new talos.machine.Bootstrap(this.name, {
       clientConfiguration: this.secrets.clientConfiguration,
-      endpoint: this.host,
+      endpoint: `https://${this.host}:6443`,
       node: this.host,
       timeouts: {
-        // create: '60s',
+        create: '30s',
       },
     }, {
       dependsOn: [
