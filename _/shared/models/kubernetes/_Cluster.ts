@@ -19,10 +19,6 @@ export class _Cluster {
     public args: ClusterArgs,
     public opts?: ResourceOptions,
   ) {
-    // new _TwingateKubernetesResource(this.name, {
-
-    // })
-
     this.index
     args.kubes.forEach((kube) => {
       kube.index?.forEach((resource) => {
