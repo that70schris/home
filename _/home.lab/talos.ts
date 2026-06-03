@@ -39,7 +39,8 @@ export class Talos {
       }
     })
 
-    new _TwingateResource(host, {
+    // for remote access later
+    new _TwingateResource(name, {
       accessGroups: [
         Twingate.groups.admin,
       ],
