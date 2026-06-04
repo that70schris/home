@@ -1,3 +1,4 @@
+import { PersistentVolumeClaim } from '@pulumi/kubernetes/core/v1'
 import { _ConfigMap, _Kube, _Port, KubeOverrides } from '..'
 import { once } from '../../../decorators'
 
@@ -66,6 +67,21 @@ export class Homebridge extends _Kube {
     ])
   }
 
+  get homebridge() {
+    return new PersistentVolumeClaim(this.name, {
+      spec: {
+        accessModes: [
+          'ReadWriteOnce',
+        ],
+        resources: {
+          requests: {
+            storage: '10Gi',
+          },
+        },
+      },
+    })
+  }
+
   override get volumes() {
     return super.volumes.concat([{
       name: 'config',
@@ -94,3 +110,34 @@ export class Homebridge extends _Kube {
   }
 
 }
+
+// node: berry.home.lab
+// metadata:
+//     namespace: runtime
+//     type: Disks.block.talos.dev
+//     id: nvme0n1
+//     version: 2
+//     owner: block.DisksController
+//     phase: running
+//     created: 1970-01-01T00:00:02Z
+//     updated: 1970-01-01T00:00:03Z
+// spec:
+//     dev_path: /dev/nvme0n1
+//     size: 1000204886016
+//     pretty_size: 1.0 TB
+//     io_size: 512
+//     sector_size: 512
+//     readonly: false
+//     cdrom: false
+//     model: Samsung SSD 980 PRO with Heatsink 1TB
+//     serial: S6WSNS0X103930J
+//     wwid: eui.002538b14140164d
+//     bus_path: /platform/axi/1000110000.pcie/pci0001:00/0001:00:00.0/0001:01:00.0/nvme
+//     sub_system: /sys/class/block
+//     transport: nvme
+//     symlinks:
+//         - /dev/disk/by-diskseq/29
+//         - /dev/disk/by-id/nvme-Samsung_SSD_980_PRO_with_Heatsink_1TB_S6WSNS0X103930J
+//         - /dev/disk/by-id/nvme-Samsung_SSD_980_PRO_with_Heatsink_1TB_S6WSNS0X103930J_1
+//         - /dev/disk/by-id/nvme-eui.002538b14140164d
+//         - /dev/disk/by-path/platform-1000110000.pcie-pci-0001:01:00.0-nvme-1
