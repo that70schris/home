@@ -29,7 +29,7 @@ export class Homebridge extends _Kube {
       image: 'homebridge/homebridge',
       container_port: Homebridge.config.platforms
         .find((p: any) => p.platform == 'config')?.port ?? 8581,
-      service_port: 8581,
+      service_port: 443,
       ingress: true,
     },
   ) {
@@ -132,8 +132,6 @@ export class Homebridge extends _Kube {
 //     version: 2
 //     owner: block.DisksController
 //     phase: running
-//     created: 1970-01-01T00:00:02Z
-//     updated: 1970-01-01T00:00:03Z
 // spec:
 //     dev_path: /dev/nvme0n1
 //     size: 1000204886016

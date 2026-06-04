@@ -1,13 +1,13 @@
 import { IngressController } from '@pulumi/kubernetes-ingress-nginx'
-import { Namespace, Secret, Service, ServiceSpecType } from '@pulumi/kubernetes/core/v1'
+import { Namespace, Secret, ServiceSpecType } from '@pulumi/kubernetes/core/v1'
 import { Chart } from '@pulumi/kubernetes/helm/v4'
 import { Config, ResourceOptions } from '@pulumi/pulumi'
 import { _CustomResource, _Ingress, _Kube } from '.'
 import { once } from '../../decorators'
 import { Twingate } from '../twingate'
-import { _TwingateResource } from '../twingate/resource'
 
 interface ClusterArgs {
+  domain?: string
   host: string
   kubes: _Kube[]
 }
@@ -33,22 +33,6 @@ export class _Cluster {
     })
 
     this.index
-    args.kubes.forEach((kube) => {
-      kube.index?.forEach((resource) => {
-        switch (resource.constructor) {
-          case Service:
-            new _TwingateResource(kube.name, {
-              address: `${kube.name}.${kube.metadata.namespace ?? 'default'}.svc.cluster.local`,
-            }, {
-              dependsOn: resource,
-              parent: resource,
-            })
-            break
-        }
-      })
-
-      return kube.index
-    })
   }
 
   manager = new Chart('manager', {
@@ -177,7 +161,8 @@ export class _Cluster {
         }).map(kube => ({
           host: [
             kube.name,
-            kube.overrides.domain
+            (kube.overrides.domain
+              ?? this.args.domain)
             ?? this.args.host,
           ].filter(Boolean).join('.'),
           http: {

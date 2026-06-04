@@ -8,6 +8,7 @@ Twingate
 const berry = new Talos('berry')
 new _Cluster(berry.name, {
   host: berry.host,
+  domain: 'bailey.mx',
   // ip: berry.host,
   kubes: [
     new Homebridge(),

@@ -46,7 +46,7 @@ export class Firebase {
 
   static text = new _Record(
     'firebase.hostwriter.app', {
-      domain: 'hostwriter.app',
+      hostname: 'hostwriter.app',
       type: 'TXT',
       content: 'hosting-site=hostwriter',
     },
