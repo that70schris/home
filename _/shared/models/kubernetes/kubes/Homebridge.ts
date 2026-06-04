@@ -103,13 +103,16 @@ export class Homebridge extends _Kube {
 
   override get volume_mounts() {
     return super.volume_mounts.concat([{
-      name: this.volumes[0].name,
+      name: 'config',
       mountPath: '/homebridge/config.json',
       subPath: 'config.json',
     }, {
-      name: this.volumes[0].name,
+      name: 'config',
       mountPath: '/homebridge/auth.json',
       subPath: 'auth.json',
+    // }, {
+    //   name: 'homebridge',
+    //   mountPath: '/homebridge/',
     }])
   }
 
