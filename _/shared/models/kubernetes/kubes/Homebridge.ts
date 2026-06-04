@@ -67,8 +67,12 @@ export class Homebridge extends _Kube {
     ])
   }
 
+  @once
   get homebridge() {
     return new PersistentVolumeClaim(this.name, {
+      metadata: {
+        name: this.name,
+      },
       spec: {
         accessModes: [
           'ReadWriteOnce',
@@ -88,6 +92,11 @@ export class Homebridge extends _Kube {
       configMap: {
         name: this.config.name,
       },
+    // }, {
+    //   name: this.homebridge.metadata.name,
+    //   persistentVolumeClaim: {
+    //     claimName: this.homebridge.metadata.name,
+    //   },
     }])
   }
 
