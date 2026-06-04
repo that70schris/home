@@ -1,10 +1,11 @@
-import { Namespace, Service } from '@pulumi/kubernetes/core/v1'
+import { Namespace, Secret, Service } from '@pulumi/kubernetes/core/v1'
 import { Chart } from '@pulumi/kubernetes/helm/v4'
-import { ResourceOptions } from '@pulumi/pulumi'
+import { Config, ResourceOptions } from '@pulumi/pulumi'
 import * as tailscale from '@pulumi/tailscale'
 import { _CustomResource, _Kube } from '.'
 import { once } from '../../decorators'
 import { Twingate } from '../twingate'
+import { _TwingateResource } from '../twingate/resource'
 
 interface ClusterArgs {
   host: string
@@ -36,12 +37,12 @@ export class _Cluster {
       kube.index?.forEach((resource) => {
         switch (resource.constructor) {
           case Service:
-            // new _TwingateResource(kube.name, {
-            //   address: `${kube.name}.${kube.metadata.namespace ?? 'default'}.svc.cluster.local`,
-            // }, {
-            //   dependsOn: resource,
-            //   parent: resource,
-            // })
+            new _TwingateResource(kube.name, {
+              address: `${kube.name}.${kube.metadata.namespace ?? 'default'}.svc.cluster.local`,
+            }, {
+              dependsOn: resource,
+              parent: resource,
+            })
             break
         }
       })
@@ -50,108 +51,108 @@ export class _Cluster {
     })
   }
 
-  // manager = new Chart('manager', {
-  //   chart: 'cert-manager',
-  //   repositoryOpts: {
-  //     repo: 'https://charts.jetstack.io',
-  //   },
-  //   values: {
-  //     fullnameOverride: 'certificate',
-  //     crds: {
-  //       enabled: true,
-  //       keep: false,
-  //     },
-  //     global: {
-  //       leaderElection: {
-  //         namespace: 'default',
-  //       },
-  //     },
-  //   },
-  // })
+  manager = new Chart('manager', {
+    chart: 'cert-manager',
+    repositoryOpts: {
+      repo: 'https://charts.jetstack.io',
+    },
+    values: {
+      fullnameOverride: 'certificate',
+      crds: {
+        enabled: true,
+        keep: false,
+      },
+      global: {
+        leaderElection: {
+          namespace: 'default',
+        },
+      },
+    },
+  })
 
-  // cloudflare = new Secret('cloudflare', {
-  //   metadata: {
-  //     name: 'cloudflare',
-  //   },
-  //   stringData: {
-  //     token: new Config('cloudflare')
-  //       .require('apiToken'),
-  //   },
-  // })
+  cloudflare = new Secret('cloudflare', {
+    metadata: {
+      name: 'cloudflare',
+    },
+    stringData: {
+      token: new Config('cloudflare')
+        .require('apiToken'),
+    },
+  })
 
-  // root = new _CustomResource('root', {
-  //   apiVersion: 'cert-manager.io/v1',
-  //   kind: 'ClusterIssuer',
-  //   spec: {
-  //     selfSigned: {},
-  //   },
-  // })
+  root = new _CustomResource('root', {
+    apiVersion: 'cert-manager.io/v1',
+    kind: 'ClusterIssuer',
+    spec: {
+      selfSigned: {},
+    },
+  })
 
-  // cert = new _CustomResource('root', {
-  //   apiVersion: 'cert-manager.io/v1',
-  //   kind: 'Certificate',
-  //   spec: {
-  //     isCA: true,
-  //     commonName: 'bailey.mx',
-  //     secretName: this.root.metadata.name,
-  //     privateKey: {
-  //       algorithm: 'ECDSA',
-  //       size: 256,
-  //     },
-  //     issuerRef: {
-  //       kind: this.root.kind,
-  //       name: this.root.metadata.name,
-  //     },
-  //   },
-  // }, {
-  //   dependsOn: [
-  //     this.root,
-  //   ],
-  // })
+  cert = new _CustomResource('root', {
+    apiVersion: 'cert-manager.io/v1',
+    kind: 'Certificate',
+    spec: {
+      isCA: true,
+      commonName: 'bailey.mx',
+      secretName: this.root.metadata.name,
+      privateKey: {
+        algorithm: 'ECDSA',
+        size: 256,
+      },
+      issuerRef: {
+        kind: this.root.kind,
+        name: this.root.metadata.name,
+      },
+    },
+  }, {
+    dependsOn: [
+      this.root,
+    ],
+  })
 
-  // private = new _CustomResource('private', {
-  //   apiVersion: 'cert-manager.io/v1',
-  //   kind: 'ClusterIssuer',
-  //   spec: {
-  //     ca: {
-  //       secretName: this.cert.metadata.name,
-  //     },
-  //   },
-  // }, {
-  //   dependsOn: [
-  //     this.cert,
-  //   ],
-  // })
+  private = new _CustomResource('private', {
+    apiVersion: 'cert-manager.io/v1',
+    kind: 'ClusterIssuer',
+    spec: {
+      ca: {
+        secretName: this.cert.metadata.name,
+      },
+    },
+  }, {
+    dependsOn: [
+      this.cert,
+    ],
+  })
 
-  // letsencrypt = new _CustomResource('letsencrypt', {
-  //   apiVersion: 'cert-manager.io/v1',
-  //   kind: 'ClusterIssuer',
-  //   spec: {
-  //     acme: {
-  //       server: 'https://acme-v02.api.letsencrypt.org/directory',
-  //       email: new Config().require('email'),
-  //       privateKeySecretRef: {
-  //         name: 'letsencrypt',
-  //       },
-  //       solvers: [{
-  //         dns01: {
-  //           cloudflare: {
-  //             apiTokenSecretRef: {
-  //               name: this.cloudflare.metadata.name,
-  //               key: 'token',
-  //             },
-  //           },
-  //         },
-  //       }],
-  //     },
-  //   },
-  // }, {
-  //   deleteBeforeReplace: true,
-  //   dependsOn: [
-  //     this.cloudflare,
-  //     this.manager,
-  //   ],
-  // })
+  letsencrypt = new _CustomResource('letsencrypt', {
+    apiVersion: 'cert-manager.io/v1',
+    kind: 'ClusterIssuer',
+    spec: {
+      acme: {
+        server: 'https://acme-v02.api.letsencrypt.org/directory',
+        email: new Config().require('email'),
+        privateKeySecretRef: {
+          name: 'letsencrypt',
+        },
+        solvers: [{
+          dns01: {
+            cloudflare: {
+              apiTokenSecretRef: {
+                name: this.cloudflare.metadata.name,
+                key: 'token',
+              },
+            },
+          },
+        }],
+      },
+    },
+  }, {
+    deleteBeforeReplace: true,
+    dependsOn: [
+      this.cloudflare,
+      this.manager,
+    ],
+  })
 
   // nginx = new IngressController('nginx', {
   //   fullnameOverride: 'nginx',
