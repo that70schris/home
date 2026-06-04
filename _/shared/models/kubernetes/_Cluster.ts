@@ -1,8 +1,8 @@
-import { Namespace, Secret, Service } from '@pulumi/kubernetes/core/v1'
+import { IngressController } from '@pulumi/kubernetes-ingress-nginx'
+import { Namespace, Secret, Service, ServiceSpecType } from '@pulumi/kubernetes/core/v1'
 import { Chart } from '@pulumi/kubernetes/helm/v4'
 import { Config, ResourceOptions } from '@pulumi/pulumi'
-import * as tailscale from '@pulumi/tailscale'
-import { _CustomResource, _Kube } from '.'
+import { _CustomResource, _Ingress, _Kube } from '.'
 import { once } from '../../decorators'
 import { Twingate } from '../twingate'
 import { _TwingateResource } from '../twingate/resource'
@@ -154,38 +154,45 @@ export class _Cluster {
     ],
   })
 
-  // nginx = new IngressController('nginx', {
-  //   fullnameOverride: 'nginx',
-  //   controller: {
-  //     containerName: 'main',
-  //   },
-  // })
+  nginx = new IngressController('nginx', {
+    fullnameOverride: 'nginx',
+    controller: {
+      containerName: 'main',
+      service: {
+        type: ServiceSpecType.NodePort,
+        nodePorts: {
+          http: '30080',
+          https: '30443',
+        },
+      },
+    },
+  })
 
-  // @once
-  // get ingress() {
-  //   return new _Ingress('nginx', {
-  //     rules: this.args?.kubes
-  //       .filter((kube) => {
-  //         return kube.ingress
-  //       }).map(kube => ({
-  //         host: [
-  //           kube.name,
-  //           kube.overrides.domain
-  //           ?? this.args.domain,
-  //         ].filter(Boolean).join('.'),
-  //         http: {
-  //           paths: [{
-  //             backend: kube.backend,
-  //             pathType: 'Prefix',
-  //             path: '/',
-  //           }],
-  //         },
-  //       })),
-  //   }, {
-  //     cluster: this,
-  //     issuer: this.letsencrypt,
-  //   })
-  // }
+  @once
+  get ingress() {
+    return new _Ingress('nginx', {
+      rules: this.args?.kubes
+        .filter((kube) => {
+          return kube.ingress
+        }).map(kube => ({
+          host: [
+            kube.name,
+            kube.overrides.domain
+            ?? this.args.host,
+          ].filter(Boolean).join('.'),
+          http: {
+            paths: [{
+              backend: kube.backend,
+              pathType: 'Prefix',
+              path: '/',
+            }],
+          },
+        })),
+    }, {
+      cluster: this,
+      issuer: this.letsencrypt,
+    })
+  }
 
   @once
   get twingate_operator() {
@@ -235,102 +242,13 @@ export class _Cluster {
   }
 
   @once
-  get twingate_resource() {
-    return new _CustomResource(
-      'twingate-resource', {
-        apiVersion: 'twingate.com/v1beta',
-        kind: 'TwingateResource',
-        spec: {
-          // needs a proxy?
-          address: 'kubernetes.default.svc.cluster.local',
-          name: `_${this.name}`,
-          tlsSecret: 'twingate-gateway-tls',
-          alias: 'kube.berry.home',
-          type: 'Kubernetes',
-        },
-      },
-    )
-  }
-
-  @once
-  get tailscale() {
-    return new Chart('tailscale', {
-      chart: 'tailscale-operator',
-      repositoryOpts: {
-        repo: 'https://pkgs.tailscale.com/helmcharts',
-      },
-      values: {
-        apiServerProxyConfig: {
-          mode: true,
-        },
-        oauth: {
-          clientId: tailscale.config.oauthClientId,
-          clientSecret: tailscale.config.oauthClientSecret,
-        },
-        operatorConfig: {
-          hostname: 'operator',
-        },
-      },
-    })
-  }
-
-  @once
   get index() {
     return [
-      // this.ingress,
-      // this.tailscale,
+      this.ingress,
       this.twingate_operator,
       this.twingate_connector,
-      // this.twingate_resource,
-      // this.twingate_resource_access,
-      // this.twingate_role_binding,
       // ...new mDNS().index,
     ]
-  }
-
-  @once
-  get twingate_resource_access() {
-    return new _CustomResource(
-      'twingate-resource-access', {
-        apiVersion: 'twingate.com/v1beta',
-        kind: 'TwingateResourceAccess',
-        spec: {
-          resourceRef: {
-            name: 'twingate-gateway-resource',
-          },
-          principalExternalRef: {
-            name: 'Chris Bailey',
-            type: 'group',
-          },
-        },
-      }, {
-        dependsOn: this.twingate_operator,
-        // parent: this.twingate_operator,
-      },
-    )
-  }
-
-  @once
-  get twingate_role_binding() {
-    return new _CustomResource(
-      'twingate-role-binding', {
-        apiVersion: 'rbac.authorization.k8s.io/v1',
-        kind: 'ClusterRoleBinding',
-        roleRef: {
-          apiGroup: 'rbac.authorization.k8s.io',
-          kind: 'ClusterRole',
-          name: 'edit',
-        },
-        subjects: [{
-          apiGroup: 'rbac.authorization.k8s.io',
-          name: 'Chris Bailey',
-          kind: 'Group',
-        }],
-      }, {
-        dependsOn: this.twingate_operator,
-      // parent: this.twingate_operator,
-      },
-    )
   }
 
 }
