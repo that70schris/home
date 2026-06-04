@@ -9,6 +9,7 @@ import { Twingate } from '../twingate'
 interface ClusterArgs {
   domain?: string
   host: string
+  ip: string
   kubes: _Kube[]
 }
 
@@ -155,6 +156,7 @@ export class _Cluster {
   @once
   get ingress() {
     return new _Ingress('nginx', {
+      ip: this.args.ip,
       rules: this.args?.kubes
         .filter((kube) => {
           return kube.ingress
