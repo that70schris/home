@@ -1,5 +1,6 @@
 import { _Cluster } from '../shared/models/kubernetes'
 import { Homebridge } from '../shared/models/kubernetes/kubes'
+import { Test } from '../shared/models/kubernetes/kubes/Test'
 import { Twingate } from '../shared/models/twingate'
 import { Talos } from './Talos'
 
@@ -15,5 +16,6 @@ new _Cluster(berry.name, {
     new Homebridge(),
     // new Homey(),
     // new Plex(),
+    new Test(),
   ],
 })

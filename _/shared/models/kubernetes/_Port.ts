@@ -12,7 +12,7 @@ export class _Port {
   constructor(
     public name: string,
     public numbers: PortNumbers,
-    private defaults = {
+    defaults = {
       service: numbers.container,
     },
   ) {
