@@ -26,7 +26,6 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   },
-  "breadcrumbs.enabled": false,
   "code-runner.clearPreviousOutput": true,
   "code-runner.preserveFocus": true,
   "code-runner.showExecutionMessage": false,

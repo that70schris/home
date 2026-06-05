@@ -1,8 +1,7 @@
-import { IngressController } from '@pulumi/kubernetes-ingress-nginx'
-import { Namespace, Secret, ServiceSpecType } from '@pulumi/kubernetes/core/v1'
+import { Namespace, Secret } from '@pulumi/kubernetes/core/v1'
 import { Chart } from '@pulumi/kubernetes/helm/v4'
 import { Config, ResourceOptions } from '@pulumi/pulumi'
-import { _CustomResource, _Ingress, _Kube } from '.'
+import { _CustomResource, _Kube } from '.'
 import { once } from '../../decorators'
 import { Twingate } from '../twingate'
 
@@ -139,48 +138,6 @@ export class _Cluster {
     ],
   })
 
-  nginx = new IngressController('nginx', {
-    fullnameOverride: 'nginx',
-    controller: {
-      containerName: 'main',
-      service: {
-        type: ServiceSpecType.NodePort,
-        nodePorts: {
-          http: '30080',
-          https: '30443',
-        },
-      },
-    },
-  })
-
-  @once
-  get ingress() {
-    return new _Ingress('nginx', {
-      ip: this.args.ip,
-      rules: this.args?.kubes
-        .filter((kube) => {
-          return kube.ingress
-        }).map(kube => ({
-          host: [
-            kube.name,
-            (kube.overrides.domain
-              ?? this.args.domain)
-            ?? this.args.host,
-          ].filter(Boolean).join('.'),
-          http: {
-            paths: [{
-              backend: kube.backend,
-              pathType: 'Prefix',
-              path: '/',
-            }],
-          },
-        })),
-    }, {
-      cluster: this,
-      issuer: this.letsencrypt,
-    })
-  }
-
   @once
   get twingate_operator() {
     return new Chart('twingate', {
@@ -231,7 +188,6 @@ export class _Cluster {
   @once
   get index() {
     return [
-      this.ingress,
       this.twingate_operator,
       this.twingate_connector,
       // ...new mDNS().index,
