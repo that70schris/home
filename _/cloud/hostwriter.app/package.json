@@ -1,14 +1,14 @@
 {
   "dependencies": {
-    "@builder.io/qwik": "latest",
-    "@builder.io/qwik-city": "latest",
+    "@builder.io/qwik": "1.20.0",
+    "@builder.io/qwik-city": "1.20.0",
     "@types/node": "latest",
     "firebase": "latest",
     "firebase-tools": "latest",
     "sass": "latest",
     "typescript": "latest",
     "undici": "8.3.0",
-    "vite": "latest",
+    "vite": "8.0.16",
     "vite-tsconfig-paths": "latest"
   }
 }
