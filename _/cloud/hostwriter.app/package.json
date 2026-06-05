@@ -7,7 +7,7 @@
     "firebase-tools": "latest",
     "sass": "latest",
     "typescript": "latest",
-    "undici": "latest",
+    "undici": "8.3.0",
     "vite": "latest",
     "vite-tsconfig-paths": "latest"
   }
