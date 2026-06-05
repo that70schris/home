@@ -1,5 +1,6 @@
 import { Namespace, Secret } from '@pulumi/kubernetes/core/v1'
 import { Chart } from '@pulumi/kubernetes/helm/v4'
+import { ConfigFile } from '@pulumi/kubernetes/yaml'
 import { Config, ResourceOptions } from '@pulumi/pulumi'
 import { _CustomResource, _Kube } from '.'
 import { once } from '../../decorators'
@@ -34,6 +35,52 @@ export class _Cluster {
 
     this.index
   }
+
+  // 1. Install Gateway API CRDs
+  gatewayCrds = new ConfigFile('gateway-crds', {
+    file: 'https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.5.1/standard-install.yaml',
+  })
+
+  // traefik = new Chart('traefik', {
+  //   chart: 'traefik',
+  //   repositoryOpts: {
+  //     repo: 'https://helm.traefik.io/traefik',
+  //   },
+  //   values: {
+  //     // Enable Kubernetes Gateway API Provider
+  //     providers: {
+  //       kubernetesGateway: {
+  //         enabled: true,
+  //       },
+  //     },
+  //   },
+  // }, {
+  //   dependsOn: [
+  //     this.gatewayCrds,
+  //   ],
+  // })
+
+  // gateway = new _CustomResource('gateway', {
+  //   apiVersion: 'gateway.networking.k8s.io/v1',
+  //   kind: 'Gateway',
+  //   spec: {
+  //     gatewayClassName: 'traefik',
+  //     listeners: [{
+  //       name: 'http',
+  //       port: 80,
+  //       protocol: 'HTTP',
+  //       allowedRoutes: {
+  //         namespaces: {
+  //           from: 'All',
+  //         },
+  //       },
+  //     }],
+  //   },
+  // }, {
+  //   dependsOn: [
+  //     this.traefik,
+  //   ],
+  // })
 
   manager = new Chart('manager', {
     chart: 'cert-manager',
