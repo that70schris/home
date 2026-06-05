@@ -18,10 +18,10 @@ importers:
         specifier: latest
         version: 25.9.1
       firebase:
-        specifier: latest
+        specifier: 12.14.0
         version: 12.14.0
       firebase-tools:
-        specifier: latest
+        specifier: 15.19.1
         version: 15.19.1(@types/node@25.9.1)
       sass:
         specifier: latest
