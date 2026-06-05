@@ -2,9 +2,9 @@ import * as talos from '@pulumiverse/talos'
 import { readFileSync, writeFileSync } from 'fs'
 import { merge } from 'lodash'
 import * as yaml from 'yaml'
-import { once } from '../shared/decorators'
-import { Twingate } from '../shared/models/twingate'
-import { _TwingateResource } from '../shared/models/twingate/resource'
+import { once } from '../decorators'
+import { Twingate } from '../models/twingate'
+import { _TwingateResource } from '../models/twingate/resource'
 
 export class Talos {
   kubeVersion = 'v1.36.1'
