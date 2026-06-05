@@ -1,4 +1,4 @@
-import { Namespace, Secret } from '@pulumi/kubernetes/core/v1'
+import { Namespace, Secret, ServiceSpecType } from '@pulumi/kubernetes/core/v1'
 import { Chart } from '@pulumi/kubernetes/helm/v4'
 import { ConfigFile } from '@pulumi/kubernetes/yaml'
 import { Config, ResourceOptions } from '@pulumi/pulumi'
@@ -41,24 +41,29 @@ export class _Cluster {
     file: 'https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.5.1/standard-install.yaml',
   })
 
-  // traefik = new Chart('traefik', {
-  //   chart: 'traefik',
-  //   repositoryOpts: {
-  //     repo: 'https://helm.traefik.io/traefik',
-  //   },
-  //   values: {
-  //     // Enable Kubernetes Gateway API Provider
-  //     providers: {
-  //       kubernetesGateway: {
-  //         enabled: true,
-  //       },
-  //     },
-  //   },
-  // }, {
-  //   dependsOn: [
-  //     this.gatewayCrds,
-  //   ],
-  // })
+  traefik = new Chart('traefik', {
+    chart: 'traefik',
+    repositoryOpts: {
+      repo: 'https://helm.traefik.io/traefik',
+    },
+    values: {
+      providers: {
+        kubernetesGateway: {
+          enabled: true,
+        },
+      },
+      service: {
+        spec: {
+          // does this need to be changed?
+          type: ServiceSpecType.ClusterIP,
+        },
+      },
+    },
+  }, {
+    dependsOn: [
+      this.gatewayCrds,
+    ],
+  })
 
   // gateway = new _CustomResource('gateway', {
   //   apiVersion: 'gateway.networking.k8s.io/v1',
