@@ -36,7 +36,7 @@ importers:
         specifier: latest
         version: 0.28.0(typescript@6.0.3)
       '@pulumiverse/talos':
-        specifier: ^0.8.0
+        specifier: latest
         version: 0.8.0(typescript@6.0.3)
       '@pulumiverse/unifi':
         specifier: latest
@@ -45,7 +45,7 @@ importers:
         specifier: latest
         version: 4.2.0(typescript@6.0.3)
       esbuild:
-        specifier: latest
+        specifier: 0.28.0
         version: 0.28.0
       fs:
         specifier: latest
