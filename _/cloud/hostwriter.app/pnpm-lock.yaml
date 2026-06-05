@@ -9,10 +9,10 @@ importers:
   .:
     dependencies:
       '@builder.io/qwik':
-        specifier: latest
+        specifier: 1.20.0
         version: 1.20.0(vite@8.0.16(@types/node@25.9.1)(esbuild@0.27.7)(sass@1.100.0)(yaml@2.9.0))
       '@builder.io/qwik-city':
-        specifier: latest
+        specifier: 1.20.0
         version: 1.20.0(@types/node@25.9.1)(lightningcss@1.32.0)(rollup@4.61.1)(sass@1.100.0)(typescript@6.0.3)(yaml@2.9.0)
       '@types/node':
         specifier: latest
