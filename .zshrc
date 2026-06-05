@@ -21,7 +21,7 @@ setopt autocd
 eval "$(starship init zsh)"
 PS1+=$'\n'
 if [ $WARP_HONOR_PS1 ]; then
-  PS1+=$'\n'
+  # PS1+=$'\n'
 fi
 
 if CLOUDSDK=$(

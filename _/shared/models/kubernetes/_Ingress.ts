@@ -98,27 +98,25 @@ export class _Ingress extends Ingress {
       },
     )
 
-    this.status.loadBalancer?.ingress[0].ip.apply((ip) => {
-      args.rules.forEach((rule) => {
-        interpolate`${rule.host}`.apply((host) => {
-          new _Record(host, {
-            domain: host,
-            content: ip,
-            proxied: rule.proxied,
-          }, {
-            parent: this,
-          })
-
-          new _TwingateResource(host, {
-            isBrowserShortcutEnabled: true,
-            tcp: rule.http?.paths?.map((path) => {
-              return path.backend.service.port.number as number
-            }),
-          }, {
-            parent: this,
-          })
-
+    args.rules.forEach((rule) => {
+      interpolate`${rule.host}`.apply((host) => {
+        new _Record(host, {
+          domain: host,
+          content: this.args.ip,
+          proxied: rule.proxied,
+        }, {
+          parent: this,
         })
+
+        new _TwingateResource(host, {
+          isBrowserShortcutEnabled: true,
+          tcp: rule.http?.paths?.map((path) => {
+            return path.backend.service.port.number as number
+          }),
+        }, {
+          parent: this,
+        })
+
       })
     })
 
