@@ -20,6 +20,7 @@ export class _Cluster {
     public args: ClusterArgs,
     public opts?: ResourceOptions,
   ) {
+    // for Talos Linux
     new Namespace('default', {
       metadata: {
         name: 'default',
@@ -30,165 +31,196 @@ export class _Cluster {
         },
       },
     }, {
+      retainOnDelete: true,
       import: 'default',
     })
 
-    this.index
+    this.gateway
+    // this.twingate_connector
+    // ...new mDNS().index
   }
 
-  // 1. Install Gateway API CRDs
-  gatewayCrds = new ConfigFile('gateway-crds', {
-    file: 'https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.5.1/standard-install.yaml',
-  })
+  @once
+  get gatewayDefinitions() {
+    return new ConfigFile('gateway-crds', {
+      file: 'https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.5.1/standard-install.yaml',
+    })
+  }
 
-  traefik = new Chart('traefik', {
-    chart: 'traefik',
-    repositoryOpts: {
-      repo: 'https://helm.traefik.io/traefik',
-    },
-    values: {
-      providers: {
-        kubernetesGateway: {
-          enabled: true,
+  @once
+  get traefik() {
+    return new Chart('traefik', {
+      chart: 'traefik',
+      repositoryOpts: {
+        repo: 'https://helm.traefik.io/traefik',
+      },
+      values: {
+        providers: {
+          kubernetesGateway: {
+            enabled: true,
+          },
+        },
+        service: {
+          spec: {
+            // does this need to be changed?
+            type: ServiceSpecType.ClusterIP,
+          },
         },
       },
-      service: {
-        spec: {
-          // does this need to be changed?
-          type: ServiceSpecType.ClusterIP,
-        },
-      },
-    },
-  }, {
-    dependsOn: [
-      this.gatewayCrds,
-    ],
-  })
+    }, {
+      dependsOn: [
+        this.gatewayDefinitions,
+      ],
+    })
+  }
 
-  // gateway = new _CustomResource('gateway', {
-  //   apiVersion: 'gateway.networking.k8s.io/v1',
-  //   kind: 'Gateway',
-  //   spec: {
-  //     gatewayClassName: 'traefik',
-  //     listeners: [{
-  //       name: 'http',
-  //       port: 80,
-  //       protocol: 'HTTP',
-  //       allowedRoutes: {
-  //         namespaces: {
-  //           from: 'All',
-  //         },
-  //       },
-  //     }],
-  //   },
-  // }, {
-  //   dependsOn: [
-  //     this.traefik,
-  //   ],
-  // })
-
-  manager = new Chart('manager', {
-    chart: 'cert-manager',
-    repositoryOpts: {
-      repo: 'https://charts.jetstack.io',
-    },
-    values: {
-      fullnameOverride: 'certificate',
-      crds: {
-        enabled: true,
-        keep: false,
-      },
-      global: {
-        leaderElection: {
-          namespace: 'default',
-        },
-      },
-    },
-  })
-
-  cloudflare = new Secret('cloudflare', {
-    metadata: {
-      name: 'cloudflare',
-    },
-    stringData: {
-      token: new Config('cloudflare')
-        .require('apiToken'),
-    },
-  })
-
-  root = new _CustomResource('root', {
-    apiVersion: 'cert-manager.io/v1',
-    kind: 'ClusterIssuer',
-    spec: {
-      selfSigned: {},
-    },
-  })
-
-  cert = new _CustomResource('root', {
-    apiVersion: 'cert-manager.io/v1',
-    kind: 'Certificate',
-    spec: {
-      isCA: true,
-      commonName: 'bailey.mx',
-      secretName: this.root.metadata.name,
-      privateKey: {
-        algorithm: 'ECDSA',
-        size: 256,
-      },
-      issuerRef: {
-        kind: this.root.kind,
-        name: this.root.metadata.name,
-      },
-    },
-  }, {
-    dependsOn: [
-      this.root,
-    ],
-  })
-
-  private = new _CustomResource('private', {
-    apiVersion: 'cert-manager.io/v1',
-    kind: 'ClusterIssuer',
-    spec: {
-      ca: {
-        secretName: this.cert.metadata.name,
-      },
-    },
-  }, {
-    dependsOn: [
-      this.cert,
-    ],
-  })
-
-  letsencrypt = new _CustomResource('letsencrypt', {
-    apiVersion: 'cert-manager.io/v1',
-    kind: 'ClusterIssuer',
-    spec: {
-      acme: {
-        server: 'https://acme-v02.api.letsencrypt.org/directory',
-        email: new Config().require('email'),
-        privateKeySecretRef: {
-          name: 'letsencrypt',
-        },
-        solvers: [{
-          dns01: {
-            cloudflare: {
-              apiTokenSecretRef: {
-                name: this.cloudflare.metadata.name,
-                key: 'token',
-              },
+  @once
+  get gateway() {
+    return new _CustomResource('gateway', {
+      apiVersion: 'gateway.networking.k8s.io/v1',
+      kind: 'Gateway',
+      spec: {
+        gatewayClassName: 'traefik',
+        listeners: [{
+          name: 'http',
+          port: 80,
+          protocol: 'HTTP',
+          allowedRoutes: {
+            namespaces: {
+              from: 'All',
             },
           },
         }],
       },
-    },
-  }, {
-    deleteBeforeReplace: true,
-    dependsOn: [
-      this.cloudflare,
-      this.manager,
-    ],
-  })
+    }, {
+      dependsOn: [
+        this.traefik,
+      ],
+    })
+  }
+
+  @once
+  get manager() {
+    return new Chart('manager', {
+      chart: 'cert-manager',
+      repositoryOpts: {
+        repo: 'https://charts.jetstack.io',
+      },
+      values: {
+        fullnameOverride: 'certificate',
+        crds: {
+          enabled: true,
+          keep: false,
+        },
+        global: {
+          leaderElection: {
+            namespace: 'default',
+          },
+        },
+      },
+    })
+  }
+
+  @once
+  get cloudflare() {
+    return new Secret('cloudflare', {
+      metadata: {
+        name: 'cloudflare',
+      },
+      stringData: {
+        token: new Config('cloudflare')
+          .require('apiToken'),
+      },
+    })
+  }
+
+  @once
+  get root() {
+    return new _CustomResource('root', {
+      apiVersion: 'cert-manager.io/v1',
+      kind: 'ClusterIssuer',
+      spec: {
+        selfSigned: {},
+      },
+    })
+  }
+
+  @once
+  get cert() {
+    return new _CustomResource('root', {
+      apiVersion: 'cert-manager.io/v1',
+      kind: 'Certificate',
+      spec: {
+        isCA: true,
+        commonName: 'bailey.mx',
+        secretName: this.root.metadata.name,
+        privateKey: {
+          algorithm: 'ECDSA',
+          size: 256,
+        },
+        issuerRef: {
+          kind: this.root.kind,
+          name: this.root.metadata.name,
+        },
+      },
+    }, {
+      dependsOn: [
+        this.manager,
+        this.cloudflare,
+        this.root,
+      ],
+    })
+  }
+
+  @once
+  get private() {
+    return new _CustomResource('private', {
+      apiVersion: 'cert-manager.io/v1',
+      kind: 'ClusterIssuer',
+      spec: {
+        ca: {
+          secretName: this.cert.metadata.name,
+        },
+      },
+    }, {
+      dependsOn: [
+        this.cert,
+      ],
+    })
+  }
+
+  @once
+  get letsencrypt() {
+    return new _CustomResource('letsencrypt', {
+      apiVersion: 'cert-manager.io/v1',
+      kind: 'ClusterIssuer',
+      spec: {
+        acme: {
+          server: 'https://acme-v02.api.letsencrypt.org/directory',
+          email: new Config().require('email'),
+          privateKeySecretRef: {
+            name: 'letsencrypt',
+          },
+          solvers: [{
+            dns01: {
+              cloudflare: {
+                apiTokenSecretRef: {
+                  name: this.cloudflare.metadata.name,
+                  key: 'token',
+                },
+              },
+            },
+          }],
+        },
+      },
+    }, {
+      deleteBeforeReplace: true,
+      dependsOn: [
+        this.cloudflare,
+        this.manager,
+      ],
+    })
+  }
 
   @once
   get twingate_operator() {
@@ -235,15 +267,6 @@ export class _Cluster {
         parent: this.twingate_operator,
       },
     )
-  }
-
-  @once
-  get index() {
-    return [
-      this.twingate_operator,
-      this.twingate_connector,
-      // ...new mDNS().index,
-    ]
   }
 
 }

@@ -53,7 +53,7 @@ is_settings_sync_enabled = true
 spacing = "normal"
 
 [appearance.input]
-input_mode = "pinned_to_bottom"
+input_mode = "waterfall"
 
 [appearance.themes]
 system_theme = true

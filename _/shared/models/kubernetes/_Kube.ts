@@ -216,8 +216,8 @@ export class _Kube {
         template: {
           metadata: this.metadata,
           spec: {
+            // hostNetwork: true,
             dnsPolicy: 'ClusterFirstWithHostNet',
-            hostNetwork: true,
             enableServiceLinks: false,
             initContainers: this.initContainers,
             serviceAccountName: this.account?.metadata.name,

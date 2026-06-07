@@ -4,9 +4,9 @@ export class Test extends _Kube {
 
   constructor(
     overrides: KubeOverrides = {
-      image: 'nginx',
       container_port: 8080,
       service_port: 80,
+      image: 'nginx',
       ingress: true,
     },
   ) {

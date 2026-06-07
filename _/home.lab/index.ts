@@ -1,5 +1,4 @@
 import { _Cluster } from '../shared/models/kubernetes'
-import { Homebridge } from '../shared/models/kubernetes/kubes'
 import { Test } from '../shared/models/kubernetes/kubes/Test'
 import { Talos } from '../shared/models/Talos'
 import { Twingate } from '../shared/models/twingate'
@@ -13,7 +12,7 @@ new _Cluster(berry.name, {
   ip: '192.168.0.5',
   // ip: berry.host,
   kubes: [
-    new Homebridge(),
+    // new Homebridge(),
     // new Homey(),
     // new Plex(),
     new Test(),

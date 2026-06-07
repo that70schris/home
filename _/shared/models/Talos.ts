@@ -98,7 +98,6 @@ export class Talos {
           {
             machine: {
               certSANs: [
-              // 'kubernetes.default.svc.cluster.local',
                 this.host,
               ],
               features: {
@@ -108,6 +107,7 @@ export class Talos {
               },
               install: {
                 disk: disk?.devPath,
+                wipe: true,
               },
             },
             cluster: {
