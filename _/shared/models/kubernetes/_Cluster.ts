@@ -35,17 +35,23 @@ export class _Cluster {
       import: 'default',
     })
 
-    this.gateway
+    this.certificate
+    this.nginx
+    this.crds
+    // this.gateway
     // this.twingate_connector
     // ...new mDNS().index
   }
 
   @once
-  get nginx() {
-    const definitions = new ConfigFile('gateway-crds', {
+  get crds() {
+    return new ConfigFile('gateway-crds', {
       file: 'https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.3.0/standard-install.yaml',
     })
+  }
 
+  @once
+  get nginx() {
     return new Chart('nginx', {
       chart: 'oci://ghcr.io/nginx/charts/nginx-gateway-fabric',
       values: {
@@ -53,7 +59,7 @@ export class _Cluster {
       },
     }, {
       dependsOn: [
-        definitions,
+        this.crds,
       ],
     })
   }
@@ -78,8 +84,9 @@ export class _Cluster {
       },
     }, {
       dependsOn: [
-        this.nginx,
         this.certificate,
+        this.nginx,
+        this.crds,
       ],
     })
   }
