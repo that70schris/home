@@ -1,4 +1,4 @@
-import { Namespace, Secret, ServiceSpecType } from '@pulumi/kubernetes/core/v1'
+import { Namespace, Secret } from '@pulumi/kubernetes/core/v1'
 import { Chart } from '@pulumi/kubernetes/helm/v4'
 import { ConfigFile } from '@pulumi/kubernetes/yaml'
 import { Config, ResourceOptions } from '@pulumi/pulumi'
@@ -41,35 +41,19 @@ export class _Cluster {
   }
 
   @once
-  get gatewayDefinitions() {
-    return new ConfigFile('gateway-crds', {
-      file: 'https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.5.1/standard-install.yaml',
+  get nginx() {
+    const definitions = new ConfigFile('gateway-crds', {
+      file: 'https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.3.0/standard-install.yaml',
     })
-  }
 
-  @once
-  get traefik() {
-    return new Chart('traefik', {
-      chart: 'traefik',
-      repositoryOpts: {
-        repo: 'https://helm.traefik.io/traefik',
-      },
+    return new Chart('nginx', {
+      chart: 'oci://ghcr.io/nginx/charts/nginx-gateway-fabric',
       values: {
-        providers: {
-          kubernetesGateway: {
-            enabled: true,
-          },
-        },
-        service: {
-          spec: {
-            // does this need to be changed?
-            type: ServiceSpecType.ClusterIP,
-          },
-        },
+
       },
     }, {
       dependsOn: [
-        this.gatewayDefinitions,
+        definitions,
       ],
     })
   }
@@ -80,7 +64,7 @@ export class _Cluster {
       apiVersion: 'gateway.networking.k8s.io/v1',
       kind: 'Gateway',
       spec: {
-        gatewayClassName: 'traefik',
+        gatewayClassName: 'nginx',
         listeners: [{
           name: 'http',
           port: 80,
@@ -94,7 +78,8 @@ export class _Cluster {
       },
     }, {
       dependsOn: [
-        this.traefik,
+        this.nginx,
+        this.certificate,
       ],
     })
   }
@@ -135,18 +120,7 @@ export class _Cluster {
   }
 
   @once
-  get root() {
-    return new _CustomResource('root', {
-      apiVersion: 'cert-manager.io/v1',
-      kind: 'ClusterIssuer',
-      spec: {
-        selfSigned: {},
-      },
-    })
-  }
-
-  @once
-  get cert() {
+  get certificate() {
     return new _CustomResource('root', {
       apiVersion: 'cert-manager.io/v1',
       kind: 'Certificate',
@@ -173,18 +147,29 @@ export class _Cluster {
   }
 
   @once
+  get root() {
+    return new _CustomResource('root', {
+      apiVersion: 'cert-manager.io/v1',
+      kind: 'ClusterIssuer',
+      spec: {
+        selfSigned: {},
+      },
+    })
+  }
+
+  @once
   get private() {
     return new _CustomResource('private', {
       apiVersion: 'cert-manager.io/v1',
       kind: 'ClusterIssuer',
       spec: {
         ca: {
-          secretName: this.cert.metadata.name,
+          secretName: this.certificate.metadata.name,
         },
       },
     }, {
       dependsOn: [
-        this.cert,
+        this.certificate,
       ],
     })
   }
