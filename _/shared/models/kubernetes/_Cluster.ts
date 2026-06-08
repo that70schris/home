@@ -35,31 +35,66 @@ export class _Cluster {
       import: 'default',
     })
 
+    this.gateway_definitions
     this.certificate
     this.nginx
-    this.crds
     // this.gateway
     // this.twingate_connector
     // ...new mDNS().index
   }
 
   @once
-  get crds() {
-    return new ConfigFile('gateway-crds', {
+  get gateway_definitions() {
+    return new ConfigFile('gateway-definitions', {
       file: 'https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.3.0/standard-install.yaml',
     })
   }
 
   @once
   get nginx() {
-    return new Chart('nginx', {
+    new _CustomResource('agent-tls', {
+      apiVersion: 'cert-manager.io/v1',
+      kind: 'Certificate',
+      metadata: {
+        name: 'agent-tls',
+      },
+      spec: {
+        secretName: 'agent-tls',
+        dnsNames: [
+          '*.cluster.local',
+        ],
+        issuerRef: {
+          name: this.private.metadata.name,
+        },
+      },
+
+    })
+
+    new _CustomResource('server-tls', {
+      apiVersion: 'cert-manager.io/v1',
+      kind: 'Certificate',
+      metadata: {
+        name: 'server-tls',
+      },
+      spec: {
+        secretName: 'server-tls',
+        dnsNames: [
+          'ngf-nginx-gateway-fabric.default.svc',
+        ],
+        issuerRef: {
+          name: this.private.metadata.name,
+        },
+      },
+    })
+
+    return new Chart('ngf', {
       chart: 'oci://ghcr.io/nginx/charts/nginx-gateway-fabric',
       values: {
 
       },
     }, {
       dependsOn: [
-        this.crds,
+        this.gateway_definitions,
       ],
     })
   }
@@ -85,8 +120,8 @@ export class _Cluster {
     }, {
       dependsOn: [
         this.certificate,
+        this.gateway_definitions,
         this.nginx,
-        this.crds,
       ],
     })
   }
@@ -100,6 +135,10 @@ export class _Cluster {
       },
       values: {
         fullnameOverride: 'certificate',
+        config: {
+          kind: 'ControllerConfiguration',
+          enableGatewayAPI: true,
+        },
         crds: {
           enabled: true,
           keep: false,
@@ -127,6 +166,17 @@ export class _Cluster {
   }
 
   @once
+  get root() {
+    return new _CustomResource('root', {
+      apiVersion: 'cert-manager.io/v1',
+      kind: 'ClusterIssuer',
+      spec: {
+        selfSigned: {},
+      },
+    })
+  }
+
+  @once
   get certificate() {
     return new _CustomResource('root', {
       apiVersion: 'cert-manager.io/v1',
@@ -146,21 +196,9 @@ export class _Cluster {
       },
     }, {
       dependsOn: [
-        this.manager,
         this.cloudflare,
-        this.root,
+        this.manager,
       ],
-    })
-  }
-
-  @once
-  get root() {
-    return new _CustomResource('root', {
-      apiVersion: 'cert-manager.io/v1',
-      kind: 'ClusterIssuer',
-      spec: {
-        selfSigned: {},
-      },
     })
   }
 
@@ -174,10 +212,6 @@ export class _Cluster {
           secretName: this.certificate.metadata.name,
         },
       },
-    }, {
-      dependsOn: [
-        this.certificate,
-      ],
     })
   }
 
@@ -208,7 +242,6 @@ export class _Cluster {
     }, {
       deleteBeforeReplace: true,
       dependsOn: [
-        this.cloudflare,
         this.manager,
       ],
     })
@@ -225,19 +258,6 @@ export class _Cluster {
           apiKey: Twingate.config.get('apiToken'),
           network: Twingate.network,
         },
-        // gateway: {
-        //   enabled: true,
-        //   twingate: {
-        //     network: Twingate.remote.id,
-        //     resource: {
-        //       enabled: true,
-        //       extraAnnotations: {
-        //         'resource.twingate.com/name': `_${this.name}`,
-        //         'resource.twingate.com/alias': this.args.host,
-        //       },
-        //     },
-        //   },
-        // },
       },
     })
   }
