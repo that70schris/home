@@ -38,94 +38,9 @@ export class _Cluster {
     this.gateway_definitions
     this.certificate
     this.nginx
-    // this.gateway
-    // this.twingate_connector
+    this.gateway
+    this.twingate_connector
     // ...new mDNS().index
-  }
-
-  @once
-  get gateway_definitions() {
-    return new ConfigFile('gateway-definitions', {
-      file: 'https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.3.0/standard-install.yaml',
-    })
-  }
-
-  @once
-  get nginx() {
-    new _CustomResource('agent-tls', {
-      apiVersion: 'cert-manager.io/v1',
-      kind: 'Certificate',
-      metadata: {
-        name: 'agent-tls',
-      },
-      spec: {
-        secretName: 'agent-tls',
-        dnsNames: [
-          '*.cluster.local',
-        ],
-        issuerRef: {
-          kind: this.private.kind,
-          name: this.private.metadata.name,
-        },
-      },
-
-    })
-
-    new _CustomResource('server-tls', {
-      apiVersion: 'cert-manager.io/v1',
-      kind: 'Certificate',
-      metadata: {
-        name: 'server-tls',
-      },
-      spec: {
-        secretName: 'server-tls',
-        dnsNames: [
-          'ngf-nginx-gateway-fabric.default.svc',
-        ],
-        issuerRef: {
-          kind: this.private.kind,
-          name: this.private.metadata.name,
-        },
-      },
-    })
-
-    return new Chart('ngf', {
-      chart: 'oci://ghcr.io/nginx/charts/nginx-gateway-fabric',
-      values: {
-
-      },
-    }, {
-      dependsOn: [
-        this.gateway_definitions,
-      ],
-    })
-  }
-
-  @once
-  get gateway() {
-    return new _CustomResource('gateway', {
-      apiVersion: 'gateway.networking.k8s.io/v1',
-      kind: 'Gateway',
-      spec: {
-        gatewayClassName: 'nginx',
-        listeners: [{
-          name: 'http',
-          port: 80,
-          protocol: 'HTTP',
-          allowedRoutes: {
-            namespaces: {
-              from: 'All',
-            },
-          },
-        }],
-      },
-    }, {
-      dependsOn: [
-        this.certificate,
-        this.gateway_definitions,
-        this.nginx,
-      ],
-    })
   }
 
   @once
@@ -245,6 +160,114 @@ export class _Cluster {
       deleteBeforeReplace: true,
       dependsOn: [
         this.manager,
+      ],
+    })
+  }
+
+  @once
+  get gateway_definitions() {
+    return new ConfigFile('gateway-definitions', {
+      file: 'https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.3.0/standard-install.yaml',
+    })
+  }
+
+  @once
+  get nginx() {
+    const agent = new _CustomResource('agent-tls', {
+      apiVersion: 'cert-manager.io/v1',
+      kind: 'Certificate',
+      metadata: {
+        name: 'agent-tls',
+      },
+      spec: {
+        secretName: 'agent-tls',
+        dnsNames: [
+          '*.cluster.local',
+        ],
+        issuerRef: {
+          kind: this.private.kind,
+          name: this.private.metadata.name,
+        },
+      },
+
+    })
+
+    const server = new _CustomResource('server-tls', {
+      apiVersion: 'cert-manager.io/v1',
+      kind: 'Certificate',
+      metadata: {
+        name: 'server-tls',
+      },
+      spec: {
+        secretName: 'server-tls',
+        dnsNames: [
+          'ngf-nginx-gateway-fabric.default.svc',
+        ],
+        issuerRef: {
+          kind: this.private.kind,
+          name: this.private.metadata.name,
+        },
+      },
+    })
+
+    return new Chart('ngf', {
+      chart: 'oci://ghcr.io/nginx/charts/nginx-gateway-fabric',
+      values: {
+
+      },
+    }, {
+      dependsOn: [
+        this.gateway_definitions,
+        server,
+        agent,
+      ],
+    })
+  }
+
+  @once
+  get gateway() {
+    return new _CustomResource('gateway', {
+      apiVersion: 'gateway.networking.k8s.io/v1',
+      kind: 'Gateway',
+      metadata: {
+        annotations: {
+          'cert-manager.io/cluster-issuer': this.letsencrypt.metadata.name,
+        },
+      },
+      spec: {
+        gatewayClassName: 'nginx',
+        listeners: [{
+          name: 'http',
+          port: 80,
+          protocol: 'HTTP',
+          allowedRoutes: {
+            namespaces: {
+              from: 'All',
+            },
+          },
+        }, {
+          name: 'https',
+          port: 443,
+          protocol: 'HTTPS',
+          hostname: 'bailey.mx',
+          tls: {
+            mode: 'Terminate',
+            certificateRefs: [{
+              kind: 'Secret',
+              name: this.certificate.metadata.name,
+              namespace: 'default',
+            }],
+          },
+          allowedRoutes: {
+            namespaces: {
+              from: 'All',
+            },
+          },
+        }],
+      },
+    }, {
+      dependsOn: [
+        this.nginx,
       ],
     })
   }
