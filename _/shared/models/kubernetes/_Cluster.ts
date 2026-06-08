@@ -64,6 +64,7 @@ export class _Cluster {
           '*.cluster.local',
         ],
         issuerRef: {
+          kind: this.private.kind,
           name: this.private.metadata.name,
         },
       },
@@ -82,6 +83,7 @@ export class _Cluster {
           'ngf-nginx-gateway-fabric.default.svc',
         ],
         issuerRef: {
+          kind: this.private.kind,
           name: this.private.metadata.name,
         },
       },

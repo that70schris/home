@@ -1,5 +1,5 @@
 tap "alecharmon/tap"
-brew "docker"
+brew "docker", link: false
 brew "node"
 brew "firebase-cli"
 brew "fish"
