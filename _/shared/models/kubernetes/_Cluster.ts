@@ -4,7 +4,9 @@ import { ConfigFile } from '@pulumi/kubernetes/yaml'
 import { Config, ResourceOptions } from '@pulumi/pulumi'
 import { _CustomResource, _Kube } from '.'
 import { once } from '../../decorators'
+import { _Record } from '../cloudflare'
 import { Twingate } from '../twingate'
+import { _TwingateResource } from '../twingate/resource'
 
 interface ClusterArgs {
   domain?: string
@@ -39,6 +41,7 @@ export class _Cluster {
     this.certificate
     this.nginx
     this.gateway
+    this.routes
     this.twingate_connector
     // ...new mDNS().index
   }
@@ -230,6 +233,7 @@ export class _Cluster {
       apiVersion: 'gateway.networking.k8s.io/v1',
       kind: 'Gateway',
       metadata: {
+        name: 'nginx',
         annotations: {
           'cert-manager.io/cluster-issuer': this.letsencrypt.metadata.name,
         },
@@ -270,6 +274,60 @@ export class _Cluster {
         this.nginx,
       ],
     })
+  }
+
+  @once
+  get routes() {
+    return this.args?.kubes
+      .filter((kube) => {
+        return kube.ingress
+      }).map((kube) => {
+        const hostname = [
+          kube.name,
+          kube.overrides.domain ?? this.args.domain ?? this.args.host,
+        ].filter(Boolean).join('.')
+
+        new _Record(hostname, {
+          domain: hostname,
+          content: this.args.ip,
+          // proxied: kube.proxied,
+        })
+
+        new _TwingateResource(hostname, {
+          isBrowserShortcutEnabled: true,
+          tcp: [
+            kube.backend.port as number,
+          ],
+        })
+
+        return new _CustomResource(`${kube.name}-route`, {
+          apiVersion: 'gateway.networking.k8s.io/v1',
+          kind: 'HTTPRoute',
+          metadata: {
+            name: kube.name,
+          },
+          spec: {
+            parentRefs: [{
+              name: this.gateway.metadata.name,
+            }],
+            hostnames: [
+              hostname,
+            ],
+            rules: [{
+              matches: [{
+                path: {
+                  type: 'PathPrefix',
+                  value: '/',
+                },
+              }],
+              backendRefs: [
+                kube.backend,
+              ],
+            }],
+          },
+        })
+      })
+
   }
 
   @once

@@ -4,7 +4,7 @@ import { ClusterRole, ClusterRoleBinding } from '@pulumi/kubernetes/rbac/v1'
 import { input } from '@pulumi/kubernetes/types'
 import { Resource } from '@pulumi/pulumi'
 import { merge } from 'lodash'
-import { _IngressBackend, _Port } from '.'
+import { _Port } from '.'
 import { once } from '../../decorators'
 
 export interface KubeOverrides {
@@ -266,14 +266,10 @@ export class _Kube {
     })
   }
 
-  get backend(): _IngressBackend {
+  get backend() {
     return {
-      service: {
-        name: this.name,
-        port: {
-          number: this.port?.numbers.service,
-        },
-      },
+      name: this.name,
+      port: this.port?.numbers.service,
     }
   }
 

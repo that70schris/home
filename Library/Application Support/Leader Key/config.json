@@ -119,6 +119,7 @@
         },
         {
           "key" : "u",
+          "label" : "Unifi",
           "type" : "url",
           "value" : "raycast-x://extensions/lewj/unifi/open-dashboard"
         },
