@@ -244,11 +244,6 @@ export class _Cluster {
           name: 'http',
           port: 80,
           protocol: 'HTTP',
-          allowedRoutes: {
-            namespaces: {
-              from: 'All',
-            },
-          },
         }, {
           name: 'https',
           port: 443,
@@ -259,13 +254,7 @@ export class _Cluster {
             certificateRefs: [{
               kind: 'Secret',
               name: this.certificate.metadata.name,
-              namespace: 'default',
             }],
-          },
-          allowedRoutes: {
-            namespaces: {
-              from: 'All',
-            },
           },
         }],
       },

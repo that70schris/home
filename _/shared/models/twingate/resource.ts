@@ -10,7 +10,6 @@ export interface _TwingateResourceArgs extends Omit<TwingateResourceArgs,
   | 'name'
   | ''> {
   address?: string
-  icmp?: boolean
   tcp?: number[]
   udp?: number[]
 }
@@ -30,7 +29,6 @@ export class _TwingateResource extends TwingateResource {
         Twingate.groups.everyone,
       ],
       protocols: {
-        allowIcmp: false,
         tcp: {
           policy: args.tcp?.length == 0 ? 'ALLOW_ALL'
             : args.tcp?.length ? 'RESTRICTED' : 'DENY_ALL',
