@@ -235,7 +235,8 @@ export class _Cluster {
       metadata: {
         name: 'nginx',
         annotations: {
-          'cert-manager.io/cluster-issuer': this.letsencrypt.metadata.name,
+          'cert-manager.io/cluster-issuer':
+            this.letsencrypt.metadata.name,
         },
       },
       spec: {
