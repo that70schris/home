@@ -37,6 +37,7 @@ export class _Cluster {
       import: 'default',
     })
 
+    this.storage
     this.gateway_definitions
     this.certificate
     this.metallb
@@ -46,6 +47,13 @@ export class _Cluster {
     this.routes
     this.twingate_connector
     // ...new mDNS().index
+  }
+
+  @once
+  get storage() {
+    return new ConfigFile('storage', {
+      file: 'https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.36/deploy/local-path-storage.yaml',
+    })
   }
 
   @once
@@ -285,13 +293,13 @@ export class _Cluster {
               kube.name,
               kube.overrides.domain ?? this.args.domain ?? this.args.host,
             ].filter(Boolean).join('.'),
-            tls: {
+            tls: kube.https ? {
               mode: 'Terminate',
               certificateRefs: [{
                 kind: 'Secret',
                 name: kube.name,
               }],
-            },
+            } : undefined,
           }
         }),
 

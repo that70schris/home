@@ -113,6 +113,17 @@ export class Talos {
             cluster: {
               allowSchedulingOnControlPlanes: true,
             },
+          }, {
+            apiVersion: 'v1alpha1',
+            kind: 'UserVolumeConfig',
+            name: 'local-path-provisioner',
+            provisioning: {
+              minSize: '500GB',
+              maxSize: '500GB',
+              diskSelector: {
+                match: 'disk.transport == "nvme"',
+              },
+            },
           },
         ].map((asdf) => {
           return JSON.stringify(asdf)

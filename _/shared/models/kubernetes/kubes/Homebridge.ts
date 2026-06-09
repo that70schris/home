@@ -75,7 +75,7 @@ export class Homebridge extends _Kube {
         name: this.name,
       },
       spec: {
-        storageClassName: '',
+        storageClassName: 'local-path',
         accessModes: [
           'ReadWriteOnce',
         ],
