@@ -4,7 +4,7 @@ export class Homey extends _Kube {
   override image = 'ghcr.io/athombv/homey-shs'
   override container_port = 4859
   override service_port = 443
-  override ingress = true
+  override gateway = true
 
   override get containerSecurityContext() {
     return {

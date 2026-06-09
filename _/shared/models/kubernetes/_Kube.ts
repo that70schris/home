@@ -15,7 +15,7 @@ export interface KubeOverrides {
   service_port?: number
   path?: string
   replicas?: number
-  ingress?: boolean
+  gateway?: boolean
 }
 
 export class _Kube {
@@ -25,7 +25,7 @@ export class _Kube {
   service_port: number = 8443
   path = '/'
   replicas = 1
-  ingress: boolean = false
+  gateway: boolean = false
   domain?: string
 
   constructor(

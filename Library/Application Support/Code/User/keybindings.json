@@ -182,4 +182,8 @@
     "key": "shift+alt+cmd+;",
     "command": "-bracketeer.swapQuotes",
   },
+  {
+    "key": "shift+cmd+v",
+    "command": "yaml2json.clipboard",
+  },
 ]

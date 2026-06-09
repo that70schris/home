@@ -35,7 +35,7 @@ export class Talos {
           yaml.stringify(_config),
         )
       } catch(err) {
-
+        console.log(err)
       }
     })
 
@@ -112,6 +112,12 @@ export class Talos {
             },
             cluster: {
               allowSchedulingOnControlPlanes: true,
+              proxy: {
+                mode: 'ipvs',
+                extraArgs: {
+                  'ipvs-strict-arp': 'true',
+                },
+              },
             },
           },
         ].map((asdf) => {

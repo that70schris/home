@@ -39,6 +39,8 @@ export class _Cluster {
 
     this.gateway_definitions
     this.certificate
+    this.metallb
+    this.pool
     this.nginx
     this.gateway
     this.routes
@@ -168,6 +170,39 @@ export class _Cluster {
   }
 
   @once
+  get metallb() {
+    return new Chart('metallb', {
+      chart: 'metallb',
+      repositoryOpts: {
+        repo: 'https://metallb.github.io/metallb',
+      },
+      values: {
+
+      },
+    })
+  }
+
+  @once
+  get pool() {
+    return new _CustomResource('pool', {
+      apiVersion: 'metallb.io/v1beta1',
+      kind: 'IPAddressPool',
+      metadata: {
+        name: 'lab-pool',
+      },
+      spec: {
+        addresses: [
+          '192.168.0.5/32',
+        ],
+      },
+    }, {
+      dependsOn: [
+        this.metallb,
+      ],
+    })
+  }
+
+  @once
   get gateway_definitions() {
     return new ConfigFile('gateway-definitions', {
       file: 'https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.3.0/standard-install.yaml',
@@ -270,7 +305,7 @@ export class _Cluster {
   get routes() {
     return this.args?.kubes
       .filter((kube) => {
-        return kube.ingress
+        return kube.gateway
       }).map((kube) => {
         const hostname = [
           kube.name,
