@@ -31,6 +31,7 @@ export class Homebridge extends _Kube {
         .find((p: any) => p.platform == 'config')?.port ?? 8581,
       service_port: 443,
       gateway: true,
+      https: true,
     },
   ) {
     super(overrides)

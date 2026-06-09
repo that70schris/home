@@ -8,6 +8,7 @@ import { _Port } from '.'
 import { once } from '../../decorators'
 
 export interface KubeOverrides {
+  https?: boolean
   domain?: string
   name?: string
   image?: string
@@ -21,6 +22,7 @@ export interface KubeOverrides {
 export class _Kube {
   name = this.constructor.name.toLowerCase()
   image: string = this.name
+  https = false
   container_port: number = 8080
   service_port: number = 8443
   path = '/'

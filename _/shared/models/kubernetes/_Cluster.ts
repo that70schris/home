@@ -276,23 +276,25 @@ export class _Cluster {
       },
       spec: {
         gatewayClassName: 'nginx',
-        listeners: [{
-          name: 'http',
-          port: 80,
-          protocol: 'HTTP',
-        }, {
-          name: 'https',
-          port: 443,
-          protocol: 'HTTPS',
-          hostname: 'bailey.mx',
-          tls: {
-            mode: 'Terminate',
-            certificateRefs: [{
-              kind: 'Secret',
-              name: this.certificate.metadata.name,
-            }],
-          },
-        }],
+        listeners: this.args?.kubes.map((kube) => {
+          return {
+            name: kube.name,
+            port: kube.https ? 443 : 80,
+            protocol: kube.https ? 'HTTPS' : 'HTTP',
+            hostname: [
+              kube.name,
+              kube.overrides.domain ?? this.args.domain ?? this.args.host,
+            ].filter(Boolean).join('.'),
+            tls: {
+              mode: 'Terminate',
+              certificateRefs: [{
+                kind: 'Secret',
+                name: kube.name,
+              }],
+            },
+          }
+        }),
+
       },
     }, {
       dependsOn: [
@@ -334,6 +336,7 @@ export class _Cluster {
           spec: {
             parentRefs: [{
               name: this.gateway.metadata.name,
+              sectionName: kube.https ? kube.name : 'http',
             }],
             hostnames: [
               hostname,
@@ -342,7 +345,7 @@ export class _Cluster {
               matches: [{
                 path: {
                   type: 'PathPrefix',
-                  value: '/',
+                  value: kube.path,
                 },
               }],
               backendRefs: [
