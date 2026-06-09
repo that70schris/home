@@ -192,7 +192,7 @@ export class _Cluster {
       },
       spec: {
         addresses: [
-          '192.168.0.5/32',
+          `${this.args.ip}/32`,
         ],
       },
     }, {
