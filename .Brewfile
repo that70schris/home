@@ -19,7 +19,7 @@ brew "pkgconf"
 brew "pnpm"
 brew "pulumi"
 brew "python@3.13"
-brew "ruby"
+brew "ruby", link: false
 brew "rust"
 brew "talosctl"
 brew "xh"
