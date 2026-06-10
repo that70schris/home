@@ -1,3 +1,4 @@
+import { core } from '@pulumi/kubernetes/types/input'
 import { Resource } from '@pulumi/pulumi'
 import { _Kube, _KubeSpec } from '..'
 
@@ -16,21 +17,30 @@ export class Plex extends _Kube {
     super(overrides)
   }
 
-  // override get volumes() {
-  //   return super.volumes.concat([{
-  //     name: 'config',
-  //     hostPath: {
-  //       path: '/var/mnt/u-local/plex',
-  //     },
-  //   }])
-  // }
+  override get volumes() {
+    return super.volumes.concat([{
+      name: 'config',
+      hostPath: {
+        path: '/var/mnt/u-local/plex',
+      },
+    }])
+  }
 
-  // override get volume_mounts() {
-  //   return super.volume_mounts.concat([{
-  //     mountPath: '/config',
-  //     name: 'config',
-  //   }])
-  // }
+  override get volume_mounts() {
+    return super.volume_mounts.concat([{
+      mountPath: '/config',
+      name: 'config',
+    }])
+  }
+
+  override get environment(): core.v1.EnvVar[] {
+    return super.environment.concat([
+      {
+        name: 'PLEX_CLAIM',
+        // value: '',
+      },
+    ])
+  }
 
   override get index(): Resource[] {
     return [
