@@ -331,7 +331,7 @@ export class _Cluster {
         new _TwingateResource(hostname, {
           isBrowserShortcutEnabled: true,
           tcp: [
-            kube.backend.port as number,
+            kube.https ? 443 : 80,
           ],
         })
 

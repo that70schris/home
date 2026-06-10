@@ -1,4 +1,3 @@
-import { PersistentVolumeClaim } from '@pulumi/kubernetes/core/v1'
 import { _ConfigMap, _Kube, _Port, KubeOverrides } from '..'
 import { once } from '../../../decorators'
 
@@ -68,37 +67,17 @@ export class Homebridge extends _Kube {
     ])
   }
 
-  @once
-  get homebridge() {
-    return new PersistentVolumeClaim(this.name, {
-      metadata: {
-        name: this.name,
-      },
-      spec: {
-        storageClassName: 'local-path',
-        accessModes: [
-          'ReadWriteOnce',
-        ],
-        resources: {
-          requests: {
-            storage: '10Gi',
-          },
-        },
-      },
-    })
-  }
-
   override get volumes() {
     return super.volumes.concat([{
       name: 'config',
       configMap: {
         name: this.config.name,
       },
-    // }, {
-    //   name: this.homebridge.metadata.name,
-    //   persistentVolumeClaim: {
-    //     claimName: this.homebridge.metadata.name,
-    //   },
+    }, {
+      name: 'homebridge',
+      hostPath: {
+        path: '/var/mnt/u-local/homebridge',
+      },
     }])
   }
 
@@ -111,9 +90,9 @@ export class Homebridge extends _Kube {
       name: 'config',
       mountPath: '/homebridge/auth.json',
       subPath: 'auth.json',
-    // }, {
-    //   name: 'homebridge',
-    //   mountPath: '/homebridge/',
+    }, {
+      name: 'homebridge',
+      mountPath: '/homebridge/',
     }])
   }
 

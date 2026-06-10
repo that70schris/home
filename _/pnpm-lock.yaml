@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@cloudflare/workers-types':
         specifier: latest
-        version: 4.20260606.1
+        version: 4.20260608.1
       '@pulumi/cloudflare':
         specifier: latest
         version: 6.17.0(typescript@6.0.3)
@@ -68,8 +68,8 @@ importers:
 
 packages:
 
-  '@cloudflare/workers-types@4.20260606.1':
-    resolution: {integrity: sha512-0FFUsixapowVJcAjRlXLb6UEZG1caUlSuUX1KHhKgWgjKxq20dY5XeCS5lKPqgc80XJ9puwffJ2H1U6Fwr5N1g==}
+  '@cloudflare/workers-types@4.20260608.1':
+    resolution: {integrity: sha512-Yz90KXPZBB9K/AhsnLaA321s5+i5ZpWZRFbcGx9dWjyknQJXPAS1pK5CJSFEedwY6zoEr1cf2SkpBATL1idsWA==}
 
   '@esbuild/aix-ppc64@0.28.0':
     resolution: {integrity: sha512-lhRUCeuOyJQURhTxl4WkpFTjIsbDayJHih5kZC1giwE+MhIzAb7mEsQMqMf18rHLsrb5qI1tafG20mLxEWcWlA==}
@@ -1163,8 +1163,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  semver@7.8.2:
-    resolution: {integrity: sha512-c8jsqUZm3omBOI66G90z1Dyw5z622G8oLG+omfsHBJf3CWQTlOcwOjvOG6wtiNfW6anKm/eA39LMwMtMez2TiQ==}
+  semver@7.8.3:
+    resolution: {integrity: sha512-wnilbGyMxzbY7dNOl7jpKbLSjcfeweJWU5j4+u5qW+6/wuGD9KzIGOyZnQVSBM9E7DtWaaH3CyHkppYrKYoxwg==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -1370,7 +1370,7 @@ packages:
 
 snapshots:
 
-  '@cloudflare/workers-types@4.20260606.1': {}
+  '@cloudflare/workers-types@4.20260608.1': {}
 
   '@esbuild/aix-ppc64@0.28.0':
     optional: true
@@ -1527,7 +1527,7 @@ snapshots:
       proggy: 4.0.0
       promise-all-reject-late: 1.0.1
       promise-call-limit: 3.0.2
-      semver: 7.8.2
+      semver: 7.8.3
       ssri: 13.0.1
       treeverse: 3.0.0
       walk-up-path: 4.0.0
@@ -1536,7 +1536,7 @@ snapshots:
 
   '@npmcli/fs@5.0.0':
     dependencies:
-      semver: 7.8.2
+      semver: 7.8.3
 
   '@npmcli/git@6.0.3':
     dependencies:
@@ -1546,7 +1546,7 @@ snapshots:
       npm-pick-manifest: 10.0.0
       proc-log: 5.0.0
       promise-retry: 2.0.1
-      semver: 7.8.2
+      semver: 7.8.3
       which: 5.0.0
 
   '@npmcli/git@7.0.2':
@@ -1557,7 +1557,7 @@ snapshots:
       lru-cache: 11.5.1
       npm-pick-manifest: 11.0.3
       proc-log: 6.1.0
-      semver: 7.8.2
+      semver: 7.8.3
       which: 6.0.1
 
   '@npmcli/installed-package-contents@4.0.0':
@@ -1578,7 +1578,7 @@ snapshots:
       json-parse-even-better-errors: 5.0.0
       pacote: 21.5.0
       proc-log: 6.1.0
-      semver: 7.8.2
+      semver: 7.8.3
     transitivePeerDependencies:
       - supports-color
 
@@ -1593,7 +1593,7 @@ snapshots:
       hosted-git-info: 8.1.0
       json-parse-even-better-errors: 4.0.0
       proc-log: 5.0.0
-      semver: 7.8.2
+      semver: 7.8.3
       validate-npm-package-license: 3.0.4
 
   '@npmcli/package-json@7.0.5':
@@ -1603,7 +1603,7 @@ snapshots:
       hosted-git-info: 9.0.3
       json-parse-even-better-errors: 5.0.0
       proc-log: 6.1.0
-      semver: 7.8.2
+      semver: 7.8.3
       spdx-expression-parse: 4.0.0
 
   '@npmcli/promise-spawn@8.0.3':
@@ -1677,7 +1677,7 @@ snapshots:
       '@types/shimmer': 1.2.0
       import-in-the-middle: 1.15.0
       require-in-the-middle: 7.5.2
-      semver: 7.8.2
+      semver: 7.8.3
       shimmer: 1.2.1
     transitivePeerDependencies:
       - supports-color
@@ -1751,7 +1751,7 @@ snapshots:
       '@opentelemetry/propagator-b3': 1.30.1(@opentelemetry/api@1.9.1)
       '@opentelemetry/propagator-jaeger': 1.30.1(@opentelemetry/api@1.9.1)
       '@opentelemetry/sdk-trace-base': 1.30.1(@opentelemetry/api@1.9.1)
-      semver: 7.8.2
+      semver: 7.8.3
 
   '@opentelemetry/semantic-conventions@1.28.0': {}
 
@@ -1850,7 +1850,7 @@ snapshots:
       normalize-package-data: 6.0.2
       picomatch: 4.0.4
       require-from-string: 2.0.2
-      semver: 7.8.2
+      semver: 7.8.3
       source-map-support: 0.5.21
       tmp: 0.2.7
       upath: 1.2.0
@@ -2397,7 +2397,7 @@ snapshots:
       graceful-fs: 4.2.11
       nopt: 9.0.0
       proc-log: 6.1.0
-      semver: 7.8.2
+      semver: 7.8.3
       tar: 7.5.16
       tinyglobby: 0.2.17
       undici: 6.26.0
@@ -2410,7 +2410,7 @@ snapshots:
   normalize-package-data@6.0.2:
     dependencies:
       hosted-git-info: 7.0.2
-      semver: 7.8.2
+      semver: 7.8.3
       validate-npm-package-license: 3.0.4
 
   npm-bundled@5.0.0:
@@ -2419,11 +2419,11 @@ snapshots:
 
   npm-install-checks@7.1.2:
     dependencies:
-      semver: 7.8.2
+      semver: 7.8.3
 
   npm-install-checks@8.0.0:
     dependencies:
-      semver: 7.8.2
+      semver: 7.8.3
 
   npm-normalize-package-bin@4.0.0: {}
 
@@ -2433,14 +2433,14 @@ snapshots:
     dependencies:
       hosted-git-info: 8.1.0
       proc-log: 5.0.0
-      semver: 7.8.2
+      semver: 7.8.3
       validate-npm-package-name: 6.0.2
 
   npm-package-arg@13.0.2:
     dependencies:
       hosted-git-info: 9.0.3
       proc-log: 6.1.0
-      semver: 7.8.2
+      semver: 7.8.3
       validate-npm-package-name: 7.0.2
 
   npm-packlist@10.0.4:
@@ -2453,14 +2453,14 @@ snapshots:
       npm-install-checks: 7.1.2
       npm-normalize-package-bin: 4.0.0
       npm-package-arg: 12.0.2
-      semver: 7.8.2
+      semver: 7.8.3
 
   npm-pick-manifest@11.0.3:
     dependencies:
       npm-install-checks: 8.0.0
       npm-normalize-package-bin: 5.0.0
       npm-package-arg: 13.0.2
-      semver: 7.8.2
+      semver: 7.8.3
 
   npm-registry-fetch@19.1.1:
     dependencies:
@@ -2592,7 +2592,7 @@ snapshots:
   safer-buffer@2.1.2:
     optional: true
 
-  semver@7.8.2: {}
+  semver@7.8.3: {}
 
   shebang-command@2.0.0:
     dependencies:
