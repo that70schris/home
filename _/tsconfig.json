@@ -3,6 +3,5 @@
   "compilerOptions": {
     "rootDir": ".",
     "types": ["@cloudflare/workers-types", "node"]
-  },
-  "include": ["./shared/**/*.ts"]
+  }
 }
