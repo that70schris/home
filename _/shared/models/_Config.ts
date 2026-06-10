@@ -11,6 +11,7 @@ export class _Config extends Config {
   }
 
   static get zones(): any {
+    console.log(this.get('cloudflare'))
     return this.get('cloudflare')?.zones
   }
 
