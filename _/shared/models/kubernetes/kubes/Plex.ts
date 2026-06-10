@@ -36,6 +36,7 @@ export class Plex extends _Kube {
     return super.environment.concat([
       {
         name: 'PLEX_CLAIM',
+        // https://account.plex.tv/claim
         value: new Config('plex').get('token'),
       },
     ])
