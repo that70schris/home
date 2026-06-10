@@ -22,13 +22,10 @@ export interface _KubeSpec {
 export class _Kube {
   spec: _KubeSpec = {
     image: this.name,
-    https: false,
     container_port: 8080,
     service_port: 8443,
     path: '/',
     replicas: 1,
-    gateway: false,
-    hostNetwork: false,
   }
 
   constructor(
