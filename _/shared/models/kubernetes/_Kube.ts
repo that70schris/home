@@ -1,6 +1,5 @@
 import { Deployment } from '@pulumi/kubernetes/apps/v1'
-import { Service, ServiceAccount, ServiceSpecType } from '@pulumi/kubernetes/core/v1'
-import { ClusterRole, ClusterRoleBinding } from '@pulumi/kubernetes/rbac/v1'
+import { Service, ServiceSpecType } from '@pulumi/kubernetes/core/v1'
 import { input } from '@pulumi/kubernetes/types'
 import { Resource } from '@pulumi/pulumi'
 import { merge } from 'lodash'
@@ -20,6 +19,7 @@ export interface _KubeSpec {
 }
 
 export class _Kube {
+
   spec: _KubeSpec = {
     image: this.name,
     container_port: 8080,
@@ -76,18 +76,6 @@ export class _Kube {
     return [
       this.port,
     ].filter(Boolean) as _Port[]
-  }
-
-  get livenessProbe(): input.core.v1.Probe | undefined {
-    return
-  }
-
-  get readinessProbe(): input.core.v1.Probe | undefined {
-    return
-  }
-
-  get startupProbe(): input.core.v1.Probe | undefined {
-    return
   }
 
   get resources(): input.core.v1.ResourceRequirements {
@@ -151,66 +139,6 @@ export class _Kube {
   }
 
   @once
-  get account(): ServiceAccount {
-    return new ServiceAccount(this.name, {
-      metadata: {
-        name: this.name,
-      },
-    })
-  }
-
-  @once
-  get clusterRole() {
-    return new ClusterRole(this.name, {
-      metadata: {
-        name: this.name,
-      },
-      rules: [{
-        apiGroups: [''],
-        resources: ['services'],
-        verbs: [ 'list', 'watch' ],
-      }, {
-        apiGroups: [ 'extensions', 'networking.k8s.io' ],
-        resources: ['ingresses'],
-        verbs: [ 'list', 'watch' ],
-      }],
-    }, {
-      parent: this.account,
-    })
-  }
-
-  @once
-  get crb() {
-    return new ClusterRoleBinding(this.name, {
-      metadata: {
-        name: this.name,
-      },
-      roleRef: {
-        apiGroup: 'rbac.authorization.k8s.io',
-        kind: this.clusterRole.kind,
-        name: this.clusterRole.metadata.name!,
-      },
-      subjects: [
-        {
-          kind: this.account.kind,
-          name: this.account.metadata.name,
-          namespace: this.account.metadata.namespace,
-        },
-      ],
-    }, {
-      parent: this.account,
-    })
-  }
-
-  get securityContext(): input.core.v1.PodSecurityContext | undefined {
-    return
-  }
-
-  get containerSecurityContext(): input.core.v1.SecurityContext | undefined {
-    return
-  }
-
-  @once
   get deployment() {
     return new Deployment(this.name, {
       metadata: this.metadata,
@@ -229,17 +157,11 @@ export class _Kube {
             dnsPolicy: 'ClusterFirstWithHostNet',
             enableServiceLinks: false,
             initContainers: this.initContainers,
-            serviceAccountName: this.account?.metadata.name,
-            securityContext: this.securityContext,
             volumes: this.volumes,
             containers: [{
               name: 'main',
               image: this.spec.image,
               ports: this.ports.map(port => port.container),
-              securityContext: this.containerSecurityContext,
-              livenessProbe: this.livenessProbe,
-              readinessProbe: this.readinessProbe,
-              startupProbe: this.startupProbe,
               resources: this.resources,
               volumeMounts: this.volume_mounts,
               env: this.environment,
