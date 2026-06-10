@@ -1,7 +1,6 @@
 import { _Kube, _KubeSpec } from '../_Kube'
 
 export class Test extends _Kube {
-  // image = 'nginx'
 
   constructor(
     overrides: _KubeSpec = {
