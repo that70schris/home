@@ -118,8 +118,8 @@ export class Talos {
             kind: 'UserVolumeConfig',
             name: 'local',
             provisioning: {
-              minSize: '.5TB',
-              maxSize: '.5TB',
+              minSize: '100GB',
+              maxSize: '100GB',
               diskSelector: {
                 match: 'disk.transport == "nvme"',
               },
