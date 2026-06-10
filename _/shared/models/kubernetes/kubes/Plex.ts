@@ -1,10 +1,10 @@
 import { Resource } from '@pulumi/pulumi'
-import { _Kube, KubeOverrides } from '..'
+import { _Kube, _KubeSpec } from '..'
 
 export class Plex extends _Kube {
 
   constructor(
-    overrides: KubeOverrides = {
+    overrides: _KubeSpec = {
       image: 'linuxserver/plex',
       container_port: 32400,
       service_port: 443,

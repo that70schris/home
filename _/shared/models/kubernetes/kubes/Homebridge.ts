@@ -1,4 +1,4 @@
-import { _ConfigMap, _Kube, _Port, KubeOverrides } from '..'
+import { _ConfigMap, _Kube, _KubeSpec, _Port } from '..'
 import { once } from '../../../decorators'
 
 export class Homebridge extends _Kube {
@@ -24,7 +24,7 @@ export class Homebridge extends _Kube {
   }
 
   constructor(
-    overrides: KubeOverrides = {
+    overrides: _KubeSpec = {
       image: 'homebridge/homebridge',
       container_port: Homebridge.config.platforms
         .find((p: any) => p.platform == 'config')?.port ?? 8581,

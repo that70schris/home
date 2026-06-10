@@ -1,10 +1,10 @@
-import { _Kube, KubeOverrides } from '../_Kube'
+import { _Kube, _KubeSpec } from '../_Kube'
 
 export class Test extends _Kube {
   // image = 'nginx'
 
   constructor(
-    overrides: KubeOverrides = {
+    overrides: _KubeSpec = {
       container_port: 80,
       service_port: 80,
       image: 'nginx',

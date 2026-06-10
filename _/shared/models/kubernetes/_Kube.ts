@@ -7,7 +7,7 @@ import { merge } from 'lodash'
 import { _Port } from '.'
 import { once } from '../../decorators'
 
-export interface KubeOverrides {
+export interface _KubeSpec {
   https?: boolean
   domain?: string
   image?: string
@@ -20,7 +20,7 @@ export interface KubeOverrides {
 }
 
 export class _Kube {
-  spec: KubeOverrides = {
+  spec: _KubeSpec = {
     image: this.name,
     https: false,
     container_port: 8080,
@@ -32,7 +32,7 @@ export class _Kube {
   }
 
   constructor(
-    overrides: KubeOverrides = {
+    overrides: _KubeSpec = {
 
     },
   ) {
