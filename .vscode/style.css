@@ -17,14 +17,14 @@
     padding: 0px !important;
 
     .action-item {
-      padding: 0 11px 4px 11px !important;
+      padding: 0 7px 2px 7px !important;
 
       .action-label:before {
-        left: 14px !important;
+        left: 10px !important;
       }
 
       .badge {
-        left: -7px !important;
+        left: -5px !important;
       }
     }
   }
