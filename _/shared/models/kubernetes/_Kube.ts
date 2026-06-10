@@ -20,7 +20,7 @@ export interface KubeOverrides {
 }
 
 export class _Kube {
-  overrides: KubeOverrides = {
+  spec: KubeOverrides = {
     image: this.name,
     https: false,
     container_port: 8080,
@@ -37,7 +37,7 @@ export class _Kube {
     },
   ) {
     merge(
-      this.overrides,
+      this.spec,
       overrides,
     )
 
@@ -62,16 +62,16 @@ export class _Kube {
   @once
   get http_check(): input.core.v1.HTTPGetAction {
     return {
-      path: this.overrides.path,
+      path: this.spec.path,
       port: this.port?.numbers.container ?? 80,
     }
   }
 
   @once
   get port(): _Port | null {
-    return this.overrides.container_port ? new _Port('main', {
-      container: this.overrides.container_port,
-      service: this.overrides.service_port,
+    return this.spec.container_port ? new _Port('main', {
+      container: this.spec.container_port,
+      service: this.spec.service_port,
     }) : null
   }
 
@@ -218,7 +218,7 @@ export class _Kube {
     return new Deployment(this.name, {
       metadata: this.metadata,
       spec: {
-        replicas: this.overrides.replicas,
+        replicas: this.spec.replicas,
         strategy: this.strategy,
         selector: {
           matchLabels: {
@@ -228,7 +228,7 @@ export class _Kube {
         template: {
           metadata: this.metadata,
           spec: {
-            hostNetwork: this.overrides.hostNetwork,
+            hostNetwork: this.spec.hostNetwork,
             dnsPolicy: 'ClusterFirstWithHostNet',
             enableServiceLinks: false,
             initContainers: this.initContainers,
@@ -237,7 +237,7 @@ export class _Kube {
             volumes: this.volumes,
             containers: [{
               name: 'main',
-              image: this.overrides.image,
+              image: this.spec.image,
               ports: this.ports.map(port => port.container),
               securityContext: this.containerSecurityContext,
               livenessProbe: this.livenessProbe,

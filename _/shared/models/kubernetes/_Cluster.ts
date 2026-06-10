@@ -287,13 +287,13 @@ export class _Cluster {
         listeners: this.args?.kubes.map((kube) => {
           return {
             name: kube.name,
-            port: kube.overrides.https ? 443 : 80,
-            protocol: kube.overrides.https ? 'HTTPS' : 'HTTP',
+            port: kube.spec.https ? 443 : 80,
+            protocol: kube.spec.https ? 'HTTPS' : 'HTTP',
             hostname: [
               kube.name,
-              kube.overrides.domain ?? this.args.domain ?? this.args.host,
+              kube.spec.domain ?? this.args.domain ?? this.args.host,
             ].filter(Boolean).join('.'),
-            tls: kube.overrides.https ? {
+            tls: kube.spec.https ? {
               mode: 'Terminate',
               certificateRefs: [{
                 kind: 'Secret',
@@ -315,11 +315,11 @@ export class _Cluster {
   get routes() {
     return this.args?.kubes
       .filter((kube) => {
-        return kube.overrides.gateway
+        return kube.spec.gateway
       }).map((kube) => {
         const hostname = [
           kube.name,
-          kube.overrides.domain ?? this.args.domain ?? this.args.host,
+          kube.spec.domain ?? this.args.domain ?? this.args.host,
         ].filter(Boolean).join('.')
 
         new _Record(hostname, {
@@ -331,7 +331,7 @@ export class _Cluster {
         new _TwingateResource(hostname, {
           isBrowserShortcutEnabled: true,
           tcp: [
-            kube.overrides.https ? 443 : 80,
+            kube.spec.https ? 443 : 80,
           ],
         })
 
@@ -344,7 +344,7 @@ export class _Cluster {
           spec: {
             parentRefs: [{
               name: this.gateway.metadata.name,
-              sectionName: kube.overrides.https ? kube.name : 'http',
+              sectionName: kube.spec.https ? kube.name : 'http',
             }],
             hostnames: [
               hostname,
@@ -353,7 +353,7 @@ export class _Cluster {
               matches: [{
                 path: {
                   type: 'PathPrefix',
-                  value: kube.overrides.path,
+                  value: kube.spec.path,
                 },
               }],
               backendRefs: [
