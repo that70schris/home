@@ -287,13 +287,13 @@ export class _Cluster {
         listeners: this.args?.kubes.map((kube) => {
           return {
             name: kube.name,
-            port: kube.https ? 443 : 80,
-            protocol: kube.https ? 'HTTPS' : 'HTTP',
+            port: kube.overrides.https ? 443 : 80,
+            protocol: kube.overrides.https ? 'HTTPS' : 'HTTP',
             hostname: [
               kube.name,
               kube.overrides.domain ?? this.args.domain ?? this.args.host,
             ].filter(Boolean).join('.'),
-            tls: kube.https ? {
+            tls: kube.overrides.https ? {
               mode: 'Terminate',
               certificateRefs: [{
                 kind: 'Secret',
@@ -315,7 +315,7 @@ export class _Cluster {
   get routes() {
     return this.args?.kubes
       .filter((kube) => {
-        return kube.gateway
+        return kube.overrides.gateway
       }).map((kube) => {
         const hostname = [
           kube.name,
@@ -331,7 +331,7 @@ export class _Cluster {
         new _TwingateResource(hostname, {
           isBrowserShortcutEnabled: true,
           tcp: [
-            kube.https ? 443 : 80,
+            kube.overrides.https ? 443 : 80,
           ],
         })
 
@@ -344,7 +344,7 @@ export class _Cluster {
           spec: {
             parentRefs: [{
               name: this.gateway.metadata.name,
-              sectionName: kube.https ? kube.name : 'http',
+              sectionName: kube.overrides.https ? kube.name : 'http',
             }],
             hostnames: [
               hostname,
@@ -353,7 +353,7 @@ export class _Cluster {
               matches: [{
                 path: {
                   type: 'PathPrefix',
-                  value: kube.path,
+                  value: kube.overrides.path,
                 },
               }],
               backendRefs: [
