@@ -15,7 +15,7 @@ new _Cluster(berry.name, {
   kubes: [
     new Homebridge(),
     // new Homey(),
-    // new Plex(),
+    new Plex(),
     new Test(),
   ],
 })

@@ -9,6 +9,7 @@ export class Plex extends _Kube {
       container_port: 32400,
       service_port: 443,
       gateway: true,
+      https: true,
     },
   ) {
     super(overrides)
