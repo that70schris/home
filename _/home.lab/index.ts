@@ -1,5 +1,5 @@
 import { _Cluster } from '../shared/models/kubernetes'
-import { Homebridge } from '../shared/models/kubernetes/kubes'
+import { Homebridge, Plex } from '../shared/models/kubernetes/kubes'
 import { Test } from '../shared/models/kubernetes/kubes/Test'
 import { Talos } from '../shared/models/Talos'
 import { Twingate } from '../shared/models/twingate'

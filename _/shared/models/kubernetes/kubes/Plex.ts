@@ -15,15 +15,11 @@ export class Plex extends _Kube {
     super(overrides)
   }
 
-  // get volume() {
-  //   return new PersistentVolume('plex')
-  // }
-
   override get volumes() {
     return super.volumes.concat([{
       name: 'config',
       hostPath: {
-        path: '/.config/plex',
+        path: '/var/mnt/u-local/plex',
       },
     }])
   }
