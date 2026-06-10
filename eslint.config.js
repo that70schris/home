@@ -63,6 +63,7 @@ export default defineConfig([
           },
         }],
         multiline_ternary: 0,
+        no_mixed_operators: 0,
         no_multiple_empty_lines: [ 1, {
           maxEOF: 0,
           max: 1,

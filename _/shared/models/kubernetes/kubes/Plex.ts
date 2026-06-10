@@ -1,5 +1,5 @@
 import { core } from '@pulumi/kubernetes/types/input'
-import { Resource } from '@pulumi/pulumi'
+import { Config, Resource } from '@pulumi/pulumi'
 import { _Kube, _KubeSpec } from '..'
 
 export class Plex extends _Kube {
@@ -37,7 +37,7 @@ export class Plex extends _Kube {
     return super.environment.concat([
       {
         name: 'PLEX_CLAIM',
-        // value: '',
+        value: new Config('plex').get('token'),
       },
     ])
   }

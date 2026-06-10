@@ -332,7 +332,9 @@ export class _Cluster {
           isBrowserShortcutEnabled: true,
           tcp: [
             kube.spec.https ? 443 : 80,
-          ].concat(kube.spec.container_port ?? []),
+          ].concat(kube.spec.hostNetwork
+            && kube.spec.container_port
+            || []),
         })
 
         return new _CustomResource(`${kube.name}-route`, {
