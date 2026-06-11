@@ -10,14 +10,14 @@ on:
       - main
     paths:
       - .github/workflows/hostwriter.app.yml
-      - _/cloud/hostwriter.app/**
+      - _/hostwriter.app/**
 
 defaults:
   run:
-    working-directory: _/cloud/hostwriter.app
+    working-directory: _/hostwriter.app
 
 env:
-  ROOT: _/cloud/hostwriter.app
+  ROOT: _/hostwriter.app
 
 permissions:
   contents: read
