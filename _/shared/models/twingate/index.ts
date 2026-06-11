@@ -3,7 +3,7 @@ import { TwingateConnector, TwingateConnectorTokens, TwingateRemoteNetwork } fro
 import { once } from '../../decorators'
 
 export class Twingate {
-  static config: any = new Config('twingate')
+  static config = new Config('twingate')
   static network = Twingate.config.get('network')
   static groups = {
     admin: { groupId: 'R3JvdXA6ODE3MTA4' },
