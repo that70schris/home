@@ -1,14 +1,15 @@
+import { _ServiceAccount } from './_Account'
 
 export class IAM {
 
-  // static operator = new _ServiceAccount(
-  //   'operator', {
-  //     roles: [
-  //       'serviceusage.apiKeysAdmin',
-  //       'serviceusage.serviceUsageConsumer',
-  //     ],
-  //   },
-  // )
+  static operator = new _ServiceAccount(
+    'operator', {
+      roles: [
+        'serviceusage.apiKeysAdmin',
+        'serviceusage.serviceUsageConsumer',
+      ],
+    },
+  )
 
   // static admins = new _GroupAccount('admins', {
   //   roles: [
