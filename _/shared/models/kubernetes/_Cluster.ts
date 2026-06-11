@@ -3,6 +3,7 @@ import { Chart } from '@pulumi/kubernetes/helm/v4'
 import { ConfigFile } from '@pulumi/kubernetes/yaml'
 import { Config, ResourceOptions } from '@pulumi/pulumi'
 import { _CustomResource, _Kube } from '.'
+import { twingate } from '../../../home.lab'
 import { once } from '../../decorators'
 import { _Record } from '../cloudflare'
 import { Twingate } from '../twingate'
@@ -37,7 +38,7 @@ export class _Cluster {
       import: 'default',
     })
 
-    this.storage
+    this.twingate_connector
     this.gateway_definitions
     this.certificate
     this.metallb
@@ -45,15 +46,6 @@ export class _Cluster {
     this.nginx
     this.gateway
     this.routes
-    this.twingate_connector
-    // ...new mDNS().index
-  }
-
-  @once
-  get storage() {
-    return new ConfigFile('storage', {
-      file: 'https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.36/deploy/local-path-storage.yaml',
-    })
   }
 
   @once
@@ -187,6 +179,10 @@ export class _Cluster {
       values: {
 
       },
+    }, {
+      dependsOn: [
+        this.certificate,
+      ],
     })
   }
 
@@ -264,6 +260,7 @@ export class _Cluster {
     }, {
       dependsOn: [
         this.gateway_definitions,
+        this.metallb,
         server,
         agent,
       ],
@@ -329,6 +326,7 @@ export class _Cluster {
         })
 
         new _TwingateResource(hostname, {
+          gate: twingate,
           isBrowserShortcutEnabled: true,
           tcp: [
             kube.spec.https ? 443 : 80,
@@ -375,7 +373,7 @@ export class _Cluster {
       values: {
         nameOverride: 'operator',
         twingateOperator: {
-          remoteNetworkId: Twingate.remote.id,
+          remoteNetworkId: twingate.remote.id,
           apiKey: Twingate.config.get('apiToken'),
           network: Twingate.network,
         },

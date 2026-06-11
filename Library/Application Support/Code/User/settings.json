@@ -26,6 +26,9 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   },
+  "[json]": {
+    "editor.folding": true,
+  },
   "code-runner.clearPreviousOutput": true,
   "code-runner.preserveFocus": true,
   "code-runner.showExecutionMessage": false,

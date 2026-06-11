@@ -9,6 +9,7 @@ export interface _TwingateResourceArgs extends Omit<TwingateResourceArgs,
   | 'address'
   | 'name'
   | ''> {
+  gate: Twingate
   address?: string
   tcp?: number[]
   udp?: number[]
@@ -21,7 +22,7 @@ export class _TwingateResource extends TwingateResource {
     args: _TwingateResourceArgs,
     opts?: CustomResourceOptions,
     defaults: TwingateResourceArgs = {
-      remoteNetworkId: Twingate.remote.id,
+      remoteNetworkId: args.gate?.remote.id,
       address: args.address ?? $name,
       name: $name,
       // alias: $name,
@@ -49,7 +50,7 @@ export class _TwingateResource extends TwingateResource {
       merge(defaults, args),
       merge({
         deleteBeforeReplace: true,
-        parent: Twingate.remote,
+        parent: args.gate.remote,
       }, opts),
     )
   }

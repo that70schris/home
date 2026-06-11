@@ -5,29 +5,38 @@ import { once } from '../../decorators'
 export class Twingate {
   static config: any = new Config('twingate')
   static network = Twingate.config.get('network')
+  static groups = {
+    admin: { groupId: 'R3JvdXA6ODE3MTA4' },
+    everyone: { groupId: 'R3JvdXA6Mjg1NTA4' },
+  }
 
-  static remote = new TwingateRemoteNetwork('main', {
-    location: 'ON_PREMISE',
-    name: 'home.lab',
-  })
+  constructor(
+    public name: string,
+  ) {
+    this.tokens
+  }
 
   @once
-  static get connector() {
+  get remote() {
+    return new TwingateRemoteNetwork('main', {
+      location: 'ON_PREMISE',
+      name: this.name,
+    })
+  }
+
+  @once
+  get connector() {
     return new TwingateConnector('main', {
-      remoteNetworkId: Twingate.remote.id,
+      remoteNetworkId: this.remote.id,
       name: 'main',
     })
   }
 
   @once
-  static get tokens() {
+  get tokens() {
     return new TwingateConnectorTokens('main', {
-      connectorId: Twingate.connector.id,
+      connectorId: this.connector.id,
     })
   }
 
-  static groups = {
-    admin: { groupId: 'R3JvdXA6ODE3MTA4' },
-    everyone: { groupId: 'R3JvdXA6Mjg1NTA4' },
-  }
 }

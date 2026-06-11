@@ -1,2 +1,2 @@
 import './cloud'
-// import './home.lab'
+import './home.lab'

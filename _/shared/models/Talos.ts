@@ -2,6 +2,7 @@ import * as talos from '@pulumiverse/talos'
 import { readFileSync, writeFileSync } from 'fs'
 import { merge } from 'lodash'
 import * as yaml from 'yaml'
+import { twingate } from '../../home.lab'
 import { once } from '../decorators'
 import { Twingate } from '../models/twingate'
 import { _TwingateResource } from '../models/twingate/resource'
@@ -41,6 +42,7 @@ export class Talos {
 
     // for remote access later
     new _TwingateResource(`_${name}`, {
+      gate: twingate,
       address: host,
       accessGroups: [
         Twingate.groups.admin,
@@ -107,7 +109,7 @@ export class Talos {
               },
               install: {
                 disk: disk?.devPath,
-                wipe: true,
+                wipe: false,
               },
             },
             cluster: {
