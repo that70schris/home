@@ -9,6 +9,7 @@ export class Plex extends _Kube {
       image: 'linuxserver/plex',
       container_port: 32400,
       service_port: 443,
+      hostNetwork: true,
       gateway: true,
       https: true,
     },
