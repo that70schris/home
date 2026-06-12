@@ -69,7 +69,7 @@ export class Cloudflare {
 
   @once
   static get $name() {
-    return `${this.config?.name.toLowerCase()}_dev`
+    return `${this.config?.name.toLowerCase()}_local`
   }
 
   @once
@@ -115,6 +115,7 @@ export class Cloudflare {
             )}*`
           })(),
         }, {
+          deletedWith: _script,
           parent: _script,
         })
       })
