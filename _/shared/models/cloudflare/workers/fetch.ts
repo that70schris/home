@@ -11,8 +11,9 @@ export default {
         value?: string | null
         age?: number
       }) {
-        if (!cookie.value)
+        if (!cookie.value) {
           return
+        }
 
         try {
           this.append('Set-Cookie', Object.entries({
@@ -77,8 +78,9 @@ export default {
       })()
 
       async process(): Promise<Response | Promise<Response>> {
-        if (this.method != 'GET')
+        if (this.method != 'GET') {
           return fetch(this)
+        }
 
         const cache = await caches.open(environment.ENVIRONMENT)
         const extension = url.pathname.split('.').slice(1).pop() ?? ''
@@ -139,7 +141,7 @@ export default {
               try {
                 const content = await response.text()
                 response = new Response((await (async() => {
-                  if (content.includes('\n'))
+                  if (content.includes('\n')) {
                     switch (extension) {
                       case 'css':
                         return content
@@ -151,6 +153,7 @@ export default {
                           .replace(/;\s*(.)/g, ';$1')
                           .replace(/\s{2,}/g, ' ')
                     }
+                  }
 
                   return content
                 })()), {
