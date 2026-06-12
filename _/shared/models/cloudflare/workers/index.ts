@@ -1,22 +1,24 @@
 export * from './fetch'
 
-import { Worker, WorkersCronTrigger, WorkersKvNamespace, WorkersRoute, WorkersScript, WorkerVersion } from '@pulumi/cloudflare'
-import { WorkerScriptBinding } from '@pulumi/cloudflare/types/input'
+import { WorkersCronTrigger, WorkersKvNamespace, WorkersRoute, WorkersScript } from '@pulumi/cloudflare'
+import { WorkersScriptBinding } from '@pulumi/cloudflare/types/input'
 import { build } from 'esbuild'
 import { readFileSync } from 'fs'
 import { ModuleKind, ScriptTarget, transpile } from 'typescript'
-import { _Config } from '../../shared'
-import { once } from '../../shared/decorators'
+import { _Config } from '../..'
+import { once } from '../../../decorators'
 
 export class Cloudflare {
 
   @once
-  static get config(): _Config | undefined {
-    return
+  static get config(): _Config | any {
+    return {
+      name: 'hostwriter',
+    }
   }
 
   @once
-  static get environment(): WorkerScriptBinding[] {
+  static get environment(): WorkersScriptBinding[] {
     return [
       {
         name: 'ENVIRONMENT',
@@ -25,12 +27,12 @@ export class Cloudflare {
       },
       {
         name: 'HOST',
-        text: this.config.host,
+        text: 'hostwriter.app',
         type: 'plain_text',
       },
       {
         name: 'DOMAIN',
-        text: this.config.domain,
+        text: 'hostwriter.app',
         type: 'plain_text',
       },
     ]
@@ -46,65 +48,50 @@ export class Cloudflare {
   @once
   static get namespace() {
     return new WorkersKvNamespace('experiments', {
-      accountId: this.config.accountId,
       title: this.$name,
     })
   }
 
   @once
-  static get bindings(): WorkerScriptBinding[] {
-    return []
+  static get bindings(): WorkersScriptBinding[] {
+    return [
+
+    ]
   }
 
   @once
   static get script_urn() {
-    return `${this.config.name}:request`
+    return `${this.config?.name}:fetch`
   }
 
   @once
   static get $name() {
-    return `${this.config.name.toLowerCase()}_${this.config.env}`
+    return `${this.config?.name.toLowerCase()}_dev`
   }
 
   @once
-  static get request_worker() {
+  static get fetch() {
     return build({
-      entryPoints: ['./workers/request.ts'],
+      entryPoints: ['./shared/models/cloudflare/workers/fetch.ts'],
       loader: { '.ts': 'ts' },
       format: 'esm',
       platform: 'node',
       bundle: true,
       target: 'es2020',
-      outfile: './workers/dist/request.js',
       write: false,
-    }).then(() => {
-      const worker = new Worker(this.script_urn, {
-        accountId: this.config.accountId,
-        name: this.$name,
-        logpush: true,
-      })
-
-      const script = new WorkerVersion(this.script_urn, {
-        accountId: this.config.accountId,
-        workerId: worker.id,
+    }).then((script) => {
+      const _script = new WorkersScript(this.script_urn, {
+        accountId: 'c380083c727f97bd24c6b600d267b4c3',
+        scriptName: this.$name,
         mainModule: 'main',
-        modules: [
-          {
-            name: 'main',
-            contentType: 'application/javascript',
-            contentFile: './workers/dist/request.js',
-          },
-        ],
-        compatibilityDate: '2024-12-05',
-        compatibilityFlags: [
-          'nodejs_compat_v2',
-        ],
+        content: script.outputFiles[0]?.text,
+        compatibilityDate: '2026-06-05',
         bindings: [
           ...this.environment,
           ...this.bindings,
           {
             name: 'AMPLITUDE_API_KEY',
-            text: _Config.get('amplitude').apiKey,
+            text: '_Config.get("amplitude").apiKey',
             type: 'plain_text',
           },
         ],
@@ -112,36 +99,26 @@ export class Cloudflare {
         deleteBeforeReplace: true,
       })
 
-      this.routes.map((subdomain) => {
-        return new URL(`https://${subdomain}${this.config.domain}`)
-      }).forEach((url) => {
-        new WorkersRoute(url.hostname, {
-          zoneId: this.config.zoneId,
-          script: script.id,
-          pattern: (() => {
-            return `${url.href.replace(
-              new RegExp(this.config.domain),
-              this.config.host,
-            )}*`
-          })(),
-        }, {
-          parent: script,
-        })
+      const url = new URL('https://hostwriter.app')
+      new WorkersRoute(url.hostname, {
+        zoneId: _Config.zones[url.hostname],
+        script: _script.id,
+        pattern: (() => {
+          return `${url.href}*`
+        })(),
+      }, {
+        parent: _script,
       })
+
     })
   }
 
   @once
   static get experiments_worker() {
     return new WorkersScript('experiments', {
-      accountId: this.config.accountId,
-      scriptName: `experiments_${this.config.env}`,
+      scriptName: 'experiments',
       logpush: true,
-      // module: true,
-      compatibilityDate: '2024-09-23',
-      compatibilityFlags: [
-        'nodejs_compat_v2',
-      ],
+      compatibilityDate: '2026-06-05',
       content: transpile(
         readFileSync('./workers/experiments.ts').toString(), {
           module: ModuleKind.ESNext,
@@ -165,7 +142,6 @@ export class Cloudflare {
   @once
   static get experiments_trigger() {
     return new WorkersCronTrigger('experiments', {
-      accountId: this.config.accountId,
       scriptName: this.experiments_worker.scriptName,
       schedules: [{
         cron: '* * * * *',
