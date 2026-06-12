@@ -1,4 +1,4 @@
-import { Namespace, Secret } from '@pulumi/kubernetes/core/v1'
+import { Secret } from '@pulumi/kubernetes/core/v1'
 import { Chart } from '@pulumi/kubernetes/helm/v4'
 import { ConfigFile } from '@pulumi/kubernetes/yaml'
 import { Config, ResourceOptions } from '@pulumi/pulumi'
@@ -23,21 +23,6 @@ export class _Cluster {
     public args: ClusterArgs,
     public opts?: ResourceOptions,
   ) {
-    // for Talos Linux
-    new Namespace('default', {
-      metadata: {
-        name: 'default',
-        labels: {
-          'pod-security.kubernetes.io/enforce': 'privileged',
-          'pod-security.kubernetes.io/audit': 'restricted',
-          'pod-security.kubernetes.io/warn': 'baseline',
-        },
-      },
-    }, {
-      retainOnDelete: true,
-      import: 'default',
-    })
-
     this.twingate_connector
     this.gateway_definitions
     this.certificate
