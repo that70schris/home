@@ -13,7 +13,10 @@ export class Cloudflare {
   @once
   static get config(): _Config | any {
     return {
+      accountId: 'c380083c727f97bd24c6b600d267b4c3',
       name: 'hostwriter',
+      domain: 'hostwriter.app',
+      host: 'hostwriter.app',
     }
   }
 
@@ -27,12 +30,12 @@ export class Cloudflare {
       },
       {
         name: 'HOST',
-        text: 'hostwriter.app',
+        text: this.config.host,
         type: 'plain_text',
       },
       {
         name: 'DOMAIN',
-        text: 'hostwriter.app',
+        text: this.config.domain,
         type: 'plain_text',
       },
     ]
@@ -41,7 +44,7 @@ export class Cloudflare {
   @once
   static get routes() {
     return [
-      'www.',
+      '',
     ]
   }
 
@@ -81,7 +84,7 @@ export class Cloudflare {
       write: false,
     }).then((script) => {
       const _script = new WorkersScript(this.script_urn, {
-        accountId: 'c380083c727f97bd24c6b600d267b4c3',
+        accountId: this.config.accountId,
         scriptName: this.$name,
         mainModule: 'main',
         content: script.outputFiles[0]?.text,
@@ -99,15 +102,21 @@ export class Cloudflare {
         deleteBeforeReplace: true,
       })
 
-      const url = new URL('https://hostwriter.app')
-      new WorkersRoute(url.hostname, {
-        zoneId: _Config.zones[url.hostname],
-        script: _script.id,
-        pattern: (() => {
-          return `${url.href}*`
-        })(),
-      }, {
-        parent: _script,
+      this.routes.map((subdomain) => {
+        return new URL(`https://${subdomain}${this.config.domain}`)
+      }).forEach((url: URL) => {
+        new WorkersRoute(url.hostname, {
+          zoneId: _Config.zones[this.config.domain],
+          script: _script.id,
+          pattern: (() => {
+            return `${url.href.replace(
+              new RegExp(`(www.)?${this.config.domain}`),
+              this.config?.host,
+            )}*`
+          })(),
+        }, {
+          parent: _script,
+        })
       })
 
     })
