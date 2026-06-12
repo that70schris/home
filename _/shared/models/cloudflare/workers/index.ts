@@ -114,7 +114,7 @@ export class Cloudflare {
   }
 
   @once
-  static get experiments_worker() {
+  static get experiments() {
     return new WorkersScript('experiments', {
       scriptName: 'experiments',
       logpush: true,
@@ -142,12 +142,12 @@ export class Cloudflare {
   @once
   static get experiments_trigger() {
     return new WorkersCronTrigger('experiments', {
-      scriptName: this.experiments_worker.scriptName,
+      scriptName: this.experiments.scriptName,
       schedules: [{
         cron: '* * * * *',
       }],
     }, {
-      parent: this.experiments_worker,
+      parent: this.experiments,
     })
   }
 
