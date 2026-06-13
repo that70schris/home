@@ -11,7 +11,7 @@ import { once } from '../../../decorators'
 interface CloudflareArgs {
   accountId: string
   zone: string
-  env?: string
+  subdomains?: string[]
 }
 
 export class Cloudflare {
@@ -55,13 +55,6 @@ export class Cloudflare {
   }
 
   @once
-  get subdomains() {
-    return [
-      '',
-    ]
-  }
-
-  @once
   get namespace() {
     return new WorkersKvNamespace('experiments', {
       title: this.$name,
@@ -99,9 +92,9 @@ export class Cloudflare {
         }, {
           deleteBeforeReplace: true,
         },
-      )
+      );
 
-      this.subdomains.map((subdomain) => {
+      (this.args.subdomains ?? ['']).map((subdomain) => {
         return new URL(`https://${subdomain}${this.args.zone}`)
       }).forEach((url: URL) => {
         new WorkersRoute(url.hostname, {
