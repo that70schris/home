@@ -121,7 +121,7 @@ export default {
             headers.set('Location', target.href)
             return new Response(null, {
               headers: headers,
-              status: 307,
+              status: 301,
             })
           }
 
