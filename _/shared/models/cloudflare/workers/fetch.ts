@@ -1,7 +1,7 @@
 export default {
   async fetch(
     request: Request,
-    environment: { [key: string]: any },
+    env: { [key: string]: any },
   ): Promise<Response> {
     const url = new URL(request.url)
 
@@ -18,7 +18,7 @@ export default {
         try {
           this.append('Set-Cookie', Object.entries({
             [cookie.name]: cookie.value,
-            'Domain': environment.HOST,
+            'Domain': env.ENVIRONMENT,
             'Max-Age': cookie.age,
             'Path': '/',
           }).reduce((result: string[], entry) => {
@@ -82,7 +82,7 @@ export default {
           return fetch(this)
         }
 
-        const cache = await caches.open(environment.ENVIRONMENT)
+        const cache = await caches.open(env.ENVIRONMENT)
         const extension = url.pathname.split('.').slice(1).pop() ?? ''
 
         // set common headers
@@ -97,7 +97,7 @@ export default {
           }
 
           if (this.$referrer
-            && !this.$referrer.hostname.match(RegExp(`${environment.ZONE}$`))) {
+            && !this.$referrer.hostname.match(RegExp(`${env.ZONE}$`))) {
             headers.cookie = {
               name: 'initial_referrer',
               value: this.cookies?.initial_referrer ?? this.referrer,
@@ -111,22 +111,17 @@ export default {
             }
           }
 
-          const redirect: string | undefined = ({
-
-          } as { [key: string]: string })[new URL(
-            url.pathname + url.search,
-            url.origin.replace(environment.HOST, environment.ZONE),
-          ).href]?.replace(
-            new RegExp(`(www.)?${environment.ZONE}`),
-            environment.HOST,
+          const target = url
+          target.hostname = target.hostname.replace(
+            new RegExp(`^(www.)?${env.ENVIRONMENT}$`),
+            `${env.WWW ? 'www.' : ''}${env.ENVIRONMENT}`,
           )
 
-          if (redirect) {
-            const _redirect = new URL(redirect, url.origin)
-            headers.set('Location', _redirect.href)
+          if (url.href != target.href) {
+            headers.set('Location', target.href)
             return new Response(null, {
               headers: headers,
-              status: 301,
+              status: 307,
             })
           }
 

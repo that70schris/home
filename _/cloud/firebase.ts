@@ -1,8 +1,6 @@
-import { Ruleset } from '@pulumi/cloudflare'
 import { HostingCustomDomain, HostingSite, Project } from '@pulumi/gcp/firebase'
 import { Key } from '@pulumi/gcp/serviceaccount'
 import { interpolate } from '@pulumi/pulumi'
-import { _Config } from '../shared'
 import { _Record } from '../shared/models/cloudflare'
 import { _ServiceAccount } from '../shared/models/gcp'
 
@@ -49,28 +47,6 @@ export class Firebase {
       domain: 'hostwriter.app',
       type: 'TXT',
       content: 'hosting-site=hostwriter',
-    },
-  )
-
-  static www = new Ruleset(
-    'www.hostwriter.app', {
-      zoneId: _Config.zones['hostwriter.app'],
-      name: 'redirect www',
-      phase: 'http_request_dynamic_redirect',
-      kind: 'zone',
-      rules: [{
-        action: 'redirect',
-        expression: 'http.host contains "www."',
-        actionParameters: {
-          fromValue: {
-            preserveQueryString: true,
-            statusCode: 307,
-            targetUrl: {
-              expression: 'wildcard_replace(http.host, "www.*", "https://${1}")',
-            },
-          },
-        },
-      }],
     },
   )
 

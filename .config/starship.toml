@@ -84,7 +84,7 @@ palette = 'arcade'
   # symbol = '－' #uFF0D
 
 [gcloud]
-  format = '( $symbol[$project]($style))'
+  format = '( $symbol [$project]($style))'
   style = '#1a73e8'
   symbol = '☁️ '
 

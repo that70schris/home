@@ -11,6 +11,7 @@ import { once } from '../../../decorators'
 interface CloudflareArgs {
   accountId: string
   zone: string
+  www?: boolean
   subdomains?: string[]
 }
 
@@ -38,17 +39,17 @@ export class Cloudflare {
     return [
       {
         name: 'ENVIRONMENT',
-        text: _Config.env,
-        type: 'plain_text',
-      },
-      {
-        name: 'HOST',
         text: this.host,
         type: 'plain_text',
       },
       {
         name: 'ZONE',
         text: this.args.zone,
+        type: 'plain_text',
+      },
+      {
+        name: 'WWW',
+        text: this.args.www ? 'true' : '',
         type: 'plain_text',
       },
     ]
@@ -94,23 +95,24 @@ export class Cloudflare {
         },
       );
 
-      (this.args.subdomains ?? ['']).map((subdomain) => {
-        return new URL(`https://${subdomain}${this.args.zone}`)
-      }).forEach((url: URL) => {
-        new WorkersRoute(url.hostname, {
-          zoneId: _Config.zones[this.args.zone],
-          script: _script.id,
-          pattern: (() => {
-            return `${url.href.replace(
-              new RegExp(`(www.)?${this.args.zone}`),
-              this.host,
-            )}*`
-          })(),
-        }, {
-          deletedWith: _script,
-          parent: _script,
+      [ '', 'www' ]
+        .concat(this.args.subdomains ?? [])
+        .map((subdomain) => {
+          return new URL(`https://${[
+            subdomain,
+            this.args.zone,
+          ].filter(part => part)
+            .join('.')}`)
+        }).forEach((url: URL) => {
+          new WorkersRoute(url.hostname, {
+            zoneId: _Config.zones[this.args.zone],
+            pattern: `${url.href}*`,
+            script: _script.id,
+          }, {
+            deletedWith: _script,
+            parent: _script,
+          })
         })
-      })
 
     })
   }
