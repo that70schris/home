@@ -97,7 +97,7 @@ export default {
           }
 
           if (this.$referrer
-            && !this.$referrer.hostname.match(RegExp(`${environment.DOMAIN}$`))) {
+            && !this.$referrer.hostname.match(RegExp(`${environment.ZONE}$`))) {
             headers.cookie = {
               name: 'initial_referrer',
               value: this.cookies?.initial_referrer ?? this.referrer,
@@ -115,9 +115,9 @@ export default {
 
           } as { [key: string]: string })[new URL(
             url.pathname + url.search,
-            url.origin.replace(environment.HOST, environment.DOMAIN),
+            url.origin.replace(environment.HOST, environment.ZONE),
           ).href]?.replace(
-            new RegExp(`(www.)?${environment.DOMAIN}`),
+            new RegExp(`(www.)?${environment.ZONE}`),
             environment.HOST,
           )
 

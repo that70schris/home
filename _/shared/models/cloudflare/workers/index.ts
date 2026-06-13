@@ -8,72 +8,74 @@ import { ModuleKind, ScriptTarget, transpile } from 'typescript'
 import { _Config } from '../..'
 import { once } from '../../../decorators'
 
+interface CloudflareArgs {
+  accountId: string
+  zone: string
+  env?: string
+}
+
 export class Cloudflare {
 
-  @once
-  static get config(): _Config | any {
-    return {
-      accountId: 'c380083c727f97bd24c6b600d267b4c3',
-      name: 'hostwriter',
-      domain: 'hostwriter.app',
-      host: 'hostwriter.app',
-    }
+  constructor(
+    public name: string,
+    public args: CloudflareArgs,
+  ) {
+
   }
 
   @once
-  static get environment(): WorkersScriptBinding[] {
+  get $name() {
+    return `${this.name.toLowerCase()}_${_Config.env}`
+  }
+
+  @once
+  get host() {
+    return `${_Config.subdomain}${this.args.zone}`
+  }
+
+  @once
+  get environment(): WorkersScriptBinding[] {
     return [
       {
         name: 'ENVIRONMENT',
-        text: 'local',
+        text: _Config.env,
         type: 'plain_text',
       },
       {
         name: 'HOST',
-        text: this.config.host,
+        text: this.host,
         type: 'plain_text',
       },
       {
-        name: 'DOMAIN',
-        text: this.config.domain,
+        name: 'ZONE',
+        text: this.args.zone,
         type: 'plain_text',
       },
     ]
   }
 
   @once
-  static get routes() {
+  get routes() {
     return [
       '',
     ]
   }
 
   @once
-  static get namespace() {
+  get namespace() {
     return new WorkersKvNamespace('experiments', {
       title: this.$name,
     })
   }
 
   @once
-  static get bindings(): WorkersScriptBinding[] {
+  get bindings(): WorkersScriptBinding[] {
     return [
 
     ]
   }
 
-  @once
-  static get script_urn() {
-    return `${this.config?.name}:fetch`
-  }
-
-  @once
-  static get $name() {
-    return `${this.config?.name.toLowerCase()}_local`
-  }
-
-  @once
-  static get fetch() {
+  get fetch() {
     return build({
       entryPoints: ['./shared/models/cloudflare/workers/fetch.ts'],
       loader: { '.ts': 'ts' },
@@ -83,35 +85,32 @@ export class Cloudflare {
       target: 'es2020',
       write: false,
     }).then((script) => {
-      const _script = new WorkersScript(this.script_urn, {
-        accountId: this.config.accountId,
-        scriptName: this.$name,
-        mainModule: 'main',
-        content: script.outputFiles[0]?.text,
-        compatibilityDate: '2026-06-05',
-        bindings: [
-          ...this.environment,
-          ...this.bindings,
-          {
-            name: 'AMPLITUDE_API_KEY',
-            text: '_Config.get("amplitude").apiKey',
-            type: 'plain_text',
-          },
-        ],
-      }, {
-        deleteBeforeReplace: true,
-      })
+      const _script = new WorkersScript(
+        `${this.name}:fetch`, {
+          accountId: this.args.accountId,
+          scriptName: this.$name,
+          mainModule: 'main',
+          content: script.outputFiles[0]?.text,
+          compatibilityDate: '2026-06-05',
+          bindings: [
+            ...this.environment,
+            ...this.bindings,
+          ],
+        }, {
+          deleteBeforeReplace: true,
+        },
+      )
 
       this.routes.map((subdomain) => {
-        return new URL(`https://${subdomain}${this.config.domain}`)
+        return new URL(`https://${subdomain}${this.args.zone}`)
       }).forEach((url: URL) => {
         new WorkersRoute(url.hostname, {
-          zoneId: _Config.zones[this.config.domain],
+          zoneId: _Config.zones[this.args.zone],
           script: _script.id,
           pattern: (() => {
             return `${url.href.replace(
-              new RegExp(`(www.)?${this.config.domain}`),
-              this.config?.host,
+              new RegExp(`(www.)?${this.args.zone}`),
+              this.host,
             )}*`
           })(),
         }, {
@@ -124,7 +123,7 @@ export class Cloudflare {
   }
 
   @once
-  static get experiments() {
+  get experiments() {
     return new WorkersScript('experiments', {
       scriptName: 'experiments',
       logpush: true,
@@ -150,7 +149,7 @@ export class Cloudflare {
   }
 
   @once
-  static get experiments_trigger() {
+  get experiments_trigger() {
     return new WorkersCronTrigger('experiments', {
       scriptName: this.experiments.scriptName,
       schedules: [{

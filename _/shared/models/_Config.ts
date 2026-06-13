@@ -1,4 +1,4 @@
-import { Config } from '@pulumi/pulumi'
+import { Config, getStack } from '@pulumi/pulumi'
 
 export class _Config extends Config {
 
@@ -12,6 +12,14 @@ export class _Config extends Config {
 
   static get zones(): any {
     return this.get('cloudflare')?.zones
+  }
+
+  static get env(): string {
+    return getStack()
+  }
+
+  static get subdomain(): string {
+    return this.env == 'prod' ? '' : `${this.env}.`
   }
 
 }
