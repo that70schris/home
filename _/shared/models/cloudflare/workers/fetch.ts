@@ -111,7 +111,7 @@ export default {
             }
           }
 
-          const target = url
+          const target = new URL(url.href)
           target.hostname = target.hostname.replace(
             new RegExp(`^(www.)?${env.ENVIRONMENT}$`),
             `${env.WWW ? 'www.' : ''}${env.ENVIRONMENT}`,
