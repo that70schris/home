@@ -10,7 +10,6 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 /**
  * Note that Vite normally starts from `index.html` but the qwikCity plugin makes start at `src/entry.ssr.tsx` instead.
  */
-
 export default defineConfig((): UserConfig => {
   return {
     plugins: [ qwikCity(), qwikVite(), tsconfigPaths() ],
