@@ -55,7 +55,7 @@ export class Cloudflare {
   }
 
   @once
-  get routes() {
+  get subdomains() {
     return [
       '',
     ]
@@ -101,7 +101,7 @@ export class Cloudflare {
         },
       )
 
-      this.routes.map((subdomain) => {
+      this.subdomains.map((subdomain) => {
         return new URL(`https://${subdomain}${this.args.zone}`)
       }).forEach((url: URL) => {
         new WorkersRoute(url.hostname, {
