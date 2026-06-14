@@ -9,9 +9,9 @@ $git_state\
 $git_status\
 $git_metrics\
 $fill \
-$pulumi\
 $docker_context\
 $container\
+$pulumi\
 $gcloud\
 $helm\
 $kubernetes\
