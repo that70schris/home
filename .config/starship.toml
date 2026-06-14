@@ -9,16 +9,16 @@ $git_state\
 $git_status\
 $git_metrics\
 $fill \
-$docker_context\
-$container\
-$pulumi\
-$gcloud\
-$helm\
-$kubernetes\
 $python\
 $rust\
 $swift\
+$docker_context\
+$container\
+$pulumi\
 $terraform\
+$gcloud\
+$kubernetes\
+$helm\
 $sudo\
 $shell\
 $os\
