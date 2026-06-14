@@ -9,12 +9,12 @@ $git_state\
 $git_status\
 $git_metrics\
 $fill \
+$pulumi\
 $docker_context\
 $container\
 $gcloud\
 $helm\
 $kubernetes\
-$pulumi\
 $python\
 $rust\
 $swift\
