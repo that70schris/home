@@ -156,7 +156,7 @@ $untracked\
   version_format = '$raw'
 
 [pulumi]
-  format = ' $symbol[$stack]($style)'
+  format = '( $symbol[$stack]($style))'
   style = '#be5188'
   symbol = ' '
 
