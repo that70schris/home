@@ -33,6 +33,55 @@ export class _Cluster {
     this.nginx
     this.gateway
     this.routes
+    this.metrics
+  }
+
+  @once
+  get metrics() {
+    return new Chart('metrics', {
+      chart: 'metrics-server',
+      repositoryOpts: {
+        repo: 'https://kubernetes-sigs.github.io/metrics-server/',
+      },
+      values: {
+        args: [
+          '--kubelet-insecure-tls',
+          '--kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname',
+          '--metric-resolution=15s',
+        ],
+        resources: {
+          requests: {
+            cpu: '100m',
+            memory: '200Mi',
+          },
+          limits: {
+            cpu: '500m',
+            memory: '500Mi',
+          },
+        },
+        tolerations: [
+          {
+            key: 'node-role.kubernetes.io/control-plane',
+            operator: 'Exists',
+            effect: 'NoSchedule',
+          },
+        ],
+        replicas: 2,
+        podDisruptionBudget: {
+          enabled: true,
+          minAvailable: 1,
+        },
+        updateStrategy: {
+          type: 'RollingUpdate',
+          rollingUpdate: {
+            maxUnavailable: 1,
+          },
+        },
+        serviceMonitor: {
+          enabled: false,
+        },
+      },
+    })
   }
 
   @once
