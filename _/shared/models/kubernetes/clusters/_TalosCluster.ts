@@ -1,14 +1,6 @@
 import { Namespace } from '@pulumi/kubernetes/core/v1'
 import { ResourceOptions } from '@pulumi/pulumi'
-import { _Cluster } from '../_Cluster'
-import { _Kube } from '../_Kube'
-
-interface ClusterArgs {
-  domain?: string
-  host: string
-  ip: string
-  kubes: _Kube[]
-}
+import { _Cluster, ClusterArgs } from '../_Cluster'
 
 export class _TalosCluster extends _Cluster {
 

@@ -6,11 +6,13 @@ import { _CustomResource, _Kube } from '.'
 import { twingate } from '../../../home.lab'
 import { once } from '../../decorators'
 import { _Record } from '../cloudflare'
+import { Talos } from '../Talos'
 import { Twingate } from '../twingate'
 import { _TwingateResource } from '../twingate/resource'
 
-interface ClusterArgs {
+export interface ClusterArgs {
   domain?: string
+  talos: Talos
   host: string
   ip: string
   kubes: _Kube[]
@@ -23,7 +25,7 @@ export class _Cluster {
     public args: ClusterArgs,
     public opts?: ResourceOptions,
   ) {
-    this.twingate_connector
+    this.twingate
     this.gateway_definitions
     this.certificate
     this.metallb
@@ -352,37 +354,20 @@ export class _Cluster {
   }
 
   @once
-  get twingate_operator() {
+  get twingate() {
     return new Chart('twingate', {
-      chart: 'oci://ghcr.io/twingate/helmcharts/twingate-operator',
+      chart: 'connector',
+      repositoryOpts: {
+        repo: 'https://twingate.github.io/helm-charts',
+      },
       values: {
-        nameOverride: 'operator',
-        twingateOperator: {
-          remoteNetworkId: twingate.remote.id,
-          apiKey: Twingate.config.get('apiToken'),
+        connector: {
           network: Twingate.network,
+          accessToken: twingate.tokens.accessToken,
+          refreshToken: twingate.tokens.refreshToken,
         },
       },
     })
-  }
-
-  @once
-  get twingate_connector() {
-    return new _CustomResource(
-      'twingate-connector', {
-        apiVersion: 'twingate.com/v1beta',
-        kind: 'TwingateConnector',
-        spec: {
-          name: 'main',
-          imagePolicy: {
-            schedule: '0 0 * * *',
-          },
-        },
-      }, {
-        dependsOn: this.twingate_operator,
-        parent: this.twingate_operator,
-      },
-    )
   }
 
 }

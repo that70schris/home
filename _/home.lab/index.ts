@@ -10,6 +10,7 @@ new _TalosCluster(berry.name, {
   domain: 'bailey.mx',
   ip: '192.168.0.5',
   host: berry.host,
+  talos: berry,
   kubes: [
     new Homebridge(),
     // new Homey(),

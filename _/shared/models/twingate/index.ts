@@ -1,5 +1,5 @@
 import { Config } from '@pulumi/pulumi'
-import { TwingateRemoteNetwork } from '@twingate/pulumi-twingate'
+import { TwingateConnector, TwingateConnectorTokens, TwingateRemoteNetwork } from '@twingate/pulumi-twingate'
 import { once } from '../../decorators'
 
 export class Twingate {
@@ -21,6 +21,21 @@ export class Twingate {
     return new TwingateRemoteNetwork('main', {
       location: 'ON_PREMISE',
       name: this.name,
+    })
+  }
+
+  @once
+  get connector() {
+    return new TwingateConnector('main', {
+      remoteNetworkId: this.remote.id,
+      name: 'main',
+    })
+  }
+
+  @once
+  get tokens() {
+    return new TwingateConnectorTokens('main', {
+      connectorId: this.connector.id,
     })
   }
 

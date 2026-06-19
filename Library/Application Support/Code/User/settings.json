@@ -107,7 +107,7 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmPasteNative": false,
   "explorer.enableDragAndDrop": true,
-  "extensions.autoUpdate": true,
+  "extensions.autoUpdate": "on",
   "extensions.closeExtensionDetailsOnViewChange": true,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
@@ -210,4 +210,6 @@
   "yaml.maxItemsComputed": 99999,
   "yaml2json.yamlIndentationSpaces": 2,
   "js/ts.updateImportsOnFileMove.enabled": "always",
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilotcli:claude-haiku-4.5",
 }

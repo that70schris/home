@@ -48,8 +48,8 @@ export class Talos {
         Twingate.groups.admin,
       ],
       tcp: [
-        6443,
         50000,
+        6443,
       ],
     })
   }
