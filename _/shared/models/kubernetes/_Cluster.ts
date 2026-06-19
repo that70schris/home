@@ -45,22 +45,11 @@ export class _Cluster {
       },
       values: {
         nameOverride: 'metrics',
-        // fullNameOverride: 'metrics',
         args: [
           '--kubelet-insecure-tls',
           '--kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname',
           '--metric-resolution=15s',
         ],
-        resources: {
-          requests: {
-            cpu: '100m',
-            memory: '200Mi',
-          },
-          limits: {
-            cpu: '500m',
-            memory: '500Mi',
-          },
-        },
         tolerations: [
           {
             key: 'node-role.kubernetes.io/control-plane',
