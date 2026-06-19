@@ -1,6 +1,6 @@
 tap "alecharmon/tap"
 # Pack, ship and run any application as a lightweight container
-brew "docker", link: false
+brew "docker"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # Firebase command-line tools
@@ -121,6 +121,7 @@ cask "wifiman"
 cask "zoom"
 mas "1Blocker", id: 1365531024
 mas "Capo", id: 696977615
+mas "ControllerForHomeKit", id: 1198176727
 mas "Deliveries", id: 290986013
 mas "Flighty", id: 1358823008
 mas "iCircuit", id: 454347770
@@ -135,6 +136,7 @@ vscode "bennycode.sort-everything"
 vscode "dbaeumer.vscode-eslint"
 vscode "deerawan.vscode-dash"
 vscode "dnicolson.binary-plist"
+vscode "eamodio.gitlens"
 vscode "editorconfig.editorconfig"
 vscode "esbenp.prettier-vscode"
 vscode "ezzak.current-path"
