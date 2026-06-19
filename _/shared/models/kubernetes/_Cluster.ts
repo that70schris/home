@@ -44,6 +44,8 @@ export class _Cluster {
         repo: 'https://kubernetes-sigs.github.io/metrics-server/',
       },
       values: {
+        nameOverride: 'metrics',
+        // fullNameOverride: 'metrics',
         args: [
           '--kubelet-insecure-tls',
           '--kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname',
@@ -66,17 +68,6 @@ export class _Cluster {
             effect: 'NoSchedule',
           },
         ],
-        replicas: 2,
-        podDisruptionBudget: {
-          enabled: true,
-          minAvailable: 1,
-        },
-        updateStrategy: {
-          type: 'RollingUpdate',
-          rollingUpdate: {
-            maxUnavailable: 1,
-          },
-        },
         serviceMonitor: {
           enabled: false,
         },
