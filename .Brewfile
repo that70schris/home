@@ -1,4 +1,5 @@
 tap "alecharmon/tap"
+tap "netbirdio/tap"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
 # Open-source, cross-platform JavaScript runtime environment
@@ -49,6 +50,8 @@ brew "talosctl"
 brew "xh"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Netbird project.
+brew "netbirdio/tap/netbird", trusted: true
 # Use your phone as a high-quality webcam with image tuning controls
 cask "camo-studio"
 # Open links in any browser
@@ -87,6 +90,8 @@ cask "lens"
 cask "logi-options+"
 # Support for Logitech G gear
 cask "logitech-g-hub"
+# Netbird UI Client
+cask "netbirdio/tap/netbird-ui", trusted: true
 # Replacement for Docker Desktop
 cask "orbstack"
 # Home media player
