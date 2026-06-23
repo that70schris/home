@@ -5,3 +5,5 @@ allowBuilds:
   'protobufjs': true
   're2': true
   'sharp': true
+minimumReleaseAgeExclude:
+  - vite@8.1.0
