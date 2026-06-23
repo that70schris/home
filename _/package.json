@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "@cloudflare/workers-types": "latest",
-    "@opentelemetry/core": "2.8.0",
     "@pulumi/cloudflare": "latest",
     "@pulumi/command": "latest",
     "@pulumi/gcp": "latest",
@@ -13,11 +12,11 @@
     "@pulumiverse/talos": "latest",
     "@pulumiverse/unifi": "latest",
     "@twingate/pulumi-twingate": "latest",
-    "esbuild": "0.28.1",
+    "esbuild": "latest",
     "fs": "latest",
     "globals": "latest",
     "json2toml": "latest",
-    "lodash": "4.18.1",
+    "lodash": "latest",
     "typescript": "latest",
     "yaml": "latest"
   }
