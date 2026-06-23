@@ -13,7 +13,7 @@
     "@pulumiverse/talos": "latest",
     "@pulumiverse/unifi": "latest",
     "@twingate/pulumi-twingate": "latest",
-    "esbuild": "0.28.0",
+    "esbuild": "0.28.1",
     "fs": "latest",
     "globals": "latest",
     "json2toml": "latest",
