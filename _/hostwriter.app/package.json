@@ -9,9 +9,7 @@
     "typescript": "latest",
     "undici": "8.3.0",
     "vite": "8.0.16",
+    "uuid": "14.0.1",
     "vite-tsconfig-paths": "latest"
-  },
-  "overrides": {
-    "uuid": "14.0.0"
   }
 }
