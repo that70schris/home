@@ -1,10 +1,10 @@
 {
   "dependencies": {
-    "@builder.io/qwik": "latest",
-    "@builder.io/qwik-city": "latest",
+    "@builder.io/qwik": "1.20.0",
+    "@builder.io/qwik-city": "1.20.0",
     "@types/node": "latest",
-    "firebase": "latest",
-    "firebase-tools": "latest",
+    "firebase": "12.15.0",
+    "firebase-tools": "15.22.1",
     "sass": "latest",
     "typescript": "latest",
     "vite": "8.1.0",

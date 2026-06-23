@@ -9,20 +9,20 @@ importers:
   .:
     dependencies:
       '@builder.io/qwik':
-        specifier: latest
+        specifier: 1.20.0
         version: 1.20.0(vite@8.1.0(@types/node@26.0.0)(esbuild@0.27.7)(sass@1.101.0)(yaml@2.9.0))
       '@builder.io/qwik-city':
-        specifier: latest
+        specifier: 1.20.0
         version: 1.20.0(@types/node@26.0.0)(lightningcss@1.32.0)(rollup@4.62.2)(sass@1.101.0)(typescript@6.0.3)(yaml@2.9.0)
       '@types/node':
         specifier: latest
         version: 26.0.0
       firebase:
-        specifier: latest
+        specifier: 12.15.0
         version: 12.15.0
       firebase-tools:
-        specifier: latest
-        version: 15.22.0(@types/node@26.0.0)
+        specifier: 15.22.1
+        version: 15.22.1(@types/node@26.0.0)
       sass:
         specifier: latest
         version: 1.101.0
@@ -2096,8 +2096,8 @@ packages:
     resolution: {integrity: sha512-S8KoZgRZN+a5rNwqTxlZZePjT/4cnm0ROV70LedRHZ0p8u9fRID0hJUZQpkKLzro8LfmC8sx23bY6tVNxv8pQA==}
     engines: {node: '>= 18.0.0'}
 
-  firebase-tools@15.22.0:
-    resolution: {integrity: sha512-YWpL6qKnDZ6YHaZ3s9niBhDqJIuqVRubOhD6eDZZqRMMGgq7/FfN3cX4/xh8ND3Lfy2qGs1kAKZzV99TJJZJwA==}
+  firebase-tools@15.22.1:
+    resolution: {integrity: sha512-Dx3Pz2h7c2C50tgolw9YrOh3LqPuoDuOG7XWIwhf9fAgBDWevQdcDBEysnIbNqhRcgIM1zyX2z+N+zkJGoj2Kg==}
     engines: {node: '>=20.0.0 || >=22.0.0 || >=24.0.0'}
     hasBin: true
 
@@ -2336,8 +2336,8 @@ packages:
     resolution: {integrity: sha512-xQjs+2vrxLnAjCq+omuNkd5UQTld9/bP8+YT0LyYTlKfuSQtgUBvqhUwGugzSAh6sCdN+LnROMuLswn5hZ9Fhg==}
     engines: {node: '>=20.0.0'}
 
-  immutable@5.1.6:
-    resolution: {integrity: sha512-q1swsS8K7L8usSHuOqF2TAoCCkonYz0SG38wLAggaa4Wml70zixIvt2ql4coQ2C2B3hTjltJry4r6bULwgAXLQ==}
+  immutable@5.1.7:
+    resolution: {integrity: sha512-47Xb+LFbZ/ZIjQMj6Q5J3IfK7PJFuqRdFOC9FpGgRTK6U2dAEVmkR9hp58qU4FpYux5YXpneDwkj2EP6lppzFA==}
 
   import-lazy@2.1.0:
     resolution: {integrity: sha512-m7ZEHgtw69qOGw+jwxXkHlrlIPdTGkyh66zXZ1ajZbxkDBNjSY/LGbmjc7h0s2ELsUDTAhFr55TrPSSqJGPG0A==}
@@ -6044,7 +6044,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  firebase-tools@15.22.0(@types/node@26.0.0):
+  firebase-tools@15.22.1(@types/node@26.0.0):
     dependencies:
       '@apphosting/common': 0.0.8
       '@electric-sql/pglite': 0.3.16
@@ -6501,7 +6501,7 @@ snapshots:
 
   imagetools-core@9.1.0: {}
 
-  immutable@5.1.6: {}
+  immutable@5.1.7: {}
 
   import-lazy@2.1.0: {}
 
@@ -7736,7 +7736,7 @@ snapshots:
   sass@1.101.0:
     dependencies:
       chokidar: 5.0.0
-      immutable: 5.1.6
+      immutable: 5.1.7
       source-map-js: 1.2.1
     optionalDependencies:
       '@parcel/watcher': 2.5.6
