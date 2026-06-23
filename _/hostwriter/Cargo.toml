@@ -1,4 +1,0 @@
-[package]
-  edition = "2024"
-  name = "hostwriter"
-  version = "0.1.0"
