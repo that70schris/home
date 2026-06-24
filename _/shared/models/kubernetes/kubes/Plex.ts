@@ -28,7 +28,7 @@ export class Plex extends _Kube {
 
   override get volume_mounts() {
     return super.volume_mounts.concat([{
-      mountPath: '/config',
+      mountPath: '/config/',
       name: 'config',
     }])
   }
