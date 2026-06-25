@@ -1,5 +1,6 @@
 tap "alecharmon/tap"
 tap "netbirdio/tap"
+tap "nubjs/tap"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
 # Open-source, cross-platform JavaScript runtime environment
@@ -52,6 +53,8 @@ brew "xh"
 brew "zsh"
 # Netbird project.
 brew "netbirdio/tap/netbird", trusted: true
+# Fast TypeScript runtime and package manager that augments Node
+brew "nubjs/tap/nub", trusted: true
 # Use your phone as a high-quality webcam with image tuning controls
 cask "camo-studio"
 # Open links in any browser
@@ -92,6 +95,8 @@ cask "logi-options+"
 cask "logitech-g-hub"
 # Netbird UI Client
 cask "netbirdio/tap/netbird-ui", trusted: true
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Home media player
@@ -176,3 +181,4 @@ vscode "vscodevim.vim"
 vscode "wangwindow.quick-open-in-new-window"
 vscode "zongou.vs-seti-hacknerdfont"
 cargo "starship"
+npm "corepack"
