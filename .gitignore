@@ -29,7 +29,6 @@
 !.prettierignore
 !.prettierrc.yml
 !.profile
-!.npmrc
 !.vimrc
 !.zshrc
 !Makefile
