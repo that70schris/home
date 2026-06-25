@@ -5,6 +5,7 @@
 }
 
 body {
+  print-color-adjust: exact;
   width: 816px;
 }
 
@@ -40,24 +41,31 @@ body > header {
 }
 
 main {
+  h3 {
+    color: #666;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+
   section {
     display: flex;
     margin-bottom: 40px;
 
     .left {
       font-style: italic;
-      padding: 20px;
+      padding: 10px 20px 10px 10px;
       text-align: right;
       text-transform: uppercase;
       width: 125px;
     }
 
     .right {
-      border-left: 1px solid gray;
+      border-left: 1px solid #aaa;
+      padding: 20px 0;
       width: 100%;
 
       .experience {
-        padding: 10px 0 20px 20px;
+        padding: 10px 2px 20px 20px;
 
         header {
           align-items: center;
@@ -77,13 +85,13 @@ main {
         }
 
         h2 {
-          color: #595959;
+          color: #666;
           margin-bottom: 30px;
         }
       }
 
       .experience:not(:last-child) {
-        border-bottom: 1px gray dashed;
+        border-bottom: 1px #aaa dashed;
       }
     }
   }
