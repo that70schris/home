@@ -10,7 +10,6 @@ source ~/.config/zsh/ohmy/plugins/sudo/sudo.plugin.zsh
 source ~/.config/zsh/plugins/syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.config/zsh/plugins/autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/plugins/tab-title/zsh-tab-title.plugin.zsh
-source ~/.config/zsh/plugins/nvm/zsh-nvm.plugin.zsh
 source ~/.config/zsh/plugins/abbr/zsh-abbr.zsh
 source ~/.config/autoenv/activate.sh
 source ~/.config/aliases
