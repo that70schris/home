@@ -1,5 +1,5 @@
-html,
-body {
+* {
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
 }
@@ -16,6 +16,10 @@ body > header {
   padding: 20px 0;
 
   #name {
+    h2 {
+      font-size: 20px;
+      margin-top: 30px;
+    }
   }
 
   #info {
@@ -45,7 +49,7 @@ main {
       padding: 20px;
       text-align: right;
       text-transform: uppercase;
-      width: 120px;
+      width: 125px;
     }
 
     .right {
@@ -53,11 +57,28 @@ main {
       width: 100%;
 
       .experience {
-        padding: 20px;
+        padding: 10px 0 20px 20px;
 
         header {
+          align-items: center;
           display: flex;
           justify-content: space-between;
+          margin-bottom: 10px;
+
+          h1 {
+            font-size: 30px;
+          }
+
+          span {
+            color: #666;
+            font-size: 18px;
+            font-style: italic;
+          }
+        }
+
+        h2 {
+          color: #595959;
+          margin-bottom: 30px;
         }
       }
 
