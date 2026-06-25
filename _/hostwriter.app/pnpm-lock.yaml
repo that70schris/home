@@ -21,8 +21,8 @@ importers:
         specifier: 12.15.0
         version: 12.15.0
       firebase-tools:
-        specifier: 15.22.1
-        version: 15.22.1(@types/node@26.0.0)
+        specifier: 15.22.2
+        version: 15.22.2(@types/node@26.0.0)
       sass:
         specifier: latest
         version: 1.101.0
@@ -818,8 +818,8 @@ packages:
       '@cfworker/json-schema':
         optional: true
 
-  '@napi-rs/wasm-runtime@1.1.5':
-    resolution: {integrity: sha512-AWPoBRJ9tsnVhor4sjO7rkni+7p+2IAEFj6cx06UgP10jkQHqay/36uRV/bFkgrh18D9vb4cr8Q0Pthskgzy+Q==}
+  '@napi-rs/wasm-runtime@1.1.6':
+    resolution: {integrity: sha512-ZLv/JdUfkvOy9eCnnBaGfiO+XimbjebAeO+MRQqD/B+FR1tnRN0tpKSJHRbE8sFfS6aqsXZ67TQjfwfsxULVbg==}
     peerDependencies:
       '@emnapi/core': ^1.7.1
       '@emnapi/runtime': ^1.7.1
@@ -2096,8 +2096,8 @@ packages:
     resolution: {integrity: sha512-S8KoZgRZN+a5rNwqTxlZZePjT/4cnm0ROV70LedRHZ0p8u9fRID0hJUZQpkKLzro8LfmC8sx23bY6tVNxv8pQA==}
     engines: {node: '>= 18.0.0'}
 
-  firebase-tools@15.22.1:
-    resolution: {integrity: sha512-Dx3Pz2h7c2C50tgolw9YrOh3LqPuoDuOG7XWIwhf9fAgBDWevQdcDBEysnIbNqhRcgIM1zyX2z+N+zkJGoj2Kg==}
+  firebase-tools@15.22.2:
+    resolution: {integrity: sha512-ER/XX+67vdduF7vIZLW8xuXA6s6BlHxda7ZP58Gv7AQVWL+I8izJrBDbirZx9hvATHiQCfZUbfuX4xtf3hJOzg==}
     engines: {node: '>=20.0.0 || >=22.0.0 || >=24.0.0'}
     hasBin: true
 
@@ -3977,8 +3977,8 @@ packages:
   zod@3.25.48:
     resolution: {integrity: sha512-0X1mz8FtgEIvaxGjdIImYpZEaZMrund9pGXm3M6vM7Reba0e2eI71KPjSCGXBfwKDPwPoywf6waUKc3/tFvX2Q==}
 
-  zod@3.25.76:
-    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -4806,7 +4806,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@modelcontextprotocol/sdk@1.29.0(zod@3.25.76)':
+  '@modelcontextprotocol/sdk@1.29.0(zod@4.4.3)':
     dependencies:
       '@hono/node-server': 1.19.14(hono@4.12.27)
       ajv: 8.20.0
@@ -4823,12 +4823,12 @@ snapshots:
       json-schema-typed: 8.0.2
       pkce-challenge: 5.0.1
       raw-body: 3.0.2
-      zod: 3.25.76
-      zod-to-json-schema: 3.25.2(zod@3.25.76)
+      zod: 4.4.3
+      zod-to-json-schema: 3.25.2(zod@4.4.3)
     transitivePeerDependencies:
       - supports-color
 
-  '@napi-rs/wasm-runtime@1.1.5(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)':
+  '@napi-rs/wasm-runtime@1.1.6(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)':
     dependencies:
       '@emnapi/core': 1.11.1
       '@emnapi/runtime': 1.11.1
@@ -4984,7 +4984,7 @@ snapshots:
     dependencies:
       '@emnapi/core': 1.11.1
       '@emnapi/runtime': 1.11.1
-      '@napi-rs/wasm-runtime': 1.1.5(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)
+      '@napi-rs/wasm-runtime': 1.1.6(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)
     optional: true
 
   '@rolldown/binding-win32-arm64-msvc@1.1.2':
@@ -6044,7 +6044,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  firebase-tools@15.22.1(@types/node@26.0.0):
+  firebase-tools@15.22.2(@types/node@26.0.0):
     dependencies:
       '@apphosting/common': 0.0.8
       '@electric-sql/pglite': 0.3.16
@@ -6052,7 +6052,7 @@ snapshots:
       '@google-cloud/cloud-sql-connector': 1.11.1
       '@google-cloud/pubsub': 5.3.1
       '@inquirer/prompts': 7.10.1(@types/node@26.0.0)
-      '@modelcontextprotocol/sdk': 1.29.0(zod@3.25.76)
+      '@modelcontextprotocol/sdk': 1.29.0(zod@4.4.3)
       abort-controller: 3.0.0
       ajv: 8.20.0
       ajv-formats: 3.0.1(ajv@8.20.0)
@@ -6114,8 +6114,7 @@ snapshots:
       winston-transport: 4.9.0
       ws: 7.5.11
       yaml: 2.9.0
-      zod: 3.25.76
-      zod-to-json-schema: 3.25.2(zod@3.25.76)
+      zod: 4.4.3
     transitivePeerDependencies:
       - '@cfworker/json-schema'
       - '@types/node'
@@ -8425,12 +8424,12 @@ snapshots:
       compress-commons: 6.0.2
       readable-stream: 4.7.0
 
-  zod-to-json-schema@3.25.2(zod@3.25.76):
+  zod-to-json-schema@3.25.2(zod@4.4.3):
     dependencies:
-      zod: 3.25.76
+      zod: 4.4.3
 
   zod@3.25.48: {}
 
-  zod@3.25.76: {}
+  zod@4.4.3: {}
 
   zwitch@2.0.4: {}
