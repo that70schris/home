@@ -61,7 +61,6 @@ main {
 
     .right {
       border-left: 1px solid #aaa;
-      padding: 10px 0;
       width: 100%;
 
       .experience {
