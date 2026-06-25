@@ -9,6 +9,14 @@ body {
   width: 816px;
 }
 
+ul {
+  padding: 10px 0 10px 30px;
+}
+
+li {
+  padding: 1px;
+}
+
 body > header {
   border-bottom: 2px solid black;
   border-top: 5px solid black;
@@ -61,6 +69,7 @@ main {
 
     .right {
       border-left: 1px solid #aaa;
+      padding: 10px 0;
       width: 100%;
 
       .experience {
@@ -74,6 +83,10 @@ main {
 
           h1 {
             font-size: 30px;
+
+            small {
+              font-weight: normal;
+            }
           }
 
           span {
