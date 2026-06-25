@@ -1,0 +1,69 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 816px;
+}
+
+body > header {
+  border-bottom: 2px solid black;
+  border-top: 5px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  #name {
+  }
+
+  #info {
+    background: #eee;
+    border: 1px solid #e1e1e1;
+    padding: 12px 20px;
+    width: 333px;
+
+    .row {
+      display: flex;
+      padding: 4px 0px;
+
+      label {
+        width: 100px;
+      }
+    }
+  }
+}
+
+main {
+  section {
+    display: flex;
+    margin-bottom: 40px;
+
+    .left {
+      font-style: italic;
+      padding: 20px;
+      text-align: right;
+      text-transform: uppercase;
+      width: 120px;
+    }
+
+    .right {
+      border-left: 1px solid gray;
+      width: 100%;
+
+      .experience {
+        padding: 20px;
+
+        header {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+      .experience:not(:last-child) {
+        border-bottom: 1px gray dashed;
+      }
+    }
+  }
+}

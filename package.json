@@ -18,10 +18,5 @@
   },
   "scripts": {
     "prepare": "husky"
-  },
-  "bit": {
-    "env": {},
-    "componentsDefaultDirectory": "components/{name}",
-    "packageManager": "npm"
   }
 }
