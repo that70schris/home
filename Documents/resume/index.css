@@ -63,7 +63,7 @@ main {
 
   section {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
     .left {
       font-style: italic;
