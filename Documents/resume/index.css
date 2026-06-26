@@ -10,11 +10,17 @@ body {
 }
 
 ul {
-  padding: 10px 0 10px 30px;
+  list-style-type: none;
+  padding: 10px 0 10px 20px;
 }
 
 li {
   padding: 1px;
+  text-indent: -10px;
+
+  &:before {
+    content: '- ';
+  }
 }
 
 body > header {
