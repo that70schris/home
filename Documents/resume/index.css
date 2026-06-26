@@ -55,6 +55,11 @@ body > header {
 }
 
 main {
+  > header {
+    color: #444;
+    margin: 20px 0;
+  }
+
   h3 {
     color: #666;
     font-weight: 600;
