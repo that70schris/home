@@ -212,4 +212,5 @@
   "js/ts.updateImportsOnFileMove.enabled": "always",
   "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilotcli:claude-haiku-4.5",
+  "breadcrumbs.enabled": false,
 }

@@ -15,7 +15,7 @@ ul {
 }
 
 li {
-  padding: 1px;
+  padding: 2px;
   text-indent: -10px;
 
   &:before {
@@ -41,7 +41,7 @@ body > header {
     background: #eee;
     border: 1px solid #e1e1e1;
     padding: 12px 20px;
-    width: 333px;
+    width: 300px;
 
     .row {
       display: flex;
