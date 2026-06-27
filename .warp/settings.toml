@@ -97,6 +97,9 @@ line_height_ratio = 1.100000023841858
 font_weight = "normal"
 use_thin_strokes = "never"
 
+[appearance.icon]
+show_dock_icon = false
+
 [warpify]
 
 [warpify.ssh]
@@ -111,6 +114,7 @@ added_subshell_commands = []
 [general]
 show_warning_before_quitting = false
 quit_on_last_window_closed = true
+preserve_input_focus_on_block_selection = true
 
 [notifications]
 toast_duration_secs = 8
@@ -127,8 +131,8 @@ play_notification_sound = true
 [global_hotkey]
 
 [global_hotkey.toggle_all_windows]
-enabled = false
-keybinding = "shift-cmd-:"
+enabled = true
+keybinding = "ctrl-alt-shift-cmd->"
 
 [global_hotkey.dedicated_window]
 enabled = false
