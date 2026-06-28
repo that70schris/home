@@ -25,6 +25,7 @@ export class _Cluster {
     public args: ClusterArgs,
     public opts?: ResourceOptions,
   ) {
+    this.tailscale
     this.twingate
     this.gateway_definitions
     this.certificate
@@ -394,6 +395,23 @@ export class _Cluster {
           network: Twingate.network,
           accessToken: twingate.tokens.accessToken,
           refreshToken: twingate.tokens.refreshToken,
+        },
+      },
+    })
+  }
+
+  @once
+  get tailscale() {
+    const tailscale = new Config('tailscale')
+    return new Chart('tailscale', {
+      chart: 'tailscale-operator',
+      repositoryOpts: {
+        repo: 'https://pkgs.tailscale.com/helmcharts',
+      },
+      values: {
+        oauth: {
+          clientId: tailscale.get('oauthClientId'),
+          clientSecret: tailscale.get('identityToken'),
         },
       },
     })
