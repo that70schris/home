@@ -24,24 +24,24 @@
           >
         </div>
         <div class="row">
-          <label>Address:</label>
-          <span>1 Capron Street<br />Rochester, NY 14607</span>
+          <label>Location:</label>
+          <span>Rochester, NY</span>
         </div>
       </div>
     </header>
     <main>
       <header>
-        Versatile Software and Infrastructure Engineer with over a
-        decade of experience bridging the gap between application
-        development and cloud infrastructure. Proven track record
-        of migrating legacy systems to Kubernetes, building
-        analytics and infrastructure from scratch, and
+        Versatile Software and Infrastructure Engineer with over
+        15 years of experience bridging the gap between
+        application development and cloud infrastructure. Proven
+        track record of migrating legacy systems to Kubernetes,
+        building analytics and infrastructure from scratch, and
         implementing robust CI/CD pipelines. Expert in
         Infrastructure as Code (IaC) and modern containerized
         ecosystems.
       </header>
 
-      <section>
+      <section class="skills">
         <div class="left">Skills</div>
         <div class="right">
           <div class="experience">
@@ -57,9 +57,8 @@
                 Tag Manager (GTM)
               </li>
               <li>
-                <b>Languages & Frameworks:</b> Node.js,
-                TypeScript, Angular, JavaScript, MySQL, Drupal,
-                WordPress
+                <b>Languages & Frameworks:</b> Node, TypeScript,
+                Angular, JavaScript, MySQL, WordPress
               </li>
               <li>
                 <b>Tools:</b> GitHub Actions, Git, Builder.io
@@ -81,44 +80,40 @@
             <ul>
               <li>
                 Built greenfield infrastructure for new lending
-                products from scratch, applying enterprise
-                architectural patterns.
+                products.
               </li>
               <li>
-                Co-administered cross cloud VPN from existing
-                infrastructure in Azure to new resources in GCP.
+                Developed cross cloud VPN from Azure to new
+                resources in GCP.
               </li>
               <li>
-                Containerized legacy WordPress site to run on
-                Kubernetes infrastructure, successfully
-                facilitating the migration of an outdated Drupal
-                website.
+                Containerized legacy WordPress site on Kubernetes
+                infrastructure, facilitating the migration of an
+                Drupal website.
               </li>
               <li>
-                Co-developed auxiliary marketing website utilizing
-                Angular integrated with the
+                Developed marketing website utilizing Angular
+                integrated with the
                 <a href="https://builder.io">Builder.io</a>
-                content management system
+                (CMS)
               </li>
               <li>
-                Owned tracking infrastructure development by
-                configuring and maintaining Segment, GTM,
-                Amplitude, and direct integrations.
+                Owned analytics integration development including
+                reusable instramentation code for both Angular and
+                Wordpress
               </li>
               <li>
                 Developed server-side A/B test framework for page
-                redirects, backed by Amplitude Experiments.
+                redirects using Cloudflare Workers, backed by
+                Amplitude Experiments.
               </li>
               <li>
-                Optimized site performance and speed using
-                advanced caching techniques and lazy-loading
-                scripts.
+                Optimized site performance using advanced caching
+                techniques and lazy-loading scripts.
               </li>
-
               <li>
                 Enforced code quality standards by introducing
-                strict linters and automated testing pipelines
-                into a unified monorepo.
+                strict linters and automated testing.
               </li>
             </ul>
           </div>
@@ -132,36 +127,30 @@
             <h2>Software Engineer</h2>
             <ul>
               <li>
-                Architected infrastructure evolution, successfully
-                migrating deployments from local machines to Azure
-                VMs, and ultimately to GitHub Actions deploying to
-                GKE Kubernetes provisioned via Pulumi TypeScript
-                code.
+                Architected new infrastructure in GKE Kubernetes
+                provisioned with Pulumi TypeScript.
+              </li>
+              <li>
+                Automated deployment of kubernetes containers
+                using GitHub Actions.
               </li>
               <li>
                 Developed full Angular frontend application
-                dedicated to user and loan administration backed
-                by python API.
+                dedicated to user and loan administration.
               </li>
               <li>
-                Implemented full-stack observability by deploying
-                Datadog for comprehensive logging, tracing, and
-                system monitoring.
+                Implemented Datadog full-stack observability for
+                logging, tracing, and system monitoring.
               </li>
               <li>
-                Drove user analytics visibility across the
-                platform through strategic implementations of
-                Segment and Amplitude.
+                Drove user analytics visibility through
+                integrations of Segment and Amplitude.
               </li>
               <li>
-                Supported team growth by participating in
-                technical interviews to scale the frontend and
-                backend engineering teams.
+                Supported team hiring by performing technical
+                interviews.
               </li>
-              <li>
-                Executed full website redesign to modernize the
-                user experience.
-              </li>
+              <li>Implemented full website redesign.</li>
             </ul>
           </div>
           <div class="experience">
@@ -173,23 +162,21 @@
             <ul>
               <li>
                 Collaborated on full-scale website rewrite,
-                transitioning the frontend from legacy
+                migrating the frontend from legacy
                 Java/Tapestry/jQuery to a modern, single-page
-                application using Angular and Node.js.
+                application using AngularJS and Node.js.
               </li>
               <li>
-                Led frontend analytics standardization effort to
-                unify event schemas across multiple product lines.
+                Led frontend analytics schemas standardization
+                across multiple product lines.
               </li>
               <li>
                 Developed reusable, single-point-of-entry tracking
-                application to ingest product events and
-                seamlessly distribute them to downstream services.
+                to ingest product events in downstream services.
               </li>
               <li>
                 Partnered with backend data teams to formulate
-                final data schemas, ensuring data- uninterrupted
-                production launches.
+                final data schemas
               </li>
             </ul>
           </div>
@@ -204,17 +191,15 @@
             <ul>
               <li>
                 Engineered features and resolved bugs for
-                high-traffic web properties built on the Drupal
-                platform.
+                high-traffic web sites built in Drupal platform.
               </li>
               <li>
-                Optimized relational database performance and
-                resolved backend data issues using MySQL.
+                Optimized relational database performance to
+                resolve data issues using MySQL.
               </li>
               <li>
-                Built interactive features including custom
-                galleries and real-time polls for high-profile
-                live events like the Oscars.
+                Built interactive features for custom galleries
+                and polls for live events like the Oscars.
               </li>
               <li>
                 Enhanced blogger platform by building a new user
@@ -224,6 +209,8 @@
           </div>
         </div>
       </section>
+
+      <div style="break-after: page" />
 
       <section>
         <div class="left">Projects</div>
@@ -235,12 +222,12 @@
                 >github.com/that70schris/home/_</a
               >
             </header>
-            Recently implemented a homelab Kubernetes setup to run
-            a local Homebridge and Plex media server. I chose to
-            use Talos Linux on a Raspberry Pi provisioned by
-            Pulumi for a highly declarative setup. For fun I used
-            the newer Kubernetes Gateway API in place of an
-            Ingress to route traffic to the different services.
+            Implemented a homelab Kubernetes setup to run a local
+            Homebridge and Plex media server. I chose to use Talos
+            Linux on a Raspberry Pi provisioned by Pulumi for a
+            highly declarative setup. For fun I used the newer
+            Kubernetes Gateway API in place of an Ingress to route
+            traffic to the different services.
           </div>
           <div class="experience">
             <header>
@@ -262,10 +249,9 @@
           <div class="experience">
             <header>
               <h1>Rochester Institute of Technology</h1>
-              <span>2004 - 2009</span>
+              <!-- <span>2004 - 2009</span> -->
             </header>
             <h2>BS in Information Technology</h2>
-            Activities and Societies: Intramural Hockey
           </div>
         </div>
       </section>
