@@ -98,7 +98,7 @@ font_weight = "normal"
 use_thin_strokes = "never"
 
 [appearance.icon]
-show_dock_icon = false
+show_dock_icon = true
 
 [warpify]
 
