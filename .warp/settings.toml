@@ -131,7 +131,7 @@ play_notification_sound = true
 [global_hotkey]
 
 [global_hotkey.toggle_all_windows]
-enabled = true
+enabled = false
 keybinding = "ctrl-alt-shift-cmd->"
 
 [global_hotkey.dedicated_window]
