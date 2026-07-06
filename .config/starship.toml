@@ -133,6 +133,11 @@ $untracked\
   stashed = '[\$](yellow) '
   untracked = '[▪︎](black) '
 
+[helm]
+  format = ' $symbol[$context]($style)'
+  style = '#09c1d1'
+  symbol = '󰠳 '
+
 [hostname]
   format = '@[$hostname]($style)'
   style = 'green'

@@ -21,7 +21,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>7778.179</string>
+	<string>7871.47</string>
 	<key>CrAppModeIsAdhocSigned</key>
 	<true/>
 	<key>CrAppModeShortcutID</key>
@@ -35,17 +35,17 @@
 	<key>CrBundleIdentifier</key>
 	<string>com.google.Chrome</string>
 	<key>CrBundleVersion</key>
-	<string>148.0.7778.179</string>
+	<string>150.0.7871.47</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTSDKBuild</key>
-	<string>25C58</string>
+	<string>25F70</string>
 	<key>DTSDKName</key>
-	<string>macosx26.2</string>
+	<string>macosx26.5</string>
 	<key>DTXcode</key>
-	<string>2630</string>
+	<string>2650</string>
 	<key>DTXcodeBuild</key>
-	<string>17C529</string>
+	<string>17F42</string>
 	<key>LSEnvironment</key>
 	<dict>
 		<key>MallocNanoZone</key>
