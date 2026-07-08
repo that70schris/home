@@ -25,6 +25,9 @@
 			},
 			{
 				"filePath": "/Users/chris/jitsu/main/helm/.kube/config"
+			},
+			{
+				"filePath": "/Users/chris/jitsu/.kube/config"
 			}
 		],
 		"updateChannel": "latest"

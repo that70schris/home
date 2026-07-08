@@ -33,10 +33,16 @@ brew "kubernetes-cli"
 brew "python@3.14"
 # Mac App Store command-line interface
 brew "mas"
+# Run a Kubernetes cluster locally
+brew "minikube"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Fast, disk space efficient package manager
 brew "pnpm"
+# Replace port numbers with stable, named local URLs for humans and agents
+brew "portless"
+# Object-relational database system
+brew "postgresql@18", link: true
 # Cloud native development platform
 brew "pulumi"
 # Interpreted, interactive, object-oriented programming language
@@ -45,6 +51,8 @@ brew "python@3.13"
 brew "ruby", link: false
 # Safe, concurrent, practical language
 brew "rust"
+# Easiest, most secure way to use WireGuard and 2FA
+brew "tailscale"
 # CLI for out-of-band management of Kubernetes nodes created by Talos
 brew "talosctl"
 # Friendly and fast tool for sending HTTP requests
@@ -55,10 +63,14 @@ brew "zsh"
 brew "netbirdio/tap/netbird", trusted: true
 # Fast TypeScript runtime and package manager that augments Node
 brew "nubjs/tap/nub", trusted: true
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
 # Use your phone as a high-quality webcam with image tuning controls
 cask "camo-studio"
 # Open links in any browser
 cask "choosy"
+# OpenAI's Codex desktop app for managing coding agents
+cask "codex-app"
 # Track and budget money
 cask "copilot-money"
 # API documentation browser and code snippet manager
@@ -89,6 +101,8 @@ cask "kiro-cli"
 cask "leader-key"
 # Kubernetes IDE
 cask "lens"
+# App to manage software development and track bugs
+cask "linear"
 # Software for Logitech devices
 cask "logi-options+"
 # Support for Logitech G gear
@@ -97,10 +111,14 @@ cask "logitech-g-hub"
 cask "netbirdio/tap/netbird-ui", trusted: true
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
+# App to write, plan, collaborate, and get organised
+cask "notion"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Home media player
 cask "plex"
+# App wrapper for Postgres
+cask "postgres-app"
 # HTTP debugging proxy
 cask "proxyman"
 # Companion app for Flipper Zero devices
@@ -115,6 +133,8 @@ cask "slack"
 cask "steam"
 # Native GUI tool for relational databases
 cask "tableplus"
+# Mesh VPN based on WireGuard
+cask "tailscale-app"
 # Zero trust network access platform
 cask "twingate"
 # OpenVPN client with AppleScript support
