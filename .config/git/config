@@ -55,3 +55,6 @@
 
 [includeIf "gitdir:~/"]
   path = ./config.chris
+
+[includeIf "gitdir:~/jitsu/"]
+  path = ./jitsu/.gitconfig

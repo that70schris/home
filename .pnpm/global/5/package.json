@@ -1,0 +1,6 @@
+{
+	"dependencies": {
+		"@pnpm/exe": "file:/opt/homebrew/bin",
+		"jitsu-cli": "^2.14.0"
+	}
+}
