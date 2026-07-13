@@ -27,7 +27,7 @@
 				"filePath": "/Users/chris/jitsu/main/helm/.kube/config"
 			},
 			{
-				"filePath": "/Users/chris/jitsu/.kube/config"
+				"filePath": "/Users/chris/jitsu/jitsu-cloud-infra/.kube/config"
 			}
 		],
 		"updateChannel": "latest"

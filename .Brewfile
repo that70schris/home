@@ -1,4 +1,5 @@
 tap "alecharmon/tap"
+tap "hashicorp/tap"
 tap "netbirdio/tap"
 tap "nubjs/tap"
 # Pack, ship and run any application as a lightweight container
@@ -29,6 +30,8 @@ brew "k9s"
 brew "kubecolor"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
+# Kubernetes controller and tool for one-way encrypted Secrets
+brew "kubeseal"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.14"
 # Mac App Store command-line interface
@@ -57,8 +60,12 @@ brew "tailscale"
 brew "talosctl"
 # Friendly and fast tool for sending HTTP requests
 brew "xh"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Terraform
+brew "hashicorp/tap/terraform", trusted: true
 # Netbird project.
 brew "netbirdio/tap/netbird", trusted: true
 # Fast TypeScript runtime and package manager that augments Node
@@ -69,6 +76,10 @@ cask "1password"
 cask "camo-studio"
 # Open links in any browser
 cask "choosy"
+# Anthropic's official Claude AI desktop app
+cask "claude"
+# Terminal-based AI coding assistant
+cask "claude-code"
 # OpenAI's Codex desktop app for managing coding agents
 cask "codex-app"
 # Track and budget money
