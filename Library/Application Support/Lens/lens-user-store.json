@@ -24,10 +24,10 @@
 				"filePath": "/Users/chris/_/.kube/config"
 			},
 			{
-				"filePath": "/Users/chris/jitsu/main/helm/.kube/config"
+				"filePath": "/Users/chris/jitsu/jitsu-cloud-infra/.kube/config"
 			},
 			{
-				"filePath": "/Users/chris/jitsu/jitsu-cloud-infra/.kube/config"
+				"filePath": "/Users/chris/jitsu/main/helm/.kube/config"
 			}
 		],
 		"updateChannel": "latest"
