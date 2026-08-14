@@ -199,6 +199,7 @@
     "*.copilotmd": "vscode.markdown.preview.editor",
     "*.svg": "default",
   },
+  "workbench.experimental.modernUI": false,
   "workbench.iconTheme": "vscode-icons",
   "workbench.preferredDarkColorTheme": "arcade",
   "workbench.preferredLightColorTheme": "arcade-light",
@@ -210,7 +211,6 @@
   "yaml.maxItemsComputed": 99999,
   "yaml2json.yamlIndentationSpaces": 2,
   "js/ts.updateImportsOnFileMove.enabled": "always",
-  "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilotcli:claude-haiku-4.5",
   "breadcrumbs.enabled": false,
   "yaml.disableSchemaDetection": [
