@@ -26,14 +26,14 @@ export default defineConfig([
         no_unsafe_function_type: 0,
         no_unused_expressions: 0,
         no_unused_vars: 0,
-      }).reduce((result, [ key, value ]) => ({
+      }).reduce((result, [key, value]) => ({
         ...result,
         [`@typescript-eslint/${key}`]: value,
       }), {}),
 
       // turn all stylistic errors into warnings
       ...Object.entries(stylistic.configs.recommended.rules)
-        .reduce((result, [ key, value ]) => ({
+        .reduce((result, [key, value]) => ({
           ...result,
           [key]: ['warn'].concat(
             [].concat(value).slice(1),
@@ -42,17 +42,13 @@ export default defineConfig([
 
       // custom styles
       ...Object.entries({
-        array_bracket_newline: [ 1, 'consistent' ],
-        array_bracket_spacing: [ 1, 'always', {
-          objectsInArrays: false,
-          arraysInArrays: false,
-          singleValue: false,
-        }],
-        array_element_newline: [ 1, 'consistent' ],
-        brace_style: [ 1, '1tbs' ],
-        function_call_argument_newline: [ 1, 'consistent' ],
-        function_paren_newline: [ 1, 'consistent' ],
-        member_delimiter_style: [ 1, {
+        array_bracket_newline: [1, 'consistent'],
+        array_element_newline: [1, 'consistent'],
+        brace_style: [1, '1tbs'],
+        function_call_argument_newline: [1, 'consistent'],
+        function_paren_newline: [1, 'consistent'],
+        jsx_wrap_multilines: 0,
+        member_delimiter_style: [1, {
           multiline: {
             delimiter: 'none',
             requireLast: false,
@@ -64,25 +60,24 @@ export default defineConfig([
         }],
         multiline_ternary: 0,
         no_mixed_operators: 0,
-        no_multiple_empty_lines: [ 1, {
+        no_multiple_empty_lines: [1, {
           maxEOF: 0,
           max: 1,
         }],
-        object_curly_newline: [ 1, {
+        object_curly_newline: [1, {
           consistent: true,
           multiline: true,
         }],
-        operator_linebreak: [ 1, 'before', {
+        operator_linebreak: [1, 'before', {
           overrides: { '=': 'after' },
         }],
         padded_blocks: 0,
-        quotes: [ 1, 'single' ],
-        semi: [ 1, 'never', {
+        quotes: [1, 'single'],
+        semi: [1, 'never', {
           beforeStatementContinuationChars: 'never',
         }],
-        space_before_function_paren: [ 1, 'never' ],
         switch_colon_spacing: 1,
-      }).reduce((result, [ key, value ]) => ({
+      }).reduce((result, [key, value]) => ({
         ...result,
         [`@stylistic/${key}`]: value,
       }), {}),
@@ -96,7 +91,7 @@ export default defineConfig([
       no_case_declarations: 0,
       no_constructor_return: 1,
       no_duplicate_imports: 1,
-      no_empty: [ 1, {
+      no_empty: [1, {
         allowEmptyCatch: false,
       }],
       no_else_return: 1,
@@ -122,13 +117,13 @@ export default defineConfig([
       no_use_before_define: 1,
       no_useless_assignment: 1,
       no_var: 1,
-      one_var: [ 1, 'never' ],
+      one_var: [1, 'never'],
       prefer_arrow_callback: 1,
       prefer_template: 1,
       require_atomic_updates: 1,
       yoda: 1,
 
-    }).reduce((result, [ key, value ]) => ({
+    }).reduce((result, [key, value]) => ({
       ...result,
       [key.replace(/_/g, '-')]: value,
     }), {}),
