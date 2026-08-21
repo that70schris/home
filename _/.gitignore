@@ -2,3 +2,4 @@
 
 Pulumi.*
 node_modules/
+dist/
