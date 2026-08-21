@@ -5,6 +5,3 @@ allowBuilds:
   'protobufjs': true
   're2': true
   'sharp': true
-minimumReleaseAgeExclude:
-  - vite@8.1.0
-  - firebase-tools@15.22.2
