@@ -32,8 +32,6 @@ brew "kubecolor"
 brew "kubernetes-cli"
 # Kubernetes controller and tool for one-way encrypted Secrets
 brew "kubeseal"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.14"
 # Mac App Store command-line interface
 brew "mas"
 # Run a Kubernetes cluster locally
@@ -50,8 +48,10 @@ brew "postgresql@18", link: true
 brew "pulumi"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.13"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
 # Powerful, clean, object-oriented scripting language
-brew "ruby", link: false
+brew "ruby"
 # Safe, concurrent, practical language
 brew "rust"
 # Easiest, most secure way to use WireGuard and 2FA
@@ -130,6 +130,8 @@ cask "orbstack"
 cask "plex"
 # App wrapper for Postgres
 cask "postgres-app"
+# Collaboration platform for API development
+cask "postman"
 # HTTP debugging proxy
 cask "proxyman"
 # Companion app for Flipper Zero devices
@@ -138,6 +140,8 @@ cask "qflipper"
 cask "raspberry-pi-imager"
 # Control your tools with a few keystrokes
 cask "raycast"
+# Create desktop apps by chatting with AI
+cask "raycast-glaze"
 # Team communication and collaboration software
 cask "slack"
 # Video game digital distribution service
@@ -184,6 +188,7 @@ vscode "ezzak.current-path"
 vscode "formulahendry.code-runner"
 vscode "github.vscode-github-actions"
 vscode "hangxingliu.vscode-nginx-conf-hint"
+vscode "hashicorp.terraform"
 vscode "idleberg.applescript"
 vscode "idleberg.jxa"
 vscode "jock.svg"
