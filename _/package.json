@@ -17,7 +17,7 @@
     "globals": "latest",
     "json2toml": "latest",
     "lodash": "latest",
-    "typescript": "latest",
+    "typescript": "6",
     "yaml": "latest"
   }
 }
