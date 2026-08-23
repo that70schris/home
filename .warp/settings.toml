@@ -97,8 +97,8 @@ input_mode = "waterfall"
 [appearance.themes]
 system_theme = true
 selected_system_themes = {
-  dark = { custom = { name = "Arcade Dark", path = "/Users/chris/.warp/themes/arcade_dark.yml" } },
-  light = { custom = { name = "Arcade Light", path = "/Users/chris/.warp/themes/standard/arcade_light.yml" } },
+  dark = { custom = { name = "Arcade Dark", path = "arcade_dark.yml" } },
+  light = { custom = { name = "Arcade Light", path = "arcade_light.yml" } },
 }
 
 [appearance.vertical_tabs]
