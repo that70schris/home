@@ -4,13 +4,13 @@ background: '#eee'
 foreground: '#111'
 terminal_colors:
   bright:
-    black: '#aaa'
+    black: '#999'
     blue: '#00f'
     cyan: '#069'
     green: '#075'
     magenta: '#63b'
     red: '#f11'
-    white: '#444'
+    white: '#000'
     yellow: '#a90'
   normal:
     black: '#777'
