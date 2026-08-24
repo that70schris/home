@@ -226,7 +226,7 @@ export class _Cluster {
   @once
   get gateway_definitions() {
     return new ConfigFile('gateway-definitions', {
-      file: 'https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.3.0/standard-install.yaml',
+      file: 'https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.5.1/standard-install.yaml',
     })
   }
 
