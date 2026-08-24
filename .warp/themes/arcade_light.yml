@@ -18,6 +18,6 @@ terminal_colors:
     cyan: '#09a'
     green: '#3a7'
     magenta: '#a7f'
-    red: '#f04'
+    red: '#f44'
     white: '#111'
     yellow: '#cb3'

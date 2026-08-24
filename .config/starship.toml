@@ -126,7 +126,7 @@ $untracked\
   disabled = false
   format = ' $symbol[$context(/$namespace)]($style)'
   style = '#09c1d1'
-  symbol = '󱃾 '
+  symbol = '󰠳 '
 
 [lua]
   symbol = ' '
