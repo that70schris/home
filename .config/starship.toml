@@ -19,7 +19,6 @@ $terraform\
 $gcloud\
 $kubernetes\
 $helm\
-$sudo\
 $shell\
 $os\
 """
@@ -34,7 +33,7 @@ $os\
 [$read_only]($read_only_style) \
 """
   repo_root_style = 'blue'
-  style = '#cccccc'
+  style = 'white'
   truncate_to_repo = false
   truncation_length = 5
 
@@ -44,7 +43,7 @@ $os\
   symbol = ' '
 
 [fill]
-  style = '#999999'
+  style = '#888888'
   symbol = '⎯' #u23af
 
   # consistent:
