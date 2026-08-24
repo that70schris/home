@@ -64,9 +64,9 @@ $os\
   # symbol = '－' #uFF0D
 
 [gcloud]
-  format = '( $symbol [$project]($style))'
+  format = '( $symbol[$project]($style))'
   style = '#1a73e8'
-  symbol = '☁️ '
+  symbol = ' '
 
 [git_branch]
   format = '[\($branch(:$remote_branch)\)]($style) '
@@ -126,7 +126,7 @@ $untracked\
   disabled = false
   format = ' $symbol[$context(/$namespace)]($style)'
   style = '#09c1d1'
-  symbol = '󰠳 '
+  symbol = '󱃾 '
 
 [lua]
   symbol = ' '
