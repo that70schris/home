@@ -13,6 +13,12 @@ writeFileSync(
       virtual_hid_keyboard: {
         keyboard_type_v2: 'ansi',
       },
+      fn_function_keys: [
+        {
+          from: { key_code: 'f6' },
+          to: [{ key_code: 'f6' }],
+        },
+      ],
       complex_modifications: {
         parameters: {
           'basic.simultaneous_threshold_milliseconds': 50,
