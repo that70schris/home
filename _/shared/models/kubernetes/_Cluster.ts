@@ -251,24 +251,6 @@ export class _Cluster {
 
     })
 
-    // const server = new _CustomResource('server-tls', {
-    //   apiVersion: 'cert-manager.io/v1',
-    //   kind: 'Certificate',
-    //   metadata: {
-    //     name: 'server-tls',
-    //   },
-    //   spec: {
-    //     secretName: 'server-tls',
-    //     dnsNames: [
-    //       'ngf-nginx-gateway-fabric.default.svc',
-    //     ],
-    //     issuerRef: {
-    //       kind: this.private.kind,
-    //       name: this.private.metadata.name,
-    //     },
-    //   },
-    // })
-
     return new Chart('ngf', {
       chart: 'oci://ghcr.io/nginx/charts/nginx-gateway-fabric',
       values: {
@@ -278,7 +260,6 @@ export class _Cluster {
       dependsOn: [
         this.gateway_definitions,
         this.metallb,
-        // server,
         agent,
       ],
     })
