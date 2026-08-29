@@ -8,16 +8,50 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app</string>
+			<string>/Users/chris/Applications/Chrome Apps.localized/Google Meet.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>modifierKeys == "56"</string>
+		<string>URL CONTAINS "meet.google.com"</string>
 		<key>title</key>
-		<string>Safari</string>
+		<string>Meet</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Users/chris/Applications/Chrome Apps.localized/YouTube.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "youtube.com"</string>
+		<key>title</key>
+		<string>Youtube</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Users/chris/Applications/Chrome Apps.localized/Facebook.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "facebook.com"</string>
+		<key>title</key>
+		<string>Facebook</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
@@ -60,57 +94,6 @@
 		<string>URL CONTAINS "jitsu"</string>
 		<key>title</key>
 		<string>Jitsu</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Users/chris/Applications/Chrome Apps.localized/YouTube.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "youtube.com"</string>
-		<key>title</key>
-		<string>Youtube</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Users/chris/Applications/Chrome Apps.localized/Google Meet.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "meet.google.com"</string>
-		<key>title</key>
-		<string>Meet</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Users/chris/Applications/Chrome Apps.localized/Facebook.app</string>
-			<key>type</key>
-			<string>ChoosyBrowser</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "facebook.com"</string>
-		<key>title</key>
-		<string>Facebook</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
