@@ -8,6 +8,48 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
+			<string>/Applications/Google Chrome.app</string>
+			<key>profileName</key>
+			<string>Default</string>
+			<key>supportPath</key>
+			<string>/Users/chris/Library/Application Support/Google/Chrome</string>
+			<key>type</key>
+			<string>ChoosyChromeProfileMode</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>sourceApp == "/System/Applications/Messages.app"</string>
+		<key>title</key>
+		<string>Messages</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Applications/Google Chrome.app</string>
+			<key>profileName</key>
+			<string>Default</string>
+			<key>supportPath</key>
+			<string>/Users/chris/Library/Application Support/Google/Chrome</string>
+			<key>type</key>
+			<string>ChoosyChromeProfileMode</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "amazon.com"</string>
+		<key>title</key>
+		<string>Amazon</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
 			<string>/Users/chris/Applications/Facebook.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
@@ -52,27 +94,6 @@
 		<string>URL CONTAINS "meet.google.com"</string>
 		<key>title</key>
 		<string>Meet</string>
-	</dict>
-	<dict>
-		<key>behaviour</key>
-		<integer>6</integer>
-		<key>behaviourArgument</key>
-		<dict>
-			<key>path</key>
-			<string>/Applications/Google Chrome.app</string>
-			<key>profileName</key>
-			<string>Default</string>
-			<key>supportPath</key>
-			<string>/Users/chris/Library/Application Support/Google/Chrome</string>
-			<key>type</key>
-			<string>ChoosyChromeProfileMode</string>
-		</dict>
-		<key>enabled</key>
-		<true/>
-		<key>predicate</key>
-		<string>URL CONTAINS "that70schris" OR sourceApp == "/System/Applications/Messages.app"</string>
-		<key>title</key>
-		<string>MX</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
