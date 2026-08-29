@@ -25,6 +25,48 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
+			<string>/Applications/Google Chrome.app</string>
+			<key>profileName</key>
+			<string>Default</string>
+			<key>supportPath</key>
+			<string>/Users/chris/Library/Application Support/Google/Chrome</string>
+			<key>type</key>
+			<string>ChoosyChromeProfileMode</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "that70schris" OR sourceApp == "/System/Applications/Messages.app"</string>
+		<key>title</key>
+		<string>MX</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Applications/Google Chrome.app</string>
+			<key>profileName</key>
+			<string>Profile 2</string>
+			<key>supportPath</key>
+			<string>/Users/chris/Library/Application Support/Google/Chrome</string>
+			<key>type</key>
+			<string>ChoosyChromeProfileMode</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "jitsu"</string>
+		<key>title</key>
+		<string>Jitsu</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
 			<string>/Users/chris/Applications/Chrome Apps.localized/YouTube.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
@@ -35,6 +77,40 @@
 		<string>URL CONTAINS "youtube.com"</string>
 		<key>title</key>
 		<string>Youtube</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Users/chris/Applications/Chrome Apps.localized/Google Meet.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "meet.google.com"</string>
+		<key>title</key>
+		<string>Meet</string>
+	</dict>
+	<dict>
+		<key>behaviour</key>
+		<integer>6</integer>
+		<key>behaviourArgument</key>
+		<dict>
+			<key>path</key>
+			<string>/Users/chris/Applications/Chrome Apps.localized/Facebook.app</string>
+			<key>type</key>
+			<string>ChoosyBrowser</string>
+		</dict>
+		<key>enabled</key>
+		<true/>
+		<key>predicate</key>
+		<string>URL CONTAINS "facebook.com"</string>
+		<key>title</key>
+		<string>Facebook</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
