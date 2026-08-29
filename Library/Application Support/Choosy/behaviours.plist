@@ -8,7 +8,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/chris/Applications/Chrome Apps.localized/Facebook.app</string>
+			<string>/Users/chris/Applications/Facebook.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
@@ -25,7 +25,7 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/chris/Applications/Chrome Apps.localized/YouTube.app</string>
+			<string>/Users/chris/Applications/YouTube.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
