@@ -8,16 +8,16 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/chris/Applications/Chrome Apps.localized/Google Meet.app</string>
+			<string>/Users/chris/Applications/Chrome Apps.localized/Facebook.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS "meet.google.com"</string>
+		<string>URL CONTAINS "facebook.com"</string>
 		<key>title</key>
-		<string>Meet</string>
+		<string>Facebook</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
@@ -42,16 +42,16 @@
 		<key>behaviourArgument</key>
 		<dict>
 			<key>path</key>
-			<string>/Users/chris/Applications/Chrome Apps.localized/Facebook.app</string>
+			<string>/Users/chris/Applications/Chrome Apps.localized/Google Meet.app</string>
 			<key>type</key>
 			<string>ChoosyBrowser</string>
 		</dict>
 		<key>enabled</key>
 		<true/>
 		<key>predicate</key>
-		<string>URL CONTAINS "facebook.com"</string>
+		<string>URL CONTAINS "meet.google.com"</string>
 		<key>title</key>
-		<string>Facebook</string>
+		<string>Meet</string>
 	</dict>
 	<dict>
 		<key>behaviour</key>
