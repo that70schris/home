@@ -1,6 +1,6 @@
 {
   "files.associations": {
-    ".gitignore.*": "ignore",
+    "*ignore.*": "ignore",
     ".gitmodules.*": "gitconfig"
   },
   "github-actions.workflows.pinned.workflows": [

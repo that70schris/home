@@ -1,6 +1,6 @@
 hs.allowAppleScript(true)
-hs.loadSpoon('enter')
 hs.loadSpoon('finder')
+hs.loadSpoon('enter')
 hs.loadSpoon('hide')
 
 hs.console.clearConsole()
@@ -39,24 +39,3 @@ hs.eventtap.new({
     e:getFlags().cmd,
     '')
 end):start()
-
--- with Raycast Hyper key:
--- flagsChanged	cmd	true	true
--- flagsChanged	cmd	nil	nil
--- keyDown	escape	nil	nil
--- keyUp	escape	nil	nil
-
--- flagsChanged	cmd	true	nil
--- flagsChanged	cmd	true	true
--- flagsChanged	cmd	nil	nil
--- keyDown	escape	nil	nil
--- keyUp	escape	nil	nil
--- flagsChanged	cmd	nil	nil
-
--- without Raycast Hyper key:
--- flagsChanged	capslock	nil	nil	nil	{}
-
--- flagsChanged	rightcmd	nil	nil	nil	{}
--- flagsChanged	cmd	true	nil	nil	{}
--- flagsChanged	capslock	true	nil	nil	{}
--- flagsChanged	cmd	nil	nil	nil	{}
