@@ -2,7 +2,6 @@
   "recommendations": [
     "bbenoist.Nix",
     "bennycode.sort-everything",
-    "BriteSnow.vscode-toggle-quotes",
     "dbaeumer.vscode-eslint",
     "deerawan.vscode-dash",
     "dnicolson.binary-plist",
@@ -18,7 +17,6 @@
     "johnreemar.vscode-qwik-snippets",
     "ms-azuretools.vscode-containers",
     "ms-azuretools.vscode-docker",
-    "ms-vscode.makefile-tools",
     "naumovs.color-highlight",
     "pustelto.bracketeer",
     "redhat.vscode-yaml",
@@ -32,6 +30,6 @@
     "that70schris.arcade",
     "tonka3000.raycast",
     "unifiedjs.vscode-mdx",
-    "vscode-icons-team.vscode-icons",
+    "vscode-icons-team.vscode-icons"
   ]
 }
