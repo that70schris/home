@@ -5,11 +5,11 @@
 	<key>CFBundleIconFile</key>
 	<string>ApplicationIcon</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.Safari.WebApp.9A5CE098-D8BB-49CB-874A-6F731F6B5000</string>
+	<string>com.apple.Safari.WebApp.081FA7AF-182B-4990-BC9D-59736BD8C05F</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Google Meet</string>
+	<string>Homebridge</string>
 	<key>CFBundlePackageType</key>
 	<string>AAPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -40,7 +40,7 @@
 		<key>CFBundleIdentifier</key>
 		<string>com.apple.Safari.WebApp</string>
 		<key>TemplateAppUUID</key>
-		<string>9A5CE098-D8BB-49CB-874A-6F731F6B5000</string>
+		<string>081FA7AF-182B-4990-BC9D-59736BD8C05F</string>
 		<key>defaultarguments</key>
 		<true/>
 		<key>teamIdentifier</key>
@@ -49,51 +49,53 @@
 	<key>Manifest</key>
 	<dict>
 		<key>background_color</key>
-		<string>#1a73e8</string>
+		<string>#57277c</string>
+		<key>description</key>
+		<string>Homebridge is a lightweight NodeJS server that emulates the iOS HomeKit API.</string>
 		<key>display</key>
-		<string>minimal-ui</string>
-		<key>gcm_sender_id</key>
-		<string>138127876506</string>
-		<key>gcm_user_visible_only</key>
-		<true/>
+		<string>standalone</string>
 		<key>icons</key>
 		<array>
 			<dict>
+				<key>purpose</key>
+				<string>any maskable</string>
 				<key>sizes</key>
 				<string>192x192</string>
 				<key>src</key>
-				<string>https://www.gstatic.com//images/branding/productlogos/meet_2026/v2/web-96dp/logo_meet_2026_color_2x_web_96dp.png</string>
+				<string>android-chrome-192x192.png</string>
 				<key>type</key>
 				<string>image/png</string>
 			</dict>
 			<dict>
+				<key>purpose</key>
+				<string>any maskable</string>
 				<key>sizes</key>
 				<string>512x512</string>
 				<key>src</key>
-				<string>https://www.gstatic.com//images/branding/productlogos/meet_2026/v2/web-512dp/logo_meet_2026_color_1x_web_512dp.png</string>
+				<string>android-chrome-512x512.png</string>
 				<key>type</key>
 				<string>image/png</string>
 			</dict>
 		</array>
-		<key>id</key>
-		<string>/landing?lfhs=2</string>
 		<key>name</key>
-		<string>Google Meet</string>
+		<string>Homebridge</string>
+		<key>orientation</key>
+		<string>any</string>
 		<key>short_name</key>
-		<string>Google Meet</string>
+		<string>Homebridge</string>
 		<key>start_url</key>
-		<string>https://meet.google.com/landing?lfhs=2</string>
+		<string>https://homebridge.bailey.mx/</string>
 		<key>theme_color</key>
-		<string>#1a73e8</string>
+		<string>#140a33</string>
 	</dict>
 	<key>WKManifestIconKind</key>
-	<string>Touch</string>
+	<string>Manifest</string>
 	<key>WKManifestURL</key>
-	<string>https://meet.google.com/_/MeetingsDesktopUi/manifest.json</string>
+	<string>https://homebridge.bailey.mx/assets/manifest.webmanifest</string>
 	<key>WKPushBundleMetadata</key>
 	<dict>
 		<key>manifestId</key>
-		<string>https://meet.google.com/landing?lfhs=2</string>
+		<string>https://homebridge.bailey.mx/</string>
 	</dict>
 </dict>
 </plist>

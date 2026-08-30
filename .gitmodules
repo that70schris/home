@@ -26,10 +26,6 @@
 	path = .config/zsh/ohmy
 	url = git@github.com:ohmyzsh/ohmyzsh
 
-[submodule ".hammerspoon/Spoons/Hammerflow.spoon"]
-	path = .hammerspoon/Spoons/Hammerflow.spoon
-	url = git@github.com:saml-dev/Hammerflow.spoon
-
 [submodule "starship"]
 	path = starship
 	url = git@github.com:mkw/starship
