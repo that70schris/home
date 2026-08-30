@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "ahebrank.yaml2json",
     "bbenoist.Nix",
     "bennycode.sort-everything",
     "dbaeumer.vscode-eslint",
@@ -12,15 +13,19 @@
     "GitHub.copilot-chat",
     "github.vscode-github-actions",
     "hangxingliu.vscode-nginx-conf-hint",
+    "hashicorp.terraform",
     "idleberg.applescript",
+    "idleberg.jxa",
     "jock.svg",
     "johnreemar.vscode-qwik-snippets",
+    "llvm-vs-code-extensions.lldb-dap",
     "ms-azuretools.vscode-containers",
     "ms-azuretools.vscode-docker",
     "naumovs.color-highlight",
     "pustelto.bracketeer",
     "redhat.vscode-yaml",
-    "rust-lang.rust-analyzer",
+    "sammcleod.ghostty-config-syntax",
+    "sidneys1.gitconfig",
     "stylelint.vscode-stylelint",
     "subframe7536.custom-ui-style",
     "sumneko.lua",
@@ -30,6 +35,9 @@
     "that70schris.arcade",
     "tonka3000.raycast",
     "unifiedjs.vscode-mdx",
-    "vscode-icons-team.vscode-icons"
+    "vadimcn.vscode-lldb",
+    "vscode-icons-team.vscode-icons",
+    "vscodevim.vim",
+    "wangwindow.quick-open-in-new-window"
   ]
 }
