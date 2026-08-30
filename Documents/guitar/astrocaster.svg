@@ -90,7 +90,7 @@
       <!-- <use xlink:href="#pickup" transform="translate(0, 381.5)" /> -->
       <use
         xlink:href="#pickup"
-        transform="translate(0, 514.2) rotate(10.2)"
+        transform="rotate(10.2) translate(99, 514.2) "
       />
     </g>
 
