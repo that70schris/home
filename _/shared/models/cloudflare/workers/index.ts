@@ -58,6 +58,7 @@ export class Cloudflare {
   @once
   get namespace() {
     return new WorkersKvNamespace('experiments', {
+      accountId: this.args.accountId,
       title: this.$name,
     })
   }
@@ -95,7 +96,7 @@ export class Cloudflare {
         },
       );
 
-      [ '', 'www' ]
+      ['', 'www']
         .concat(this.args.subdomains ?? [])
         .map((subdomain) => {
           return new URL(`https://${[
@@ -120,6 +121,7 @@ export class Cloudflare {
   @once
   get experiments() {
     return new WorkersScript('experiments', {
+      accountId: this.args.accountId,
       scriptName: 'experiments',
       logpush: true,
       compatibilityDate: '2026-06-05',
@@ -146,6 +148,7 @@ export class Cloudflare {
   @once
   get experiments_trigger() {
     return new WorkersCronTrigger('experiments', {
+      accountId: this.args.accountId,
       scriptName: this.experiments.scriptName,
       schedules: [{
         cron: '* * * * *',
