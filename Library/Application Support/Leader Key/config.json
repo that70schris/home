@@ -3,11 +3,6 @@
     {
       "actions" : [
         {
-          "key" : "[",
-          "type" : "application",
-          "value" : "/Applications/Deliveries.app"
-        },
-        {
           "key" : "/",
           "type" : "application",
           "value" : "/System/Library/CoreServices/Finder.app"
@@ -65,12 +60,7 @@
         {
           "key" : "f",
           "type" : "application",
-          "value" : "/Users/chris/Applications/Chrome Apps.localized/Facebook.app"
-        },
-        {
-          "key" : "g",
-          "type" : "application",
-          "value" : "/Users/chris/Applications/Chrome Apps.localized/GitHub.app"
+          "value" : "/Users/chris/Applications/Facebook.app"
         },
         {
           "key" : "h",
@@ -101,6 +91,11 @@
           "key" : "n",
           "type" : "application",
           "value" : "/System/Applications/Notes.app"
+        },
+        {
+          "key" : "o",
+          "type" : "application",
+          "value" : "/Applications/OrbStack.app"
         },
         {
           "key" : "r",
@@ -136,7 +131,7 @@
         {
           "key" : "y",
           "type" : "application",
-          "value" : "/Users/chris/Applications/Chrome Apps.localized/YouTube.app"
+          "value" : "/Users/chris/Applications/YouTube.app"
         },
         {
           "key" : "z",
