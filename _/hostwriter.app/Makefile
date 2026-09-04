@@ -10,13 +10,9 @@ build.preview:
 build.server:
 	npx vite build -c adapters/static/vite.config.ts
 
-build.types:
-	npx tsc --incremental --noEmit
-
 build:
 	@make build.client
 	@make build.server
-# 	@make build.types
 
 dev:
 	npx vite --mode ssr

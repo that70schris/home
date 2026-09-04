@@ -2,8 +2,9 @@
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
 
 autoload -U compinit; compinit
-source <(kubectl completion zsh)
+source $(gcloud info --format='value(installation.sdk_root)')/*.zsh.inc
 source <(talosctl completion zsh)
+source <(kubectl completion zsh)
 
 source ~/.config/zsh/ohmy/plugins/dirhistory/dirhistory.plugin.zsh
 source ~/.config/zsh/ohmy/plugins/sudo/sudo.plugin.zsh
@@ -23,13 +24,6 @@ eval "$(starship init zsh)"
 PS1+=$'\n'
 if [ $WARP_HONOR_PS1 ]; then
   PS1+=$'\n'
-fi
-
-if CLOUDSDK=$(
-  CLOUDSDK_CONFIG=${HOME}/.google \
-  gcloud info --format='value(installation.sdk_root)' \
-); then
-  source ${CLOUDSDK}/*.zsh.inc
 fi
 
 # Kiro CLI post block. Keep at the bottom of this file.

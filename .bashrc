@@ -2,8 +2,9 @@
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/bashrc.pre.bash" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/bashrc.pre.bash"
 
 autoload -U compinit; compinit
-source <(kubectl completion bash)
+source $(gcloud info --format='value(installation.sdk_root)')/*.bash.inc
 source <(talosctl completion bash)
+source <(kubectl completion bash)
 
 source ~/.config/autoenv/activate.sh
 source ~/.config/aliases
@@ -16,13 +17,6 @@ prompt() {
     PS1+='\n'
   fi
 }
-
-if CLOUDSDK=$(
-  CLOUDSDK_CONFIG=${HOME}/.google \
-  gcloud info --format='value(installation.sdk_root)' \
-); then
-  source ${CLOUDSDK}/*.bash.inc
-fi
 
 # Kiro CLI post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/bashrc.post.bash" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/bashrc.post.bash"
