@@ -18,7 +18,8 @@ prompt() {
 }
 
 if CLOUDSDK=$(
-  gcloud info --format='value(installation.sdk_root)'
+  CLOUDSDK_CONFIG=${HOME}/.google \
+  gcloud info --format='value(installation.sdk_root)' \
 ); then
   source ${CLOUDSDK}/*.bash.inc
 fi
