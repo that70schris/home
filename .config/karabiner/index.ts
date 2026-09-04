@@ -53,25 +53,6 @@ writeFileSync(
               }],
             }],
           },
-          // {
-          //   description: 'Hide',
-          //   manipulators: [{
-          //     type: 'basic',
-          //     description: 'Hide',
-          //     from: {
-          //       key_code: 'escape',
-          //       modifiers: {
-          //         mandatory: ['command'],
-          //       },
-          //     },
-          //     to: [{
-          //       key_code: 'h',
-          //       modifiers: {
-          //         mandatory: ['command'],
-          //       },
-          //     }],
-          //   }],
-          // },
           ...{
             // p: 'Raycast'.app,
             // l: {

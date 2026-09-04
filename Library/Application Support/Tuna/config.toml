@@ -394,6 +394,7 @@ custom = []
 [settings]
 appPresentationMode = 'never'
 comboModeThemeStyle = 'cheatsheet'
+physicalHyperKeyQuickPressBehavior = 'triggersEscape'
+physicalHyperKeySource = 'capsLock'
 shelfAutoCloseWhenTasksComplete = true
-textModeDoublePressTrigger = 'leftCommand'
-textModeTriggerType = 'doublePress'
+textModeTriggerType = 'disabled'
