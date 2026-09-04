@@ -3,10 +3,10 @@
     "@builder.io/qwik": "1.20.0",
     "@builder.io/qwik-city": "1.20.0",
     "@types/node": "latest",
-    "firebase": "12.15.0",
-    "firebase-tools": "15.22.2",
+    "firebase": "latest",
+    "firebase-tools": "latest",
     "sass": "latest",
-    "typescript": "latest",
+    "typescript": "^6.0.3",
     "vite": "8.1.0",
     "vite-tsconfig-paths": "latest"
   }
