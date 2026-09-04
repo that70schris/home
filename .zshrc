@@ -28,3 +28,6 @@ fi
 
 # Kiro CLI post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
+
+# Added by cua-driver-rs installer — see https://github.com/trycua/cua
+export PATH="/Users/chris/.local/bin:$PATH"

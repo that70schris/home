@@ -20,6 +20,10 @@ brew "gitoxide"
 brew "go"
 # Kubernetes package manager
 brew "helm"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
+# Self-improving AI agent that creates skills from experience
+brew "hermes-agent"
 # Improved top (interactive process viewer)
 brew "htop"
 # Modern load testing tool, using Go and JavaScript
@@ -46,8 +50,6 @@ brew "portless"
 brew "postgresql@18", link: true
 # Cloud native development platform
 brew "pulumi"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.13"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.14"
 # Powerful, clean, object-oriented scripting language
@@ -98,6 +100,8 @@ cask "google-chrome"
 cask "google-gemini"
 # Desktop automation application
 cask "hammerspoon"
+# Open-source desktop AI agent
+cask "hermes-desktop"
 # HTTP and GraphQL Client
 cask "insomnia"
 # System monitoring app
@@ -181,7 +185,6 @@ vscode "bennycode.sort-everything"
 vscode "dbaeumer.vscode-eslint"
 vscode "deerawan.vscode-dash"
 vscode "dnicolson.binary-plist"
-vscode "eamodio.gitlens"
 vscode "editorconfig.editorconfig"
 vscode "esbenp.prettier-vscode"
 vscode "ezzak.current-path"
@@ -215,5 +218,4 @@ vscode "vadimcn.vscode-lldb"
 vscode "vscode-icons-team.vscode-icons"
 vscode "vscodevim.vim"
 vscode "wangwindow.quick-open-in-new-window"
-vscode "zongou.vs-seti-hacknerdfont"
 cargo "starship"
