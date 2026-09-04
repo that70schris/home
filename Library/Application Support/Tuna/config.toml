@@ -384,6 +384,19 @@ key = 'z'
         subjectIdentifiers = [ 'path:/Applications/zoom.us.app' ]
         type = 'savedCommand'
 
+[[comboMode.bindings]]
+key = 'g'
+
+    [comboMode.bindings.destination]
+    type = 'command'
+
+        [comboMode.bindings.destination.command]
+        actionIdentifier = 'tuna.common-actions/run-text-as-shell-command'
+        behavior = 'run'
+        presentation = 'automatic'
+        subjectIdentifiers = [ 'text:' ]
+        type = 'savedCommand'
+
 [hotkeys]
 custom = []
 
