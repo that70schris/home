@@ -7,6 +7,7 @@
     "firebase-tools": "latest",
     "sass": "latest",
     "typescript": "latest",
-    "vite": "latest"
+    "vite": "7.3.1",
+    "vite-tsconfig-paths": "latest"
   }
 }

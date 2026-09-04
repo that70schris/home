@@ -16,7 +16,7 @@ build.types:
 build:
 	@make build.client
 	@make build.server
-	@make build.types
+# 	@make build.types
 
 dev:
 	npx vite --mode ssr
