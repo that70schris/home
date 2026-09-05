@@ -8,8 +8,6 @@ brew "docker"
 brew "node"
 # Firebase command-line tools
 brew "firebase-cli"
-# User-friendly command-line shell for UNIX-like operating systems
-brew "fish"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
