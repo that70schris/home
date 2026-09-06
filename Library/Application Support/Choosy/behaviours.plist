@@ -89,6 +89,12 @@
 		<array>
 			<dict>
 				<key>path</key>
+				<string>/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app</string>
+				<key>type</key>
+				<string>ChoosyBrowser</string>
+			</dict>
+			<dict>
+				<key>path</key>
 				<string>/Applications/Google Chrome.app</string>
 				<key>profileName</key>
 				<string>Default</string>
@@ -106,12 +112,6 @@
 				<string>/Users/chris/Library/Application Support/Google/Chrome</string>
 				<key>type</key>
 				<string>ChoosyChromeProfileMode</string>
-			</dict>
-			<dict>
-				<key>path</key>
-				<string>/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app</string>
-				<key>type</key>
-				<string>ChoosyBrowser</string>
 			</dict>
 		</array>
 		<key>enabled</key>
