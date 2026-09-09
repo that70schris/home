@@ -108,8 +108,6 @@ cask "istat-menus"
 cask "kaleidoscope"
 # Keyboard customiser
 cask "karabiner-elements"
-# AI-powered productivity tool for the command-line
-cask "kiro-cli"
 # Application launcher
 cask "leader-key"
 # Kubernetes IDE
