@@ -17,6 +17,7 @@ should_render_use_agent_toolbar_for_user_commands = false
 apply_code_diffs = "agent_decides"
 ask_user_question = "always_ask"
 autosync_plans_to_warp_drive = true
+base_model = "claude-5-fable-low"
 command_allowlist = []
 command_denylist = [
   'bash(\s.*)?',
@@ -39,7 +40,6 @@ command_denylist = [
   'rm(\s.*)?',
 ]
 computer_use = "never"
-context_window_limit = 1000000
 directory_allowlist = []
 execute_commands = "always_ask"
 mcp_allowlist = []
@@ -207,3 +207,8 @@ honor_ps1 = true
 completions_open_while_typing = true
 input_box_type_setting = "classic"
 alias_expansion_enabled = true
+
+[cloud_platform]
+
+[cloud_platform.third_party_api_keys]
+can_use_warp_credits_with_byok = true
