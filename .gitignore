@@ -39,6 +39,7 @@
 !tsconfig.json
 
 !*.config.*
+!*.public.*
 !*.css
 !*.sh
 !*.ts
