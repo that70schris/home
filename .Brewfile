@@ -18,10 +18,6 @@ brew "gitoxide"
 brew "go"
 # Kubernetes package manager
 brew "helm"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.13"
-# Self-improving AI agent that creates skills from experience
-brew "hermes-agent"
 # Improved top (interactive process viewer)
 brew "htop"
 # Modern load testing tool, using Go and JavaScript
@@ -48,6 +44,8 @@ brew "portless"
 brew "postgresql@18", link: true
 # Cloud native development platform
 brew "pulumi"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.14"
 # Powerful, clean, object-oriented scripting language
@@ -82,8 +80,8 @@ cask "choosy"
 cask "claude"
 # Terminal-based AI coding assistant
 cask "claude-code@latest"
-# OpenAI's Codex desktop app for managing coding agents
-cask "codex-app"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
 # Track and budget money
 cask "copilot-money"
 # API documentation browser and code snippet manager
@@ -100,8 +98,6 @@ cask "google-chrome"
 cask "google-gemini"
 # Desktop automation application
 cask "hammerspoon"
-# Open-source desktop AI agent
-cask "hermes-desktop"
 # HTTP and GraphQL Client
 cask "insomnia"
 # System monitoring app
