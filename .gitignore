@@ -13,7 +13,6 @@
 !/Documents/
 !/Library/
 !/Public/
-!/jitsu/
 
 !.claude/
 !.vscode/
@@ -39,7 +38,8 @@
 !tsconfig.json
 
 !*.config.*
-!*.public.*
 !*.css
 !*.sh
 !*.ts
+
+!*.public
