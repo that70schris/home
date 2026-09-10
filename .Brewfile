@@ -74,12 +74,14 @@ brew "nubjs/tap/nub", trusted: true
 cask "1password"
 # Use your phone as a high-quality webcam with image tuning controls
 cask "camo-studio"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
 # Open links in any browser
 cask "choosy"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Terminal-based AI coding assistant
-cask "claude-code"
+cask "claude-code@latest"
 # OpenAI's Codex desktop app for managing coding agents
 cask "codex-app"
 # Track and budget money

@@ -14,7 +14,7 @@
 !/Library/
 !/Public/
 
-!.claude/
+!.claude/settings.json
 !.vscode/
 
 !.Brewfile
