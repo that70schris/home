@@ -39,6 +39,7 @@ command_denylist = [
   'rm(\s.*)?',
 ]
 computer_use = "never"
+context_window_limit = 1000000
 directory_allowlist = []
 execute_commands = "always_ask"
 mcp_allowlist = []
@@ -190,7 +191,9 @@ top = { height = 30, width = 100 }
 [code]
 
 [code.editor]
-show_code_review_button = false
+show_code_review_button = true
+open_file_editor = { external_editor = "vs_code" }
+open_code_panels_file_editor = { external_editor = "vs_code" }
 
 [code.indexing]
 agent_mode_codebase_context_auto_indexing = true
