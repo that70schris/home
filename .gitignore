@@ -13,12 +13,10 @@
 !/Documents/
 !/Library/
 !/Public/
-!jitsu/
+!/jitsu/
 
 !.claude/
-!.claude/*
 !.vscode/
-!.vscode/*
 
 !.Brewfile
 !.bashrc

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__22bda5de-5852-45ec-8089-85e6eada6a69__get_issue",
+      "mcp__22bda5de-5852-45ec-8089-85e6eada6a69__list_comments"
+    ]
+  }
+}
