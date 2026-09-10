@@ -15,6 +15,8 @@
 !/Public/
 !jitsu/
 
+!.claude/
+!.claude/*
 !.vscode/
 !.vscode/*
 
@@ -24,7 +26,6 @@
 !.editorconfig
 !.gitconfig
 !.gitignore
-!.gitleaks.toml
 !.gitmodules
 !.lintstagedrc.yml
 !.prettierignore
