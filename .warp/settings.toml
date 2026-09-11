@@ -6,6 +6,7 @@ cloud_conversation_storage_enabled = true
 [agents.warp_agent.input]
 nld_in_terminal_enabled = false
 ai_auto_detection_enabled = false
+include_agent_commands_in_history = true
 
 [agents.warp_agent.other]
 show_agent_notifications = false
