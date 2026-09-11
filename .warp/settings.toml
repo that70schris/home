@@ -2,15 +2,18 @@
 cloud_conversation_storage_enabled = true
 
 [agents.warp_agent]
+is_any_ai_enabled = true
 
 [agents.warp_agent.input]
 nld_in_terminal_enabled = false
 ai_auto_detection_enabled = false
 include_agent_commands_in_history = true
+show_agent_tips = true
 
 [agents.warp_agent.other]
 show_agent_notifications = false
 should_render_use_agent_toolbar_for_user_commands = false
+should_show_oz_updates_in_zero_state = false
 
 [agents.execution_profiles]
 
