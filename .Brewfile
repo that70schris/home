@@ -34,6 +34,8 @@ brew "kubeseal"
 brew "mas"
 # Run a Kubernetes cluster locally
 brew "minikube"
+# AI coding agent, built for the terminal
+brew "opencode"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Fast, disk space efficient package manager
@@ -79,7 +81,7 @@ cask "choosy"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Terminal-based AI coding assistant
-cask "claude-code@latest"
+cask "claude-code"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
 # Track and budget money
@@ -122,6 +124,8 @@ cask "netbirdio/tap/netbird-ui", trusted: true
 cask "ngrok"
 # App to write, plan, collaborate, and get organised
 cask "notion"
+# AI coding agent desktop client
+cask "opencode-desktop"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Home media player
