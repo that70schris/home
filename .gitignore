@@ -15,7 +15,11 @@
 !/Public/
 
 !.claude/
+!.claude/settings.*
+
 !.vscode/
+!.vscode/*
+
 !.Brewfile
 !.bashrc
 !.env
