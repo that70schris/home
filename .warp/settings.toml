@@ -218,3 +218,12 @@ alias_expansion_enabled = true
 
 [cloud_platform.third_party_api_keys]
 can_use_warp_credits_with_byok = true
+
+[session]
+
+[session.working_directory_config]
+advanced_mode = false
+global = { custom_dir = "", mode = "home_dir" }
+new_tab = { custom_dir = "", mode = "previous_dir" }
+new_window = { custom_dir = "", mode = "previous_dir" }
+split_pane = { custom_dir = "", mode = "previous_dir" }

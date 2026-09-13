@@ -66,8 +66,6 @@ brew "yq"
 brew "zsh"
 # Terraform
 brew "hashicorp/tap/terraform", trusted: true
-# Netbird project.
-brew "netbirdio/tap/netbird", trusted: true
 # Fast TypeScript runtime and package manager that augments Node
 brew "nubjs/tap/nub", trusted: true
 # Password manager that keeps all passwords secure behind one password
@@ -118,8 +116,6 @@ cask "linear"
 cask "logi-options+"
 # Support for Logitech G gear
 cask "logitech-g-hub"
-# Netbird UI Client
-cask "netbirdio/tap/netbird-ui", trusted: true
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # App to write, plan, collaborate, and get organised

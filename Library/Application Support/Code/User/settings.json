@@ -29,7 +29,6 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   },
-  "breadcrumbs.enabled": false,
   "code-runner.clearPreviousOutput": true,
   "code-runner.preserveFocus": true,
   "code-runner.showExecutionMessage": false,
@@ -225,4 +224,5 @@
   ],
   "yaml.maxItemsComputed": 99999,
   "yaml2json.yamlIndentationSpaces": 2,
+  "breadcrumbs.enabled": false,
 }
