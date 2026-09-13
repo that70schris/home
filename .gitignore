@@ -14,25 +14,26 @@
 !/Library/
 !/Public/
 
+!/.Brewfile
+!/.bashrc
+!/.gitmodules
+!/.profile
+!/.vimrc
+!/.zshrc
+
 !.claude/
 !.claude/settings.*
 !.codex/
 !.vscode/
 !.vscode/*
 
-!.Brewfile
-!.bashrc
 !.env
 !.editorconfig
 !.gitconfig
 !.gitignore
-!.gitmodules
 !.lintstagedrc.yml
 !.prettierignore
 !.prettierrc.yml
-!.profile
-!.vimrc
-!.zshrc
 !Makefile
 !package.json
 !pnpm-lock.yaml
