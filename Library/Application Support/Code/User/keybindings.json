@@ -91,10 +91,6 @@
     "key": "shift+cmd+down",
   },
   {
-    "command": "workbench.action.moveEditorToLeftGroup",
-    "key": "shift+cmd+left",
-  },
-  {
     "command": "workbench.action.moveEditorToRightGroup",
     "key": "shift+cmd+right",
   },
@@ -185,5 +181,21 @@
   {
     "key": "shift+cmd+v",
     "command": "yaml2json.clipboard",
+  },
+  {
+    "key": "shift+cmd+.",
+    "command": "workbench.action.moveEditorToNextGroup",
+  },
+  {
+    "key": "ctrl+cmd+right",
+    "command": "-workbench.action.moveEditorToNextGroup",
+  },
+  {
+    "key": "shift+cmd+,",
+    "command": "workbench.action.moveEditorToPreviousGroup",
+  },
+  {
+    "key": "ctrl+cmd+left",
+    "command": "-workbench.action.moveEditorToPreviousGroup",
   },
 ]

@@ -11,9 +11,6 @@ source = "/Users/chris/.cache/codex-runtimes/codex-primary-runtime/plugins/opena
 [plugins."browser@openai-bundled"]
 enabled = true
 
-[plugins."sites@openai-bundled"]
-enabled = true
-
 [plugins."codex-app-tools@openai-bundled"]
 enabled = true
 
@@ -24,6 +21,21 @@ enabled = true
 enabled = true
 
 [plugins."visualize@openai-bundled"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."template-creator@openai-primary-runtime"]
 enabled = true
 
 [features]
@@ -45,8 +57,8 @@ BROWSER_USE_TINYSKY_ENABLED = "1"
 NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = ""
 NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = ""
 BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
-BROWSER_USE_CODEX_APP_VERSION = "26.908.61612"
-NODE_REPL_TRUSTED_SERVICES = '{"browser":"/Users/chris/.codex/plugins/cache/openai-bundled/browser/26.908.61612/scripts/browser-service.mjs"}'
+BROWSER_USE_CODEX_APP_VERSION = "26.911.61220"
+NODE_REPL_TRUSTED_SERVICES = '{"browser":"/Users/chris/.codex/plugins/cache/openai-bundled/browser/26.911.61220/scripts/browser-service.mjs"}'
 CODEX_CLI_PATH = "/Applications/ChatGPT.app/Contents/Resources/codex"
 
 [desktop]
@@ -97,6 +109,9 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/chris/jitsu/main"]
+trust_level = "trusted"
+
+[projects."/Users/chris/raycast/extensions/extensions/bonjour"]
 trust_level = "trusted"
 
 [shell_environment_policy.set]
