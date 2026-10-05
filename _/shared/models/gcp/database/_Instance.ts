@@ -6,6 +6,8 @@ import { _Record } from 'cloudflare'
 import { _Config } from 'shared'
 import { once } from 'shared/decorators'
 import { Twingate } from 'twingate'
+import { twingate } from '../../../../home.lab'
+import { _TwingateResource } from '../../twingate/resource'
 import { DatabasePlaceholder, _Database } from './_Database'
 import { _DatabaseUser } from './_User'
 
@@ -102,13 +104,14 @@ export class _DatabaseInstance extends DatabaseInstance {
         parent: this,
       })
 
-      new Twingate(`db/${this.$name}`, {
+      new _TwingateResource(`db/${this.$name}`, {
         address: this.host,
+        gate: twingate,
         accessGroups: [
           Twingate.groups.everyone,
         ],
-        ports: [
-          args.port,
+        tcp: [
+          args.port ?? 5432,
         ],
       }, {
         parent: this,
