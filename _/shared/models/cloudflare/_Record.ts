@@ -23,7 +23,7 @@ export class _Record extends DnsRecord {
       name: args.domain ?? $name,
       zoneId: Object.entries(
         _Config.zones,
-      ).find(([ key, value ]) => {
+      ).find(([key, value]) => {
         return RegExp(key).test(args.domain ?? $name)
       })?.[1] as string,
       type: 'A',
