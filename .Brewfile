@@ -1,6 +1,5 @@
 tap "alecharmon/tap"
 tap "hashicorp/tap"
-tap "netbirdio/tap"
 tap "nubjs/tap"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
