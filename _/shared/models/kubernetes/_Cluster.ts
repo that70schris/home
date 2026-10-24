@@ -25,7 +25,7 @@ export class _Cluster {
     public args: ClusterArgs,
     public opts?: ResourceOptions,
   ) {
-    this.tailscale
+    // this.tailscale
     this.twingate
     this.gateway_definitions
     this.certificate
@@ -226,7 +226,7 @@ export class _Cluster {
   @once
   get gateway_definitions() {
     return new ConfigFile('gateway-definitions', {
-      file: 'https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.5.1/standard-install.yaml',
+      file: 'https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.6.3/standard-install.yaml',
     })
   }
 
