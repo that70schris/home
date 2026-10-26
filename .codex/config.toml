@@ -38,9 +38,6 @@ enabled = true
 [plugins."template-creator@openai-primary-runtime"]
 enabled = true
 
-[plugins."code-review@openai-bundled"]
-enabled = true
-
 [features]
 js_repl = false
 
@@ -61,8 +58,8 @@ BROWSER_USE_TINYSKY_ENABLED = "1"
 NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = ""
 NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = ""
 BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
-BROWSER_USE_CODEX_APP_VERSION = "26.1016.61520"
-NODE_REPL_TRUSTED_SERVICES = '{"browser":"/Users/chris/.codex/plugins/cache/openai-bundled/browser/26.1016.61520/scripts/browser-service.mjs"}'
+BROWSER_USE_CODEX_APP_VERSION = "26.1021.31345"
+NODE_REPL_TRUSTED_SERVICES = '{"browser":"/Users/chris/.codex/plugins/cache/openai-bundled/browser/26.1021.31345/scripts/browser-service.mjs"}'
 CODEX_CLI_PATH = "/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
 
 [desktop]
@@ -116,6 +113,9 @@ trust_level = "trusted"
 trust_level = "trusted"
 
 [projects."/Users/chris/raycast/extensions/extensions/bonjour"]
+trust_level = "trusted"
+
+[projects."/Users/chris/Documents/ChatGPT/matrix"]
 trust_level = "trusted"
 
 [shell_environment_policy.set]
