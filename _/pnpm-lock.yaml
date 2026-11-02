@@ -10,13 +10,13 @@ importers:
     dependencies:
       '@cloudflare/workers-types':
         specifier: latest
-        version: 5.20261025.1
+        version: 5.20261101.1
       '@pulumi/cloudflare':
         specifier: latest
-        version: 6.23.1(typescript@6.0.3)
+        version: 6.23.2(typescript@6.0.3)
       '@pulumi/command':
         specifier: latest
-        version: 1.2.1(typescript@6.0.3)
+        version: 1.3.0(typescript@6.0.3)
       '@pulumi/gcp':
         specifier: latest
         version: 10.2.0(typescript@6.0.3)
@@ -25,16 +25,16 @@ importers:
         version: 4.34.2(typescript@6.0.3)
       '@pulumi/kubernetes-ingress-nginx':
         specifier: latest
-        version: 0.1.3(typescript@6.0.3)
+        version: 0.2.0(typescript@6.0.3)
       '@pulumi/pulumi':
         specifier: latest
-        version: 3.272.0(typescript@6.0.3)
+        version: 3.273.0(typescript@6.0.3)
       '@pulumi/std':
         specifier: latest
         version: 2.3.2(typescript@6.0.3)
       '@pulumi/tailscale':
         specifier: latest
-        version: 0.29.2(typescript@6.0.3)
+        version: 0.29.4(typescript@6.0.3)
       '@pulumiverse/talos':
         specifier: latest
         version: 0.8.1(typescript@6.0.3)
@@ -43,7 +43,7 @@ importers:
         version: 0.3.0(typescript@6.0.3)
       '@twingate/pulumi-twingate':
         specifier: latest
-        version: 5.1.1(typescript@6.0.3)
+        version: 5.2.0(typescript@6.0.3)
       esbuild:
         specifier: latest
         version: 0.28.2
@@ -52,7 +52,7 @@ importers:
         version: 0.0.1-security
       globals:
         specifier: latest
-        version: 17.13.0
+        version: 17.14.0
       json2toml:
         specifier: latest
         version: 7.0.1
@@ -68,8 +68,8 @@ importers:
 
 packages:
 
-  '@cloudflare/workers-types@5.20261025.1':
-    resolution: {integrity: sha512-tMRFCIZKRRieDIdAe38rpszuInDpG6ugnT8mHgJrBj8zR0EbdWeTkg8NunLhVfX3tpBatD0UXVbDuZfgZxe9Fg==}
+  '@cloudflare/workers-types@5.20261101.1':
+    resolution: {integrity: sha512-malJEW9V9x+MygAc9RDGiWF0I8HFYfMzY5CXMn3tbzCxUiQBHtHWUTG5aFmO9oaFenc2z5OyT7e+a46ZaGs3cQ==}
 
   '@esbuild/aix-ppc64@0.28.2':
     resolution: {integrity: sha512-XExcO+dvLKvVtNTibSTBej1NCAbaGhWn9Ww1ZPx80qsahhPFe/8jgWP0IchNe0F3HwkU7n8ejhH8bjonqht8mQ==}
@@ -231,8 +231,8 @@ packages:
     resolution: {integrity: sha512-GmzA9ckNokPypTg10pgpeHNQe7ph+iIKKmhKu3Ob9ANkswreCx7R3cKmY781K8QK3AqVL3xVh9A42JvIAbkkSA==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  '@grpc/grpc-js@1.14.6':
-    resolution: {integrity: sha512-SgC/B3/VZ8lTyOZ4Cwk6f1skWhmkNAaVfiX90qd5u1rRXGKk1//8FTUEN9GvOUq7rfWIqAYkA3CoyumYVpOS6g==}
+  '@grpc/grpc-js@1.14.7':
+    resolution: {integrity: sha512-W4W/fcBMGRVtG6dW2c7cw2mnpS3hvbBd+oQXjh2iYFTZDk1JJmcNqkM5KSaPubQpamlUUurrlb7G1s9NJeERmQ==}
     engines: {node: '>=12.10.0'}
 
   '@grpc/proto-loader@0.8.1':
@@ -300,8 +300,8 @@ packages:
     resolution: {integrity: sha512-iVuTlG3ORq2iaVa1IWUxAO/jIp77tUKBhoMjuzYW2kL4MLN1bi/ofqkZ7D7OOwh8coAx1/S2ge0rMdGv8sLSOQ==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  '@npmcli/promise-spawn@9.0.1':
-    resolution: {integrity: sha512-OLUaoqBuyxeTqUvjA3FZFiXUfYC1alp3Sa99gW3EUDz3tZ3CbXDdcZ7qWKBzicrJleIgucoWamWH1saAmH/l2Q==}
+  '@npmcli/promise-spawn@9.0.2':
+    resolution: {integrity: sha512-h7b1j0egrruBm/32eVA6/zMw5VJxxaB3vT+uVGGQ4SAAMrQVFHNuzL4+EAXn66j+huj0jApINc1fW3fC+kVoeA==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
   '@npmcli/query@5.0.0':
@@ -434,8 +434,8 @@ packages:
     peerDependencies:
       '@opentelemetry/api': '>=1.3.0 <1.10.0'
 
-  '@opentelemetry/semantic-conventions@1.43.0':
-    resolution: {integrity: sha512-eSYWTm620tTk45EKSedaUL8MFYI8hW164hIXsgIHyxu3VobUB3fFCu5t0hQby6OoWRPsG1KkKUG2M5UadiLiVg==}
+  '@opentelemetry/semantic-conventions@1.44.0':
+    resolution: {integrity: sha512-E3JkOlMBi3N8OGGkbl7tFyqk2MAS6/lySRZBK3Mu7AzjF1fT8oIChH9ChE48SUWzDn9Kdwta+G/p5LJ4xW4CLQ==}
     engines: {node: '>=14'}
 
   '@protobufjs/aspromise@1.1.2':
@@ -465,23 +465,23 @@ packages:
   '@protobufjs/utf8@1.1.2':
     resolution: {integrity: sha512-b1UQwcEZ4yCnMCD8DAL1VlbvBJE9/IX4FTIp7BG1xYpf29SLazLSrqUkj4w7Y5y7cCVP6E5tcqqcI0xemPkHug==}
 
-  '@pulumi/cloudflare@6.23.1':
-    resolution: {integrity: sha512-VaEZaHQFFpToKdG+OkjlLPXhChxhKCHNGqnJoBC0yZaTG2bb02Vh5gP3NOIjQLn7enKkZX3VzdEV5dM0gJJcJA==}
+  '@pulumi/cloudflare@6.23.2':
+    resolution: {integrity: sha512-0pkVCTydiMJD9vQmRt0V50cMFeWW8AinAaY/PjKPbC7X5aSYKooZ0F30oVVY/Ewi7o5/utBO+5ciqzz1/hYREA==}
 
-  '@pulumi/command@1.2.1':
-    resolution: {integrity: sha512-mutNDIUYP67yCBYOVIidQyxuTwZDY9v/sx9EGbgIv4PXfyfolOKGgGLeoHEbI1lxRwaw2wbTZ3VNIynDnA5VKA==}
+  '@pulumi/command@1.3.0':
+    resolution: {integrity: sha512-KrRVG/CmN9yCYJ1Rqn5mkond5wbeLNbgrclityNNN8hgltjSVZ2xwlxAw84fApNk9Bu3AV1bwN5Q/XD56Kisvg==}
 
   '@pulumi/gcp@10.2.0':
     resolution: {integrity: sha512-SkNSx0MhAVQI/TI4/np9lrM41U1I1L6YeSrtq0D9flkwr3bHWcXKpvgYasJR6qL+3eoLt9UwZmGQuPpYUxIxdQ==}
 
-  '@pulumi/kubernetes-ingress-nginx@0.1.3':
-    resolution: {integrity: sha512-P4QHrR758ECHXZx/NSyc7MCoxDsRL+9tYKBzR8qe0KcHr4xRJy/k4f/EmHINoYYmvRj86jjhh1i0U6bRSEKkhg==}
+  '@pulumi/kubernetes-ingress-nginx@0.2.0':
+    resolution: {integrity: sha512-eUwNCIciuPVpjvL6t9fej33QJkmqWzNtR783Bn8yUBiFdV4TmFMrqBiKy9UTo1EzJC8mxWUThOHJvaqRc+2rKA==}
 
   '@pulumi/kubernetes@4.34.2':
     resolution: {integrity: sha512-OcIe8OUwivkEngmjinrmke54INbJ0L6u/CWm8mLh6F7pmIDXyHGTM8PzcZsg5QbSm24HnNUHLl2tEUoOBxDo3w==}
 
-  '@pulumi/pulumi@3.272.0':
-    resolution: {integrity: sha512-DepbT+tA3HnNo5+OtEMEevK1pC45PD/71sQh3tlWYFtW4tjuZijAQprvgCYcQUKNwRP3/Y3z83Kbvxn7y9HR2w==}
+  '@pulumi/pulumi@3.273.0':
+    resolution: {integrity: sha512-Yh2k0Kry4u5LM730KUO5HZFnqHdlW9ypoQ8zgO0Tqam1G6urFXjIUTUaLxvWrdsm6gKCoyVS6CPdeOGcV+Msvg==}
     engines: {node: '>=22'}
     peerDependencies:
       ts-node: '>= 7.0.1 < 12'
@@ -495,8 +495,8 @@ packages:
   '@pulumi/std@2.3.2':
     resolution: {integrity: sha512-Xx84bDZGyVQajzuTHWMOJ8T7dF4xKGPzJaRP5eOfVR8H6KNmIA2i/0p/QSCpvwAlV8qXskfsjHkgjdHpyv4roA==}
 
-  '@pulumi/tailscale@0.29.2':
-    resolution: {integrity: sha512-7YpJ6fAg1PoNwu7ORrCJ6kbR1JJG6F36MQJR3vimtLalUpRcm+GeklPXUNfAgLgub8UwWTOn/URriOsssAWkIQ==}
+  '@pulumi/tailscale@0.29.4':
+    resolution: {integrity: sha512-gFTPrnTy0B/U2aSmjnBZIyEQzY9coGkukATpKLhAxiGljjskN22SHkjdysa9BqYOQIyJ9+f/1GKoHsseQEK+7A==}
 
   '@pulumiverse/talos@0.8.1':
     resolution: {integrity: sha512-GTiqBuWRvunu70uTwmx9mL99B2Yc+I96XMm4bwTP2gE+M/0e8eICcwo3Hs/3LN/vhGgkGWZNFInUSwZlgZFgeg==}
@@ -536,8 +536,8 @@ packages:
     resolution: {integrity: sha512-Y8cK9aggNRsqJVaKUlEYs4s7CvQ1b1ta2DVPyAimb0I2qhzjNk+A+mxvll/klL0RlfuIUei8BF7YWiua4kQqww==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  '@twingate/pulumi-twingate@5.1.1':
-    resolution: {integrity: sha512-nxPQv3sUXS+RD80LRgDdhmEMsCzYG8b7dKe+sKmryfiDubD7gF44+N5sO8JelK3W5inTvJIKglMZOJKF/5uybA==}
+  '@twingate/pulumi-twingate@5.2.0':
+    resolution: {integrity: sha512-oLaUIbuMEF/t2CRowCd4xBWj6a46G+81ircJPWHSE5FN/Y5+DgQ93ylmPcHzfNTk0Y3I07wmCKGmywd+QLjKSw==}
 
   '@types/body-parser@1.19.6':
     resolution: {integrity: sha512-HLFeCYgz89uk22N5Qg3dvGvsv46B8GLvKKo1zKG4NybA8U2DiEO3w9lqGg29t/tfLRJpJ6iQxnVw4OnB7MoM9g==}
@@ -560,8 +560,8 @@ packages:
   '@types/mime@1.3.5':
     resolution: {integrity: sha512-/pyBZWSLD2n0dcHE3hq8s8ZvcETHtEuF+3E7XVt0Ig2nvsVQXdghHVcEkIWjy9A0wKfTn97a/PSDYohKIlnP/w==}
 
-  '@types/node@26.6.5':
-    resolution: {integrity: sha512-uMzsv9stDdofIZBx4UGh4Z9ZgXnGC9seRDscilBcTHAeOFk67MZg/k9bWVfO+bk4qZmG+l52hRnLwUiH2LnJTg==}
+  '@types/node@26.6.6':
+    resolution: {integrity: sha512-MzQj+8Kx3XI40OmUAE6Qoh58ZMNstNNMwn2nfd3qWsfe7nDNSqJNzes4njhz6AHwrSHOffSLwXU6yb474Q4aog==}
 
   '@types/qs@6.15.1':
     resolution: {integrity: sha512-GZHUBZR9hckSUhrxmp1nG6NwdpM9fCunJwyThLW1X3AyHgd9IlHb6VANpQQqDr2o/qQp6McZ3y/IA2rVzKzSbw==}
@@ -604,8 +604,8 @@ packages:
     resolution: {integrity: sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==}
     engines: {node: 18 || 20 || >=22}
 
-  bin-links@6.0.2:
-    resolution: {integrity: sha512-frE1t78WOwJ45PKV2cF2tNPjTcs9L1J9s6VkrV59wanRP4GlaomuxYPVma7BwthMg8WnfSory4w5PTE6FZZ81w==}
+  bin-links@6.0.3:
+    resolution: {integrity: sha512-Qg5FD7/YSReWJB1zaM8VIi1l4O637JKK/WPaF/JzJGy/9FcMDWtSklF0dOX5S9X2OMrPGhifIHIKuwtHG0IGFg==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
   brace-expansion@5.0.12:
@@ -730,8 +730,8 @@ packages:
     resolution: {integrity: sha512-Wjlyrolmm8uDpm/ogGyXZXb1Z+Ca2B8NbJwqBVg0axK9GbBeoS7yGV6vjXnYdGm6X53iehEuxxbyiKp8QmN4Vw==}
     engines: {node: 18 || 20 || >=22}
 
-  globals@17.13.0:
-    resolution: {integrity: sha512-RwMTC61u7hrG3ZJMkZQOK4JLJrKS8QtoTii63EmWvFXHqycY9FObBJQCbsLxSO8kjKhWE5kV1GC+Vb1g3RI0Zg==}
+  globals@17.14.0:
+    resolution: {integrity: sha512-UtdkTVyAJePQv0J2M9Xe4L0ruNSDV314XiIJsADI2Zf40bcdAonE/D/OhAU8AT99oij9mhLByb+NvA3QWZYgCg==}
     engines: {node: '>=18'}
 
   google-protobuf@3.21.4:
@@ -771,8 +771,8 @@ packages:
     resolution: {integrity: sha512-FCeMZT4NiRQGh+YkeKMtWrOmBgWjHjMJ26WQWrRQyoyzqevdaGSakUaJW5xQYmjLlUVk2qUnCjYVBax9EKKg8A==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  import-in-the-middle@3.5.2:
-    resolution: {integrity: sha512-WseIA/4o56+GYO3RmlOPvejYi771OFeJEeK/ejROsr9bdjW+E5NXTOD1Di8TL40Qgg3JJX9aa97Hf8iiSVIKZw==}
+  import-in-the-middle@3.5.3:
+    resolution: {integrity: sha512-usm/IiY63VtOyx/dm7uEoZV+EsanCDmwRUroQZIkFLGu1NVXZ8mZqIOhaN4QIJ7EsbMTuQbJXwCySCx+ozMA8g==}
     engines: {node: '>=18'}
 
   ini@2.0.0:
@@ -972,8 +972,8 @@ packages:
   package-json-from-dist@1.0.1:
     resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
 
-  pacote@21.5.1:
-    resolution: {integrity: sha512-KvcJ9iy3crysCsgqc4+PknH/w6jkrp8JN36mpZBPwNaDRwTfMZD37YzRazNstiZUOhuF5pno9f78n9mEJBavwg==}
+  pacote@21.5.2:
+    resolution: {integrity: sha512-rifBXawDMv3nLvABWr1kTpSk0UjeglTT4Vt9t8nU9xSnfdZcCTy+FOjO6TgXWAS77lIfbZlRkl2eKQcdY0++jA==}
     engines: {node: ^20.17.0 || >=22.9.0}
     hasBin: true
 
@@ -1206,7 +1206,7 @@ packages:
 
 snapshots:
 
-  '@cloudflare/workers-types@5.20261025.1': {}
+  '@cloudflare/workers-types@5.20261101.1': {}
 
   '@esbuild/aix-ppc64@0.28.2':
     optional: true
@@ -1288,7 +1288,7 @@ snapshots:
 
   '@gar/promise-retry@1.0.3': {}
 
-  '@grpc/grpc-js@1.14.6':
+  '@grpc/grpc-js@1.14.7':
     dependencies:
       '@grpc/proto-loader': 0.8.1
       '@js-sdsl/ordered-map': 4.4.2
@@ -1336,7 +1336,7 @@ snapshots:
       '@npmcli/query': 5.0.0
       '@npmcli/redact': 4.0.0
       '@npmcli/run-script': 10.0.4
-      bin-links: 6.0.2
+      bin-links: 6.0.3
       cacache: 20.0.4
       common-ancestor-path: 2.0.0
       hosted-git-info: 9.0.3
@@ -1348,7 +1348,7 @@ snapshots:
       npm-package-arg: 13.0.2
       npm-pick-manifest: 11.0.3
       npm-registry-fetch: 19.1.1
-      pacote: 21.5.1
+      pacote: 21.5.2
       parse-conflict-json: 5.0.1
       proc-log: 6.1.0
       proggy: 4.0.0
@@ -1368,7 +1368,7 @@ snapshots:
   '@npmcli/git@7.0.2':
     dependencies:
       '@gar/promise-retry': 1.0.3
-      '@npmcli/promise-spawn': 9.0.1
+      '@npmcli/promise-spawn': 9.0.2
       ini: 6.0.0
       lru-cache: 11.5.3
       npm-pick-manifest: 11.0.3
@@ -1392,7 +1392,7 @@ snapshots:
     dependencies:
       cacache: 20.0.4
       json-parse-even-better-errors: 5.0.0
-      pacote: 21.5.1
+      pacote: 21.5.2
       proc-log: 6.1.0
       semver: 7.8.5
     transitivePeerDependencies:
@@ -1412,7 +1412,7 @@ snapshots:
       semver: 7.8.5
       spdx-expression-parse: 4.0.0
 
-  '@npmcli/promise-spawn@9.0.1':
+  '@npmcli/promise-spawn@9.0.2':
     dependencies:
       which: 6.0.1
 
@@ -1426,7 +1426,7 @@ snapshots:
     dependencies:
       '@npmcli/node-gyp': 5.0.0
       '@npmcli/package-json': 7.0.5
-      '@npmcli/promise-spawn': 9.0.1
+      '@npmcli/promise-spawn': 9.0.2
       node-gyp: 12.4.0
       proc-log: 6.1.0
 
@@ -1443,16 +1443,16 @@ snapshots:
   '@opentelemetry/core@2.12.0(@opentelemetry/api@1.10.0)':
     dependencies:
       '@opentelemetry/api': 1.10.0
-      '@opentelemetry/semantic-conventions': 1.43.0
+      '@opentelemetry/semantic-conventions': 1.44.0
 
   '@opentelemetry/core@2.9.0(@opentelemetry/api@1.10.0)':
     dependencies:
       '@opentelemetry/api': 1.10.0
-      '@opentelemetry/semantic-conventions': 1.43.0
+      '@opentelemetry/semantic-conventions': 1.44.0
 
   '@opentelemetry/exporter-trace-otlp-grpc@0.220.0(@opentelemetry/api@1.10.0)':
     dependencies:
-      '@grpc/grpc-js': 1.14.6
+      '@grpc/grpc-js': 1.14.7
       '@opentelemetry/api': 1.10.0
       '@opentelemetry/otlp-exporter-base': 0.220.0(@opentelemetry/api@1.10.0)
       '@opentelemetry/otlp-grpc-exporter-base': 0.220.0(@opentelemetry/api@1.10.0)
@@ -1465,13 +1465,13 @@ snapshots:
       '@opentelemetry/core': 2.12.0(@opentelemetry/api@1.10.0)
       '@opentelemetry/resources': 2.12.0(@opentelemetry/api@1.10.0)
       '@opentelemetry/sdk-trace': 2.12.0(@opentelemetry/api@1.10.0)
-      '@opentelemetry/semantic-conventions': 1.43.0
+      '@opentelemetry/semantic-conventions': 1.44.0
 
   '@opentelemetry/instrumentation-grpc@0.220.0(@opentelemetry/api@1.10.0)':
     dependencies:
       '@opentelemetry/api': 1.10.0
       '@opentelemetry/instrumentation': 0.220.0(@opentelemetry/api@1.10.0)
-      '@opentelemetry/semantic-conventions': 1.43.0
+      '@opentelemetry/semantic-conventions': 1.44.0
     transitivePeerDependencies:
       - supports-color
 
@@ -1479,7 +1479,7 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.10.0
       '@opentelemetry/api-logs': 0.220.0
-      import-in-the-middle: 3.5.2
+      import-in-the-middle: 3.5.3
       require-in-the-middle: 8.0.1
     transitivePeerDependencies:
       - supports-color
@@ -1492,7 +1492,7 @@ snapshots:
 
   '@opentelemetry/otlp-grpc-exporter-base@0.220.0(@opentelemetry/api@1.10.0)':
     dependencies:
-      '@grpc/grpc-js': 1.14.6
+      '@grpc/grpc-js': 1.14.7
       '@opentelemetry/api': 1.10.0
       '@opentelemetry/core': 2.9.0(@opentelemetry/api@1.10.0)
       '@opentelemetry/otlp-exporter-base': 0.220.0(@opentelemetry/api@1.10.0)
@@ -1512,13 +1512,13 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.10.0
       '@opentelemetry/core': 2.12.0(@opentelemetry/api@1.10.0)
-      '@opentelemetry/semantic-conventions': 1.43.0
+      '@opentelemetry/semantic-conventions': 1.44.0
 
   '@opentelemetry/resources@2.9.0(@opentelemetry/api@1.10.0)':
     dependencies:
       '@opentelemetry/api': 1.10.0
       '@opentelemetry/core': 2.9.0(@opentelemetry/api@1.10.0)
-      '@opentelemetry/semantic-conventions': 1.43.0
+      '@opentelemetry/semantic-conventions': 1.44.0
 
   '@opentelemetry/sdk-logs@0.220.0(@opentelemetry/api@1.10.0)':
     dependencies:
@@ -1526,7 +1526,7 @@ snapshots:
       '@opentelemetry/api-logs': 0.220.0
       '@opentelemetry/core': 2.9.0(@opentelemetry/api@1.10.0)
       '@opentelemetry/resources': 2.9.0(@opentelemetry/api@1.10.0)
-      '@opentelemetry/semantic-conventions': 1.43.0
+      '@opentelemetry/semantic-conventions': 1.44.0
 
   '@opentelemetry/sdk-metrics@2.9.0(@opentelemetry/api@1.10.0)':
     dependencies:
@@ -1540,7 +1540,7 @@ snapshots:
       '@opentelemetry/core': 2.12.0(@opentelemetry/api@1.10.0)
       '@opentelemetry/resources': 2.12.0(@opentelemetry/api@1.10.0)
       '@opentelemetry/sdk-trace': 2.12.0(@opentelemetry/api@1.10.0)
-      '@opentelemetry/semantic-conventions': 1.43.0
+      '@opentelemetry/semantic-conventions': 1.44.0
 
   '@opentelemetry/sdk-trace-node@2.12.0(@opentelemetry/api@1.10.0)':
     dependencies:
@@ -1554,16 +1554,16 @@ snapshots:
       '@opentelemetry/api': 1.10.0
       '@opentelemetry/core': 2.12.0(@opentelemetry/api@1.10.0)
       '@opentelemetry/resources': 2.12.0(@opentelemetry/api@1.10.0)
-      '@opentelemetry/semantic-conventions': 1.43.0
+      '@opentelemetry/semantic-conventions': 1.44.0
 
   '@opentelemetry/sdk-trace@2.9.0(@opentelemetry/api@1.10.0)':
     dependencies:
       '@opentelemetry/api': 1.10.0
       '@opentelemetry/core': 2.9.0(@opentelemetry/api@1.10.0)
       '@opentelemetry/resources': 2.9.0(@opentelemetry/api@1.10.0)
-      '@opentelemetry/semantic-conventions': 1.43.0
+      '@opentelemetry/semantic-conventions': 1.44.0
 
-  '@opentelemetry/semantic-conventions@1.43.0': {}
+  '@opentelemetry/semantic-conventions@1.44.0': {}
 
   '@protobufjs/aspromise@1.1.2': {}
 
@@ -1585,17 +1585,17 @@ snapshots:
 
   '@protobufjs/utf8@1.1.2': {}
 
-  '@pulumi/cloudflare@6.23.1(typescript@6.0.3)':
+  '@pulumi/cloudflare@6.23.2(typescript@6.0.3)':
     dependencies:
-      '@pulumi/pulumi': 3.272.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.273.0(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - ts-node
       - typescript
 
-  '@pulumi/command@1.2.1(typescript@6.0.3)':
+  '@pulumi/command@1.3.0(typescript@6.0.3)':
     dependencies:
-      '@pulumi/pulumi': 3.272.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.273.0(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -1603,17 +1603,17 @@ snapshots:
 
   '@pulumi/gcp@10.2.0(typescript@6.0.3)':
     dependencies:
-      '@pulumi/pulumi': 3.272.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.273.0(typescript@6.0.3)
       '@types/express': 4.17.25
     transitivePeerDependencies:
       - supports-color
       - ts-node
       - typescript
 
-  '@pulumi/kubernetes-ingress-nginx@0.1.3(typescript@6.0.3)':
+  '@pulumi/kubernetes-ingress-nginx@0.2.0(typescript@6.0.3)':
     dependencies:
       '@pulumi/kubernetes': 4.34.2(typescript@6.0.3)
-      '@pulumi/pulumi': 3.272.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.273.0(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -1621,7 +1621,7 @@ snapshots:
 
   '@pulumi/kubernetes@4.34.2(typescript@6.0.3)':
     dependencies:
-      '@pulumi/pulumi': 3.272.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.273.0(typescript@6.0.3)
       glob: 12.0.0
       shell-quote: 1.12.0
     transitivePeerDependencies:
@@ -1629,9 +1629,9 @@ snapshots:
       - ts-node
       - typescript
 
-  '@pulumi/pulumi@3.272.0(typescript@6.0.3)':
+  '@pulumi/pulumi@3.273.0(typescript@6.0.3)':
     dependencies:
-      '@grpc/grpc-js': 1.14.6
+      '@grpc/grpc-js': 1.14.7
       '@logdna/tail-file': 2.2.0
       '@npmcli/arborist': 9.9.3
       '@opentelemetry/api': 1.10.0
@@ -1643,7 +1643,7 @@ snapshots:
       '@opentelemetry/resources': 2.12.0(@opentelemetry/api@1.10.0)
       '@opentelemetry/sdk-trace-base': 2.12.0(@opentelemetry/api@1.10.0)
       '@opentelemetry/sdk-trace-node': 2.12.0(@opentelemetry/api@1.10.0)
-      '@opentelemetry/semantic-conventions': 1.43.0
+      '@opentelemetry/semantic-conventions': 1.44.0
       '@types/google-protobuf': 3.15.12
       '@types/semver': 7.8.0
       execa: 5.1.1
@@ -1663,15 +1663,15 @@ snapshots:
 
   '@pulumi/std@2.3.2(typescript@6.0.3)':
     dependencies:
-      '@pulumi/pulumi': 3.272.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.273.0(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - ts-node
       - typescript
 
-  '@pulumi/tailscale@0.29.2(typescript@6.0.3)':
+  '@pulumi/tailscale@0.29.4(typescript@6.0.3)':
     dependencies:
-      '@pulumi/pulumi': 3.272.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.273.0(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -1679,7 +1679,7 @@ snapshots:
 
   '@pulumiverse/talos@0.8.1(typescript@6.0.3)':
     dependencies:
-      '@pulumi/pulumi': 3.272.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.273.0(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -1687,7 +1687,7 @@ snapshots:
 
   '@pulumiverse/unifi@0.3.0(typescript@6.0.3)':
     dependencies:
-      '@pulumi/pulumi': 3.272.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.273.0(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -1732,9 +1732,9 @@ snapshots:
       '@tufjs/canonical-json': 2.0.0
       minimatch: 10.2.6
 
-  '@twingate/pulumi-twingate@5.1.1(typescript@6.0.3)':
+  '@twingate/pulumi-twingate@5.2.0(typescript@6.0.3)':
     dependencies:
-      '@pulumi/pulumi': 3.272.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.273.0(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -1743,15 +1743,15 @@ snapshots:
   '@types/body-parser@1.19.6':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 26.6.5
+      '@types/node': 26.6.6
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 26.6.5
+      '@types/node': 26.6.6
 
   '@types/express-serve-static-core@4.19.9':
     dependencies:
-      '@types/node': 26.6.5
+      '@types/node': 26.6.6
       '@types/qs': 6.15.1
       '@types/range-parser': 1.2.7
       '@types/send': 1.2.1
@@ -1769,7 +1769,7 @@ snapshots:
 
   '@types/mime@1.3.5': {}
 
-  '@types/node@26.6.5':
+  '@types/node@26.6.6':
     dependencies:
       undici-types: 8.9.0
 
@@ -1782,16 +1782,16 @@ snapshots:
   '@types/send@0.17.6':
     dependencies:
       '@types/mime': 1.3.5
-      '@types/node': 26.6.5
+      '@types/node': 26.6.6
 
   '@types/send@1.2.1':
     dependencies:
-      '@types/node': 26.6.5
+      '@types/node': 26.6.6
 
   '@types/serve-static@1.15.10':
     dependencies:
       '@types/http-errors': 2.0.5
-      '@types/node': 26.6.5
+      '@types/node': 26.6.6
       '@types/send': 0.17.6
 
   abbrev@4.0.0: {}
@@ -1808,7 +1808,7 @@ snapshots:
 
   balanced-match@4.0.4: {}
 
-  bin-links@6.0.2:
+  bin-links@6.0.3:
     dependencies:
       cmd-shim: 8.0.0
       npm-normalize-package-bin: 5.0.0
@@ -1954,7 +1954,7 @@ snapshots:
       minipass: 7.1.3
       path-scurry: 2.0.2
 
-  globals@17.13.0: {}
+  globals@17.14.0: {}
 
   google-protobuf@3.21.4: {}
 
@@ -1995,7 +1995,7 @@ snapshots:
     dependencies:
       minimatch: 10.2.6
 
-  import-in-the-middle@3.5.2:
+  import-in-the-middle@3.5.3:
     dependencies:
       cjs-module-lexer: 2.3.0
       es-module-lexer: 3.0.4
@@ -2202,13 +2202,13 @@ snapshots:
 
   package-json-from-dist@1.0.1: {}
 
-  pacote@21.5.1:
+  pacote@21.5.2:
     dependencies:
       '@gar/promise-retry': 1.0.3
       '@npmcli/git': 7.0.2
       '@npmcli/installed-package-contents': 4.0.0
       '@npmcli/package-json': 7.0.5
-      '@npmcli/promise-spawn': 9.0.1
+      '@npmcli/promise-spawn': 9.0.2
       '@npmcli/run-script': 10.0.4
       cacache: 20.0.4
       fs-minipass: 3.0.3
@@ -2263,7 +2263,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.2
-      '@types/node': 26.6.5
+      '@types/node': 26.6.6
       long: 5.3.2
 
   read-cmd-shim@6.0.0: {}
