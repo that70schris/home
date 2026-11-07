@@ -1,8 +1,12 @@
 tap "alecharmon/tap"
 tap "hashicorp/tap"
 tap "nubjs/tap"
+# Official Amazon AWS command-line interface
+brew "awscli"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
+# Simple command-line tool for creating clusters on Amazon EKS
+brew "eksctl"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # Firebase command-line tools
@@ -59,6 +63,8 @@ brew "tailscale"
 brew "talosctl"
 # Friendly and fast tool for sending HTTP requests
 brew "xh"
+# JavaScript package manager
+brew "yarn"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 # UNIX shell (command interpreter)
@@ -69,6 +75,8 @@ brew "hashicorp/tap/terraform", trusted: true
 brew "nubjs/tap/nub", trusted: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
+# Menu bar icon organiser
+cask "bartender"
 # Use your phone as a high-quality webcam with image tuning controls
 cask "camo-studio"
 # OpenAI's official ChatGPT desktop app
@@ -193,6 +201,7 @@ vscode "llvm-vs-code-extensions.lldb-dap"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "naumovs.color-highlight"
+vscode "oxc.oxc-vscode"
 vscode "pustelto.bracketeer"
 vscode "redhat.vscode-yaml"
 vscode "rust-lang.rust-analyzer"

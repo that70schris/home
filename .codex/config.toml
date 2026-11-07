@@ -58,17 +58,17 @@ BROWSER_USE_TINYSKY_ENABLED = "1"
 NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = ""
 NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = ""
 BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
-BROWSER_USE_CODEX_APP_VERSION = "26.1027.61615"
-NODE_REPL_TRUSTED_SERVICES = '{"browser":"/Users/chris/.codex/plugins/cache/openai-bundled/browser/26.1027.61615/scripts/browser-service.mjs"}'
+BROWSER_USE_CODEX_APP_VERSION = "26.1103.32239"
+NODE_REPL_TRUSTED_SERVICES = '{"browser":"/Users/chris/.codex/plugins/cache/openai-bundled/browser/26.1103.32239/scripts/browser-service.mjs"}'
 CODEX_CLI_PATH = "/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
 
 [desktop]
 conversationDetailMode = "STEPS_COMMANDS"
 ambient-suggestions-enabled = false
-followUpQueueMode = "queue"
 mac-menu-bar-enabled = false
 dock-icon-preference = "app-default"
 enabled-reasoning-efforts = ["low", "medium", "high", "xhigh", "ultra", "max"]
+migratedFollowUpQueueToSteer = true
 
 [desktop.appearanceLightChromeTheme]
 accent = "#339cff"
