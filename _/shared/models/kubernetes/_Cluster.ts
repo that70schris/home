@@ -34,7 +34,7 @@ export class _Cluster {
     this.nginx
     this.gateway
     this.routes
-    this.metrics
+    // this.metrics
   }
 
   @once
