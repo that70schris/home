@@ -8,17 +8,19 @@ hs.clearConsole()
 let clear = hs.hotkey.bind(['cmd'], 'k', () => {
   let application = hs.application.frontmost()
 
-  if ([
-    'net.tenshu.Hammerspoon-2',
-    'org.hammerspoon.Hammerspoon',
-  ].includes(!application?.bundleID)) {
-    hs.clearConsole()
-    return
+  switch (application?.bundleID) {
+    case 'net.tenshu.Hammerspoon-2':
+    case 'org.hammerspoon.Hammerspoon':
+      hs.clearConsole()
+      break
+
+    default:
+      clear.disable()
+      // hs.eventtap.keyStroke(['cmd'], 'k')
+      clear.enable()
+
   }
 
-  // clear.disable()
-  // hs.eventtap.keyStroke(['cmd'], 'k')
-  // clear.enable()
 })
 
 hs.eventtap.addWatcher([
