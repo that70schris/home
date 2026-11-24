@@ -6,5 +6,4 @@ return hs.windowsForApp(['Finder']).subscribe(
       h: 700,
     })
   },
-
 )
