@@ -2,24 +2,24 @@ hs.spoons.load('finder')
 hs.spoons.load('hide')
 
 hs.clearConsole()
-let clear = hs.hotkey.bind(['cmd'], 'k', () => {
-  let application = hs.application.frontmost()
-  clear.disable()
+// let clear = hs.hotkey.bind(['cmd'], 'k', () => {
+//   let application = hs.application.frontmost()
+//   clear.disable()
 
-  switch (application?.bundleID) {
+//   switch (application?.bundleID) {
 
-    case 'net.tenshu.Hammerspoon-2':
-    case 'org.hammerspoon.Hammerspoon':
-      hs.clearConsole()
-      break
+//     case 'net.tenshu.Hammerspoon-2':
+//     case 'org.hammerspoon.Hammerspoon':
+//       hs.clearConsole()
+//       break
 
-    default:
-      hs.eventtap.keyStroke(['cmd'], 'k', application)
+//     default:
+//       hs.eventtap.keyStroke(['cmd'], 'k', application)
 
-  }
+//   }
 
-  clear.enable()
-})
+//   clear.enable()
+// })
 
 hs.eventtap.addWatcher([
   hs.eventtap.eventTypes.flagsChanged,
