@@ -2,7 +2,7 @@ hs.spoons.load('windowfilter')
 hs.spoons.windowfilter.default.on([
   'windowCreated',
 ], (event, window, state) => {
-  switch (window.application?.bundleID) {
+  switch (window?.application?.bundleID) {
 
     case 'com.apple.finder':
       window.moveAndResize(new HSRect(
