@@ -1,5 +1,3 @@
-/* global hs */
-
 return hs.windowsForApp(['Finder']).subscribe(
   hs.window.filter.windowCreated,
   (window) => {
@@ -8,4 +6,5 @@ return hs.windowsForApp(['Finder']).subscribe(
       h: 700,
     })
   },
+
 )

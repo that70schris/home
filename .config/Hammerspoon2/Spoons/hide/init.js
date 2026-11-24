@@ -1,5 +1,3 @@
-/* global hs */
-
 let hide = hs.hotkey.bind(['cmd'], 'escape', () => {
   let application = hs.application.frontmost()
   hide.disable()

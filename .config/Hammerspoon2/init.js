@@ -1,5 +1,3 @@
-/* global hs */
-
 // hs.spoons.load('finder')
 // hs.spoons.load('enter')
 hs.spoons.load('hide')

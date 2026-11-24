@@ -1,5 +1,3 @@
-/* global hs */
-
 let enter = hs.hotkey.bind(['shift'], 'return', () => {
   let application = window.application()
   enter.disable()
