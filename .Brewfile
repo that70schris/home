@@ -1,4 +1,5 @@
 tap "alecharmon/tap"
+tap "hammerspoon/tap"
 tap "hashicorp/tap"
 tap "nubjs/tap"
 # Official Amazon AWS command-line interface
@@ -103,8 +104,8 @@ cask "gcloud-cli"
 cask "google-chrome"
 # Native desktop AI assistant from Google
 cask "google-gemini"
-# Desktop automation application
-cask "hammerspoon"
+# Desktop automation, scripted in JavaScript
+cask "hammerspoon/tap/hammerspoon2", trusted: true
 # HTTP and GraphQL Client
 cask "insomnia"
 # System monitoring app
