@@ -44,8 +44,7 @@ export default defineConfig([
       ...Object.entries({
         brace_style: [1, '1tbs'],
         jsx_wrap_multilines: 0,
-        list_style: [1, {
-        }],
+        list_style: 1,
         member_delimiter_style: [1, {
           multiline: {
             delimiter: 'none',
