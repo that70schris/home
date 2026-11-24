@@ -1,11 +1,7 @@
 /* global hs */
 
 let hide = hs.hotkey.bind(['cmd'], 'escape', () => {
-  let application = hs.application.frontmost()
-
-  if (!application) {
-    return
-  }
+  let application = hs.application.frontmost();
 
   ({
     'com.apple.Spotlight': () => {
@@ -20,7 +16,7 @@ let hide = hs.hotkey.bind(['cmd'], 'escape', () => {
 
   }[application?.bundleID]
   ?? (() => {
-    application.hide()
+    application?.hide()
   }))()
 })
 
