@@ -1,9 +1,18 @@
-return hs.windowsForApp(['Finder']).subscribe(
-  hs.window.filter.windowCreated,
-  (window) => {
-    window.setSize({
-      w: 1000,
-      h: 700,
-    })
+hs.spoons.load('windowfilter')
+hs.spoons.windowfilter.default.on(
+  'windowCreated',
+  (event, window, state) => {
+    switch (window.application?.bundleID) {
+
+      case 'com.apple.finder':
+        window.moveAndResize(new HSRect(
+          window.position.x,
+          window.position.y,
+          1000,
+          700,
+        ))
+        break
+
+    }
   },
 )

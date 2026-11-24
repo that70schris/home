@@ -7,6 +7,7 @@ export default defineConfig([
     languageOptions: {
       globals: {
         hs: 'readonly',
+        HSRect: 'readonly',
       },
     },
   },
