@@ -2,23 +2,23 @@
 
 let hide = hs.hotkey.bind(['cmd'], 'escape', () => {
   let application = hs.application.frontmost()
+  hide.disable()
 
   switch (application?.bundleID) {
 
     case 'com.apple.Spotlight':
-      hs.eventtap.keyStroke([], 'escape')
+      hs.eventtap.keyStroke([], 'escape', application)
       break
 
     case 'com.raycast.macos':
-      hide.disable()
       hs.eventtap.keyStroke(['cmd'], 'escape', application)
-      hide.enable()
       break
 
     default:
       application?.hide()
   }
 
+  hide.enable()
 })
 
 return hide

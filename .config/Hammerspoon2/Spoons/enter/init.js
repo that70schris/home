@@ -2,6 +2,7 @@
 
 let enter = hs.hotkey.bind(['shift'], 'return', () => {
   let application = window.application()
+  enter.disable()
 
   switch (application?.bundleID) {
 
@@ -10,12 +11,11 @@ let enter = hs.hotkey.bind(['shift'], 'return', () => {
       break
 
     default:
-      enter.disable()
       hs.eventtap.keyStroke(['shift'], 'return', application)
-      enter.enable()
 
   }
 
+  enter.enable()
 })
 
 return enter

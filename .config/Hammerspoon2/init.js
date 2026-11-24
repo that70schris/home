@@ -7,6 +7,7 @@ hs.spoons.load('hide')
 hs.clearConsole()
 let clear = hs.hotkey.bind(['cmd'], 'k', () => {
   let application = hs.application.frontmost()
+  clear.disable()
 
   switch (application?.bundleID) {
 
@@ -16,15 +17,15 @@ let clear = hs.hotkey.bind(['cmd'], 'k', () => {
       break
 
     default:
-      clear.disable()
-      // hs.eventtap.keyStroke(['cmd'], 'k')
-      clear.enable()
+      hs.eventtap.keyStroke(['cmd'], 'k', application)
 
   }
 
+  clear.enable()
 })
 
 hs.eventtap.addWatcher([
+  // hs.eventtap.eventTypes.windowCreated,
   hs.eventtap.eventTypes.flagsChanged,
   hs.eventtap.eventTypes.keyDown,
   hs.eventtap.eventTypes.keyUp,
