@@ -42,12 +42,10 @@ export default defineConfig([
 
       // custom styles
       ...Object.entries({
-        array_bracket_newline: [1, 'consistent'],
-        array_element_newline: [1, 'consistent'],
         brace_style: [1, '1tbs'],
-        function_call_argument_newline: [1, 'consistent'],
-        function_paren_newline: [1, 'consistent'],
         jsx_wrap_multilines: 0,
+        list_style: [1, {
+        }],
         member_delimiter_style: [1, {
           multiline: {
             delimiter: 'none',
@@ -63,10 +61,6 @@ export default defineConfig([
         no_multiple_empty_lines: [1, {
           maxEOF: 0,
           max: 1,
-        }],
-        object_curly_newline: [1, {
-          consistent: true,
-          multiline: true,
         }],
         operator_linebreak: [1, 'before', {
           overrides: { '=': 'after' },

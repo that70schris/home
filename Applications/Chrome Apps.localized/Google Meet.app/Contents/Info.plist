@@ -21,7 +21,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>8103.79</string>
+	<string>8127.37</string>
 	<key>CrAppModeIsAdhocSigned</key>
 	<true/>
 	<key>CrAppModeShortcutID</key>
@@ -35,7 +35,7 @@
 	<key>CrBundleIdentifier</key>
 	<string>com.google.Chrome</string>
 	<key>CrBundleVersion</key>
-	<string>157.0.8103.79</string>
+	<string>158.0.8127.37</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTSDKBuild</key>
