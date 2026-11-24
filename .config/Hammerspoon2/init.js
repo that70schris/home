@@ -9,6 +9,7 @@ let clear = hs.hotkey.bind(['cmd'], 'k', () => {
   let application = hs.application.frontmost()
 
   switch (application?.bundleID) {
+
     case 'net.tenshu.Hammerspoon-2':
     case 'org.hammerspoon.Hammerspoon':
       hs.clearConsole()
