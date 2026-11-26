@@ -1,7 +1,6 @@
-hs.spoons.load('windowfilter')
-hs.spoons.windowfilter.default.on([
+hs.windowfilter.create(['Finder']).on([
   'windowCreated',
-], (event, window, state) => {
+], (window, app) => {
   switch (window?.application?.bundleID) {
 
     case 'com.apple.finder':

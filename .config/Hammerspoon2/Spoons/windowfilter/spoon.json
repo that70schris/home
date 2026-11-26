@@ -1,7 +1,0 @@
-{
-    "name": "hs_windowfilter-gt",
-    "version": "0.3.14",
-    "author": "Daniel German <dmg@turingmachine.org>",
-    "license": "MIT - https://opensource.org/licenses/MIT",
-    "description": "Reports when windows are created, closed, focused, moved or changed, for the windows that match given rules, as Hammerspoon 1's hs.window.filter did."
-}
