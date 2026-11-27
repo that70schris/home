@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@cloudflare/workers-types':
         specifier: latest
-        version: 5.20261113.1
+        version: 5.20261125.1
       '@pulumi/cloudflare':
         specifier: latest
         version: 6.24.0(typescript@6.0.3)
@@ -19,22 +19,22 @@ importers:
         version: 1.3.0(typescript@6.0.3)
       '@pulumi/gcp':
         specifier: latest
-        version: 10.3.0(typescript@6.0.3)
+        version: 10.5.0(typescript@6.0.3)
       '@pulumi/kubernetes':
         specifier: latest
-        version: 4.34.3(typescript@6.0.3)
+        version: 4.35.0(typescript@6.0.3)
       '@pulumi/kubernetes-ingress-nginx':
         specifier: latest
         version: 0.2.0(typescript@6.0.3)
       '@pulumi/pulumi':
         specifier: latest
-        version: 3.276.0(typescript@6.0.3)
+        version: 3.278.0(typescript@6.0.3)
       '@pulumi/std':
         specifier: latest
         version: 2.3.3(typescript@6.0.3)
       '@pulumi/tailscale':
         specifier: latest
-        version: 0.29.4(typescript@6.0.3)
+        version: 0.30.0(typescript@6.0.3)
       '@pulumiverse/talos':
         specifier: latest
         version: 0.8.1(typescript@6.0.3)
@@ -68,8 +68,8 @@ importers:
 
 packages:
 
-  '@cloudflare/workers-types@5.20261113.1':
-    resolution: {integrity: sha512-FhF8hRtsQCr/BWZyUN7wm2x+jqAOkRIpLOW+2fJu5OQyIDOv+c3PxY8duEAkOYXuprLImxjW+PHTbvz9+Px5cw==}
+  '@cloudflare/workers-types@5.20261125.1':
+    resolution: {integrity: sha512-FBFIY/srJZZtZjxyH56AerZ0ZDbhr6Ifa5O707q0f7YzHmzqd+2zD3vG6d8cAcSDL/heJvsP7eEAsYRLFd7jpw==}
 
   '@esbuild/aix-ppc64@0.28.2':
     resolution: {integrity: sha512-XExcO+dvLKvVtNTibSTBej1NCAbaGhWn9Ww1ZPx80qsahhPFe/8jgWP0IchNe0F3HwkU7n8ejhH8bjonqht8mQ==}
@@ -400,17 +400,17 @@ packages:
   '@pulumi/command@1.3.0':
     resolution: {integrity: sha512-KrRVG/CmN9yCYJ1Rqn5mkond5wbeLNbgrclityNNN8hgltjSVZ2xwlxAw84fApNk9Bu3AV1bwN5Q/XD56Kisvg==}
 
-  '@pulumi/gcp@10.3.0':
-    resolution: {integrity: sha512-0wAuI2va7NLzo7c25D1VwqYY+tOb5bMgyePmYSTtAXDxVyjRXr3D/N7Jcz59k6M4kDajbSMYh6sgYWFTL6vhLQ==}
+  '@pulumi/gcp@10.5.0':
+    resolution: {integrity: sha512-xG4mJ+LXkF6RhwPW2mFyp73znc/+odgLYARQfJHJptPqq5j5FLLB86HrHp59jMD1RgGckE9PLJgQcglGzW4WYQ==}
 
   '@pulumi/kubernetes-ingress-nginx@0.2.0':
     resolution: {integrity: sha512-eUwNCIciuPVpjvL6t9fej33QJkmqWzNtR783Bn8yUBiFdV4TmFMrqBiKy9UTo1EzJC8mxWUThOHJvaqRc+2rKA==}
 
-  '@pulumi/kubernetes@4.34.3':
-    resolution: {integrity: sha512-BNEqCTYWe8n6ZFHXafoTMcQoG9Z6PDDjXujKNrtKlr2SGDjdJTSSxCJWUlmFpsO/FCNC4g4wEeGTGnKmLYOthg==}
+  '@pulumi/kubernetes@4.35.0':
+    resolution: {integrity: sha512-kTZCuaVX+pTIkChZ1Q5THhMKYu+3RMqrop/n6KYaKd7DzbrRu904x6wrs0P5TT/9475ZUud4Xr+piqYDgFDshw==}
 
-  '@pulumi/pulumi@3.276.0':
-    resolution: {integrity: sha512-8ThwjehdLmmSpcoCtQG/9uxXx5duAsFm1OeMZOEzj9b/V3VdST6baKu51K4HnSTwqRHgH84NDhM2AwAKapTtXQ==}
+  '@pulumi/pulumi@3.278.0':
+    resolution: {integrity: sha512-PedUCQG6IciTBYA5MUYeiFbeoqaI/0hlA7rtrjkETk949BZ4bpLejoHmENifAAdBk0+h0oUv+BdVNtlMQ+AhRA==}
     engines: {node: '>=22'}
     peerDependencies:
       ts-node: '>= 7.0.1 < 12'
@@ -424,8 +424,8 @@ packages:
   '@pulumi/std@2.3.3':
     resolution: {integrity: sha512-j8lxw2O8ncM43V48m/PHzvnKJAvP8s7N3L9h41JSgdsfF3WIKQGUSX3RvytuCN7o4alvWflWS7OWehky2DvwkQ==}
 
-  '@pulumi/tailscale@0.29.4':
-    resolution: {integrity: sha512-gFTPrnTy0B/U2aSmjnBZIyEQzY9coGkukATpKLhAxiGljjskN22SHkjdysa9BqYOQIyJ9+f/1GKoHsseQEK+7A==}
+  '@pulumi/tailscale@0.30.0':
+    resolution: {integrity: sha512-CGEZm3ro1h31S7hFNqSN3ovmmV3Q+WqxkAe1YktqegzD0fH8/sRSnElGvj1HYuLCEsynqRgwZq4lCdX48ev0pg==}
 
   '@pulumiverse/talos@0.8.1':
     resolution: {integrity: sha512-GTiqBuWRvunu70uTwmx9mL99B2Yc+I96XMm4bwTP2gE+M/0e8eICcwo3Hs/3LN/vhGgkGWZNFInUSwZlgZFgeg==}
@@ -436,8 +436,8 @@ packages:
   '@twingate/pulumi-twingate@5.2.0':
     resolution: {integrity: sha512-oLaUIbuMEF/t2CRowCd4xBWj6a46G+81ircJPWHSE5FN/Y5+DgQ93ylmPcHzfNTk0Y3I07wmCKGmywd+QLjKSw==}
 
-  '@types/body-parser@1.19.6':
-    resolution: {integrity: sha512-HLFeCYgz89uk22N5Qg3dvGvsv46B8GLvKKo1zKG4NybA8U2DiEO3w9lqGg29t/tfLRJpJ6iQxnVw4OnB7MoM9g==}
+  '@types/body-parser@2.2.0':
+    resolution: {integrity: sha512-2xqOfKcCjEVvPzOqRa3Db4+CzY45+urO0ib+EvtV5G8z2SRhjVsEI8C6fXZjd0gLEszk27Z3UTpSgTI5Nh5QTg==}
 
   '@types/connect@3.4.38':
     resolution: {integrity: sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug==}
@@ -457,8 +457,8 @@ packages:
   '@types/mime@1.3.5':
     resolution: {integrity: sha512-/pyBZWSLD2n0dcHE3hq8s8ZvcETHtEuF+3E7XVt0Ig2nvsVQXdghHVcEkIWjy9A0wKfTn97a/PSDYohKIlnP/w==}
 
-  '@types/node@26.6.6':
-    resolution: {integrity: sha512-MzQj+8Kx3XI40OmUAE6Qoh58ZMNstNNMwn2nfd3qWsfe7nDNSqJNzes4njhz6AHwrSHOffSLwXU6yb474Q4aog==}
+  '@types/node@26.6.11':
+    resolution: {integrity: sha512-uUyQ2XLEz+EXh34lmS3GhKrkqn/8FU7KUiKRpk347At2bmnMVWss45yz8b4FG/tUtmV1tV/+TVkITItPROyeeQ==}
 
   '@types/qs@6.15.1':
     resolution: {integrity: sha512-GZHUBZR9hckSUhrxmp1nG6NwdpM9fCunJwyThLW1X3AyHgd9IlHb6VANpQQqDr2o/qQp6McZ3y/IA2rVzKzSbw==}
@@ -493,8 +493,8 @@ packages:
     resolution: {integrity: sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==}
     engines: {node: 18 || 20 || >=22}
 
-  brace-expansion@5.0.13:
-    resolution: {integrity: sha512-Vh3dmFbc4wZeox7M9I/0L9GfFd83Su4+yCck/OF9Gi/P/dAHn0RT7X4K9R7gMNMhDck3DvhR6QXsnQdjjgwNvQ==}
+  brace-expansion@5.1.0:
+    resolution: {integrity: sha512-aa11Dv491GKnYqxaul3aRJ0szew7yMJMfZPnqD44NjGrZXoj62l41OEDDpdpC4eE2P88vBFfLuSyRhpG91NUvg==}
     engines: {node: 20 || >=22}
 
   buffer-from@1.1.2:
@@ -530,8 +530,8 @@ packages:
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
 
-  es-module-lexer@3.0.4:
-    resolution: {integrity: sha512-BldNY5mwkVu+cQ5Ymn3e6hB9Sx8XHx4ZevWbiUyZbfKxJxYO27Hf0wfzkxIaD5CAJMaGl3YspKELj0ff/7nCMA==}
+  es-module-lexer@3.0.5:
+    resolution: {integrity: sha512-RNq2lKJw53c7z9QRHeiKeA6Ez0oikOqiBGdmxQhKDxEiOX1g5QJR4IoFVwicn8uCZcRWNrXC3NZaJihgK7aEbg==}
 
   esbuild@0.28.2:
     resolution: {integrity: sha512-HKVLS8dvII+xoKW9kmqxbRKrnWEXfJJr/FZhhJmiqIB0e053QNYFqOBouTMO/k5sID4MvCiUCvv8b9M4h32wIA==}
@@ -581,8 +581,8 @@ packages:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
     engines: {node: '>=10.17.0'}
 
-  import-in-the-middle@3.6.0:
-    resolution: {integrity: sha512-xRU7hI24S2FhucXtuZXn8EpcOjfVP6iiEQyR0USayPeaOroEmSsNlqnl95866iRdRtkHrd6Q/Z4D14R60au0+A==}
+  import-in-the-middle@3.7.0:
+    resolution: {integrity: sha512-E+eunmEgK2Bd9nHQCR0IsG52TEaVzSZqRH4RLcEmcUazGAnjoyXDYsoGnf4OnggekXiG7Zz11XFh3gH+Br04Yw==}
     engines: {node: '>=18'}
 
   ini@2.0.0:
@@ -802,7 +802,7 @@ packages:
 
 snapshots:
 
-  '@cloudflare/workers-types@5.20261113.1': {}
+  '@cloudflare/workers-types@5.20261125.1': {}
 
   '@esbuild/aix-ppc64@0.28.2':
     optional: true
@@ -949,7 +949,7 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/api-logs': 0.220.0
-      import-in-the-middle: 3.6.0
+      import-in-the-middle: 3.7.0
       require-in-the-middle: 8.0.1
     transitivePeerDependencies:
       - supports-color
@@ -1057,7 +1057,7 @@ snapshots:
 
   '@pulumi/cloudflare@6.24.0(typescript@6.0.3)':
     dependencies:
-      '@pulumi/pulumi': 3.276.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.278.0(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -1065,15 +1065,15 @@ snapshots:
 
   '@pulumi/command@1.3.0(typescript@6.0.3)':
     dependencies:
-      '@pulumi/pulumi': 3.276.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.278.0(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - ts-node
       - typescript
 
-  '@pulumi/gcp@10.3.0(typescript@6.0.3)':
+  '@pulumi/gcp@10.5.0(typescript@6.0.3)':
     dependencies:
-      '@pulumi/pulumi': 3.276.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.278.0(typescript@6.0.3)
       '@types/express': 4.17.25
     transitivePeerDependencies:
       - supports-color
@@ -1082,16 +1082,16 @@ snapshots:
 
   '@pulumi/kubernetes-ingress-nginx@0.2.0(typescript@6.0.3)':
     dependencies:
-      '@pulumi/kubernetes': 4.34.3(typescript@6.0.3)
-      '@pulumi/pulumi': 3.276.0(typescript@6.0.3)
+      '@pulumi/kubernetes': 4.35.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.278.0(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - ts-node
       - typescript
 
-  '@pulumi/kubernetes@4.34.3(typescript@6.0.3)':
+  '@pulumi/kubernetes@4.35.0(typescript@6.0.3)':
     dependencies:
-      '@pulumi/pulumi': 3.276.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.278.0(typescript@6.0.3)
       glob: 12.0.0
       shell-quote: 1.12.0
     transitivePeerDependencies:
@@ -1099,7 +1099,7 @@ snapshots:
       - ts-node
       - typescript
 
-  '@pulumi/pulumi@3.276.0(typescript@6.0.3)':
+  '@pulumi/pulumi@3.278.0(typescript@6.0.3)':
     dependencies:
       '@grpc/grpc-js': 1.14.7
       '@logdna/tail-file': 2.2.0
@@ -1132,15 +1132,15 @@ snapshots:
 
   '@pulumi/std@2.3.3(typescript@6.0.3)':
     dependencies:
-      '@pulumi/pulumi': 3.276.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.278.0(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - ts-node
       - typescript
 
-  '@pulumi/tailscale@0.29.4(typescript@6.0.3)':
+  '@pulumi/tailscale@0.30.0(typescript@6.0.3)':
     dependencies:
-      '@pulumi/pulumi': 3.276.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.278.0(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -1148,7 +1148,7 @@ snapshots:
 
   '@pulumiverse/talos@0.8.1(typescript@6.0.3)':
     dependencies:
-      '@pulumi/pulumi': 3.276.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.278.0(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -1156,7 +1156,7 @@ snapshots:
 
   '@pulumiverse/unifi@0.3.1(typescript@6.0.3)':
     dependencies:
-      '@pulumi/pulumi': 3.276.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.278.0(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -1164,31 +1164,31 @@ snapshots:
 
   '@twingate/pulumi-twingate@5.2.0(typescript@6.0.3)':
     dependencies:
-      '@pulumi/pulumi': 3.276.0(typescript@6.0.3)
+      '@pulumi/pulumi': 3.278.0(typescript@6.0.3)
     transitivePeerDependencies:
       - supports-color
       - ts-node
       - typescript
 
-  '@types/body-parser@1.19.6':
+  '@types/body-parser@2.2.0':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 26.6.6
+      '@types/node': 26.6.11
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 26.6.6
+      '@types/node': 26.6.11
 
   '@types/express-serve-static-core@4.19.9':
     dependencies:
-      '@types/node': 26.6.6
+      '@types/node': 26.6.11
       '@types/qs': 6.15.1
       '@types/range-parser': 1.2.7
       '@types/send': 1.2.1
 
   '@types/express@4.17.25':
     dependencies:
-      '@types/body-parser': 1.19.6
+      '@types/body-parser': 2.2.0
       '@types/express-serve-static-core': 4.19.9
       '@types/qs': 6.15.1
       '@types/serve-static': 1.15.10
@@ -1199,7 +1199,7 @@ snapshots:
 
   '@types/mime@1.3.5': {}
 
-  '@types/node@26.6.6':
+  '@types/node@26.6.11':
     dependencies:
       undici-types: 8.9.0
 
@@ -1212,16 +1212,16 @@ snapshots:
   '@types/send@0.17.6':
     dependencies:
       '@types/mime': 1.3.5
-      '@types/node': 26.6.6
+      '@types/node': 26.6.11
 
   '@types/send@1.2.1':
     dependencies:
-      '@types/node': 26.6.6
+      '@types/node': 26.6.11
 
   '@types/serve-static@1.15.10':
     dependencies:
       '@types/http-errors': 2.0.5
-      '@types/node': 26.6.6
+      '@types/node': 26.6.11
       '@types/send': 0.17.6
 
   ansi-regex@5.0.1: {}
@@ -1234,7 +1234,7 @@ snapshots:
 
   balanced-match@4.0.4: {}
 
-  brace-expansion@5.0.13:
+  brace-expansion@5.1.0:
     dependencies:
       balanced-match: 4.0.4
 
@@ -1266,7 +1266,7 @@ snapshots:
 
   emoji-regex@8.0.0: {}
 
-  es-module-lexer@3.0.4: {}
+  es-module-lexer@3.0.5: {}
 
   esbuild@0.28.2:
     optionalDependencies:
@@ -1341,10 +1341,10 @@ snapshots:
 
   human-signals@2.1.0: {}
 
-  import-in-the-middle@3.6.0:
+  import-in-the-middle@3.7.0:
     dependencies:
       cjs-module-lexer: 2.3.0
-      es-module-lexer: 3.0.4
+      es-module-lexer: 3.0.5
       module-details-from-path: 1.0.4
 
   ini@2.0.0: {}
@@ -1392,7 +1392,7 @@ snapshots:
 
   minimatch@10.2.6:
     dependencies:
-      brace-expansion: 5.0.13
+      brace-expansion: 5.1.0
 
   minimist@1.2.8: {}
 
@@ -1436,7 +1436,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.2
-      '@types/node': 26.6.6
+      '@types/node': 26.6.11
       long: 5.3.2
 
   require-directory@2.1.1: {}
