@@ -6,7 +6,7 @@ let hide = hs.hotkey.bind(['cmd'], 'escape', () => {
   switch (application?.name) {
 
     case 'Siri':
-      hs.eventtap.keyStroke([], 'escape', application)
+      hs.eventtap.keyStroke([], 'escape')
       break
 
   }
