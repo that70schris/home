@@ -1,7 +1,6 @@
-let hide = hs.hotkey.bind(['cmd'], 'escape', () => {
+hs.hotkey.bind(['cmd'], 'escape', () => {
   let window = hs.window.focusedWindow()
   let application = window.application
-  hide.disable()
 
   switch (application?.name) {
 
@@ -15,7 +14,4 @@ let hide = hs.hotkey.bind(['cmd'], 'escape', () => {
     application?.hide()
   }
 
-  hide.enable()
 })
-
-return hide
