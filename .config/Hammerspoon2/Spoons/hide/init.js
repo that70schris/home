@@ -1,7 +1,6 @@
 let hide = hs.hotkey.bind(['cmd'], 'escape', () => {
   let window = hs.window.focusedWindow()
   let application = window.application
-  hide.disable()
 
   if (window?.isStandard) {
     application?.hide()
@@ -13,10 +12,11 @@ let hide = hs.hotkey.bind(['cmd'], 'escape', () => {
         break
 
       default:
+        hide.disable()
         hs.eventtap.keyStroke(['cmd'], 'escape')
+        hide.enable()
 
     }
   }
 
-  hide.enable()
 })
